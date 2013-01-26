@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
+		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
 		91C0B98116B4470A0092FCA9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98016B4470A0092FCA9 /* OpenGLES.framework */; };
 		91C0B98316B4470A0092FCA9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98216B4470A0092FCA9 /* OpenAL.framework */; };
@@ -139,11 +141,11 @@
 		91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */; };
 		91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */; };
 		91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2516B4470C0092FCA9 /* IntroLayer.m */; };
-		D41FBFEF16B45063002B0C35 /* map.tmx in Resources */ = {isa = PBXBuildFile; fileRef = D41FBFEE16B45063002B0C35 /* map.tmx */; };
-		D41FBFF216B45070002B0C35 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = D41FBFF116B45070002B0C35 /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
+		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
 		91C0B97A16B4470A0092FCA9 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91C0B98016B4470A0092FCA9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -422,8 +424,6 @@
 		91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		91C0BB2416B4470C0092FCA9 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		91C0BB2516B4470C0092FCA9 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
-		D41FBFEE16B45063002B0C35 /* map.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = map.tmx; sourceTree = "<group>"; };
-		D41FBFF116B45070002B0C35 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -498,8 +498,8 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D41FBFEE16B45063002B0C35 /* map.tmx */,
-				D41FBFF116B45070002B0C35 /* map.png */,
+				917E668216B45F850001F40C /* temple.tmx */,
+				917E668416B45F8C0001F40C /* zelda-tiles.png */,
 				91C0B99216B4470A0092FCA9 /* Default.png */,
 				91C0B99416B4470A0092FCA9 /* Default@2x.png */,
 				91C0B99616B4470A0092FCA9 /* Default-568h@2x.png */,
@@ -939,8 +939,8 @@
 				91C0B9A516B4470A0092FCA9 /* Icon@2x.png in Resources */,
 				91C0B9A816B4470A0092FCA9 /* iTunesArtwork in Resources */,
 				91C0BAFE16B4470C0092FCA9 /* ChangeLog in Resources */,
-				D41FBFEF16B45063002B0C35 /* map.tmx in Resources */,
-				D41FBFF216B45070002B0C35 /* map.png in Resources */,
+				917E668316B45F850001F40C /* temple.tmx in Resources */,
+				917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
