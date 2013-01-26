@@ -499,11 +499,11 @@
 			isa = PBXGroup;
 			children = (
 				D41FBFEE16B45063002B0C35 /* map.tmx */,
+				D41FBFF116B45070002B0C35 /* map.png */,
 				91C0B99216B4470A0092FCA9 /* Default.png */,
 				91C0B99416B4470A0092FCA9 /* Default@2x.png */,
 				91C0B99616B4470A0092FCA9 /* Default-568h@2x.png */,
 				91C0B99816B4470A0092FCA9 /* Default-Landscape~ipad.png */,
-				D41FBFF116B45070002B0C35 /* map.png */,
 				91C0B99A16B4470A0092FCA9 /* Icon-72.png */,
 				91C0B99C16B4470A0092FCA9 /* Icon-Small-50.png */,
 				91C0B99E16B4470A0092FCA9 /* Icon-Small.png */,
