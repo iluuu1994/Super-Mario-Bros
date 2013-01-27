@@ -141,6 +141,7 @@
 		91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */; };
 		91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */; };
 		91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2516B4470C0092FCA9 /* IntroLayer.m */; };
+		D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D40219A216B55FEE003D4178 /* TiledMapScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -424,6 +425,8 @@
 		91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		91C0BB2416B4470C0092FCA9 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		91C0BB2516B4470C0092FCA9 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
+		D40219A116B55FEE003D4178 /* TiledMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledMapScene.h; sourceTree = "<group>"; };
+		D40219A216B55FEE003D4178 /* TiledMapScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledMapScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +494,8 @@
 				91C0B99116B4470A0092FCA9 /* Resources */,
 				91C0B9A916B4470A0092FCA9 /* libs */,
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
+				D40219A116B55FEE003D4178 /* TiledMapScene.h */,
+				D40219A216B55FEE003D4178 /* TiledMapScene.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1062,6 +1067,7 @@
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
 				91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */,
+				D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
