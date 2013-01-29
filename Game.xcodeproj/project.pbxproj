@@ -427,6 +427,10 @@
 		91C0BB2516B4470C0092FCA9 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		D40219A116B55FEE003D4178 /* TiledMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledMapScene.h; sourceTree = "<group>"; };
 		D40219A216B55FEE003D4178 /* TiledMapScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledMapScene.m; sourceTree = "<group>"; };
+		D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_1_Projektfuehrung.doc; sourceTree = "<group>"; };
+		D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_2_Projektplan.doc; sourceTree = "<group>"; };
+		D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_3_Projektantrag.doc; sourceTree = "<group>"; };
+		D49A65B716B8424E0063D85A /* Projektrollen.vsd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Projektrollen.vsd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -503,6 +507,7 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D49A65B216B842330063D85A /* doc */,
 				917E668216B45F850001F40C /* temple.tmx */,
 				917E668416B45F8C0001F40C /* zelda-tiles.png */,
 				91C0B99216B4470A0092FCA9 /* Default.png */,
@@ -879,6 +884,17 @@
 				91C0BB1C16B4470C0092FCA9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D49A65B216B842330063D85A /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */,
+				D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */,
+				D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */,
+				D49A65B716B8424E0063D85A /* Projektrollen.vsd */,
+			);
+			name = doc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
