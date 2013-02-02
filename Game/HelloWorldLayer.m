@@ -46,10 +46,11 @@
     
     
 	if(self = [super init]) {
+        CGSize winSize = [CCDirector sharedDirector].winSize;
+        
+        /*
         self.tiledMap = [CCTMXTiledMap tiledMapWithTMXFile:@"temple.tmx"];
         self.backgroundLayer = [self.tiledMap layerNamed:@"bg"];
-        
-        CGSize winSize = [CCDirector sharedDirector].winSize;
 
         if (winSize.width > self.tiledMap.mapSize.width) {
             self.tiledMap.anchorPoint = ccp(-0.5, self.tiledMap.anchorPoint.y);
@@ -59,8 +60,10 @@
         }
 
         [self addChild:self.tiledMap  z:-1];
-        
-        [self addChild:[Candle node]];
+        */
+        Candle *candle = [Candle node];
+        [candle setPosition:ccp(winSize.width / 2, winSize.height / 2)];
+        [self addChild:candle];
 	}
 	return self;
 }

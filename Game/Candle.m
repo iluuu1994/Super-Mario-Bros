@@ -13,7 +13,9 @@
 
 - (id)init
 {
-    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png" plistFile:@"Candle.plist" spriteFrameNamingConvention:@"Candle_%d.png"];
+    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png"
+                                       plistFile:@"Candle.plist"
+                     spriteFrameNamingConvention:@"Candle_%d.png"];
     if (self) {
         
     }
