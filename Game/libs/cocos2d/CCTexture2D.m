@@ -461,9 +461,10 @@ static CCTexture2DPixelFormat defaultAlphaPixel_format = kCCTexture2DPixelFormat
 - (id) initWithString:(NSString*)string dimensions:(CGSize)dimensions hAlignment:(CCTextAlignment)hAlignment vAlignment:(CCVerticalTextAlignment) vAlignment lineBreakMode:(CCLineBreakMode)lineBreakMode font:(UIFont*)uifont
 {
 	NSAssert( uifont, @"Invalid font");
-
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 	// MUST have the same order declared on ccTypes
 	NSInteger linebreaks[] = {UILineBreakModeWordWrap, UILineBreakModeCharacterWrap, UILineBreakModeClip, UILineBreakModeHeadTruncation, UILineBreakModeTailTruncation, UILineBreakModeMiddleTruncation};
+#pragma GCC diagnostic warning "-Wdeprecated-declarations"
 
 	NSUInteger textureWidth = ccNextPOT(dimensions.width);
 	NSUInteger textureHeight = ccNextPOT(dimensions.height);
@@ -513,8 +514,10 @@ static CCTexture2DPixelFormat defaultAlphaPixel_format = kCCTexture2DPixelFormat
         }
     }
 
-	// must follow the same order of CCTextureAligment
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+    // must follow the same order of CCTextureAligment
 	NSUInteger alignments[] = { UITextAlignmentLeft, UITextAlignmentCenter, UITextAlignmentRight };
+#pragma GCC diagnostic warning "-Wdeprecated-declarations"
 	
 	[string drawInRect:drawArea withFont:uifont lineBreakMode:linebreaks[lineBreakMode] alignment:alignments[hAlignment]];
 
@@ -624,9 +627,12 @@ static CCTexture2DPixelFormat defaultAlphaPixel_format = kCCTexture2DPixelFormat
 
 	// Is it a multiline ? sizeWithFont: only works with single line.
 	CGSize boundingSize = CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX);
+    
+    #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 	dim = [string sizeWithFont:font
 			 constrainedToSize:boundingSize
 				 lineBreakMode:UILineBreakModeWordWrap];
+    #pragma GCC diagnostic warning "-Wdeprecated-declarations"
 	
 	if(dim.width == 0)
 		dim.width = 1;

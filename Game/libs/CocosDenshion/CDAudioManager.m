@@ -399,7 +399,10 @@ static BOOL configured = FALSE;
 
 		//Initialise the audio session
 		AVAudioSession* session = [AVAudioSession sharedInstance];
+        
+        #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 		session.delegate = self;
+        #pragma GCC diagnostic warning "-Wdeprecated-declarations"
 
 		_mode = mode;
 		backgroundMusicCompletionSelector = nil;

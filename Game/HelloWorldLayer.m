@@ -72,7 +72,6 @@
     self.backgroundLayer = nil;
 	
 	// don't forget to call "super dealloc"
-	[super dealloc];
 }
 
 @end

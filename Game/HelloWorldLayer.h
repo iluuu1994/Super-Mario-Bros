@@ -20,7 +20,7 @@
 // returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 
-@property (assign) CCTMXTiledMap *tiledMap;
-@property (assign) CCTMXLayer *backgroundLayer;
+@property (unsafe_unretained) CCTMXTiledMap *tiledMap;
+@property (unsafe_unretained) CCTMXLayer *backgroundLayer;
 
 @end
