@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "cocos2d.h"
+#import "SKAnimationSprite.h"
 
-@interface Candle : CCSprite {
+@interface Candle : SKAnimationSprite {
     
 }
 

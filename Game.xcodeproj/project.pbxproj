@@ -32,7 +32,6 @@
 		91C0BB1D16B4470C0092FCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1C16B4470C0092FCA9 /* main.m */; };
 		91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */; };
 		91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */; };
-		91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2516B4470C0092FCA9 /* IntroLayer.m */; };
 		91CD165E16BDCBA9005CA331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98A16B4470A0092FCA9 /* Foundation.framework */; };
 		91CD176E16BDCCA9005CA331 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD166C16BDCCA9005CA331 /* CCAction.m */; };
 		91CD176F16BDCCA9005CA331 /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD166E16BDCCA9005CA331 /* CCActionCamera.m */; };
@@ -142,9 +141,10 @@
 		91CD17D716BDCCA9005CA331 /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176916BDCCA9005CA331 /* vec3.c */; };
 		91CD17D816BDCCA9005CA331 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176A16BDCCA9005CA331 /* vec4.c */; };
 		91CD17D916BDCCE4005CA331 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CD165D16BDCBA9005CA331 /* libcocos2d.a */; };
+		91CD17E016BDD0D4005CA331 /* SKAnimationSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */; };
+		91CD17E116BDD0D4005CA331 /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DF16BDD0D4005CA331 /* Candle.m */; };
 		D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D40219A216B55FEE003D4178 /* TiledMapScene.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
-		D4198B1916BD6CD8003F61DA /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = D4198B1816BD6CD8003F61DA /* Candle.m */; };
 		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
 /* End PBXBuildFile section */
 
@@ -201,8 +201,6 @@
 		91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
-		91C0BB2416B4470C0092FCA9 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
-		91C0BB2516B4470C0092FCA9 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		91CD165D16BDCBA9005CA331 /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CD166116BDCBA9005CA331 /* cocos2d-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocos2d-Prefix.pch"; sourceTree = "<group>"; };
 		91CD166B16BDCCA9005CA331 /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
@@ -453,11 +451,13 @@
 		91CD176B16BDCCA9005CA331 /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
 		91CD176C16BDCCA9005CA331 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
 		91CD176D16BDCCA9005CA331 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
+		91CD17DC16BDD0D4005CA331 /* SKAnimationSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAnimationSprite.h; sourceTree = "<group>"; };
+		91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAnimationSprite.m; sourceTree = "<group>"; };
+		91CD17DE16BDD0D4005CA331 /* Candle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candle.h; sourceTree = "<group>"; };
+		91CD17DF16BDD0D4005CA331 /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
 		D40219A116B55FEE003D4178 /* TiledMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledMapScene.h; sourceTree = "<group>"; };
 		D40219A216B55FEE003D4178 /* TiledMapScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledMapScene.m; sourceTree = "<group>"; };
 		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
-		D4198B1716BD6CD8003F61DA /* Candle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candle.h; sourceTree = "<group>"; };
-		D4198B1816BD6CD8003F61DA /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
 		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
 		D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_1_Projektfuehrung.doc; sourceTree = "<group>"; };
 		D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_2_Projektplan.doc; sourceTree = "<group>"; };
@@ -536,14 +536,14 @@
 				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
 				91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */,
 				91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */,
-				91C0BB2416B4470C0092FCA9 /* IntroLayer.h */,
-				91C0BB2516B4470C0092FCA9 /* IntroLayer.m */,
 				91C0B99116B4470A0092FCA9 /* Resources */,
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
 				D40219A116B55FEE003D4178 /* TiledMapScene.h */,
 				D40219A216B55FEE003D4178 /* TiledMapScene.m */,
-				D4198B1716BD6CD8003F61DA /* Candle.h */,
-				D4198B1816BD6CD8003F61DA /* Candle.m */,
+				91CD17DC16BDD0D4005CA331 /* SKAnimationSprite.h */,
+				91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */,
+				91CD17DE16BDD0D4005CA331 /* Candle.h */,
+				91CD17DF16BDD0D4005CA331 /* Candle.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1059,9 +1059,9 @@
 				91C0BB1D16B4470C0092FCA9 /* main.m in Sources */,
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
-				91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */,
 				D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */,
-				D4198B1916BD6CD8003F61DA /* Candle.m in Sources */,
+				91CD17E016BDD0D4005CA331 /* SKAnimationSprite.m in Sources */,
+				91CD17E116BDD0D4005CA331 /* Candle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
