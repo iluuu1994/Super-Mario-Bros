@@ -12,6 +12,7 @@
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
+#import "Candle.h"
 
 #pragma mark - HelloWorldLayer
 
@@ -58,6 +59,8 @@
         }
 
         [self addChild:self.tiledMap  z:-1];
+        
+        [self addChild:[Candle init]];
 	}
 	return self;
 }

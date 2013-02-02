@@ -142,6 +142,9 @@
 		91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */; };
 		91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2516B4470C0092FCA9 /* IntroLayer.m */; };
 		D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D40219A216B55FEE003D4178 /* TiledMapScene.m */; };
+		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
+		D4198B1916BD6CD8003F61DA /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = D4198B1816BD6CD8003F61DA /* Candle.m */; };
+		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -427,6 +430,10 @@
 		91C0BB2516B4470C0092FCA9 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		D40219A116B55FEE003D4178 /* TiledMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledMapScene.h; sourceTree = "<group>"; };
 		D40219A216B55FEE003D4178 /* TiledMapScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledMapScene.m; sourceTree = "<group>"; };
+		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
+		D4198B1716BD6CD8003F61DA /* Candle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candle.h; sourceTree = "<group>"; };
+		D4198B1816BD6CD8003F61DA /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
+		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
 		D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_1_Projektfuehrung.doc; sourceTree = "<group>"; };
 		D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_2_Projektplan.doc; sourceTree = "<group>"; };
 		D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_3_Projektantrag.doc; sourceTree = "<group>"; };
@@ -500,6 +507,8 @@
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
 				D40219A116B55FEE003D4178 /* TiledMapScene.h */,
 				D40219A216B55FEE003D4178 /* TiledMapScene.m */,
+				D4198B1716BD6CD8003F61DA /* Candle.h */,
+				D4198B1816BD6CD8003F61DA /* Candle.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -507,6 +516,8 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D4198B1516BD6CAD003F61DA /* Candle.png */,
+				D4198B1A16BD708D003F61DA /* Candle.plist */,
 				D49A65B216B842330063D85A /* doc */,
 				917E668216B45F850001F40C /* temple.tmx */,
 				917E668416B45F8C0001F40C /* zelda-tiles.png */,
@@ -962,6 +973,8 @@
 				91C0BAFE16B4470C0092FCA9 /* ChangeLog in Resources */,
 				917E668316B45F850001F40C /* temple.tmx in Resources */,
 				917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */,
+				D4198B1616BD6CAD003F61DA /* Candle.png in Resources */,
+				D4198B1B16BD708D003F61DA /* Candle.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1084,6 +1097,7 @@
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
 				91C0BB2616B4470C0092FCA9 /* IntroLayer.m in Sources */,
 				D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */,
+				D4198B1916BD6CD8003F61DA /* Candle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
