@@ -13,6 +13,4 @@
     
 }
 
--(void)animate;
-
 @end
