@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59E16BDDAD9008208D2 /* Frei.plist */; };
+		9171B5A116BDDAD9008208D2 /* Frei.png in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59F16BDDAD9008208D2 /* Frei.png */; };
+		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
 		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
 		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
@@ -171,6 +174,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9171B59E16BDDAD9008208D2 /* Frei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Frei.plist; sourceTree = "<group>"; };
+		9171B59F16BDDAD9008208D2 /* Frei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frei.png; sourceTree = "<group>"; };
+		9171B5A216BDDB00008208D2 /* Frei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frei.h; sourceTree = "<group>"; };
+		9171B5A316BDDB00008208D2 /* Frei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frei.m; sourceTree = "<group>"; };
 		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
 		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
 		91C0B97A16B4470A0092FCA9 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -494,6 +501,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9171B59C16BDDAB1008208D2 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				91C0B99216B4470A0092FCA9 /* Default.png */,
+				91C0B99416B4470A0092FCA9 /* Default@2x.png */,
+				91C0B99616B4470A0092FCA9 /* Default-568h@2x.png */,
+				91C0B99816B4470A0092FCA9 /* Default-Landscape~ipad.png */,
+				91C0B99A16B4470A0092FCA9 /* Icon-72.png */,
+				91C0B99C16B4470A0092FCA9 /* Icon-Small-50.png */,
+				91C0B99E16B4470A0092FCA9 /* Icon-Small.png */,
+				91C0B9A016B4470A0092FCA9 /* Icon-Small@2x.png */,
+				91C0B9A216B4470A0092FCA9 /* Icon.png */,
+				91C0B9A416B4470A0092FCA9 /* Icon@2x.png */,
+				91C0B9A616B4470A0092FCA9 /* Info.plist */,
+				91C0B9A716B4470A0092FCA9 /* iTunesArtwork */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		9171B59D16BDDAC2008208D2 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				917E668416B45F8C0001F40C /* zelda-tiles.png */,
+				917E668216B45F850001F40C /* temple.tmx */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
 		91C0B96F16B4470A0092FCA9 = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +579,8 @@
 				91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */,
 				91CD17DE16BDD0D4005CA331 /* Candle.h */,
 				91CD17DF16BDD0D4005CA331 /* Candle.m */,
+				9171B5A216BDDB00008208D2 /* Frei.h */,
+				9171B5A316BDDB00008208D2 /* Frei.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -551,23 +588,13 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D4198B1516BD6CAD003F61DA /* Candle.png */,
 				D4198B1A16BD708D003F61DA /* Candle.plist */,
+				D4198B1516BD6CAD003F61DA /* Candle.png */,
+				9171B59E16BDDAD9008208D2 /* Frei.plist */,
+				9171B59F16BDDAD9008208D2 /* Frei.png */,
+				9171B59D16BDDAC2008208D2 /* Maps */,
 				D49A65B216B842330063D85A /* doc */,
-				917E668216B45F850001F40C /* temple.tmx */,
-				917E668416B45F8C0001F40C /* zelda-tiles.png */,
-				91C0B99216B4470A0092FCA9 /* Default.png */,
-				91C0B99416B4470A0092FCA9 /* Default@2x.png */,
-				91C0B99616B4470A0092FCA9 /* Default-568h@2x.png */,
-				91C0B99816B4470A0092FCA9 /* Default-Landscape~ipad.png */,
-				91C0B99A16B4470A0092FCA9 /* Icon-72.png */,
-				91C0B99C16B4470A0092FCA9 /* Icon-Small-50.png */,
-				91C0B99E16B4470A0092FCA9 /* Icon-Small.png */,
-				91C0B9A016B4470A0092FCA9 /* Icon-Small@2x.png */,
-				91C0B9A216B4470A0092FCA9 /* Icon.png */,
-				91C0B9A416B4470A0092FCA9 /* Icon@2x.png */,
-				91C0B9A616B4470A0092FCA9 /* Info.plist */,
-				91C0B9A716B4470A0092FCA9 /* iTunesArtwork */,
+				9171B59C16BDDAB1008208D2 /* Icons */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1046,6 +1073,8 @@
 				917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */,
 				D4198B1616BD6CAD003F61DA /* Candle.png in Resources */,
 				D4198B1B16BD708D003F61DA /* Candle.plist in Resources */,
+				9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */,
+				9171B5A116BDDAD9008208D2 /* Frei.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,6 +1091,7 @@
 				D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */,
 				91CD17E016BDD0D4005CA331 /* SKAnimationSprite.m in Sources */,
 				91CD17E116BDD0D4005CA331 /* Candle.m in Sources */,
+				9171B5A416BDDB00008208D2 /* Frei.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
