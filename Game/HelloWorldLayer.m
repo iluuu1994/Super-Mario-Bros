@@ -60,7 +60,7 @@
 
         [self addChild:self.tiledMap  z:-1];
         
-        [self addChild:[Candle init]];
+        [self addChild:[Candle node]];
 	}
 	return self;
 }
