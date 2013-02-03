@@ -7,7 +7,7 @@
 //
 
 #import "Frei.h"
-#import "SKAnimationConfiguration.h"
+#import "STAnimationConfiguration.h"
 
 @implementation Frei
 
@@ -15,7 +15,7 @@
 {
     self = [super initWithDefaultSpriteFrameName:@"Frame1"
                          animationConfigurations:@[
-                                [SKAnimationConfiguration configurationWithName:@"Haija"
+                                [STAnimationConfiguration configurationWithName:@"Haija"
                                                                frameNamePattern:@"Frame%d"
                                                                           delay:1.0]
             ]];

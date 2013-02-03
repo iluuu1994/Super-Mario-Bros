@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "SKAnimationSprite.h"
-#import "SKAnimationConfiguration.h"
+#import "STAnimationSprite.h"
+#import "STAnimationConfiguration.h"
 
-@implementation SKAnimationSprite
+@implementation STAnimationSprite
 
 -(id)initWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
             animationConfigurations:(NSArray *)animationConfigurations {
@@ -17,7 +17,7 @@
     if (self = [super initWithSpriteFrameName:defaultSpriteFrameName]) {
         self.animations = [NSMutableDictionary dictionary];
         
-        for (SKAnimationConfiguration *config in animationConfigurations) {
+        for (STAnimationConfiguration *config in animationConfigurations) {
             self.animations[config.name] = [config animation];
         }
     }

@@ -7,10 +7,10 @@
 //
 
 // When you import this file, you import all the cocos2d classes
-#import "SKLayer.h"
+#import "STLayer.h"
 
 // HelloWorldLayer
-@interface HelloWorldLayer : SKLayer
+@interface HelloWorldLayer : STLayer
 {
 }
 

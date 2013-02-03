@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SKAnimationSprite.h"
+#import "STAnimationSprite.h"
 
-@interface Candle : SKAnimationSprite {
+@interface Candle : STAnimationSprite {
     
 }
 

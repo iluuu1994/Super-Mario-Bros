@@ -9,14 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@class SKScene;
-@protocol SKSceneChildLayer <NSObject>
+@class STScene;
+@protocol STSceneChildLayer <NSObject>
+
 @optional
-- (void)sceneWasAdded:(SKScene *)scene;
-- (void)sceneWasRemoved:(SKScene *)scene;
+- (void)sceneWasAdded:(STScene *)scene;
+- (void)sceneWasRemoved:(STScene *)scene;
+
 @end
 
-@interface SKScene : CCScene {
+@interface STScene : CCScene {
     
 }
 

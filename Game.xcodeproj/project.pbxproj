@@ -12,9 +12,9 @@
 		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
 		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
 		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
-		91AB077A16BE5EC900195D66 /* SKAnimationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077916BE5EC900195D66 /* SKAnimationConfiguration.m */; };
-		91AB077D16BE6D0E00195D66 /* SKScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* SKScene.m */; };
-		91AB078016BE704300195D66 /* SKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* SKLayer.m */; };
+		91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */; };
+		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
+		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
 		91C0B98116B4470A0092FCA9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98016B4470A0092FCA9 /* OpenGLES.framework */; };
 		91C0B98316B4470A0092FCA9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98216B4470A0092FCA9 /* OpenAL.framework */; };
@@ -147,7 +147,7 @@
 		91CD17D716BDCCA9005CA331 /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176916BDCCA9005CA331 /* vec3.c */; };
 		91CD17D816BDCCA9005CA331 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176A16BDCCA9005CA331 /* vec4.c */; };
 		91CD17D916BDCCE4005CA331 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CD165D16BDCBA9005CA331 /* libcocos2d.a */; };
-		91CD17E016BDD0D4005CA331 /* SKAnimationSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */; };
+		91CD17E016BDD0D4005CA331 /* STAnimationSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */; };
 		91CD17E116BDD0D4005CA331 /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DF16BDD0D4005CA331 /* Candle.m */; };
 		D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D40219A216B55FEE003D4178 /* TiledMapScene.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
@@ -183,12 +183,12 @@
 		9171B5A316BDDB00008208D2 /* Frei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frei.m; sourceTree = "<group>"; };
 		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
 		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
-		91AB077816BE5EC900195D66 /* SKAnimationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAnimationConfiguration.h; sourceTree = "<group>"; };
-		91AB077916BE5EC900195D66 /* SKAnimationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAnimationConfiguration.m; sourceTree = "<group>"; };
-		91AB077B16BE6D0D00195D66 /* SKScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScene.h; sourceTree = "<group>"; };
-		91AB077C16BE6D0D00195D66 /* SKScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScene.m; sourceTree = "<group>"; };
-		91AB077E16BE704300195D66 /* SKLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLayer.h; sourceTree = "<group>"; };
-		91AB077F16BE704300195D66 /* SKLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLayer.m; sourceTree = "<group>"; };
+		91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimationConfiguration.h; sourceTree = "<group>"; };
+		91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimationConfiguration.m; sourceTree = "<group>"; };
+		91AB077B16BE6D0D00195D66 /* STScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScene.h; sourceTree = "<group>"; };
+		91AB077C16BE6D0D00195D66 /* STScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScene.m; sourceTree = "<group>"; };
+		91AB077E16BE704300195D66 /* STLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayer.h; sourceTree = "<group>"; };
+		91AB077F16BE704300195D66 /* STLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLayer.m; sourceTree = "<group>"; };
 		91C0B97A16B4470A0092FCA9 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91C0B98016B4470A0092FCA9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -467,8 +467,8 @@
 		91CD176B16BDCCA9005CA331 /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
 		91CD176C16BDCCA9005CA331 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
 		91CD176D16BDCCA9005CA331 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
-		91CD17DC16BDD0D4005CA331 /* SKAnimationSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAnimationSprite.h; sourceTree = "<group>"; };
-		91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAnimationSprite.m; sourceTree = "<group>"; };
+		91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimationSprite.h; sourceTree = "<group>"; };
+		91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimationSprite.m; sourceTree = "<group>"; };
 		91CD17DE16BDD0D4005CA331 /* Candle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candle.h; sourceTree = "<group>"; };
 		91CD17DF16BDD0D4005CA331 /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
 		D40219A116B55FEE003D4178 /* TiledMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledMapScene.h; sourceTree = "<group>"; };
@@ -578,24 +578,24 @@
 			children = (
 				91C0BB1E16B4470C0092FCA9 /* AppDelegate.h */,
 				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
-				91AB077B16BE6D0D00195D66 /* SKScene.h */,
-				91AB077C16BE6D0D00195D66 /* SKScene.m */,
-				91AB077E16BE704300195D66 /* SKLayer.h */,
-				91AB077F16BE704300195D66 /* SKLayer.m */,
+				91AB077B16BE6D0D00195D66 /* STScene.h */,
+				91AB077C16BE6D0D00195D66 /* STScene.m */,
+				91AB077E16BE704300195D66 /* STLayer.h */,
+				91AB077F16BE704300195D66 /* STLayer.m */,
 				91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */,
 				91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */,
 				91C0B99116B4470A0092FCA9 /* Resources */,
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
 				D40219A116B55FEE003D4178 /* TiledMapScene.h */,
 				D40219A216B55FEE003D4178 /* TiledMapScene.m */,
-				91CD17DC16BDD0D4005CA331 /* SKAnimationSprite.h */,
-				91CD17DD16BDD0D4005CA331 /* SKAnimationSprite.m */,
+				91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */,
+				91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */,
 				91CD17DE16BDD0D4005CA331 /* Candle.h */,
 				91CD17DF16BDD0D4005CA331 /* Candle.m */,
 				9171B5A216BDDB00008208D2 /* Frei.h */,
 				9171B5A316BDDB00008208D2 /* Frei.m */,
-				91AB077816BE5EC900195D66 /* SKAnimationConfiguration.h */,
-				91AB077916BE5EC900195D66 /* SKAnimationConfiguration.m */,
+				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
+				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1104,12 +1104,12 @@
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
 				D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */,
-				91CD17E016BDD0D4005CA331 /* SKAnimationSprite.m in Sources */,
+				91CD17E016BDD0D4005CA331 /* STAnimationSprite.m in Sources */,
 				91CD17E116BDD0D4005CA331 /* Candle.m in Sources */,
 				9171B5A416BDDB00008208D2 /* Frei.m in Sources */,
-				91AB077A16BE5EC900195D66 /* SKAnimationConfiguration.m in Sources */,
-				91AB077D16BE6D0E00195D66 /* SKScene.m in Sources */,
-				91AB078016BE704300195D66 /* SKLayer.m in Sources */,
+				91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */,
+				91AB077D16BE6D0E00195D66 /* STScene.m in Sources */,
+				91AB078016BE704300195D66 /* STLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

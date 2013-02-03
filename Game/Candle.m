@@ -7,7 +7,7 @@
 //
 
 #import "Candle.h"
-#import "SKAnimationConfiguration.h"
+#import "STAnimationConfiguration.h"
 
 @implementation Candle
 
@@ -15,7 +15,7 @@
 {
     self = [super initWithDefaultSpriteFrameName:@"Candle_1.png"
                          animationConfigurations:@[
-                            [SKAnimationConfiguration configurationWithName:@"Burn"
+                            [STAnimationConfiguration configurationWithName:@"Burn"
                                                            frameNamePattern:@"Candle_%d.png" delay:0.1]
             ]];
     

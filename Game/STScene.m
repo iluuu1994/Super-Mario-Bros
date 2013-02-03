@@ -6,15 +6,15 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "SKScene.h"
-#import "SKLayer.h"
+#import "STScene.h"
+#import "STLayer.h"
 
-@implementation SKScene
+@implementation STScene
 
 - (void)onEnter {
     [super onEnter];
     
-    for (SKLayer *layer in [self children]) {
+    for (STLayer *layer in [self children]) {
         if ([layer respondsToSelector:@selector(sceneWasAdded:)]) {
             [layer sceneWasAdded:self];
         }
@@ -24,7 +24,7 @@
 - (void)onExit {
     [super onExit];
     
-    for (SKLayer *layer in [self children]) {
+    for (STLayer *layer in [self children]) {
         if ([layer respondsToSelector:@selector(sceneWasRemoved:)]) {
             [layer sceneWasRemoved:self];
         }

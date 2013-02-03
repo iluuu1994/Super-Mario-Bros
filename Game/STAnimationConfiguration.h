@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface SKAnimationConfiguration : NSObject
+@interface STAnimationConfiguration : NSObject
 
 @property (unsafe_unretained) NSString *name;
 @property (unsafe_unretained) NSString *frameNamePattern;

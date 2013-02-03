@@ -8,14 +8,18 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
-#import "SKScene.h"
+#import "STScene.h"
 
-@interface SKLayer : CCLayer <SKSceneChildLayer> {
+@interface STLayer : CCLayer <STSceneChildLayer> {
     
 }
 
-+ (SKScene *)scene;
+// Scene
++ (STScene *)scene;
++ (Class)sceneClass;
++ (void)setSceneClass:(Class)sceneClass;
 
+// Init and Destroy
 - (void)setUp;
 - (void)tearDown;
 

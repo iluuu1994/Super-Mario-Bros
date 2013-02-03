@@ -8,7 +8,7 @@
 
 #import "cocos2d.h"
 
-@interface SKAnimationSprite : CCSprite
+@interface STAnimationSprite : CCSprite
 
 -(id)initWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
             animationConfigurations:(NSArray *)animationConfigurations;

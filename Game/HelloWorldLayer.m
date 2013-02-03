@@ -48,10 +48,10 @@
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"Frei.plist"];
 }
 
-- (void)sceneWasAdded:(SKScene *)scene {
+- (void)sceneWasAdded:(STScene *)scene {
 }
 
-- (void)sceneWasRemoved:(SKScene *)scene {
+- (void)sceneWasRemoved:(STScene *)scene {
 }
 
 @end

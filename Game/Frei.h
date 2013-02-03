@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "SKAnimationSprite.h"
+#import "STAnimationSprite.h"
 
-@interface Frei : SKAnimationSprite
+@interface Frei : STAnimationSprite
 
 @end
