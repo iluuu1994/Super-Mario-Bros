@@ -7,6 +7,7 @@
 //
 
 #import "Frei.h"
+#import "SKAnimationConfiguration.h"
 
 @implementation Frei
 
@@ -14,9 +15,13 @@
 {
     self = [super initWithDefaultSpriteFrameName:@"Frame1"
                                        plistFile:@"Frei.plist"
-                     spriteFrameNamingConvention:@"Frame%d"];
+                         animationConfigurations:@[
+                                [SKAnimationConfiguration configurationWithName:@"Haija"
+                                                               frameNamePattern:@"Frame%d"]
+            ]];
+    
     if (self) {
-        
+        [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Haija"]]]];
     }
     return self;
 }

@@ -66,14 +66,16 @@
         /*
         Candle *candle = [Candle node];
         [candle setPosition:ccp(winSize.width / 2, winSize.height / 2)];
-        [self addChild:candle];*/
-        
+        [self addChild:candle];
+         */
+
         CCLayerColor* colorLayer = [CCLayerColor layerWithColor:ccc4(255, 255, 255, 255)];
         [self addChild:colorLayer z:0];
         
         Frei *man = [Frei node];
         [man setPosition:ccp(winSize.width / 2, winSize.height / 2)];
         [self addChild:man];
+
 	}
 	return self;
 }

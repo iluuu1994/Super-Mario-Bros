@@ -12,6 +12,7 @@
 		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
 		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
 		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
+		91AB077A16BE5EC900195D66 /* SKAnimationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077916BE5EC900195D66 /* SKAnimationConfiguration.m */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
 		91C0B98116B4470A0092FCA9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98016B4470A0092FCA9 /* OpenGLES.framework */; };
 		91C0B98316B4470A0092FCA9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98216B4470A0092FCA9 /* OpenAL.framework */; };
@@ -180,6 +181,8 @@
 		9171B5A316BDDB00008208D2 /* Frei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frei.m; sourceTree = "<group>"; };
 		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
 		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
+		91AB077816BE5EC900195D66 /* SKAnimationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKAnimationConfiguration.h; sourceTree = "<group>"; };
+		91AB077916BE5EC900195D66 /* SKAnimationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKAnimationConfiguration.m; sourceTree = "<group>"; };
 		91C0B97A16B4470A0092FCA9 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91C0B98016B4470A0092FCA9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -581,6 +584,8 @@
 				91CD17DF16BDD0D4005CA331 /* Candle.m */,
 				9171B5A216BDDB00008208D2 /* Frei.h */,
 				9171B5A316BDDB00008208D2 /* Frei.m */,
+				91AB077816BE5EC900195D66 /* SKAnimationConfiguration.h */,
+				91AB077916BE5EC900195D66 /* SKAnimationConfiguration.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1092,6 +1097,7 @@
 				91CD17E016BDD0D4005CA331 /* SKAnimationSprite.m in Sources */,
 				91CD17E116BDD0D4005CA331 /* Candle.m in Sources */,
 				9171B5A416BDDB00008208D2 /* Frei.m in Sources */,
+				91AB077A16BE5EC900195D66 /* SKAnimationConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,49 +7,51 @@
 //
 
 #import "SKAnimationSprite.h"
+#import "SKAnimationConfiguration.h"
 
 @implementation SKAnimationSprite
 
 -(id)initWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
                           plistFile:(NSString *)plistFile
-        spriteFrameNamingConvention:(NSString *)spriteFrameNamingConvention {
+            animationConfigurations:(NSArray *)animationConfigurations {
     
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:plistFile];
     
     if (self = [super initWithSpriteFrameName:defaultSpriteFrameName]) {
+        self.animations = [NSMutableDictionary dictionary];
         
-        NSMutableArray *animationFrames = [NSMutableArray array];
-        
-        BOOL continueLoop = YES;
-        
-        int i = 1;
-        while (continueLoop) {
-            id object = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:spriteFrameNamingConvention, i]];
+        for (SKAnimationConfiguration *config in animationConfigurations) {
+            NSMutableArray *animationFrames = [NSMutableArray array];
             
-            if (!object) {
-                continueLoop = NO;
-            } else {
-                [animationFrames addObject:object];
+            BOOL continueLoop = YES;
+            
+            int i = 1;
+            while (continueLoop) {
+                id object = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:config.frameNamePattern, i]];
+                
+                if (!object) {
+                    continueLoop = NO;
+                } else {
+                    [animationFrames addObject:object];
+                }
+                
+                i++;
             }
             
-            i++;
+            CCAnimation *animation = [CCAnimation animationWithSpriteFrames:animationFrames delay:0.1f];
+            self.animations[config.name] = animation;
         }
-        
-        CCAnimation *animation = [CCAnimation animationWithSpriteFrames:animationFrames delay:0.1f];
-        CCAction *candleAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:animation]];
-        [self runAction:candleAction];
-        
     }
     return self;
 }
 
-+ (id)spriteWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
-                             plistFile:(NSString *)plistFile
-           spriteFrameNamingConvention:(NSString *)spriteFrameNamingConvention {
++(id)spriteWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
+                            plistFile:(NSString *)plistFile
+              animationConfigurations:(NSArray *)animationConfigurations {
     
     return [[self alloc] initWithDefaultSpriteFrameName:defaultSpriteFrameName
-                                       plistFile:plistFile
-                     spriteFrameNamingConvention:spriteFrameNamingConvention];
+                                              plistFile:plistFile
+                                animationConfigurations:animationConfigurations];
 }
 
 @end

@@ -7,17 +7,15 @@
 //
 
 #import "Candle.h"
-
+#import "SKAnimationConfiguration.h"
 
 @implementation Candle
 
 - (id)init
 {
-    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png"
-                                       plistFile:@"Candle.plist"
-                     spriteFrameNamingConvention:@"Candle_%d.png"];
+    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png" plistFile:@"Candle.plist" animationConfigurations:@[ [SKAnimationConfiguration configurationWithName:@"Burn" frameNamePattern:@"Candle_%d.png"] ]];
     if (self) {
-        
+        [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Burn"]]]];
     }
     return self;
 }

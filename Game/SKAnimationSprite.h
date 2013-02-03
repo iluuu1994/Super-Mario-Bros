@@ -12,10 +12,12 @@
 
 -(id)initWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
                           plistFile:(NSString *)plistFile
-        spriteFrameNamingConvention:(NSString *)spriteFrameNamingConvention;
+            animationConfigurations:(NSArray *)animationConfigurations;
 
 +(id)spriteWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
-                            plistFile:(NSString *)plistFile
-          spriteFrameNamingConvention:(NSString *)spriteFrameNamingConvention;
+                          plistFile:(NSString *)plistFile
+              animationConfigurations:(NSArray *)animationConfigurations;
+
+@property (retain) NSMutableDictionary *animations;
 
 @end
