@@ -14,15 +14,17 @@
 - (id)init
 {
     self = [super initWithDefaultSpriteFrameName:@"Frame1"
-                                       plistFile:@"Frei.plist"
                          animationConfigurations:@[
                                 [SKAnimationConfiguration configurationWithName:@"Haija"
                                                                frameNamePattern:@"Frame%d"
-                                                                          delay:0.1]
+                                                                          delay:1.0]
             ]];
     
     if (self) {
-        [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Haija"]]]];
+        [self runAction:[CCRepeatForever actionWithAction:
+                         [CCAnimate actionWithAnimation:self.animations[@"Haija"]]]];
+        
+        
     }
     return self;
 }

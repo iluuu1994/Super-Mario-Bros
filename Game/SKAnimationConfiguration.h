@@ -23,4 +23,6 @@
   frameNamePattern:(NSString *)frameNamePattern
              delay:(NSTimeInterval)delay;
 
+- (CCAnimation *)animation;
+
 @end

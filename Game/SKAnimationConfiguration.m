@@ -33,4 +33,25 @@
                                 delay:delay];
 }
 
+- (CCAnimation *)animation {
+    NSMutableArray *animationFrames = [NSMutableArray array];
+    
+    BOOL continueLoop = YES;
+    
+    int i = 1;
+    while (continueLoop) {
+        id object = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:self.frameNamePattern, i]];
+        
+        if (!object) {
+            continueLoop = NO;
+        } else {
+            [animationFrames addObject:object];
+        }
+        
+        i++;
+    }
+    
+    return [CCAnimation animationWithSpriteFrames:animationFrames delay:self.delay];
+}
+
 @end

@@ -11,11 +11,9 @@
 @interface SKAnimationSprite : CCSprite
 
 -(id)initWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
-                          plistFile:(NSString *)plistFile
             animationConfigurations:(NSArray *)animationConfigurations;
 
 +(id)spriteWithDefaultSpriteFrameName:(NSString *)defaultSpriteFrameName
-                          plistFile:(NSString *)plistFile
               animationConfigurations:(NSArray *)animationConfigurations;
 
 @property (retain) NSMutableDictionary *animations;

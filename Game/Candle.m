@@ -13,7 +13,12 @@
 
 - (id)init
 {
-    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png" plistFile:@"Candle.plist" animationConfigurations:@[ [SKAnimationConfiguration configurationWithName:@"Burn" frameNamePattern:@"Candle_%d.png" delay:0.1] ]];
+    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png"
+                         animationConfigurations:@[
+                            [SKAnimationConfiguration configurationWithName:@"Burn"
+                                                           frameNamePattern:@"Candle_%d.png" delay:0.1]
+            ]];
+    
     if (self) {
         [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Burn"]]]];
     }
