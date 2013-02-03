@@ -17,7 +17,8 @@
                                        plistFile:@"Frei.plist"
                          animationConfigurations:@[
                                 [SKAnimationConfiguration configurationWithName:@"Haija"
-                                                               frameNamePattern:@"Frame%d"]
+                                                               frameNamePattern:@"Frame%d"
+                                                                          delay:0.1]
             ]];
     
     if (self) {

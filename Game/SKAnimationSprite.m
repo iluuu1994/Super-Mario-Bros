@@ -38,7 +38,7 @@
                 i++;
             }
             
-            CCAnimation *animation = [CCAnimation animationWithSpriteFrames:animationFrames delay:0.1f];
+            CCAnimation *animation = [CCAnimation animationWithSpriteFrames:animationFrames delay:config.delay];
             self.animations[config.name] = animation;
         }
     }

@@ -11,23 +11,26 @@
 @implementation SKAnimationConfiguration
 
 - (id)initWithName:(NSString *)name
-           frameNamePattern:(NSString *)frameNamePattern {
+  frameNamePattern:(NSString *)frameNamePattern
+             delay:(NSTimeInterval)delay {
     
     if (self = [super init]) {
         self.name = name;
         self.frameNamePattern = frameNamePattern;
+        self.delay = delay;
     }
     
     return self;
 }
 
 + (id)configurationWithName:(NSString *)name
-                    frameNamePattern:(NSString *)frameNamePattern {
+  frameNamePattern:(NSString *)frameNamePattern
+             delay:(NSTimeInterval)delay; {
 
 
     return [[self alloc] initWithName:name
-                              frameNamePattern:frameNamePattern];
-    
+                              frameNamePattern:frameNamePattern
+                                delay:delay];
 }
 
 @end
