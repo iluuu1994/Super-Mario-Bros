@@ -8,8 +8,5 @@
    H4sIAAAAAAAAA7NkYGBwBmIXIHYEYicK+K5AvAaI06mEN1PZvMuj7hv27tNnZGAwAGJDIDYCYmMgNgFiUyA2A2JzILYAYksgtiKg1hqIAWK8FYQgAwAA
   </data>
  </layer>
- <objectgroup name="objects" width="20" height="10">
-  <object name="Some Candle" type="Candle" x="46" y="56" width="16" height="48"/>
-  <object name="Frei 1" type="Frei" x="144" y="77"/>
- </objectgroup>
+ <objectgroup name="objects" width="20" height="10"/>
 </map>

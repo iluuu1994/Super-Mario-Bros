@@ -41,7 +41,7 @@
     [man setPosition:ccp(winSize.width / 3, winSize.height / 2)];
     [self addChild:man];*/
     
-    STTiledMapLayer *map = [STTiledMapLayer layerWithTiledMap:@"temple.tmx"];
+    STTiledMapLayer *map = [STTiledMapLayer layerWithTiledMap:@"Level1.tmx"];
     [self addChild:map];
 }
 
