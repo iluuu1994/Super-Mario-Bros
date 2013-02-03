@@ -15,6 +15,7 @@
 		91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */; };
 		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
 		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
+		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
 		91C0B98116B4470A0092FCA9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98016B4470A0092FCA9 /* OpenGLES.framework */; };
 		91C0B98316B4470A0092FCA9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98216B4470A0092FCA9 /* OpenAL.framework */; };
@@ -149,7 +150,6 @@
 		91CD17D916BDCCE4005CA331 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CD165D16BDCBA9005CA331 /* libcocos2d.a */; };
 		91CD17E016BDD0D4005CA331 /* STAnimationSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */; };
 		91CD17E116BDD0D4005CA331 /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DF16BDD0D4005CA331 /* Candle.m */; };
-		D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D40219A216B55FEE003D4178 /* TiledMapScene.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
 		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
 /* End PBXBuildFile section */
@@ -189,6 +189,8 @@
 		91AB077C16BE6D0D00195D66 /* STScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScene.m; sourceTree = "<group>"; };
 		91AB077E16BE704300195D66 /* STLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayer.h; sourceTree = "<group>"; };
 		91AB077F16BE704300195D66 /* STLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLayer.m; sourceTree = "<group>"; };
+		91AB078116BE912400195D66 /* STTiledMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTiledMapLayer.h; sourceTree = "<group>"; };
+		91AB078216BE912400195D66 /* STTiledMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTiledMapLayer.m; sourceTree = "<group>"; };
 		91C0B97A16B4470A0092FCA9 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91C0B98016B4470A0092FCA9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -471,8 +473,6 @@
 		91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimationSprite.m; sourceTree = "<group>"; };
 		91CD17DE16BDD0D4005CA331 /* Candle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candle.h; sourceTree = "<group>"; };
 		91CD17DF16BDD0D4005CA331 /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
-		D40219A116B55FEE003D4178 /* TiledMapScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledMapScene.h; sourceTree = "<group>"; };
-		D40219A216B55FEE003D4178 /* TiledMapScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledMapScene.m; sourceTree = "<group>"; };
 		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
 		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
 		D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_1_Projektfuehrung.doc; sourceTree = "<group>"; };
@@ -582,20 +582,20 @@
 				91AB077C16BE6D0D00195D66 /* STScene.m */,
 				91AB077E16BE704300195D66 /* STLayer.h */,
 				91AB077F16BE704300195D66 /* STLayer.m */,
+				91AB078116BE912400195D66 /* STTiledMapLayer.h */,
+				91AB078216BE912400195D66 /* STTiledMapLayer.m */,
 				91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */,
 				91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */,
 				91C0B99116B4470A0092FCA9 /* Resources */,
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
-				D40219A116B55FEE003D4178 /* TiledMapScene.h */,
-				D40219A216B55FEE003D4178 /* TiledMapScene.m */,
 				91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */,
 				91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */,
+				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
+				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
 				91CD17DE16BDD0D4005CA331 /* Candle.h */,
 				91CD17DF16BDD0D4005CA331 /* Candle.m */,
 				9171B5A216BDDB00008208D2 /* Frei.h */,
 				9171B5A316BDDB00008208D2 /* Frei.m */,
-				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
-				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -1103,13 +1103,13 @@
 				91C0BB1D16B4470C0092FCA9 /* main.m in Sources */,
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
-				D40219A316B55FEE003D4178 /* TiledMapScene.m in Sources */,
 				91CD17E016BDD0D4005CA331 /* STAnimationSprite.m in Sources */,
 				91CD17E116BDD0D4005CA331 /* Candle.m in Sources */,
 				9171B5A416BDDB00008208D2 /* Frei.m in Sources */,
 				91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */,
 				91AB077D16BE6D0E00195D66 /* STScene.m in Sources */,
 				91AB078016BE704300195D66 /* STLayer.m in Sources */,
+				91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
