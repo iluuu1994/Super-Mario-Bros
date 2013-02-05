@@ -15,5 +15,6 @@
 
 @property (retain) CCTMXTiledMap *map;
 @property (retain) CCTMXObjectGroup *objectGroup;
+@property (retain) CCTMXLayer *objectLayer;
 
 @end

@@ -12,6 +12,8 @@
 		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
 		9174745F16BF1E2000FA7B10 /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */; };
 		9174746116BF1E2500FA7B10 /* Level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9174746016BF1E2500FA7B10 /* Level1.tmx */; };
+		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
+		917737EF16C19BB7001C1AAD /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 917737EE16C19BB7001C1AAD /* block.png */; };
 		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
 		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
 		91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */; };
@@ -185,6 +187,9 @@
 		9171B5A316BDDB00008208D2 /* Frei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frei.m; sourceTree = "<group>"; };
 		9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SMB-Tiles.gif"; sourceTree = "<group>"; };
 		9174746016BF1E2500FA7B10 /* Level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level1.tmx; sourceTree = "<group>"; };
+		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
+		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
+		917737EE16C19BB7001C1AAD /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
 		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
 		91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimationConfiguration.h; sourceTree = "<group>"; };
@@ -614,6 +619,9 @@
 				91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */,
 				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
 				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
+				917737EB16C19B51001C1AAD /* STBlock.h */,
+				917737EC16C19B51001C1AAD /* STBlock.m */,
+				917737EE16C19BB7001C1AAD /* block.png */,
 				91CD17DE16BDD0D4005CA331 /* Candle.h */,
 				91CD17DF16BDD0D4005CA331 /* Candle.m */,
 				9171B5A216BDDB00008208D2 /* Frei.h */,
@@ -1114,6 +1122,7 @@
 				9171B5A116BDDAD9008208D2 /* Frei.png in Resources */,
 				9174745F16BF1E2000FA7B10 /* SMB-Tiles.gif in Resources */,
 				9174746116BF1E2500FA7B10 /* Level1.tmx in Resources */,
+				917737EF16C19BB7001C1AAD /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,6 +1143,7 @@
 				91AB077D16BE6D0E00195D66 /* STScene.m in Sources */,
 				91AB078016BE704300195D66 /* STLayer.m in Sources */,
 				91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */,
+				917737ED16C19B51001C1AAD /* STBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
