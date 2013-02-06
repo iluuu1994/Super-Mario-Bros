@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         self.map = [CCTMXTiledMap tiledMapWithTMXFile:tiledMap];
-        self.objectGroup = [self.map objectGroupNamed:@"objects"];
+        self.objectGroup = [self.map objectGroupNamed:@"events"];
         self.objectLayer = [self.map layerNamed:@"objects"];
         
         [self addChild:self.map];
@@ -35,16 +35,15 @@
             }
         }
         
-        [self.objectLayer setVisible:NO];
+        /* 
+            Würd me ner ire subclass mache
+         */
         
-        /*
-        for (NSDictionary *object in self.objectGroup.objects) {
-            Class objectClass = NSClassFromString(object[@"type"]);
-            CCNode *node = [objectClass node];
-            [node setPosition:ccp([object[@"x"] intValue], [object[@"y"] intValue])];
-            
-            [self addChild:node];
-        }*/
+        NSDictionary *properties = [self.objectGroup objectNamed:@"marioSpawnPoint"];
+        NSLog(@"%@", properties);
+        NSLog(@"%@ %@", properties[@"x"], properties[@"y"]);
+        
+        [self.objectLayer setVisible:NO];
     }
     return self;
 }

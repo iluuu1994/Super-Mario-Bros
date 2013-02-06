@@ -23,4 +23,7 @@
    H4sIAAAAAAAAA+3VsQkAQAgEQSP7L/kT0wOzR5iBrWGruK4nANjoEAAk6R0eAgD/PWwOfVTgFQAA
   </data>
  </layer>
+ <objectgroup name="events" width="100" height="14">
+  <object name="marioSpawnPoint" type="marioSpawnPoint" x="54" y="138"/>
+ </objectgroup>
 </map>
