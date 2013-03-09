@@ -488,6 +488,8 @@
 		D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_2_Projektplan.doc; sourceTree = "<group>"; };
 		D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1_3_Projektantrag.doc; sourceTree = "<group>"; };
 		D49A65B716B8424E0063D85A /* Projektrollen.vsd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Projektrollen.vsd; sourceTree = "<group>"; };
+		D4A560D616EBB8EF00B5690C /* 2_1_Voranalysebericht.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_1_Voranalysebericht.doc; sourceTree = "<group>"; };
+		D4A560D716EBB8EF00B5690C /* 3_1_Konzeptbericht.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_1_Konzeptbericht.doc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1025,6 +1027,8 @@
 		D49A65B216B842330063D85A /* doc */ = {
 			isa = PBXGroup;
 			children = (
+				D4A560D616EBB8EF00B5690C /* 2_1_Voranalysebericht.doc */,
+				D4A560D716EBB8EF00B5690C /* 3_1_Konzeptbericht.doc */,
 				D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */,
 				D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */,
 				D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */,
