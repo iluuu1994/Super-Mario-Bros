@@ -166,6 +166,13 @@
 		D4A1226316EBC01500474B7F /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1225916EBC01500474B7F /* start.png */; };
 		D4A1226416EBC01500474B7F /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1225A16EBC01500474B7F /* success.png */; };
 		D4A1226516EBC01500474B7F /* worlds.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1225B16EBC01500474B7F /* worlds.png */; };
+		D4FD441C16EC8F8A002A786F /* 1_2_Projektplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD441B16EC8F8A002A786F /* 1_2_Projektplan.pdf */; };
+		D4FD441E16EC8F94002A786F /* 1_3_Projektantrag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD441D16EC8F94002A786F /* 1_3_Projektantrag.pdf */; };
+		D4FD442016EC8FA0002A786F /* 2_1_Voranalysebericht.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD441F16EC8FA0002A786F /* 2_1_Voranalysebericht.pdf */; };
+		D4FD442716EC8FD1002A786F /* IlijaTovilo_LukasSeglias_flyer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD442316EC8FD1002A786F /* IlijaTovilo_LukasSeglias_flyer.pdf */; };
+		D4FD442816EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektantrag.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD442416EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektantrag.pdf */; };
+		D4FD442916EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD442516EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektplan.pdf */; };
+		D4FD442A16EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Voranalysebericht.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4FD442616EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Voranalysebericht.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -501,7 +508,6 @@
 		D4A1224C16EBC00700474B7F /* Projektflyer.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = Projektflyer.docx; sourceTree = "<group>"; };
 		D4A1224D16EBC00700474B7F /* Projektflyer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Projektflyer.pdf; sourceTree = "<group>"; };
 		D4A1224E16EBC00E00474B7F /* Use Case Diagram.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Use Case Diagram.dia"; sourceTree = "<group>"; };
-		D4A1224F16EBC00E00474B7F /* Use Case Diagram.dia~ */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Use Case Diagram.dia~"; sourceTree = "<group>"; };
 		D4A1225016EBC00E00474B7F /* Use Case Diagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Use Case Diagram.png"; sourceTree = "<group>"; };
 		D4A1225116EBC01500474B7F /* Klassenhierarchie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Klassenhierarchie.png; sourceTree = "<group>"; };
 		D4A1225316EBC01500474B7F /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
@@ -516,6 +522,14 @@
 		D4A1226616EBC01E00474B7F /* Klassenhierarchie.dia */ = {isa = PBXFileReference; lastKnownFileType = file; path = Klassenhierarchie.dia; sourceTree = "<group>"; };
 		D4A560D616EBB8EF00B5690C /* 2_1_Voranalysebericht.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2_1_Voranalysebericht.doc; sourceTree = "<group>"; };
 		D4A560D716EBB8EF00B5690C /* 3_1_Konzeptbericht.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3_1_Konzeptbericht.doc; sourceTree = "<group>"; };
+		D4FD441B16EC8F8A002A786F /* 1_2_Projektplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1_2_Projektplan.pdf; sourceTree = "<group>"; };
+		D4FD441D16EC8F94002A786F /* 1_3_Projektantrag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1_3_Projektantrag.pdf; sourceTree = "<group>"; };
+		D4FD441F16EC8FA0002A786F /* 2_1_Voranalysebericht.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 2_1_Voranalysebericht.pdf; sourceTree = "<group>"; };
+		D4FD442116EC8FA8002A786F /* Cocos2d Structure.vsd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cocos2d Structure.vsd"; sourceTree = "<group>"; };
+		D4FD442316EC8FD1002A786F /* IlijaTovilo_LukasSeglias_flyer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IlijaTovilo_LukasSeglias_flyer.pdf; sourceTree = "<group>"; };
+		D4FD442416EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektantrag.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IlijaTovilo_LukasSeglias_Projektantrag.pdf; sourceTree = "<group>"; };
+		D4FD442516EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IlijaTovilo_LukasSeglias_Projektplan.pdf; sourceTree = "<group>"; };
+		D4FD442616EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Voranalysebericht.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = IlijaTovilo_LukasSeglias_Voranalysebericht.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1053,20 +1067,27 @@
 		D49A65B216B842330063D85A /* doc */ = {
 			isa = PBXGroup;
 			children = (
-				D4A560D616EBB8EF00B5690C /* 2_1_Voranalysebericht.doc */,
-				D4A560D716EBB8EF00B5690C /* 3_1_Konzeptbericht.doc */,
 				D49A65B416B8424E0063D85A /* 1_1_Projektfuehrung.doc */,
-				D4A1225116EBC01500474B7F /* Klassenhierarchie.png */,
-				D4A1225216EBC01500474B7F /* screendesign */,
-				D4A1224E16EBC00E00474B7F /* Use Case Diagram.dia */,
-				D4A1224F16EBC00E00474B7F /* Use Case Diagram.dia~ */,
+				D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */,
+				D4FD441B16EC8F8A002A786F /* 1_2_Projektplan.pdf */,
+				D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */,
+				D4FD441D16EC8F94002A786F /* 1_3_Projektantrag.pdf */,
+				D4A560D616EBB8EF00B5690C /* 2_1_Voranalysebericht.doc */,
+				D4FD441F16EC8FA0002A786F /* 2_1_Voranalysebericht.pdf */,
+				D4A560D716EBB8EF00B5690C /* 3_1_Konzeptbericht.doc */,
+				D4FD442116EC8FA8002A786F /* Cocos2d Structure.vsd */,
+				D4FD442316EC8FD1002A786F /* IlijaTovilo_LukasSeglias_flyer.pdf */,
+				D4FD442416EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektantrag.pdf */,
+				D4FD442516EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektplan.pdf */,
+				D4FD442616EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Voranalysebericht.pdf */,
 				D4A1226616EBC01E00474B7F /* Klassenhierarchie.dia */,
-				D4A1225016EBC00E00474B7F /* Use Case Diagram.png */,
+				D4A1225116EBC01500474B7F /* Klassenhierarchie.png */,
 				D4A1224C16EBC00700474B7F /* Projektflyer.docx */,
 				D4A1224D16EBC00700474B7F /* Projektflyer.pdf */,
-				D49A65B516B8424E0063D85A /* 1_2_Projektplan.doc */,
-				D49A65B616B8424E0063D85A /* 1_3_Projektantrag.doc */,
 				D49A65B716B8424E0063D85A /* Projektrollen.vsd */,
+				D4A1225216EBC01500474B7F /* screendesign */,
+				D4A1224E16EBC00E00474B7F /* Use Case Diagram.dia */,
+				D4A1225016EBC00E00474B7F /* Use Case Diagram.png */,
 			);
 			name = doc;
 			sourceTree = "<group>";
@@ -1187,6 +1208,13 @@
 				D4A1226316EBC01500474B7F /* start.png in Resources */,
 				D4A1226416EBC01500474B7F /* success.png in Resources */,
 				D4A1226516EBC01500474B7F /* worlds.png in Resources */,
+				D4FD441C16EC8F8A002A786F /* 1_2_Projektplan.pdf in Resources */,
+				D4FD441E16EC8F94002A786F /* 1_3_Projektantrag.pdf in Resources */,
+				D4FD442016EC8FA0002A786F /* 2_1_Voranalysebericht.pdf in Resources */,
+				D4FD442716EC8FD1002A786F /* IlijaTovilo_LukasSeglias_flyer.pdf in Resources */,
+				D4FD442816EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektantrag.pdf in Resources */,
+				D4FD442916EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Projektplan.pdf in Resources */,
+				D4FD442A16EC8FD1002A786F /* IlijaTovilo_LukasSeglias_Voranalysebericht.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
