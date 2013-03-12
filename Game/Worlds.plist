@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Worlds</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<integer>0</integer>
+			<key>Name</key>
+			<string>Insert World Name here...</string>
+			<key>Icon</key>
+			<string>Insert Icon Name here...</string>
+			<key>isLocked</key>
+			<false/>
+			<key>Levels</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>isLocked</key>
+					<false/>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
