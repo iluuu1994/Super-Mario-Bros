@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9125D54C16EF6424008AFCA0 /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9125D54B16EF6424008AFCA0 /* Worlds.plist */; };
+		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
 		9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59E16BDDAD9008208D2 /* Frei.plist */; };
 		9171B5A116BDDAD9008208D2 /* Frei.png in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59F16BDDAD9008208D2 /* Frei.png */; };
 		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
 		9174745F16BF1E2000FA7B10 /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */; };
-		9174746116BF1E2500FA7B10 /* Level1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9174746016BF1E2500FA7B10 /* Level1.tmx */; };
+		9174746116BF1E2500FA7B10 /* world_1_level_1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9174746016BF1E2500FA7B10 /* world_1_level_1.tmx */; };
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917737EF16C19BB7001C1AAD /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 917737EE16C19BB7001C1AAD /* block.png */; };
 		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
@@ -181,12 +183,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9125D54B16EF6424008AFCA0 /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Worlds.plist; sourceTree = "<group>"; };
+		9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelLayer.h; sourceTree = "<group>"; };
+		9125D55016EF76C2008AFCA0 /* STLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelLayer.m; sourceTree = "<group>"; };
 		9171B59E16BDDAD9008208D2 /* Frei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Frei.plist; sourceTree = "<group>"; };
 		9171B59F16BDDAD9008208D2 /* Frei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frei.png; sourceTree = "<group>"; };
 		9171B5A216BDDB00008208D2 /* Frei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frei.h; sourceTree = "<group>"; };
 		9171B5A316BDDB00008208D2 /* Frei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frei.m; sourceTree = "<group>"; };
 		9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SMB-Tiles.gif"; sourceTree = "<group>"; };
-		9174746016BF1E2500FA7B10 /* Level1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Level1.tmx; sourceTree = "<group>"; };
+		9174746016BF1E2500FA7B10 /* world_1_level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = world_1_level_1.tmx; sourceTree = "<group>"; };
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917737EE16C19BB7001C1AAD /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
@@ -555,8 +560,9 @@
 		9174745D16BF1E1700FA7B10 /* Mario */ = {
 			isa = PBXGroup;
 			children = (
-				9174746016BF1E2500FA7B10 /* Level1.tmx */,
+				9174746016BF1E2500FA7B10 /* world_1_level_1.tmx */,
 				9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */,
+				9125D54B16EF6424008AFCA0 /* Worlds.plist */,
 			);
 			name = Mario;
 			sourceTree = "<group>";
@@ -601,6 +607,8 @@
 			children = (
 				91C0BB1E16B4470C0092FCA9 /* AppDelegate.h */,
 				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
+				9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */,
+				9125D55016EF76C2008AFCA0 /* STLevelLayer.m */,
 				91AB077B16BE6D0D00195D66 /* STScene.h */,
 				91AB077C16BE6D0D00195D66 /* STScene.m */,
 				91AB077E16BE704300195D66 /* STLayer.h */,
@@ -1105,8 +1113,9 @@
 				9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */,
 				9171B5A116BDDAD9008208D2 /* Frei.png in Resources */,
 				9174745F16BF1E2000FA7B10 /* SMB-Tiles.gif in Resources */,
-				9174746116BF1E2500FA7B10 /* Level1.tmx in Resources */,
+				9174746116BF1E2500FA7B10 /* world_1_level_1.tmx in Resources */,
 				917737EF16C19BB7001C1AAD /* block.png in Resources */,
+				9125D54C16EF6424008AFCA0 /* Worlds.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1128,6 +1137,7 @@
 				91AB078016BE704300195D66 /* STLayer.m in Sources */,
 				91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */,
 				917737ED16C19B51001C1AAD /* STBlock.m in Sources */,
+				9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,6 @@
   </data>
  </layer>
  <objectgroup name="events" width="100" height="14">
-  <object name="marioSpawnPoint" type="marioSpawnPoint" x="54" y="138"/>
+  <object name="playerSpawnPoint" type="playerSpawnPoint" x="54" y="138"/>
  </objectgroup>
 </map>

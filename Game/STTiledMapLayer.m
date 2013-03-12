@@ -15,8 +15,10 @@
     self = [super init];
     if (self) {
         self.map = [CCTMXTiledMap tiledMapWithTMXFile:tiledMap];
-        self.objectGroup = [self.map objectGroupNamed:@"events"];
-        self.objectLayer = [self.map layerNamed:@"objects"];
+        
+        // TODO: Use Constants for the strings!!!!!
+        self.objectGroup = [self.map objectGroupNamed:kEventsLayerKey];
+        self.objectLayer = [self.map layerNamed:kObjectLayerKey];
         
         [self addChild:self.map];
         
@@ -24,7 +26,7 @@
             for (int y = 1; y < self.objectLayer.layerSize.height; y++) {
                 CCSprite *tile = [self.objectLayer tileAt:ccp(x, y)];
                 NSDictionary *props = [self.map propertiesForGID:[self.objectLayer tileGIDAt:ccp(x, y)]];
-                NSString *type = props[@"type"];
+                NSString *type = props[kTypeKey];
                 if (type.length) {
                     Class objectClass = NSClassFromString(type);
                     CCNode *node = [objectClass node];
@@ -35,13 +37,16 @@
             }
         }
         
-        /* 
-            Würd me ner ire subclass mache
-         */
-        
-        NSDictionary *properties = [self.objectGroup objectNamed:@"marioSpawnPoint"];
+        /*
+        NSDictionary *properties = [self.objectGroup objectNamed:kPlayerSpawnPointKey];
         NSLog(@"%@", properties);
         NSLog(@"%@ %@", properties[@"x"], properties[@"y"]);
+         */
+        
+        /*
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Worlds" ofType:@"plist"]];
+        NSLog(@"%@", dict);
+         */
         
         [self.objectLayer setVisible:NO];
     }

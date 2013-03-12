@@ -12,7 +12,7 @@
 #import "Candle.h"
 #import "Frei.h"
 
-#import "STTiledMapLayer.h"
+#import "STLevelLayer.h"
 
 #pragma mark - HelloWorldLayer
 
@@ -27,7 +27,7 @@
     [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"Frei.plist"];
 
     
-    STTiledMapLayer *map = [STTiledMapLayer layerWithTiledMap:@"Level1.tmx"];
+    STLevelLayer *map = [STLevelLayer layerWithWorldID:1 levelID:1];
     [self addChild:map];
 }
 

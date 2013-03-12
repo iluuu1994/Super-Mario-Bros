@@ -13,7 +13,7 @@
 static Class _sceneClass;
 
 + (STScene *)scene {
-    STScene *scene = [self node];
+    STScene *scene = [[self sceneClass] node];
     
     STLayer *layer = [self node];
     [scene addChild: layer];
@@ -36,7 +36,7 @@ static Class _sceneClass;
 }
 
 - (void)setUp {
-
+    
 }
 
 - (void)tearDown {
