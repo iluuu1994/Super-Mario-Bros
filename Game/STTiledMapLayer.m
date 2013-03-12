@@ -15,13 +15,13 @@
     self = [super init];
     if (self) {
         self.map = [CCTMXTiledMap tiledMapWithTMXFile:tiledMap];
-        
+
         // TODO: Use Constants for the strings!!!!!
         self.objectGroup = [self.map objectGroupNamed:kEventsLayerKey];
         self.objectLayer = [self.map layerNamed:kObjectLayerKey];
-        
+
         [self addChild:self.map];
-        
+
         for (int x = 1; x < self.objectLayer.layerSize.width; x++) {
             for (int y = 1; y < self.objectLayer.layerSize.height; y++) {
                 CCSprite *tile = [self.objectLayer tileAt:ccp(x, y)];
@@ -30,13 +30,13 @@
                 if (type.length) {
                     Class objectClass = NSClassFromString(type);
                     CCNode *node = [objectClass node];
-                    [node setPosition:tile.position];
+                    [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
                     
                     [self addChild:node];
                 }
             }
         }
-        
+
         /*
         NSDictionary *properties = [self.objectGroup objectNamed:kPlayerSpawnPointKey];
         NSLog(@"%@", properties);
@@ -49,6 +49,7 @@
          */
         
         [self.objectLayer setVisible:NO];
+        [self.map.camera setEyeX:0.0 eyeY:0.0 eyeZ:1.0];
     }
     return self;
 }

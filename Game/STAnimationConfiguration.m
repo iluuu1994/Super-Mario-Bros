@@ -38,6 +38,7 @@
     
     BOOL continueLoop = YES;
     
+    // TODO: Loop though frames in animation plist
     int i = 1;
     while (continueLoop) {
         id object = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:self.frameNamePattern, i]];
