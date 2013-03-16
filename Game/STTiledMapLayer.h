@@ -14,10 +14,15 @@
 #define kPlayerSpawnPointKey @"playerSpawnPoint"
 
 @interface STTiledMapLayer : STLayer
+{}
 
+#pragma mark -
+#pragma mark Initialise
 - (id)initWithTiledMap:(NSString *)tiledMap;
 + (id)layerWithTiledMap:(NSString *)tiledMap;
 
+#pragma mark -
+#pragma mark Properties
 @property (retain) CCTMXTiledMap *map;
 @property (retain) CCTMXObjectGroup *objectGroup;
 @property (retain) CCTMXLayer *objectLayer;

@@ -9,7 +9,10 @@
 #import "STAnimationConfiguration.h"
 
 @implementation STAnimationConfiguration
+{}
 
+#pragma mark -
+#pragma mark Initialise
 - (id)initWithName:(NSString *)name
   frameNamePattern:(NSString *)frameNamePattern
              delay:(NSTimeInterval)delay {
@@ -24,14 +27,17 @@
 }
 
 + (id)configurationWithName:(NSString *)name
-  frameNamePattern:(NSString *)frameNamePattern
-             delay:(NSTimeInterval)delay; {
-
-
+           frameNamePattern:(NSString *)frameNamePattern
+                      delay:(NSTimeInterval)delay; {
+    
+    
     return [[self alloc] initWithName:name
-                              frameNamePattern:frameNamePattern
+                     frameNamePattern:frameNamePattern
                                 delay:delay];
 }
+
+#pragma mark -
+#pragma mark Properties
 
 - (CCAnimation *)animation {
     NSMutableArray *animationFrames = [NSMutableArray array];

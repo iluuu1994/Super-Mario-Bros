@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "STAnimationSprite.h"
 
-@interface Candle : STAnimationSprite {
-    
-}
+@interface Candle : STAnimationSprite
+{}
 
 @end

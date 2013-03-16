@@ -9,17 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@class STScene;
-@protocol STSceneChildLayer <NSObject>
-
-@optional
-- (void)sceneWasAdded:(STScene *)scene;
-- (void)sceneWasRemoved:(STScene *)scene;
-
-@end
-
-@interface STScene : CCScene {
-    
-}
+@interface STScene : CCScene
+{}
 
 @end

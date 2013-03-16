@@ -11,24 +11,4 @@
 
 @implementation STScene
 
-- (void)onEnter {
-    [super onEnter];
-    
-    for (STLayer *layer in [self children]) {
-        if ([layer respondsToSelector:@selector(sceneWasAdded:)]) {
-            [layer sceneWasAdded:self];
-        }
-    }
-}
-
-- (void)onExit {
-    [super onExit];
-    
-    for (STLayer *layer in [self children]) {
-        if ([layer respondsToSelector:@selector(sceneWasRemoved:)]) {
-            [layer sceneWasRemoved:self];
-        }
-    }
-}
-
 @end

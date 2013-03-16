@@ -11,6 +11,8 @@
 
 @implementation Candle
 
+#pragma mark -
+#pragma mark Initialise
 - (id)init
 {
     self = [super initWithDefaultSpriteFrameName:@"Candle_1.png"

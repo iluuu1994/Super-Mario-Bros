@@ -9,7 +9,10 @@
 #import "STLevelLayer.h"
 
 @implementation STLevelLayer
+{}
 
+#pragma mark -
+#pragma mark Initialise
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
     // TODO: Fetch Naming Convention from Worlds.plist
     if (self = [super initWithTiledMap:[NSString stringWithFormat:@"world_%d_level_%d.tmx", worldID, levelID]]) {

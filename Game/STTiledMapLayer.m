@@ -9,7 +9,10 @@
 #import "STTiledMapLayer.h"
 
 @implementation STTiledMapLayer
+{}
 
+#pragma mark -
+#pragma mark Initialise
 - (id)initWithTiledMap:(NSString *)tiledMap
 {
     self = [super init];
@@ -52,10 +55,6 @@
         [self.map.camera setEyeX:0.0 eyeY:0.0 eyeZ:1.0];
     }
     return self;
-}
-
-- (void)setUp {
-    
 }
 
 + (id)layerWithTiledMap:(NSString *)tiledMap {

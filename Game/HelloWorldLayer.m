@@ -18,8 +18,10 @@
 
 
 @implementation HelloWorldLayer
+{}
 
-
+#pragma mark -
+#pragma mark Initialise
 - (void)setUp {
     [super setUp];
         
@@ -31,17 +33,13 @@
     [self addChild:map];
 }
 
+#pragma mark -
+#pragma mark Dealloc
 - (void)tearDown {
     [super tearDown];
     
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"Candle.plist"];
     [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:@"Frei.plist"];
-}
-
-- (void)sceneWasAdded:(STScene *)scene {
-}
-
-- (void)sceneWasRemoved:(STScene *)scene {
 }
 
 @end

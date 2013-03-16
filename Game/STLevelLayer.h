@@ -9,7 +9,10 @@
 #import "STTiledMapLayer.h"
 
 @interface STLevelLayer : STTiledMapLayer
+{}
 
+#pragma mark -
+#pragma mark Initialise
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 + (id)layerWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 

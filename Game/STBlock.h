@@ -6,8 +6,9 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "CCSprite.h"
+#import "STAnimationSprite.h"
 
-@interface STBlock : CCSprite
+@interface STBlock : STAnimationSprite
+{}
 
 @end

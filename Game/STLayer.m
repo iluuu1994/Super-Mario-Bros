@@ -10,6 +10,9 @@
 
 
 @implementation STLayer
+
+#pragma mark -
+#pragma mark Scene
 static Class _sceneClass;
 
 + (STScene *)scene {
@@ -18,10 +21,19 @@ static Class _sceneClass;
     STLayer *layer = [self node];
     [scene addChild: layer];
     
-    // return the scene
     return scene;
 }
++ (Class)sceneClass {
+    if (!_sceneClass) {
+        return [STScene class];
+    }
+    
+    return _sceneClass;
+}
 
+
+#pragma mark -
+#pragma mark Initialise
 - (id)init
 {
     self = [super init];
@@ -30,34 +42,17 @@ static Class _sceneClass;
     }
     return self;
 }
-
-- (void)dealloc {
-    [self tearDown];
-}
-
 - (void)setUp {
     
 }
 
+#pragma mark -
+#pragma mark Dealloc
+- (void)dealloc {
+    [self tearDown];
+}
 - (void)tearDown {
-
-}
-
-- (void)sceneWasAdded:(STScene *)scene {}
-- (void)sceneWasRemoved:(STScene *)scene {}
-
-+ (void)setSceneClass:(Class)sceneClass {
-    if (sceneClass) {
-        _sceneClass = sceneClass;
-    }
-}
-
-+ (Class)sceneClass {
-    if (!_sceneClass) {
-        return [STScene class];
-    }
     
-    return _sceneClass;
 }
 
 @end

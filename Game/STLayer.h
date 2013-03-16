@@ -10,17 +10,20 @@
 #import "cocos2d.h"
 #import "STScene.h"
 
-@interface STLayer : CCLayer <STSceneChildLayer> {
-    
-}
+@interface STLayer : CCLayer
+{}
 
-// Scene
+#pragma mark -
+#pragma mark Scene
 + (STScene *)scene;
-+ (Class)sceneClass;
-+ (void)setSceneClass:(Class)sceneClass;
+@property (nonatomic, strong) Class sceneClass;
 
-// Init and Destroy
+#pragma mark -
+#pragma mark Initialise
 - (void)setUp;
+
+#pragma mark -
+#pragma mark Dealloc
 - (void)tearDown;
 
 @end

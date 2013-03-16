@@ -10,7 +10,10 @@
 #import "STAnimationConfiguration.h"
 
 @implementation Frei
+{}
 
+#pragma mark -
+#pragma mark Initialise
 - (id)init
 {
     self = [super initWithDefaultSpriteFrameName:@"Frame1"

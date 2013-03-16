@@ -11,10 +11,11 @@
 
 // HelloWorldLayer
 @interface HelloWorldLayer : STLayer
-{
-}
+{}
 
-@property (unsafe_unretained) CCTMXTiledMap *tiledMap;
-@property (unsafe_unretained) CCTMXLayer *backgroundLayer;
+#pragma mark -
+#pragma mark Properties
+@property (strong) CCTMXTiledMap *tiledMap;
+@property (strong) CCTMXLayer *backgroundLayer;
 
 @end
