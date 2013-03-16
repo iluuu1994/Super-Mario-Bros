@@ -522,6 +522,168 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910B1C3316F4E0740097A11D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				910B1C4316F4E1DD0097A11D /* App Delegate */,
+				910B1C3416F4E08A0097A11D /* Abstract */,
+				910B1C3C16F4E1000097A11D /* Sprites */,
+				910B1C4016F4E1AE0097A11D /* Layers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		910B1C3416F4E08A0097A11D /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				910B1C3516F4E0960097A11D /* Scene */,
+				910B1C3616F4E09B0097A11D /* Layer */,
+				910B1C3B16F4E0ED0097A11D /* Sprite */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		910B1C3516F4E0960097A11D /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				91AB077B16BE6D0D00195D66 /* STScene.h */,
+				91AB077C16BE6D0D00195D66 /* STScene.m */,
+			);
+			name = Scene;
+			sourceTree = "<group>";
+		};
+		910B1C3616F4E09B0097A11D /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				91AB077E16BE704300195D66 /* STLayer.h */,
+				91AB077F16BE704300195D66 /* STLayer.m */,
+			);
+			name = Layer;
+			sourceTree = "<group>";
+		};
+		910B1C3816F4E0C00097A11D /* Frei */ = {
+			isa = PBXGroup;
+			children = (
+				9171B5A216BDDB00008208D2 /* Frei.h */,
+				9171B5A316BDDB00008208D2 /* Frei.m */,
+				910B1C3D16F4E1210097A11D /* Resources */,
+			);
+			name = Frei;
+			sourceTree = "<group>";
+		};
+		910B1C3916F4E0C60097A11D /* Candle */ = {
+			isa = PBXGroup;
+			children = (
+				91CD17DE16BDD0D4005CA331 /* Candle.h */,
+				91CD17DF16BDD0D4005CA331 /* Candle.m */,
+				910B1C3E16F4E12C0097A11D /* Resources */,
+			);
+			name = Candle;
+			sourceTree = "<group>";
+		};
+		910B1C3A16F4E0CE0097A11D /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				917737EB16C19B51001C1AAD /* STBlock.h */,
+				917737EC16C19B51001C1AAD /* STBlock.m */,
+				910B1C3F16F4E1430097A11D /* Resources */,
+			);
+			name = Block;
+			sourceTree = "<group>";
+		};
+		910B1C3B16F4E0ED0097A11D /* Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */,
+				91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */,
+				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
+				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
+			);
+			name = Sprite;
+			sourceTree = "<group>";
+		};
+		910B1C3C16F4E1000097A11D /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				910B1C3816F4E0C00097A11D /* Frei */,
+				910B1C3916F4E0C60097A11D /* Candle */,
+				910B1C3A16F4E0CE0097A11D /* Block */,
+			);
+			name = Sprites;
+			sourceTree = "<group>";
+		};
+		910B1C3D16F4E1210097A11D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9171B59E16BDDAD9008208D2 /* Frei.plist */,
+				9171B59F16BDDAD9008208D2 /* Frei.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		910B1C3E16F4E12C0097A11D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D4198B1A16BD708D003F61DA /* Candle.plist */,
+				D4198B1516BD6CAD003F61DA /* Candle.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		910B1C3F16F4E1430097A11D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				917737EE16C19BB7001C1AAD /* block.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		910B1C4016F4E1AE0097A11D /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				910B1C4416F4E1E80097A11D /* Hello World */,
+				910B1C4216F4E1D00097A11D /* Tiled Maps */,
+				910B1C4116F4E1C20097A11D /* Levels */,
+			);
+			name = Layers;
+			sourceTree = "<group>";
+		};
+		910B1C4116F4E1C20097A11D /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */,
+				9125D55016EF76C2008AFCA0 /* STLevelLayer.m */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		910B1C4216F4E1D00097A11D /* Tiled Maps */ = {
+			isa = PBXGroup;
+			children = (
+				91AB078116BE912400195D66 /* STTiledMapLayer.h */,
+				91AB078216BE912400195D66 /* STTiledMapLayer.m */,
+			);
+			name = "Tiled Maps";
+			sourceTree = "<group>";
+		};
+		910B1C4316F4E1DD0097A11D /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				91C0BB1E16B4470C0092FCA9 /* AppDelegate.h */,
+				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		910B1C4416F4E1E80097A11D /* Hello World */ = {
+			isa = PBXGroup;
+			children = (
+				91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */,
+				91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */,
+			);
+			name = "Hello World";
+			sourceTree = "<group>";
+		};
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,31 +769,9 @@
 		91C0B99016B4470A0092FCA9 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				91C0BB1E16B4470C0092FCA9 /* AppDelegate.h */,
-				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
-				9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */,
-				9125D55016EF76C2008AFCA0 /* STLevelLayer.m */,
-				91AB077B16BE6D0D00195D66 /* STScene.h */,
-				91AB077C16BE6D0D00195D66 /* STScene.m */,
-				91AB077E16BE704300195D66 /* STLayer.h */,
-				91AB077F16BE704300195D66 /* STLayer.m */,
-				91AB078116BE912400195D66 /* STTiledMapLayer.h */,
-				91AB078216BE912400195D66 /* STTiledMapLayer.m */,
-				91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */,
-				91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */,
+				910B1C3316F4E0740097A11D /* Classes */,
 				91C0B99116B4470A0092FCA9 /* Resources */,
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
-				91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */,
-				91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */,
-				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
-				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
-				917737EB16C19B51001C1AAD /* STBlock.h */,
-				917737EC16C19B51001C1AAD /* STBlock.m */,
-				917737EE16C19BB7001C1AAD /* block.png */,
-				91CD17DE16BDD0D4005CA331 /* Candle.h */,
-				91CD17DF16BDD0D4005CA331 /* Candle.m */,
-				9171B5A216BDDB00008208D2 /* Frei.h */,
-				9171B5A316BDDB00008208D2 /* Frei.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -639,10 +779,6 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D4198B1A16BD708D003F61DA /* Candle.plist */,
-				D4198B1516BD6CAD003F61DA /* Candle.png */,
-				9171B59E16BDDAD9008208D2 /* Frei.plist */,
-				9171B59F16BDDAD9008208D2 /* Frei.png */,
 				9171B59D16BDDAC2008208D2 /* Maps */,
 				9171B59C16BDDAB1008208D2 /* Icons */,
 				D49C7E1716F4CA58004101F1 /* about.plist */,
