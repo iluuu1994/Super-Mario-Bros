@@ -158,6 +158,7 @@
 		91CD17E116BDD0D4005CA331 /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DF16BDD0D4005CA331 /* Candle.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
 		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
+		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -489,6 +490,7 @@
 		91CD17DF16BDD0D4005CA331 /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
 		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
 		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
+		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -643,6 +645,7 @@
 				9171B59F16BDDAD9008208D2 /* Frei.png */,
 				9171B59D16BDDAC2008208D2 /* Maps */,
 				9171B59C16BDDAB1008208D2 /* Icons */,
+				D49C7E1716F4CA58004101F1 /* about.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1116,6 +1119,7 @@
 				9174746116BF1E2500FA7B10 /* world_1_level_1.tmx in Resources */,
 				917737EF16C19BB7001C1AAD /* block.png in Resources */,
 				9125D54C16EF6424008AFCA0 /* Worlds.plist in Resources */,
+				D49C7E1816F4CA58004101F1 /* about.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
