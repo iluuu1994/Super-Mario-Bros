@@ -531,8 +531,8 @@
 			children = (
 				910B1C4316F4E1DD0097A11D /* App Delegate */,
 				910B1C3416F4E08A0097A11D /* Abstract */,
-				910B1C3C16F4E1000097A11D /* Sprites */,
 				910B1C4016F4E1AE0097A11D /* Layers */,
+				910B1C3C16F4E1000097A11D /* Sprites */,
 			);
 			name = Classes;
 			sourceTree = "<group>";

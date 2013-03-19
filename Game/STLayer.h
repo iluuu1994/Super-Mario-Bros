@@ -15,15 +15,31 @@
 
 #pragma mark -
 #pragma mark Scene
+/*!
+ * Creates new scene with new layer
+ */
 + (STScene *)scene;
+
+/*!
+ * Embedds the layer in a scene
+ */
+- (STScene *)scene;
 @property (nonatomic, strong) Class sceneClass;
 
 #pragma mark -
 #pragma mark Initialise
+
+/*!
+ * Is called when the layer is initialised
+ */
 - (void)setUp;
 
 #pragma mark -
 #pragma mark Dealloc
+
+/*!
+ * Is called when the layer is deallocated
+ */
 - (void)tearDown;
 
 @end

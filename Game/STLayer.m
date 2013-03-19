@@ -23,6 +23,12 @@ static Class _sceneClass;
     
     return scene;
 }
+- (STScene *)scene {
+    STScene *scene = [[self sceneClass] node];
+    [scene addChild:self];
+    
+    return scene;
+}
 + (Class)sceneClass {
     if (!_sceneClass) {
         return [STScene class];
