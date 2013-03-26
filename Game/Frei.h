@@ -6,8 +6,12 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "STAnimationSprite.h"
+#import "STAnimatedSprite.h"
 
-@interface Frei : STAnimationSprite
+@interface Frei : STAnimatedSprite
+{}
+
+#pragma mark -
+#pragma mark Test
 
 @end

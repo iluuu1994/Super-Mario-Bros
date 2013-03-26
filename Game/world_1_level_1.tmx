@@ -4,7 +4,7 @@
   <image source="SMB-Tiles.gif" width="220" height="186"/>
   <tile id="5">
    <properties>
-    <property name="type" value="STBlock"/>
+    <property name="type" value="Frei"/>
    </properties>
   </tile>
  </tileset>

@@ -7,7 +7,6 @@
 //
 
 #import "Candle.h"
-#import "STAnimationConfiguration.h"
 
 @implementation Candle
 
@@ -15,14 +14,8 @@
 #pragma mark Initialise
 - (id)init
 {
-    self = [super initWithDefaultSpriteFrameName:@"Candle_1.png"
-                         animationConfigurations:@[
-                            [STAnimationConfiguration configurationWithName:@"Burn"
-                                                           frameNamePattern:@"Candle_%d.png" delay:0.1]
-            ]];
-    
-    if (self) {
-        [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Burn"]]]];
+    if (self = [super initWithPlistFile:@"Candle.plist"]) {
+        //[self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Burn"]]]];
     }
     return self;
 }

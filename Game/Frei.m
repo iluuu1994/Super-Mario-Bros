@@ -7,7 +7,6 @@
 //
 
 #import "Frei.h"
-#import "STAnimationConfiguration.h"
 
 @implementation Frei
 {}
@@ -16,18 +15,13 @@
 #pragma mark Initialise
 - (id)init
 {
-    self = [super initWithDefaultSpriteFrameName:@"Frame1"
-                         animationConfigurations:@[
-                                [STAnimationConfiguration configurationWithName:@"Haija"
-                                                               frameNamePattern:@"Frame%d"
-                                                                          delay:1.0]
-            ]];
-    
-    if (self) {
-        [self runAction:[CCRepeatForever actionWithAction:
-                         [CCAnimate actionWithAnimation:self.animations[@"Haija"]]]];
+    if (self = [super initWithPlistFile:@"Frei.plist"]) {
+        NSLog(@"%@", self.animations[@"default"]);
         
-        
+        [self runAction:
+            [CCRepeatForever actionWithAction:
+                [CCAnimate actionWithAnimation:
+                    self.animations[@"default"]]]];
     }
     return self;
 }

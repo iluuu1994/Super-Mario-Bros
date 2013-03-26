@@ -18,7 +18,6 @@
 		917737EF16C19BB7001C1AAD /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 917737EE16C19BB7001C1AAD /* block.png */; };
 		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
 		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
-		91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */; };
 		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
 		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
 		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
@@ -154,8 +153,9 @@
 		91CD17D716BDCCA9005CA331 /* vec3.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176916BDCCA9005CA331 /* vec3.c */; };
 		91CD17D816BDCCA9005CA331 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176A16BDCCA9005CA331 /* vec4.c */; };
 		91CD17D916BDCCE4005CA331 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CD165D16BDCBA9005CA331 /* libcocos2d.a */; };
-		91CD17E016BDD0D4005CA331 /* STAnimationSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */; };
+		91CD17E016BDD0D4005CA331 /* STAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */; };
 		91CD17E116BDD0D4005CA331 /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DF16BDD0D4005CA331 /* Candle.m */; };
+		91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
 		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
@@ -200,8 +200,6 @@
 		917737EE16C19BB7001C1AAD /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
 		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
-		91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimationConfiguration.h; sourceTree = "<group>"; };
-		91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimationConfiguration.m; sourceTree = "<group>"; };
 		91AB077B16BE6D0D00195D66 /* STScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScene.h; sourceTree = "<group>"; };
 		91AB077C16BE6D0D00195D66 /* STScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScene.m; sourceTree = "<group>"; };
 		91AB077E16BE704300195D66 /* STLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayer.h; sourceTree = "<group>"; };
@@ -486,10 +484,12 @@
 		91CD176B16BDCCA9005CA331 /* LICENSE_cocos2d.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_cocos2d.txt; sourceTree = "<group>"; };
 		91CD176C16BDCCA9005CA331 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
 		91CD176D16BDCCA9005CA331 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
-		91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimationSprite.h; sourceTree = "<group>"; };
-		91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimationSprite.m; sourceTree = "<group>"; };
+		91CD17DC16BDD0D4005CA331 /* STAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimatedSprite.h; sourceTree = "<group>"; };
+		91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimatedSprite.m; sourceTree = "<group>"; };
 		91CD17DE16BDD0D4005CA331 /* Candle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Candle.h; sourceTree = "<group>"; };
 		91CD17DF16BDD0D4005CA331 /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
+		91FD0E7C1701D4940032EC01 /* NSBundle+Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Resources.h"; sourceTree = "<group>"; };
+		91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Resources.m"; sourceTree = "<group>"; };
 		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
 		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
@@ -532,7 +532,7 @@
 				910B1C4316F4E1DD0097A11D /* App Delegate */,
 				910B1C3416F4E08A0097A11D /* Abstract */,
 				910B1C4016F4E1AE0097A11D /* Layers */,
-				910B1C3C16F4E1000097A11D /* Sprites */,
+				91FD0E7B1701D45D0032EC01 /* Categories */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -543,6 +543,9 @@
 				910B1C3516F4E0960097A11D /* Scene */,
 				910B1C3616F4E09B0097A11D /* Layer */,
 				910B1C3B16F4E0ED0097A11D /* Sprite */,
+				910B1C3816F4E0C00097A11D /* Frei */,
+				910B1C3916F4E0C60097A11D /* Candle */,
+				910B1C3A16F4E0CE0097A11D /* Block */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -598,22 +601,9 @@
 		910B1C3B16F4E0ED0097A11D /* Sprite */ = {
 			isa = PBXGroup;
 			children = (
-				91CD17DC16BDD0D4005CA331 /* STAnimationSprite.h */,
-				91CD17DD16BDD0D4005CA331 /* STAnimationSprite.m */,
-				91AB077816BE5EC900195D66 /* STAnimationConfiguration.h */,
-				91AB077916BE5EC900195D66 /* STAnimationConfiguration.m */,
+				91FD0E7A1701CAF00032EC01 /* Animated Sprite */,
 			);
 			name = Sprite;
-			sourceTree = "<group>";
-		};
-		910B1C3C16F4E1000097A11D /* Sprites */ = {
-			isa = PBXGroup;
-			children = (
-				910B1C3816F4E0C00097A11D /* Frei */,
-				910B1C3916F4E0C60097A11D /* Candle */,
-				910B1C3A16F4E0CE0097A11D /* Block */,
-			);
-			name = Sprites;
 			sourceTree = "<group>";
 		};
 		910B1C3D16F4E1210097A11D /* Resources */ = {
@@ -1170,6 +1160,24 @@
 			path = GL;
 			sourceTree = "<group>";
 		};
+		91FD0E7A1701CAF00032EC01 /* Animated Sprite */ = {
+			isa = PBXGroup;
+			children = (
+				91CD17DC16BDD0D4005CA331 /* STAnimatedSprite.h */,
+				91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */,
+			);
+			name = "Animated Sprite";
+			sourceTree = "<group>";
+		};
+		91FD0E7B1701D45D0032EC01 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				91FD0E7C1701D4940032EC01 /* NSBundle+Resources.h */,
+				91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1277,15 +1285,15 @@
 				91C0BB1D16B4470C0092FCA9 /* main.m in Sources */,
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
-				91CD17E016BDD0D4005CA331 /* STAnimationSprite.m in Sources */,
+				91CD17E016BDD0D4005CA331 /* STAnimatedSprite.m in Sources */,
 				91CD17E116BDD0D4005CA331 /* Candle.m in Sources */,
 				9171B5A416BDDB00008208D2 /* Frei.m in Sources */,
-				91AB077A16BE5EC900195D66 /* STAnimationConfiguration.m in Sources */,
 				91AB077D16BE6D0E00195D66 /* STScene.m in Sources */,
 				91AB078016BE704300195D66 /* STLayer.m in Sources */,
 				91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */,
 				917737ED16C19B51001C1AAD /* STBlock.m in Sources */,
 				9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */,
+				91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

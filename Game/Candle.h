@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "STAnimationSprite.h"
+#import "STAnimatedSprite.h"
 
-@interface Candle : STAnimationSprite
+@interface Candle : STAnimatedSprite
 {}
 
 @end
