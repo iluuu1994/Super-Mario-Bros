@@ -158,6 +158,10 @@
 		91CD17E116BDD0D4005CA331 /* Candle.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DF16BDD0D4005CA331 /* Candle.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
 		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
+		D49C0E761701C99300A829C2 /* STStartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C0E751701C99300A829C2 /* STStartLayer.m */; };
+		D49C0E781701D33900A829C2 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C0E771701D33900A829C2 /* Title.png */; };
+		D49C0E7B1701D65300A829C2 /* STInfoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C0E7A1701D65300A829C2 /* STInfoLayer.m */; };
+		D49C0E7E1701E3CF00A829C2 /* STChooseWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C0E7D1701E3CF00A829C2 /* STChooseWorldLayer.m */; };
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
@@ -492,6 +496,13 @@
 		91CD17DF16BDD0D4005CA331 /* Candle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Candle.m; sourceTree = "<group>"; };
 		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
 		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
+		D49C0E741701C99300A829C2 /* STStartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStartLayer.h; sourceTree = "<group>"; };
+		D49C0E751701C99300A829C2 /* STStartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStartLayer.m; sourceTree = "<group>"; };
+		D49C0E771701D33900A829C2 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
+		D49C0E791701D65300A829C2 /* STInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STInfoLayer.h; sourceTree = "<group>"; };
+		D49C0E7A1701D65300A829C2 /* STInfoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STInfoLayer.m; sourceTree = "<group>"; };
+		D49C0E7C1701E3CF00A829C2 /* STChooseWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseWorldLayer.h; sourceTree = "<group>"; };
+		D49C0E7D1701E3CF00A829C2 /* STChooseWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseWorldLayer.m; sourceTree = "<group>"; };
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 		D49C7E1916F4E812004101F1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -645,6 +656,7 @@
 		910B1C4016F4E1AE0097A11D /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				D49C0E731701C95E00A829C2 /* Screen Layers */,
 				910B1C4416F4E1E80097A11D /* Hello World */,
 				910B1C4216F4E1D00097A11D /* Tiled Maps */,
 				910B1C4116F4E1C20097A11D /* Levels */,
@@ -691,6 +703,7 @@
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D49C0E771701D33900A829C2 /* Title.png */,
 				91C0B99216B4470A0092FCA9 /* Default.png */,
 				91C0B99416B4470A0092FCA9 /* Default@2x.png */,
 				91C0B99616B4470A0092FCA9 /* Default-568h@2x.png */,
@@ -1170,6 +1183,19 @@
 			path = GL;
 			sourceTree = "<group>";
 		};
+		D49C0E731701C95E00A829C2 /* Screen Layers */ = {
+			isa = PBXGroup;
+			children = (
+				D49C0E741701C99300A829C2 /* STStartLayer.h */,
+				D49C0E751701C99300A829C2 /* STStartLayer.m */,
+				D49C0E791701D65300A829C2 /* STInfoLayer.h */,
+				D49C0E7A1701D65300A829C2 /* STInfoLayer.m */,
+				D49C0E7C1701E3CF00A829C2 /* STChooseWorldLayer.h */,
+				D49C0E7D1701E3CF00A829C2 /* STChooseWorldLayer.m */,
+			);
+			name = "Screen Layers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1264,6 +1290,7 @@
 				D49C7E1816F4CA58004101F1 /* about.plist in Resources */,
 				D49C7E1B16F4E812004101F1 /* twitter.png in Resources */,
 				D49C7E1C16F4E812004101F1 /* facebook.png in Resources */,
+				D49C0E781701D33900A829C2 /* Title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1286,6 +1313,9 @@
 				91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */,
 				917737ED16C19B51001C1AAD /* STBlock.m in Sources */,
 				9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */,
+				D49C0E761701C99300A829C2 /* STStartLayer.m in Sources */,
+				D49C0E7B1701D65300A829C2 /* STInfoLayer.m in Sources */,
+				D49C0E7E1701E3CF00A829C2 /* STChooseWorldLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
