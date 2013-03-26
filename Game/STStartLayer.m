@@ -34,9 +34,8 @@
 }
 
 - (IBAction)start:(id)sender {
-    // TODO: switch to world-selection-scene
-    //[[CCDirector sharedDirector] runWithScene:[STInfoLayer scene]];// TODO: remove, just debug
-    [[CCDirector sharedDirector] replaceScene:[STInfoLayer scene]];
+    // TODO: transition
+    [[CCDirector sharedDirector] replaceScene:[STChooseWorldLayer scene]];
 }
 
 @end

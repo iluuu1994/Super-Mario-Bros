@@ -15,7 +15,7 @@
 - (id)init
 {
     if (self = [super initWithPlistFile:@"Candle.plist"]) {
-        //[self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"Burn"]]]];
+        [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"burn"]]]];
     }
     return self;
 }

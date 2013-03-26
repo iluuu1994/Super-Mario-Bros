@@ -17,20 +17,24 @@
 - (void)setUp {
     [super setUp];
     
-    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
-    title.scale = 0.8f;
+    NSMutableArray *worlds = [[NSMutableArray alloc] init];
     
-    CCMenu *menu = [CCMenu menuWithItems:
-                    title,
-                    [CCMenuItemFont itemWithString:@"Play!" target:self selector:@selector(start:)],
-                    nil];
+    NSArray *root = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kWorldsFile ofType:@""]];
     
-    // TODO: add settings-menuitem
-    // TODO: add info-menuitem
+    for(NSDictionary *world in [root valueForKey:kWorldsKey]) {
+        CCLabelTTF *worldLabel = [[CCLabelTTF alloc] initWithString:[world valueForKey:kWorldIDKey] fontName:@"Helvetica" fontSize:10];
+        [worlds addObject:worldLabel];
+    }
     
-    [menu alignItemsVerticallyWithPadding:20];
-    
-    [self addChild:menu];
+    SlidingMenuGrid *worldGrid = [SlidingMenuGrid
+                                 menuWithArray:worlds
+                                 cols:kWorldSelectionColumnNumber
+                                 rows:kWorldSelectionRowNumber
+                                 position:CGPointMake(60.f, 280.f)
+                                 padding:CGPointMake(90.f, 80.f)
+                                 verticalPaging:YES];
+        
+    [self addChild:worldGrid];
 }
 
 @end

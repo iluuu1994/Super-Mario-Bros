@@ -44,6 +44,10 @@
 		91C0BB1D16B4470C0092FCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1C16B4470C0092FCA9 /* main.m */; };
 		91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */; };
 		91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */; };
+		91CCD3FD1701EE390082CF59 /* STStartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCD3FC1701EE390082CF59 /* STStartLayer.m */; };
+		91CCD4021701EE4B0082CF59 /* STChooseWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCD3FF1701EE4B0082CF59 /* STChooseWorldLayer.m */; };
+		91CCD4031701EE4B0082CF59 /* STInfoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCD4011701EE4B0082CF59 /* STInfoLayer.m */; };
+		91CCD4051701EE620082CF59 /* Title.png in Resources */ = {isa = PBXBuildFile; fileRef = 91CCD4041701EE620082CF59 /* Title.png */; };
 		91CD165E16BDCBA9005CA331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98A16B4470A0092FCA9 /* Foundation.framework */; };
 		91CD176E16BDCCA9005CA331 /* CCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD166C16BDCCA9005CA331 /* CCAction.m */; };
 		91CD176F16BDCCA9005CA331 /* CCActionCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD166E16BDCCA9005CA331 /* CCActionCamera.m */; };
@@ -161,6 +165,7 @@
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
+		D49E856B17038A0900C6E54E /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D49E856A170384BD00C6E54E /* SlidingMenuGrid.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +239,13 @@
 		91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		91C0BB2116B4470C0092FCA9 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		91C0BB2216B4470C0092FCA9 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
+		91CCD3FB1701EE390082CF59 /* STStartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStartLayer.h; sourceTree = "<group>"; };
+		91CCD3FC1701EE390082CF59 /* STStartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStartLayer.m; sourceTree = "<group>"; };
+		91CCD3FE1701EE4B0082CF59 /* STChooseWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseWorldLayer.h; sourceTree = "<group>"; };
+		91CCD3FF1701EE4B0082CF59 /* STChooseWorldLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseWorldLayer.m; sourceTree = "<group>"; };
+		91CCD4001701EE4B0082CF59 /* STInfoLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STInfoLayer.h; sourceTree = "<group>"; };
+		91CCD4011701EE4B0082CF59 /* STInfoLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STInfoLayer.m; sourceTree = "<group>"; };
+		91CCD4041701EE620082CF59 /* Title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title.png; sourceTree = "<group>"; };
 		91CD165D16BDCBA9005CA331 /* libcocos2d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcocos2d.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CD166116BDCBA9005CA331 /* cocos2d-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cocos2d-Prefix.pch"; sourceTree = "<group>"; };
 		91CD166B16BDCCA9005CA331 /* CCAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAction.h; sourceTree = "<group>"; };
@@ -495,6 +507,8 @@
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 		D49C7E1916F4E812004101F1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		D49E8569170384BD00C6E54E /* SlidingMenuGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlidingMenuGrid.h; path = ../../../Desktop/Game/Game/SlidingMenuGrid.h; sourceTree = "<group>"; };
+		D49E856A170384BD00C6E54E /* SlidingMenuGrid.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = SlidingMenuGrid.mm; path = ../../../Desktop/Game/Game/SlidingMenuGrid.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +543,7 @@
 		910B1C3316F4E0740097A11D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D49E85671703847E00C6E54E /* Third Party */,
 				910B1C4316F4E1DD0097A11D /* App Delegate */,
 				910B1C3416F4E08A0097A11D /* Abstract */,
 				910B1C4016F4E1AE0097A11D /* Layers */,
@@ -635,6 +650,7 @@
 		910B1C4016F4E1AE0097A11D /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				91CCD3F91701EE170082CF59 /* Screen Layers */,
 				910B1C4416F4E1E80097A11D /* Hello World */,
 				910B1C4216F4E1D00097A11D /* Tiled Maps */,
 				910B1C4116F4E1C20097A11D /* Levels */,
@@ -681,6 +697,7 @@
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				91CCD4041701EE620082CF59 /* Title.png */,
 				91C0B99216B4470A0092FCA9 /* Default.png */,
 				91C0B99416B4470A0092FCA9 /* Default@2x.png */,
 				91C0B99616B4470A0092FCA9 /* Default-568h@2x.png */,
@@ -789,6 +806,19 @@
 				91C0BB1C16B4470C0092FCA9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91CCD3F91701EE170082CF59 /* Screen Layers */ = {
+			isa = PBXGroup;
+			children = (
+				91CCD3FE1701EE4B0082CF59 /* STChooseWorldLayer.h */,
+				91CCD3FF1701EE4B0082CF59 /* STChooseWorldLayer.m */,
+				91CCD4001701EE4B0082CF59 /* STInfoLayer.h */,
+				91CCD4011701EE4B0082CF59 /* STInfoLayer.m */,
+				91CCD3FB1701EE390082CF59 /* STStartLayer.h */,
+				91CCD3FC1701EE390082CF59 /* STStartLayer.m */,
+			);
+			name = "Screen Layers";
 			sourceTree = "<group>";
 		};
 		91CD165F16BDCBA9005CA331 /* cocos2d */ = {
@@ -1178,6 +1208,23 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		D49E85671703847E00C6E54E /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				D49E85681703848700C6E54E /* Sliding Menu Grid */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
+		D49E85681703848700C6E54E /* Sliding Menu Grid */ = {
+			isa = PBXGroup;
+			children = (
+				D49E8569170384BD00C6E54E /* SlidingMenuGrid.h */,
+				D49E856A170384BD00C6E54E /* SlidingMenuGrid.mm */,
+			);
+			name = "Sliding Menu Grid";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1272,6 +1319,7 @@
 				D49C7E1816F4CA58004101F1 /* about.plist in Resources */,
 				D49C7E1B16F4E812004101F1 /* twitter.png in Resources */,
 				D49C7E1C16F4E812004101F1 /* facebook.png in Resources */,
+				91CCD4051701EE620082CF59 /* Title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1282,6 +1330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49E856B17038A0900C6E54E /* SlidingMenuGrid.mm in Sources */,
 				91C0BB1D16B4470C0092FCA9 /* main.m in Sources */,
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
@@ -1294,6 +1343,9 @@
 				917737ED16C19B51001C1AAD /* STBlock.m in Sources */,
 				9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */,
 				91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */,
+				91CCD3FD1701EE390082CF59 /* STStartLayer.m in Sources */,
+				91CCD4021701EE4B0082CF59 /* STChooseWorldLayer.m in Sources */,
+				91CCD4031701EE4B0082CF59 /* STInfoLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

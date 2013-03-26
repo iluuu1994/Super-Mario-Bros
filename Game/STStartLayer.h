@@ -10,7 +10,7 @@
 #import "cocos2d.h"
 #import "STScene.h"
 #import "STLayer.h"
-#import "STInfoLayer.h"
+#import "STChooseWorldLayer.h"
 
 @interface STStartLayer : STLayer {
     

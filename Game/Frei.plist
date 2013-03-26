@@ -6,7 +6,7 @@
 	<dict>
 		<key>default</key>
 		<dict>
-			<key>duration</key>
+			<key>delay</key>
 			<string>0.1</string>
 			<key>frames</key>
 			<array>

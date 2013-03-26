@@ -33,7 +33,7 @@
                     nil];
     
     // TODO: add menu-menuitem
-    // TODO: add social media menuitem
+    // TODO: add social media menuitems
     
     [menu alignItemsVerticallyWithPadding:20];
     
