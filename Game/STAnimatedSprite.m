@@ -15,7 +15,7 @@
 #pragma mark Initialise
 
 -(id)initWithPlistFile:(NSString *)plistFile {
-    if (self = [super initWithSpriteFrameName:@"Frame1"]) {
+    if (self = [super initWithSpriteFrameName:@"Candle_1.png"]) {
         self.animationDictionary = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:plistFile]];
         [self initAnimations];
     }
@@ -25,18 +25,19 @@
 - (void)initAnimations {
     NSArray *plistAnimations = [self.animationDictionary objectForKey:kAnimationPlistAnimationsKey];
     self.animations = [NSMutableDictionary dictionary];
-    
+
     for (id animationKey in plistAnimations) {
         NSDictionary *animationValue = [plistAnimations valueForKey:animationKey];
         float delay = [[animationValue objectForKey:kAnimationPlistDelayKey] floatValue];
+        
         NSArray *plistAnimationFrames = [animationValue objectForKey:kAnimationPlistAnimationFramesKey];
         
         NSMutableArray *animationFrames = [NSMutableArray array];
         for (NSString *animationFrame in plistAnimationFrames) {
-            [animationFrames addObject:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:animationFrame]];
+            id test = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:animationFrame];
+            [animationFrames addObject:test];
         }
         
-        NSLog(@"%@", animationFrames);
         self.animations[animationKey] = [CCAnimation animationWithSpriteFrames:animationFrames delay:delay];
     }
 }

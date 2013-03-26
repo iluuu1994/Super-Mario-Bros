@@ -16,7 +16,7 @@
 - (id)init
 {
     if (self = [super initWithPlistFile:@"Frei.plist"]) {
-        NSLog(@"%@", self.animations[@"default"]);
+        //NSLog(@"%@", self.animations[@"default"]);
         
         [self runAction:
             [CCRepeatForever actionWithAction:
