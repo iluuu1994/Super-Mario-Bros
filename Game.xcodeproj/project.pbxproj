@@ -165,7 +165,7 @@
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
-		D49E856B17038A0900C6E54E /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D49E856A170384BD00C6E54E /* SlidingMenuGrid.mm */; };
+		D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -507,8 +507,8 @@
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 		D49C7E1916F4E812004101F1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
-		D49E8569170384BD00C6E54E /* SlidingMenuGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SlidingMenuGrid.h; path = ../../../Desktop/Game/Game/SlidingMenuGrid.h; sourceTree = "<group>"; };
-		D49E856A170384BD00C6E54E /* SlidingMenuGrid.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = SlidingMenuGrid.mm; path = ../../../Desktop/Game/Game/SlidingMenuGrid.mm; sourceTree = "<group>"; };
+		D4ED041F1704BD140085FDF6 /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
+		D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SlidingMenuGrid.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1219,8 +1219,8 @@
 		D49E85681703848700C6E54E /* Sliding Menu Grid */ = {
 			isa = PBXGroup;
 			children = (
-				D49E8569170384BD00C6E54E /* SlidingMenuGrid.h */,
-				D49E856A170384BD00C6E54E /* SlidingMenuGrid.mm */,
+				D4ED041F1704BD140085FDF6 /* SlidingMenuGrid.h */,
+				D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */,
 			);
 			name = "Sliding Menu Grid";
 			sourceTree = "<group>";
@@ -1330,7 +1330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D49E856B17038A0900C6E54E /* SlidingMenuGrid.mm in Sources */,
 				91C0BB1D16B4470C0092FCA9 /* main.m in Sources */,
 				91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */,
 				91C0BB2316B4470C0092FCA9 /* HelloWorldLayer.m in Sources */,
@@ -1346,6 +1345,7 @@
 				91CCD3FD1701EE390082CF59 /* STStartLayer.m in Sources */,
 				91CCD4021701EE4B0082CF59 /* STChooseWorldLayer.m in Sources */,
 				91CCD4031701EE4B0082CF59 /* STInfoLayer.m in Sources */,
+				D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
