@@ -21,23 +21,37 @@
     
     NSArray *root = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kWorldsFile ofType:@""]];
     
-    for(NSDictionary *world in [root valueForKey:kWorldsKey]) {
-        CCLabelTTF *worldLabel = [[CCLabelTTF alloc] initWithString:[world valueForKey:kWorldIDKey] fontName:@"Helvetica" fontSize:10];
-        CCMenuItemLabel *worldItem = [CCMenuItemLabel itemWithLabel:worldLabel];
-        [worlds addObject:worldItem];
+    CGSize windowSize = [[CCDirector sharedDirector] winSize];
+    CGPoint middle = ccp(windowSize.width/2, windowSize.height/2);
+    
+    //NSDictionary *world in [root valueForKey:kWorldsKey]
+    
+    for(int i = 0; i < 20; i++) {
+        CCSprite* normalSprite = [CCSprite spriteWithFile:@"twitter.png"];
+        CCSprite* selectedSprite = [CCSprite spriteWithFile:@"facebok.png"];
+
+        normalSprite.scale = 0.3f;
+        selectedSprite.scale = 0.3f;
+
+        CCMenuItemSprite* item = [CCMenuItemSprite itemWithNormalSprite:
+                                  normalSprite selectedSprite:selectedSprite];
+        
+        [worlds addObject:item];
     }
     
     SlidingMenuGrid *worldGrid = [SlidingMenuGrid
                                  menuWithArray:worlds
                                  cols:kWorldSelectionColumnNumber
                                  rows:kWorldSelectionRowNumber
-                                 position:CGPointMake(60.f, 280.f)
-                                 padding:CGPointMake(90.f, 80.f)
-                                 verticalPaging:YES];
-    // klarklar!?
-    
+                                 position:CGPointMake(250.f, 270.f)
+                                 padding:CGPointMake(100.f, 100.f)
+                                 verticalPaging:false];
         
     [self addChild:worldGrid];
+}
+
+-(void)launchLevel:(CCMenuItemSprite *) level {
+    NSLog(@"launching level %@", level);
 }
 
 @end
