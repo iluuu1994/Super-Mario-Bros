@@ -20,7 +20,7 @@
 	return [[self alloc] initWithArray:items cols:cols rows:rows position:pos padding:pad verticalPaging:false];
 }
 
-+(id) menuWithArray:(NSMutableArray*)items cols:(int)cols rows:(int)rows position:(CGPoint)pos padding:(CGPoint)pad verticalPages:(bool)vertical
++(id) menuWithArray:(NSMutableArray*)items cols:(int)cols rows:(int)rows position:(CGPoint)pos padding:(CGPoint)pad verticalPaging:(bool)vertical
 {
 	return [[self alloc] initWithArray:items cols:cols rows:rows position:pos padding:pad verticalPaging:vertical];
 }
