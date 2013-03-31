@@ -26,12 +26,18 @@
     
     //NSDictionary *world in [root valueForKey:kWorldsKey]
     
+    CCSprite* normalSprite = [CCSprite spriteWithFile:@"twitter.png"];
+    CCSprite* selectedSprite = [CCSprite spriteWithFile:@"facebook.png"];
+    
+    normalSprite.scale = 0.3f;
+    selectedSprite.scale = 0.65f;
+    
     for(int i = 0; i < 20; i++) {
         CCSprite* normalSprite = [CCSprite spriteWithFile:@"twitter.png"];
-        CCSprite* selectedSprite = [CCSprite spriteWithFile:@"facebok.png"];
+        CCSprite* selectedSprite = [CCSprite spriteWithFile:@"facebook.png"];
 
         normalSprite.scale = 0.3f;
-        selectedSprite.scale = 0.3f;
+        selectedSprite.scale = 0.65f;
 
         CCMenuItemSprite* item = [CCMenuItemSprite itemWithNormalSprite:
                                   normalSprite selectedSprite:selectedSprite];
@@ -39,12 +45,16 @@
         [worlds addObject:item];
     }
     
+    NSLog(@"%f", windowSize.width);
+    NSLog(@"%f", windowSize.height);
+
+    
     SlidingMenuGrid *worldGrid = [SlidingMenuGrid
                                  menuWithArray:worlds
                                  cols:kWorldSelectionColumnNumber
                                  rows:kWorldSelectionRowNumber
-                                 position:CGPointMake(250.f, 270.f)
-                                 padding:CGPointMake(100.f, 100.f)
+                                 position:CGPointMake(250.f, 250.f)
+                                 padding:CGPointMake(normalSprite.boundingBox.size.width + 20, normalSprite.boundingBox.size.height + 20)
                                  verticalPaging:false];
         
     [self addChild:worldGrid];
