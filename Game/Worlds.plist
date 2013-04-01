@@ -11,7 +11,7 @@
 			<integer>0</integer>
 			<key>Name</key>
 			<string>Insert World Name here...</string>
-			<key>Icon</key>
+			<key>Icon Name</key>
 			<string>Insert Icon Name here...</string>
 			<key>isLocked</key>
 			<false/>

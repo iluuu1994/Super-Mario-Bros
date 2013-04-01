@@ -60,6 +60,9 @@
     [self addChild:worldGrid];
 }
 
+#pragma mark -
+#pragma mark Methods
+
 -(void)launchLevel:(CCMenuItemSprite *) level {
     NSLog(@"launching level %@", level);
 }

@@ -34,7 +34,7 @@
 }
 
 - (IBAction)start:(id)sender {
-    // TODO: transition
+    // TODO: transition, singleton-manager for handling the transitions?
     [[CCDirector sharedDirector] replaceScene:[STChooseWorldLayer scene]];
 }
 
