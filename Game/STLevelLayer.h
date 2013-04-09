@@ -12,6 +12,12 @@
 {}
 
 #pragma mark -
+#pragma mark Properties
+@property (readonly) unsigned short worldID;
+@property (readonly) unsigned short levelID;
+@property (strong, readonly) NSDictionary *levelInfo;
+
+#pragma mark -
 #pragma mark Initialise
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 + (id)layerWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;

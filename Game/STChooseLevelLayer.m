@@ -7,6 +7,10 @@
 //
 
 #import "STChooseLevelLayer.h"
+#import "WorldsConstrants.h"
+
+#define kLevelSelectionRowNumber 3
+#define kLevelSelectionColumnNumber 5
 
 
 @implementation STChooseLevelLayer

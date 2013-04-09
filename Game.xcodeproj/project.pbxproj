@@ -7,17 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9125D54C16EF6424008AFCA0 /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9125D54B16EF6424008AFCA0 /* Worlds.plist */; };
+		9106D2A01712DF5F00BC6CFC /* CCDirector+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */; };
+		9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */; };
+		9106D2A41712E4C400BC6CFC /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */; };
+		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
+		914EB27D171404DD0070051D /* CCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB262171404DD0070051D /* CCControl.m */; };
+		914EB27E171404DD0070051D /* CCControlButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB264171404DD0070051D /* CCControlButton.m */; };
+		914EB27F171404DD0070051D /* CCControlColourPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB266171404DD0070051D /* CCControlColourPicker.m */; };
+		914EB280171404DD0070051D /* CCControlPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB268171404DD0070051D /* CCControlPicker.m */; };
+		914EB281171404DD0070051D /* CCControlPotentiometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB26A171404DD0070051D /* CCControlPotentiometer.m */; };
+		914EB282171404DD0070051D /* CCControlSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB26C171404DD0070051D /* CCControlSlider.m */; };
+		914EB283171404DD0070051D /* CCControlStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB26E171404DD0070051D /* CCControlStepper.m */; };
+		914EB284171404DD0070051D /* CCControlSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB270171404DD0070051D /* CCControlSwitch.m */; };
+		914EB285171404DD0070051D /* ccControlShaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB273171404DD0070051D /* ccControlShaders.m */; };
+		914EB286171404DD0070051D /* CCColourUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB278171404DD0070051D /* CCColourUtils.m */; };
+		914EB287171404DD0070051D /* CCScale9Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB27A171404DD0070051D /* CCScale9Sprite.m */; };
+		914EB288171404DD0070051D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 914EB27C171404DD0070051D /* README.md */; };
+		914EB28C171409390070051D /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28A171409390070051D /* about.png */; };
+		914EB28D171409390070051D /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28B171409390070051D /* preferences.png */; };
+		914EB294171414A70070051D /* world_0_level_1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 914EB293171414A70070051D /* world_0_level_1.tmx */; };
 		9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59E16BDDAD9008208D2 /* Frei.plist */; };
 		9171B5A116BDDAD9008208D2 /* Frei.png in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59F16BDDAD9008208D2 /* Frei.png */; };
 		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
-		9174745F16BF1E2000FA7B10 /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */; };
-		9174746116BF1E2500FA7B10 /* world_1_level_1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9174746016BF1E2500FA7B10 /* world_1_level_1.tmx */; };
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917737EF16C19BB7001C1AAD /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 917737EE16C19BB7001C1AAD /* block.png */; };
-		917E668316B45F850001F40C /* temple.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E668216B45F850001F40C /* temple.tmx */; };
-		917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E668416B45F8C0001F40C /* zelda-tiles.png */; };
 		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
 		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
 		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
@@ -193,20 +207,50 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9125D54B16EF6424008AFCA0 /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Worlds.plist; sourceTree = "<group>"; };
+		9106D29E1712DF5F00BC6CFC /* CCDirector+Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCDirector+Transitions.h"; sourceTree = "<group>"; };
+		9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCDirector+Transitions.m"; sourceTree = "<group>"; };
+		9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "SMB-Tiles.gif"; path = "Resources/maps/SMB-Tiles.gif"; sourceTree = SOURCE_ROOT; };
+		9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0.tmx; path = Resources/maps/world_0_level_0.tmx; sourceTree = SOURCE_ROOT; };
+		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
 		9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelLayer.h; sourceTree = "<group>"; };
 		9125D55016EF76C2008AFCA0 /* STLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelLayer.m; sourceTree = "<group>"; };
+		914EB261171404DD0070051D /* CCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControl.h; sourceTree = "<group>"; };
+		914EB262171404DD0070051D /* CCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControl.m; sourceTree = "<group>"; };
+		914EB263171404DD0070051D /* CCControlButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlButton.h; sourceTree = "<group>"; };
+		914EB264171404DD0070051D /* CCControlButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlButton.m; sourceTree = "<group>"; };
+		914EB265171404DD0070051D /* CCControlColourPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlColourPicker.h; sourceTree = "<group>"; };
+		914EB266171404DD0070051D /* CCControlColourPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlColourPicker.m; sourceTree = "<group>"; };
+		914EB267171404DD0070051D /* CCControlPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlPicker.h; sourceTree = "<group>"; };
+		914EB268171404DD0070051D /* CCControlPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlPicker.m; sourceTree = "<group>"; };
+		914EB269171404DD0070051D /* CCControlPotentiometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlPotentiometer.h; sourceTree = "<group>"; };
+		914EB26A171404DD0070051D /* CCControlPotentiometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlPotentiometer.m; sourceTree = "<group>"; };
+		914EB26B171404DD0070051D /* CCControlSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlSlider.h; sourceTree = "<group>"; };
+		914EB26C171404DD0070051D /* CCControlSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlSlider.m; sourceTree = "<group>"; };
+		914EB26D171404DD0070051D /* CCControlStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlStepper.h; sourceTree = "<group>"; };
+		914EB26E171404DD0070051D /* CCControlStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlStepper.m; sourceTree = "<group>"; };
+		914EB26F171404DD0070051D /* CCControlSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlSwitch.h; sourceTree = "<group>"; };
+		914EB270171404DD0070051D /* CCControlSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControlSwitch.m; sourceTree = "<group>"; };
+		914EB272171404DD0070051D /* ccControlShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccControlShaders.h; sourceTree = "<group>"; };
+		914EB273171404DD0070051D /* ccControlShaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccControlShaders.m; sourceTree = "<group>"; };
+		914EB274171404DD0070051D /* ccShader_ControlSwitchMask_frag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ccShader_ControlSwitchMask_frag.h; sourceTree = "<group>"; };
+		914EB276171404DD0070051D /* ARCMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMacro.h; sourceTree = "<group>"; };
+		914EB277171404DD0070051D /* CCColourUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCColourUtils.h; sourceTree = "<group>"; };
+		914EB278171404DD0070051D /* CCColourUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCColourUtils.m; sourceTree = "<group>"; };
+		914EB279171404DD0070051D /* CCScale9Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScale9Sprite.h; sourceTree = "<group>"; };
+		914EB27A171404DD0070051D /* CCScale9Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScale9Sprite.m; sourceTree = "<group>"; };
+		914EB27B171404DD0070051D /* CCControlExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlExtension.h; sourceTree = "<group>"; };
+		914EB27C171404DD0070051D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		914EB28A171409390070051D /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		914EB28B171409390070051D /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
+		914EB28E17140E900070051D /* WorldsConstrants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldsConstrants.h; sourceTree = "<group>"; };
+		914EB293171414A70070051D /* world_0_level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_1.tmx; path = Resources/maps/world_0_level_1.tmx; sourceTree = SOURCE_ROOT; };
 		9171B59E16BDDAD9008208D2 /* Frei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Frei.plist; sourceTree = "<group>"; };
 		9171B59F16BDDAD9008208D2 /* Frei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frei.png; sourceTree = "<group>"; };
 		9171B5A216BDDB00008208D2 /* Frei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frei.h; sourceTree = "<group>"; };
 		9171B5A316BDDB00008208D2 /* Frei.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Frei.m; sourceTree = "<group>"; };
-		9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SMB-Tiles.gif"; sourceTree = "<group>"; };
-		9174746016BF1E2500FA7B10 /* world_1_level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = world_1_level_1.tmx; sourceTree = "<group>"; };
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917737EE16C19BB7001C1AAD /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
-		917E668216B45F850001F40C /* temple.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = temple.tmx; sourceTree = "<group>"; };
-		917E668416B45F8C0001F40C /* zelda-tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zelda-tiles.png"; sourceTree = "<group>"; };
 		91AB077B16BE6D0D00195D66 /* STScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScene.h; sourceTree = "<group>"; };
 		91AB077C16BE6D0D00195D66 /* STScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScene.m; sourceTree = "<group>"; };
 		91AB077E16BE704300195D66 /* STLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayer.h; sourceTree = "<group>"; };
@@ -546,6 +590,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9106D29C1712DF3800BC6CFC /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				91FD0E7C1701D4940032EC01 /* NSBundle+Resources.h */,
+				91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */,
+			);
+			name = NSBundle;
+			sourceTree = "<group>";
+		};
+		9106D29D1712DF3E00BC6CFC /* CCDirector */ = {
+			isa = PBXGroup;
+			children = (
+				9106D29E1712DF5F00BC6CFC /* CCDirector+Transitions.h */,
+				9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */,
+			);
+			name = CCDirector;
+			sourceTree = "<group>";
+		};
 		910B1C3316F4E0740097A11D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -700,6 +762,81 @@
 			name = "Hello World";
 			sourceTree = "<group>";
 		};
+		914EB25E171404C40070051D /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				914EB25F171404DD0070051D /* CCControlExtension */,
+			);
+			name = "3rd Party";
+			sourceTree = "<group>";
+		};
+		914EB25F171404DD0070051D /* CCControlExtension */ = {
+			isa = PBXGroup;
+			children = (
+				914EB27C171404DD0070051D /* README.md */,
+				914EB27B171404DD0070051D /* CCControlExtension.h */,
+				914EB260171404DD0070051D /* CCControl */,
+			);
+			name = CCControlExtension;
+			path = "Resources/3rd Party/CCControlExtension";
+			sourceTree = SOURCE_ROOT;
+		};
+		914EB260171404DD0070051D /* CCControl */ = {
+			isa = PBXGroup;
+			children = (
+				914EB261171404DD0070051D /* CCControl.h */,
+				914EB262171404DD0070051D /* CCControl.m */,
+				914EB263171404DD0070051D /* CCControlButton.h */,
+				914EB264171404DD0070051D /* CCControlButton.m */,
+				914EB265171404DD0070051D /* CCControlColourPicker.h */,
+				914EB266171404DD0070051D /* CCControlColourPicker.m */,
+				914EB267171404DD0070051D /* CCControlPicker.h */,
+				914EB268171404DD0070051D /* CCControlPicker.m */,
+				914EB269171404DD0070051D /* CCControlPotentiometer.h */,
+				914EB26A171404DD0070051D /* CCControlPotentiometer.m */,
+				914EB26B171404DD0070051D /* CCControlSlider.h */,
+				914EB26C171404DD0070051D /* CCControlSlider.m */,
+				914EB26D171404DD0070051D /* CCControlStepper.h */,
+				914EB26E171404DD0070051D /* CCControlStepper.m */,
+				914EB26F171404DD0070051D /* CCControlSwitch.h */,
+				914EB270171404DD0070051D /* CCControlSwitch.m */,
+				914EB271171404DD0070051D /* Shaders */,
+				914EB275171404DD0070051D /* Utils */,
+			);
+			path = CCControl;
+			sourceTree = "<group>";
+		};
+		914EB271171404DD0070051D /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				914EB272171404DD0070051D /* ccControlShaders.h */,
+				914EB273171404DD0070051D /* ccControlShaders.m */,
+				914EB274171404DD0070051D /* ccShader_ControlSwitchMask_frag.h */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		914EB275171404DD0070051D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				914EB276171404DD0070051D /* ARCMacro.h */,
+				914EB277171404DD0070051D /* CCColourUtils.h */,
+				914EB278171404DD0070051D /* CCColourUtils.m */,
+				914EB279171404DD0070051D /* CCScale9Sprite.h */,
+				914EB27A171404DD0070051D /* CCScale9Sprite.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		914EB2891714092F0070051D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				914EB28A171409390070051D /* about.png */,
+				914EB28B171409390070051D /* preferences.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -726,26 +863,18 @@
 			isa = PBXGroup;
 			children = (
 				9174745D16BF1E1700FA7B10 /* Mario */,
-				9174745C16BF1E1200FA7B10 /* Zelda */,
 			);
 			name = Maps;
-			sourceTree = "<group>";
-		};
-		9174745C16BF1E1200FA7B10 /* Zelda */ = {
-			isa = PBXGroup;
-			children = (
-				917E668416B45F8C0001F40C /* zelda-tiles.png */,
-				917E668216B45F850001F40C /* temple.tmx */,
-			);
-			name = Zelda;
 			sourceTree = "<group>";
 		};
 		9174745D16BF1E1700FA7B10 /* Mario */ = {
 			isa = PBXGroup;
 			children = (
-				9174746016BF1E2500FA7B10 /* world_1_level_1.tmx */,
-				9174745E16BF1E2000FA7B10 /* SMB-Tiles.gif */,
-				9125D54B16EF6424008AFCA0 /* Worlds.plist */,
+				914EB28E17140E900070051D /* WorldsConstrants.h */,
+				9106D2A51712E50000BC6CFC /* Worlds.plist */,
+				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
+				9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */,
+				914EB293171414A70070051D /* world_0_level_1.tmx */,
 			);
 			name = Mario;
 			sourceTree = "<group>";
@@ -789,6 +918,7 @@
 			isa = PBXGroup;
 			children = (
 				910B1C3316F4E0740097A11D /* Classes */,
+				914EB25E171404C40070051D /* 3rd Party */,
 				91C0B99116B4470A0092FCA9 /* Resources */,
 				91C0BB1A16B4470C0092FCA9 /* Supporting Files */,
 			);
@@ -817,10 +947,10 @@
 		91CCD3F91701EE170082CF59 /* Screen Layers */ = {
 			isa = PBXGroup;
 			children = (
-				D4A35FF01709A389000603FA /* Game Results */,
-				D4A35FEF1709A290000603FA /* Choose Level */,
-				D4A35FEE1709A284000603FA /* Choose World */,
 				D4A35FEA17099724000603FA /* Start */,
+				D4A35FEE1709A284000603FA /* Choose World */,
+				D4A35FEF1709A290000603FA /* Choose Level */,
+				D4A35FF01709A389000603FA /* Game Results */,
 				D4A35FE91709970D000603FA /* Game Info */,
 			);
 			name = "Screen Layers";
@@ -1207,8 +1337,8 @@
 		91FD0E7B1701D45D0032EC01 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				91FD0E7C1701D4940032EC01 /* NSBundle+Resources.h */,
-				91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */,
+				9106D29D1712DF3E00BC6CFC /* CCDirector */,
+				9106D29C1712DF3800BC6CFC /* NSBundle */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -1244,6 +1374,7 @@
 			children = (
 				91CCD3FB1701EE390082CF59 /* STStartLayer.h */,
 				91CCD3FC1701EE390082CF59 /* STStartLayer.m */,
+				914EB2891714092F0070051D /* images */,
 			);
 			name = Start;
 			sourceTree = "<group>";
@@ -1356,20 +1487,22 @@
 				91C0B9A316B4470A0092FCA9 /* Icon.png in Resources */,
 				91C0B9A516B4470A0092FCA9 /* Icon@2x.png in Resources */,
 				91C0B9A816B4470A0092FCA9 /* iTunesArtwork in Resources */,
-				917E668316B45F850001F40C /* temple.tmx in Resources */,
-				917E668516B45F8C0001F40C /* zelda-tiles.png in Resources */,
 				D4198B1616BD6CAD003F61DA /* Candle.png in Resources */,
 				D4198B1B16BD708D003F61DA /* Candle.plist in Resources */,
 				9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */,
 				9171B5A116BDDAD9008208D2 /* Frei.png in Resources */,
-				9174745F16BF1E2000FA7B10 /* SMB-Tiles.gif in Resources */,
-				9174746116BF1E2500FA7B10 /* world_1_level_1.tmx in Resources */,
 				917737EF16C19BB7001C1AAD /* block.png in Resources */,
-				9125D54C16EF6424008AFCA0 /* Worlds.plist in Resources */,
 				D49C7E1816F4CA58004101F1 /* about.plist in Resources */,
 				D49C7E1B16F4E812004101F1 /* twitter.png in Resources */,
 				D49C7E1C16F4E812004101F1 /* facebook.png in Resources */,
 				91CCD4051701EE620082CF59 /* Title.png in Resources */,
+				9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */,
+				9106D2A41712E4C400BC6CFC /* world_0_level_0.tmx in Resources */,
+				9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */,
+				914EB288171404DD0070051D /* README.md in Resources */,
+				914EB28C171409390070051D /* about.png in Resources */,
+				914EB28D171409390070051D /* preferences.png in Resources */,
+				914EB294171414A70070051D /* world_0_level_1.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1398,6 +1531,18 @@
 				D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */,
 				D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */,
 				D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */,
+				9106D2A01712DF5F00BC6CFC /* CCDirector+Transitions.m in Sources */,
+				914EB27D171404DD0070051D /* CCControl.m in Sources */,
+				914EB27E171404DD0070051D /* CCControlButton.m in Sources */,
+				914EB27F171404DD0070051D /* CCControlColourPicker.m in Sources */,
+				914EB280171404DD0070051D /* CCControlPicker.m in Sources */,
+				914EB281171404DD0070051D /* CCControlPotentiometer.m in Sources */,
+				914EB282171404DD0070051D /* CCControlSlider.m in Sources */,
+				914EB283171404DD0070051D /* CCControlStepper.m in Sources */,
+				914EB284171404DD0070051D /* CCControlSwitch.m in Sources */,
+				914EB285171404DD0070051D /* ccControlShaders.m in Sources */,
+				914EB286171404DD0070051D /* CCColourUtils.m in Sources */,
+				914EB287171404DD0070051D /* CCScale9Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

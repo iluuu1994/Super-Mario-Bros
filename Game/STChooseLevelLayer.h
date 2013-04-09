@@ -10,17 +10,6 @@
 #import "cocos2d.h"
 #import "STLayer.h"
 
-#define kWorldsFile @"worlds.plist"
-#define kWorldsKey @"Worlds"
-#define kWorldIDKey @"ID"
-#define kLevelsKey @"Levels"
-#define kLevelIDKey @"ID"
-#define kLevelNameKey @"Name"
-#define kLevelIconKey @"Icon"
-#define kLevelIsLockedKey @"isLocked"
-#define kLevelSelectionRowNumber 3
-#define kLevelSelectionColumnNumber 5
-
 @interface STChooseLevelLayer : STLayer {
     
 }

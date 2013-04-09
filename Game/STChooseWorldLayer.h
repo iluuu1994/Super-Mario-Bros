@@ -12,12 +12,6 @@
 #import "STLayer.h"
 #import "SlidingMenuGrid.h"
 
-#define kWorldsFile @"worlds.plist"
-#define kWorldsKey @"Worlds"
-#define kWorldIDKey @"ID"
-#define kWorldNameKey @"Name"
-#define kWorldIconKey @"Icon Name"
-#define kWorldIsLockedKey @"isLocked"
 #define kWorldSelectionRowNumber 1
 #define kWorldSelectionColumnNumber 3
 

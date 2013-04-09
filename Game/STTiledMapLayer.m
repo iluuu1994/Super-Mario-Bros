@@ -18,12 +18,8 @@
     self = [super init];
     if (self) {
         self.map = [CCTMXTiledMap tiledMapWithTMXFile:tiledMap];
-
-        // TODO: Use Constants for the strings!!!!!
         self.objectGroup = [self.map objectGroupNamed:kEventsLayerKey];
         self.objectLayer = [self.map layerNamed:kObjectLayerKey];
-
-        [self addChild:self.map];
 
         for (int x = 1; x < self.objectLayer.layerSize.width; x++) {
             for (int y = 1; y < self.objectLayer.layerSize.height; y++) {
@@ -35,7 +31,7 @@
                     CCNode *node = [objectClass node];
                     [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
                     
-                    [self addChild:node];
+                    [self.map addChild:node];
                 }
             }
         }
@@ -50,9 +46,11 @@
         NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Worlds" ofType:@"plist"]];
         NSLog(@"%@", dict);
          */
-        
         [self.objectLayer setVisible:NO];
-        [self.map.camera setEyeX:0.0 eyeY:0.0 eyeZ:1.0];
+        //[self.map.camera setEyeX:0.0 eyeY:0.0 eyeZ:1.0];
+        [self.map setScale:([CCDirector sharedDirector].winSize.height / self.map.contentSize.height)];
+        
+        [self addChild:self.map];
     }
     return self;
 }

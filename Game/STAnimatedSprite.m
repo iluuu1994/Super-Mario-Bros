@@ -15,7 +15,7 @@
 #pragma mark Initialise
 
 -(id)initWithPlistFile:(NSString *)plistFile {
-    if (self = [super initWithSpriteFrameName:@"Candle_1.png"]) {
+    if (self = [super init]) {
         self.animationDictionary = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:plistFile]];
         [self initAnimations];
     }
