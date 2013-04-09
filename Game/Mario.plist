@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>walk</key>
+		<dict>
+			<key>delay</key>
+			<string>0.1</string>
+			<key>frames</key>
+			<array>
+				<string>mario_1</string>
+				<string>mario_2</string>
+				<string>mario_3</string>
+				<string>mario_2</string>
+			</array>
+		</dict>
+	</dict>
+	<key>frames</key>
+	<dict>
+		<key>mario_1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 2}, {16, 30}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -1}</string>
+			<key>spriteSize</key>
+			<string>{16, 30}</string>
+			<key>spriteSourceSize</key>
+			<string>{16, 32}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 16}, {30, 16}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>mario_2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{1, 1}, {14, 31}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0.5}</string>
+			<key>spriteSize</key>
+			<string>{14, 31}</string>
+			<key>spriteSourceSize</key>
+			<string>{16, 32}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 32}, {14, 31}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>mario_3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {16, 32}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{16, 32}</string>
+			<key>spriteSourceSize</key>
+			<string>{16, 32}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {32, 16}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>GeneratedWith</key>
+		<string>SpriteHelper</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>textureFileName</key>
+		<string>Mario.png</string>
+	</dict>
+</dict>
+</plist>

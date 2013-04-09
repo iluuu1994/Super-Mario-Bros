@@ -33,9 +33,9 @@
         NSArray *plistAnimationFrames = [animationValue objectForKey:kAnimationPlistAnimationFramesKey];
         
         NSMutableArray *animationFrames = [NSMutableArray array];
-        for (NSString *animationFrame in plistAnimationFrames) {
-            id test = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:animationFrame];
-            [animationFrames addObject:test];
+        for (NSString *animationFrameName in plistAnimationFrames) {
+            id animationFrame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:animationFrameName];
+            [animationFrames addObject:animationFrame];
         }
         
         self.animations[animationKey] = [CCAnimation animationWithSpriteFrames:animationFrames delay:delay];

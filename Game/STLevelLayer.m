@@ -18,9 +18,9 @@
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
     NSDictionary *worldsInfo = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
     _levelInfo = worldsInfo[kWorldsKey][worldID][kLevelsKey][levelID];
-    [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"Frei.plist"];
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:spriteCacheName];
+        NSLog(@"test");
     }
     
     if (self = [super initWithTiledMap:[NSString stringWithFormat:worldsInfo[kWorldsNamingConvention], worldID, levelID]]) {

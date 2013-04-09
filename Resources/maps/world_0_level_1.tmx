@@ -2,6 +2,11 @@
 <map version="1.0" orientation="orthogonal" width="100" height="14" tilewidth="16" tileheight="16">
  <tileset firstgid="1" name="Mario" tilewidth="16" tileheight="16" spacing="1">
   <image source="SMB-Tiles.gif" width="220" height="186"/>
+  <tile id="0">
+   <properties>
+    <property name="type" value="STMario"/>
+   </properties>
+  </tile>
   <tile id="5">
    <properties>
     <property name="type" value="STBlock"/>
@@ -20,7 +25,7 @@
  </layer>
  <layer name="objects" width="100" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WsQoAIAhF0Tf5/5/cKmKiDbbcA1FENfQIkwC8sMYYe8z15PFfzMHPY18nDwstW3Pbi5nsnqVeXalyup2LWqd+8D72TP9X5AEAACAd33+QjuAVAAA=
+   H4sIAAAAAAAAA+3OMQ0AAAgDsOHfNAYWXp5WQRMAAADo5jsAAJwWMm7oGeAVAAA=
   </data>
  </layer>
  <objectgroup name="events" width="100" height="14">
