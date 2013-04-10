@@ -618,7 +618,6 @@
 		910B1C3316F4E0740097A11D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D49E85671703847E00C6E54E /* Third Party */,
 				910B1C4316F4E1DD0097A11D /* App Delegate */,
 				910B1C3416F4E08A0097A11D /* Abstract */,
 				910B1C4016F4E1AE0097A11D /* Layers */,
@@ -772,6 +771,7 @@
 		914EB25E171404C40070051D /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
+				D49E85681703848700C6E54E /* Sliding Menu Grid */,
 				914EB25F171404DD0070051D /* CCControlExtension */,
 			);
 			name = "3rd Party";
@@ -1376,14 +1376,6 @@
 				9106D29C1712DF3800BC6CFC /* NSBundle */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		D49E85671703847E00C6E54E /* Third Party */ = {
-			isa = PBXGroup;
-			children = (
-				D49E85681703848700C6E54E /* Sliding Menu Grid */,
-			);
-			name = "Third Party";
 			sourceTree = "<group>";
 		};
 		D49E85681703848700C6E54E /* Sliding Menu Grid */ = {

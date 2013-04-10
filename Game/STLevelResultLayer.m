@@ -41,7 +41,18 @@
                    score:(int)score
                  success:(BOOL)success {
 
-    
+    NSString *title = @"Congratulations!";
+    if(success) {
+        title = @"Game Over!";
+    }
+
+    CCMenu *menu = [CCMenu menuWithItems:
+                    [CCMenuItemFont itemWithString:title],
+                    [NSString stringWithFormat:@"Score: %i", score],
+                    [NSString stringWithFormat:@"Time: %@", time],
+                    nil];
+    [menu alignItemsVerticallyWithPadding:20];
+    [self addChild:menu];
 }
 
 @end
