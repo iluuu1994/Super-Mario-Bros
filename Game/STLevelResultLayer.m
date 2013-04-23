@@ -41,16 +41,37 @@
                    score:(int)score
                  success:(BOOL)success {
 
-    NSString *title = @"Congratulations!";
+    NSString *title = @"Game Over!";
     if(success) {
-        title = @"Game Over!";
+        title = @"Congratulations!";
     }
+    
+    time = [NSDate dateWithTimeIntervalSinceNow:-1000];
+    
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDateComponents *components = [calendar components:NSMinuteCalendarUnit | NSSecondCalendarUnit
+                                               fromDate:time
+                                                 toDate:[NSDate date]
+                                                options:0];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"hh:mm"];
 
     CCMenu *menu = [CCMenu menuWithItems:
                     [CCMenuItemFont itemWithString:title],
-                    [NSString stringWithFormat:@"Score: %i", score],
-                    [NSString stringWithFormat:@"Time: %@", time],
+                    [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Score: %i", score]],
+                    [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Time: %ld:%ld", (long)components.minute, (long)components.second]],
                     nil];
+    
+    if(success) {
+        // TODO: Retry Button
+        // TODO: Levels Button
+        // TODO: Next Level Button
+    } else {
+        // TODO: Retry Button
+        // TODO: Levels Button
+    }
+    
     [menu alignItemsVerticallyWithPadding:20];
     [self addChild:menu];
 }

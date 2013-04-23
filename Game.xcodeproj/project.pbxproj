@@ -182,6 +182,7 @@
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
+		D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */; };
 		D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FEC17099752000603FA /* STChooseLevelLayer.m */; };
 		D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */; };
 		D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */; };
@@ -560,6 +561,8 @@
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 		D49C7E1916F4E812004101F1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		D49CAC091726BC1100EFF3B3 /* STSettingsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingsLayer.h; sourceTree = "<group>"; };
+		D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingsLayer.m; sourceTree = "<group>"; };
 		D4A35FEB17099752000603FA /* STChooseLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseLevelLayer.h; sourceTree = "<group>"; };
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
@@ -982,6 +985,7 @@
 		91CCD3F91701EE170082CF59 /* Screen Layers */ = {
 			isa = PBXGroup;
 			children = (
+				D49CAC081726BBBB00EFF3B3 /* Settings Layer */,
 				D4A35FEA17099724000603FA /* Start */,
 				D4A35FEE1709A284000603FA /* Choose World */,
 				D4A35FEF1709A290000603FA /* Choose Level */,
@@ -1378,6 +1382,15 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		D49CAC081726BBBB00EFF3B3 /* Settings Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D49CAC091726BC1100EFF3B3 /* STSettingsLayer.h */,
+				D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */,
+			);
+			name = "Settings Layer";
+			sourceTree = "<group>";
+		};
 		D49E85681703848700C6E54E /* Sliding Menu Grid */ = {
 			isa = PBXGroup;
 			children = (
@@ -1573,6 +1586,7 @@
 				914EB286171404DD0070051D /* CCColourUtils.m in Sources */,
 				914EB287171404DD0070051D /* CCScale9Sprite.m in Sources */,
 				914EB299171424730070051D /* STMario.m in Sources */,
+				D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

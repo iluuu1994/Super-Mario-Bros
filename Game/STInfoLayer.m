@@ -7,6 +7,11 @@
 //
 
 #import "STInfoLayer.h"
+#import "STStartLayer.h"
+#import "CCDirector+Transitions.h"
+#import "CCControlExtension.h"
+
+#define kScreenPadding 10
 
 @implementation STInfoLayer
 {}
@@ -32,12 +37,27 @@
                     [CCMenuItemFont itemWithString:developers],
                     nil];
     
-    // TODO: add menu-menuitem
-    // TODO: add social media menuitems
-    
     [menu alignItemsVerticallyWithPadding:20];
     
     [self addChild:menu];
+    
+    // Menu
+    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Menu" fontName:@"Helvetica" fontSize:20];
+    [menuButton setAdjustBackgroundImage:NO];
+    [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
+    menuButton.position = ccp([[CCDirector sharedDirector] winSize].width / 2, kScreenPadding);
+    [self addChild:menuButton];
+    
+    // TODO: add menu-menuitem
+    // TODO: add social media menuitems
+}
+
+#pragma mark -
+#pragma mark Switch Scene
+- (IBAction)menu:(id)sender {
+    [[CCDirector sharedDirector] replaceScene:[STStartLayer scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 @end
