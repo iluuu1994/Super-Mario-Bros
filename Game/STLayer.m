@@ -37,7 +37,6 @@ static Class _sceneClass;
     return _sceneClass;
 }
 
-
 #pragma mark -
 #pragma mark Initialise
 - (id)init

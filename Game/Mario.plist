@@ -4,6 +4,15 @@
 <dict>
 	<key>animations</key>
 	<dict>
+		<key>stand</key>
+		<dict>
+			<key>delay</key>
+			<string>0.1</string>
+			<key>frames</key>
+			<array>
+				<string>mario_2</string>
+			</array>
+		</dict>
 		<key>walk</key>
 		<dict>
 			<key>delay</key>

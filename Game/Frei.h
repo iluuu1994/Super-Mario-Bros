@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "STAnimatedSprite.h"
+#import "STGameObject.h"
 
-@interface Frei : STAnimatedSprite
+@interface Frei : STGameObject
 {}
 
 #pragma mark -
