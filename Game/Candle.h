@@ -6,10 +6,9 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "STAnimatedSprite.h"
+#import "STGameObject.h"
 
-@interface Candle : STAnimatedSprite
+@interface Candle : STGameObject
 {}
 
 @end
