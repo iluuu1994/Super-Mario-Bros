@@ -30,6 +30,7 @@
 		914EB299171424730070051D /* STMario.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB298171424730070051D /* STMario.m */; };
 		914EB29D171424820070051D /* Mario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914EB29B171424820070051D /* Mario.plist */; };
 		914EB29E171424820070051D /* Mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB29C171424820070051D /* Mario.png */; };
+		91604817172DA6340048CC70 /* STGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 91604816172DA6340048CC70 /* STGameObject.m */; };
 		9171B5A016BDDAD9008208D2 /* Frei.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59E16BDDAD9008208D2 /* Frei.plist */; };
 		9171B5A116BDDAD9008208D2 /* Frei.png in Resources */ = {isa = PBXBuildFile; fileRef = 9171B59F16BDDAD9008208D2 /* Frei.png */; };
 		9171B5A416BDDB00008208D2 /* Frei.m in Sources */ = {isa = PBXBuildFile; fileRef = 9171B5A316BDDB00008208D2 /* Frei.m */; };
@@ -252,6 +253,8 @@
 		914EB298171424730070051D /* STMario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMario.m; sourceTree = "<group>"; };
 		914EB29B171424820070051D /* Mario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mario.plist; sourceTree = "<group>"; };
 		914EB29C171424820070051D /* Mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mario.png; sourceTree = "<group>"; };
+		91604815172DA6340048CC70 /* STGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGameObject.h; sourceTree = "<group>"; };
+		91604816172DA6340048CC70 /* STGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGameObject.m; sourceTree = "<group>"; };
 		9171B59E16BDDAD9008208D2 /* Frei.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Frei.plist; sourceTree = "<group>"; };
 		9171B59F16BDDAD9008208D2 /* Frei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Frei.png; sourceTree = "<group>"; };
 		9171B5A216BDDB00008208D2 /* Frei.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Frei.h; sourceTree = "<group>"; };
@@ -693,6 +696,7 @@
 		910B1C3B16F4E0ED0097A11D /* Sprite */ = {
 			isa = PBXGroup;
 			children = (
+				91604814172DA62A0048CC70 /* Game Object */,
 				91FD0E7A1701CAF00032EC01 /* Animated Sprite */,
 			);
 			name = Sprite;
@@ -873,6 +877,15 @@
 				914EB29B171424820070051D /* Mario.plist */,
 			);
 			name = resources;
+			sourceTree = "<group>";
+		};
+		91604814172DA62A0048CC70 /* Game Object */ = {
+			isa = PBXGroup;
+			children = (
+				91604815172DA6340048CC70 /* STGameObject.h */,
+				91604816172DA6340048CC70 /* STGameObject.m */,
+			);
+			name = "Game Object";
 			sourceTree = "<group>";
 		};
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
@@ -1587,6 +1600,7 @@
 				914EB287171404DD0070051D /* CCScale9Sprite.m in Sources */,
 				914EB299171424730070051D /* STMario.m in Sources */,
 				D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */,
+				91604817172DA6340048CC70 /* STGameObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
