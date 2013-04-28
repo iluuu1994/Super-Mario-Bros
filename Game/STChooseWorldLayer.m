@@ -8,7 +8,10 @@
 
 #import "STChooseWorldLayer.h"
 #import "NSBundle+Resources.h"
+#import "CCDirector+Transitions.h"
 #import "WorldsConstrants.h"
+#import "CCControlExtension.h"
+
 
 @implementation STChooseWorldLayer
 {}
@@ -18,74 +21,77 @@
 - (void)setUp {
     [super setUp];
     
-    NSMutableArray *worlds = [[NSMutableArray alloc] init];
     NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
-    NSLog(@"%@", root);
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
-    
-    //NSDictionary *world in [root valueForKey:kWorldsKey]
-    
-    CCSprite* normalSprite = [CCSprite spriteWithFile:@"twitter.png"];
-    CCSprite* selectedSprite = [CCSprite spriteWithFile:@"facebook.png"];
-    
-    normalSprite.scale = 0.3f;
-    selectedSprite.scale = 0.65f;
-    
-    for(int i = 0; i < 2; i++) {
-        CCSprite* normalSprite = [CCSprite spriteWithFile:@"twitter.png"];
-        CCSprite* selectedSprite = [CCSprite spriteWithFile:@"facebook.png"];
 
-        normalSprite.scale = 0.3f;
-        selectedSprite.scale = 0.65f;
-
-        CCMenuItemSprite* item = [CCMenuItemSprite itemWithNormalSprite:
-                                  normalSprite selectedSprite:selectedSprite];
-        
-        id __block _item = item;
-        [item setBlock:^(id sender) {
-            [self launchLevel:_item];
-        }];
-        
-        [worlds addObject:item];
-    }
-    
     NSMutableArray *pages = [[NSMutableArray alloc] init];
-    
-    int counter = 0;
     
     for(NSDictionary *world in [root valueForKey:kWorldsKey]) {
         CCLayer *page = [[CCLayer alloc] init];
         
-        if(counter % kWorldsPerPage == 0) {
-            // TODO: something
-        }
+        CCSprite *worldIcon = [CCSprite spriteWithFile:[world valueForKey:kWorldIconKey]];
+        CCSprite *worldIconSelected = [CCSprite spriteWithFile:[world valueForKey:kWorldIconKey]];
         
+        CCMenuItemSprite *worldItem = [CCMenuItemSprite itemWithNormalSprite:worldIcon
+                                                          selectedSprite:worldIconSelected
+                                                                  target:self
+                                                                selector:@selector(world:)];
+        
+        // World Title
         CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[world valueForKey:kWorldNameKey] fontName:@"Helvetica" fontSize:20];
         CCMenuItemLabel *title = [CCMenuItemLabel itemWithLabel:tlabel target:self selector:@selector(world:)];
-        CCMenu *menu = [CCMenu menuWithItems: title, nil];
+        [title setUserObject:world];
+        
+        // World Item Menu
+        CCMenu *menu = [CCMenu menuWithItems: worldItem, title, nil];
+        [menu alignItemsVerticallyWithPadding:20];
         menu.position = ccp(winSize.width / 2, winSize.height / 2);
+        
+        if([world valueForKey:kWorldIsLockedKey]) {
+            // Locked Icon
+            CCMenuItemSprite *lock = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithFile:kLockIcon]
+                                                             selectedSprite:[CCSprite spriteWithFile:kLockIcon]];
+            lock.position = ccp(worldItem.position.x + worldItem.contentSize.width / 2, worldItem.position.y);
+            [worldItem addChild:lock];
+        }
         
         [page addChild:menu];
         [pages addObject:page];
-        counter++;
     }
     
     CCScrollLayer *scroller = [[CCScrollLayer alloc] initWithLayers:pages widthOffset:winSize.width / 1.5];
     [self addChild:scroller];
-}
-
-#pragma mark -
-#pragma mark Methods
-
--(void)launchLevel:(CCMenuItemSprite *) level {
-    NSLog(@"launching level %@", level);
+    
+    // Back to Menu Button
+    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Back" fontName:@"Helvetica" fontSize:30];
+    [menuButton setAdjustBackgroundImage:NO];
+    [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
+    menuButton.position = ccp(menuButton.contentSize.width / 2 + kScreenPadding, menuButton.contentSize.height / 2 + kScreenPadding);
+    [self addChild:menuButton];
 }
 
 #pragma mark -
 #pragma mark Select World
 - (IBAction)world:(id)sender {
-    NSLog(@"selected world");
+    NSDictionary *world = [sender userObject];
+    NSNumber *worldId = [world valueForKey:kWorldIDKey];
+    BOOL isLocked = [[world valueForKey:kWorldIsLockedKey] boolValue];
+    
+    if(!isLocked) {
+        STScene *scene = [STChooseLevelLayer sceneWithWorldId:[worldId intValue]];
+        [[CCDirector sharedDirector] replaceScene: scene
+                              withTransitionClass:[CCTransitionFade class]
+                                         duration:0.5];
+    }
+}
+
+#pragma mark -
+#pragma mark Switch Scene
+- (IBAction)menu:(id)sender {
+    [[CCDirector sharedDirector] replaceScene:[STStartLayer scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 @end

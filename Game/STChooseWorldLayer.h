@@ -10,13 +10,17 @@
 #import "cocos2d.h"
 #import "STScene.h"
 #import "STLayer.h"
+#import "STStartLayer.h"
+#import "STChooseLevelLayer.h"
 #import "CCScrollLayer.h"
 
-#define kWorldsPerPage 3
 #define kWorldIdKey @"ID"
 #define kWorldNameKey @"Name"
 #define kWorldIconKey @"Icon Name"
 #define kWorldIsLockedKey @"Is Locked"
+#define kLockIcon @"lock.png"
+
+#define kScreenPadding 10
 
 @interface STChooseWorldLayer : STLayer {
     

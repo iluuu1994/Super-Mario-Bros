@@ -26,6 +26,14 @@
     return self;
 }
 
++(id)sceneWithWorldId:(unsigned int)worldId {
+    
+    STChooseLevelLayer *layer = [[STChooseLevelLayer alloc] initWithWorldId:worldId];
+    STScene *scene = [STScene node];
+    [scene addChild:layer];
+    return scene;
+}
+
 +(id)layerWithWorldId:(unsigned int)worldId {
     return [[self alloc] initWithWorldId:worldId];
 }

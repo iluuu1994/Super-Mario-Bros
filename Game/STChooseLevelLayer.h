@@ -31,6 +31,13 @@
 +(id)layerWithWorldId:(unsigned int)worldId;
 
 /**
+ * Returns a scene with a level selection layer (as a child) with the levels of the given worlds id
+ * @param worldId - the id of the world whose levels will be displayed
+ * @return id - The initialised object
+ */
++(id)sceneWithWorldId:(unsigned int)worldId;
+
+/**
  * Is called when the layer is initialised
  */
 - (void)setUpWithWorldId:(unsigned int)worldId;
