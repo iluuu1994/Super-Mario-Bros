@@ -191,6 +191,7 @@
 		D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932D0172D77F20059E5F4 /* switch-thumb.png */; };
 		D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */; };
 		D4A932DC172D98210059E5F4 /* CCScrollLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932DB172D98210059E5F4 /* CCScrollLayer.m */; };
+		D4A932E0172DA91C0059E5F4 /* STGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932DF172DA91C0059E5F4 /* STGameObject.m */; };
 		D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */; };
 /* End PBXBuildFile section */
 
@@ -581,6 +582,8 @@
 		D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConfigurationManager.m; sourceTree = "<group>"; };
 		D4A932DA172D98210059E5F4 /* CCScrollLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScrollLayer.h; sourceTree = "<group>"; };
 		D4A932DB172D98210059E5F4 /* CCScrollLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScrollLayer.m; sourceTree = "<group>"; };
+		D4A932DE172DA91C0059E5F4 /* STGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGameObject.h; sourceTree = "<group>"; };
+		D4A932DF172DA91C0059E5F4 /* STGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGameObject.m; sourceTree = "<group>"; };
 		D4ED041F1704BD140085FDF6 /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
 		D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SlidingMenuGrid.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -708,6 +711,7 @@
 		910B1C3B16F4E0ED0097A11D /* Sprite */ = {
 			isa = PBXGroup;
 			children = (
+				D4A932DD172DA8F00059E5F4 /* Game Object */,
 				91FD0E7A1701CAF00032EC01 /* Animated Sprite */,
 			);
 			name = Sprite;
@@ -1492,6 +1496,15 @@
 			name = "Scroll Layer";
 			sourceTree = "<group>";
 		};
+		D4A932DD172DA8F00059E5F4 /* Game Object */ = {
+			isa = PBXGroup;
+			children = (
+				D4A932DE172DA91C0059E5F4 /* STGameObject.h */,
+				D4A932DF172DA91C0059E5F4 /* STGameObject.m */,
+			);
+			name = "Game Object";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1639,6 +1652,7 @@
 				D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */,
 				D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */,
 				D4A932DC172D98210059E5F4 /* CCScrollLayer.m in Sources */,
+				D4A932E0172DA91C0059E5F4 /* STGameObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
