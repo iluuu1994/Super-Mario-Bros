@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "STLayer.h"
+#import "CCControlButton.h"
+
+#define kScreenPadding 10
+#define kButtonPadding 10
 
 @interface STLevelResultLayer : STLayer {
     
@@ -16,7 +20,6 @@
 
 #pragma mark -
 #pragma mark Initialise
-
 /**
  * Init a game result layer with given level identified by the world and level id. 
  * You specify the time needed for the user to complete the level or die.
@@ -52,6 +55,24 @@
                 time:(NSDate *)time
                score:(int)score
              success:(BOOL)success;
+
+/**
+ * Returns a scene with a game result layer (as a child) with given level identified by the world and level id.
+ * You specify the time needed for the user to complete the level or die.
+ * Furthermore the users score is displayed.
+ * A boolean indicates whether the user won or failed.
+ * @param worldId - the id of the world containing the played level
+ * @param levelID - the id of the played level inside the specified world
+ * @param time - the time needed for the user to complete the level or die
+ * @param score - the users score made inside this level
+ * @param success - true if the user successfully finished this level, false if not
+ * @return id - The initialised object
+ */
++(id)sceneWithWorldId:(unsigned int)worldId
+              levelId:(unsigned int)levelId
+                 time:(NSDate *)time
+                score:(int)score
+              success:(BOOL)success;
 
 /**
  * Is called when the layer is initialised

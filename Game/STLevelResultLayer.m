@@ -13,7 +13,6 @@
 
 #pragma mark -
 #pragma mark Initialise
-
 -(id)initWithWorldId:(unsigned int)worldId
              levelId:(unsigned int)levelId
                 time:(NSDate *)time
@@ -25,6 +24,22 @@
         [self setUpWithWorldId:worldId levelId:levelId time:time score:score success:success];
     }
     return self;
+}
+
++(id)sceneWithWorldId:(unsigned int)worldId
+             levelId:(unsigned int)levelId
+                time:(NSDate *)time
+               score:(int)score
+             success:(BOOL)success {
+    
+    STLevelResultLayer *layer = [[STLevelResultLayer alloc] initWithWorldId:worldId
+                                                                    levelId:levelId
+                                                                       time:time
+                                                                      score:score
+                                                                    success:success];
+    STScene *scene = [STScene node];
+    [scene addChild:layer];
+    return scene;
 }
 
 +(id)layerWithWorldId:(unsigned int)worldId
@@ -47,6 +62,7 @@
     }
     
     time = [NSDate dateWithTimeIntervalSinceNow:-1000];
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
     
     NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *components = [calendar components:NSMinuteCalendarUnit | NSSecondCalendarUnit
@@ -57,23 +73,69 @@
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"hh:mm"];
 
+    // Menu
     CCMenu *menu = [CCMenu menuWithItems:
                     [CCMenuItemFont itemWithString:title],
                     [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Score: %i", score]],
                     [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Time: %ld:%ld", (long)components.minute, (long)components.second]],
                     nil];
     
+    // Level Overview Button
+    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:@"Helvetica" fontSize:30];
+    [levelsButton setAdjustBackgroundImage:NO];
+    [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
+    [self addChild:levelsButton];
+    
+    // Retry Button
+    CCControlButton *retryButton = [CCControlButton buttonWithTitle:@"Retry" fontName:@"Helvetica" fontSize:30];
+    [retryButton setAdjustBackgroundImage:NO];
+    [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
+    [self addChild:retryButton];
+    
     if(success) {
-        // TODO: Retry Button
-        // TODO: Levels Button
-        // TODO: Next Level Button
+        // Level Overview Button
+        levelsButton.position = ccp(winSize.width / 2, levelsButton.contentSize.height / 2 + kScreenPadding);
+        
+        // Retry Button
+        retryButton.position = ccp(winSize.width / 2 - levelsButton.contentSize.width - kButtonPadding,
+                                   retryButton.contentSize.height / 2 + kScreenPadding);
+        
+        // Next Level Button
+        CCControlButton *nextButton = [CCControlButton buttonWithTitle:@"Next" fontName:@"Helvetica" fontSize:30];
+        [nextButton setAdjustBackgroundImage:NO];
+        [nextButton addTarget:self action:@selector(nextLevel:) forControlEvents:CCControlEventTouchUpInside];
+        nextButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width,
+                                  nextButton.contentSize.height / 2 + kScreenPadding);
+        [self addChild:nextButton];
     } else {
-        // TODO: Retry Button
-        // TODO: Levels Button
+        // Retry Button
+        retryButton.position = ccp(winSize.width / 2 - retryButton.contentSize.width / 2 - kButtonPadding,
+                                   retryButton.contentSize.height / 2 + kScreenPadding);
+        // Level Overview Button
+        levelsButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width / 2 - kButtonPadding,
+                                    levelsButton.contentSize.height / 2 + kScreenPadding);
     }
     
     [menu alignItemsVerticallyWithPadding:20];
     [self addChild:menu];
+}
+
+#pragma mark -
+#pragma mark Retry Level
+- (IBAction)retryLevel:(id)sender {
+    
+}
+
+#pragma mark -
+#pragma mark Level Overview
+- (IBAction)levelOverview:(id)sender {
+    
+}
+
+#pragma mark -
+#pragma mark Next Level
+- (IBAction)nextLevel:(id)sender {
+    
 }
 
 @end

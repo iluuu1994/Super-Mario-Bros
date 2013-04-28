@@ -14,6 +14,8 @@
 #define kAboutPlistFile @"about.plist"
 #define kDeveloperKey @"developers"
 #define kSocialMediaKey @"socialMedia"
+#define kSocialMediaIconKey @"icon"
+#define kSocialMediaUrlKey @"url"
 
 @interface STInfoLayer : STLayer {
     

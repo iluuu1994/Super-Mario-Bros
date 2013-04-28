@@ -185,6 +185,11 @@
 		D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */; };
 		D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FEC17099752000603FA /* STChooseLevelLayer.m */; };
 		D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */; };
+		D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CD172D77F10059E5F4 /* switch-mask.png */; };
+		D4A932D2172D77F20059E5F4 /* switch-off.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CE172D77F20059E5F4 /* switch-off.png */; };
+		D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CF172D77F20059E5F4 /* switch-on.png */; };
+		D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932D0172D77F20059E5F4 /* switch-thumb.png */; };
+		D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */; };
 		D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */; };
 /* End PBXBuildFile section */
 
@@ -567,6 +572,12 @@
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
 		D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelResultLayer.m; sourceTree = "<group>"; };
+		D4A932CD172D77F10059E5F4 /* switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-mask.png"; sourceTree = "<group>"; };
+		D4A932CE172D77F20059E5F4 /* switch-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-off.png"; sourceTree = "<group>"; };
+		D4A932CF172D77F20059E5F4 /* switch-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-on.png"; sourceTree = "<group>"; };
+		D4A932D0172D77F20059E5F4 /* switch-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-thumb.png"; sourceTree = "<group>"; };
+		D4A932D6172D78C20059E5F4 /* STConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfigurationManager.h; sourceTree = "<group>"; };
+		D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConfigurationManager.m; sourceTree = "<group>"; };
 		D4ED041F1704BD140085FDF6 /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
 		D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SlidingMenuGrid.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -621,6 +632,7 @@
 		910B1C3316F4E0740097A11D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4A932D5172D78820059E5F4 /* Miscellanious */,
 				910B1C4316F4E1DD0097A11D /* App Delegate */,
 				910B1C3416F4E08A0097A11D /* Abstract */,
 				910B1C4016F4E1AE0097A11D /* Layers */,
@@ -774,6 +786,7 @@
 		914EB25E171404C40070051D /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
+				D4A932AD172D5D4B0059E5F4 /* Table View */,
 				D49E85681703848700C6E54E /* Sliding Menu Grid */,
 				914EB25F171404DD0070051D /* CCControlExtension */,
 			);
@@ -893,6 +906,10 @@
 				91C0B9A716B4470A0092FCA9 /* iTunesArtwork */,
 				D49C7E1916F4E812004101F1 /* twitter.png */,
 				D49C7E1A16F4E812004101F1 /* facebook.png */,
+				D4A932CD172D77F10059E5F4 /* switch-mask.png */,
+				D4A932CE172D77F20059E5F4 /* switch-off.png */,
+				D4A932CF172D77F20059E5F4 /* switch-on.png */,
+				D4A932D0172D77F20059E5F4 /* switch-thumb.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -1446,6 +1463,22 @@
 			name = "Game Results";
 			sourceTree = "<group>";
 		};
+		D4A932AD172D5D4B0059E5F4 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Table View";
+			sourceTree = "<group>";
+		};
+		D4A932D5172D78820059E5F4 /* Miscellanious */ = {
+			isa = PBXGroup;
+			children = (
+				D4A932D6172D78C20059E5F4 /* STConfigurationManager.h */,
+				D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */,
+			);
+			name = Miscellanious;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1545,6 +1578,10 @@
 				914EB294171414A70070051D /* world_0_level_1.tmx in Resources */,
 				914EB29D171424820070051D /* Mario.plist in Resources */,
 				914EB29E171424820070051D /* Mario.png in Resources */,
+				D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */,
+				D4A932D2172D77F20059E5F4 /* switch-off.png in Resources */,
+				D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */,
+				D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1587,6 +1624,7 @@
 				914EB287171404DD0070051D /* CCScale9Sprite.m in Sources */,
 				914EB299171424730070051D /* STMario.m in Sources */,
 				D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */,
+				D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

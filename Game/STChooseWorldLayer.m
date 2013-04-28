@@ -53,17 +53,6 @@
     
     NSLog(@"%f", windowSize.width);
     NSLog(@"%f", windowSize.height);
-
-    
-    SlidingMenuGrid *worldGrid = [SlidingMenuGrid menuWithArray:worlds
-                                                           cols:kWorldSelectionColumnNumber
-                                                           rows:kWorldSelectionRowNumber
-                                                       position:CGPointMake(250.f, 250.f)
-                                                        padding:CGPointMake(normalSprite.boundingBox.size.width + 20,
-                                                                            normalSprite.boundingBox.size.height + 20)
-                                                 verticalPaging:false];
-        
-    [self addChild:worldGrid];
 }
 
 #pragma mark -

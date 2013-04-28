@@ -10,7 +10,6 @@
 #import "cocos2d.h"
 #import "STScene.h"
 #import "STLayer.h"
-#import "SlidingMenuGrid.h"
 
 #define kWorldSelectionRowNumber 1
 #define kWorldSelectionColumnNumber 3

@@ -66,17 +66,14 @@
 }
 
 - (IBAction)start:(id)sender {
-    
-    //[[CCDirector sharedDirector] replaceScene:[STChooseWorldLayer scene]
-    //                      withTransitionClass:[CCTransitionFade class]
-    //                                 duration:0.5];
-    
-    // TODO: simplify
-    STLevelResultLayer *resultLayer = [STLevelResultLayer layerWithWorldId:0 levelId:0 time:[NSDate date] score:234 success:YES];
-    STScene *scene = [STScene node];
-    [scene addChild: resultLayer];
-    
-    [[CCDirector sharedDirector] replaceScene: scene];
+    STScene *scene = [STLevelResultLayer sceneWithWorldId:0
+                                                  levelId:0
+                                                     time:[NSDate date]
+                                                    score:234
+                                                  success:YES];
+    [[CCDirector sharedDirector] replaceScene: scene
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 @end

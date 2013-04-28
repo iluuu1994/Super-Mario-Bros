@@ -21,35 +21,51 @@
 - (void)setUp {
     [super setUp];
     
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    
     NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kAboutPlistFile ofType:@""]];
-        
+    
+    // Scene Title
+    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
+    title.scale = 0.8f;
+    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kScreenPadding);
+    [self addChild:title];
+    
+    // Developer Information
     NSMutableString *developers = [[NSMutableString alloc] initWithString:@"by\n"];
     for(NSString *developer in [root valueForKey:kDeveloperKey]) {
         [developers appendString:developer];
         [developers appendString:@"\n"];
     }
+    CCLabelTTF *developerLabel = [CCLabelTTF labelWithString:developers fontName:@"Helvetica" fontSize:20];
+    developerLabel.position = ccp(winSize.width / 2, winSize.height / 2);
+    [self addChild:developerLabel];
     
-    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
-    title.scale = 0.8f;
-    
-    CCMenu *menu = [CCMenu menuWithItems:
-                    title,
-                    [CCMenuItemFont itemWithString:developers],
-                    nil];
-    
-    [menu alignItemsVerticallyWithPadding:20];
-    
-    [self addChild:menu];
-    
-    // Menu
-    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Menu" fontName:@"Helvetica" fontSize:20];
+    // Menu Button
+    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Menu" fontName:@"Helvetica" fontSize:30];
     [menuButton setAdjustBackgroundImage:NO];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
-    menuButton.position = ccp([[CCDirector sharedDirector] winSize].width / 2, kScreenPadding);
+    menuButton.position = ccp(winSize.width / 2, menuButton.contentSize.height / 2 + kScreenPadding);
     [self addChild:menuButton];
     
-    // TODO: add menu-menuitem
-    // TODO: add social media menuitems
+    int counter = 0;
+    
+    // Social Media Buttons
+    for(NSDictionary *socialMedia in [root valueForKey:kSocialMediaKey]) {
+        NSString *iconFileName = [socialMedia valueForKey:kSocialMediaIconKey];
+        NSString *url = [socialMedia valueForKey:kSocialMediaUrlKey];
+        
+        CCControlButton *socialMediaButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:iconFileName]];
+        socialMediaButton.adjustBackgroundImage = NO;
+        [socialMediaButton addTarget:self action:@selector(socialMedia:) forControlEvents:CCControlEventTouchUpInside];
+        CGSize imageSize = socialMediaButton.contentSize;
+        socialMediaButton.position = ccp(winSize.width - imageSize.width / 2 - kScreenPadding, imageSize.height / 2 + kScreenPadding + counter * (imageSize.height + kScreenPadding));
+        [socialMediaButton setUserObject:url];
+
+        counter++;
+        
+        [self addChild:socialMediaButton];
+    }
 }
 
 #pragma mark -
@@ -58,6 +74,13 @@
     [[CCDirector sharedDirector] replaceScene:[STStartLayer scene]
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
+}
+
+#pragma mark -
+#pragma mark Social Media Button
+- (IBAction)socialMedia:(id)sender {
+    NSURL *url = [[NSURL alloc] initWithString:[sender userObject]];
+    [[UIApplication sharedApplication] openURL:url];
 }
 
 @end

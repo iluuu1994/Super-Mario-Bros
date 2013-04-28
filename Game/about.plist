@@ -11,13 +11,13 @@
 	<array>
 		<dict>
 			<key>url</key>
-			<string>twitter.com/classicGameRemake</string>
+			<string>http://www.twitter.com/</string>
 			<key>icon</key>
 			<string>twitter.png</string>
 		</dict>
 		<dict>
 			<key>url</key>
-			<string>facebook.com/classicGameRemake</string>
+			<string>http://www.facebook.com/</string>
 			<key>icon</key>
 			<string>facebook.png</string>
 		</dict>
