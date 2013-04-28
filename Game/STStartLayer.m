@@ -9,6 +9,9 @@
 #import "STStartLayer.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
+#import "STLevelResultLayer.h"
+#import "STInfoLayer.h"
+#import "STSettingsLayer.h"
 
 #define kScreenPadding 10
 
@@ -23,6 +26,7 @@
     // Menu
     CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
     title.scale = 0.8f;
+    
     CCMenu *menu = [CCMenu menuWithItems:
                     title,
                     [CCMenuItemFont itemWithString:@"Play!" target:self selector:@selector(start:)],
@@ -30,17 +34,49 @@
     [menu alignItemsVerticallyWithPadding:20];
     [self addChild:menu];
     
+    // Settings
     CCControlButton *settings = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"preferences.png"]];
-    settings.position = ccp([CCDirector sharedDirector].winSize.width - settings.contentSize.width,
-                            settings.contentSize.width + kScreenPadding);
     settings.adjustBackgroundImage = NO;
+    [settings addTarget:self action:@selector(preferences:) forControlEvents:CCControlEventTouchUpInside];
+    settings.position = ccp(settings.contentSize.width / 2 + kScreenPadding,
+                            settings.contentSize.height / 2 + kScreenPadding);
     [self addChild:settings];
+
+    // About
+    CCControlButton *about = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"about.png"]];
+    about.adjustBackgroundImage = NO;
+    [about addTarget:self action:@selector(info:) forControlEvents:CCControlEventTouchUpInside];
+    about.position = ccp([[CCDirector sharedDirector] winSize].width - about.contentSize.width / 2 - kScreenPadding,
+                            about.contentSize.height / 2 + kScreenPadding);
+    [self addChild:about];
+}
+
+#pragma mark -
+#pragma mark Switch Scene
+- (IBAction)info:(id)sender {
+    [[CCDirector sharedDirector] replaceScene:[STInfoLayer scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
+}
+
+- (IBAction)preferences:(id)sender {
+    [[CCDirector sharedDirector] replaceScene:[STSettingsLayer scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 - (IBAction)start:(id)sender {
-    [[CCDirector sharedDirector] replaceScene:[STChooseWorldLayer scene]
-                          withTransitionClass:[CCTransitionFade class]
-                                     duration:0.5];
+    
+    //[[CCDirector sharedDirector] replaceScene:[STChooseWorldLayer scene]
+    //                      withTransitionClass:[CCTransitionFade class]
+    //                                 duration:0.5];
+    
+    // TODO: simplify
+    STLevelResultLayer *resultLayer = [STLevelResultLayer layerWithWorldId:0 levelId:0 time:[NSDate date] score:234 success:YES];
+    STScene *scene = [STScene node];
+    [scene addChild: resultLayer];
+    
+    [[CCDirector sharedDirector] replaceScene: scene];
 }
 
 @end
