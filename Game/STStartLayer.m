@@ -71,7 +71,7 @@
                                                      time:[NSDate date]
                                                     score:234
                                                   success:YES];
-    [[CCDirector sharedDirector] replaceScene: scene
+    [[CCDirector sharedDirector] replaceScene: [STChooseWorldLayer scene]
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
 }

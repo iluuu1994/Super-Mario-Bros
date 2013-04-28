@@ -190,6 +190,7 @@
 		D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CF172D77F20059E5F4 /* switch-on.png */; };
 		D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932D0172D77F20059E5F4 /* switch-thumb.png */; };
 		D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */; };
+		D4A932DC172D98210059E5F4 /* CCScrollLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932DB172D98210059E5F4 /* CCScrollLayer.m */; };
 		D4ED04211704BD140085FDF6 /* SlidingMenuGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */; };
 /* End PBXBuildFile section */
 
@@ -578,6 +579,8 @@
 		D4A932D0172D77F20059E5F4 /* switch-thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-thumb.png"; sourceTree = "<group>"; };
 		D4A932D6172D78C20059E5F4 /* STConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STConfigurationManager.h; sourceTree = "<group>"; };
 		D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STConfigurationManager.m; sourceTree = "<group>"; };
+		D4A932DA172D98210059E5F4 /* CCScrollLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCScrollLayer.h; sourceTree = "<group>"; };
+		D4A932DB172D98210059E5F4 /* CCScrollLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCScrollLayer.m; sourceTree = "<group>"; };
 		D4ED041F1704BD140085FDF6 /* SlidingMenuGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlidingMenuGrid.h; sourceTree = "<group>"; };
 		D4ED04201704BD140085FDF6 /* SlidingMenuGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SlidingMenuGrid.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -786,6 +789,7 @@
 		914EB25E171404C40070051D /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
+				D4A932D9172D97F70059E5F4 /* Scroll Layer */,
 				D4A932AD172D5D4B0059E5F4 /* Table View */,
 				D49E85681703848700C6E54E /* Sliding Menu Grid */,
 				914EB25F171404DD0070051D /* CCControlExtension */,
@@ -1479,6 +1483,15 @@
 			name = Miscellanious;
 			sourceTree = "<group>";
 		};
+		D4A932D9172D97F70059E5F4 /* Scroll Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D4A932DA172D98210059E5F4 /* CCScrollLayer.h */,
+				D4A932DB172D98210059E5F4 /* CCScrollLayer.m */,
+			);
+			name = "Scroll Layer";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1625,6 +1638,7 @@
 				914EB299171424730070051D /* STMario.m in Sources */,
 				D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */,
 				D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */,
+				D4A932DC172D98210059E5F4 /* CCScrollLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

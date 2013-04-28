@@ -22,8 +22,7 @@
     NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
     NSLog(@"%@", root);
     
-    CGSize windowSize = [[CCDirector sharedDirector] winSize];
-    CGPoint middle = ccp(windowSize.width/2, windowSize.height/2);
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
     
     //NSDictionary *world in [root valueForKey:kWorldsKey]
     
@@ -51,8 +50,29 @@
         [worlds addObject:item];
     }
     
-    NSLog(@"%f", windowSize.width);
-    NSLog(@"%f", windowSize.height);
+    NSMutableArray *pages = [[NSMutableArray alloc] init];
+    
+    int counter = 0;
+    
+    for(NSDictionary *world in [root valueForKey:kWorldsKey]) {
+        CCLayer *page = [[CCLayer alloc] init];
+        
+        if(counter % kWorldsPerPage == 0) {
+            // TODO: something
+        }
+        
+        CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[world valueForKey:kWorldNameKey] fontName:@"Helvetica" fontSize:20];
+        CCMenuItemLabel *title = [CCMenuItemLabel itemWithLabel:tlabel target:self selector:@selector(world:)];
+        CCMenu *menu = [CCMenu menuWithItems: title, nil];
+        menu.position = ccp(winSize.width / 2, winSize.height / 2);
+        
+        [page addChild:menu];
+        [pages addObject:page];
+        counter++;
+    }
+    
+    CCScrollLayer *scroller = [[CCScrollLayer alloc] initWithLayers:pages widthOffset:winSize.width / 1.5];
+    [self addChild:scroller];
 }
 
 #pragma mark -
@@ -60,6 +80,12 @@
 
 -(void)launchLevel:(CCMenuItemSprite *) level {
     NSLog(@"launching level %@", level);
+}
+
+#pragma mark -
+#pragma mark Select World
+- (IBAction)world:(id)sender {
+    NSLog(@"selected world");
 }
 
 @end

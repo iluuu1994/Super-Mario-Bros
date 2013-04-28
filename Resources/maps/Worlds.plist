@@ -10,11 +10,65 @@
 			<key>ID</key>
 			<integer>0</integer>
 			<key>Name</key>
-			<string>Insert World Name here...</string>
+			<string>World 1</string>
 			<key>Icon Name</key>
 			<string>Insert Icon Name here...</string>
 			<key>Is Locked</key>
 			<false/>
+			<key>Levels</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<integer>1</integer>
+			<key>Name</key>
+			<string>World 2</string>
+			<key>Icon Name</key>
+			<string>Insert Icon Name here...</string>
+			<key>Is Locked</key>
+			<false/>
+			<key>Levels</key>
+			<array>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<integer>2</integer>
+			<key>Name</key>
+			<string>World 3</string>
+			<key>Icon Name</key>
+			<string>Insert Icon Name here...</string>
+			<key>Is Locked</key>
+			<true/>
 			<key>Levels</key>
 			<array>
 				<dict>
