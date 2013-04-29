@@ -7,51 +7,52 @@
 //
 
 #import "STLevelResultLayer.h"
-
+#import "LayerConstants.h"
 
 @implementation STLevelResultLayer
+{}
 
 #pragma mark -
 #pragma mark Initialise
--(id)initWithWorldId:(unsigned int)worldId
-             levelId:(unsigned int)levelId
+-(id)initWithWorldID:(unsigned short)worldID
+             levelID:(unsigned short)levelID
                 time:(NSDate *)time
                score:(int)score
              success:(BOOL)success {
     
     self = [super init];
     if (self) {
-        [self setUpWithWorldId:worldId levelId:levelId time:time score:score success:success];
+        [self setUpWithWorldID:worldID levelID:levelID time:time score:score success:success];
     }
     return self;
 }
 
-+(id)sceneWithWorldId:(unsigned int)worldId
-             levelId:(unsigned int)levelId
++(id)layerWithWorldID:(unsigned short)worldID
+              levelID:(unsigned short)levelID
+                 time:(NSDate *)time
+                score:(int)score
+              success:(BOOL)success {
+    return [[self alloc] initWithWorldID:worldID levelID:levelID time:time score:score success:success];
+}
+
++(id)sceneWithWorldID:(unsigned short)worldID
+             levelID:(unsigned short)levelID
                 time:(NSDate *)time
                score:(int)score
              success:(BOOL)success {
     
-    STLevelResultLayer *layer = [[STLevelResultLayer alloc] initWithWorldId:worldId
-                                                                    levelId:levelId
-                                                                       time:time
-                                                                      score:score
-                                                                    success:success];
+    STLevelResultLayer *layer = [STLevelResultLayer layerWithWorldID:worldID
+                                                             levelID:levelID
+                                                                time:time
+                                                               score:score
+                                                             success:success];
     STScene *scene = [STScene node];
     [scene addChild:layer];
     return scene;
 }
 
-+(id)layerWithWorldId:(unsigned int)worldId
-              levelId:(unsigned int)levelId
-                 time:(NSDate *)time
-                score:(int)score
-              success:(BOOL)success {
-    return [[self alloc] initWithWorldId:worldId levelId:levelId time:time score:score success:success];
-}
-
-- (void)setUpWithWorldId:(unsigned int)worldId
-                 levelId:(unsigned int)levelId
+- (void)setUpWithWorldID:(unsigned short)worldID
+                 levelID:(unsigned short)levelID
                     time:(NSDate *)time
                    score:(int)score
                  success:(BOOL)success {

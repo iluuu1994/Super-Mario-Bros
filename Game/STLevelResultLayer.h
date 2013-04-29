@@ -11,9 +11,6 @@
 #import "STLayer.h"
 #import "CCControlButton.h"
 
-#define kScreenPadding 10
-#define kButtonPadding 10
-
 @interface STLevelResultLayer : STLayer {
     
 }
@@ -25,15 +22,15 @@
  * You specify the time needed for the user to complete the level or die.
  * Furthermore the users score is displayed.
  * A boolean indicates whether the user won or failed.
- * @param worldId - the id of the world containing the played level
+ * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
  * @param time - the time needed for the user to complete the level or die
  * @param score - the users score made inside this level
  * @param success - true if the user successfully finished this level, false if not
  * @return id - The initialised object
  */
--(id)initWithWorldId:(unsigned int)worldId
-             levelId:(unsigned int)levelId
+-(id)initWithWorldID:(unsigned short)worldID
+             levelID:(unsigned short)levelID
                 time:(NSDate *)time
                score:(int)score
              success:(BOOL)success;
@@ -43,15 +40,15 @@
  * You specify the time needed for the user to complete the level or die.
  * Furthermore the users score is displayed.
  * A boolean indicates whether the user won or failed.
- * @param worldId - the id of the world containing the played level
+ * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
  * @param time - the time needed for the user to complete the level or die
  * @param score - the users score made inside this level
  * @param success - true if the user successfully finished this level, false if not
  * @return id - The initialised object
  */
-+(id)layerWithWorldId:(unsigned int)worldId
-             levelId:(unsigned int)levelId
++(id)layerWithWorldID:(unsigned short)worldID
+             levelID:(unsigned short)levelID
                 time:(NSDate *)time
                score:(int)score
              success:(BOOL)success;
@@ -61,15 +58,15 @@
  * You specify the time needed for the user to complete the level or die.
  * Furthermore the users score is displayed.
  * A boolean indicates whether the user won or failed.
- * @param worldId - the id of the world containing the played level
+ * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
  * @param time - the time needed for the user to complete the level or die
  * @param score - the users score made inside this level
  * @param success - true if the user successfully finished this level, false if not
- * @return id - The initialised object
+ * @return The initialised object
  */
-+(id)sceneWithWorldId:(unsigned int)worldId
-              levelId:(unsigned int)levelId
++(id)sceneWithWorldID:(unsigned short)worldID
+              levelID:(unsigned short)levelID
                  time:(NSDate *)time
                 score:(int)score
               success:(BOOL)success;
@@ -77,8 +74,8 @@
 /**
  * Is called when the layer is initialised
  */
-- (void)setUpWithWorldId:(unsigned int)worldId
-                 levelId:(unsigned int)levelId
+- (void)setUpWithWorldID:(unsigned short)worldID
+                 levelID:(unsigned short)levelID
                     time:(NSDate *)time
                    score:(int)score
                  success:(BOOL)success;

@@ -9,9 +9,10 @@
 #import "STInfoLayer.h"
 #import "STStartLayer.h"
 #import "CCDirector+Transitions.h"
+#import "NSBundle+Resources.h"
 #import "CCControlExtension.h"
-
-#define kScreenPadding 10
+#import "LayerConstants.h"
+#import "STAboutConstants.h"
 
 @implementation STInfoLayer
 {}
@@ -23,7 +24,7 @@
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
-    NSDictionary *root = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:kAboutPlistFile ofType:@""]];
+    NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kAboutPlistFile]];
     
     // Scene Title
     CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];

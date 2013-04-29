@@ -14,14 +14,6 @@
 #import "STChooseLevelLayer.h"
 #import "CCScrollLayer.h"
 
-#define kWorldIdKey @"ID"
-#define kWorldNameKey @"Name"
-#define kWorldIconKey @"Icon Name"
-#define kWorldIsLockedKey @"Is Locked"
-#define kLockIcon @"lock.png"
-
-#define kScreenPadding 10
-
 @interface STChooseWorldLayer : STLayer {
     
 }

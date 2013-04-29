@@ -31,16 +31,24 @@
     return self;
 }
 
++ (id)layerWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    return [[self alloc] initWithWorldID:worldID levelID:levelID];
+}
+
++ (id)sceneWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    STLevelLayer *layer = [STLevelLayer layerWithWorldID:worldID
+                                                 levelID:levelID];
+    STScene *scene = [STScene node];
+    [scene addChild:layer];
+    return scene;
+}
+
 - (void)tearDown {
     [super tearDown];
     
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
     }
-}
-
-+ (id)layerWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
-    return [[self alloc] initWithWorldID:worldID levelID:levelID];
 }
 
 @end

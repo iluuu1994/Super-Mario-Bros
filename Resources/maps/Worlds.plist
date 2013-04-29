@@ -87,6 +87,90 @@
 				</dict>
 				<dict>
 					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>0</integer>
+					<key>Name</key>
+					<string>Insert Level Name here...</string>
+					<key>Icon Name</key>
+					<string>Insert Icon Name here...</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Candle.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
 					<integer>1</integer>
 					<key>Name</key>
 					<string>Insert Level Name here...</string>

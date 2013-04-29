@@ -9,9 +9,9 @@
 #import "STChooseWorldLayer.h"
 #import "NSBundle+Resources.h"
 #import "CCDirector+Transitions.h"
-#import "WorldsConstrants.h"
 #import "CCControlExtension.h"
-
+#import "WorldsConstrants.h"
+#import "LayerConstants.h"
 
 @implementation STChooseWorldLayer
 {}
@@ -75,11 +75,11 @@
 #pragma mark Select World
 - (IBAction)world:(id)sender {
     NSDictionary *world = [sender userObject];
-    NSNumber *worldId = [world valueForKey:kWorldIDKey];
+    NSNumber *worldID = [world valueForKey:kWorldIDKey];
     BOOL isLocked = [[world valueForKey:kWorldIsLockedKey] boolValue];
     
     if(!isLocked) {
-        STScene *scene = [STChooseLevelLayer sceneWithWorldId:[worldId intValue]];
+        STScene *scene = [STChooseLevelLayer sceneWithWorldID:[worldID shortValue]];
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];

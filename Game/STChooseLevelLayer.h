@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 #import "STLayer.h"
+#import "CCScrollLayer.h"
+#import "STStartLayer.h"
+#import "STLevelLayer.h"
+
+#define kDictionaryWorldKey @"world"
+#define kDictionaryLevelKey @"level"
 
 @interface STChooseLevelLayer : STLayer {
     
@@ -18,28 +24,28 @@
 
 /**
  * Init a level selection layer with the levels of the given worlds id
- * @param worldId - the id of the world whose levels will be displayed
- * @return id - The initialised object
+ * @param worldID - the id of the world whose levels will be displayed
+ * @return The initialised object
  */
--(id)initWithWorldId:(unsigned int)worldId;
+-(id)initWithWorldID:(unsigned short)worldID;
 
 /**
  * Returns a level selection layer with the levels of the given worlds id
- * @param worldId - the id of the world whose levels will be displayed
- * @return id - The initialised object
+ * @param worldID - the id of the world whose levels will be displayed
+ * @return The initialised object
  */
-+(id)layerWithWorldId:(unsigned int)worldId;
++(id)layerWithWorldID:(unsigned short)worldID;
 
 /**
  * Returns a scene with a level selection layer (as a child) with the levels of the given worlds id
- * @param worldId - the id of the world whose levels will be displayed
+ * @param worldID - the id of the world whose levels will be displayed
  * @return id - The initialised object
  */
-+(id)sceneWithWorldId:(unsigned int)worldId;
++(id)sceneWithWorldID:(unsigned short)worldID;
 
 /**
  * Is called when the layer is initialised
  */
-- (void)setUpWithWorldId:(unsigned int)worldId;
+- (void)setUpWithWorldID:(unsigned short)worldID;
 
 @end

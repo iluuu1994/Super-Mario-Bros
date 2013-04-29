@@ -24,4 +24,6 @@
 #define kLevelIsLockedKey @"Is Locked"
 #define kLevelSpriteCacheKey @"Sprite Cache"
 
+#define kLockIcon @"lock.png"
+
 #endif
