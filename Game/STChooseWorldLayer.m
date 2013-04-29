@@ -37,6 +37,7 @@
                                                           selectedSprite:worldIconSelected
                                                                   target:self
                                                                 selector:@selector(world:)];
+        [worldItem setUserObject:world];
         
         // World Title
         CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[world valueForKey:kWorldNameKey] fontName:@"Helvetica" fontSize:20];
@@ -48,7 +49,7 @@
         [menu alignItemsVerticallyWithPadding:20];
         menu.position = ccp(winSize.width / 2, winSize.height / 2);
         
-        if([world valueForKey:kWorldIsLockedKey]) {
+        if([[world valueForKey:kWorldIsLockedKey] boolValue]) {
             // Locked Icon
             CCMenuItemSprite *lock = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithFile:kLockIcon]
                                                              selectedSprite:[CCSprite spriteWithFile:kLockIcon]];

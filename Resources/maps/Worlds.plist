@@ -19,16 +19,16 @@
 			<array>
 				<dict>
 					<key>ID</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>Name</key>
-					<string>Insert Level Name here...</string>
+					<string>Level 1</string>
 					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
+					<string>facebook.png</string>
 					<key>Is Locked</key>
 					<false/>
 					<key>Sprite Cache</key>
 					<array>
-						<string>Candle.plist</string>
+						<string>Mario.plist</string>
 					</array>
 				</dict>
 			</array>
@@ -41,21 +41,21 @@
 			<key>Icon Name</key>
 			<string>twitter.png</string>
 			<key>Is Locked</key>
-			<false/>
+			<true/>
 			<key>Levels</key>
 			<array>
 				<dict>
 					<key>ID</key>
-					<integer>0</integer>
+					<integer>1</integer>
 					<key>Name</key>
-					<string>Insert Level Name here...</string>
+					<string>Level 1</string>
 					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
+					<string>facebook.png</string>
 					<key>Is Locked</key>
 					<false/>
 					<key>Sprite Cache</key>
 					<array>
-						<string>Candle.plist</string>
+						<string>Mario.plist</string>
 					</array>
 				</dict>
 			</array>
@@ -68,114 +68,128 @@
 			<key>Icon Name</key>
 			<string>facebook.png</string>
 			<key>Is Locked</key>
-			<true/>
+			<false/>
 			<key>Levels</key>
 			<array>
 				<dict>
 					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
-					<integer>0</integer>
-					<key>Name</key>
-					<string>Insert Level Name here...</string>
-					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
-					<key>Is Locked</key>
-					<false/>
-					<key>Sprite Cache</key>
-					<array>
-						<string>Candle.plist</string>
-					</array>
-				</dict>
-				<dict>
-					<key>ID</key>
 					<integer>1</integer>
 					<key>Name</key>
-					<string>Insert Level Name here...</string>
+					<string>Level 1</string>
 					<key>Icon Name</key>
-					<string>Insert Icon Name here...</string>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>2</integer>
+					<key>Name</key>
+					<string>Level 2</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>3</integer>
+					<key>Name</key>
+					<string>Level 3</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>4</integer>
+					<key>Name</key>
+					<string>Level 4</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>5</integer>
+					<key>Name</key>
+					<string>Level 5</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>6</integer>
+					<key>Name</key>
+					<string>Level 6</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>7</integer>
+					<key>Name</key>
+					<string>Level 7</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>8</integer>
+					<key>Name</key>
+					<string>Level 8</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
+					<key>Is Locked</key>
+					<false/>
+					<key>Sprite Cache</key>
+					<array>
+						<string>Mario.plist</string>
+					</array>
+				</dict>
+				<dict>
+					<key>ID</key>
+					<integer>9</integer>
+					<key>Name</key>
+					<string>Level 9</string>
+					<key>Icon Name</key>
+					<string>facebook.png</string>
 					<key>Is Locked</key>
 					<false/>
 					<key>Sprite Cache</key>
