@@ -11,7 +11,7 @@
 #import "CCDirector+Transitions.h"
 #import "NSBundle+Resources.h"
 #import "CCControlExtension.h"
-#import "LayerConstants.h"
+#import "STLayerConstants.h"
 #import "STAboutConstants.h"
 
 @implementation STInfoLayer

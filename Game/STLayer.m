@@ -13,8 +13,6 @@
 
 #pragma mark -
 #pragma mark Scene
-static Class _sceneClass;
-
 + (STScene *)scene {
     STScene *scene = [[self sceneClass] node];
     
@@ -24,17 +22,16 @@ static Class _sceneClass;
     return scene;
 }
 - (STScene *)scene {
-    STScene *scene = [[self sceneClass] node];
+    STScene *scene = [[[self class] sceneClass] node];
     [scene addChild:self];
     
     return scene;
 }
+
+#pragma mark -
+#pragma mark Scene Class
 + (Class)sceneClass {
-    if (!_sceneClass) {
-        return [STScene class];
-    }
-    
-    return _sceneClass;
+    return [STScene class];
 }
 
 #pragma mark -

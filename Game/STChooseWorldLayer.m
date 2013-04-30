@@ -10,8 +10,8 @@
 #import "NSBundle+Resources.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
-#import "WorldsConstrants.h"
-#import "LayerConstants.h"
+#import "STWorldsConstants.h"
+#import "STLayerConstants.h"
 
 @implementation STChooseWorldLayer
 {}
@@ -80,8 +80,9 @@
     BOOL isLocked = [[world valueForKey:kWorldIsLockedKey] boolValue];
     
     if(!isLocked) {
-        STScene *scene = [STChooseLevelLayer sceneWithWorldID:[worldID shortValue]];
-        [[CCDirector sharedDirector] replaceScene: scene
+        STLevelLayer *level = [STChooseLevelLayer layerWithWorldID:[worldID shortValue]];
+        STScene *scene = [level scene];
+        [[CCDirector sharedDirector] replaceScene:scene
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];
     }

@@ -24,7 +24,11 @@
  * Embedds the layer in a scene
  */
 - (STScene *)scene;
-@property (nonatomic, strong) Class sceneClass;
+
+/**
+ * The scene class that should be used
+ */
++ (Class)sceneClass;
 
 #pragma mark -
 #pragma mark Initialise

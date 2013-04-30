@@ -179,6 +179,7 @@
 		91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */; };
 		D4198B1616BD6CAD003F61DA /* Candle.png in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1516BD6CAD003F61DA /* Candle.png */; };
 		D4198B1B16BD708D003F61DA /* Candle.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4198B1A16BD708D003F61DA /* Candle.plist */; };
+		D4437B61172FE13000FF2F44 /* STControlsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B60172FE13000FF2F44 /* STControlsLayer.m */; };
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
@@ -253,7 +254,7 @@
 		914EB27C171404DD0070051D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		914EB28A171409390070051D /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		914EB28B171409390070051D /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
-		914EB28E17140E900070051D /* WorldsConstrants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorldsConstrants.h; sourceTree = "<group>"; };
+		914EB28E17140E900070051D /* STWorldsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWorldsConstants.h; sourceTree = "<group>"; };
 		914EB293171414A70070051D /* world_0_level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_1.tmx; path = Resources/maps/world_0_level_1.tmx; sourceTree = SOURCE_ROOT; };
 		914EB297171424730070051D /* STMario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMario.h; sourceTree = "<group>"; };
 		914EB298171424730070051D /* STMario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMario.m; sourceTree = "<group>"; };
@@ -565,6 +566,8 @@
 		91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Resources.m"; sourceTree = "<group>"; };
 		D4198B1516BD6CAD003F61DA /* Candle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Candle.png; sourceTree = "<group>"; };
 		D4198B1A16BD708D003F61DA /* Candle.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Candle.plist; sourceTree = "<group>"; };
+		D4437B5F172FE13000FF2F44 /* STControlsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STControlsLayer.h; sourceTree = "<group>"; };
+		D4437B60172FE13000FF2F44 /* STControlsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STControlsLayer.m; sourceTree = "<group>"; };
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 		D49C7E1916F4E812004101F1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -574,7 +577,7 @@
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
 		D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelResultLayer.m; sourceTree = "<group>"; };
-		D4A61D73172ED77600609D65 /* LayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerConstants.h; sourceTree = "<group>"; };
+		D4A61D73172ED77600609D65 /* STLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayerConstants.h; sourceTree = "<group>"; };
 		D4A61D76172ED83400609D65 /* STAboutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAboutConstants.h; sourceTree = "<group>"; };
 		D4A932CD172D77F10059E5F4 /* switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-mask.png"; sourceTree = "<group>"; };
 		D4A932CE172D77F20059E5F4 /* switch-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-off.png"; sourceTree = "<group>"; };
@@ -747,6 +750,7 @@
 		910B1C4016F4E1AE0097A11D /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				D4437B5E172FE0F800FF2F44 /* Controls Layer */,
 				91CCD3F91701EE170082CF59 /* Screen Layers */,
 				910B1C4416F4E1E80097A11D /* Hello World */,
 				910B1C4216F4E1D00097A11D /* Tiled Maps */,
@@ -933,12 +937,12 @@
 		9174745D16BF1E1700FA7B10 /* Mario */ = {
 			isa = PBXGroup;
 			children = (
-				914EB28E17140E900070051D /* WorldsConstrants.h */,
+				914EB28E17140E900070051D /* STWorldsConstants.h */,
 				9106D2A51712E50000BC6CFC /* Worlds.plist */,
 				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
 				9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */,
 				914EB293171414A70070051D /* world_0_level_1.tmx */,
-				D4A61D73172ED77600609D65 /* LayerConstants.h */,
+				D4A61D73172ED77600609D65 /* STLayerConstants.h */,
 				D4A61D76172ED83400609D65 /* STAboutConstants.h */,
 			);
 			name = Mario;
@@ -1409,6 +1413,15 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		D4437B5E172FE0F800FF2F44 /* Controls Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D4437B5F172FE13000FF2F44 /* STControlsLayer.h */,
+				D4437B60172FE13000FF2F44 /* STControlsLayer.m */,
+			);
+			name = "Controls Layer";
+			sourceTree = "<group>";
+		};
 		D49CAC081726BBBB00EFF3B3 /* Settings Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1647,6 +1660,7 @@
 				D4A932D8172D78C20059E5F4 /* STConfigurationManager.m in Sources */,
 				D4A932DC172D98210059E5F4 /* CCScrollLayer.m in Sources */,
 				D4A932E0172DA91C0059E5F4 /* STGameObject.m in Sources */,
+				D4437B61172FE13000FF2F44 /* STControlsLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

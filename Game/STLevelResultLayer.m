@@ -7,7 +7,8 @@
 //
 
 #import "STLevelResultLayer.h"
-#import "LayerConstants.h"
+#import "STLayerConstants.h"
+#import "CCDirector+Transitions.h"
 
 @implementation STLevelResultLayer
 {}
@@ -35,27 +36,13 @@
     return [[self alloc] initWithWorldID:worldID levelID:levelID time:time score:score success:success];
 }
 
-+(id)sceneWithWorldID:(unsigned short)worldID
-             levelID:(unsigned short)levelID
-                time:(NSDate *)time
-               score:(int)score
-             success:(BOOL)success {
-    
-    STLevelResultLayer *layer = [STLevelResultLayer layerWithWorldID:worldID
-                                                             levelID:levelID
-                                                                time:time
-                                                               score:score
-                                                             success:success];
-    STScene *scene = [STScene node];
-    [scene addChild:layer];
-    return scene;
-}
-
 - (void)setUpWithWorldID:(unsigned short)worldID
                  levelID:(unsigned short)levelID
                     time:(NSDate *)time
                    score:(int)score
                  success:(BOOL)success {
+    self.worldID = worldID;
+    self.levelID = levelID;
 
     NSString *title = @"Game Over!";
     if(success) {
@@ -123,14 +110,19 @@
 
 #pragma mark -
 #pragma mark Retry Level
-- (IBAction)retryLevel:(id)sender {
-    
+- (IBAction)retryLevel:(id)sender {    
+    STScene *scene = [STLevelLayer sceneWithWorldID:self.worldID levelID:self.levelID];
+    [[CCDirector sharedDirector] replaceScene: scene
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 #pragma mark -
 #pragma mark Level Overview
 - (IBAction)levelOverview:(id)sender {
-    
+    [[CCDirector sharedDirector] replaceScene: [[STChooseLevelLayer layerWithWorldID:self.worldID] scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 #pragma mark -

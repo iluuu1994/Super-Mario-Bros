@@ -7,7 +7,7 @@
 //
 
 #import "STLevelLayer.h"
-#import "WorldsConstrants.h"
+#import "STWorldsConstants.h"
 #import "NSBundle+Resources.h"
 
 @implementation STLevelLayer
