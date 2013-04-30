@@ -12,6 +12,8 @@
 #import "CCScrollLayer.h"
 #import "STStartLayer.h"
 #import "STLevelLayer.h"
+#import "STPauseLayer.h"//TODO: remove
+#import "STControlsLayer.h"//TODO: remove
 
 @interface STChooseLevelLayer : STLayer {
     

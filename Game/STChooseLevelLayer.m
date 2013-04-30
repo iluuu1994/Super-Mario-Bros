@@ -103,10 +103,15 @@
 - (IBAction)level:(id)sender {
     NSDictionary *level = [sender userObject];
     BOOL isLocked = [[level valueForKey:kLevelIsLockedKey] boolValue];
+    unsigned short worldID = [[self.world valueForKey:kWorldIDKey] shortValue];
+    unsigned short levelID = [[level valueForKey:kLevelIDKey] shortValue];
     
     if(!isLocked) {
-        STScene *scene = [[STLevelLayer layerWithWorldID:[[self.world valueForKey:kWorldIDKey] shortValue]
-                                                levelID:[[level valueForKey:kLevelIDKey] shortValue]] scene];
+        STScene *scene = [[STLevelLayer layerWithWorldID:worldID levelID:levelID] scene];
+        // TODO: remove
+        //[scene addChild:[STPauseLayer layerWithWorldID:worldID levelID:levelID]];
+        [scene addChild:[STControlsLayer node]];
+        
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];

@@ -7,6 +7,8 @@
 //
 
 #import "STLayer.h"
+#import "STLevelLayer.h"
+#import "STChooseLevelLayer.h"
 
 @interface STPauseLayer : STLayer
 

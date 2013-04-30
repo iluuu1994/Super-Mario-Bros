@@ -22,7 +22,7 @@
     CCControlButton *pauseButton = [CCControlButton buttonWithTitle:@"II" fontName:@"Helvetica" fontSize:30];
     [pauseButton setAdjustBackgroundImage:NO];
     [pauseButton addTarget:self action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
-    pauseButton.position = ccp(kScreenPadding + pauseButton.contentSize.width,
+    pauseButton.position = ccp(kScreenPadding + pauseButton.contentSize.width / 2,
                                [[CCDirector sharedDirector] winSize].height - pauseButton.contentSize.height / 2 - kScreenPadding);
     [self addChild:pauseButton];
     
@@ -34,7 +34,7 @@
     [self addChild:aButton];
     
     // B Button
-    CCControlButton *bButton = [CCControlButton buttonWithTitle:@"A" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *bButton = [CCControlButton buttonWithTitle:@"B" fontName:@"Helvetica" fontSize:30];
     [bButton setAdjustBackgroundImage:NO];
     [bButton addTarget:self action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
     bButton.position = ccp([[CCDirector sharedDirector] winSize].width - bButton.contentSize.width - aButton.contentSize.width - 2 * kScreenPadding, bButton.contentSize.height / 2 + kScreenPadding);
