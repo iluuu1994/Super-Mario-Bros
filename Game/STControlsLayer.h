@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "STLayer.h"
 
 @interface STControlsLayer : STLayer

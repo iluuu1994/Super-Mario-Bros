@@ -4,23 +4,23 @@
   <image source="SMB-Tiles.gif" width="220" height="186"/>
   <tile id="5">
    <properties>
-    <property name="type" value="Candle"/>
+    <property name="type" value="STMario"/>
    </properties>
   </tile>
  </tileset>
  <layer name="bg" width="100" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3UoQ4AIAhFUf4Ttav/36XYLTJgN5z6Nh4DFREF8KyZbkbS/Co9XdMss5Pme3UaaY4qfnda5RdU4XVD7D0WficAAAAyOKhu0pjgFQAA
+  <data encoding="base64" compression="zlib">
+   eJzt1KEOACAIRVH+E7Wr/9+l2C0yYDec+jYeAxURBfCsmW5G0vwqPV3TLLOT5nt1GmmOKn53WuUXVOF1Q+w9Fn4nAAAAMjgJSvLq
   </data>
  </layer>
  <layer name="collision" width="100" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3RoQ0AAAgDQdh/aQQTIEgq7pLXFa0CAAAAgFz92GWH5Y8sA6pPVjPgFQAA
+  <data encoding="base64" compression="zlib">
+   eJzt0aENAAAIA0HYf2kEEyBIKu6S1xWtAgAAAIBc/dhlh+WPLAOX6AA/
   </data>
  </layer>
  <layer name="objects" width="100" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3VsQkAQAgEQSP7L/kT0wOzR5iBrWGruK4nANjoEAAk6R0eAgD/PWwOfVTgFQAA
+  <data encoding="base64" compression="zlib">
+   eJzt1bEJAEAIBEEj+y/5E9MDs0eYga1hq7iuJwDY6BAAJOkdHgIA/z1m3ABh
   </data>
  </layer>
  <objectgroup name="events" width="100" height="14">

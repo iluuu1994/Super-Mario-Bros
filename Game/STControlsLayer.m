@@ -18,6 +18,14 @@
 - (void)setUp {
     [super setUp];
     
+    // Pause Button
+    CCControlButton *pauseButton = [CCControlButton buttonWithTitle:@"II" fontName:@"Helvetica" fontSize:30];
+    [pauseButton setAdjustBackgroundImage:NO];
+    [pauseButton addTarget:self action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
+    pauseButton.position = ccp(kScreenPadding + pauseButton.contentSize.width,
+                               [[CCDirector sharedDirector] winSize].height - pauseButton.contentSize.height / 2 - kScreenPadding);
+    [self addChild:pauseButton];
+    
     // A Button
     CCControlButton *aButton = [CCControlButton buttonWithTitle:@"A" fontName:@"Helvetica" fontSize:30];
     [aButton setAdjustBackgroundImage:NO];
