@@ -33,6 +33,7 @@
     _cachedEvent = event;
     
     [self runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:self.animations[@"walk"]]]];
+    [self jump];
 }
 
 - (void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -46,9 +47,17 @@
     return YES;
 }
 
+- (void)collisionWithGameObject:(STGameObject *)gameObject {
+
+}
+
+- (void)jump {
+    self.velocity = ccpAdd(self.velocity, ccp(0, 20));
+}
+
 - (void)update:(ccTime)delta {
     if (_cachedEvent) {
-        self.position = ccp(self.position.x + 1, self.position.y);
+        self.position = ccp(self.position.x + (100 * delta), self.position.y);
     }
 }
 

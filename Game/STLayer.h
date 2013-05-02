@@ -39,6 +39,10 @@
 - (void)setUp;
 
 #pragma mark -
+#pragma mark Update
+@property (nonatomic, readonly) BOOL needsUpdate;
+
+#pragma mark -
 #pragma mark Dealloc
 
 /*!

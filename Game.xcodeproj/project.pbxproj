@@ -30,11 +30,14 @@
 		914EB299171424730070051D /* STMario.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB298171424730070051D /* STMario.m */; };
 		914EB29D171424820070051D /* Mario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914EB29B171424820070051D /* Mario.plist */; };
 		914EB29E171424820070051D /* Mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB29C171424820070051D /* Mario.png */; };
+		91584C3B1730029100AD276C /* STCollisionDetectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */; };
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917737EF16C19BB7001C1AAD /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 917737EE16C19BB7001C1AAD /* block.png */; };
 		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
 		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
 		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
+		91BF84C3173265F0001249AF /* STCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF84C2173265F0001249AF /* STCreature.m */; };
+		91BF84C717326660001249AF /* STPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF84C617326660001249AF /* STPlayer.m */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
 		91C0B98116B4470A0092FCA9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98016B4470A0092FCA9 /* OpenGLES.framework */; };
 		91C0B98316B4470A0092FCA9 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B98216B4470A0092FCA9 /* OpenAL.framework */; };
@@ -254,6 +257,8 @@
 		914EB298171424730070051D /* STMario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMario.m; sourceTree = "<group>"; };
 		914EB29B171424820070051D /* Mario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mario.plist; sourceTree = "<group>"; };
 		914EB29C171424820070051D /* Mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mario.png; sourceTree = "<group>"; };
+		91584C391730029100AD276C /* STCollisionDetectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollisionDetectionHelper.h; sourceTree = "<group>"; };
+		91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollisionDetectionHelper.m; sourceTree = "<group>"; };
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917737EE16C19BB7001C1AAD /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
@@ -263,6 +268,10 @@
 		91AB077F16BE704300195D66 /* STLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLayer.m; sourceTree = "<group>"; };
 		91AB078116BE912400195D66 /* STTiledMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTiledMapLayer.h; sourceTree = "<group>"; };
 		91AB078216BE912400195D66 /* STTiledMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTiledMapLayer.m; sourceTree = "<group>"; };
+		91BF84C1173265F0001249AF /* STCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCreature.h; sourceTree = "<group>"; };
+		91BF84C2173265F0001249AF /* STCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCreature.m; sourceTree = "<group>"; };
+		91BF84C517326660001249AF /* STPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPlayer.h; sourceTree = "<group>"; };
+		91BF84C617326660001249AF /* STPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPlayer.m; sourceTree = "<group>"; };
 		91C0B97A16B4470A0092FCA9 /* Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91C0B98016B4470A0092FCA9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -811,7 +820,8 @@
 		914EB295171424510070051D /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
-				914EB296171424600070051D /* Mario */,
+				91BF84C0173265D1001249AF /* Creature */,
+				91BF84C81732681A001249AF /* STItem */,
 				910B1C3A16F4E0CE0097A11D /* Block */,
 			);
 			name = Sprites;
@@ -834,6 +844,15 @@
 				914EB29B171424820070051D /* Mario.plist */,
 			);
 			name = resources;
+			sourceTree = "<group>";
+		};
+		91584C381730025100AD276C /* Collision Detection */ = {
+			isa = PBXGroup;
+			children = (
+				91584C391730029100AD276C /* STCollisionDetectionHelper.h */,
+				91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */,
+			);
+			name = "Collision Detection";
 			sourceTree = "<group>";
 		};
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
@@ -866,14 +885,6 @@
 		9171B59D16BDDAC2008208D2 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				9174745D16BF1E1700FA7B10 /* Mario */,
-			);
-			name = Maps;
-			sourceTree = "<group>";
-		};
-		9174745D16BF1E1700FA7B10 /* Mario */ = {
-			isa = PBXGroup;
-			children = (
 				914EB28E17140E900070051D /* STWorldsConstants.h */,
 				9106D2A51712E50000BC6CFC /* Worlds.plist */,
 				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
@@ -882,7 +893,34 @@
 				D4A61D73172ED77600609D65 /* STLayerConstants.h */,
 				D4A61D76172ED83400609D65 /* STAboutConstants.h */,
 			);
-			name = Mario;
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		91BF84C0173265D1001249AF /* Creature */ = {
+			isa = PBXGroup;
+			children = (
+				91BF84C1173265F0001249AF /* STCreature.h */,
+				91BF84C2173265F0001249AF /* STCreature.m */,
+				91BF84C417326648001249AF /* Player */,
+			);
+			name = Creature;
+			sourceTree = "<group>";
+		};
+		91BF84C417326648001249AF /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				91BF84C517326660001249AF /* STPlayer.h */,
+				91BF84C617326660001249AF /* STPlayer.m */,
+				914EB296171424600070051D /* Mario */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		91BF84C81732681A001249AF /* STItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = STItem;
 			sourceTree = "<group>";
 		};
 		91C0B96F16B4470A0092FCA9 = {
@@ -1435,6 +1473,7 @@
 		D4A932D5172D78820059E5F4 /* Miscellanious */ = {
 			isa = PBXGroup;
 			children = (
+				91584C381730025100AD276C /* Collision Detection */,
 				D4A61D72172ED23A00609D65 /* Settings */,
 			);
 			name = Miscellanious;
@@ -1601,6 +1640,9 @@
 				D4A932E0172DA91C0059E5F4 /* STGameObject.m in Sources */,
 				D4437B61172FE13000FF2F44 /* STControlsLayer.m in Sources */,
 				D4437B65172FEEF300FF2F44 /* STPauseLayer.m in Sources */,
+				91584C3B1730029100AD276C /* STCollisionDetectionHelper.m in Sources */,
+				91BF84C3173265F0001249AF /* STCreature.m in Sources */,
+				91BF84C717326660001249AF /* STPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

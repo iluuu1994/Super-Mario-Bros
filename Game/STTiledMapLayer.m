@@ -7,9 +7,12 @@
 //
 
 #import "STTiledMapLayer.h"
+#import "STGameObject.h"
 
 @implementation STTiledMapLayer
 {}
+
+@synthesize gameObjects = _gameObjects;
 
 #pragma mark -
 #pragma mark Initialise
@@ -32,27 +35,23 @@
                     [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
                     
                     [self.map addChild:node];
+                    [self.gameObjects addObject:node];
                 }
             }
         }
 
-        /*
-        NSDictionary *properties = [self.objectGroup objectNamed:kPlayerSpawnPointKey];
-        NSLog(@"%@", properties);
-        NSLog(@"%@ %@", properties[@"x"], properties[@"y"]);
-         */
-        
-        /*
-        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Worlds" ofType:@"plist"]];
-        NSLog(@"%@", dict);
-         */
         [self.objectLayer setVisible:NO];
-        //[self.map.camera setEyeX:0.0 eyeY:0.0 eyeZ:1.0];
         [self.map setScale:([CCDirector sharedDirector].winSize.height / self.map.contentSize.height)];
         
         [self addChild:self.map];
     }
     return self;
+}
+
+- (NSMutableArray *)gameObjects {
+    if (!_gameObjects) _gameObjects = [NSMutableArray array];
+    
+    return _gameObjects;
 }
 
 + (id)layerWithTiledMap:(NSString *)tiledMap {

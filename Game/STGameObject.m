@@ -30,6 +30,14 @@
     }
 }
 
+- (void)move:(CGPoint)deltaPoint {
+    self.position = ccpAdd(self.position, deltaPoint);
+}
+
+- (void)collisionWithGameObject:(STGameObject *)gameObject {
+    
+}
+
 #pragma mark -
 #pragma Targeted Delegate
 

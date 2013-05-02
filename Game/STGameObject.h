@@ -8,9 +8,26 @@
 
 #import "STAnimatedSprite.h"
 
+#ifndef STGameObjectBodyTypeEnum
+#define STGameObjectBodyTypeEnum
+
+typedef enum {
+    STGameObjectBodyTypeStatic = 0,
+    STGameObjectBodyTypeDynamic,
+    STGameObjectBodyTypeSemiDynamic
+} STGameObjectBodyType;
+
+#endif
+
 @interface STGameObject : STAnimatedSprite <CCTouchAllAtOnceDelegate>
 
 @property (setter = setCollidable:) BOOL isCollidable;
 @property (readonly) BOOL needsTouchNotifications;
+@property (readonly, nonatomic) float weight;
+@property CGPoint velocity;
+@property STGameObjectBodyType bodyType;
+
+- (void)move:(CGPoint)deltaPoint;
+- (void)collisionWithGameObject:(STGameObject *)gameObject;
 
 @end

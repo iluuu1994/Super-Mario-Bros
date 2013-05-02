@@ -20,4 +20,8 @@
     return self;
 }
 
+- (STGameObjectBodyType)bodyType {
+    return STGameObjectBodyTypeStatic;
+}
+
 @end

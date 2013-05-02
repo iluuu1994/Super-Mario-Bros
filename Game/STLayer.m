@@ -49,6 +49,32 @@
 }
 
 #pragma mark -
+#pragma mark Update
+- (BOOL)needsUpdate {
+    return NO;
+}
+- (void)onEnter {
+    [super onEnter];
+    
+    if (self.needsUpdate) {
+        [self scheduleUpdateWithPriority:1];
+    }
+}
+- (void)onExit {
+    [super onExit];
+    
+    if (self.needsUpdate) {
+        [self unscheduleUpdate];
+    }
+}
+
+- (void)update:(ccTime)delta {
+    @throw [NSException exceptionWithName:@"`update:` not overriden"
+                                   reason:[NSString stringWithFormat:@"Please override `update:` in %@", NSStringFromClass([self class])]
+                                 userInfo:nil];
+}
+
+#pragma mark -
 #pragma mark Dealloc
 - (void)dealloc {
     [self tearDown];
