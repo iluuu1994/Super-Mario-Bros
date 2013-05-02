@@ -34,7 +34,7 @@
                                                          offSprite:[CCSprite spriteWithFile:kSwitchOffImg]
                                                        thumbSprite:[CCSprite spriteWithFile:kSwitchThumbImg]];
     [music addTarget:self action:@selector(musicOnOff:) forControlEvents:CCControlEventValueChanged];
-    [music setOn:[[STConfigurationManager sharedInstance] musicOn]];
+    [music setOn:[[STConfigurationManager sharedInstance] isMusicOn]];
     music.position = ccp(winSize.width / 2 + music.contentSize.width / 2 + kLabelSwitchPadding,
                          winSize.height / 2);
     [self addChild:music];
@@ -53,7 +53,7 @@
                                                          offSprite:[CCSprite spriteWithFile:kSwitchOffImg]
                                                        thumbSprite:[CCSprite spriteWithFile:kSwitchThumbImg]];
     [tone addTarget:self action:@selector(toneOnOff:) forControlEvents:CCControlEventValueChanged];
-    [tone setOn:[[STConfigurationManager sharedInstance] toneOn]];
+    [tone setOn:[[STConfigurationManager sharedInstance] isToneOn]];
     tone.position = ccp(winSize.width / 2 + music.contentSize.width / 2 + kLabelSwitchPadding,
                         winSize.height / 2 - tone.contentSize.height - kLabelSwitchPadding);
     [self addChild:tone];
@@ -83,11 +83,11 @@
 #pragma mark -
 #pragma mark Switch Settings
 - (IBAction)musicOnOff:(id)sender {
-    [[STConfigurationManager sharedInstance] setMusicOn:![[STConfigurationManager sharedInstance] musicOn]];
+    [[STConfigurationManager sharedInstance] setMusicOn:[(CCControlSwitch *)sender isOn]];
 }
 
 - (IBAction)toneOnOff:(id)sender {
-    [[STConfigurationManager sharedInstance] setToneOn:![[STConfigurationManager sharedInstance] toneOn]];
+    [[STConfigurationManager sharedInstance] setToneOn:[(CCControlSwitch *)sender isOn]];
 }
 
 @end

@@ -11,6 +11,7 @@
 #import "NSBundle+Resources.h"
 #import "STCollisionDetectionHelper.h"
 #import "STGameObject.h"
+#import "STSoundManager.h"
 
 #define kDefaultGravity ccp(0, -9.81)
 
@@ -53,12 +54,20 @@ typedef enum {
     return scene;
 }
 
+- (void)setUp {
+    [super setUp];
+    
+    [[STSoundManager sharedInstance] playBackgroundMusic:@"theme.mp3"];
+}
+
 - (void)tearDown {
     [super tearDown];
     
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
     }
+    
+    [[STSoundManager sharedInstance] stopBackgroundMusic];
 }
 
 #pragma mark -
