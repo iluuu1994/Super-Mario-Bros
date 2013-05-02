@@ -7,6 +7,7 @@
 //
 
 #import "STPauseLayer.h"
+#import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
 #import "STLayerConstants.h"
 
@@ -35,48 +36,51 @@
     self.levelID = levelID;
     
     // Play Button
-    CCControlButton *pauseButton = [CCControlButton buttonWithTitle:@"II" fontName:@"Helvetica" fontSize:30];
-    [pauseButton setAdjustBackgroundImage:NO];
-    [pauseButton addTarget:self action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
-    pauseButton.position = ccp(kScreenPadding + pauseButton.contentSize.width,
-                               [[CCDirector sharedDirector] winSize].height - pauseButton.contentSize.height / 2 - kScreenPadding);
-    [self addChild:pauseButton];
-    
-    // Level Overview Button
-    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:@"Helvetica" fontSize:30];
-    [levelsButton setAdjustBackgroundImage:NO];
-    [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
-    [self addChild:levelsButton];
+    CCControlButton *continueButton = [CCControlButton buttonWithTitle:@"Play" fontName:@"Helvetica" fontSize:30];
+    [continueButton setAdjustBackgroundImage:NO];
+    [continueButton addTarget:self action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
+    continueButton.position = ccp(kScreenPadding + continueButton.contentSize.width / 2,
+                               [[CCDirector sharedDirector] winSize].height - continueButton.contentSize.height / 2 - kScreenPadding);
+    [self addChild:continueButton];
     
     // Retry Button
     CCControlButton *retryButton = [CCControlButton buttonWithTitle:@"Retry" fontName:@"Helvetica" fontSize:30];
     [retryButton setAdjustBackgroundImage:NO];
     [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
+    retryButton.position = ccp(kScreenPadding + retryButton.contentSize.width / 2,
+                                kScreenPadding + retryButton.contentSize.height / 2);
     [self addChild:retryButton];
+    
+    // Level Overview Button
+    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:@"Helvetica" fontSize:30];
+    [levelsButton setAdjustBackgroundImage:NO];
+    [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
+    levelsButton.position = ccp(kScreenPadding + levelsButton.contentSize.width / 2,
+                                kScreenPadding + levelsButton.contentSize.height / 2 + retryButton.contentSize.height + kButtonPadding);
+    [self addChild:levelsButton];
 }
 
 #pragma mark -
-#pragma mark Buttons
-- (IBAction)a:(id)sender {
-    NSLog(@"Pressed A Button.");
+#pragma mark Retry Level
+- (IBAction)play:(id)sender {
+    NSLog(@"TODO: continue game");
 }
-
 
 #pragma mark -
 #pragma mark Retry Level
 - (IBAction)retryLevel:(id)sender {
-//    STScene *scene = [STLevelLayer sceneWithWorldID:self.worldID levelID:self.levelID];
-//    [[CCDirector sharedDirector] replaceScene: scene
-//                          withTransitionClass:[CCTransitionFade class]
-//                                     duration:0.5];
+    STScene *scene = [STLevelLayer sceneWithWorldID:self.worldID levelID:self.levelID];
+    [[CCDirector sharedDirector] replaceScene: scene
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 #pragma mark -
 #pragma mark Level Overview
 - (IBAction)levelOverview:(id)sender {
-//    [[CCDirector sharedDirector] replaceScene: [[STChooseLevelLayer layerWithWorldID:self.worldID] scene]
-//                          withTransitionClass:[CCTransitionFade class]
-//                                     duration:0.5];
+    [[CCDirector sharedDirector] replaceScene: [[STChooseLevelLayer layerWithWorldID:self.worldID] scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 @end
