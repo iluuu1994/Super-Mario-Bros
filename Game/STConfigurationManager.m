@@ -7,28 +7,35 @@
 //
 
 #import "STConfigurationManager.h"
+#import "STSoundManager.h"
 
 @implementation STConfigurationManager
 {}
 
-static STConfigurationManager *sharedInstance = nil;
+#pragma mark -
+#pragma mark Init
 
-+(id)sharedInstance{
-    if(sharedInstance == nil) {
-        sharedInstance = [[STConfigurationManager alloc] init];
-    }
-    return sharedInstance;
+ITSingletonImplementation
+
+#pragma mark - 
+#pragma mark Properties
+
+- (void)setMusicOn:(BOOL)musicOn {
+    NSLog(@"%d", musicOn);
+    [[STSoundManager sharedInstance] setBackgroundMusicEnabled:musicOn];
 }
 
-- (id)init {
-    if ( (self = [super init]) ) {
-        musicOn = true;
-        toneOn = true;
-    }
-    return self;
+- (BOOL)isMusicOn {
+    return [[STSoundManager sharedInstance] isBackgroundMusicEnabled];
 }
 
-@synthesize musicOn;
-@synthesize toneOn;
+- (void)setToneOn:(BOOL)toneOn {
+    NSLog(@"%d", toneOn);
+    [[STSoundManager sharedInstance] setSoundEnabled:toneOn];
+}
+
+- (BOOL)isToneOn {
+    return [[STSoundManager sharedInstance] isSoundEnabled];
+}
 
 @end

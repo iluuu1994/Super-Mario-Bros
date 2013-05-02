@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ITSingleton.h"
 
 @interface STConfigurationManager : NSObject
 
-+(id)sharedInstance;
+ITSingletonInterface
 
-@property (atomic) BOOL musicOn;
-@property (atomic) BOOL toneOn;
+@property (nonatomic, setter = setMusicOn:) BOOL isMusicOn;
+@property (nonatomic, setter = setToneOn:) BOOL isToneOn;
 
 @end
