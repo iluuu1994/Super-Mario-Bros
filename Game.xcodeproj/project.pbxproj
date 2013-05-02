@@ -12,6 +12,8 @@
 		9106D2A41712E4C400BC6CFC /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */; };
 		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
+		913EB1421732D1410012B37B /* STSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1411732D1410012B37B /* STSoundManager.m */; };
+		913EB1491732DC870012B37B /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 913EB1481732DC870012B37B /* theme.mp3 */; };
 		914EB27D171404DD0070051D /* CCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB262171404DD0070051D /* CCControl.m */; };
 		914EB27E171404DD0070051D /* CCControlButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB264171404DD0070051D /* CCControlButton.m */; };
 		914EB27F171404DD0070051D /* CCControlColourPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB266171404DD0070051D /* CCControlColourPicker.m */; };
@@ -223,6 +225,10 @@
 		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
 		9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelLayer.h; sourceTree = "<group>"; };
 		9125D55016EF76C2008AFCA0 /* STLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelLayer.m; sourceTree = "<group>"; };
+		913EB1401732D1410012B37B /* STSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSoundManager.h; sourceTree = "<group>"; };
+		913EB1411732D1410012B37B /* STSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSoundManager.m; sourceTree = "<group>"; };
+		913EB1441732D17A0012B37B /* ITSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSingleton.h; sourceTree = "<group>"; };
+		913EB1481732DC870012B37B /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = theme.mp3; path = Resources/sounds/theme.mp3; sourceTree = SOURCE_ROOT; };
 		914EB261171404DD0070051D /* CCControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControl.h; sourceTree = "<group>"; };
 		914EB262171404DD0070051D /* CCControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCControl.m; sourceTree = "<group>"; };
 		914EB263171404DD0070051D /* CCControlButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlButton.h; sourceTree = "<group>"; };
@@ -637,12 +643,11 @@
 		910B1C3316F4E0740097A11D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D4A932D5172D78820059E5F4 /* Miscellanious */,
 				910B1C4316F4E1DD0097A11D /* App Delegate */,
 				910B1C3416F4E08A0097A11D /* Abstract */,
 				910B1C4016F4E1AE0097A11D /* Layers */,
 				914EB295171424510070051D /* Sprites */,
-				91FD0E7B1701D45D0032EC01 /* Categories */,
+				D4A932D5172D78820059E5F4 /* Utilities */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -739,6 +744,31 @@
 				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
 			);
 			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		913EB13F1732D0EC0012B37B /* Sound Manager */ = {
+			isa = PBXGroup;
+			children = (
+				913EB1401732D1410012B37B /* STSoundManager.h */,
+				913EB1411732D1410012B37B /* STSoundManager.m */,
+			);
+			name = "Sound Manager";
+			sourceTree = "<group>";
+		};
+		913EB1431732D1540012B37B /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				913EB1441732D17A0012B37B /* ITSingleton.h */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		913EB1451732DA460012B37B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				913EB1481732DC870012B37B /* theme.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 		914EB25E171404C40070051D /* 3rd Party */ = {
@@ -972,6 +1002,7 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				913EB1451732DA460012B37B /* Sounds */,
 				9171B59D16BDDAC2008208D2 /* Maps */,
 				9171B59C16BDDAB1008208D2 /* Icons */,
 				D49C7E1716F4CA58004101F1 /* about.plist */,
@@ -1470,13 +1501,16 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
-		D4A932D5172D78820059E5F4 /* Miscellanious */ = {
+		D4A932D5172D78820059E5F4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				913EB1431732D1540012B37B /* Singleton */,
+				91FD0E7B1701D45D0032EC01 /* Categories */,
 				91584C381730025100AD276C /* Collision Detection */,
 				D4A61D72172ED23A00609D65 /* Settings */,
+				913EB13F1732D0EC0012B37B /* Sound Manager */,
 			);
-			name = Miscellanious;
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		D4A932D9172D97F70059E5F4 /* Scroll Layer */ = {
@@ -1597,6 +1631,7 @@
 				D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */,
 				D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */,
 				D4A932E2172DADBF0059E5F4 /* lock.png in Resources */,
+				913EB1491732DC870012B37B /* theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1643,6 +1678,7 @@
 				91584C3B1730029100AD276C /* STCollisionDetectionHelper.m in Sources */,
 				91BF84C3173265F0001249AF /* STCreature.m in Sources */,
 				91BF84C717326660001249AF /* STPlayer.m in Sources */,
+				913EB1421732D1410012B37B /* STSoundManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
