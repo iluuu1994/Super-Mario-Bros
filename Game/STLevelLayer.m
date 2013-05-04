@@ -37,6 +37,7 @@ typedef enum {
     if (self = [super initWithTiledMap:[NSString stringWithFormat:worldsInfo[kWorldsNamingConvention], worldID, levelID]]) {
         _worldID = worldID;
         _levelID = levelID;
+        [self addChild:[STControlsLayer layerWithDelegate:self]];
     }
     
     return self;
@@ -46,6 +47,7 @@ typedef enum {
     return [[self alloc] initWithWorldID:worldID levelID:levelID];
 }
 
+// TODO: remove?
 + (id)sceneWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
     STLevelLayer *layer = [STLevelLayer layerWithWorldID:worldID
                                                  levelID:levelID];
@@ -180,6 +182,24 @@ typedef enum {
             gameObject.velocity = ccp(gameObject.velocity.x, 0);
         }
     }
+}
+
+#pragma mark -
+#pragma mark Buttons
+- (IBAction)a:(id)sender {
+    NSLog(@"a pressed.");
+}
+
+- (IBAction)b:(id)sender {
+    NSLog(@"b pressed.");
+}
+
+- (IBAction)joystick:(id)sender delta:(ccTime)delta {
+    NSLog(@"joystick delta: %f", delta);
+}
+
+- (IBAction)pause:(id)sender {
+    NSLog(@"pause pressed.");
 }
 
 @end

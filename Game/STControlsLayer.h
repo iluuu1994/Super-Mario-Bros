@@ -12,9 +12,25 @@
 #import "STLayerConstants.h"
 #import "ColoredCircleSprite.h"
 #import "ColoredSquareSprite.h"
+#import "STControlsDelegate.h"
 
 #define kjoystickImageName @"pd_dpad.png"
 
 @interface STControlsLayer : STLayer
+{}
+
+#pragma mark -
+#pragma mark Properties
+@property (strong) id <STControlsDelegate> delegate;
+@property (strong) SneakyJoystick *joystick;
+
+- (id)initWithDelegate:(id <STControlsDelegate>)delegate;
+
++ (id)layerWithDelegate:(id <STControlsDelegate>)delegate;
+
+- (void)setUpWithDelegate:(id <STControlsDelegate>)delegate;
+
+- (void)update:(ccTime)delta;
+
 
 @end

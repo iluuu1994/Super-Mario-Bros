@@ -7,8 +7,10 @@
 //
 
 #import "STTiledMapLayer.h"
+#import "STControlsDelegate.h"
+#import "STControlsLayer.h"
 
-@interface STLevelLayer : STTiledMapLayer
+@interface STLevelLayer : STTiledMapLayer <STControlsDelegate>
 {}
 
 #pragma mark -
@@ -41,6 +43,7 @@
  * @param levelID - the id of the level started
  * @return The initialised object
  */
+// TODO: remove?
 +(id)sceneWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 
 @end

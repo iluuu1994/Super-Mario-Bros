@@ -110,7 +110,7 @@
         STScene *scene = [[STLevelLayer layerWithWorldID:worldID levelID:levelID] scene];
         // TODO: remove
         //[scene addChild:[STPauseLayer layerWithWorldID:worldID levelID:levelID]];
-        [scene addChild:[STControlsLayer node]];
+        //[scene addChild:[STControlsLayer node]];
         
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]

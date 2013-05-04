@@ -63,6 +63,7 @@
  * Used for updating the sprite (invoked all 1/60s)
  * @param plistFile - The plist file with the animation information
  */
+// TODO: WTF-comment
 - (void)update:(ccTime)delta;
 
 @end
