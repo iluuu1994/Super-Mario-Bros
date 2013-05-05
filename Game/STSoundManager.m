@@ -25,6 +25,10 @@ ITSingletonImplementation
     [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 }
 
+- (void)resumeBackgroundMusic {
+    [[SimpleAudioEngine sharedEngine] resumeBackgroundMusic];
+}
+
 - (BOOL)isSoundEnabled {
     return ![CDAudioManager sharedManager].mute;
 }

@@ -20,15 +20,27 @@ ITSingletonImplementation
 #pragma mark Gameflow Manipulation Methods
 
 - (void)pause {
-    [[STSoundManager sharedInstance] setSoundEnabled:NO];
+    // Pause the Game
     [[CCDirector sharedDirector] pause];
     _isPaused = YES;
+    
+    // Pause music
+    [[STSoundManager sharedInstance] stopBackgroundMusic];
 }
 
 - (void)resume {
-    [[STSoundManager sharedInstance] setSoundEnabled:YES];
+    [self resumeWithMusicOn:YES];
+}
+
+- (void)resumeWithMusicOn:(BOOL)musicOn {
+    // Resume the Game
     [[CCDirector sharedDirector] resume];
     _isPaused = NO;
+    
+    if(musicOn) {
+        // Resume music
+        [[STSoundManager sharedInstance] resumeBackgroundMusic];
+    }
 }
 
 @end

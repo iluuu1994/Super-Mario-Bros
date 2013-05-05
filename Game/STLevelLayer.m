@@ -63,6 +63,7 @@ typedef enum {
 - (void)setUp {
     [super setUp];
     
+    // TODO: static name of music file
     [[STSoundManager sharedInstance] playBackgroundMusic:@"theme.mp3"];
 }
 

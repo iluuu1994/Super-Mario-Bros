@@ -13,10 +13,15 @@
 
 ITSingletonInterface
 
+#pragma mark -
+#pragma mark Methods
 - (void)playEffect:(NSString *)effectFile;
 - (void)playBackgroundMusic:(NSString *)backgroundMusicFile;
 - (void)stopBackgroundMusic;
+- (void)resumeBackgroundMusic;
 
+#pragma mark -
+#pragma mark Properties
 @property (nonatomic, setter = setSoundEnabled:) BOOL isSoundEnabled;
 @property (nonatomic, setter = setBackgroundMusicEnabled:) BOOL isBackgroundMusicEnabled;
 
