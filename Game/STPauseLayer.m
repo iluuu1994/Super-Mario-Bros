@@ -10,6 +10,8 @@
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
 #import "STLayerConstants.h"
+#import "STLevelLayer.h"
+#import "STChooseLevelLayer.h"
 
 @implementation STPauseLayer
 {}

@@ -579,7 +579,6 @@
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		D49CAC091726BC1100EFF3B3 /* STSettingsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingsLayer.h; sourceTree = "<group>"; };
 		D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingsLayer.m; sourceTree = "<group>"; };
-		D4A0FCCB173694A900A19A81 /* STUILayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STUILayer.h; sourceTree = "<group>"; };
 		D4A35FEB17099752000603FA /* STChooseLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseLevelLayer.h; sourceTree = "<group>"; };
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
@@ -724,7 +723,6 @@
 		910B1C4016F4E1AE0097A11D /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				D4A0FCCA1736949000A19A81 /* Protocols */,
 				D4437B62172FEECB00FF2F44 /* Pause Layer */,
 				D4437B5E172FE0F800FF2F44 /* Controls Layer */,
 				91CCD3F91701EE170082CF59 /* Screen Layers */,
@@ -1461,14 +1459,6 @@
 				D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */,
 			);
 			name = "Settings Layer";
-			sourceTree = "<group>";
-		};
-		D4A0FCCA1736949000A19A81 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				D4A0FCCB173694A900A19A81 /* STUILayer.h */,
-			);
-			name = Protocols;
 			sourceTree = "<group>";
 		};
 		D4A35FE91709970D000603FA /* Game Info */ = {

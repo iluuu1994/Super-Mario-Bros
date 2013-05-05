@@ -10,7 +10,6 @@
 #import "SneakyJoystick.h"
 #import "SneakyJoystickSkinnedBase.h"
 #import "STLayerConstants.h"
-#import "STUILayer.h"
 #import "ColoredCircleSprite.h"
 #import "ColoredSquareSprite.h"
 
@@ -36,7 +35,7 @@
 
 @end
 
-@interface STControlsLayer : STLayer <STUILayer>
+@interface STControlsLayer : STLayer
 {}
 
 #pragma mark -

@@ -11,9 +11,6 @@
 #import "STPauseLayer.h"
 #import "STPlayer.h"
 
-@class STPlayer;
-@class STPauseLayer;
-@class STControlsLayer;
 @interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate>
 {}
 

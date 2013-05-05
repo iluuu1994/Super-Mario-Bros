@@ -7,11 +7,7 @@
 //
 
 #import "STLayer.h"
-#import "STLevelLayer.h"
-#import "STChooseLevelLayer.h"
-#import "STUILayer.h"
 
-@class STPauseLayer;
 @protocol STPauseDelegate <NSObject>
 
 #pragma mark -
@@ -20,14 +16,14 @@
 
 @end
 
-@interface STPauseLayer : STLayer <STUILayer>
+@interface STPauseLayer : STLayer
 {}
 
 #pragma mark -
 #pragma mark Properties
 @property unsigned short worldID;
 @property unsigned short levelID;
-@property (strong) id <STControlsDelegate> delegate;
+@property (strong) id <STPauseDelegate> delegate;
 
 #pragma mark -
 #pragma mark Initialise
