@@ -10,6 +10,7 @@
 #import "STControlsLayer.h"
 #import "STPauseLayer.h"
 #import "STPlayer.h"
+#import "STGameFlowManager.h"
 
 @interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate>
 {}
@@ -19,7 +20,7 @@
 @property (readonly) unsigned short worldID;
 @property (readonly) unsigned short levelID;
 @property (strong, readonly) NSDictionary *levelInfo;
-
+@property (strong) STLayer *uiLayer;
 @property (strong) STPlayer *player;
 
 #pragma mark -

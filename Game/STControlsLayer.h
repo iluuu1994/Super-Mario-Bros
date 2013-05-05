@@ -20,7 +20,6 @@
 #define kJoystickPosition ccp(64, 64)
 #define kJoystickRect CGRectMake(0, 0, 128, 128)
 
-@class STControlsLayer;
 @protocol STControlsDelegate <NSObject>
 
 #pragma mark -

@@ -40,7 +40,8 @@ typedef enum {
     if (self = [super initWithTiledMap:[NSString stringWithFormat:worldsInfo[kWorldsNamingConvention], worldID, levelID]]) {
         _worldID = worldID;
         _levelID = levelID;
-        [self addChild:[STControlsLayer layerWithDelegate:self]];
+        [self setUiLayer:[STControlsLayer layerWithDelegate:self]];
+        [self addChild:[self uiLayer]];
     }
     
     return self;
@@ -96,6 +97,7 @@ typedef enum {
 }
 
 - (void)update:(ccTime)delta {
+    self.player.velocity = ccp(15, self.player.velocity.y); // TODO: remove this, only for debugging
     [self updateGravity:delta];
     [self updateCollisions:delta];
 }
@@ -201,7 +203,7 @@ typedef enum {
 }
 
 #pragma mark -
-#pragma mark Methods from STControlsDelegate
+#pragma mark ControlsLayer Delegate
 - (IBAction)a:(id)sender {
     [self.player jump];
 }
@@ -217,16 +219,16 @@ typedef enum {
 }
 
 - (IBAction)pause:(id)sender {
-    NSLog(@"pause pressed.");
-    STPauseLayer *layer = [STPauseLayer layerWithDelegate:self worldID:[self worldID] levelID:[self levelID]];
+    [self replaceUILayer:[STPauseLayer layerWithDelegate:self worldID:[self worldID] levelID:[self levelID]]];
+    [[STGameFlowManager sharedInstance] pause];
 }
 
 #pragma mark -
-#pragma mark Methods from STPauseDelegate
+#pragma mark PauseLayer Delegate
 - (IBAction)play:(id)sender {
-    STControlsLayer *layer = [STControlsLayer layerWithDelegate:self];
+    [self replaceUILayer:[STControlsLayer layerWithDelegate:self]];
+    [[STGameFlowManager sharedInstance] resume];
 }
-
 
 #pragma mark -
 #pragma mark Player Delegate
@@ -251,6 +253,12 @@ typedef enum {
     if (playerX - mapX < 0) return NO;*/
     
     return YES;
+}
+
+- (void)replaceUILayer:(STLayer *)layer {
+    [self removeChild:[self uiLayer]];
+    [self setUiLayer:layer];
+    [self addChild:[self uiLayer]];
 }
 
 @end

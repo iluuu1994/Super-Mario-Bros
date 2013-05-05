@@ -23,7 +23,7 @@
 #pragma mark Properties
 @property unsigned short worldID;
 @property unsigned short levelID;
-@property (strong) id <STPauseDelegate> delegate;
+@property (unsafe_unretained) id <STPauseDelegate> delegate;
 
 #pragma mark -
 #pragma mark Initialise

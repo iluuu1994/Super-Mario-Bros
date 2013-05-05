@@ -183,6 +183,7 @@
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
 		D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */; };
+		D4A0FCCF1736B01D00A19A81 /* STGameFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FCCE1736B01D00A19A81 /* STGameFlowManager.m */; };
 		D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FEC17099752000603FA /* STChooseLevelLayer.m */; };
 		D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */; };
 		D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CD172D77F10059E5F4 /* switch-mask.png */; };
@@ -579,6 +580,8 @@
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		D49CAC091726BC1100EFF3B3 /* STSettingsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSettingsLayer.h; sourceTree = "<group>"; };
 		D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingsLayer.m; sourceTree = "<group>"; };
+		D4A0FCCD1736B01D00A19A81 /* STGameFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGameFlowManager.h; sourceTree = "<group>"; };
+		D4A0FCCE1736B01D00A19A81 /* STGameFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGameFlowManager.m; sourceTree = "<group>"; };
 		D4A35FEB17099752000603FA /* STChooseLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseLevelLayer.h; sourceTree = "<group>"; };
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
@@ -1461,6 +1464,15 @@
 			name = "Settings Layer";
 			sourceTree = "<group>";
 		};
+		D4A0FCCC1736AF2F00A19A81 /* Game Flow Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D4A0FCCD1736B01D00A19A81 /* STGameFlowManager.h */,
+				D4A0FCCE1736B01D00A19A81 /* STGameFlowManager.m */,
+			);
+			name = "Game Flow Manager";
+			sourceTree = "<group>";
+		};
 		D4A35FE91709970D000603FA /* Game Info */ = {
 			isa = PBXGroup;
 			children = (
@@ -1519,6 +1531,7 @@
 		D4A932D5172D78820059E5F4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D4A0FCCC1736AF2F00A19A81 /* Game Flow Manager */,
 				913EB1431732D1540012B37B /* Singleton */,
 				91FD0E7B1701D45D0032EC01 /* Categories */,
 				91584C381730025100AD276C /* Collision Detection */,
@@ -1713,6 +1726,7 @@
 				D4F878401732E791009C30C3 /* SneakyJoystickSkinnedBase.m in Sources */,
 				D4F878451732E79D009C30C3 /* ColoredCircleSprite.m in Sources */,
 				D4F878461732E79D009C30C3 /* ColoredSquareSprite.m in Sources */,
+				D4A0FCCF1736B01D00A19A81 /* STGameFlowManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,7 +43,7 @@
     // Play Button
     CCControlButton *continueButton = [CCControlButton buttonWithTitle:@"Play" fontName:@"Helvetica" fontSize:30];
     [continueButton setAdjustBackgroundImage:NO];
-    [continueButton addTarget:self action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
+    [continueButton addTarget:delegate action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
     continueButton.position = ccp(kScreenPadding + continueButton.contentSize.width / 2,
                                [[CCDirector sharedDirector] winSize].height - continueButton.contentSize.height / 2 - kScreenPadding);
     [self addChild:continueButton];
@@ -63,12 +63,6 @@
     levelsButton.position = ccp(kScreenPadding + levelsButton.contentSize.width / 2,
                                 kScreenPadding + levelsButton.contentSize.height / 2 + retryButton.contentSize.height + kButtonPadding);
     [self addChild:levelsButton];
-}
-
-#pragma mark -
-#pragma mark Retry Level
-- (IBAction)play:(id)sender {
-    NSLog(@"TODO: continue game");
 }
 
 #pragma mark -
