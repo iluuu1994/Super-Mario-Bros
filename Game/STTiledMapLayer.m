@@ -35,8 +35,7 @@
                     CCNode *node = [objectClass node];
                     [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
                     
-                    [self.map addChild:node];
-                    [self.gameObjects addObject:node];
+                    [self addGameObjectToMap:(STGameObject *)node];
                 }
             }
         }
@@ -47,6 +46,11 @@
         [self addChild:self.map];
     }
     return self;
+}
+
+- (void)addGameObjectToMap:(STGameObject *)gameObject {
+    [self.map addChild:gameObject];
+    [self.gameObjects addObject:gameObject];
 }
 
 - (NSMutableArray *)gameObjects {

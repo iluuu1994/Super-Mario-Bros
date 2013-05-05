@@ -16,6 +16,7 @@
 #import "STMario.h"
 
 #define kDefaultGravity ccp(0, -9.81)
+#define kMaxCameraEdge 300
 
 typedef enum {
     STRectEdgeMinX,
@@ -77,11 +78,14 @@ typedef enum {
 - (void)onEnter {
     [super onEnter];
     
+    // Init Player
     self.player = [[STMario alloc] init];
+    self.player.delegate = self;
+    
     NSDictionary *position = [self.objectGroup objectNamed:kPlayerSpawnPointKey];
     self.player.position = ccp([position[kXKey] floatValue], [position[kYKey] floatValue]);
-    [self.gameObjects addObject:self.player];
-    [self.map addChild:self.player];
+    
+    [self addGameObjectToMap:self.player];
 }
 
 #pragma mark -
@@ -100,7 +104,7 @@ typedef enum {
     for (STGameObject *go in self.gameObjects) {
         if (go.bodyType == STGameObjectBodyTypeDynamic) {
             go.velocity = ccpAdd(go.velocity, kDefaultGravity);
-            go.position = ccpAdd(go.position, ccp(go.velocity.x * delta, go.velocity.y * delta));
+            [go move:ccp(go.velocity.x * delta, go.velocity.y * delta)];
         }
     }
 }
@@ -214,6 +218,29 @@ typedef enum {
 
 - (IBAction)pause:(id)sender {
     NSLog(@"pause pressed.");
+}
+
+#pragma mark -
+#pragma mark Player Delegate
+- (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point {
+    CGFloat cameraWidth = [[CCDirector sharedDirector] winSize].width;
+    CGFloat playerX = player.position.x;
+    CGFloat mapX = self.map.position.x * -1;
+    CGFloat deltaX = (playerX - mapX) - (cameraWidth - kMaxCameraEdge);
+    
+    if (deltaX > 0) {
+        self.map.position = ccpAdd(self.map.position, ccp(-deltaX, 0));
+    }
+}
+
+- (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point {
+    /*
+    CGFloat playerX = point.x;
+    CGFloat mapX = self.map.position.x * -1;
+    
+    if (playerX - mapX < 0) return NO;*/
+    
+    return YES;
 }
 
 @end

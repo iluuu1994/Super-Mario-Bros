@@ -12,7 +12,8 @@
 #define STGameObjectBodyTypeEnum
 
 typedef enum {
-    STGameObjectBodyTypeStatic = 0,
+    STGameObjectBodyTypeNonColliding,
+    STGameObjectBodyTypeStatic,
     STGameObjectBodyTypeDynamic,
     STGameObjectBodyTypeSemiDynamic
 } STGameObjectBodyType;

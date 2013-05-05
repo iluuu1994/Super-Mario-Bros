@@ -9,9 +9,10 @@
 #import "STTiledMapLayer.h"
 #import "STControlsDelegate.h"
 #import "STControlsLayer.h"
+#import "STPlayer.h"
 
 @class STPlayer;
-@interface STLevelLayer : STTiledMapLayer <STControlsDelegate>
+@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPlayerDelegate>
 {}
 
 #pragma mark -

@@ -8,6 +8,12 @@
 
 #import "STCreature.h"
 
+@class STPlayer;
+@protocol STPlayerDelegate <NSObject>
+- (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point;
+- (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point;
+@end
+
 @interface STPlayer : STCreature
 {}
 
@@ -15,6 +21,8 @@
 @property unsigned int coins;
 @property Byte lives;
 @property (strong, nonatomic) NSMutableArray *bonusItems;
+
+@property (unsafe_unretained) id<STPlayerDelegate> delegate;
 
 - (void)jump;
 

@@ -35,6 +35,13 @@
     self.velocity = ccp(0, kJumpVelocity);
 }
 
+- (void)move:(CGPoint)deltaPoint {
+    if ([self.delegate player:self shouldMoveToPoint:ccpAdd(self.position, self.velocity)]) {
+        [super move:deltaPoint];
+        [self.delegate player:self didMoveToPoint:self.position];
+    }
+}
+
 - (void)setVelocity:(CGPoint)velocity {
     if (self.isAnimating != (velocity.x > 0 || velocity.x < 0)) {
         if (velocity.x != 0) {

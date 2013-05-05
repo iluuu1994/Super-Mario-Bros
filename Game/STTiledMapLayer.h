@@ -8,6 +8,7 @@
 
 #import "STLayer.h"
 
+@class STGameObject;
 @interface STTiledMapLayer : STLayer
 {}
 
@@ -22,5 +23,7 @@
 @property (retain) CCTMXObjectGroup *objectGroup;
 @property (retain) CCTMXLayer *objectLayer;
 @property (strong, readonly, nonatomic) NSMutableArray *gameObjects;
+
+- (void)addGameObjectToMap:(STGameObject *)gameObject;
 
 @end
