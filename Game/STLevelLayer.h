@@ -7,12 +7,14 @@
 //
 
 #import "STTiledMapLayer.h"
-#import "STControlsDelegate.h"
 #import "STControlsLayer.h"
+#import "STPauseLayer.h"
 #import "STPlayer.h"
 
 @class STPlayer;
-@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPlayerDelegate>
+@class STPauseLayer;
+@class STControlsLayer;
+@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate>
 {}
 
 #pragma mark -

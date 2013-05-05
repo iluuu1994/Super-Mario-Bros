@@ -10,18 +10,38 @@
 #import "SneakyJoystick.h"
 #import "SneakyJoystickSkinnedBase.h"
 #import "STLayerConstants.h"
+#import "STUILayer.h"
 #import "ColoredCircleSprite.h"
 #import "ColoredSquareSprite.h"
-#import "STControlsDelegate.h"
 
-#define kjoystickImageName @"pd_dpad.png"
+#define kJoystickBaseColor ccc4(128, 128, 128, 128)
+#define kJoystickColor ccc4(64, 64, 64, 128)
+#define kJoystickBaseRadius 64
+#define kJoystickRadius 32
+#define kJoystickPosition ccp(64, 64)
+#define kJoystickRect CGRectMake(0, 0, 128, 128)
 
-@interface STControlsLayer : STLayer
+@class STControlsLayer;
+@protocol STControlsDelegate <NSObject>
+
+#pragma mark -
+#pragma mark Buttons
+- (IBAction)a:(id)sender;
+
+- (IBAction)b:(id)sender;
+
+- (IBAction)joystick:(id)sender delta:(ccTime)delta;
+
+- (IBAction)pause:(id)sender;
+
+@end
+
+@interface STControlsLayer : STLayer <STUILayer>
 {}
 
 #pragma mark -
 #pragma mark Properties
-@property (strong) id <STControlsDelegate> delegate;
+@property (unsafe_unretained) id <STControlsDelegate> delegate;
 @property (strong) SneakyJoystick *joystick;
 
 - (id)initWithDelegate:(id <STControlsDelegate>)delegate;
@@ -32,5 +52,5 @@
 
 - (void)update:(ccTime)delta;
 
-
 @end
+

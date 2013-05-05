@@ -32,7 +32,9 @@
 }
 
 - (void)jump {
+    if(self.velocity.y == 0) {
     self.velocity = ccp(0, kJumpVelocity);
+    }
 }
 
 - (void)move:(CGPoint)deltaPoint {

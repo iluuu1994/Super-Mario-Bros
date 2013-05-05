@@ -201,7 +201,7 @@ typedef enum {
 }
 
 #pragma mark -
-#pragma mark Buttons
+#pragma mark Methods from STControlsDelegate
 - (IBAction)a:(id)sender {
     [self.player jump];
 }
@@ -218,7 +218,15 @@ typedef enum {
 
 - (IBAction)pause:(id)sender {
     NSLog(@"pause pressed.");
+    STPauseLayer *layer = [STPauseLayer layerWithDelegate:self worldID:[self worldID] levelID:[self levelID]];
 }
+
+#pragma mark -
+#pragma mark Methods from STPauseDelegate
+- (IBAction)play:(id)sender {
+    STControlsLayer *layer = [STControlsLayer layerWithDelegate:self];
+}
+
 
 #pragma mark -
 #pragma mark Player Delegate
@@ -228,16 +236,18 @@ typedef enum {
     CGFloat mapX = self.map.position.x * -1;
     CGFloat deltaX = (playerX - mapX) - (cameraWidth - kMaxCameraEdge);
     
+    // Prevent the player from going to the left (The screen can only move to the right).
     if (deltaX > 0) {
         self.map.position = ccpAdd(self.map.position, ccp(-deltaX, 0));
     }
 }
 
 - (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point {
+    
     /*
     CGFloat playerX = point.x;
     CGFloat mapX = self.map.position.x * -1;
-    
+        
     if (playerX - mapX < 0) return NO;*/
     
     return YES;

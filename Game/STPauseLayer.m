@@ -16,22 +16,25 @@
 
 #pragma mark -
 #pragma mark Initialise
--(id)initWithWorldID:(unsigned short)worldID
-             levelID:(unsigned short)levelID {
+-(id)initWithDelegate:(id <STPauseDelegate>)delegate
+              worldID:(unsigned short)worldID
+              levelID:(unsigned short)levelID {
     self = [super init];
     if (self) {
-        [self setUpWithWorldID:worldID levelID:levelID];
+        [self setUpWithDelegate:delegate worldID:worldID levelID:levelID];
     }
     return self;
 }
 
-+(id)layerWithWorldID:(unsigned short)worldID
-              levelID:(unsigned short)levelID {
-    return [[self alloc] initWithWorldID:worldID levelID:levelID];
++(id)layerWithDelegate:(id <STPauseDelegate>)delegate
+               worldID:(unsigned short)worldID
+               levelID:(unsigned short)levelID {
+    return [[self alloc] initWithDelegate:delegate worldID:worldID levelID:levelID];
 }
 
-- (void)setUpWithWorldID:(unsigned short)worldID
-                 levelID:(unsigned short)levelID {
+- (void)setUpWithDelegate:(id <STPauseDelegate>)delegate
+                  worldID:(unsigned short)worldID
+                  levelID:(unsigned short)levelID {
     self.worldID = worldID;
     self.levelID = levelID;
     
