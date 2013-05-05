@@ -8,6 +8,8 @@
 
 #import "STLayer.h"
 
+#define kPausePanelColor ccc4(128, 128, 128, 128)
+
 @protocol STPauseDelegate <NSObject>
 
 #pragma mark -

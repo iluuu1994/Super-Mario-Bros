@@ -63,6 +63,10 @@
     levelsButton.position = ccp(kScreenPadding + levelsButton.contentSize.width / 2,
                                 kScreenPadding + levelsButton.contentSize.height / 2 + retryButton.contentSize.height + kButtonPadding);
     [self addChild:levelsButton];
+    
+    [self addChild:[CCLayerColor layerWithColor:kPausePanelColor
+                                          width:levelsButton.contentSize.width + 2 * kScreenPadding
+                                         height:[[CCDirector sharedDirector] winSize].height] z:-5];
 }
 
 #pragma mark -
