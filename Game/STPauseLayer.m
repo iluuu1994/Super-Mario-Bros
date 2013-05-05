@@ -40,12 +40,22 @@
     self.worldID = worldID;
     self.levelID = levelID;
     
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    
+    // Level Information
+    NSString *levelInfo = [NSString stringWithFormat:@"%i-%i", worldID, levelID];
+    CCLabelTTF *level = [CCLabelTTF labelWithString:levelInfo fontName:@"Helvetica" fontSize:30];
+    level.position = ccp(kScreenPadding + level.contentSize.width / 2,
+                         winSize.height - level.contentSize.height / 2 - kScreenPadding);
+    [self addChild:level];
+    
     // Play Button
     CCControlButton *continueButton = [CCControlButton buttonWithTitle:@"Play" fontName:@"Helvetica" fontSize:30];
     [continueButton setAdjustBackgroundImage:NO];
     [continueButton addTarget:delegate action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
     continueButton.position = ccp(kScreenPadding + continueButton.contentSize.width / 2,
-                               [[CCDirector sharedDirector] winSize].height - continueButton.contentSize.height / 2 - kScreenPadding);
+                                  winSize.height - continueButton.contentSize.height / 2
+                                  - level.contentSize.height - kButtonPadding - kScreenPadding);
     [self addChild:continueButton];
     
     // Retry Button
