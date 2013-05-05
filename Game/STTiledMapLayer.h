@@ -8,11 +8,6 @@
 
 #import "STLayer.h"
 
-#define kEventsLayerKey @"events"
-#define kObjectLayerKey @"objects"
-#define kTypeKey @"type"
-#define kPlayerSpawnPointKey @"playerSpawnPoint"
-
 @interface STTiledMapLayer : STLayer
 {}
 

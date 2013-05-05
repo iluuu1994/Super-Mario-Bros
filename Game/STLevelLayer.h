@@ -10,6 +10,7 @@
 #import "STControlsDelegate.h"
 #import "STControlsLayer.h"
 
+@class STPlayer;
 @interface STLevelLayer : STTiledMapLayer <STControlsDelegate>
 {}
 
@@ -18,6 +19,8 @@
 @property (readonly) unsigned short worldID;
 @property (readonly) unsigned short levelID;
 @property (strong, readonly) NSDictionary *levelInfo;
+
+@property (strong) STPlayer *player;
 
 #pragma mark -
 #pragma mark Initialise

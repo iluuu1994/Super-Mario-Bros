@@ -76,4 +76,17 @@
 
 }
 
+- (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag {
+    [self stopAllActions];
+    
+    CCAnimate *animate = [CCAnimate actionWithAnimation:self.animations[animName]];
+    if (animate) {
+        if (endlessFlag) {
+            animate = [CCRepeatForever actionWithAction:animate];
+        }
+        
+        [self runAction:animate];
+    }
+}
+
 @end

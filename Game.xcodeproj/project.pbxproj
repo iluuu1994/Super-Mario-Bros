@@ -272,6 +272,7 @@
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917737EE16C19BB7001C1AAD /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		9193DA4217364B5400ABA83D /* STTiledMapKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTiledMapKeys.h; sourceTree = "<group>"; };
 		91AB077B16BE6D0D00195D66 /* STScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScene.h; sourceTree = "<group>"; };
 		91AB077C16BE6D0D00195D66 /* STScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScene.m; sourceTree = "<group>"; };
 		91AB077E16BE704300195D66 /* STLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayer.h; sourceTree = "<group>"; };
@@ -744,6 +745,7 @@
 		910B1C4216F4E1D00097A11D /* Tiled Maps */ = {
 			isa = PBXGroup;
 			children = (
+				9193DA4217364B5400ABA83D /* STTiledMapKeys.h */,
 				91AB078116BE912400195D66 /* STTiledMapLayer.h */,
 				91AB078216BE912400195D66 /* STTiledMapLayer.m */,
 			);

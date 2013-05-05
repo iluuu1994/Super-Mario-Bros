@@ -66,4 +66,6 @@
 // TODO: WTF-comment
 - (void)update:(ccTime)delta;
 
+- (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag;
+
 @end

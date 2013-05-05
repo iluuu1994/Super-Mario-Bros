@@ -16,4 +16,6 @@
 @property Byte lives;
 @property (strong, nonatomic) NSMutableArray *bonusItems;
 
+- (void)jump;
+
 @end

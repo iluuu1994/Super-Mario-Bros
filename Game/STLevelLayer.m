@@ -12,6 +12,8 @@
 #import "STCollisionDetectionHelper.h"
 #import "STGameObject.h"
 #import "STSoundManager.h"
+#import "STTiledMapKeys.h"
+#import "STMario.h"
 
 #define kDefaultGravity ccp(0, -9.81)
 
@@ -70,6 +72,16 @@ typedef enum {
     }
     
     [[STSoundManager sharedInstance] stopBackgroundMusic];
+}
+
+- (void)onEnter {
+    [super onEnter];
+    
+    self.player = [[STMario alloc] init];
+    NSDictionary *position = [self.objectGroup objectNamed:kPlayerSpawnPointKey];
+    self.player.position = ccp([position[kXKey] floatValue], [position[kYKey] floatValue]);
+    [self.gameObjects addObject:self.player];
+    [self.map addChild:self.player];
 }
 
 #pragma mark -
@@ -187,15 +199,17 @@ typedef enum {
 #pragma mark -
 #pragma mark Buttons
 - (IBAction)a:(id)sender {
-    NSLog(@"a pressed.");
+    [self.player jump];
 }
 
 - (IBAction)b:(id)sender {
     NSLog(@"b pressed.");
 }
 
+#define kJoystickTolerance 0.0
 - (IBAction)joystick:(id)sender delta:(ccTime)delta {
-    NSLog(@"joystick delta: %f", delta);
+    CGPoint velocity = [(SneakyJoystick *)sender velocity];
+    [self.player setVelocity:ccp(velocity.x * delta * 5000, self.player.velocity.y)];
 }
 
 - (IBAction)pause:(id)sender {

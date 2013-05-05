@@ -8,6 +8,7 @@
 
 #import "STTiledMapLayer.h"
 #import "STGameObject.h"
+#import "STTiledMapKeys.h"
 
 @implementation STTiledMapLayer
 {}
