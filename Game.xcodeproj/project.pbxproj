@@ -613,8 +613,8 @@
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
 		D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelResultLayer.m; sourceTree = "<group>"; };
-		D4A61D73172ED77600609D65 /* STLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayerConstants.h; sourceTree = "<group>"; };
 		D4A61D76172ED83400609D65 /* STAboutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAboutConstants.h; sourceTree = "<group>"; };
+		D4A73A64173963EA008AA190 /* STLayoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayoutConstants.h; sourceTree = "<group>"; };
 		D4A932CD172D77F10059E5F4 /* switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-mask.png"; sourceTree = "<group>"; };
 		D4A932CE172D77F20059E5F4 /* switch-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-off.png"; sourceTree = "<group>"; };
 		D4A932CF172D77F20059E5F4 /* switch-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-on.png"; sourceTree = "<group>"; };
@@ -698,6 +698,7 @@
 		910B1C3416F4E08A0097A11D /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				D4A73A65173963F1008AA190 /* Definitions */,
 				910B1C3516F4E0960097A11D /* Scene */,
 				910B1C3616F4E09B0097A11D /* Layer */,
 				910B1C3B16F4E0ED0097A11D /* Sprite */,
@@ -960,13 +961,10 @@
 		9171B59D16BDDAC2008208D2 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				914EB28E17140E900070051D /* STWorldsConstants.h */,
 				9106D2A51712E50000BC6CFC /* Worlds.plist */,
 				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
 				9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */,
 				914EB293171414A70070051D /* world_0_level_1.tmx */,
-				D4A61D73172ED77600609D65 /* STLayerConstants.h */,
-				D4A61D76172ED83400609D65 /* STAboutConstants.h */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -1625,6 +1623,16 @@
 				D4A932D7172D78C20059E5F4 /* STConfigurationManager.m */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		D4A73A65173963F1008AA190 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				914EB28E17140E900070051D /* STWorldsConstants.h */,
+				D4A73A64173963EA008AA190 /* STLayoutConstants.h */,
+				D4A61D76172ED83400609D65 /* STAboutConstants.h */,
+			);
+			name = Definitions;
 			sourceTree = "<group>";
 		};
 		D4A932D5172D78820059E5F4 /* Utilities */ = {
