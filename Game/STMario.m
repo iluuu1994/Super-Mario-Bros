@@ -8,11 +8,6 @@
 
 #import "STMario.h"
 
-@interface STMario () {
-    UIEvent *_cachedEvent;
-}
-@end
-
 @implementation STMario
 
 #pragma mark -

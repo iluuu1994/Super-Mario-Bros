@@ -8,8 +8,15 @@
 
 #import "STAnimatedSprite.h"
 
-#ifndef STGameObjectBodyTypeEnum
-#define STGameObjectBodyTypeEnum
+#ifndef STGameObjectEnums
+#define STGameObjectEnums
+
+typedef enum {
+    STRectEdgeMinX,
+    STRectEdgeMinY,
+    STRectEdgeMaxX,
+    STRectEdgeMaxY
+} STRectEdge;
 
 typedef enum {
     STGameObjectBodyTypeNonColliding,
@@ -27,8 +34,11 @@ typedef enum {
 @property (readonly, nonatomic) float weight;
 @property CGPoint velocity;
 @property STGameObjectBodyType bodyType;
+@property (setter = setDead:) BOOL isDead;
 
+- (void)die:(id)sender;
 - (void)move:(CGPoint)deltaPoint;
-- (void)collisionWithGameObject:(STGameObject *)gameObject;
+- (void)collisionWithGameObject:(STGameObject *)gameObject
+                           edge:(STRectEdge)edge;
 
 @end

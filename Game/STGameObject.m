@@ -34,8 +34,13 @@
     self.position = ccpAdd(self.position, deltaPoint);
 }
 
-- (void)collisionWithGameObject:(STGameObject *)gameObject {
+- (void)collisionWithGameObject:(STGameObject *)gameObject
+                           edge:(STRectEdge)edge {
     
+}
+
+- (void)die:(id)sender {
+    self.isDead = YES;
 }
 
 #pragma mark -

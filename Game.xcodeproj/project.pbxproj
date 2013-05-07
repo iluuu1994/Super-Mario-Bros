@@ -11,6 +11,8 @@
 		9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */; };
 		9106D2A41712E4C400BC6CFC /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */; };
 		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
+		9122DD04173919DA0042D918 /* STItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD03173919DA0042D918 /* STItem.m */; };
+		9122DD0717391A4E0042D918 /* STCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD0617391A4E0042D918 /* STCoin.m */; };
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
 		913EB1421732D1410012B37B /* STSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1411732D1410012B37B /* STSoundManager.m */; };
 		913EB1491732DC870012B37B /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 913EB1481732DC870012B37B /* theme.mp3 */; };
@@ -176,6 +178,8 @@
 		91CD17D816BDCCA9005CA331 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176A16BDCCA9005CA331 /* vec4.c */; };
 		91CD17D916BDCCE4005CA331 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CD165D16BDCBA9005CA331 /* libcocos2d.a */; };
 		91CD17E016BDD0D4005CA331 /* STAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */; };
+		91F2477617391D4800DD1E9B /* Coin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F2477417391D4800DD1E9B /* Coin.plist */; };
+		91F2477B1739210E00DD1E9B /* Coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F2477A1739210E00DD1E9B /* Coin.png */; };
 		91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */; };
 		D4437B61172FE13000FF2F44 /* STControlsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B60172FE13000FF2F44 /* STControlsLayer.m */; };
 		D4437B65172FEEF300FF2F44 /* STPauseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B64172FEEF300FF2F44 /* STPauseLayer.m */; };
@@ -228,6 +232,10 @@
 		9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "SMB-Tiles.gif"; path = "Resources/maps/SMB-Tiles.gif"; sourceTree = SOURCE_ROOT; };
 		9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0.tmx; path = Resources/maps/world_0_level_0.tmx; sourceTree = SOURCE_ROOT; };
 		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
+		9122DD02173919DA0042D918 /* STItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STItem.h; sourceTree = "<group>"; };
+		9122DD03173919DA0042D918 /* STItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STItem.m; sourceTree = "<group>"; };
+		9122DD0517391A4E0042D918 /* STCoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCoin.h; sourceTree = "<group>"; };
+		9122DD0617391A4E0042D918 /* STCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCoin.m; sourceTree = "<group>"; };
 		9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelLayer.h; sourceTree = "<group>"; };
 		9125D55016EF76C2008AFCA0 /* STLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelLayer.m; sourceTree = "<group>"; };
 		913EB1401732D1410012B37B /* STSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSoundManager.h; sourceTree = "<group>"; };
@@ -569,6 +577,8 @@
 		91CD176D16BDCCA9005CA331 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
 		91CD17DC16BDD0D4005CA331 /* STAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimatedSprite.h; sourceTree = "<group>"; };
 		91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimatedSprite.m; sourceTree = "<group>"; };
+		91F2477417391D4800DD1E9B /* Coin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Coin.plist; sourceTree = "<group>"; };
+		91F2477A1739210E00DD1E9B /* Coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coin.png; sourceTree = "<group>"; };
 		91FD0E7C1701D4940032EC01 /* NSBundle+Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Resources.h"; sourceTree = "<group>"; };
 		91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Resources.m"; sourceTree = "<group>"; };
 		D4437B5F172FE13000FF2F44 /* STControlsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STControlsLayer.h; sourceTree = "<group>"; };
@@ -869,7 +879,7 @@
 			isa = PBXGroup;
 			children = (
 				91BF84C0173265D1001249AF /* Creature */,
-				91BF84C81732681A001249AF /* STItem */,
+				91BF84C81732681A001249AF /* Items */,
 				910B1C3A16F4E0CE0097A11D /* Block */,
 			);
 			name = Sprites;
@@ -964,11 +974,14 @@
 			name = Player;
 			sourceTree = "<group>";
 		};
-		91BF84C81732681A001249AF /* STItem */ = {
+		91BF84C81732681A001249AF /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				9122DD02173919DA0042D918 /* STItem.h */,
+				9122DD03173919DA0042D918 /* STItem.m */,
+				91F2477817391D4C00DD1E9B /* Coin */,
 			);
-			name = STItem;
+			name = Items;
 			sourceTree = "<group>";
 		};
 		91C0B96F16B4470A0092FCA9 = {
@@ -1419,6 +1432,25 @@
 			path = GL;
 			sourceTree = "<group>";
 		};
+		91F2477817391D4C00DD1E9B /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				9122DD0517391A4E0042D918 /* STCoin.h */,
+				9122DD0617391A4E0042D918 /* STCoin.m */,
+				91F2477917391D5100DD1E9B /* Resources */,
+			);
+			name = Coin;
+			sourceTree = "<group>";
+		};
+		91F2477917391D5100DD1E9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91F2477417391D4800DD1E9B /* Coin.plist */,
+				91F2477A1739210E00DD1E9B /* Coin.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		91FD0E7A1701CAF00032EC01 /* Animated Sprite */ = {
 			isa = PBXGroup;
 			children = (
@@ -1675,6 +1707,8 @@
 				D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */,
 				D4A932E2172DADBF0059E5F4 /* lock.png in Resources */,
 				913EB1491732DC870012B37B /* theme.mp3 in Resources */,
+				91F2477617391D4800DD1E9B /* Coin.plist in Resources */,
+				91F2477B1739210E00DD1E9B /* Coin.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1727,6 +1761,8 @@
 				D4F878451732E79D009C30C3 /* ColoredCircleSprite.m in Sources */,
 				D4F878461732E79D009C30C3 /* ColoredSquareSprite.m in Sources */,
 				D4A0FCCF1736B01D00A19A81 /* STGameFlowManager.m in Sources */,
+				9122DD04173919DA0042D918 /* STItem.m in Sources */,
+				9122DD0717391A4E0042D918 /* STCoin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

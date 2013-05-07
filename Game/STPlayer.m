@@ -7,6 +7,7 @@
 //
 
 #import "STPlayer.h"
+#import "STItem.h"
 
 #define kJumpVelocity 250
 
@@ -27,8 +28,11 @@
     return _bonusItems;
 }
 
-- (void)collisionWithGameObject:(STGameObject *)gameObject {
-    
+- (void)collisionWithGameObject:(STGameObject *)gameObject
+                           edge:(STRectEdge)edge {
+    if ([[gameObject class] isSubclassOfClass:[STItem class]]) {
+        [(STItem *)gameObject setVisible:NO];
+    }
 }
 
 - (void)jump {

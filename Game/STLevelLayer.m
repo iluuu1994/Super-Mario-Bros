@@ -18,13 +18,6 @@
 #define kDefaultGravity ccp(0, -9.81)
 #define kMaxCameraEdge 300
 
-typedef enum {
-    STRectEdgeMinX,
-    STRectEdgeMinY,
-    STRectEdgeMaxX,
-    STRectEdgeMaxY
-} STRectEdge;
-
 @implementation STLevelLayer
 {}
 
@@ -98,9 +91,24 @@ typedef enum {
 }
 
 - (void)update:(ccTime)delta {
-    self.player.velocity = ccp(15, self.player.velocity.y); // TODO: remove this, only for debugging
+    [self cleanup];
     [self updateGravity:delta];
     [self updateCollisions:delta];
+}
+
+- (void)cleanup {
+    NSMutableArray *deadObjects = [NSMutableArray array];
+    
+    for (STGameObject *go in self.gameObjects) {
+        if (go.isDead) {
+            [deadObjects addObject:go];
+        }
+    }
+    
+    for (STGameObject *deadGo in deadObjects) {
+        [self.gameObjects removeObject:deadGo];
+        [deadGo removeFromParent];
+    }
 }
 
 - (void)updateGravity:(ccTime)delta {
@@ -122,85 +130,89 @@ typedef enum {
             
             if (STRectIntersect(child.boundingBox, child2.boundingBox)) {
                 // Position objects
-                [self updateCollisionOfGameObject:child withGameObject:child2 delta:delta];
-                [self updateCollisionOfGameObject:child2 withGameObject:child delta:delta];
+                STRectEdge edge1 = [self updateCollisionOfGameObject:child withGameObject:child2 delta:delta];
+                STRectEdge edge2 = [self updateCollisionOfGameObject:child2 withGameObject:child delta:delta];
                 
                 // Send notifications
-                [child collisionWithGameObject:child2];
-                [child2 collisionWithGameObject:child];
+                [child collisionWithGameObject:child2 edge:edge1];
+                [child2 collisionWithGameObject:child edge:edge2];
             }
         }
     }
 }
 
-- (void)updateCollisionOfGameObject:(STGameObject *)gameObject
+- (STRectEdge)updateCollisionOfGameObject:(STGameObject *)gameObject
                      withGameObject:(STGameObject *)gameObject2
                               delta:(ccTime)delta {
     
+    STRectEdge rectEdge;
+    float edgeLeft = (gameObject.boundingBox.origin.x - gameObject2.boundingBox.origin.x - gameObject.boundingBox.size.width) * -1;
+    float edgeRight = (gameObject.boundingBox.origin.x + gameObject2.boundingBox.size.width - gameObject2.boundingBox.origin.x);
+    float edgeTop = (gameObject.boundingBox.origin.y + gameObject.boundingBox.size.height - gameObject2.boundingBox.origin.y);
+    float edgeBottom = (gameObject.boundingBox.origin.y - gameObject2.boundingBox.size.height - gameObject2.boundingBox.origin.y) * -1;
+    
+    float offset = 0.0;
+    if (edgeLeft < edgeRight) {
+        rectEdge = STRectEdgeMinX;
+        offset = edgeLeft;
+    } else {
+        rectEdge = STRectEdgeMaxX;
+        offset = edgeRight;
+    }
+    
+    if (edgeTop < edgeBottom) {
+        float cached = edgeTop;
+        if (cached < offset) {
+            rectEdge = STRectEdgeMaxY;
+            offset = cached;
+        }
+    } else {
+        float cached = edgeBottom;
+        if (cached < offset) {
+            rectEdge = STRectEdgeMinY;
+            offset = cached;
+        }
+    }
+    
     if (gameObject.bodyType != STGameObjectBodyTypeStatic) {
-        float edgeLeft = (gameObject.boundingBox.origin.x - gameObject2.boundingBox.origin.x - gameObject.boundingBox.size.width) * -1;
-        float edgeRight = (gameObject.boundingBox.origin.x + gameObject2.boundingBox.size.width - gameObject2.boundingBox.origin.x);
-        float edgeTop = (gameObject.boundingBox.origin.y + gameObject.boundingBox.size.height - gameObject2.boundingBox.origin.y);
-        float edgeBottom = (gameObject.boundingBox.origin.y - gameObject2.boundingBox.size.height - gameObject2.boundingBox.origin.y) * -1;
-
-        float offset = 0.0;
-        STRectEdge rectEdge;
-        if (edgeLeft < edgeRight) {
-            rectEdge = STRectEdgeMinX;
-            offset = edgeLeft;
-        } else {
-            rectEdge = STRectEdgeMaxX;
-            offset = edgeRight;
-        }
-        
-        if (edgeTop < edgeBottom) {
-            float cached = edgeTop;
-            if (cached < offset) {
-                rectEdge = STRectEdgeMaxY;
-                offset = cached;
-            }
-        } else {
-            float cached = edgeBottom;
-            if (cached < offset) {
-                rectEdge = STRectEdgeMinY;
-                offset = cached;
-            }
-        }
-        
         if (gameObject2.bodyType != STGameObjectBodyTypeStatic) {
             offset /= 2.0;
         }
         
-        switch (rectEdge) {
-            case STRectEdgeMinX:
-            {
-                [gameObject move:ccp(offset, 0)];
+        if ([gameObject bodyType] != STGameObjectBodyTypeNonColliding && [gameObject2 bodyType] != STGameObjectBodyTypeNonColliding) {
+            switch (rectEdge) {
+                case STRectEdgeMinX:
+                {
+                    [gameObject move:ccp(offset, 0)];
+                }
+                    break;
+                case STRectEdgeMaxX:
+                {
+                    [gameObject move:ccp(-offset, 0)];
+                }
+                    break;
+                case STRectEdgeMinY:
+                {
+                    [gameObject move:ccp(0, offset)];
+                }
+                    break;
+                case STRectEdgeMaxY:
+                {
+                    [gameObject move:ccp(0, -offset)];
+                }
+                    break;
             }
-                break;
-            case STRectEdgeMaxX:
-            {
-                [gameObject move:ccp(-offset, 0)];
+            
+            if (rectEdge == STRectEdgeMinY && gameObject.velocity.y < 0) {
+                gameObject.velocity = ccp(gameObject.velocity.x, 0);
             }
-                break;
-            case STRectEdgeMinY:
-            {
-                [gameObject move:ccp(0, offset)];
+            if (rectEdge == STRectEdgeMaxY && gameObject.velocity.y > 0) {
+                gameObject.velocity = ccp(gameObject.velocity.x, 0);
             }
-                break;
-            case STRectEdgeMaxY:
-            {
-                [gameObject move:ccp(0, -offset)];
-            }
-                break;
-        }
-        
-        if (rectEdge == STRectEdgeMinY && gameObject.velocity.y < 0) {
-            gameObject.velocity = ccp(gameObject.velocity.x, 0);
-        }
-        if (rectEdge == STRectEdgeMaxY && gameObject.velocity.y > 0) {
-            gameObject.velocity = ccp(gameObject.velocity.x, 0);
         }
     }
+    
+    return rectEdge;
 }
 
 #pragma mark -

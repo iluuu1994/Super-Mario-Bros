@@ -7,6 +7,7 @@
 //
 
 #import "STBlock.h"
+#import "STPlayer.h"
 
 @implementation STBlock
 
@@ -22,6 +23,13 @@
 
 - (STGameObjectBodyType)bodyType {
     return STGameObjectBodyTypeStatic;
+}
+
+- (void)collisionWithGameObject:(STGameObject *)gameObject
+                           edge:(STRectEdge)edge {
+    if (edge == STRectEdgeMinY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        [self setDead:YES];
+    }
 }
 
 @end

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>blink</key>
+		<dict>
+			<key>delay</key>
+			<string>0.1</string>
+			<key>frames</key>
+			<array>
+				<string>coin-1</string>
+				<string>coin-2</string>
+				<string>coin-3</string>
+				<string>coin-1</string>
+				<string>coin-1</string>
+				<string>coin-1</string>
+				<string>coin-1</string>
+				<string>coin-1</string>
+			</array>
+		</dict>
+	</dict>
+	<key>frames</key>
+	<dict>
+		<key>coin-1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{1.5, 1}, {5, 7}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0.5}</string>
+			<key>spriteSize</key>
+			<string>{5, 7}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 0}, {7, 5}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>coin-2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{1.5, 1}, {5, 7}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0.5}</string>
+			<key>spriteSize</key>
+			<string>{5, 7}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 6}, {7, 5}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>coin-3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{1.5, 1}, {5, 7}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0.5}</string>
+			<key>spriteSize</key>
+			<string>{5, 7}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{0, 10}, {7, 5}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>GeneratedWith</key>
+		<string>SpriteHelper</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>textureFileName</key>
+		<string>Coin.png</string>
+	</dict>
+</dict>
+</plist>
