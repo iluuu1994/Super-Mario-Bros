@@ -11,7 +11,6 @@
 #import "CCControlExtension.h"
 #import "CCDirector+Transitions.h"
 #import "NSBundle+Resources.h"
-#import "STLayerConstants.h"
 
 @implementation STChooseLevelLayer
 {}
@@ -38,6 +37,11 @@
     NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
 
     CGSize winSize = [[CCDirector sharedDirector] winSize];
+    
+    // Scene Title
+    CCLabelTTF *title = [CCLabelTTF labelWithString:@"Levels" fontName:kTitleFontName fontSize:kTitleFontSize];
+    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
+    [self addChild:title];
     
     // Retrieve the world with the given id
     NSDictionary *selectedWorld;
@@ -91,10 +95,11 @@
     [self addChild:scroller];
     
     // Back to World Selection Button
-    CCControlButton *worldsButton = [CCControlButton buttonWithTitle:@"Back" fontName:@"Helvetica" fontSize:30];
-    [worldsButton setAdjustBackgroundImage:NO];
+    CCControlButton *worldsButton = [CCControlButton buttonWithLabel:
+                                   [CCLabelTTF labelWithString:@"Worlds" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [worldsButton addTarget:self action:@selector(worlds:) forControlEvents:CCControlEventTouchUpInside];
-    worldsButton.position = ccp(worldsButton.contentSize.width / 2 + kScreenPadding, worldsButton.contentSize.height / 2 + kScreenPadding);
+    worldsButton.position = ccp(worldsButton.contentSize.width / 2 + kPadding,
+                                worldsButton.contentSize.height / 2 + kPadding);
     [self addChild:worldsButton];
 }
 
@@ -108,10 +113,6 @@
     
     if(!isLocked) {
         STScene *scene = [[STLevelLayer layerWithWorldID:worldID levelID:levelID] scene];
-        // TODO: remove
-        //[scene addChild:[STPauseLayer layerWithWorldID:worldID levelID:levelID]];
-        //[scene addChild:[STControlsLayer node]];
-        
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];

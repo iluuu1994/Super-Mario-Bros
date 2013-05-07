@@ -11,7 +11,6 @@
 #import "CCDirector+Transitions.h"
 #import "NSBundle+Resources.h"
 #import "CCControlExtension.h"
-#import "STLayerConstants.h"
 #import "STAboutConstants.h"
 
 @implementation STInfoLayer
@@ -27,9 +26,9 @@
     NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kAboutPlistFile]];
     
     // Scene Title
-    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
+    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:kTitleImageName selectedImage:kTitleImageName];
     title.scale = 0.8f;
-    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kScreenPadding);
+    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
     [self addChild:title];
     
     // Developer Information
@@ -38,15 +37,15 @@
         [developers appendString:developer];
         [developers appendString:@"\n"];
     }
-    CCLabelTTF *developerLabel = [CCLabelTTF labelWithString:developers fontName:@"Helvetica" fontSize:20];
+    CCLabelTTF *developerLabel = [CCLabelTTF labelWithString:developers fontName:kTextFontName fontSize:kTextFontSize];
     developerLabel.position = ccp(winSize.width / 2, winSize.height / 2);
     [self addChild:developerLabel];
     
-    // Menu Button
-    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Menu" fontName:@"Helvetica" fontSize:30];
-    [menuButton setAdjustBackgroundImage:NO];
+    // Menu Button    
+    CCControlButton *menuButton = [CCControlButton buttonWithLabel:
+                                   [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
-    menuButton.position = ccp(winSize.width / 2, menuButton.contentSize.height / 2 + kScreenPadding);
+    menuButton.position = ccp(winSize.width / 2, menuButton.contentSize.height / 2 + kPadding);
     [self addChild:menuButton];
     
     int counter = 0;
@@ -60,7 +59,8 @@
         socialMediaButton.adjustBackgroundImage = NO;
         [socialMediaButton addTarget:self action:@selector(socialMedia:) forControlEvents:CCControlEventTouchUpInside];
         CGSize imageSize = socialMediaButton.contentSize;
-        socialMediaButton.position = ccp(winSize.width - imageSize.width / 2 - kScreenPadding, imageSize.height / 2 + kScreenPadding + counter * (imageSize.height + kScreenPadding));
+        socialMediaButton.position = ccp(winSize.width - imageSize.width / 2 - kPadding,
+                                         imageSize.height / 2 + kPadding + counter * (imageSize.height + kPadding));
         [socialMediaButton setUserObject:url];
 
         counter++;

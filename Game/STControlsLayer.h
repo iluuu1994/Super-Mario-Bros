@@ -9,7 +9,7 @@
 #import "STLayer.h"
 #import "SneakyJoystick.h"
 #import "SneakyJoystickSkinnedBase.h"
-#import "STLayerConstants.h"
+#import "STLayoutConstants.h"
 #import "ColoredCircleSprite.h"
 #import "ColoredSquareSprite.h"
 

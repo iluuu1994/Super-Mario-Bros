@@ -8,7 +8,6 @@
 
 #import "STControlsLayer.h"
 #import "CCControlExtension.h"
-#import "STLayerConstants.h"
 
 @implementation STControlsLayer
 {}
@@ -18,7 +17,6 @@
 - (id)initWithDelegate:(id <STControlsDelegate>)delegate {
     self = [super init];
     if (self) {
-        NSLog(@"STLevelLayer inside STControlsLayer is: %@", delegate);
         [self setDelegate:delegate];
         [self setUpWithDelegate:delegate];
     }
@@ -32,6 +30,8 @@
 - (void)setUpWithDelegate:(id <STControlsDelegate>)delegate {
     [super setUp];
     
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    
     // Joystick
     SneakyJoystickSkinnedBase *leftJoy = [[SneakyJoystickSkinnedBase alloc] init];
     leftJoy.position = kJoystickPosition;
@@ -42,25 +42,27 @@
     [self addChild:leftJoy];
     
     // Pause Button
-    CCControlButton *pauseButton = [CCControlButton buttonWithTitle:@"II" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *pauseButton = [CCControlButton buttonWithTitle:@"II" fontName:kButtonFontName fontSize:kButtonFontSize];
     [pauseButton setAdjustBackgroundImage:NO];
     [pauseButton addTarget:delegate action:@selector(pause:) forControlEvents:CCControlEventTouchUpInside];
-    pauseButton.position = ccp(kScreenPadding + pauseButton.contentSize.width / 2,
-                               [[CCDirector sharedDirector] winSize].height - pauseButton.contentSize.height / 2 - kScreenPadding);
+    pauseButton.position = ccp(kPadding + pauseButton.contentSize.width / 2,
+                               winSize.height - pauseButton.contentSize.height / 2 - kPadding);
     [self addChild:pauseButton];
     
     // A Button
-    CCControlButton *aButton = [CCControlButton buttonWithTitle:@"A" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *aButton = [CCControlButton buttonWithTitle:@"A" fontName:kButtonFontName fontSize:kButtonFontSize];
     [aButton setAdjustBackgroundImage:NO];
     [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchUpInside];
-    aButton.position = ccp([[CCDirector sharedDirector] winSize].width - aButton.contentSize.width - kScreenPadding, aButton.contentSize.height / 2 + kScreenPadding);
+    aButton.position = ccp(winSize.width - aButton.contentSize.width - kPadding,
+                           aButton.contentSize.height / 2 + kPadding);
     [self addChild:aButton];
     
     // B Button
-    CCControlButton *bButton = [CCControlButton buttonWithTitle:@"B" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *bButton = [CCControlButton buttonWithTitle:@"B" fontName:kButtonFontName fontSize:kButtonFontSize];
     [bButton setAdjustBackgroundImage:NO];
     [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
-    bButton.position = ccp([[CCDirector sharedDirector] winSize].width - bButton.contentSize.width - aButton.contentSize.width - 2 * kScreenPadding, bButton.contentSize.height / 2 + kScreenPadding);
+    bButton.position = ccp(winSize.width - bButton.contentSize.width - aButton.contentSize.width - 2 * kPadding,
+                           bButton.contentSize.height / 2 + kPadding);
     [self addChild:bButton];
 }
 

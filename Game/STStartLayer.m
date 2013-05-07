@@ -13,8 +13,6 @@
 #import "STInfoLayer.h"
 #import "STSettingsLayer.h"
 
-#define kScreenPadding 10
-
 @implementation STStartLayer
 {}
 
@@ -23,31 +21,35 @@
 - (void)setUp {
     [super setUp];
     
-    // Menu
-    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
-    title.scale = 0.8f;
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
     
-    CCMenu *menu = [CCMenu menuWithItems:
-                    title,
-                    [CCMenuItemFont itemWithString:@"Play!" target:self selector:@selector(start:)],
-                    nil];
-    [menu alignItemsVerticallyWithPadding:20];
-    [self addChild:menu];
+    // TODO: static names of image
+    // Scene Title
+    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:kTitleImageName selectedImage:kTitleImageName];
+    title.scale = 0.8f;
+    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
+    [self addChild:title];
+    
+    // Play
+    CCControlButton *start = [CCControlButton buttonWithLabel:
+                              [CCLabelTTF labelWithString:@"Play!" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    [start addTarget:self action:@selector(start:) forControlEvents:CCControlEventTouchUpInside];
+    start.position = ccp(winSize.width / 2, winSize.height / 2);
+    [self addChild:start];
     
     // Settings
     CCControlButton *settings = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"preferences.png"]];
     settings.adjustBackgroundImage = NO;
     [settings addTarget:self action:@selector(preferences:) forControlEvents:CCControlEventTouchUpInside];
-    settings.position = ccp(settings.contentSize.width / 2 + kScreenPadding,
-                            settings.contentSize.height / 2 + kScreenPadding);
+    settings.position = ccp(settings.contentSize.width / 2 + kPadding,
+                            settings.contentSize.height / 2 + kPadding);
     [self addChild:settings];
 
     // About
     CCControlButton *about = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"about.png"]];
     about.adjustBackgroundImage = NO;
     [about addTarget:self action:@selector(info:) forControlEvents:CCControlEventTouchUpInside];
-    about.position = ccp([[CCDirector sharedDirector] winSize].width - about.contentSize.width / 2 - kScreenPadding,
-                            about.contentSize.height / 2 + kScreenPadding);
+    about.position = ccp(winSize.width - about.contentSize.width / 2 - kPadding, about.contentSize.height / 2 + kPadding);
     [self addChild:about];
 }
 

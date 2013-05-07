@@ -12,6 +12,7 @@
 #import "STLevelLayer.h"
 #import "STChooseLevelLayer.h"
 #import "CCControlButton.h"
+#import "STLayoutConstants.h"
 
 @interface STLevelResultLayer : STLayer {
     

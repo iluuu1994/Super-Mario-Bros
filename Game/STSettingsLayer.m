@@ -23,9 +23,8 @@
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
     // Scene Title
-    CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:@"Title.png" selectedImage:@"Title.png"];
-    title.scale = 0.8f;
-    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kScreenPadding);
+    CCLabelTTF *title = [CCLabelTTF labelWithString:@"Settings" fontName:kTitleFontName fontSize:kTitleFontSize];
+    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
     [self addChild:title];
     
     // Music Switch
@@ -35,15 +34,13 @@
                                                        thumbSprite:[CCSprite spriteWithFile:kSwitchThumbImg]];
     [music addTarget:self action:@selector(musicOnOff:) forControlEvents:CCControlEventValueChanged];
     [music setOn:[[STConfigurationManager sharedInstance] isMusicOn]];
-    music.position = ccp(winSize.width / 2 + music.contentSize.width / 2 + kLabelSwitchPadding,
+    music.position = ccp(winSize.width / 2 + music.contentSize.width / 2 + kPadding,
                          winSize.height / 2);
     [self addChild:music];
     
     // Music Label
-    CCLabelTTF *musicLabel = [CCLabelTTF labelWithString:@"Music" fontName:@"Helvetica" fontSize:20];
-    NSLog(@"%f", musicLabel.contentSize.width);
-    NSLog(@"%f", musicLabel.contentSize.height);
-    musicLabel.position = ccp(winSize.width / 2 - musicLabel.contentSize.width / 2 - kLabelSwitchPadding,
+    CCLabelTTF *musicLabel = [CCLabelTTF labelWithString:@"Music" fontName:kTextFontName fontSize:kTextFontSize];
+    musicLabel.position = ccp(winSize.width / 2 - musicLabel.contentSize.width / 2 - kPadding,
                               winSize.height / 2);
     [self addChild:musicLabel];
     
@@ -54,21 +51,21 @@
                                                        thumbSprite:[CCSprite spriteWithFile:kSwitchThumbImg]];
     [tone addTarget:self action:@selector(toneOnOff:) forControlEvents:CCControlEventValueChanged];
     [tone setOn:[[STConfigurationManager sharedInstance] isToneOn]];
-    tone.position = ccp(winSize.width / 2 + music.contentSize.width / 2 + kLabelSwitchPadding,
-                        winSize.height / 2 - tone.contentSize.height - kLabelSwitchPadding);
+    tone.position = ccp(winSize.width / 2 + music.contentSize.width / 2 + kPadding,
+                        winSize.height / 2 - tone.contentSize.height - kPadding);
     [self addChild:tone];
     
     // Tone Label
-    CCLabelTTF *toneLabel = [CCLabelTTF labelWithString:@"Tone" fontName:@"Helvetica" fontSize:20];
-    toneLabel.position = ccp(winSize.width / 2 - musicLabel.contentSize.width / 2 - kLabelSwitchPadding,
-                             winSize.height / 2 - tone.contentSize.height - kLabelSwitchPadding);
+    CCLabelTTF *toneLabel = [CCLabelTTF labelWithString:@"Tone" fontName:kTextFontName fontSize:kTextFontSize];
+    toneLabel.position = ccp(winSize.width / 2 - musicLabel.contentSize.width / 2 - kPadding,
+                             winSize.height / 2 - tone.contentSize.height - kPadding);
     [self addChild:toneLabel];
     
     // Menu Button
-    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Menu" fontName:@"Helvetica" fontSize:30];
-    [menuButton setAdjustBackgroundImage:NO];
+    CCControlButton *menuButton = [CCControlButton buttonWithLabel:
+                              [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
-    menuButton.position = ccp([[CCDirector sharedDirector] winSize].width / 2, menuButton.contentSize.height / 2 + kScreenPadding);
+    menuButton.position = ccp(winSize.width / 2, menuButton.contentSize.height / 2 + kPadding);
     [self addChild:menuButton];
 }
 

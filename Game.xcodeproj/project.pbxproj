@@ -198,6 +198,7 @@
 		D4A932DC172D98210059E5F4 /* CCScrollLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932DB172D98210059E5F4 /* CCScrollLayer.m */; };
 		D4A932E0172DA91C0059E5F4 /* STGameObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A932DF172DA91C0059E5F4 /* STGameObject.m */; };
 		D4A932E2172DADBF0059E5F4 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932E1172DADBF0059E5F4 /* lock.png */; };
+		D4ABADED173931AD004EEA8E /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = D4ABADEC173931AD004EEA8E /* button.png */; };
 		D4F8783F1732E791009C30C3 /* SneakyJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F8783C1732E791009C30C3 /* SneakyJoystick.m */; };
 		D4F878401732E791009C30C3 /* SneakyJoystickSkinnedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F8783E1732E791009C30C3 /* SneakyJoystickSkinnedBase.m */; };
 		D4F878451732E79D009C30C3 /* ColoredCircleSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F878421732E79D009C30C3 /* ColoredCircleSprite.m */; };
@@ -596,7 +597,7 @@
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
 		D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelResultLayer.m; sourceTree = "<group>"; };
-		D4A61D73172ED77600609D65 /* STLayerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayerConstants.h; sourceTree = "<group>"; };
+		D4A61D73172ED77600609D65 /* STLayoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayoutConstants.h; sourceTree = "<group>"; };
 		D4A61D76172ED83400609D65 /* STAboutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAboutConstants.h; sourceTree = "<group>"; };
 		D4A932CD172D77F10059E5F4 /* switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-mask.png"; sourceTree = "<group>"; };
 		D4A932CE172D77F20059E5F4 /* switch-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-off.png"; sourceTree = "<group>"; };
@@ -609,6 +610,7 @@
 		D4A932DE172DA91C0059E5F4 /* STGameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGameObject.h; sourceTree = "<group>"; };
 		D4A932DF172DA91C0059E5F4 /* STGameObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGameObject.m; sourceTree = "<group>"; };
 		D4A932E1172DADBF0059E5F4 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
+		D4ABADEC173931AD004EEA8E /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		D4F8783B1732E791009C30C3 /* SneakyJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystick.h; sourceTree = "<group>"; };
 		D4F8783C1732E791009C30C3 /* SneakyJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SneakyJoystick.m; sourceTree = "<group>"; };
 		D4F8783D1732E791009C30C3 /* SneakyJoystickSkinnedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SneakyJoystickSkinnedBase.h; sourceTree = "<group>"; };
@@ -681,6 +683,7 @@
 		910B1C3416F4E08A0097A11D /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
+				D4ABADEE17393333004EEA8E /* Definitions */,
 				910B1C3516F4E0960097A11D /* Scene */,
 				910B1C3616F4E09B0097A11D /* Layer */,
 				910B1C3B16F4E0ED0097A11D /* Sprite */,
@@ -869,6 +872,7 @@
 		914EB2891714092F0070051D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D4ABADEC173931AD004EEA8E /* button.png */,
 				914EB28A171409390070051D /* about.png */,
 				914EB28B171409390070051D /* preferences.png */,
 			);
@@ -943,13 +947,10 @@
 		9171B59D16BDDAC2008208D2 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				914EB28E17140E900070051D /* STWorldsConstants.h */,
 				9106D2A51712E50000BC6CFC /* Worlds.plist */,
 				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
 				9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */,
 				914EB293171414A70070051D /* world_0_level_1.tmx */,
-				D4A61D73172ED77600609D65 /* STLayerConstants.h */,
-				D4A61D76172ED83400609D65 /* STAboutConstants.h */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -1591,6 +1592,16 @@
 			name = "Game Object";
 			sourceTree = "<group>";
 		};
+		D4ABADEE17393333004EEA8E /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				914EB28E17140E900070051D /* STWorldsConstants.h */,
+				D4A61D73172ED77600609D65 /* STLayoutConstants.h */,
+				D4A61D76172ED83400609D65 /* STAboutConstants.h */,
+			);
+			name = Definitions;
+			sourceTree = "<group>";
+		};
 		D4F8783A1732E549009C30C3 /* SneakyInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -1709,6 +1720,7 @@
 				913EB1491732DC870012B37B /* theme.mp3 in Resources */,
 				91F2477617391D4800DD1E9B /* Coin.plist in Resources */,
 				91F2477B1739210E00DD1E9B /* Coin.png in Resources */,
+				D4ABADED173931AD004EEA8E /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

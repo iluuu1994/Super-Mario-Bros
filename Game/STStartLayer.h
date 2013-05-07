@@ -11,6 +11,7 @@
 #import "STScene.h"
 #import "STLayer.h"
 #import "STChooseWorldLayer.h"
+#import "STLayoutConstants.h"
 
 @interface STStartLayer : STLayer {
     

@@ -13,6 +13,7 @@
 #import "STStartLayer.h"
 #import "STChooseLevelLayer.h"
 #import "CCScrollLayer.h"
+#import "STLayoutConstants.h"
 
 @interface STChooseWorldLayer : STLayer {
     

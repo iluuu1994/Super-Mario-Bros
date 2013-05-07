@@ -7,7 +7,6 @@
 //
 
 #import "STLevelResultLayer.h"
-#import "STLayerConstants.h"
 #import "CCDirector+Transitions.h"
 
 @implementation STLevelResultLayer
@@ -69,39 +68,39 @@
                     nil];
     
     // Level Overview Button
-    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:kButtonFontName fontSize:kButtonFontSize];
     [levelsButton setAdjustBackgroundImage:NO];
     [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
     [self addChild:levelsButton];
     
     // Retry Button
-    CCControlButton *retryButton = [CCControlButton buttonWithTitle:@"Retry" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *retryButton = [CCControlButton buttonWithTitle:@"Retry" fontName:kButtonFontName fontSize:kButtonFontSize];
     [retryButton setAdjustBackgroundImage:NO];
     [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
     [self addChild:retryButton];
     
     if(success) {
         // Level Overview Button
-        levelsButton.position = ccp(winSize.width / 2, levelsButton.contentSize.height / 2 + kScreenPadding);
+        levelsButton.position = ccp(winSize.width / 2, levelsButton.contentSize.height / 2 + kPadding);
         
         // Retry Button
-        retryButton.position = ccp(winSize.width / 2 - levelsButton.contentSize.width - kButtonPadding,
-                                   retryButton.contentSize.height / 2 + kScreenPadding);
+        retryButton.position = ccp(winSize.width / 2 - levelsButton.contentSize.width - kPadding,
+                                   retryButton.contentSize.height / 2 + kPadding);
         
         // Next Level Button
         CCControlButton *nextButton = [CCControlButton buttonWithTitle:@"Next" fontName:@"Helvetica" fontSize:30];
         [nextButton setAdjustBackgroundImage:NO];
         [nextButton addTarget:self action:@selector(nextLevel:) forControlEvents:CCControlEventTouchUpInside];
         nextButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width,
-                                  nextButton.contentSize.height / 2 + kScreenPadding);
+                                  nextButton.contentSize.height / 2 + kPadding);
         [self addChild:nextButton];
     } else {
         // Retry Button
-        retryButton.position = ccp(winSize.width / 2 - retryButton.contentSize.width / 2 - kButtonPadding,
-                                   retryButton.contentSize.height / 2 + kScreenPadding);
+        retryButton.position = ccp(winSize.width / 2 - retryButton.contentSize.width / 2 - kPadding,
+                                   retryButton.contentSize.height / 2 + kPadding);
         // Level Overview Button
-        levelsButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width / 2 - kButtonPadding,
-                                    levelsButton.contentSize.height / 2 + kScreenPadding);
+        levelsButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width / 2 - kPadding,
+                                    levelsButton.contentSize.height / 2 + kPadding);
     }
     
     [menu alignItemsVerticallyWithPadding:20];

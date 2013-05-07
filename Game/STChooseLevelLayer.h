@@ -12,6 +12,7 @@
 #import "CCScrollLayer.h"
 #import "STStartLayer.h"
 #import "STLevelLayer.h"
+#import "STLayoutConstants.h"
 #import "STPauseLayer.h"//TODO: remove
 #import "STControlsLayer.h"//TODO: remove
 

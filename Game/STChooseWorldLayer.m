@@ -11,7 +11,6 @@
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
 #import "STWorldsConstants.h"
-#import "STLayerConstants.h"
 
 @implementation STChooseWorldLayer
 {}
@@ -24,6 +23,11 @@
     NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
+    
+    // Scene Title
+    CCLabelTTF *title = [CCLabelTTF labelWithString:@"Worlds" fontName:kTitleFontName fontSize:kTitleFontSize];
+    title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
+    [self addChild:title];
 
     NSMutableArray *pages = [[NSMutableArray alloc] init];
     
@@ -65,10 +69,10 @@
     [self addChild:scroller];
     
     // Back to Menu Button
-    CCControlButton *menuButton = [CCControlButton buttonWithTitle:@"Back" fontName:@"Helvetica" fontSize:30];
-    [menuButton setAdjustBackgroundImage:NO];
+    CCControlButton *menuButton = [CCControlButton buttonWithLabel:
+                              [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
-    menuButton.position = ccp(menuButton.contentSize.width / 2 + kScreenPadding, menuButton.contentSize.height / 2 + kScreenPadding);
+    menuButton.position = ccp(menuButton.contentSize.width / 2 + kPadding, menuButton.contentSize.height / 2 + kPadding);
     [self addChild:menuButton];
 }
 

@@ -8,6 +8,7 @@
 
 #import "STLayer.h"
 #import "STGameFlowManager.h"
+#import "STLayoutConstants.h"
 
 #define kPausePanelColor ccc4(128, 128, 128, 128)
 

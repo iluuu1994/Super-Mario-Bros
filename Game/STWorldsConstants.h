@@ -14,6 +14,7 @@
 #define kWorldsKey @"Worlds"
 #define kWorldIDKey @"ID"
 #define kWorldNameKey @"Name"
+#define kWorldShortNameKey @"Short Name"
 #define kWorldIconKey @"Icon Name"
 #define kWorldIsLockedKey @"Is Locked"
 
