@@ -40,6 +40,13 @@
 		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
 		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
 		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
+		91ADF9D5173939D1002B52CB /* STNPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADF9D4173939D1002B52CB /* STNPC.m */; };
+		91ADF9D9173939EB002B52CB /* STGumba.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADF9D8173939EB002B52CB /* STGumba.m */; };
+		91ADF9DD17393A55002B52CB /* Gumba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9DB17393A55002B52CB /* Gumba.plist */; };
+		91ADF9DE17393A55002B52CB /* Gumba.png in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9DC17393A55002B52CB /* Gumba.png */; };
+		91ADF9E1173940C7002B52CB /* STKoopa.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADF9E0173940C6002B52CB /* STKoopa.m */; };
+		91ADF9E7173940DA002B52CB /* Koopa.png in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9E5173940DA002B52CB /* Koopa.png */; };
+		91ADF9E9173941B6002B52CB /* Koopa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9E8173941B6002B52CB /* Koopa.plist */; };
 		91BF84C3173265F0001249AF /* STCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF84C2173265F0001249AF /* STCreature.m */; };
 		91BF84C717326660001249AF /* STPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF84C617326660001249AF /* STPlayer.m */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
@@ -288,6 +295,16 @@
 		91AB077F16BE704300195D66 /* STLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLayer.m; sourceTree = "<group>"; };
 		91AB078116BE912400195D66 /* STTiledMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTiledMapLayer.h; sourceTree = "<group>"; };
 		91AB078216BE912400195D66 /* STTiledMapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTiledMapLayer.m; sourceTree = "<group>"; };
+		91ADF9D3173939D1002B52CB /* STNPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STNPC.h; sourceTree = "<group>"; };
+		91ADF9D4173939D1002B52CB /* STNPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNPC.m; sourceTree = "<group>"; };
+		91ADF9D7173939EB002B52CB /* STGumba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGumba.h; sourceTree = "<group>"; };
+		91ADF9D8173939EB002B52CB /* STGumba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGumba.m; sourceTree = "<group>"; };
+		91ADF9DB17393A55002B52CB /* Gumba.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gumba.plist; sourceTree = "<group>"; };
+		91ADF9DC17393A55002B52CB /* Gumba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gumba.png; sourceTree = "<group>"; };
+		91ADF9DF173940C6002B52CB /* STKoopa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKoopa.h; sourceTree = "<group>"; };
+		91ADF9E0173940C6002B52CB /* STKoopa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKoopa.m; sourceTree = "<group>"; };
+		91ADF9E5173940DA002B52CB /* Koopa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koopa.png; sourceTree = "<group>"; };
+		91ADF9E8173941B6002B52CB /* Koopa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Koopa.plist; sourceTree = "<group>"; };
 		91BF84C1173265F0001249AF /* STCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCreature.h; sourceTree = "<group>"; };
 		91BF84C2173265F0001249AF /* STCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCreature.m; sourceTree = "<group>"; };
 		91BF84C517326660001249AF /* STPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPlayer.h; sourceTree = "<group>"; };
@@ -954,12 +971,62 @@
 			name = Maps;
 			sourceTree = "<group>";
 		};
+		91ADF9D21739399C002B52CB /* NPC */ = {
+			isa = PBXGroup;
+			children = (
+				91ADF9D3173939D1002B52CB /* STNPC.h */,
+				91ADF9D4173939D1002B52CB /* STNPC.m */,
+				91ADF9D6173939D7002B52CB /* Gumba */,
+				91ADF9E2173940CB002B52CB /* Koopa */,
+			);
+			name = NPC;
+			sourceTree = "<group>";
+		};
+		91ADF9D6173939D7002B52CB /* Gumba */ = {
+			isa = PBXGroup;
+			children = (
+				91ADF9D7173939EB002B52CB /* STGumba.h */,
+				91ADF9D8173939EB002B52CB /* STGumba.m */,
+				91ADF9DA17393A44002B52CB /* Resources */,
+			);
+			name = Gumba;
+			sourceTree = "<group>";
+		};
+		91ADF9DA17393A44002B52CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91ADF9DB17393A55002B52CB /* Gumba.plist */,
+				91ADF9DC17393A55002B52CB /* Gumba.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		91ADF9E2173940CB002B52CB /* Koopa */ = {
+			isa = PBXGroup;
+			children = (
+				91ADF9DF173940C6002B52CB /* STKoopa.h */,
+				91ADF9E0173940C6002B52CB /* STKoopa.m */,
+				91ADF9E3173940D0002B52CB /* Resources */,
+			);
+			name = Koopa;
+			sourceTree = "<group>";
+		};
+		91ADF9E3173940D0002B52CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91ADF9E8173941B6002B52CB /* Koopa.plist */,
+				91ADF9E5173940DA002B52CB /* Koopa.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		91BF84C0173265D1001249AF /* Creature */ = {
 			isa = PBXGroup;
 			children = (
 				91BF84C1173265F0001249AF /* STCreature.h */,
 				91BF84C2173265F0001249AF /* STCreature.m */,
 				91BF84C417326648001249AF /* Player */,
+				91ADF9D21739399C002B52CB /* NPC */,
 			);
 			name = Creature;
 			sourceTree = "<group>";
@@ -1709,6 +1776,10 @@
 				913EB1491732DC870012B37B /* theme.mp3 in Resources */,
 				91F2477617391D4800DD1E9B /* Coin.plist in Resources */,
 				91F2477B1739210E00DD1E9B /* Coin.png in Resources */,
+				91ADF9DD17393A55002B52CB /* Gumba.plist in Resources */,
+				91ADF9DE17393A55002B52CB /* Gumba.png in Resources */,
+				91ADF9E7173940DA002B52CB /* Koopa.png in Resources */,
+				91ADF9E9173941B6002B52CB /* Koopa.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1763,6 +1834,9 @@
 				D4A0FCCF1736B01D00A19A81 /* STGameFlowManager.m in Sources */,
 				9122DD04173919DA0042D918 /* STItem.m in Sources */,
 				9122DD0717391A4E0042D918 /* STCoin.m in Sources */,
+				91ADF9D5173939D1002B52CB /* STNPC.m in Sources */,
+				91ADF9D9173939EB002B52CB /* STGumba.m in Sources */,
+				91ADF9E1173940C7002B52CB /* STKoopa.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
