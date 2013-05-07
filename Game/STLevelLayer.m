@@ -142,8 +142,8 @@
 }
 
 - (STRectEdge)updateCollisionOfGameObject:(STGameObject *)gameObject
-                     withGameObject:(STGameObject *)gameObject2
-                              delta:(ccTime)delta {
+                           withGameObject:(STGameObject *)gameObject2
+                                    delta:(ccTime)delta {
     
     STRectEdge rectEdge;
     float edgeLeft = (gameObject.boundingBox.origin.x - gameObject2.boundingBox.origin.x - gameObject.boundingBox.size.width) * -1;

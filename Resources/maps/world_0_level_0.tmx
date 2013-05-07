@@ -17,6 +17,11 @@
     <property name="type" value="STCoin"/>
    </properties>
   </tile>
+  <tile id="122">
+   <properties>
+    <property name="type" value="STKoopa"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="bg" width="100" height="14">
   <data encoding="base64" compression="gzip">
@@ -30,7 +35,7 @@
  </layer>
  <layer name="objects" width="100" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WsQkAIAxEUassaeH+W9goggRF1BjwP7jCKsVBTAgAAOBHoqSKJbAjkzds0Ycvo30FP1IXvEUfvtDHPu0vOJWVObhr5QajjyYDQg7tl+AVAAA=
+   H4sIAAAAAAAAA+3RQQrAMAgAQU9+Op/vqdAGazQopXQXvAUijgh9sfH2AnQr64Ffb9n7assWdJbxUMGju6iHCh7djct4qeDR3TDGarbAoz7LwjKxLPCoL+LxZIFHfSsPzwKP+jyPlQUee0XuujuZf6g3yyP69s8dIMXgguAVAAA=
   </data>
  </layer>
  <objectgroup name="events" width="100" height="14">
