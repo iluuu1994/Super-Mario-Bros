@@ -21,7 +21,6 @@ ITSingletonImplementation
 #pragma mark Properties
 
 - (void)setMusicOn:(BOOL)musicOn {
-    NSLog(@"%d", musicOn);
     [[STSoundManager sharedInstance] setBackgroundMusicEnabled:musicOn];
 }
 
@@ -30,7 +29,6 @@ ITSingletonImplementation
 }
 
 - (void)setToneOn:(BOOL)toneOn {
-    NSLog(@"%d", toneOn);
     [[STSoundManager sharedInstance] setSoundEnabled:toneOn];
 }
 

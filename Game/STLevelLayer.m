@@ -24,13 +24,18 @@
 #pragma mark -
 #pragma mark Initialise
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
-    NSDictionary *worldsInfo = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
-    _levelInfo = worldsInfo[kWorldsKey][worldID][kLevelsKey][levelID];
+    _levelInfo = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
+    
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:spriteCacheName];
     }
+    NSLog(@"test");
+    NSLog(@"%@", [[STWorldInfoReader sharedInstance] namingConvention]);
     
-    if (self = [super initWithTiledMap:[NSString stringWithFormat:worldsInfo[kWorldsNamingConvention], worldID, levelID]]) {
+    self = [super initWithTiledMap:
+            [NSString stringWithFormat:[[STWorldInfoReader sharedInstance] namingConvention],
+             worldID, levelID]];
+    if (self) {
         _worldID = worldID;
         _levelID = levelID;
         [self setUiLayer:[STControlsLayer layerWithDelegate:self]];
@@ -66,8 +71,6 @@
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
     }
-    
-    [[STSoundManager sharedInstance] stopBackgroundMusic];
 }
 
 - (void)onEnter {

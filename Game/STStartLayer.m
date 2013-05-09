@@ -31,8 +31,10 @@
     [self addChild:title];
     
     // Play
-    CCControlButton *start = [CCControlButton buttonWithLabel:
-                              [CCLabelTTF labelWithString:@"Play!" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    CCLabelTTF *playLabel = [CCLabelTTF labelWithString:@"Play!" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [playLabel setColor:kButtonTextColor];
+    CCControlButton *start = [CCControlButton buttonWithLabel:playLabel
+                                             backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [start addTarget:self action:@selector(start:) forControlEvents:CCControlEventTouchUpInside];
     start.position = ccp(winSize.width / 2, winSize.height / 2);
     [self addChild:start];

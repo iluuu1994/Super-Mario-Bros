@@ -11,6 +11,7 @@
 #import "STPauseLayer.h"
 #import "STPlayer.h"
 #import "STGameFlowManager.h"
+#import "STWorldInfoReader.h"
 
 @interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate>
 {}

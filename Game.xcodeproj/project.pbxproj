@@ -196,6 +196,8 @@
 		91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */; };
 		D4437B61172FE13000FF2F44 /* STControlsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B60172FE13000FF2F44 /* STControlsLayer.m */; };
 		D4437B65172FEEF300FF2F44 /* STPauseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B64172FEEF300FF2F44 /* STPauseLayer.m */; };
+		D46B8A93173BCCA400805372 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = D46B8A92173BCCA400805372 /* button.png */; };
+		D46B8A9F173BE7CA00805372 /* STWorldInfoReader.m in Sources */ = {isa = PBXBuildFile; fileRef = D46B8A9E173BE7CA00805372 /* STWorldInfoReader.m */; };
 		D49C7E1816F4CA58004101F1 /* about.plist in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1716F4CA58004101F1 /* about.plist */; };
 		D49C7E1B16F4E812004101F1 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1916F4E812004101F1 /* twitter.png */; };
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
@@ -616,6 +618,9 @@
 		D4437B60172FE13000FF2F44 /* STControlsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STControlsLayer.m; sourceTree = "<group>"; };
 		D4437B63172FEEF300FF2F44 /* STPauseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPauseLayer.h; sourceTree = "<group>"; };
 		D4437B64172FEEF300FF2F44 /* STPauseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPauseLayer.m; sourceTree = "<group>"; };
+		D46B8A92173BCCA400805372 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		D46B8A9D173BE7CA00805372 /* STWorldInfoReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWorldInfoReader.h; sourceTree = "<group>"; };
+		D46B8A9E173BE7CA00805372 /* STWorldInfoReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWorldInfoReader.m; sourceTree = "<group>"; };
 		D49C7E1716F4CA58004101F1 /* about.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = about.plist; sourceTree = "<group>"; };
 		D49C7E1916F4E812004101F1 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		D49C7E1A16F4E812004101F1 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -1113,6 +1118,7 @@
 		91C0B99116B4470A0092FCA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D46B8A92173BCCA400805372 /* button.png */,
 				913EB1451732DA460012B37B /* Sounds */,
 				9171B59D16BDDAC2008208D2 /* Maps */,
 				9171B59C16BDDAB1008208D2 /* Icons */,
@@ -1606,6 +1612,15 @@
 			name = "Pause Layer";
 			sourceTree = "<group>";
 		};
+		D46B8A99173BDF6A00805372 /* World Information Reader */ = {
+			isa = PBXGroup;
+			children = (
+				D46B8A9D173BE7CA00805372 /* STWorldInfoReader.h */,
+				D46B8A9E173BE7CA00805372 /* STWorldInfoReader.m */,
+			);
+			name = "World Information Reader";
+			sourceTree = "<group>";
+		};
 		D49CAC081726BBBB00EFF3B3 /* Settings Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1692,6 +1707,7 @@
 		D4A932D5172D78820059E5F4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D46B8A99173BDF6A00805372 /* World Information Reader */,
 				D4A0FCCC1736AF2F00A19A81 /* Game Flow Manager */,
 				913EB1431732D1540012B37B /* Singleton */,
 				91FD0E7B1701D45D0032EC01 /* Categories */,
@@ -1846,6 +1862,7 @@
 				91C8DDDC173B95B9000DB9DE /* Spiny.png in Resources */,
 				91C8DDE3173B9AE6000DB9DE /* Lakitu.plist in Resources */,
 				91C8DDE4173B9AE6000DB9DE /* Lakitu.png in Resources */,
+				D46B8A93173BCCA400805372 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1905,6 +1922,7 @@
 				91ADF9E1173940C7002B52CB /* STKoopa.m in Sources */,
 				91C8DDD7173B958C000DB9DE /* STSpiny.m in Sources */,
 				91C8DDE0173B9ADE000DB9DE /* STLakitu.m in Sources */,
+				D46B8A9F173BE7CA00805372 /* STWorldInfoReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

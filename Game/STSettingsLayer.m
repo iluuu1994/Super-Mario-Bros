@@ -24,6 +24,7 @@
     
     // Scene Title
     CCLabelTTF *title = [CCLabelTTF labelWithString:@"Settings" fontName:kTitleFontName fontSize:kTitleFontSize];
+    [title setColor:kTitleTextColor];
     title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
     [self addChild:title];
     
@@ -40,6 +41,7 @@
     
     // Music Label
     CCLabelTTF *musicLabel = [CCLabelTTF labelWithString:@"Music" fontName:kTextFontName fontSize:kTextFontSize];
+    [musicLabel setColor:kTextColor];
     musicLabel.position = ccp(winSize.width / 2 - musicLabel.contentSize.width / 2 - kPadding,
                               winSize.height / 2);
     [self addChild:musicLabel];
@@ -57,13 +59,16 @@
     
     // Tone Label
     CCLabelTTF *toneLabel = [CCLabelTTF labelWithString:@"Tone" fontName:kTextFontName fontSize:kTextFontSize];
+    [toneLabel setColor:kTextColor];
     toneLabel.position = ccp(winSize.width / 2 - musicLabel.contentSize.width / 2 - kPadding,
                              winSize.height / 2 - tone.contentSize.height - kPadding);
     [self addChild:toneLabel];
     
     // Menu Button
-    CCControlButton *menuButton = [CCControlButton buttonWithLabel:
-                              [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    CCLabelTTF *menuLabel = [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [menuLabel setColor:kButtonTextColor];
+    CCControlButton *menuButton = [CCControlButton buttonWithLabel:menuLabel
+                                                  backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
     menuButton.position = ccp(winSize.width / 2, menuButton.contentSize.height / 2 + kPadding);
     [self addChild:menuButton];

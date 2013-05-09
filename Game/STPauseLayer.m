@@ -44,6 +44,7 @@
     // Level Information
     NSString *levelInfo = [NSString stringWithFormat:@"%i-%i", worldID, levelID];
     CCLabelTTF *level = [CCLabelTTF labelWithString:levelInfo fontName:kButtonFontName fontSize:kButtonFontSize];
+    [level setColor:kTextColor];
     level.position = ccp(kPadding + level.contentSize.width / 2,
                          winSize.height - level.contentSize.height / 2 - kPadding);
     [self addChild:level];

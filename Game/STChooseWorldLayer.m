@@ -7,7 +7,6 @@
 //
 
 #import "STChooseWorldLayer.h"
-#import "NSBundle+Resources.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
 #import "STWorldsConstants.h"
@@ -20,18 +19,17 @@
 - (void)setUp {
     [super setUp];
     
-    NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
-    
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
     // Scene Title
     CCLabelTTF *title = [CCLabelTTF labelWithString:@"Worlds" fontName:kTitleFontName fontSize:kTitleFontSize];
+    [title setColor:kTitleTextColor];
     title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
     [self addChild:title];
 
     NSMutableArray *pages = [[NSMutableArray alloc] init];
     
-    for(NSDictionary *world in [root valueForKey:kWorldsKey]) {
+    for(NSDictionary *world in [[STWorldInfoReader sharedInstance] worlds]) {
         CCLayer *page = [[CCLayer alloc] init];
         
         CCSprite *worldIcon = [CCSprite spriteWithFile:[world valueForKey:kWorldIconKey]];
@@ -45,6 +43,7 @@
         
         // World Title
         CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[world valueForKey:kWorldNameKey] fontName:@"Helvetica" fontSize:20];
+        [tlabel setColor:kTextColor];
         CCMenuItemLabel *title = [CCMenuItemLabel itemWithLabel:tlabel target:self selector:@selector(world:)];
         [title setUserObject:world];
         
@@ -69,8 +68,10 @@
     [self addChild:scroller];
     
     // Back to Menu Button
-    CCControlButton *menuButton = [CCControlButton buttonWithLabel:
-                              [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    CCLabelTTF *menuLabel = [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [menuLabel setColor:kButtonTextColor];
+    CCControlButton *menuButton = [CCControlButton buttonWithLabel:menuLabel
+                                                  backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
     menuButton.position = ccp(menuButton.contentSize.width / 2 + kPadding, menuButton.contentSize.height / 2 + kPadding);
     [self addChild:menuButton];

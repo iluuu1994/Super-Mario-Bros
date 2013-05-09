@@ -15,6 +15,10 @@
 #define kTitleImageName @"Title.png"
 #define kButtonImageName @"button.png"
 
+#define kTitleTextColor ccc3(255, 255, 255)
+#define kButtonTextColor ccc3(0, 0, 0)
+#define kTextColor ccc3(255, 255, 255)
+
 #define kTitleFontSize 35
 #define kButtonFontSize 30
 #define kTextFontSize 20
