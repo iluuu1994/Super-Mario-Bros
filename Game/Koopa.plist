@@ -32,6 +32,16 @@
 				<string>koopa-4</string>
 			</array>
 		</dict>
+		<key>die</key>
+		<dict>
+			<key>delay</key>
+			<string>0.1</string>
+			<key>frames</key>
+			<array>
+				<string>koopa-3</string>
+				<string>koopa-4</string>
+			</array>
+		</dict>
 	</dict>
 	<key>frames</key>
 	<dict>

@@ -28,8 +28,9 @@
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
     if(edge == STRectEdgeMaxY) {
-        [self runAnimationWithName:@"die" endless:NO];
-        [self setDead:YES];
+        [self runAnimationWithName:@"die" callbackBlock:^void {
+            [self setDead:YES];
+        }];
     }
 }
 

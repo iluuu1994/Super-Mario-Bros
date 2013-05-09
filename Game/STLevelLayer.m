@@ -102,10 +102,7 @@
     
     for (STGameObject *go in self.gameObjects) {
         if (go.isDead) {
-            // TODO: @Ilija, what's your opinion to this if-condition?
-            if([go numberOfRunningActions] == 0) {
-                [deadObjects addObject:go];
-            }
+            [deadObjects addObject:go];
         }
     }
     

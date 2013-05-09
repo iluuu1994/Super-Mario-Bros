@@ -19,7 +19,7 @@
   </tile>
   <tile id="122">
    <properties>
-    <property name="type" value="STGumba"/>
+    <property name="type" value="STKoopa"/>
    </properties>
   </tile>
  </tileset>
