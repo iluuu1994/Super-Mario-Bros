@@ -60,9 +60,7 @@
 
 - (void)setUp {
     [super setUp];
-    
-    // TODO: static name of music file
-    [[STSoundManager sharedInstance] playBackgroundMusic:@"theme.mp3"];
+    [[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
 }
 
 - (void)tearDown {
@@ -104,7 +102,10 @@
     
     for (STGameObject *go in self.gameObjects) {
         if (go.isDead) {
-            [deadObjects addObject:go];
+            // TODO: @Ilija, what's your opinion to this if-condition?
+            if([go numberOfRunningActions] == 0) {
+                [deadObjects addObject:go];
+            }
         }
     }
     

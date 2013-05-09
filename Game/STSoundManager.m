@@ -21,6 +21,10 @@ ITSingletonImplementation
     [[SimpleAudioEngine sharedEngine] playBackgroundMusic:backgroundMusicFile];
 }
 
+- (void)playBackgroundMusic:(NSString *)backgroundMusicFile loop:(BOOL)loop {
+    [[SimpleAudioEngine sharedEngine] playBackgroundMusic:backgroundMusicFile loop:loop];
+}
+
 - (void)stopBackgroundMusic {
     [[SimpleAudioEngine sharedEngine] pauseBackgroundMusic];
 }

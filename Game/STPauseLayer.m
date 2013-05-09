@@ -42,12 +42,16 @@
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
     // Level Information
-    NSString *levelInfo = [NSString stringWithFormat:@"%i-%i", worldID, levelID];
-    CCLabelTTF *level = [CCLabelTTF labelWithString:levelInfo fontName:kButtonFontName fontSize:kButtonFontSize];
-    [level setColor:kTextColor];
-    level.position = ccp(kPadding + level.contentSize.width / 2,
-                         winSize.height - level.contentSize.height / 2 - kPadding);
-    [self addChild:level];
+    NSDictionary *world = [[STWorldInfoReader sharedInstance] worldWithID:worldID];
+    NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
+    NSString *levelInfo = [NSString stringWithFormat:@"%@-%@",
+                           [world valueForKey:kWorldShortNameKey],
+                           [level valueForKey:kLevelShortNameKey]];
+    CCLabelTTF *levelLabel = [CCLabelTTF labelWithString:levelInfo fontName:kButtonFontName fontSize:kButtonFontSize];
+    [levelLabel setColor:kTextColor];
+    levelLabel.position = ccp(kPadding + levelLabel.contentSize.width / 2,
+                         winSize.height - levelLabel.contentSize.height / 2 - kPadding);
+    [self addChild:levelLabel];
     
     // Play Button
     CCControlButton *continueButton = [CCControlButton buttonWithTitle:@"Play" fontName:kButtonFontName fontSize:kButtonFontSize];
@@ -55,7 +59,7 @@
     [continueButton addTarget:delegate action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
     continueButton.position = ccp(kPadding + continueButton.contentSize.width / 2,
                                   winSize.height - continueButton.contentSize.height / 2
-                                  - level.contentSize.height - 2 * kPadding);
+                                  - levelLabel.contentSize.height - 2 * kPadding);
     [self addChild:continueButton];
     
     // Retry Button

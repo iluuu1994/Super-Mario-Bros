@@ -21,6 +21,7 @@
 #define kLevelsKey @"Levels"
 #define kLevelIDKey @"ID"
 #define kLevelNameKey @"Name"
+#define kLevelShortNameKey @"Short Name"
 #define kLevelIconNameKey @"Icon Name"
 #define kLevelIsLockedKey @"Is Locked"
 #define kLevelSpriteCacheKey @"Sprite Cache"
