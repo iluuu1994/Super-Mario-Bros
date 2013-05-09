@@ -14,6 +14,7 @@
 #import "STChooseLevelLayer.h"
 #import "CCScrollLayer.h"
 #import "STLayoutConstants.h"
+#import "STWorldInfoReader.h"
 
 @interface STChooseWorldLayer : STLayer {
     

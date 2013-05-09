@@ -14,6 +14,15 @@
 				<string>gumba-2</string>
 			</array>
 		</dict>
+		<key>die</key>
+		<dict>
+			<key>delay</key>
+			<string>0.2</string>
+			<key>frames</key>
+			<array>
+				<string>gumba-3</string>
+			</array>
+		</dict>
 	</dict>
 	<key>frames</key>
 	<dict>

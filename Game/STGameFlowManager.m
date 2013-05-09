@@ -29,7 +29,7 @@ ITSingletonImplementation
 }
 
 - (void)resume {
-    [self resumeWithMusicOn:YES];
+    [self resumeWithMusicOn:[[STConfigurationManager sharedInstance] isMusicOn]];
 }
 
 - (void)resumeWithMusicOn:(BOOL)musicOn {

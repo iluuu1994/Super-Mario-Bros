@@ -27,6 +27,10 @@
     } else if (edge == STRectEdgeMaxX && self.velocity.x > 0) {
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
+    if(edge == STRectEdgeMaxY) {
+        [self runAnimationWithName:@"die" endless:NO];
+        [self setDead:YES];
+    }
 }
 
 @end

@@ -10,7 +10,6 @@
 #import "STWorldsConstants.h"
 #import "CCControlExtension.h"
 #import "CCDirector+Transitions.h"
-#import "NSBundle+Resources.h"
 
 @implementation STChooseLevelLayer
 {}
@@ -34,28 +33,20 @@
 - (void)setUpWithWorldID:(unsigned short)worldID {
     [super setUp];
     
-    NSArray *root = [NSDictionary dictionaryWithContentsOfFile:[NSBundle pathForResource:kWorldsFile]];
-
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
     // Scene Title
     CCLabelTTF *title = [CCLabelTTF labelWithString:@"Levels" fontName:kTitleFontName fontSize:kTitleFontSize];
+    [title setColor:kTitleTextColor];
     title.position = ccp(winSize.width / 2, winSize.height - title.contentSize.height - kPadding);
     [self addChild:title];
     
     // Retrieve the world with the given id
-    NSDictionary *selectedWorld;
-    for(NSDictionary *world in [root valueForKey:kWorldsKey]) {
-        if(worldID == [[world objectForKey:kWorldIDKey] integerValue]) {
-            selectedWorld = world;
-            break;
-        }
-    }
-    self.world = selectedWorld;
+    self.world = [[STWorldInfoReader sharedInstance] worldWithID:worldID];
     
     NSMutableArray *pages = [[NSMutableArray alloc] init];
     
-    for(NSDictionary *level in [selectedWorld objectForKey:kLevelsKey]) {
+    for(NSDictionary *level in [self.world objectForKey:kLevelsKey]) {
 
         CCLayer *page = [[CCLayer alloc] init];
         
@@ -71,6 +62,7 @@
         // Level Title
         CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[level valueForKey:kLevelNameKey]
                                                 fontName:@"Helvetica" fontSize:20];
+        [tlabel setColor:kTextColor];
         CCMenuItemLabel *title = [CCMenuItemLabel itemWithLabel:tlabel target:self selector:@selector(level:)];
         [title setUserObject:level];
         
@@ -95,8 +87,10 @@
     [self addChild:scroller];
     
     // Back to World Selection Button
-    CCControlButton *worldsButton = [CCControlButton buttonWithLabel:
-                                   [CCLabelTTF labelWithString:@"Worlds" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    CCLabelTTF *worldsLabel = [CCLabelTTF labelWithString:@"Worlds" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [worldsLabel setColor:kButtonTextColor];
+    CCControlButton *worldsButton = [CCControlButton buttonWithLabel:worldsLabel
+                                                    backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [worldsButton addTarget:self action:@selector(worlds:) forControlEvents:CCControlEventTouchUpInside];
     worldsButton.position = ccp(worldsButton.contentSize.width / 2 + kPadding,
                                 worldsButton.contentSize.height / 2 + kPadding);

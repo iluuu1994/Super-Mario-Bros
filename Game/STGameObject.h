@@ -36,6 +36,8 @@ typedef enum {
 @property STGameObjectBodyType bodyType;
 @property (setter = setDead:) BOOL isDead;
 
+// TODO: setDead defined in property, method die?
+
 - (void)die:(id)sender;
 - (void)move:(CGPoint)deltaPoint;
 - (void)collisionWithGameObject:(STGameObject *)gameObject

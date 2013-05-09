@@ -38,12 +38,15 @@
         [developers appendString:@"\n"];
     }
     CCLabelTTF *developerLabel = [CCLabelTTF labelWithString:developers fontName:kTextFontName fontSize:kTextFontSize];
+    [developerLabel setColor:kTextColor];
     developerLabel.position = ccp(winSize.width / 2, winSize.height / 2);
     [self addChild:developerLabel];
     
-    // Menu Button    
-    CCControlButton *menuButton = [CCControlButton buttonWithLabel:
-                                   [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize] backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    // Menu Button
+    CCLabelTTF *menuLabel = [CCLabelTTF labelWithString:@"Menu" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [menuLabel setColor:kButtonTextColor];
+    CCControlButton *menuButton = [CCControlButton buttonWithLabel:menuLabel
+                                                  backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
     [menuButton addTarget:self action:@selector(menu:) forControlEvents:CCControlEventTouchUpInside];
     menuButton.position = ccp(winSize.width / 2, menuButton.contentSize.height / 2 + kPadding);
     [self addChild:menuButton];
