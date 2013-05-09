@@ -67,5 +67,6 @@
 - (void)update:(ccTime)delta;
 
 - (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag;
+- (void)runAnimationWithName:(NSString *)animName callbackBlock:(void(^)())block;
 
 @end

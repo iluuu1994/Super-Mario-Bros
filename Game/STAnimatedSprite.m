@@ -92,4 +92,9 @@
     }
 }
 
+- (void)runAnimationWithName:(NSString *)animName callbackBlock:(void(^)())block {
+    CCAction *callback = [CCCallBlock actionWithBlock:block];
+    [self runAction:[CCSequence actionWithArray:@[ [CCAnimate actionWithAnimation:self.animations[animName]], callback ]]];
+}
+
 @end
