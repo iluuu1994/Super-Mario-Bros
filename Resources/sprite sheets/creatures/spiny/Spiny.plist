@@ -4,81 +4,81 @@
 <dict>
 	<key>frames</key>
 	<dict>
-		<key>koopa-1</key>
+		<key>spiny-1</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 12}}</string>
+			<string>{{0, 0}, {16, 15}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{8, 12}</string>
+			<string>{16, 15}</string>
 			<key>spriteSourceSize</key>
-			<string>{8, 12}</string>
+			<string>{16, 15}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{2, 2}, {12, 8}}</string>
-			<key>textureRotated</key>
-			<true/>
-		</dict>
-		<key>koopa-2</key>
-		<dict>
-			<key>aliases</key>
-			<array/>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 12}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{8, 12}</string>
-			<key>spriteSourceSize</key>
-			<string>{8, 12}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{2, 14}, {12, 8}}</string>
-			<key>textureRotated</key>
-			<true/>
-		</dict>
-		<key>koopa-3</key>
-		<dict>
-			<key>aliases</key>
-			<array/>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 7.5}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{8, 7.5}</string>
-			<key>spriteSourceSize</key>
-			<string>{8, 7.5}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{2, 26}, {8, 7.5}}</string>
+			<string>{{4, 28}, {16, 15}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>koopa-4</key>
+		<key>spiny-2</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 7}}</string>
+			<string>{{0, 0}, {16, 16}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{8, 7}</string>
+			<string>{16, 16}</string>
 			<key>spriteSourceSize</key>
-			<string>{8, 7}</string>
+			<string>{16, 16}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{2, 38}, {8, 7}}</string>
+			<string>{{4, 4}, {16, 16}}</string>
 			<key>textureRotated</key>
 			<false/>
+		</dict>
+		<key>spiny-3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {14, 16}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{14, 16}</string>
+			<key>spriteSourceSize</key>
+			<string>{14, 16}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 52}, {16, 14}}</string>
+			<key>textureRotated</key>
+			<true/>
+		</dict>
+		<key>spiny-4</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {14, 16}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{14, 16}</string>
+			<key>spriteSourceSize</key>
+			<string>{14, 16}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 76}, {16, 14}}</string>
+			<key>textureRotated</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>metadata</key>
@@ -88,7 +88,7 @@
 		<key>format</key>
 		<integer>3</integer>
 		<key>textureFileName</key>
-		<string>Koopa_UntitledSheet-hd.png</string>
+		<string>Spiny_UntitledSheet-hd.png</string>
 	</dict>
 </dict>
 </plist>

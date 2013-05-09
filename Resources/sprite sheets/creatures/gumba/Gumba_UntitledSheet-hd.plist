@@ -2,19 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>animations</key>
-	<dict>
-		<key>walk</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>gumba-1</string>
-				<string>gumba-2</string>
-			</array>
-		</dict>
-	</dict>
 	<key>frames</key>
 	<dict>
 		<key>gumba-1</key>
@@ -82,7 +69,7 @@
 		<key>format</key>
 		<integer>3</integer>
 		<key>textureFileName</key>
-		<string>Gumba.png</string>
+		<string>Gumba_UntitledSheet-hd.png</string>
 	</dict>
 </dict>
 </plist>

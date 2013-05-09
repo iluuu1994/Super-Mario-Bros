@@ -19,7 +19,7 @@
   </tile>
   <tile id="122">
    <properties>
-    <property name="type" value="STKoopa"/>
+    <property name="type" value="STGumba"/>
    </properties>
   </tile>
  </tileset>
@@ -35,7 +35,7 @@
  </layer>
  <layer name="objects" width="100" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3RQQrAMAgAQU9+Op/vqdAGazQopXQXvAUijgh9sfH2AnQr64Ffb9n7assWdJbxUMGju6iHCh7djct4qeDR3TDGarbAoz7LwjKxLPCoL+LxZIFHfSsPzwKP+jyPlQUee0XuujuZf6g3yyP69s8dIMXgguAVAAA=
+   H4sIAAAAAAAAA+3XMQoAIQwF0V/l0l5+KwXFVVfQBHYe2AmGTKUE4LbkPQAq5j0AChM9ojDRIwoTPaJoW9DDT68FPXy8taDHfaMW9Dgj77X9381a0GPPyl53z5d3cFavx+rdP3sADbv6rOAVAAA=
   </data>
  </layer>
  <objectgroup name="events" width="100" height="14">

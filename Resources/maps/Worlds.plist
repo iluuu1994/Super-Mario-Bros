@@ -34,7 +34,10 @@
 					<array>
 						<string>Mario.plist</string>
 						<string>Coin.plist</string>
+						<string>Gumba.plist</string>
+						<string>Spiny.plist</string>
 						<string>Koopa.plist</string>
+						<string>Lakitu.plist</string>
 					</array>
 				</dict>
 			</array>

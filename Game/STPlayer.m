@@ -59,16 +59,6 @@
         }
     }
     
-    if (velocity.x != 0) {
-        if (
-            (velocity.x > 0 && self.scaleX < 0)
-            ||
-            (velocity.x < 0 && self.scaleX > 0)
-        ) {
-            self.scaleX *= -1;
-        }
-    }
-    
     [super setVelocity:velocity];
 }
 

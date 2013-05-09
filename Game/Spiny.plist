@@ -10,14 +10,43 @@
 			<string>0.2</string>
 			<key>frames</key>
 			<array>
-				<string>gumba-1</string>
-				<string>gumba-2</string>
+				<string>spiny-1</string>
+				<string>spiny-2</string>
+			</array>
+		</dict>
+		<key>armor</key>
+		<dict>
+			<key>delay</key>
+			<string>0.2</string>
+			<key>frames</key>
+			<array>
+				<string>spiny-3</string>
+				<string>spiny-4</string>
 			</array>
 		</dict>
 	</dict>
 	<key>frames</key>
 	<dict>
-		<key>gumba-1</key>
+		<key>spiny-1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {16, 15}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{16, 15}</string>
+			<key>spriteSourceSize</key>
+			<string>{16, 15}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 28}, {16, 15}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>spiny-2</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
@@ -36,43 +65,43 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>gumba-2</key>
+		<key>spiny-3</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {16, 16}}</string>
+			<string>{{0, 0}, {14, 16}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{16, 16}</string>
+			<string>{14, 16}</string>
 			<key>spriteSourceSize</key>
-			<string>{16, 16}</string>
+			<string>{14, 16}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{4, 28}, {16, 16}}</string>
+			<string>{{4, 52}, {16, 14}}</string>
 			<key>textureRotated</key>
-			<false/>
+			<true/>
 		</dict>
-		<key>gumba-3</key>
+		<key>spiny-4</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {16, 8}}</string>
+			<string>{{0, 0}, {14, 16}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{16, 8}</string>
+			<string>{14, 16}</string>
 			<key>spriteSourceSize</key>
-			<string>{16, 8}</string>
+			<string>{14, 16}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{4, 52}, {16, 8}}</string>
+			<string>{{4, 76}, {16, 14}}</string>
 			<key>textureRotated</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>metadata</key>
@@ -82,7 +111,7 @@
 		<key>format</key>
 		<integer>3</integer>
 		<key>textureFileName</key>
-		<string>Gumba.png</string>
+		<string>Spiny.png</string>
 	</dict>
 </dict>
 </plist>

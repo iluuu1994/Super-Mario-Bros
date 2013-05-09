@@ -14,4 +14,14 @@
     return STGameObjectBodyTypeDynamic;
 }
 
+- (void)setVelocity:(CGPoint)velocity {
+    if (velocity.x > 0) {
+        self.flipX = NO;
+    } else if (velocity.x < 0) {
+        self.flipX = YES;
+    }
+    
+    [super setVelocity:velocity];
+}
+
 @end

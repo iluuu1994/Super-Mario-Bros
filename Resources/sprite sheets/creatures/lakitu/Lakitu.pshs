@@ -24,43 +24,43 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{20, 60}</string>
+			<string>{28, 44}</string>
 			<key>Padding</key>
 			<integer>4</integer>
 			<key>PixelFormat</key>
 			<integer>0</integer>
 			<key>SheetImage</key>
-			<string>Gumba_UntitledSheet.png</string>
+			<string>Lakitu_UntitledSheet.png</string>
 			<key>SheetImage-HD</key>
-			<string>Gumba_UntitledSheet-hd.png</string>
+			<string>Lakitu_UntitledSheet-hd.png</string>
 			<key>SheetName</key>
 			<string>UntitledSheet</string>
 			<key>SheetSceneImageName</key>
 			<string></string>
 			<key>Sheet_Sprites_Info</key>
 			<dict>
-				<key>gumba-1</key>
+				<key>lakitu-1</key>
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vawAEAAAAAAQQMAAAACvEzqWmHcgK4HVq
-					bq+QOJWBE0Rt2OkUIK3evaAhTZMI5AIAAAUA
+					Ym9vawAEAAAAAAQQMAAAADg0m1yZDbPJIkcF
+					EyVV9/ZiO3ZXqatZMFewEGPj0LWT5AIAAAUA
 					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
 					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
 					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
 					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
 					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
-					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
-					AQEAAGZyYW1lcwAACwAAAAEBAABndW1iYS0x
-					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					dXJlcwAAAAYAAAABAQAAbGFraXR1AAAGAAAA
+					AQEAAGZyYW1lcwAADAAAAAEBAABsYWtpdHUt
+					MS5wbmcsAAAAAQYAAAQAAAAUAAAAKAAAADQA
 					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
 					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
 					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
 					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
 					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
 					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
-					BAMAAOvy2QAAAAAACAAAAAQDAACpAtoAAAAA
-					AAgAAAAEAwAA0e3ZAAAAAAAsAAAAAQYAAPwA
+					BAMAAHiT2gAAAAAACAAAAAQDAAB9k9oAAAAA
+					AAgAAAAEAwAAWvLZAAAAAAAsAAAAAQYAAPwA
 					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
 					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
 					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
@@ -112,11 +112,11 @@
 					<key>SHSheetName</key>
 					<string>UntitledSheet</string>
 					<key>SHSpriteName</key>
-					<string>gumba-1</string>
+					<string>lakitu-1</string>
 					<key>SheetImage</key>
-					<string>Gumba_UntitledSheet.png</string>
+					<string>Lakitu_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>Gumba_UntitledSheet-hd.png</string>
+					<string>Lakitu_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -136,39 +136,39 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 2}, {8, 8}}</string>
+						<string>{{2, 2}, {8, 12}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 4}, {16, 16}}</string>
+						<string>{{4, 4}, {16, 24}}</string>
 						<key>Image</key>
-						<string>Gumba_UntitledSheet.png</string>
+						<string>Lakitu_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>Gumba_UntitledSheet-hd.png</string>
+						<string>Lakitu_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<false/>
+						<true/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
-						<string>gumba-1</string>
+						<string>lakitu-1</string>
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/gumba-1.png</string>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/lakitu/frames/lakitu-1.png</string>
 						<key>OriginalImage_RelativePath</key>
-						<string>frames/gumba-1.png/</string>
+						<string>frames/lakitu-1.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {16, 16}}</string>
+						<string>{{0, 0}, {16, 24}}</string>
 						<key>OriginalSize</key>
-						<string>{16, 16}</string>
+						<string>{16, 24}</string>
 						<key>Position</key>
 						<string>{4, 4}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{8, 8}</string>
+						<string>{8, 12}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -181,28 +181,28 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
-				<key>gumba-2</key>
+				<key>lakitu-2</key>
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vawAEAAAAAAQQMAAAAJ/FxxH2j1Y6hg1+
-					MHpUTU/gFDg/LbfpAKqGw64sthsu5AIAAAUA
+					Ym9vawAEAAAAAAQQMAAAAFpXybcB5X6CvVjl
+					88S7OXZWbOFbtKhdDX9heaQywLen5AIAAAUA
 					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
 					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
 					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
 					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
 					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
-					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
-					AQEAAGZyYW1lcwAACwAAAAEBAABndW1iYS0y
-					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					dXJlcwAAAAYAAAABAQAAbGFraXR1AAAGAAAA
+					AQEAAGZyYW1lcwAADAAAAAEBAABsYWtpdHUt
+					Mi5wbmcsAAAAAQYAAAQAAAAUAAAAKAAAADQA
 					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
 					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
 					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
 					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
 					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
 					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
-					BAMAAOvy2QAAAAAACAAAAAQDAACpAtoAAAAA
-					AAgAAAAEAwAABO7ZAAAAAAAsAAAAAQYAAPwA
+					BAMAAHiT2gAAAAAACAAAAAQDAAB9k9oAAAAA
+					AAgAAAAEAwAAIfLZAAAAAAAsAAAAAQYAAPwA
 					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
 					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
 					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
@@ -254,11 +254,11 @@
 					<key>SHSheetName</key>
 					<string>UntitledSheet</string>
 					<key>SHSpriteName</key>
-					<string>gumba-2</string>
+					<string>lakitu-2</string>
 					<key>SheetImage</key>
-					<string>Gumba_UntitledSheet.png</string>
+					<string>Lakitu_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>Gumba_UntitledSheet-hd.png</string>
+					<string>Lakitu_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -282,9 +282,9 @@
 						<key>Frame-HD</key>
 						<string>{{4, 28}, {16, 16}}</string>
 						<key>Image</key>
-						<string>Gumba_UntitledSheet.png</string>
+						<string>Lakitu_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>Gumba_UntitledSheet-hd.png</string>
+						<string>Lakitu_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
@@ -294,171 +294,29 @@
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
-						<string>gumba-2</string>
+						<string>lakitu-2</string>
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/gumba-2.png</string>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/lakitu/frames/lakitu-2.png</string>
 						<key>OriginalImage_RelativePath</key>
-						<string>frames/gumba-2.png/</string>
+						<string>frames/lakitu-2.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {16, 16}}</string>
+						<string>{{0, 8}, {16, 16}}</string>
 						<key>OriginalSize</key>
-						<string>{16, 16}</string>
+						<string>{17, 24}</string>
 						<key>Position</key>
 						<string>{4, 28}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{8, 8}</string>
+						<string>{8.5, 12}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
 						<integer>0</integer>
 						<key>TextureOffset</key>
-						<string>{0, -0}</string>
-						<key>UsesBatchRendering</key>
-						<true/>
-						<key>ZOrder</key>
-						<integer>0</integer>
-					</dict>
-				</dict>
-				<key>gumba-3</key>
-				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9vawAEAAAAAAQQMAAAAIsDF/VgAEMQL5V4
-					n4Y+W/CM8JctIjcdPtS+bDzDbBs05AIAAAUA
-					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
-					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
-					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
-					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
-					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
-					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
-					AQEAAGZyYW1lcwAACwAAAAEBAABndW1iYS0z
-					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
-					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
-					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
-					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
-					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
-					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
-					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
-					BAMAAOvy2QAAAAAACAAAAAQDAACpAtoAAAAA
-					AAgAAAAEAwAANO7ZAAAAAAAsAAAAAQYAAPwA
-					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
-					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
-					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
-					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
-					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
-					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
-					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
-					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
-					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
-					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
-					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
-					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
-					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
-					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
-					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
-					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
-					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
-					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
-					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
-					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
-					</data>
-					<key>IsSHSprite</key>
-					<true/>
-					<key>PhysicProperties</key>
-					<dict>
-						<key>AngularDamping</key>
-						<real>0.0</real>
-						<key>AngularVelocity</key>
-						<real>0.0</real>
-						<key>CanSleep</key>
-						<true/>
-						<key>FixedRot</key>
-						<false/>
-						<key>GravityScale</key>
-						<real>1</real>
-						<key>HandledBySH</key>
-						<true/>
-						<key>IsBullet</key>
-						<false/>
-						<key>LinearDamping</key>
-						<real>0.0</real>
-						<key>LinearVelocity</key>
-						<string>{0, 0}</string>
-						<key>SH_ComplexShapes</key>
-						<array/>
-						<key>Type</key>
-						<integer>3</integer>
-					</dict>
-					<key>SHSheetName</key>
-					<string>UntitledSheet</string>
-					<key>SHSpriteName</key>
-					<string>gumba-3</string>
-					<key>SheetImage</key>
-					<string>Gumba_UntitledSheet.png</string>
-					<key>SheetImage-HD</key>
-					<string>Gumba_UntitledSheet-hd.png</string>
-					<key>TextureProperties</key>
-					<dict>
-						<key>Angle</key>
-						<integer>0</integer>
-						<key>Border</key>
-						<integer>0</integer>
-						<key>CanBeTrimmed</key>
-						<true/>
-						<key>Color</key>
-						<string>{{1, 1}, {1, 1}}</string>
-						<key>ConvertedFromOldFormat</key>
-						<false/>
-						<key>CustomClassName</key>
-						<string></string>
-						<key>FlipX</key>
-						<false/>
-						<key>FlipY</key>
-						<false/>
-						<key>Frame</key>
-						<string>{{2, 26}, {8, 4}}</string>
-						<key>Frame-HD</key>
-						<string>{{4, 52}, {16, 8}}</string>
-						<key>Image</key>
-						<string>Gumba_UntitledSheet.png</string>
-						<key>Image-HD</key>
-						<string>Gumba_UntitledSheet-hd.png</string>
-						<key>IsCropped</key>
-						<false/>
-						<key>IsDrawable</key>
-						<true/>
-						<key>IsRotated</key>
-						<false/>
-						<key>IsTrimmed</key>
-						<true/>
-						<key>Name</key>
-						<string>gumba-3</string>
-						<key>Opacity</key>
-						<real>1</real>
-						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/gumba-3.png</string>
-						<key>OriginalImage_RelativePath</key>
-						<string>frames/gumba-3.png/</string>
-						<key>OriginalRect</key>
-						<string>{{0, 0}, {16, 8}}</string>
-						<key>OriginalSize</key>
-						<string>{16, 8}</string>
-						<key>Position</key>
-						<string>{4, 52}</string>
-						<key>Scale</key>
-						<string>{1, 1}</string>
-						<key>SpriteSize</key>
-						<string>{8, 4}</string>
-						<key>SpriteWasBreaked</key>
-						<false/>
-						<key>Tag</key>
-						<integer>0</integer>
-						<key>TextureOffset</key>
-						<string>{0, -0}</string>
+						<string>{-0.25, -2}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -481,7 +339,7 @@
 		<key>Dither</key>
 		<false/>
 		<key>DocumentName</key>
-		<string>Gumba</string>
+		<string>Lakitu</string>
 		<key>HD2XSuffix</key>
 		<string>-ipadhd</string>
 		<key>HDSuffix</key>
@@ -503,15 +361,15 @@
 	</dict>
 	<key>SceneFolderSandboxBookmark</key>
 	<data>
-	Ym9va3ADAAAAAAQQMAAAABrPh8hN4g5yfiB6hoJPmlpuW0CN85VjVbJjCwDRkmUieAIA
+	Ym9va3ADAAAAAAQQMAAAADPtNy8S2urHqyOJS4jaf0fkWw54kvicLRhm+6IJsJxteAIA
 	AAUAAAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWphdG92aWxvAAMAAAABAQAASWx1AAkA
 	AAABAQAAQml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAAAAEBAABSZXNvdXJjZXMAAAAN
-	AAAAAQEAAHNwcml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0dXJlcwAAAAUAAAABAQAA
-	Z3VtYmEAAAAkAAAAAQYAAAQAAAAUAAAAKAAAADQAAABIAAAAVAAAAGgAAACAAAAAlAAA
+	AAAAAQEAAHNwcml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0dXJlcwAAAAYAAAABAQAA
+	bGFraXR1AAAkAAAAAQYAAAQAAAAUAAAAKAAAADQAAABIAAAAVAAAAGgAAACAAAAAlAAA
 	AAgAAAAEAwAAKcAAAAAAAAAIAAAABAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAAAAgA
 	AAAEAwAApeqRAAAAAAAIAAAABAMAAJBcvAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
-	AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAACAAAAAQDAADr8tkAAAAAACQAAAABBgAA
-	0AAAAOAAAADwAAAAAAEAABABAAAgAQAAMAEAAEABAABQAQAACAAAAAAEAABBtzk5QAAA
+	AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAACAAAAAQDAAB4k9oAAAAAACQAAAABBgAA
+	0AAAAOAAAADwAAAAAAEAABABAAAgAQAAMAEAAEABAABQAQAACAAAAAAEAABBtzuabQAA
 	ABgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAHAAAAAAAAAAQA
 	AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAAAAgAAAAA
 	BAAAQbVsMOAAAAAkAAAAAQEAADBDRkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVBQjUz

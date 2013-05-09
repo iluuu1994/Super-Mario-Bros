@@ -42,11 +42,7 @@
 		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
 		91ADF9D5173939D1002B52CB /* STNPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADF9D4173939D1002B52CB /* STNPC.m */; };
 		91ADF9D9173939EB002B52CB /* STGumba.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADF9D8173939EB002B52CB /* STGumba.m */; };
-		91ADF9DD17393A55002B52CB /* Gumba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9DB17393A55002B52CB /* Gumba.plist */; };
-		91ADF9DE17393A55002B52CB /* Gumba.png in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9DC17393A55002B52CB /* Gumba.png */; };
 		91ADF9E1173940C7002B52CB /* STKoopa.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ADF9E0173940C6002B52CB /* STKoopa.m */; };
-		91ADF9E7173940DA002B52CB /* Koopa.png in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9E5173940DA002B52CB /* Koopa.png */; };
-		91ADF9E9173941B6002B52CB /* Koopa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91ADF9E8173941B6002B52CB /* Koopa.plist */; };
 		91BF84C3173265F0001249AF /* STCreature.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF84C2173265F0001249AF /* STCreature.m */; };
 		91BF84C717326660001249AF /* STPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91BF84C617326660001249AF /* STPlayer.m */; };
 		91C0B97F16B4470A0092FCA9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C0B97E16B4470A0092FCA9 /* QuartzCore.framework */; };
@@ -71,6 +67,16 @@
 		91C0B9A816B4470A0092FCA9 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 91C0B9A716B4470A0092FCA9 /* iTunesArtwork */; };
 		91C0BB1D16B4470C0092FCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1C16B4470C0092FCA9 /* main.m */; };
 		91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */; };
+		91C8DDCA173B912F000DB9DE /* Gumba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDC8173B912F000DB9DE /* Gumba.plist */; };
+		91C8DDCB173B912F000DB9DE /* Gumba.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDC9173B912F000DB9DE /* Gumba.png */; };
+		91C8DDD2173B937A000DB9DE /* Koopa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDD0173B937A000DB9DE /* Koopa.plist */; };
+		91C8DDD3173B937A000DB9DE /* Koopa.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDD1173B937A000DB9DE /* Koopa.png */; };
+		91C8DDD7173B958C000DB9DE /* STSpiny.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8DDD6173B958C000DB9DE /* STSpiny.m */; };
+		91C8DDDB173B95B9000DB9DE /* Spiny.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDD9173B95B9000DB9DE /* Spiny.plist */; };
+		91C8DDDC173B95B9000DB9DE /* Spiny.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDDA173B95B9000DB9DE /* Spiny.png */; };
+		91C8DDE0173B9ADE000DB9DE /* STLakitu.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8DDDF173B9ADE000DB9DE /* STLakitu.m */; };
+		91C8DDE3173B9AE6000DB9DE /* Lakitu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDE1173B9AE6000DB9DE /* Lakitu.plist */; };
+		91C8DDE4173B9AE6000DB9DE /* Lakitu.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDE2173B9AE6000DB9DE /* Lakitu.png */; };
 		91CCD3FD1701EE390082CF59 /* STStartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCD3FC1701EE390082CF59 /* STStartLayer.m */; };
 		91CCD4021701EE4B0082CF59 /* STChooseWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCD3FF1701EE4B0082CF59 /* STChooseWorldLayer.m */; };
 		91CCD4031701EE4B0082CF59 /* STInfoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CCD4011701EE4B0082CF59 /* STInfoLayer.m */; };
@@ -299,12 +305,8 @@
 		91ADF9D4173939D1002B52CB /* STNPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STNPC.m; sourceTree = "<group>"; };
 		91ADF9D7173939EB002B52CB /* STGumba.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGumba.h; sourceTree = "<group>"; };
 		91ADF9D8173939EB002B52CB /* STGumba.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGumba.m; sourceTree = "<group>"; };
-		91ADF9DB17393A55002B52CB /* Gumba.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gumba.plist; sourceTree = "<group>"; };
-		91ADF9DC17393A55002B52CB /* Gumba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gumba.png; sourceTree = "<group>"; };
 		91ADF9DF173940C6002B52CB /* STKoopa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STKoopa.h; sourceTree = "<group>"; };
 		91ADF9E0173940C6002B52CB /* STKoopa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STKoopa.m; sourceTree = "<group>"; };
-		91ADF9E5173940DA002B52CB /* Koopa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koopa.png; sourceTree = "<group>"; };
-		91ADF9E8173941B6002B52CB /* Koopa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Koopa.plist; sourceTree = "<group>"; };
 		91BF84C1173265F0001249AF /* STCreature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCreature.h; sourceTree = "<group>"; };
 		91BF84C2173265F0001249AF /* STCreature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCreature.m; sourceTree = "<group>"; };
 		91BF84C517326660001249AF /* STPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPlayer.h; sourceTree = "<group>"; };
@@ -335,6 +337,18 @@
 		91C0BB1C16B4470C0092FCA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91C0BB1E16B4470C0092FCA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		91C8DDC8173B912F000DB9DE /* Gumba.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gumba.plist; sourceTree = "<group>"; };
+		91C8DDC9173B912F000DB9DE /* Gumba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gumba.png; sourceTree = "<group>"; };
+		91C8DDD0173B937A000DB9DE /* Koopa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Koopa.plist; sourceTree = "<group>"; };
+		91C8DDD1173B937A000DB9DE /* Koopa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koopa.png; sourceTree = "<group>"; };
+		91C8DDD5173B958C000DB9DE /* STSpiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSpiny.h; sourceTree = "<group>"; };
+		91C8DDD6173B958C000DB9DE /* STSpiny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSpiny.m; sourceTree = "<group>"; };
+		91C8DDD9173B95B9000DB9DE /* Spiny.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Spiny.plist; sourceTree = "<group>"; };
+		91C8DDDA173B95B9000DB9DE /* Spiny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spiny.png; sourceTree = "<group>"; };
+		91C8DDDE173B9ADE000DB9DE /* STLakitu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLakitu.h; sourceTree = "<group>"; };
+		91C8DDDF173B9ADE000DB9DE /* STLakitu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLakitu.m; sourceTree = "<group>"; };
+		91C8DDE1173B9AE6000DB9DE /* Lakitu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Lakitu.plist; sourceTree = "<group>"; };
+		91C8DDE2173B9AE6000DB9DE /* Lakitu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lakitu.png; sourceTree = "<group>"; };
 		91CCD3FB1701EE390082CF59 /* STStartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStartLayer.h; sourceTree = "<group>"; };
 		91CCD3FC1701EE390082CF59 /* STStartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStartLayer.m; sourceTree = "<group>"; };
 		91CCD3FE1701EE4B0082CF59 /* STChooseWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseWorldLayer.h; sourceTree = "<group>"; };
@@ -976,6 +990,8 @@
 				91ADF9D4173939D1002B52CB /* STNPC.m */,
 				91ADF9D6173939D7002B52CB /* Gumba */,
 				91ADF9E2173940CB002B52CB /* Koopa */,
+				91C8DDD4173B9419000DB9DE /* Spiny */,
+				91C8DDDD173B9AC3000DB9DE /* Lakitu */,
 			);
 			name = NPC;
 			sourceTree = "<group>";
@@ -993,8 +1009,8 @@
 		91ADF9DA17393A44002B52CB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91ADF9DB17393A55002B52CB /* Gumba.plist */,
-				91ADF9DC17393A55002B52CB /* Gumba.png */,
+				91C8DDC8173B912F000DB9DE /* Gumba.plist */,
+				91C8DDC9173B912F000DB9DE /* Gumba.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1012,8 +1028,8 @@
 		91ADF9E3173940D0002B52CB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91ADF9E8173941B6002B52CB /* Koopa.plist */,
-				91ADF9E5173940DA002B52CB /* Koopa.png */,
+				91C8DDD0173B937A000DB9DE /* Koopa.plist */,
+				91C8DDD1173B937A000DB9DE /* Koopa.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1113,6 +1129,44 @@
 				91C0BB1C16B4470C0092FCA9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91C8DDD4173B9419000DB9DE /* Spiny */ = {
+			isa = PBXGroup;
+			children = (
+				91C8DDD5173B958C000DB9DE /* STSpiny.h */,
+				91C8DDD6173B958C000DB9DE /* STSpiny.m */,
+				91C8DDD8173B95AB000DB9DE /* Resources */,
+			);
+			name = Spiny;
+			sourceTree = "<group>";
+		};
+		91C8DDD8173B95AB000DB9DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91C8DDD9173B95B9000DB9DE /* Spiny.plist */,
+				91C8DDDA173B95B9000DB9DE /* Spiny.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		91C8DDDD173B9AC3000DB9DE /* Lakitu */ = {
+			isa = PBXGroup;
+			children = (
+				91C8DDDE173B9ADE000DB9DE /* STLakitu.h */,
+				91C8DDDF173B9ADE000DB9DE /* STLakitu.m */,
+				91C8DDE5173B9AEA000DB9DE /* Resources */,
+			);
+			name = Lakitu;
+			sourceTree = "<group>";
+		};
+		91C8DDE5173B9AEA000DB9DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91C8DDE1173B9AE6000DB9DE /* Lakitu.plist */,
+				91C8DDE2173B9AE6000DB9DE /* Lakitu.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		91CCD3F91701EE170082CF59 /* Screen Layers */ = {
@@ -1784,10 +1838,14 @@
 				913EB1491732DC870012B37B /* theme.mp3 in Resources */,
 				91F2477617391D4800DD1E9B /* Coin.plist in Resources */,
 				91F2477B1739210E00DD1E9B /* Coin.png in Resources */,
-				91ADF9DD17393A55002B52CB /* Gumba.plist in Resources */,
-				91ADF9DE17393A55002B52CB /* Gumba.png in Resources */,
-				91ADF9E7173940DA002B52CB /* Koopa.png in Resources */,
-				91ADF9E9173941B6002B52CB /* Koopa.plist in Resources */,
+				91C8DDCA173B912F000DB9DE /* Gumba.plist in Resources */,
+				91C8DDCB173B912F000DB9DE /* Gumba.png in Resources */,
+				91C8DDD2173B937A000DB9DE /* Koopa.plist in Resources */,
+				91C8DDD3173B937A000DB9DE /* Koopa.png in Resources */,
+				91C8DDDB173B95B9000DB9DE /* Spiny.plist in Resources */,
+				91C8DDDC173B95B9000DB9DE /* Spiny.png in Resources */,
+				91C8DDE3173B9AE6000DB9DE /* Lakitu.plist in Resources */,
+				91C8DDE4173B9AE6000DB9DE /* Lakitu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1845,6 +1903,8 @@
 				91ADF9D5173939D1002B52CB /* STNPC.m in Sources */,
 				91ADF9D9173939EB002B52CB /* STGumba.m in Sources */,
 				91ADF9E1173940C7002B52CB /* STKoopa.m in Sources */,
+				91C8DDD7173B958C000DB9DE /* STSpiny.m in Sources */,
+				91C8DDE0173B9ADE000DB9DE /* STLakitu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

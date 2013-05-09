@@ -40,17 +40,17 @@
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 12}}</string>
+			<string>{{0, 0}, {16, 23}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{8, 12}</string>
+			<string>{16, 23}</string>
 			<key>spriteSourceSize</key>
-			<string>{8, 12}</string>
+			<string>{16, 23}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{2, 2}, {12, 8}}</string>
+			<string>{{4, 28}, {23, 16}}</string>
 			<key>textureRotated</key>
 			<true/>
 		</dict>
@@ -59,17 +59,17 @@
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 12}}</string>
+			<string>{{0, 0}, {16, 24}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{8, 12}</string>
+			<string>{16, 24}</string>
 			<key>spriteSourceSize</key>
-			<string>{8, 12}</string>
+			<string>{16, 24}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{2, 14}, {12, 8}}</string>
+			<string>{{4, 4}, {24, 16}}</string>
 			<key>textureRotated</key>
 			<true/>
 		</dict>
@@ -78,17 +78,17 @@
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 7.5}}</string>
+			<string>{{0, 0}, {16, 15}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{8, 7.5}</string>
+			<string>{16, 15}</string>
 			<key>spriteSourceSize</key>
-			<string>{8, 7.5}</string>
+			<string>{16, 15}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{2, 26}, {8, 7.5}}</string>
+			<string>{{4, 52}, {16, 15}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>
@@ -97,17 +97,17 @@
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {8, 7}}</string>
+			<string>{{0, 0}, {16, 14}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
-			<string>{8, 7}</string>
+			<string>{16, 14}</string>
 			<key>spriteSourceSize</key>
-			<string>{8, 7}</string>
+			<string>{16, 14}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
-			<string>{{2, 38}, {8, 7}}</string>
+			<string>{{4, 76}, {16, 14}}</string>
 			<key>textureRotated</key>
 			<false/>
 		</dict>

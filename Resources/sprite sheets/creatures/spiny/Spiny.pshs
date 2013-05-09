@@ -24,23 +24,64 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{28, 92}</string>
+			<string>{20, 92}</string>
 			<key>Padding</key>
 			<integer>4</integer>
 			<key>PixelFormat</key>
 			<integer>0</integer>
 			<key>SheetImage</key>
-			<string>Koopa_UntitledSheet.png</string>
+			<string>Spiny_UntitledSheet.png</string>
 			<key>SheetImage-HD</key>
-			<string>Koopa_UntitledSheet-hd.png</string>
+			<string>Spiny_UntitledSheet-hd.png</string>
 			<key>SheetName</key>
 			<string>UntitledSheet</string>
 			<key>SheetSceneImageName</key>
 			<string></string>
 			<key>Sheet_Sprites_Info</key>
 			<dict>
-				<key>koopa-1</key>
+				<key>spiny-1</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAJrJ3fh2viqMAqrl
+					cB6XoSXBOqZinOFs0cWuNw8ivfUf5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAc3BpbnkAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABzcGlueS0x
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAAOKL2gAAAAAACAAAAAQDAAAEjNoAAAAA
+					AAgAAAAEAwAAL4vaAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -71,11 +112,11 @@
 					<key>SHSheetName</key>
 					<string>UntitledSheet</string>
 					<key>SHSpriteName</key>
-					<string>koopa-1</string>
+					<string>spiny-1</string>
 					<key>SheetImage</key>
-					<string>Koopa_UntitledSheet.png</string>
+					<string>Spiny_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>Koopa_UntitledSheet-hd.png</string>
+					<string>Spiny_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -95,215 +136,13 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 14}, {8, 11.5}}</string>
+						<string>{{2, 14}, {8, 7.5}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 28}, {16, 23}}</string>
+						<string>{{4, 28}, {16, 15}}</string>
 						<key>Image</key>
-						<string>Koopa_UntitledSheet.png</string>
+						<string>Spiny_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>Koopa_UntitledSheet-hd.png</string>
-						<key>IsCropped</key>
-						<false/>
-						<key>IsDrawable</key>
-						<true/>
-						<key>IsRotated</key>
-						<true/>
-						<key>IsTrimmed</key>
-						<true/>
-						<key>Name</key>
-						<string>koopa-1</string>
-						<key>Opacity</key>
-						<real>1</real>
-						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/koopa-1.png</string>
-						<key>OriginalImage_RelativePath</key>
-						<string>frames/koopa-1.png/</string>
-						<key>OriginalRect</key>
-						<string>{{0, 0}, {16, 23}}</string>
-						<key>OriginalSize</key>
-						<string>{16, 23}</string>
-						<key>Position</key>
-						<string>{4, 28}</string>
-						<key>Scale</key>
-						<string>{1, 1}</string>
-						<key>SpriteSize</key>
-						<string>{8, 11.5}</string>
-						<key>SpriteWasBreaked</key>
-						<false/>
-						<key>Tag</key>
-						<integer>0</integer>
-						<key>TextureOffset</key>
-						<string>{0, -0}</string>
-						<key>UsesBatchRendering</key>
-						<true/>
-						<key>ZOrder</key>
-						<integer>0</integer>
-					</dict>
-				</dict>
-				<key>koopa-2</key>
-				<dict>
-					<key>IsSHSprite</key>
-					<true/>
-					<key>PhysicProperties</key>
-					<dict>
-						<key>AngularDamping</key>
-						<real>0.0</real>
-						<key>AngularVelocity</key>
-						<real>0.0</real>
-						<key>CanSleep</key>
-						<true/>
-						<key>FixedRot</key>
-						<false/>
-						<key>GravityScale</key>
-						<real>1</real>
-						<key>HandledBySH</key>
-						<true/>
-						<key>IsBullet</key>
-						<false/>
-						<key>LinearDamping</key>
-						<real>0.0</real>
-						<key>LinearVelocity</key>
-						<string>{0, 0}</string>
-						<key>SH_ComplexShapes</key>
-						<array/>
-						<key>Type</key>
-						<integer>3</integer>
-					</dict>
-					<key>SHSheetName</key>
-					<string>UntitledSheet</string>
-					<key>SHSpriteName</key>
-					<string>koopa-2</string>
-					<key>SheetImage</key>
-					<string>Koopa_UntitledSheet.png</string>
-					<key>SheetImage-HD</key>
-					<string>Koopa_UntitledSheet-hd.png</string>
-					<key>TextureProperties</key>
-					<dict>
-						<key>Angle</key>
-						<integer>0</integer>
-						<key>Border</key>
-						<integer>0</integer>
-						<key>CanBeTrimmed</key>
-						<true/>
-						<key>Color</key>
-						<string>{{1, 1}, {1, 1}}</string>
-						<key>ConvertedFromOldFormat</key>
-						<false/>
-						<key>CustomClassName</key>
-						<string></string>
-						<key>FlipX</key>
-						<false/>
-						<key>FlipY</key>
-						<false/>
-						<key>Frame</key>
-						<string>{{2, 2}, {8, 12}}</string>
-						<key>Frame-HD</key>
-						<string>{{4, 4}, {16, 24}}</string>
-						<key>Image</key>
-						<string>Koopa_UntitledSheet.png</string>
-						<key>Image-HD</key>
-						<string>Koopa_UntitledSheet-hd.png</string>
-						<key>IsCropped</key>
-						<false/>
-						<key>IsDrawable</key>
-						<true/>
-						<key>IsRotated</key>
-						<true/>
-						<key>IsTrimmed</key>
-						<true/>
-						<key>Name</key>
-						<string>koopa-2</string>
-						<key>Opacity</key>
-						<real>1</real>
-						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/koopa-2.png</string>
-						<key>OriginalImage_RelativePath</key>
-						<string>frames/koopa-2.png/</string>
-						<key>OriginalRect</key>
-						<string>{{0, 0}, {16, 24}}</string>
-						<key>OriginalSize</key>
-						<string>{16, 24}</string>
-						<key>Position</key>
-						<string>{4, 4}</string>
-						<key>Scale</key>
-						<string>{1, 1}</string>
-						<key>SpriteSize</key>
-						<string>{8, 12}</string>
-						<key>SpriteWasBreaked</key>
-						<false/>
-						<key>Tag</key>
-						<integer>0</integer>
-						<key>TextureOffset</key>
-						<string>{0, -0}</string>
-						<key>UsesBatchRendering</key>
-						<true/>
-						<key>ZOrder</key>
-						<integer>0</integer>
-					</dict>
-				</dict>
-				<key>koopa-3</key>
-				<dict>
-					<key>IsSHSprite</key>
-					<true/>
-					<key>PhysicProperties</key>
-					<dict>
-						<key>AngularDamping</key>
-						<real>0.0</real>
-						<key>AngularVelocity</key>
-						<real>0.0</real>
-						<key>CanSleep</key>
-						<true/>
-						<key>FixedRot</key>
-						<false/>
-						<key>GravityScale</key>
-						<real>1</real>
-						<key>HandledBySH</key>
-						<true/>
-						<key>IsBullet</key>
-						<false/>
-						<key>LinearDamping</key>
-						<real>0.0</real>
-						<key>LinearVelocity</key>
-						<string>{0, 0}</string>
-						<key>SH_ComplexShapes</key>
-						<array/>
-						<key>Type</key>
-						<integer>3</integer>
-					</dict>
-					<key>SHSheetName</key>
-					<string>UntitledSheet</string>
-					<key>SHSpriteName</key>
-					<string>koopa-3</string>
-					<key>SheetImage</key>
-					<string>Koopa_UntitledSheet.png</string>
-					<key>SheetImage-HD</key>
-					<string>Koopa_UntitledSheet-hd.png</string>
-					<key>TextureProperties</key>
-					<dict>
-						<key>Angle</key>
-						<integer>0</integer>
-						<key>Border</key>
-						<integer>0</integer>
-						<key>CanBeTrimmed</key>
-						<true/>
-						<key>Color</key>
-						<string>{{1, 1}, {1, 1}}</string>
-						<key>ConvertedFromOldFormat</key>
-						<false/>
-						<key>CustomClassName</key>
-						<string></string>
-						<key>FlipX</key>
-						<false/>
-						<key>FlipY</key>
-						<false/>
-						<key>Frame</key>
-						<string>{{2, 26}, {8, 7.5}}</string>
-						<key>Frame-HD</key>
-						<string>{{4, 52}, {16, 15}}</string>
-						<key>Image</key>
-						<string>Koopa_UntitledSheet.png</string>
-						<key>Image-HD</key>
-						<string>Koopa_UntitledSheet-hd.png</string>
+						<string>Spiny_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
@@ -313,19 +152,19 @@
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
-						<string>koopa-3</string>
+						<string>spiny-1</string>
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/koopa-3.png</string>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/spiny/frames/spiny-1.png</string>
 						<key>OriginalImage_RelativePath</key>
-						<string>frames/koopa-3.png/</string>
+						<string>frames/spiny-1.png/</string>
 						<key>OriginalRect</key>
 						<string>{{0, 0}, {16, 15}}</string>
 						<key>OriginalSize</key>
 						<string>{16, 15}</string>
 						<key>Position</key>
-						<string>{4, 52}</string>
+						<string>{4, 28}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -342,8 +181,49 @@
 						<integer>0</integer>
 					</dict>
 				</dict>
-				<key>koopa-4</key>
+				<key>spiny-2</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAAdFXGndcUchKxpy
+					jHFEbaiMWRL8EImyKsdWH1iiB2Bl5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAc3BpbnkAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABzcGlueS0y
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAAOKL2gAAAAAACAAAAAQDAAAEjNoAAAAA
+					AAgAAAAEAwAA/4raAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -374,11 +254,11 @@
 					<key>SHSheetName</key>
 					<string>UntitledSheet</string>
 					<key>SHSpriteName</key>
-					<string>koopa-4</string>
+					<string>spiny-2</string>
 					<key>SheetImage</key>
-					<string>Koopa_UntitledSheet.png</string>
+					<string>Spiny_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>Koopa_UntitledSheet-hd.png</string>
+					<string>Spiny_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -398,13 +278,13 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 38}, {8, 7}}</string>
+						<string>{{2, 2}, {8, 8}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 76}, {16, 14}}</string>
+						<string>{{4, 4}, {16, 16}}</string>
 						<key>Image</key>
-						<string>Koopa_UntitledSheet.png</string>
+						<string>Spiny_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>Koopa_UntitledSheet-hd.png</string>
+						<string>Spiny_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
@@ -414,23 +294,307 @@
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
-						<string>koopa-4</string>
+						<string>spiny-2</string>
 						<key>Opacity</key>
 						<real>1</real>
 						<key>OriginalImage</key>
-						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/koopa-4.png</string>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/spiny/frames/spiny-2.png</string>
 						<key>OriginalImage_RelativePath</key>
-						<string>frames/koopa-4.png/</string>
+						<string>frames/spiny-2.png/</string>
 						<key>OriginalRect</key>
-						<string>{{0, 0}, {16, 14}}</string>
+						<string>{{0, 0}, {16, 16}}</string>
 						<key>OriginalSize</key>
-						<string>{16, 14}</string>
+						<string>{16, 16}</string>
+						<key>Position</key>
+						<string>{4, 4}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 8}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>spiny-3</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAJ8KhoAFfKe02Bhl
+					Wv5gd+TU2GZza0MLLh8/XZWVZFZb5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAc3BpbnkAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABzcGlueS0z
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAAOKL2gAAAAAACAAAAAQDAAAEjNoAAAAA
+					AAgAAAAEAwAArovaAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>spiny-3</string>
+					<key>SheetImage</key>
+					<string>Spiny_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Spiny_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 26}, {7, 8}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 52}, {14, 16}}</string>
+						<key>Image</key>
+						<string>Spiny_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Spiny_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>spiny-3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/spiny/frames/spiny-3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/spiny-3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {14, 16}}</string>
+						<key>OriginalSize</key>
+						<string>{14, 16}</string>
+						<key>Position</key>
+						<string>{4, 52}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{7, 8}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>spiny-4</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAI+IQfnF//BX4XL5
+					t5tyDlELui3cuOXoBl+BYwrnV6ok5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAc3BpbnkAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABzcGlueS00
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAAOKL2gAAAAAACAAAAAQDAAAEjNoAAAAA
+					AAgAAAAEAwAAzYvaAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzuU
+					7QAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>spiny-4</string>
+					<key>SheetImage</key>
+					<string>Spiny_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Spiny_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 38}, {7, 8}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 76}, {14, 16}}</string>
+						<key>Image</key>
+						<string>Spiny_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Spiny_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>spiny-4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/spiny/frames/spiny-4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/spiny-4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {14, 16}}</string>
+						<key>OriginalSize</key>
+						<string>{14, 16}</string>
 						<key>Position</key>
 						<string>{4, 76}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{8, 7}</string>
+						<string>{7, 8}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
@@ -459,7 +623,7 @@
 		<key>Dither</key>
 		<false/>
 		<key>DocumentName</key>
-		<string>Koopa</string>
+		<string>Spiny</string>
 		<key>HD2XSuffix</key>
 		<string>-ipadhd</string>
 		<key>HDSuffix</key>
@@ -481,15 +645,15 @@
 	</dict>
 	<key>SceneFolderSandboxBookmark</key>
 	<data>
-	Ym9va3ADAAAAAAQQMAAAAD31nspJXPUXVPzyQchn90SknTjCqkWmgyYBAqV9+8xueAIA
+	Ym9va3ADAAAAAAQQMAAAAD/8F8uYmH7jOqoTv2DN8j9whHG+aEriwPCVFVVZVQ6UeAIA
 	AAUAAAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWphdG92aWxvAAMAAAABAQAASWx1AAkA
 	AAABAQAAQml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAAAAEBAABSZXNvdXJjZXMAAAAN
 	AAAAAQEAAHNwcml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0dXJlcwAAAAUAAAABAQAA
-	a29vcGEAAAAkAAAAAQYAAAQAAAAUAAAAKAAAADQAAABIAAAAVAAAAGgAAACAAAAAlAAA
+	c3BpbnkAAAAkAAAAAQYAAAQAAAAUAAAAKAAAADQAAABIAAAAVAAAAGgAAACAAAAAlAAA
 	AAgAAAAEAwAAKcAAAAAAAAAIAAAABAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAAAAgA
 	AAAEAwAApeqRAAAAAAAIAAAABAMAAJBcvAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
-	AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAACAAAAAQDAACyAtoAAAAAACQAAAABBgAA
-	0AAAAOAAAADwAAAAAAEAABABAAAgAQAAMAEAAEABAABQAQAACAAAAAAEAABBtzk/vAAA
+	AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAACAAAAAQDAADii9oAAAAAACQAAAABBgAA
+	0AAAAOAAAADwAAAAAAEAABABAAAgAQAAMAEAAEABAABQAQAACAAAAAAEAABBtzuVAAAA
 	ABgAAAABAgAAAgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAQDAAAHAAAAAAAAAAQA
 	AAADAwAA9QEAAAwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAAAAgAAAAA
 	BAAAQbVsMOAAAAAkAAAAAQEAADBDRkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVBQjUz
