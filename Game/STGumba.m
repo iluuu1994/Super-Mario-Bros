@@ -31,6 +31,8 @@
         [self runAnimationWithName:@"die" callbackBlock:^void {
             [self setDead:YES];
         }];
+        // Make the other GameObject jump after jumping on this
+        ccpAdd(gameObject.velocity, ccp(0, kSpeed));
     }
 }
 

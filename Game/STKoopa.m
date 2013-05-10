@@ -28,6 +28,14 @@
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
     if(edge == STRectEdgeMaxY) {
+        // Make the other GameObject jump after jumping on this
+        NSLog(@"x: %f", gameObject.velocity.x);
+        NSLog(@"y: %f", gameObject.velocity.y);
+        ccpAdd(gameObject.velocity, ccp(0, 20));
+        NSLog(@"x: %f", gameObject.velocity.x);
+        NSLog(@"y: %f", gameObject.velocity.y);
+        
+        // Show the die animation and kill this GameObject
         [self runAnimationWithName:@"die" callbackBlock:^void {
             [self setDead:YES];
         }];
