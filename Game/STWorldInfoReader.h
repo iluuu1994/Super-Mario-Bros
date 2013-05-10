@@ -24,5 +24,8 @@ ITSingletonInterface
 - (id) worlds;
 - (id) worldWithID:(unsigned short)worldID;
 - (id) levelWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
+- (id) nextLevelFromWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
+- (void) unlockWorldID:(unsigned short)worldID;
+- (void) unlockWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 
 @end
