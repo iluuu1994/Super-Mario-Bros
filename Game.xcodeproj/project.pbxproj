@@ -203,6 +203,13 @@
 		D49C7E1C16F4E812004101F1 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = D49C7E1A16F4E812004101F1 /* facebook.png */; };
 		D49CAC0B1726BC1100EFF3B3 /* STSettingsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */; };
 		D4A0FCCF1736B01D00A19A81 /* STGameFlowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A0FCCE1736B01D00A19A81 /* STGameFlowManager.m */; };
+		D4A1AF13173D10D200E743E8 /* STInformationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A1AF12173D10D200E743E8 /* STInformationLayer.m */; };
+		D4A1AF18173D191600E743E8 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF15173D191600E743E8 /* a.png */; };
+		D4A1AF19173D191600E743E8 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF16173D191600E743E8 /* b.png */; };
+		D4A1AF1A173D191600E743E8 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF17173D191600E743E8 /* pause.png */; };
+		D4A1AF1D173D1C0900E743E8 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF1C173D1C0900E743E8 /* play.png */; };
+		D4A1AF1F173D1DE900E743E8 /* levels.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF1E173D1DE900E743E8 /* levels.png */; };
+		D4A1AF21173D1DF900E743E8 /* repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF20173D1DF900E743E8 /* repeat.png */; };
 		D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FEC17099752000603FA /* STChooseLevelLayer.m */; };
 		D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */; };
 		D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CD172D77F10059E5F4 /* switch-mask.png */; };
@@ -628,6 +635,14 @@
 		D49CAC0A1726BC1100EFF3B3 /* STSettingsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSettingsLayer.m; sourceTree = "<group>"; };
 		D4A0FCCD1736B01D00A19A81 /* STGameFlowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STGameFlowManager.h; sourceTree = "<group>"; };
 		D4A0FCCE1736B01D00A19A81 /* STGameFlowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STGameFlowManager.m; sourceTree = "<group>"; };
+		D4A1AF11173D10D200E743E8 /* STInformationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STInformationLayer.h; sourceTree = "<group>"; };
+		D4A1AF12173D10D200E743E8 /* STInformationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STInformationLayer.m; sourceTree = "<group>"; };
+		D4A1AF15173D191600E743E8 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		D4A1AF16173D191600E743E8 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		D4A1AF17173D191600E743E8 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		D4A1AF1C173D1C0900E743E8 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		D4A1AF1E173D1DE900E743E8 /* levels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levels.png; sourceTree = "<group>"; };
+		D4A1AF20173D1DF900E743E8 /* repeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = repeat.png; sourceTree = "<group>"; };
 		D4A35FEB17099752000603FA /* STChooseLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseLevelLayer.h; sourceTree = "<group>"; };
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
@@ -773,6 +788,7 @@
 		910B1C4016F4E1AE0097A11D /* Layers */ = {
 			isa = PBXGroup;
 			children = (
+				D4A1AF10173D10B700E743E8 /* Information Layer */,
 				D4437B62172FEECB00FF2F44 /* Pause Layer */,
 				D4437B5E172FE0F800FF2F44 /* Controls Layer */,
 				91CCD3F91701EE170082CF59 /* Screen Layers */,
@@ -1599,6 +1615,7 @@
 			children = (
 				D4437B5F172FE13000FF2F44 /* STControlsLayer.h */,
 				D4437B60172FE13000FF2F44 /* STControlsLayer.m */,
+				D4A1AF14173D18F200E743E8 /* images */,
 			);
 			name = "Controls Layer";
 			sourceTree = "<group>";
@@ -1606,6 +1623,7 @@
 		D4437B62172FEECB00FF2F44 /* Pause Layer */ = {
 			isa = PBXGroup;
 			children = (
+				D4A1AF1B173D1BE500E743E8 /* images */,
 				D4437B63172FEEF300FF2F44 /* STPauseLayer.h */,
 				D4437B64172FEEF300FF2F44 /* STPauseLayer.m */,
 			);
@@ -1637,6 +1655,35 @@
 				D4A0FCCE1736B01D00A19A81 /* STGameFlowManager.m */,
 			);
 			name = "Game Flow Manager";
+			sourceTree = "<group>";
+		};
+		D4A1AF10173D10B700E743E8 /* Information Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1AF11173D10D200E743E8 /* STInformationLayer.h */,
+				D4A1AF12173D10D200E743E8 /* STInformationLayer.m */,
+			);
+			name = "Information Layer";
+			sourceTree = "<group>";
+		};
+		D4A1AF14173D18F200E743E8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1AF20173D1DF900E743E8 /* repeat.png */,
+				D4A1AF1E173D1DE900E743E8 /* levels.png */,
+				D4A1AF15173D191600E743E8 /* a.png */,
+				D4A1AF16173D191600E743E8 /* b.png */,
+				D4A1AF17173D191600E743E8 /* pause.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		D4A1AF1B173D1BE500E743E8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D4A1AF1C173D1C0900E743E8 /* play.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 		D4A35FE91709970D000603FA /* Game Info */ = {
@@ -1863,6 +1910,12 @@
 				91C8DDE3173B9AE6000DB9DE /* Lakitu.plist in Resources */,
 				91C8DDE4173B9AE6000DB9DE /* Lakitu.png in Resources */,
 				D46B8A93173BCCA400805372 /* button.png in Resources */,
+				D4A1AF18173D191600E743E8 /* a.png in Resources */,
+				D4A1AF19173D191600E743E8 /* b.png in Resources */,
+				D4A1AF1A173D191600E743E8 /* pause.png in Resources */,
+				D4A1AF1D173D1C0900E743E8 /* play.png in Resources */,
+				D4A1AF1F173D1DE900E743E8 /* levels.png in Resources */,
+				D4A1AF21173D1DF900E743E8 /* repeat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1923,6 +1976,7 @@
 				91C8DDD7173B958C000DB9DE /* STSpiny.m in Sources */,
 				91C8DDE0173B9ADE000DB9DE /* STLakitu.m in Sources */,
 				D46B8A9F173BE7CA00805372 /* STWorldInfoReader.m in Sources */,
+				D4A1AF13173D10D200E743E8 /* STInformationLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

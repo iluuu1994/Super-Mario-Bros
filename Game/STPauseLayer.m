@@ -54,8 +54,10 @@
     [self addChild:levelLabel];
     
     // Play Button
-    CCControlButton *continueButton = [CCControlButton buttonWithTitle:@"Play" fontName:kButtonFontName fontSize:kButtonFontSize];
+    CCControlButton *continueButton = [CCControlButton buttonWithBackgroundSprite:
+                                    [CCScale9Sprite spriteWithFile:@"play.png"]];
     [continueButton setAdjustBackgroundImage:NO];
+    continueButton.scale = 0.8;
     [continueButton addTarget:delegate action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
     continueButton.position = ccp(kPadding + continueButton.contentSize.width / 2,
                                   winSize.height - continueButton.contentSize.height / 2
@@ -63,16 +65,20 @@
     [self addChild:continueButton];
     
     // Retry Button
-    CCControlButton *retryButton = [CCControlButton buttonWithTitle:@"Retry" fontName:@"Helvetica" fontSize:30];
+    CCControlButton *retryButton = [CCControlButton buttonWithBackgroundSprite:
+                                       [CCScale9Sprite spriteWithFile:@"repeat.png"]];
     [retryButton setAdjustBackgroundImage:NO];
+    retryButton.scale = 0.8;
     [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
     retryButton.position = ccp(kPadding + retryButton.contentSize.width / 2,
-                                kPadding + retryButton.contentSize.height / 2);
+                               kPadding + retryButton.contentSize.height / 2);
     [self addChild:retryButton];
     
     // Level Overview Button
-    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:kButtonFontName fontSize:kButtonFontSize];
+    CCControlButton *levelsButton = [CCControlButton buttonWithBackgroundSprite:
+                                    [CCScale9Sprite spriteWithFile:@"levels.png"]];
     [levelsButton setAdjustBackgroundImage:NO];
+    levelsButton.scale = 0.8;
     [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
     levelsButton.position = ccp(kPadding + levelsButton.contentSize.width / 2,
                                 kPadding + levelsButton.contentSize.height / 2 + retryButton.contentSize.height + kPadding);

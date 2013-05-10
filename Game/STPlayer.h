@@ -19,7 +19,7 @@
 
 @property unsigned int score;
 @property unsigned int coins;
-@property Byte lives;
+@property Byte lifes;
 @property (strong, nonatomic) NSMutableArray *bonusItems;
 
 @property (unsafe_unretained) id<STPlayerDelegate> delegate;

@@ -40,28 +40,32 @@
     leftJoy.joystick = [[SneakyJoystick alloc] initWithRect:kJoystickRect];
     self.joystick = leftJoy.joystick;
     [self addChild:leftJoy];
-    
+
     // Pause Button
-    CCControlButton *pauseButton = [CCControlButton buttonWithTitle:@"II" fontName:kButtonFontName fontSize:kButtonFontSize];
-    [pauseButton setAdjustBackgroundImage:NO];
+    CCControlButton *pauseButton = [CCControlButton buttonWithBackgroundSprite:
+                                    [CCScale9Sprite spriteWithFile:@"pause.png"]];
+    pauseButton.adjustBackgroundImage = NO;
+    pauseButton.scale = 0.8;
     [pauseButton addTarget:delegate action:@selector(pause:) forControlEvents:CCControlEventTouchUpInside];
     pauseButton.position = ccp(kPadding + pauseButton.contentSize.width / 2,
                                winSize.height - pauseButton.contentSize.height / 2 - kPadding);
     [self addChild:pauseButton];
     
     // A Button
-    CCControlButton *aButton = [CCControlButton buttonWithTitle:@"A" fontName:kButtonFontName fontSize:kButtonFontSize];
+    CCControlButton *aButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"a.png"]];
     [aButton setAdjustBackgroundImage:NO];
+    aButton.scale = 0.8;
     [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchUpInside];
-    aButton.position = ccp(winSize.width - aButton.contentSize.width - kPadding,
+    aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - kPadding,
                            aButton.contentSize.height / 2 + kPadding);
     [self addChild:aButton];
-    
+
     // B Button
-    CCControlButton *bButton = [CCControlButton buttonWithTitle:@"B" fontName:kButtonFontName fontSize:kButtonFontSize];
+    CCControlButton *bButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"b.png"]];
     [bButton setAdjustBackgroundImage:NO];
+    bButton.scale = 0.8;
     [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
-    bButton.position = ccp(winSize.width - bButton.contentSize.width - aButton.contentSize.width - 2 * kPadding,
+    bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * kPadding,
                            bButton.contentSize.height / 2 + kPadding);
     [self addChild:bButton];
 }
