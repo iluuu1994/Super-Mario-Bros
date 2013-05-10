@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9106D2A01712DF5F00BC6CFC /* CCDirector+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */; };
 		9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */; };
-		9106D2A41712E4C400BC6CFC /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */; };
+		9106D2A41712E4C400BC6CFC /* world_0_level_0_old.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */; };
 		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
 		9122DD04173919DA0042D918 /* STItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD03173919DA0042D918 /* STItem.m */; };
 		9122DD0717391A4E0042D918 /* STCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD0617391A4E0042D918 /* STCoin.m */; };
@@ -218,6 +218,7 @@
 		D4A1AF2F173D394B00E743E8 /* stage_clear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF27173D394B00E743E8 /* stage_clear.mp3 */; };
 		D4A1AF30173D394B00E743E8 /* stomp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF28173D394B00E743E8 /* stomp.mp3 */; };
 		D4A1AF31173D394B00E743E8 /* time_warning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF29173D394B00E743E8 /* time_warning.mp3 */; };
+		D4A1AF33173D54FC00E743E8 /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF32173D54FC00E743E8 /* world_0_level_0.tmx */; };
 		D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FEC17099752000603FA /* STChooseLevelLayer.m */; };
 		D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */; };
 		D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CD172D77F10059E5F4 /* switch-mask.png */; };
@@ -260,7 +261,7 @@
 		9106D29E1712DF5F00BC6CFC /* CCDirector+Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCDirector+Transitions.h"; sourceTree = "<group>"; };
 		9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCDirector+Transitions.m"; sourceTree = "<group>"; };
 		9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "SMB-Tiles.gif"; path = "Resources/maps/SMB-Tiles.gif"; sourceTree = SOURCE_ROOT; };
-		9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0.tmx; path = Resources/maps/world_0_level_0.tmx; sourceTree = SOURCE_ROOT; };
+		9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0_old.tmx; path = Resources/maps/world_0_level_0_old.tmx; sourceTree = SOURCE_ROOT; };
 		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
 		9122DD02173919DA0042D918 /* STItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STItem.h; sourceTree = "<group>"; };
 		9122DD03173919DA0042D918 /* STItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STItem.m; sourceTree = "<group>"; };
@@ -659,6 +660,7 @@
 		D4A1AF27173D394B00E743E8 /* stage_clear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stage_clear.mp3; sourceTree = "<group>"; };
 		D4A1AF28173D394B00E743E8 /* stomp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = stomp.mp3; sourceTree = "<group>"; };
 		D4A1AF29173D394B00E743E8 /* time_warning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = time_warning.mp3; sourceTree = "<group>"; };
+		D4A1AF32173D54FC00E743E8 /* world_0_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = world_0_level_0.tmx; sourceTree = "<group>"; };
 		D4A35FEB17099752000603FA /* STChooseLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STChooseLevelLayer.h; sourceTree = "<group>"; };
 		D4A35FEC17099752000603FA /* STChooseLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STChooseLevelLayer.m; sourceTree = "<group>"; };
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
@@ -1019,9 +1021,10 @@
 		9171B59D16BDDAC2008208D2 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
+				D4A1AF32173D54FC00E743E8 /* world_0_level_0.tmx */,
 				9106D2A51712E50000BC6CFC /* Worlds.plist */,
 				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
-				9106D2A21712E4C400BC6CFC /* world_0_level_0.tmx */,
+				9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */,
 				914EB293171414A70070051D /* world_0_level_1.tmx */,
 			);
 			name = Maps;
@@ -1909,7 +1912,7 @@
 				D49C7E1C16F4E812004101F1 /* facebook.png in Resources */,
 				91CCD4051701EE620082CF59 /* Title.png in Resources */,
 				9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */,
-				9106D2A41712E4C400BC6CFC /* world_0_level_0.tmx in Resources */,
+				9106D2A41712E4C400BC6CFC /* world_0_level_0_old.tmx in Resources */,
 				9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */,
 				914EB288171404DD0070051D /* README.md in Resources */,
 				914EB28C171409390070051D /* about.png in Resources */,
@@ -1948,6 +1951,7 @@
 				D4A1AF2F173D394B00E743E8 /* stage_clear.mp3 in Resources */,
 				D4A1AF30173D394B00E743E8 /* stomp.mp3 in Resources */,
 				D4A1AF31173D394B00E743E8 /* time_warning.mp3 in Resources */,
+				D4A1AF33173D54FC00E743E8 /* world_0_level_0.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

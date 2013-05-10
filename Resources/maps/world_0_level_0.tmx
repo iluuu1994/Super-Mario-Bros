@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="200" height="14" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="Mario" tilewidth="16" tileheight="16" spacing="1">
+  <image source="../Documents/Game/Resources/maps/SMB-Tiles.gif" width="220" height="186"/>
+  <tile id="5">
+   <properties>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="type" value="STCoin"/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="type" value="STGumba"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="bg" width="200" height="14">
+  <data encoding="base64" compression="zlib">
+   eJztlcsOgjAQRRvRrY81foB+gLJXP0DXqHv1//cOCSQjgTJlWtrEuziJkT7O3E6hNMaUAICg3Imncv5DuUbK+4XML2Yt2nMPXYdPP83aL+IjqL2v/mr+e2AN377a/Xy62fKbIruxeQ6duwsh6vDpN0XtIXsyZBYx3abILlSeQ3cbgH8m1t0GAAAAfHBMwAGAFDkwYrsAkBonoiAuijVmCdSRE1uhU3tsbFLI75+8pf7VN+PGGPMNWRIrYj1Bvrnp7+sdsRc68bGxz1yTXwxf3962M9X2hNa/qDmz3y65N3tsBHtlxLxmIfDL6nH8P97XGVuLP5M4NWNdnLp8pLRdx+TnK0NX7675rt623ux6V7l429512r5t7sTV/N4P7bsBAAAAsPEFhnPBCA==
+  </data>
+ </layer>
+ <layer name="collision" width="200" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt1dsJgDAMheE6SB1AF3AX999DH3wQSWtMA6n6fxDwpdDLOZgSAOAPxugNAJ2a9pmjNwF0bIneABAgH3OHfuBvcqIfgCQn+gFIrt2gH/CUC9+adda1XqRu0A94kTKuyZeURe1aL6Vu0A94qGW8lrFSFp/ks1WtG/QDrTQZl3JWy+LTjFrddUP7//M0fHys51xPE32Gt90d856xvjH9sN/dl2YDowEP7Q==
+  </data>
+ </layer>
+ <layer name="objects" width="200" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt1tEKgCAMhWG76ZV8uF6+WxFdWtOm+z8YEcw8LoJCAAAAAAAAsCFWqtYzk5RHugcAAGuLlatlX7JKazTO3vqMP/73WqXZrGYEAMC6a0J/75rRZmZK97I4iycrZj43r7fn9DQj7dntVKMcherp1aj8HbfmKX0f3uSz8+oGWjMQWw==
+  </data>
+ </layer>
+ <objectgroup name="events" width="200" height="14">
+  <object name="playerSpawnPoint" type="playerSpawnPoint" x="54" y="138"/>
+ </objectgroup>
+</map>
