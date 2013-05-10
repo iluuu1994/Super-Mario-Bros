@@ -7,6 +7,7 @@
 //
 
 #import "STNPC.h"
+#import "STSoundManager.h"
 
 @interface STGumba : STNPC
 

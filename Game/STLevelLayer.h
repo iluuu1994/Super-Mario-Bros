@@ -9,11 +9,13 @@
 #import "STTiledMapLayer.h"
 #import "STControlsLayer.h"
 #import "STPauseLayer.h"
+#import "STInformationLayer.h"
+#import "STLevelResultLayer.h"
 #import "STPlayer.h"
 #import "STGameFlowManager.h"
 #import "STWorldInfoReader.h"
 
-@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate>
+@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate, STInformationDelegate>
 {}
 
 #pragma mark -
@@ -22,6 +24,7 @@
 @property (readonly) unsigned short levelID;
 @property (strong, readonly) NSDictionary *levelInfo;
 @property (strong) STLayer *uiLayer;
+@property (strong) STLayer *infoLayer;
 @property (strong) STPlayer *player;
 
 #pragma mark -

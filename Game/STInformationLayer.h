@@ -13,8 +13,8 @@
 @protocol STInformationDelegate <NSObject>
 
 #pragma mark -
-#pragma mark Time
-- (IBAction)remainingTime:(id)sender;
+#pragma mark Time is over
+- (IBAction)timeElapsed:(id)sender;
 
 @end
 
@@ -29,18 +29,40 @@
 
 #pragma mark -
 #pragma mark Initialise
+/**
+ * Init an information layer with the information of the player. 
+ * Start counting down the time from the given start time in seconds. 
+ * @param delegate - the delegate receiving a message when the time is over.
+ * @param player - the player whose information will be displayed (score, lifes, coins).
+ * @param time - amount of seconds until this layer sends a message (time is over) to the delegate. 
+ * @return The initialised object
+ */
 -(id)initWithDelegate:(id <STInformationDelegate>)delegate
                player:(STPlayer *)player
                  time:(unsigned short)time;
 
+/**
+ * Returns an information layer with the information of the player.
+ * Start counting down the time from the given start time in seconds.
+ * @param delegate - the delegate receiving a message when the time is over.
+ * @param player - the player whose information will be displayed (score, lifes, coins).
+ * @param time - amount of seconds until this layer sends a message (time is over) to the delegate.
+ * @return The initialised object
+ */
 +(id)layerWithDelegate:(id <STInformationDelegate>)delegate
                 player:(STPlayer *)player
                   time:(unsigned short)time;
 
+/**
+ * Is called when the layer is initialised
+ */
 - (void)setUpWithDelegate:(id <STInformationDelegate>)delegate
                    player:(STPlayer *)player
                      time:(unsigned short)time;
 
+/**
+ * Force the layer to reload and redisplay the displayed information. 
+ */
 - (void)updateInformation;
 
 @end

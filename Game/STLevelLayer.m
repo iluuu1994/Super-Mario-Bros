@@ -29,6 +29,7 @@
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:spriteCacheName];
     }
+    // TODO: remove NSLog?
     NSLog(@"test");
     NSLog(@"%@", [[STWorldInfoReader sharedInstance] namingConvention]);
     
@@ -47,15 +48,6 @@
 
 + (id)layerWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
     return [[self alloc] initWithWorldID:worldID levelID:levelID];
-}
-
-// TODO: remove?
-+ (id)sceneWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
-    STLevelLayer *layer = [STLevelLayer layerWithWorldID:worldID
-                                                 levelID:levelID];
-    STScene *scene = [STScene node];
-    [scene addChild:layer];
-    return scene;
 }
 
 - (void)setUp {
@@ -82,6 +74,12 @@
     self.player.position = ccp([position[kXKey] floatValue], [position[kYKey] floatValue]);
     
     [self addGameObjectToMap:self.player];
+    
+    // TODO: remove static time parameter
+    NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:_worldID levelID:_levelID];
+    unsigned short time = [[level valueForKey:kLevelTimeKey] shortValue];
+    [self setInfoLayer:[STInformationLayer layerWithDelegate:self player:self.player time:time]];
+    [self addChild:self.infoLayer];
 }
 
 #pragma mark -
@@ -273,6 +271,24 @@
     [self removeChild:[self uiLayer]];
     [self setUiLayer:layer];
     [self addChild:[self uiLayer]];
+}
+
+#pragma mark -
+#pragma mark InformationLayer Delegate
+- (IBAction)timeElapsed:(id)sender {
+    [[STSoundManager sharedInstance] playEffect:kSoundDeath];
+    [[STSoundManager sharedInstance] stopBackgroundMusic];
+    
+    NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:_worldID levelID:_levelID];
+    unsigned short time = [[level valueForKey:kLevelTimeKey] shortValue];
+    
+    STLayer *layer = [STLevelResultLayer layerWithWorldID:_worldID levelID:_levelID
+                                                     time:[NSDate dateWithTimeIntervalSinceReferenceDate:time]
+                                                    score:[[self player] score]
+                                                  success:NO];
+    [[CCDirector sharedDirector] replaceScene: [layer scene]
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 @end

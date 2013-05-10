@@ -28,6 +28,9 @@
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
     if (edge == STRectEdgeMinY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        // Play a sound
+        [[STSoundManager sharedInstance] playEffect:kSoundBreakBlock];
+        
         [self setDead:YES];
     }
 }
