@@ -75,7 +75,6 @@
     
     [self addGameObjectToMap:self.player];
     
-    // TODO: remove static time parameter
     NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:_worldID levelID:_levelID];
     unsigned short time = [[level valueForKey:kLevelTimeKey] shortValue];
     [self setInfoLayer:[STInformationLayer layerWithDelegate:self player:self.player time:time]];

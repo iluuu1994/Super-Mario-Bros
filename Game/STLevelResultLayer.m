@@ -140,6 +140,20 @@
 #pragma mark Next Level
 - (IBAction)nextLevel:(id)sender {
     // TODO: next level
+    NSDictionary *nextLevel = [[STWorldInfoReader sharedInstance]
+                               nextLevelFromWorldID:self.worldID levelID:self.levelID];
+    
+    if(nextLevel) {
+        unsigned short levelID = [[nextLevel valueForKey:kLevelIDKey] shortValue];
+        STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:levelID] scene];
+        [[CCDirector sharedDirector] replaceScene: scene
+                              withTransitionClass:[CCTransitionFade class]
+                                         duration:0.5];
+    } else {
+        [[CCDirector sharedDirector] replaceScene: [STChooseWorldLayer scene]
+                              withTransitionClass:[CCTransitionFade class]
+                                         duration:0.5];
+    }
 }
 
 @end

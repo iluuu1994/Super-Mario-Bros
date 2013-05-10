@@ -53,6 +53,75 @@ ITSingletonImplementation
     return nil;
 }
 
+- (int) indexOfWorldID:(unsigned short)worldID {
+    NSArray *worlds = [[self root] valueForKey:kWorldsKey];
+    
+    for(int i = 0; i < [worlds count]; i++) {
+        if([[[worlds objectAtIndex:i] valueForKey:kWorldIDKey] integerValue] == worldID) {
+            return i;
+        }
+    }
+    return nil;
+}
+
+- (int) indexOfWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    NSDictionary *world = [self worldWithID:worldID];
+    NSArray *levels = [world valueForKey:kLevelsKey];
+    
+    for(int i = 0; i < [levels count]; i++) {
+        if([[[levels objectAtIndex:i] valueForKey:kLevelIDKey] integerValue] == levelID) {
+            return i;
+        }
+    }
+    return nil;
+}
+
+- (id) nextWorldFromWorldID:(unsigned short)worldID {
+    NSArray *worlds = [[self root] valueForKey:kWorldsKey];
+
+    int nextWorldIndex = [self indexOfWorldID:worldID] + 1;
+    
+    if(nextWorldIndex != 0) {
+        // Is there a world with the new index?
+        if(nextWorldIndex < [worlds count]) {
+            return [worlds objectAtIndex:nextWorldIndex];
+        }
+    }
+    return nil;
+}
+
+- (id) nextLevelFromWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    NSDictionary *world = [self worldWithID:worldID];
+    NSArray *levels = [world valueForKey:kLevelsKey];
+    
+    int nextLevelIndex = [self indexOfWorldID:worldID levelID:levelID] + 1;
+    
+    if(nextLevelIndex != 0) {
+        // Is there a world with the new index?
+        if(nextLevelIndex < [levels count]) {
+            return [levels objectAtIndex:nextLevelIndex];
+        }
+    }
+    return nil;
+}
+
+- (void) unlockWorldID:(unsigned short)worldID {
+    NSDictionary *world = [self worldWithID:worldID];
+
+    if ([[world valueForKey:kWorldIsLockedKey] boolValue]) {
+        // TODO: unlock
+    }
+}
+
+- (void) unlockWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    NSDictionary *level = [self levelWithWorldID:worldID levelID:levelID];
+    
+    if ([[level valueForKey:kLevelIsLockedKey] boolValue]) {
+        // TODO: unlock
+    }
+}
+
+
 @end
 
 
