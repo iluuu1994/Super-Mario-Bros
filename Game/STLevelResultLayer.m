@@ -8,6 +8,7 @@
 
 #import "STLevelResultLayer.h"
 #import "CCDirector+Transitions.h"
+#import "CCControlExtension.h"
 
 @implementation STLevelResultLayer
 {}
@@ -59,48 +60,59 @@
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"hh:mm"];
+    
+    // Scene Title
+    CCLabelTTF *titleLabel = [CCLabelTTF labelWithString:title fontName:kTitleFontName fontSize:kTitleFontSize];
+    [titleLabel setColor:kTitleTextColor];
+    titleLabel.position = ccp(winSize.width / 2, winSize.height - titleLabel.contentSize.height - kPadding);
+    [self addChild:titleLabel];
 
     // Menu
     CCMenu *menu = [CCMenu menuWithItems:
-                    [CCMenuItemFont itemWithString:title],
                     [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Score: %i", score]],
                     [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Time: %ld:%ld", (long)components.minute, (long)components.second]],
                     nil];
     
     // Level Overview Button
-    CCControlButton *levelsButton = [CCControlButton buttonWithTitle:@"Levels" fontName:kButtonFontName fontSize:kButtonFontSize];
-    [levelsButton setAdjustBackgroundImage:NO];
-    [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
-    [self addChild:levelsButton];
-    
+    CCLabelTTF *levelsLabel = [CCLabelTTF labelWithString:@"Levels" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [levelsLabel setColor:kButtonTextColor];
+    CCControlButton *levels = [CCControlButton buttonWithLabel:levelsLabel
+                                              backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    [levels addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
+    [self addChild:levels];
+
     // Retry Button
-    CCControlButton *retryButton = [CCControlButton buttonWithTitle:@"Retry" fontName:kButtonFontName fontSize:kButtonFontSize];
-    [retryButton setAdjustBackgroundImage:NO];
-    [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
-    [self addChild:retryButton];
+    CCLabelTTF *retryLabel = [CCLabelTTF labelWithString:@"Retry" fontName:kButtonFontName fontSize:kButtonFontSize];
+    [retryLabel setColor:kButtonTextColor];
+    CCControlButton *retry = [CCControlButton buttonWithLabel:retryLabel
+                                              backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+    [retry addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
+    [self addChild:retry];
     
     if(success) {
         // Level Overview Button
-        levelsButton.position = ccp(winSize.width / 2, levelsButton.contentSize.height / 2 + kPadding);
+        levels.position = ccp(winSize.width / 2, levels.contentSize.height / 2 + kPadding);
         
         // Retry Button
-        retryButton.position = ccp(winSize.width / 2 - levelsButton.contentSize.width - kPadding,
-                                   retryButton.contentSize.height / 2 + kPadding);
+        retry.position = ccp(winSize.width / 2 - levels.contentSize.width / 2 - retry.contentSize.width / 2 - kPadding,
+                             retry.contentSize.height / 2 + kPadding);
         
         // Next Level Button
-        CCControlButton *nextButton = [CCControlButton buttonWithTitle:@"Next" fontName:@"Helvetica" fontSize:30];
-        [nextButton setAdjustBackgroundImage:NO];
-        [nextButton addTarget:self action:@selector(nextLevel:) forControlEvents:CCControlEventTouchUpInside];
-        nextButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width,
-                                  nextButton.contentSize.height / 2 + kPadding);
-        [self addChild:nextButton];
+        CCLabelTTF *nextLabel = [CCLabelTTF labelWithString:@"Next" fontName:kButtonFontName fontSize:kButtonFontSize];
+        [nextLabel setColor:kButtonTextColor];
+        CCControlButton *next = [CCControlButton buttonWithLabel:nextLabel
+                                                 backgroundSprite:[CCScale9Sprite spriteWithFile:kButtonImageName]];
+        next.position = ccp(winSize.width / 2 + levels.contentSize.width / 2 + next.contentSize.width / 2 + kPadding,
+                            next.contentSize.height / 2 + kPadding);
+        [next addTarget:self action:@selector(nextLevel:) forControlEvents:CCControlEventTouchUpInside];
+        [self addChild:next];
     } else {
         // Retry Button
-        retryButton.position = ccp(winSize.width / 2 - retryButton.contentSize.width / 2 - kPadding,
-                                   retryButton.contentSize.height / 2 + kPadding);
+        retry.position = ccp(winSize.width / 2 - retry.contentSize.width / 2 - kPadding,
+                             retry.contentSize.height / 2 + kPadding);
         // Level Overview Button
-        levelsButton.position = ccp(winSize.width / 2 + levelsButton.contentSize.width / 2 - kPadding,
-                                    levelsButton.contentSize.height / 2 + kPadding);
+        levels.position = ccp(winSize.width / 2 + levels.contentSize.width / 2 + kPadding,
+                              levels.contentSize.height / 2 + kPadding);
     }
     
     [menu alignItemsVerticallyWithPadding:20];
@@ -110,7 +122,7 @@
 #pragma mark -
 #pragma mark Retry Level
 - (IBAction)retryLevel:(id)sender {    
-    STScene *scene = [STLevelLayer sceneWithWorldID:self.worldID levelID:self.levelID];
+    STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:self.levelID] scene];
     [[CCDirector sharedDirector] replaceScene: scene
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
@@ -127,7 +139,7 @@
 #pragma mark -
 #pragma mark Next Level
 - (IBAction)nextLevel:(id)sender {
-    
+    // TODO: next level
 }
 
 @end

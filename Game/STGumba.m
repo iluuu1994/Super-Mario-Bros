@@ -29,11 +29,16 @@
     }
     
     if(edge == STRectEdgeMaxY) {
+        // Make the other GameObject jump after jumping on this
+        gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
+        
+        // Play a sound
+        [[STSoundManager sharedInstance] playEffect:kSoundStomp];
+        
+        // Show the die animation and kill this GameObject
         [self runAnimationWithName:@"die" callbackBlock:^void {
             [self setDead:YES];
         }];
-        // Make the other GameObject jump after jumping on this
-        gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
     }
 }
 

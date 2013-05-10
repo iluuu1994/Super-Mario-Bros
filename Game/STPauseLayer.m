@@ -93,7 +93,7 @@
 #pragma mark Retry Level
 - (IBAction)retryLevel:(id)sender {
     [[STGameFlowManager sharedInstance] resume];
-    STScene *scene = [STLevelLayer sceneWithWorldID:self.worldID levelID:self.levelID];
+    STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:self.levelID] scene];
     [[CCDirector sharedDirector] replaceScene: scene
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];

@@ -7,6 +7,7 @@
 //
 
 #import "STGameObject.h"
+#import "STSoundManager.h"
 
 @interface STBlock : STGameObject
 {}

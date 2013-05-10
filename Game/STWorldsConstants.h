@@ -25,6 +25,7 @@
 #define kLevelIconNameKey @"Icon Name"
 #define kLevelIsLockedKey @"Is Locked"
 #define kLevelSpriteCacheKey @"Sprite Cache"
+#define kLevelTimeKey @"Time"
 
 #define kLockIcon @"lock.png"
 
