@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="200" height="14" tilewidth="16" tileheight="16">
  <tileset firstgid="1" name="Mario" tilewidth="16" tileheight="16" spacing="1">
-  <image source="../Documents/Game/Resources/maps/SMB-Tiles.gif" width="220" height="186"/>
+  <image source="SMB-Tiles.gif" width="220" height="186"/>
   <tile id="5">
    <properties>
     <property name="type" value="STBlock"/>
