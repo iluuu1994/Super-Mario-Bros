@@ -13,7 +13,7 @@
 - (id)init
 {
     if (self = [super initWithPlistFile:@"Coin.plist"]) {
-        [self runAnimationWithName:@"blink" endless:YES];
+        [self runAnimationWithName:@"spin" endless:YES];
     }
     return self;
 }

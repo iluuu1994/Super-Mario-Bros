@@ -24,15 +24,15 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{16, 32}</string>
+			<string>{32, 36}</string>
 			<key>Padding</key>
-			<integer>0</integer>
+			<integer>4</integer>
 			<key>PixelFormat</key>
 			<integer>0</integer>
 			<key>SheetImage</key>
-			<string>coin_UntitledSheet.png</string>
+			<string>Coin_UntitledSheet.png</string>
 			<key>SheetImage-HD</key>
-			<string>coin_UntitledSheet-hd.png</string>
+			<string>Coin_UntitledSheet-hd.png</string>
 			<key>SheetName</key>
 			<string>UntitledSheet</string>
 			<key>SheetSceneImageName</key>
@@ -41,37 +41,6 @@
 			<dict>
 				<key>coin-1</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va9wCAAAAAAQQMAAAALfMvSf7i9vzS2Bo
-					TsBN6g6sFzywwRRJhpo3cTwBuy8gwAEAAAUA
-					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
-					dG92aWxvAAcAAAABAQAARGVza3RvcAAKAAAA
-					AQEAAGNvaW4tMS5wbmcAABAAAAABBgAABAAA
-					ABQAAAAoAAAAOAAAAAgAAAAEAwAAKcAAAAAA
-					AAAIAAAABAMAAAz2BQAAAAAACAAAAAQDAADZ
-					9gUAAAAAAAgAAAAEAwAAzb3ZAAAAAAAQAAAA
-					AQYAAGQAAAB0AAAAhAAAAJQAAAAIAAAAAAQA
-					AEG3ORsKAAAAGAAAAAECAAABAAAAAAAAAA8A
-					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
-					AwAACAAAAAQAAAADAwAAAgAAAAgAAAAEAwAA
-					AgAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
-					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY7TAA
-					AAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEBAAAw
-					Q0ZENjZCNy1FQzdFLTNENzAtQTRGQi0wRUI1
-					QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA7z8A
-					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAgAKOQAAAD+////AQAAAAAAAAAS
-					AAAABBAAAEwAAAAAAAAABRAAAKQAAAAAAAAA
-					EBAAAMwAAAAAAAAAQBAAALwAAAAAAAAAVBAA
-					APQAAAAAAAAAVRAAAAABAAAAAAAAVhAAAOwA
-					AAAAAAAAAiAAAKgBAAAAAAAAECAAACgBAAAA
-					AAAAESAAAFwBAAAAAAAAEiAAADwBAAAAAAAA
-					EyAAAEwBAAAAAAAAICAAAIgBAAAAAAAAMCAA
-					AOwAAAAAAAAAAcAAAAwBAAAAAAAAEcAAABQA
-					AAAAAAAAEsAAABwBAAAAAAAAENAAALQBAAAA
-					AAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -104,9 +73,9 @@
 					<key>SHSpriteName</key>
 					<string>coin-1</string>
 					<key>SheetImage</key>
-					<string>coin_UntitledSheet.png</string>
+					<string>Coin_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>coin_UntitledSheet-hd.png</string>
+					<string>Coin_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -126,13 +95,13 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 0}, {5, 7}}</string>
+						<string>{{2, 2}, {4, 7}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 0}, {10, 14}}</string>
+						<string>{{4, 4}, {8, 14}}</string>
 						<key>Image</key>
-						<string>coin_UntitledSheet.png</string>
+						<string>Coin_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>coin_UntitledSheet-hd.png</string>
+						<string>Coin_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
@@ -150,21 +119,21 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../../../Desktop/coin-1.png/</string>
 						<key>OriginalRect</key>
-						<string>{{3, 2}, {10, 14}}</string>
+						<string>{{0, 0}, {8, 14}}</string>
 						<key>OriginalSize</key>
-						<string>{16, 16}</string>
+						<string>{8, 14}</string>
 						<key>Position</key>
-						<string>{0, 0}</string>
+						<string>{4, 4}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{8, 8}</string>
+						<string>{4, 7}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
 						<integer>0</integer>
 						<key>TextureOffset</key>
-						<string>{0, -0.5}</string>
+						<string>{0, -0}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -173,37 +142,6 @@
 				</dict>
 				<key>coin-2</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va9wCAAAAAAQQMAAAABOUX4uo+NPvPIKB
-					Zc/xwvprafFFJtYMrUjl42ONyqgZwAEAAAUA
-					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
-					dG92aWxvAAcAAAABAQAARGVza3RvcAAKAAAA
-					AQEAAGNvaW4tMi5wbmcAABAAAAABBgAABAAA
-					ABQAAAAoAAAAOAAAAAgAAAAEAwAAKcAAAAAA
-					AAAIAAAABAMAAAz2BQAAAAAACAAAAAQDAADZ
-					9gUAAAAAAAgAAAAEAwAAAr7ZAAAAAAAQAAAA
-					AQYAAGQAAAB0AAAAhAAAAJQAAAAIAAAAAAQA
-					AEG3ORsKAAAAGAAAAAECAAABAAAAAAAAAA8A
-					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
-					AwAACAAAAAQAAAADAwAAAgAAAAgAAAAEAwAA
-					AgAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
-					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY7TAA
-					AAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEBAAAw
-					Q0ZENjZCNy1FQzdFLTNENzAtQTRGQi0wRUI1
-					QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA7z8A
-					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAgAKOQAAAD+////AQAAAAAAAAAS
-					AAAABBAAAEwAAAAAAAAABRAAAKQAAAAAAAAA
-					EBAAAMwAAAAAAAAAQBAAALwAAAAAAAAAVBAA
-					APQAAAAAAAAAVRAAAAABAAAAAAAAVhAAAOwA
-					AAAAAAAAAiAAAKgBAAAAAAAAECAAACgBAAAA
-					AAAAESAAAFwBAAAAAAAAEiAAADwBAAAAAAAA
-					EyAAAEwBAAAAAAAAICAAAIgBAAAAAAAAMCAA
-					AOwAAAAAAAAAAcAAAAwBAAAAAAAAEcAAABQA
-					AAAAAAAAEsAAABwBAAAAAAAAENAAALQBAAAA
-					AAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -236,9 +174,9 @@
 					<key>SHSpriteName</key>
 					<string>coin-2</string>
 					<key>SheetImage</key>
-					<string>coin_UntitledSheet.png</string>
+					<string>Coin_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>coin_UntitledSheet-hd.png</string>
+					<string>Coin_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -258,13 +196,13 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 6}, {5, 7}}</string>
+						<string>{{2, 10}, {2, 7}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 12}, {10, 14}}</string>
+						<string>{{4, 20}, {4, 14}}</string>
 						<key>Image</key>
-						<string>coin_UntitledSheet.png</string>
+						<string>Coin_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>coin_UntitledSheet-hd.png</string>
+						<string>Coin_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
@@ -282,21 +220,21 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../../../Desktop/coin-2.png/</string>
 						<key>OriginalRect</key>
-						<string>{{3, 2}, {10, 14}}</string>
+						<string>{{2, 0}, {4, 14}}</string>
 						<key>OriginalSize</key>
-						<string>{16, 16}</string>
+						<string>{8, 14}</string>
 						<key>Position</key>
-						<string>{0, 12}</string>
+						<string>{4, 20}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{8, 8}</string>
+						<string>{4, 7}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
 						<integer>0</integer>
 						<key>TextureOffset</key>
-						<string>{0, -0.5}</string>
+						<string>{0, -0}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -305,37 +243,6 @@
 				</dict>
 				<key>coin-3</key>
 				<dict>
-					<key>DocumentSecurityImageBookmark</key>
-					<data>
-					Ym9va9wCAAAAAAQQMAAAAH5X7fgrQjzf9PSI
-					CeDQSpeJGoXpwzlrweEuCXJXEiNVwAEAAAUA
-					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
-					dG92aWxvAAcAAAABAQAARGVza3RvcAAKAAAA
-					AQEAAGNvaW4tMy5wbmcAABAAAAABBgAABAAA
-					ABQAAAAoAAAAOAAAAAgAAAAEAwAAKcAAAAAA
-					AAAIAAAABAMAAAz2BQAAAAAACAAAAAQDAADZ
-					9gUAAAAAAAgAAAAEAwAAML7ZAAAAAAAQAAAA
-					AQYAAGQAAAB0AAAAhAAAAJQAAAAIAAAAAAQA
-					AEG3ORsKAAAAGAAAAAECAAABAAAAAAAAAA8A
-					AAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQAAAAD
-					AwAACAAAAAQAAAADAwAAAgAAAAgAAAAEAwAA
-					AgAAAAAAAAAEAAAAAwMAAPUBAAAMAAAAAQEA
-					AE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY7TAA
-					AAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEBAAAw
-					Q0ZENjZCNy1FQzdFLTNENzAtQTRGQi0wRUI1
-					QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA7z8A
-					AAEACAAAAAAAAAAAAAEAAAABAQAALwAAAAQA
-					AAADAwAAAAgAKOQAAAD+////AQAAAAAAAAAS
-					AAAABBAAAEwAAAAAAAAABRAAAKQAAAAAAAAA
-					EBAAAMwAAAAAAAAAQBAAALwAAAAAAAAAVBAA
-					APQAAAAAAAAAVRAAAAABAAAAAAAAVhAAAOwA
-					AAAAAAAAAiAAAKgBAAAAAAAAECAAACgBAAAA
-					AAAAESAAAFwBAAAAAAAAEiAAADwBAAAAAAAA
-					EyAAAEwBAAAAAAAAICAAAIgBAAAAAAAAMCAA
-					AOwAAAAAAAAAAcAAAAwBAAAAAAAAEcAAABQA
-					AAAAAAAAEsAAABwBAAAAAAAAENAAALQBAAAA
-					AAAA
-					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -368,9 +275,9 @@
 					<key>SHSpriteName</key>
 					<string>coin-3</string>
 					<key>SheetImage</key>
-					<string>coin_UntitledSheet.png</string>
+					<string>Coin_UntitledSheet.png</string>
 					<key>SheetImage-HD</key>
-					<string>coin_UntitledSheet-hd.png</string>
+					<string>Coin_UntitledSheet-hd.png</string>
 					<key>TextureProperties</key>
 					<dict>
 						<key>Angle</key>
@@ -390,19 +297,19 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{0, 10}, {5, 7}}</string>
+						<string>{{14, 2}, {0.5, 7}}</string>
 						<key>Frame-HD</key>
-						<string>{{0, 20}, {10, 14}}</string>
+						<string>{{28, 4}, {1, 14}}</string>
 						<key>Image</key>
-						<string>coin_UntitledSheet.png</string>
+						<string>Coin_UntitledSheet.png</string>
 						<key>Image-HD</key>
-						<string>coin_UntitledSheet-hd.png</string>
+						<string>Coin_UntitledSheet-hd.png</string>
 						<key>IsCropped</key>
 						<false/>
 						<key>IsDrawable</key>
 						<true/>
 						<key>IsRotated</key>
-						<true/>
+						<false/>
 						<key>IsTrimmed</key>
 						<true/>
 						<key>Name</key>
@@ -414,21 +321,122 @@
 						<key>OriginalImage_RelativePath</key>
 						<string>../../../../../../../Desktop/coin-3.png/</string>
 						<key>OriginalRect</key>
-						<string>{{3, 2}, {10, 14}}</string>
+						<string>{{4, 0}, {1, 14}}</string>
 						<key>OriginalSize</key>
-						<string>{16, 16}</string>
+						<string>{8, 14}</string>
 						<key>Position</key>
-						<string>{0, 20}</string>
+						<string>{28, 4}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
-						<string>{8, 8}</string>
+						<string>{4, 7}</string>
 						<key>SpriteWasBreaked</key>
 						<false/>
 						<key>Tag</key>
 						<integer>0</integer>
 						<key>TextureOffset</key>
-						<string>{0, -0.5}</string>
+						<string>{0.25, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>coin-4</key>
+				<dict>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>coin-4</string>
+					<key>SheetImage</key>
+					<string>Coin_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Coin_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 16}, {2, 7}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 32}, {4, 14}}</string>
+						<key>Image</key>
+						<string>Coin_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Coin_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>coin-4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Desktop/coin-4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>../../../../../../../Desktop/coin-4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{2, 0}, {4, 14}}</string>
+						<key>OriginalSize</key>
+						<string>{8, 14}</string>
+						<key>Position</key>
+						<string>{4, 32}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{4, 7}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
 						<key>UsesBatchRendering</key>
 						<true/>
 						<key>ZOrder</key>
@@ -437,7 +445,7 @@
 				</dict>
 			</dict>
 			<key>Size</key>
-			<string>{16, 32}</string>
+			<string>{32, 64}</string>
 			<key>Trim</key>
 			<true/>
 			<key>ZOrder</key>
@@ -451,7 +459,7 @@
 		<key>Dither</key>
 		<false/>
 		<key>DocumentName</key>
-		<string>coin</string>
+		<string>Coin</string>
 		<key>HD2XSuffix</key>
 		<string>-ipadhd</string>
 		<key>HDSuffix</key>

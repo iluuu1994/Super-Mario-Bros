@@ -2,21 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>animations</key>
-	<dict>
-		<key>spin</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>coin-1</string>
-				<string>coin-2</string>
-				<string>coin-3</string>
-				<string>coin-4</string>
-			</array>
-		</dict>
-	</dict>
 	<key>frames</key>
 	<dict>
 		<key>coin-1</key>

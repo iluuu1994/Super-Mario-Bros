@@ -15,7 +15,7 @@
 - (id)init
 {
     if (self = [super initWithPlistFile:@"Mario.plist"]) {
-        [self runAction:[CCAnimate actionWithAnimation:self.animations[@"stand"]]];
+        [self runAnimationWithName:@"stand" endless:NO];
     }
     return self;
 }
