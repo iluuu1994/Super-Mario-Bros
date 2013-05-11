@@ -17,6 +17,14 @@
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
+  <tile id="28">
+   <properties>
+    <property name="appearanceType" value="0"/>
+    <property name="blockType" value="2"/>
+    <property name="isDestroyable" value="0"/>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
   <tile id="85">
    <properties>
     <property name="type" value="STBlock"/>
@@ -40,12 +48,12 @@
  </layer>
  <layer name="collision" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3V2wmAMAyF4TpIHUAXcBf330MffBBJa0wDqfp/EPCl0Ms5mBIA4A/G6A0AnZr2maM3AXRsid4AECAfc4d+4G9yoh+AJCf6AUiu3aAf8JQL35p11rVepG7QD3iRMq7Jl5RF7VovpW7QD3ioZbyWsVIWn+SzVa0b9AOtNBmXclbL4tOMWt11Q/v/8zR8fKznXE8TfYa33R3znrG+Mf2w392XZgMda6zewCsAAA==
+   H4sIAAAAAAAAA+3VwQ2AIAyFYRwEB9AF3H8yPXgyBQo0lsD/JU28NEHyXggBALCC3fsAwKCOZ07vQwADu7wPADiI75TQD6wmBvoBSGKgH4Dk2w36AUsx8a3Za921InWDfsCKlHFNvqQsanetpLpBP2Ahl/FcxlJZrMlnr1w36Ad6aTIu5SyXxdqMtip1Q/v+AfjHNvG0/utq92R5d7PNDX/8jIbAKwAA
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WXQqAIBBGUXtxS26qHbT5XkXUHPNn1HtgiGC0z4kgYwAAAAAAAHRwiUr1jJTLk7sHAABrc4mrZn+y5ta0OHvpHjP+90r52bRm7MXODgAAUO0W9D7CvWv6pWt6G5nJf5bGWXxZMbPdvGrPedKMWs9up+rlipSkt0WF77g0T+z7OE04u1O9YqjdC8ArAAA=
+   H4sIAAAAAAAAA+3WUQ6DIBBFUboQ1uGm3EE33x+bGDIzMBQRp/ckpG0CivS9xJQAAAAAAMBXPgbusSlDmzOTtR/rdxQ50Q9AkhP9ACRlN57cj035XNkve7XWjHj21mtY73tZ+V5TZrE3l+e9ec9E6saT+4G1SBlvyZeUxdnZ1LpBPzCClXErY1oWZ+bT6saK/dgdc9/Oa/fM96652sw9ne+l3bcl41LOrCyOymjtrGrduKMfr+Cj9zn/6YxGn12kEVn5H/es866NovfsovkAhDHBq8ArAAA=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
