@@ -25,6 +25,14 @@
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
+  <tile id="54">
+   <properties>
+    <property name="appearanceType" value="0"/>
+    <property name="blockType" value="1"/>
+    <property name="isDestroyable" value="1"/>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
   <tile id="85">
    <properties>
     <property name="type" value="STBlock"/>
@@ -48,7 +56,7 @@
  </layer>
  <layer name="collision" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3VwQ2AIAyFYRwEB9AF3H8yPXgyBQo0lsD/JU28NEHyXggBALCC3fsAwKCOZ07vQwADu7wPADiI75TQD6wmBvoBSGKgH4Dk2w36AUsx8a3Za921InWDfsCKlHFNvqQsanetpLpBP2Ahl/FcxlJZrMlnr1w36Ad6aTIu5SyXxdqMtip1Q/v+AfjHNvG0/utq92R5d7PNDX/8jIbAKwAA
+   H4sIAAAAAAAAA+3VUQqAIBBF0WkhtoDaQPtfWQV9xaijDmh5Dwz0M6D1HokAAGaw9j4AMKjtmr33IYCBHb0PAHQQnsmhH5hNEPoBaILQD0Dz7gb9gKcQebbs1e560bpBP+BFy7glX1oWrbteYt2gH/CQyngqY7EsluSzVaob9AOtLBnXcpbKYmlGa+W6Yf3/eVp+PrX3nOkdeb875jtT+42lYfcvM/v97zkBUv989MArAAA=
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
