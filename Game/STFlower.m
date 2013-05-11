@@ -1,32 +1,32 @@
 //
-//  STMushroom.m
+//  STFlower.m
 //  Game
 //
-//  Created by Ilija Tovilo on 5/10/13.
+//  Created by Ilija Tovilo on 5/11/13.
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "STMushroom.h"
+#import "STFlower.h"
 #import "STPlayer.h"
 
-@implementation STMushroom
+@implementation STFlower
 
 - (id)init
 {
-    if (self = [super initWithPlistFile:@"Mushroom.plist"]) {
-        [self runAnimationWithName:@"default" endless:YES];
+    if (self = [super initWithPlistFile:@"Flower.plist"]) {
+        [self runAnimationWithName:@"glare" endless:YES];
     }
     return self;
 }
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
-    
+
     
     if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
         STPlayer *player = (STPlayer *)gameObject;
-        if (player.playerState == STPlayerStateSmall) {
-            player.playerState = STPlayerStateLarge;
+        if (player.playerState != STPlayerStateFire) {
+            player.playerState = STPlayerStateFire;
         }
     }
 }

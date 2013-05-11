@@ -34,12 +34,6 @@
                            edge:(STRectEdge)edge {
     if ([[gameObject class] isSubclassOfClass:[STItem class]]) {
         [(STItem *)gameObject setVisible:NO];
-        
-        if ([[gameObject class] isSubclassOfClass:[STMushroom class]]) {
-            if (self.playerState == STPlayerStateSmall) {
-                self.playerState = STPlayerStateLarge;
-            }
-        }
     }
 }
 

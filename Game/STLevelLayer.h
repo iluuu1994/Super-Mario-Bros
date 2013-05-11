@@ -45,13 +45,4 @@
  */
 + (id)layerWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 
-/**
- * Returns a scene with a level layer (as a child) initialized with the given level (identified by worldID + levelID)
- * @param worldID - the id of the world whose level was started
- * @param levelID - the id of the level started
- * @return The initialised object
- */
-// TODO: remove?
-+(id)sceneWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
-
 @end

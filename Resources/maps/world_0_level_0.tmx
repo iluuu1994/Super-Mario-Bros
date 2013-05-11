@@ -14,7 +14,7 @@
   </tile>
   <tile id="107">
    <properties>
-    <property name="type" value="STMushroom"/>
+    <property name="type" value="STFlower"/>
    </properties>
   </tile>
   <tile id="122">

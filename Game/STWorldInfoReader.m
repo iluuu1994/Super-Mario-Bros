@@ -61,7 +61,7 @@ ITSingletonImplementation
             return i;
         }
     }
-    return nil;
+    return -1;
 }
 
 - (int) indexOfWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
@@ -73,7 +73,7 @@ ITSingletonImplementation
             return i;
         }
     }
-    return nil;
+    return -1;
 }
 
 - (id) nextWorldFromWorldID:(unsigned short)worldID {

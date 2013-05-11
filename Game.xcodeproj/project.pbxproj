@@ -198,6 +198,9 @@
 		91CD17D816BDCCA9005CA331 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = 91CD176A16BDCCA9005CA331 /* vec4.c */; };
 		91CD17D916BDCCE4005CA331 /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91CD165D16BDCBA9005CA331 /* libcocos2d.a */; };
 		91CD17E016BDD0D4005CA331 /* STAnimatedSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */; };
+		91DDF3BC173E30C80078D7F8 /* Flower.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91DDF3BA173E30C80078D7F8 /* Flower.plist */; };
+		91DDF3BD173E30C80078D7F8 /* Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 91DDF3BB173E30C80078D7F8 /* Flower.png */; };
+		91DDF3C0173E30D90078D7F8 /* STFlower.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DDF3BF173E30D90078D7F8 /* STFlower.m */; };
 		91FD0E7E1701D4940032EC01 /* NSBundle+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */; };
 		D4437B61172FE13000FF2F44 /* STControlsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B60172FE13000FF2F44 /* STControlsLayer.m */; };
 		D4437B65172FEEF300FF2F44 /* STPauseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4437B64172FEEF300FF2F44 /* STPauseLayer.m */; };
@@ -638,6 +641,10 @@
 		91CD176D16BDCCA9005CA331 /* LICENSE_Kazmath.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE_Kazmath.txt; sourceTree = "<group>"; };
 		91CD17DC16BDD0D4005CA331 /* STAnimatedSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAnimatedSprite.h; sourceTree = "<group>"; };
 		91CD17DD16BDD0D4005CA331 /* STAnimatedSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAnimatedSprite.m; sourceTree = "<group>"; };
+		91DDF3BA173E30C80078D7F8 /* Flower.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Flower.plist; sourceTree = "<group>"; };
+		91DDF3BB173E30C80078D7F8 /* Flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower.png; sourceTree = "<group>"; };
+		91DDF3BE173E30D90078D7F8 /* STFlower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlower.h; sourceTree = "<group>"; };
+		91DDF3BF173E30D90078D7F8 /* STFlower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlower.m; sourceTree = "<group>"; };
 		91FD0E7C1701D4940032EC01 /* NSBundle+Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Resources.h"; sourceTree = "<group>"; };
 		91FD0E7D1701D4940032EC01 /* NSBundle+Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Resources.m"; sourceTree = "<group>"; };
 		D4437B5F172FE13000FF2F44 /* STControlsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STControlsLayer.h; sourceTree = "<group>"; };
@@ -851,6 +858,25 @@
 				91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */,
 			);
 			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		912C9174173E2D5800903C31 /* Flower */ = {
+			isa = PBXGroup;
+			children = (
+				91DDF3BE173E30D90078D7F8 /* STFlower.h */,
+				91DDF3BF173E30D90078D7F8 /* STFlower.m */,
+				912C9175173E2DEB00903C31 /* Resources */,
+			);
+			name = Flower;
+			sourceTree = "<group>";
+		};
+		912C9175173E2DEB00903C31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91DDF3BA173E30C80078D7F8 /* Flower.plist */,
+				91DDF3BB173E30C80078D7F8 /* Flower.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		913EB13F1732D0EC0012B37B /* Sound Manager */ = {
@@ -1138,6 +1164,7 @@
 				9122DD03173919DA0042D918 /* STItem.m */,
 				91F2477817391D4C00DD1E9B /* Coin */,
 				917E6F74173D988300777A40 /* Mushroom */,
+				912C9174173E2D5800903C31 /* Flower */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -1985,6 +2012,8 @@
 				917E6F73173D963F00777A40 /* world_0_level_0.tmx in Resources */,
 				917E6F7B173D989E00777A40 /* Mushroom.plist in Resources */,
 				917E6F7C173D989E00777A40 /* Mushroom.png in Resources */,
+				91DDF3BC173E30C80078D7F8 /* Flower.plist in Resources */,
+				91DDF3BD173E30C80078D7F8 /* Flower.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2047,6 +2076,7 @@
 				D46B8A9F173BE7CA00805372 /* STWorldInfoReader.m in Sources */,
 				D4A1AF13173D10D200E743E8 /* STInformationLayer.m in Sources */,
 				917E6F77173D989200777A40 /* STMushroom.m in Sources */,
+				91DDF3C0173E30D90078D7F8 /* STFlower.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
