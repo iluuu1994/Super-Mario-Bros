@@ -32,7 +32,7 @@ typedef enum {
 @property unsigned int coins;
 @property Byte lifes;
 @property (strong, nonatomic) NSMutableArray *bonusItems;
-@property STPlayerState playerState;
+@property (nonatomic) STPlayerState playerState;
 
 @property (unsafe_unretained) id<STPlayerDelegate> delegate;
 

@@ -13,7 +13,9 @@
 
 #define kJumpVelocity 250
 
-@interface STPlayer ()
+@interface STPlayer () {
+    NSString *_cachedAnimation;
+}
 @property BOOL isAnimating;
 @end
 
@@ -34,6 +36,7 @@
                            edge:(STRectEdge)edge {
     if ([[gameObject class] isSubclassOfClass:[STItem class]]) {
         [(STItem *)gameObject setVisible:NO];
+    } else if (edge == STRectEdgeMinY) {
     }
 }
 
@@ -52,6 +55,8 @@
 }
 
 - (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag {
+    _cachedAnimation = animName;
+    
     if (self.playerState == STPlayerStateSmall) {
         animName = [@"small-" stringByAppendingString:animName];
     } else if (self.playerState == STPlayerStateFire) {
@@ -73,6 +78,12 @@
     }
     
     [super setVelocity:velocity];
+}
+
+- (void)setPlayerState:(STPlayerState)playerState {
+    _playerState = playerState;
+    
+    [self runAnimationWithName:_cachedAnimation endless:YES];
 }
 
 @end

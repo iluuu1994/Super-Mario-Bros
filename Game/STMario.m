@@ -20,13 +20,4 @@
     return self;
 }
 
-- (void) setPlayerState:(STPlayerState)playerState {
-    [super setPlayerState:playerState];
-        
-    if(playerState == STPlayerStateLarge) {
-        [self runAnimationWithName:@"grow" endless:NO];
-        
-    }
-}
-
 @end
