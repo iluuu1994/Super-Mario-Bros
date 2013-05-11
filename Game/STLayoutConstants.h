@@ -29,6 +29,7 @@
 #define kTitleFontSize 35
 #define kButtonFontSize 30
 #define kTextFontSize 20
+#define kTextSmallFontSize 15
 
 // Font names
 #define kTitleFontName @"Helvetica"
