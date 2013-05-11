@@ -24,6 +24,9 @@
 @property (retain) CCTMXLayer *objectLayer;
 @property (strong, readonly, nonatomic) NSMutableArray *gameObjects;
 
+#pragma mark -
+#pragma mark Methods
+- (void)setProperties:(NSDictionary *)properties forNode:(CCNode *)node;
 - (void)addGameObjectToMap:(STGameObject *)gameObject;
 
 @end

@@ -39,10 +39,6 @@
     
 }
 
-- (void)die:(id)sender {
-    self.isDead = YES;
-}
-
 #pragma mark -
 #pragma Targeted Delegate
 

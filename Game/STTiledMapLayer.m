@@ -33,6 +33,7 @@
                 if (type.length) {
                     Class objectClass = NSClassFromString(type);
                     CCNode *node = [objectClass node];
+                    [self setProperties:props forNode:node];
                     [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
                     
                     [self addGameObjectToMap:(STGameObject *)node];
@@ -46,6 +47,24 @@
         [self addChild:self.map];
     }
     return self;
+}
+
+- (void)setProperties:(NSDictionary *)properties forNode:(CCNode *)node {
+    
+    // If the node supports key value coding
+    if([node respondsToSelector:@selector(setObject:forKey:)]) {
+        for(id key in properties) {
+            
+            // Exclude special keys
+            if(![key isEqualToString:kTypeKey]) {
+                
+                // Set the value at the specified key
+                [node performSelector:@selector(setObject:forKey:)
+                           withObject:[properties objectForKey:key]
+                           withObject:key];
+            }
+        }
+    }
 }
 
 - (void)addGameObjectToMap:(STGameObject *)gameObject {
