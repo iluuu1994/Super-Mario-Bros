@@ -6,10 +6,16 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "STChooseLevelLayer.h"
-#import "STWorldsConstants.h"
-#import "CCControlExtension.h"
 #import "CCDirector+Transitions.h"
+#import "CCControlExtension.h"
+#import "STLayoutConstants.h"
+#import "STWorldInfoReader.h"
+#import "STWorldsConstants.h"
+#import "STChooseWorldLayer.h"
+#import "STChooseLevelLayer.h"
+#import "CCScrollLayer.h"
+#import "STStartLayer.h"
+#import "STLevelLayer.h"
 
 @implementation STChooseLevelLayer
 {}
@@ -99,6 +105,12 @@
 
 #pragma mark -
 #pragma mark Select Level
+
+/**
+ * When the user selected a level this message is called. Starts the game with the selected level.
+ * @param sender - the sender of this message. The STSettingsLayer.
+ * @return an IBAction.
+ */
 - (IBAction)level:(id)sender {
     NSDictionary *level = [sender userObject];
     BOOL isLocked = [[level valueForKey:kLevelIsLockedKey] boolValue];
@@ -115,6 +127,12 @@
 
 #pragma mark -
 #pragma mark Switch Scene
+
+/**
+ * When the user wants to  go back to the overview of all worlds this message is called.
+ * @param sender - the sender of this message. The STChooseLevelLayer.
+ * @return an IBAction.
+ */
 - (IBAction)worlds:(id)sender {
     [[CCDirector sharedDirector] replaceScene:[STChooseWorldLayer scene]
                           withTransitionClass:[CCTransitionFade class]

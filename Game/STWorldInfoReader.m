@@ -8,6 +8,7 @@
 
 #import "STWorldInfoReader.h"
 #import "NSBundle+Resources.h"
+#import "STWorldsConstants.h"
 
 @implementation STWorldInfoReader
 
@@ -27,6 +28,7 @@ ITSingletonImplementation
 
 #pragma mark -
 #pragma mark Methods
+
 - (id) namingConvention {
     return [_root valueForKey:kWorldsNamingConvention];
 }

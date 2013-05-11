@@ -7,23 +7,41 @@
 //
 
 #import "ITSingleton.h"
-#import "CCDirector+Transitions.h"
-#import "STSoundManager.h"
-#import "STConfigurationManager.h"
 
+/**
+ * Utility class for pausing and resuming the games flow. 
+ */
 @interface STGameFlowManager : NSObject
+
+#pragma mark -
+#pragma mark Initialise
 
 ITSingletonInterface
 
 #pragma mark -
 #pragma mark Properties
+
+/**
+ * Determines whether the game is currently paused. 
+ */
 @property (nonatomic, readonly) BOOL isPaused;
 
 #pragma mark -
 #pragma mark Methods
 
+/**
+ * Pause the game and stop the backgroundmusic. 
+ */
 - (void)pause;
+
+/**
+ * Resume tha game. Start the backgroundmusic if the music is enabled in the settings.
+ */
 - (void)resume;
+
+/**
+ * Resume the game and specify whether the backgroundmusic should be started. 
+ */
 - (void)resumeWithMusicOn:(BOOL)musicOn;
 
 @end

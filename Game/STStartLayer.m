@@ -9,21 +9,23 @@
 #import "STStartLayer.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
+#import "STLayoutConstants.h"
 #import "STLevelResultLayer.h"
-#import "STInfoLayer.h"
+#import "STChooseWorldLayer.h"
 #import "STSettingsLayer.h"
+#import "STInfoLayer.h"
 
 @implementation STStartLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 - (void)setUp {
     [super setUp];
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
-    // TODO: static names of image
     // Scene Title
     CCMenuItemImage *title = [CCMenuItemImage itemWithNormalImage:kTitleImageName selectedImage:kTitleImageName];
     title.scale = 0.8f;
@@ -57,18 +59,34 @@
 
 #pragma mark -
 #pragma mark Switch Scene
+
+/**
+ * When the user wants to learn more about the developers of this game this message is called.
+ * @param sender - the sender of this message. The STStartLayer.
+ * @return an IBAction.
+ */
 - (IBAction)info:(id)sender {
     [[CCDirector sharedDirector] replaceScene:[STInfoLayer scene]
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
 }
 
+/**
+ * When the user wants to configure the behaviour and state of the game this message is called.
+ * @param sender - the sender of this message. The STStartLayer.
+ * @return an IBAction.
+ */
 - (IBAction)preferences:(id)sender {
     [[CCDirector sharedDirector] replaceScene:[STSettingsLayer scene]
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
 }
 
+/**
+ * When the user wants to start the game this message is called.
+ * @param sender - the sender of this message. The STStartLAyer.
+ * @return an IBAction.
+ */
 - (IBAction)start:(id)sender {
     [[CCDirector sharedDirector] replaceScene: [STChooseWorldLayer scene]
                           withTransitionClass:[CCTransitionFade class]

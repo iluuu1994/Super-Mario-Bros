@@ -8,8 +8,13 @@
 
 #import "STLevelLayer.h"
 #import "STWorldsConstants.h"
+#import "CCDirector+Transitions.h"
 #import "NSBundle+Resources.h"
 #import "STCollisionDetectionHelper.h"
+#import "STLevelResultLayer.h"
+#import "STGameFlowManager.h"
+#import "STWorldInfoReader.h"
+#import "STWorldsConstants.h"
 #import "STGameObject.h"
 #import "STSoundManager.h"
 #import "STTiledMapKeys.h"

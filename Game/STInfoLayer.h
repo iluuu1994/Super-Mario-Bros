@@ -6,12 +6,12 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
-#import "STScene.h"
 #import "STLayer.h"
-#import "STLayoutConstants.h"
 
+/**
+ * A Layer which displays information about the developers.
+ * Provides buttons which open links to social media websites. 
+ */
 @interface STInfoLayer : STLayer {
     
 }

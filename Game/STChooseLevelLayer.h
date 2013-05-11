@@ -6,14 +6,7 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
 #import "STLayer.h"
-#import "CCScrollLayer.h"
-#import "STStartLayer.h"
-#import "STLevelLayer.h"
-#import "STLayoutConstants.h"
-#import "STWorldInfoReader.h"
 
 @interface STChooseLevelLayer : STLayer {
     
@@ -21,28 +14,31 @@
 
 #pragma mark -
 #pragma mark Properties
+
+/**
+ * The information of the currently selected world. 
+ */
 @property (strong) NSDictionary *world;
-@property (strong) NSDictionary *level;
 
 #pragma mark -
 #pragma mark Initialise
 
 /**
- * Init a level selection layer with the levels of the given worlds id
+ * Init a level selection layer with the levels of the given worlds id.
  * @param worldID - the id of the world whose levels will be displayed
- * @return The initialised object
+ * @return The initialised object.
  */
 -(id)initWithWorldID:(unsigned short)worldID;
 
 /**
  * Returns a level selection layer with the levels of the given worlds id
- * @param worldID - the id of the world whose levels will be displayed
- * @return The initialised object
+ * @param worldID - the id of the world whose levels will be displayed.
+ * @return The initialised object.
  */
 +(id)layerWithWorldID:(unsigned short)worldID;
 
 /**
- * Is called when the layer is initialised
+ * Is called when the layer is initialised.
  */
 - (void)setUpWithWorldID:(unsigned short)worldID;
 

@@ -13,7 +13,7 @@
 {}
 
 #pragma mark -
-#pragma mark Init
+#pragma mark Initialise
 
 ITSingletonImplementation
 

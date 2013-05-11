@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+/**
+ * Abstract superclass for all scenes.
+ */
 @interface STScene : CCScene
 {}
 

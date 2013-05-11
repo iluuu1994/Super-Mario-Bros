@@ -7,17 +7,19 @@
 //
 
 #import "STInfoLayer.h"
-#import "STStartLayer.h"
 #import "CCDirector+Transitions.h"
 #import "NSBundle+Resources.h"
 #import "CCControlExtension.h"
 #import "STAboutConstants.h"
+#import "STLayoutConstants.h"
+#import "STStartLayer.h"
 
 @implementation STInfoLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 - (void)setUp {
     [super setUp];
     
@@ -74,6 +76,12 @@
 
 #pragma mark -
 #pragma mark Switch Scene
+
+/**
+ * When the user wants to go back to the main-menu this message is called. Switches to the main-menu.
+ * @param sender - the sender of this message. The STInfoLayer.
+ * @return an IBAction.
+ */
 - (IBAction)menu:(id)sender {
     [[CCDirector sharedDirector] replaceScene:[STStartLayer scene]
                           withTransitionClass:[CCTransitionFade class]
@@ -82,6 +90,13 @@
 
 #pragma mark -
 #pragma mark Social Media Button
+
+/**
+ * When the user presses on a social media icon this message is called. Opens the url of
+ * the associated social media website in a webbrowser. 
+ * @param sender - the sender of this message. The STInfoLayer.
+ * @return an IBAction.
+ */
 - (IBAction)socialMedia:(id)sender {
     NSURL *url = [[NSURL alloc] initWithString:[sender userObject]];
     [[UIApplication sharedApplication] openURL:url];

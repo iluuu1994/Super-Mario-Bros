@@ -9,6 +9,8 @@
 #ifndef Game_STTiledMapKeys_h
 #define Game_STTiledMapKeys_h
 
+// Definitions of Constants used to read the information from a TiledMap.
+
 #define kEventsLayerKey @"events"
 #define kObjectLayerKey @"objects"
 #define kTypeKey @"type"
