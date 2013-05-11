@@ -46,10 +46,9 @@
     
     // Retrieve Player Information
     NSString *score = [NSString stringWithFormat:@"Score\n%i", [self.player score]];
-    NSString *lifes = [NSString stringWithFormat:@"Lifes\n%i", [self.player lifes]];
     NSString *coins = [NSString stringWithFormat:@"Coins\n%i", [self.player coins]];
     NSString *time = [NSString stringWithFormat:@"Time\n%i", [self time]];
-        
+    
     // Coins
     CCLabelTTF *coinsLabel = [CCLabelTTF labelWithString:coins fontName:kTextFontName fontSize:kTextFontSize];
     coinsLabel.position = ccp(winSize.width / 2, winSize.height - coinsLabel.contentSize.height / 2 - kPadding);
@@ -64,17 +63,9 @@
     [scoreLabel setColor:kTextColor];
     [self addChild:scoreLabel];
     
-    // Lifes
-    CCLabelTTF *lifesLabel = [CCLabelTTF labelWithString:lifes fontName:kTextFontName fontSize:kTextFontSize];
-    lifesLabel.position = ccp(coinsLabel.position.x + coinsLabel.contentSize.width / 2
-                              + lifesLabel.contentSize.width / 2 + 2 * kPadding,
-                              winSize.height - lifesLabel.contentSize.height / 2 - kPadding);
-    [lifesLabel setColor:kTextColor];
-    [self addChild:lifesLabel];
-    
     // Time
     CCLabelTTF *timeLabel = [CCLabelTTF labelWithString:time fontName:kTextFontName fontSize:kTextFontSize];
-    timeLabel.position = ccp(lifesLabel.position.x + lifesLabel.contentSize.width / 2
+    timeLabel.position = ccp(coinsLabel.position.x + coinsLabel.contentSize.width / 2
                               + timeLabel.contentSize.width / 2 + 2 * kPadding,
                               winSize.height - timeLabel.contentSize.height / 2 - kPadding);
     [timeLabel setColor:kTextColor];

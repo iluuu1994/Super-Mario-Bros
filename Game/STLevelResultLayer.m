@@ -53,7 +53,7 @@
     
     int m = (time / 60) % 60;
     int s = time % 60;
-    
+
     NSString *formattedTime = [NSString stringWithFormat:@"%02u:%02u", m, s];
     
     // Scene Title

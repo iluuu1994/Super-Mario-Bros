@@ -59,8 +59,11 @@
     [aButton setAdjustBackgroundImage:NO];
     aButton.scale = 0.8;
     [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchUpInside];
+    // TODO: remove this old positioning code
+//    aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - kPadding,
+//                           aButton.contentSize.height / 2 + kPadding);
     aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - kPadding,
-                           aButton.contentSize.height / 2 + kPadding);
+                           winSize.height - aButton.contentSize.height / 2 - kPadding);
     [self addChild:aButton];
 
     // B Button
@@ -68,8 +71,11 @@
     [bButton setAdjustBackgroundImage:NO];
     bButton.scale = 0.8;
     [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
+    // TODO: remove this old positioning code
+//    bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * kPadding,
+//                           bButton.contentSize.height / 2 + kPadding);
     bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * kPadding,
-                           bButton.contentSize.height / 2 + kPadding);
+                           winSize.height - bButton.contentSize.height / 2 - kPadding);
     [self addChild:bButton];
 }
 

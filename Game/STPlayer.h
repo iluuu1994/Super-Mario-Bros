@@ -30,7 +30,6 @@ typedef enum {
 
 @property unsigned int score;
 @property unsigned int coins;
-@property Byte lifes;
 @property (strong, nonatomic) NSMutableArray *bonusItems;
 @property (nonatomic) STPlayerState playerState;
 
