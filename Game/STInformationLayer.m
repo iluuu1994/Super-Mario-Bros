@@ -49,6 +49,8 @@
     NSString *coins = [NSString stringWithFormat:@"Coins\n%i", [self.player coins]];
     NSString *time = [NSString stringWithFormat:@"Time\n%i", [self time]];
     
+    NSLog(@"score: %i", [self.player score]);
+    
     // Coins
     CCLabelTTF *coinsLabel = [CCLabelTTF labelWithString:coins fontName:kTextFontName fontSize:kTextFontSize];
     coinsLabel.position = ccp(winSize.width / 2, winSize.height - coinsLabel.contentSize.height / 2 - kPadding);

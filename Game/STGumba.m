@@ -10,6 +10,7 @@
 #import "STPlayer.h"
 
 #define kSpeed 10
+#define kScore 100
 
 @implementation STGumba
 
@@ -30,11 +31,17 @@
     }
     
     if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        STPlayer *player = (STPlayer *) gameObject;
+        
         // Make the other GameObject jump after jumping on this
         gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
         
         // Play a sound
         [[STSoundManager sharedInstance] playEffect:kSoundStomp];
+        
+        // Add a score
+        [player setScore:[player score] + kScore];
+        NSLog(@"score: %i", [player score]);
         
         // Show the die animation and kill this GameObject
         [self runAnimationWithName:@"die" callbackBlock:^void {

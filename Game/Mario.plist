@@ -64,16 +64,6 @@
 				<string>mario-walk-2</string>
 			</array>
 		</dict>
-		<key>grow</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>mario-small-stand-1</string>
-				<string>mario-stand-1</string>
-			</array>
-		</dict>
 		<key>fire-stand</key>
 		<dict>
 			<key>delay</key>
