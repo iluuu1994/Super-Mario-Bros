@@ -19,6 +19,12 @@ typedef enum {
 } STRectEdge;
 
 typedef enum {
+    STAppearanceTypeDefault,
+    STAppearanceTypeDark,
+    STAppearanceTypeCastle
+} STAppearanceType;
+
+typedef enum {
     STGameObjectBodyTypeNonColliding,
     STGameObjectBodyTypeStatic,
     STGameObjectBodyTypeDynamic,
@@ -34,7 +40,10 @@ typedef enum {
 @property (readonly, nonatomic) float weight;
 @property CGPoint velocity;
 @property STGameObjectBodyType bodyType;
+@property (nonatomic) STAppearanceType appearanceType;
 @property (setter = setDead:) BOOL isDead;
+
+@property (readonly, nonatomic) BOOL differenciatesAppearance;
 
 - (void)move:(CGPoint)deltaPoint;
 - (void)collisionWithGameObject:(STGameObject *)gameObject

@@ -61,11 +61,11 @@
 
 /**
  * Used for updating the sprite (invoked all 1/60s)
- * @param plistFile - The plist file with the animation information
+ * @param delta - The time that has passed since the last update
  */
-// TODO: WTF-comment
 - (void)update:(ccTime)delta;
 
+- (void) displayFrameWithName:(NSString *)spriteFrameName;
 - (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag;
 - (void)runAnimationWithName:(NSString *)animName callbackBlock:(void(^)())block;
 

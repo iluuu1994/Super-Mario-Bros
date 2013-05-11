@@ -15,10 +15,16 @@
 #pragma mark Initialise
 - (id)init
 {
-    if (self = [super initWithFile:@"block.png"]) {
-        
+    if (self = [super init]) {
+        [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"block"]];
     }
     return self;
+}
+
+- (void)setAppearanceType:(STAppearanceType)appearanceType {
+    NSLog(@"test");
+    [super setAppearanceType:appearanceType];
+    [self displayFrameWithName:@"block"];
 }
 
 - (STGameObjectBodyType)bodyType {

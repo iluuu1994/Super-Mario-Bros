@@ -39,6 +39,34 @@
     
 }
 
+- (BOOL)differenciatesAppearance {
+    return NO;
+}
+
+- (void)displayFrameWithName:(NSString *)spriteFrameName {
+    [super displayFrameWithName:[self appearanceNameForString:spriteFrameName]];
+}
+
+- (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag {
+    [super runAnimationWithName:[self appearanceNameForString:animName] endless:endlessFlag];
+}
+
+- (void)runAnimationWithName:(NSString *)animName callbackBlock:(void (^)())block {
+    [super runAnimationWithName:[self appearanceNameForString:animName] callbackBlock:block];
+}
+
+- (NSString *)appearanceNameForString:(NSString *)name {
+    if (self.differenciatesAppearance) {
+        if (self.appearanceType == STAppearanceTypeDark) {
+            name = [@"dark" stringByAppendingString:name];
+        } else if (self.appearanceType == STAppearanceTypeCastle) {
+            name = [@"castle" stringByAppendingString:name];
+        }
+    }
+    
+    return name;
+}
+
 #pragma mark -
 #pragma Targeted Delegate
 

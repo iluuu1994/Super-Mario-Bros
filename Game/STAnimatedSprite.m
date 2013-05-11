@@ -72,6 +72,10 @@
     }
 }
 
+- (void) displayFrameWithName:(NSString *)spriteFrameName {
+    [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:spriteFrameName]];
+}
+
 - (void)update:(ccTime)delta {
 
 }

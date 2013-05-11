@@ -2,8 +2,17 @@
 <map version="1.0" orientation="orthogonal" width="200" height="14" tilewidth="16" tileheight="16">
  <tileset firstgid="1" name="Mario" tilewidth="16" tileheight="16" spacing="1">
   <image source="SMB-Tiles.gif" width="220" height="186"/>
+  <tile id="0">
+   <properties>
+    <property name="appearanceType" value="0"/>
+    <property name="isDestroyable" value="NO"/>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
   <tile id="5">
    <properties>
+    <property name="appearanceType" value="0"/>
+    <property name="isDestroyable" value="YES"/>
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
@@ -24,18 +33,18 @@
   </tile>
  </tileset>
  <layer name="bg" width="200" height="14">
-  <data encoding="base64" compression="zlib">
-   eJztlcsOgjAQRRvRrY81foB+gLJXP0DXqHv1//cOCSQjgTJlWtrEuziJkT7O3E6hNMaUAICg3Imncv5DuUbK+4XML2Yt2nMPXYdPP83aL+IjqL2v/mr+e2AN377a/Xy62fKbIruxeQ6duwsh6vDpN0XtIXsyZBYx3abILlSeQ3cbgH8m1t0GAAAAfHBMwAGAFDkwYrsAkBonoiAuijVmCdSRE1uhU3tsbFLI75+8pf7VN+PGGPMNWRIrYj1Bvrnp7+sdsRc68bGxz1yTXwxf3962M9X2hNa/qDmz3y65N3tsBHtlxLxmIfDL6nH8P97XGVuLP5M4NWNdnLp8pLRdx+TnK0NX7675rt623ux6V7l429512r5t7sTV/N4P7bsBAAAAsPEFhnPBCA==
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+2Vyw6CMBBFG9GtjzV+gH6Aslc/QNeoe/X/9w4JJCOBMmVa2sS7OImRPs7cTqE0xpQAgKDciady/kO5Rsr7hcwvZi3acw9dh08/zdov4iOova/+av57YA3fvtr9fLrZ8psiu7F5Dp27CyHq8Ok3Re0hezJkFjHdpsguVJ5DdxuAfybW3QYAAAB8cEzAAYAUOTBiuwCQGieiIC6KNWYJ1JETW6FTe2xsUsjvn7yl/tU348YY8w1ZEitiPUG+uenv6x2xFzrxsbHPXJNfDF/f3rYz1faE1r+oObPfLrk3e2wEe2XEvGYh8Mvqcfw/3tcZW4s/kzg1Y12cunyktF3H5OcrQ1fvrvmu3rbe7HpXuXjb3nXavm3uxNX83g/tuwEAAACw8QW1xhBmwCsAAA==
   </data>
  </layer>
  <layer name="collision" width="200" height="14">
-  <data encoding="base64" compression="zlib">
-   eJzt1dsJgDAMheE6SB1AF3AX999DH3wQSWtMA6n6fxDwpdDLOZgSAOAPxugNAJ2a9pmjNwF0bIneABAgH3OHfuBvcqIfgCQn+gFIrt2gH/CUC9+adda1XqRu0A94kTKuyZeURe1aL6Vu0A94qGW8lrFSFp/ks1WtG/QDrTQZl3JWy+LTjFrddUP7//M0fHys51xPE32Gt90d856xvjH9sN/dl2YDowEP7Q==
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3V2wmAMAyF4TpIHUAXcBf330MffBBJa0wDqfp/EPCl0Ms5mBIA4A/G6A0AnZr2maM3AXRsid4AECAfc4d+4G9yoh+AJCf6AUiu3aAf8JQL35p11rVepG7QD3iRMq7Jl5RF7VovpW7QD3ioZbyWsVIWn+SzVa0b9AOtNBmXclbL4tOMWt11Q/v/8zR8fKznXE8TfYa33R3znrG+Mf2w392XZgMda6zewCsAAA==
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
-  <data encoding="base64" compression="zlib">
-   eJzt1l0KgCAQRlF7aUtuqh20+V5F1Bx/R70HhghG+5wIMgYAAAAAAEAHG6lYz0ipPKl7AACwNhu5alaTNbWmxdlz95jxv5fLzaY1IwAAMzyC3le4d0m/dE1vIzO5z9I4iz8rZr43r9JznjSj1rPbqXq5AiXpbVH+O87NE/o+TuPP7lQfQW8Qxw==
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAA+3WXQqAIBBGUX1pS26qHbT5XkXUHPNn1HtgiGC0z4kgYwAAAAAAAHRwiUr1jJTLk7sHAABrc4mrZn+y5ta0OHvpHjP+90r52bRm7MXODgAAUO0W9D7CvWv6pWt6G5nJf5bGWXxZMfO1edWe86QZtZ7dTtWLjZSkt0WF77g0T+z7OE04u1O9+lMMgsArAAA=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">

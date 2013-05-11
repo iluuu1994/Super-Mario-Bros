@@ -12,4 +12,6 @@
 @interface STBlock : STGameObject
 {}
 
+@property (nonatomic) BOOL isDestroyable;
+
 @end

@@ -34,6 +34,7 @@
 					<integer>180</integer>
 					<key>Sprite Cache</key>
 					<array>
+						<string>Block.plist</string>
 						<string>Star.plist</string>
 						<string>Flower.plist</string>
 						<string>Mario.plist</string>
