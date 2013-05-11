@@ -44,7 +44,6 @@
         prefix = @"alternate-";
     }
     
-    NSLog(@"%@", [super appearanceNameForString:[prefix stringByAppendingString:name]]);
     return [super appearanceNameForString:[prefix stringByAppendingString:name]];
 }
 
