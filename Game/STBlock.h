@@ -9,9 +9,21 @@
 #import "STGameObject.h"
 #import "STSoundManager.h"
 
+#ifndef STBlockTypeEnum
+#define STBlockTypeEnum
+
+typedef enum {
+    STBlockTypeGround,
+    STBlockTypeDestroyable,
+    STBlockTypeAlternate
+} STBlockType;
+
+#endif
+
 @interface STBlock : STGameObject
 {}
 
 @property (nonatomic) BOOL isDestroyable;
+@property (nonatomic) STBlockType blockType;
 
 @end

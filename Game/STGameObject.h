@@ -48,5 +48,6 @@ typedef enum {
 - (void)move:(CGPoint)deltaPoint;
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge;
+- (NSString *)appearanceNameForString:(NSString *)name;
 
 @end
