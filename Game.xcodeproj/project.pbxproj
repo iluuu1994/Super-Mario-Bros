@@ -32,6 +32,10 @@
 		914EB28D171409390070051D /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28B171409390070051D /* preferences.png */; };
 		914EB294171414A70070051D /* world_0_level_1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 914EB293171414A70070051D /* world_0_level_1.tmx */; };
 		914EB299171424730070051D /* STMario.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB298171424730070051D /* STMario.m */; };
+		9153D588173E34A900A1DAD0 /* STBonusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153D587173E34A900A1DAD0 /* STBonusItem.m */; };
+		9153D58C173E34C200A1DAD0 /* STStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153D58B173E34C200A1DAD0 /* STStar.m */; };
+		9153D590173E34D100A1DAD0 /* Star.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9153D58E173E34D100A1DAD0 /* Star.plist */; };
+		9153D591173E34D100A1DAD0 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9153D58F173E34D100A1DAD0 /* Star.png */; };
 		91584C3B1730029100AD276C /* STCollisionDetectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */; };
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917737EF16C19BB7001C1AAD /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 917737EE16C19BB7001C1AAD /* block.png */; };
@@ -312,6 +316,12 @@
 		914EB293171414A70070051D /* world_0_level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_1.tmx; path = Resources/maps/world_0_level_1.tmx; sourceTree = SOURCE_ROOT; };
 		914EB297171424730070051D /* STMario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMario.h; sourceTree = "<group>"; };
 		914EB298171424730070051D /* STMario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMario.m; sourceTree = "<group>"; };
+		9153D586173E34A900A1DAD0 /* STBonusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBonusItem.h; sourceTree = "<group>"; };
+		9153D587173E34A900A1DAD0 /* STBonusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBonusItem.m; sourceTree = "<group>"; };
+		9153D58A173E34C200A1DAD0 /* STStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStar.h; sourceTree = "<group>"; };
+		9153D58B173E34C200A1DAD0 /* STStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStar.m; sourceTree = "<group>"; };
+		9153D58E173E34D100A1DAD0 /* Star.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Star.plist; sourceTree = "<group>"; };
+		9153D58F173E34D100A1DAD0 /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
 		91584C391730029100AD276C /* STCollisionDetectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollisionDetectionHelper.h; sourceTree = "<group>"; };
 		91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollisionDetectionHelper.m; sourceTree = "<group>"; };
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
@@ -1019,6 +1029,35 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		9153D585173E347900A1DAD0 /* Bonus Item */ = {
+			isa = PBXGroup;
+			children = (
+				9153D586173E34A900A1DAD0 /* STBonusItem.h */,
+				9153D587173E34A900A1DAD0 /* STBonusItem.m */,
+				9153D589173E34AF00A1DAD0 /* Star */,
+			);
+			name = "Bonus Item";
+			sourceTree = "<group>";
+		};
+		9153D589173E34AF00A1DAD0 /* Star */ = {
+			isa = PBXGroup;
+			children = (
+				9153D58A173E34C200A1DAD0 /* STStar.h */,
+				9153D58B173E34C200A1DAD0 /* STStar.m */,
+				9153D58D173E34C400A1DAD0 /* Resources */,
+			);
+			name = Star;
+			sourceTree = "<group>";
+		};
+		9153D58D173E34C400A1DAD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9153D58E173E34D100A1DAD0 /* Star.plist */,
+				9153D58F173E34D100A1DAD0 /* Star.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		91584C381730025100AD276C /* Collision Detection */ = {
 			isa = PBXGroup;
 			children = (
@@ -1165,6 +1204,7 @@
 				91F2477817391D4C00DD1E9B /* Coin */,
 				917E6F74173D988300777A40 /* Mushroom */,
 				912C9174173E2D5800903C31 /* Flower */,
+				9153D585173E347900A1DAD0 /* Bonus Item */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -2014,6 +2054,8 @@
 				917E6F7C173D989E00777A40 /* Mushroom.png in Resources */,
 				91DDF3BC173E30C80078D7F8 /* Flower.plist in Resources */,
 				91DDF3BD173E30C80078D7F8 /* Flower.png in Resources */,
+				9153D590173E34D100A1DAD0 /* Star.plist in Resources */,
+				9153D591173E34D100A1DAD0 /* Star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2077,6 +2119,8 @@
 				D4A1AF13173D10D200E743E8 /* STInformationLayer.m in Sources */,
 				917E6F77173D989200777A40 /* STMushroom.m in Sources */,
 				91DDF3C0173E30D90078D7F8 /* STFlower.m in Sources */,
+				9153D588173E34A900A1DAD0 /* STBonusItem.m in Sources */,
+				9153D58C173E34C200A1DAD0 /* STStar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -29,9 +29,6 @@
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:spriteCacheName];
     }
-    // TODO: remove NSLog?
-    NSLog(@"test");
-    NSLog(@"%@", [[STWorldInfoReader sharedInstance] namingConvention]);
     
     self = [super initWithTiledMap:
             [NSString stringWithFormat:[[STWorldInfoReader sharedInstance] namingConvention],
@@ -249,7 +246,7 @@
     CGFloat mapX = self.map.position.x * -1;
     CGFloat deltaX = (playerX - mapX) - (cameraWidth - kMaxCameraEdge);
     
-    // Prevent the player from going to the left (The screen can only move to the right).
+    // Moves the camera with the player
     if (deltaX > 0) {
         self.map.position = ccpAdd(self.map.position, ccp(-deltaX, 0));
     }
