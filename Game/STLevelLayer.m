@@ -282,10 +282,10 @@
     [[STSoundManager sharedInstance] stopBackgroundMusic];
     
     NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:_worldID levelID:_levelID];
-    unsigned short time = [[level valueForKey:kLevelTimeKey] shortValue];
+    int time = [[level valueForKey:kLevelTimeKey] integerValue];
     
     STLayer *layer = [STLevelResultLayer layerWithWorldID:_worldID levelID:_levelID
-                                                     time:[NSDate dateWithTimeIntervalSinceReferenceDate:time]
+                                                     time:time
                                                     score:[[self player] score]
                                                   success:NO];
     [[CCDirector sharedDirector] replaceScene: [layer scene]

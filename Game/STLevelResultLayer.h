@@ -32,14 +32,14 @@
  * A boolean indicates whether the user won or failed.
  * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
- * @param time - the time needed for the user to complete the level or die
+ * @param time - the time (in seconds) needed for the user to complete the level or die
  * @param score - the users score made inside this level
  * @param success - true if the user successfully finished this level, false if not
  * @return id - The initialised object
  */
 -(id)initWithWorldID:(unsigned short)worldID
              levelID:(unsigned short)levelID
-                time:(NSDate *)time
+                time:(int) time
                score:(int)score
              success:(BOOL)success;
 
@@ -50,14 +50,14 @@
  * A boolean indicates whether the user won or failed.
  * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
- * @param time - the time needed for the user to complete the level or die
+ * @param time - the time (in seconds) needed for the user to complete the level or die
  * @param score - the users score made inside this level
  * @param success - true if the user successfully finished this level, false if not
  * @return id - The initialised object
  */
 +(id)layerWithWorldID:(unsigned short)worldID
              levelID:(unsigned short)levelID
-                time:(NSDate *)time
+                time:(int) time
                score:(int)score
              success:(BOOL)success;
 
@@ -66,7 +66,7 @@
  */
 - (void)setUpWithWorldID:(unsigned short)worldID
                  levelID:(unsigned short)levelID
-                    time:(NSDate *)time
+                    time:(int) time
                    score:(int)score
                  success:(BOOL)success;
 

@@ -17,8 +17,8 @@
 #define kJoystickColor ccc4(64, 64, 64, 128)
 #define kJoystickBaseRadius 64
 #define kJoystickRadius 32
-#define kJoystickPosition ccp(64, 64)
-#define kJoystickRect CGRectMake(0, 0, 128, 128)
+#define kJoystickPosition ccp(84, 84)// TODO: Remove
+#define kJoystickRect CGRectMake(20, 20, 148, 148) // TODO: remove
 
 @protocol STControlsDelegate <NSObject>
 

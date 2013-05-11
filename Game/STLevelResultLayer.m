@@ -17,7 +17,7 @@
 #pragma mark Initialise
 -(id)initWithWorldID:(unsigned short)worldID
              levelID:(unsigned short)levelID
-                time:(NSDate *)time
+                time:(int)time
                score:(int)score
              success:(BOOL)success {
     
@@ -30,7 +30,7 @@
 
 +(id)layerWithWorldID:(unsigned short)worldID
               levelID:(unsigned short)levelID
-                 time:(NSDate *)time
+                 time:(int)time
                 score:(int)score
               success:(BOOL)success {
     return [[self alloc] initWithWorldID:worldID levelID:levelID time:time score:score success:success];
@@ -38,7 +38,7 @@
 
 - (void)setUpWithWorldID:(unsigned short)worldID
                  levelID:(unsigned short)levelID
-                    time:(NSDate *)time
+                    time:(int)time
                    score:(int)score
                  success:(BOOL)success {
     self.worldID = worldID;
@@ -49,17 +49,12 @@
         title = @"Congratulations!";
     }
     
-    time = [NSDate dateWithTimeIntervalSinceNow:-1000];
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [calendar components:NSMinuteCalendarUnit | NSSecondCalendarUnit
-                                               fromDate:time
-                                                 toDate:[NSDate date]
-                                                options:0];
+    int m = (time / 60) % 60;
+    int s = time % 60;
     
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"hh:mm"];
+    NSString *formattedTime = [NSString stringWithFormat:@"%02u:%02u", m, s];
     
     // Scene Title
     CCLabelTTF *titleLabel = [CCLabelTTF labelWithString:title fontName:kTitleFontName fontSize:kTitleFontSize];
@@ -70,7 +65,7 @@
     // Menu
     CCMenu *menu = [CCMenu menuWithItems:
                     [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Score: %i", score]],
-                    [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Time: %ld:%ld", (long)components.minute, (long)components.second]],
+                    [CCMenuItemFont itemWithString:[NSString stringWithFormat:@"Time: %@", formattedTime]],
                     nil];
     
     // Level Overview Button

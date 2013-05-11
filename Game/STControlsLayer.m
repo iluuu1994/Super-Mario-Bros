@@ -34,7 +34,7 @@
     
     // Joystick
     SneakyJoystickSkinnedBase *leftJoy = [[SneakyJoystickSkinnedBase alloc] init];
-    leftJoy.position = kJoystickPosition;
+    leftJoy.position = ccp(kPadding + kJoystickBaseRadius, winSize.height - kJoystickBaseRadius - kPadding);
     leftJoy.backgroundSprite = [ColoredCircleSprite circleWithColor:kJoystickBaseColor radius:kJoystickBaseRadius];
     leftJoy.thumbSprite = [ColoredCircleSprite circleWithColor:kJoystickColor radius:kJoystickRadius];
     leftJoy.joystick = [[SneakyJoystick alloc] initWithRect:kJoystickRect];
@@ -47,8 +47,11 @@
     pauseButton.adjustBackgroundImage = NO;
     pauseButton.scale = 0.8;
     [pauseButton addTarget:delegate action:@selector(pause:) forControlEvents:CCControlEventTouchUpInside];
+    // TODO: remove this old positioning code
+//    pauseButton.position = ccp(kPadding + pauseButton.contentSize.width / 2,
+//                               winSize.height - pauseButton.contentSize.height / 2 - kPadding);
     pauseButton.position = ccp(kPadding + pauseButton.contentSize.width / 2,
-                               winSize.height - pauseButton.contentSize.height / 2 - kPadding);
+                               kPadding + pauseButton.contentSize.height / 2);
     [self addChild:pauseButton];
     
     // A Button
