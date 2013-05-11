@@ -16,7 +16,7 @@
 #import "STMario.h"
 
 #define kDefaultGravity ccp(0, -9.81)
-#define kMaxCameraEdge 300
+#define kMaxCameraEdge 200
 
 @implementation STLevelLayer
 {}
@@ -246,12 +246,12 @@
     CGFloat mapX = self.map.position.x * -1 / self.map.scale;
     
     // Moves the camera with the player
-    if (mapX - playerX - kMaxCameraEdge < 0) {
+    if (mapX - playerX + kMaxCameraEdge < 0) {
         float newMapX = (-playerX + kMaxCameraEdge) * self.map.scale;
         if (newMapX > 0) {
             newMapX = 0;
-        } else if (newMapX < self.map.mapSize.width * self.map.scale) {
-            newMapX = self.map.mapSize.width * self.map.scale;
+        } else if (self.map.boundingBox.size.width + newMapX - cameraWidth < 0) {
+            newMapX = -self.map.boundingBox.size.width + cameraWidth;
         }
         
         self.map.position = ccp(newMapX, self.map.position.y);;
