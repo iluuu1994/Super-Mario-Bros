@@ -49,7 +49,7 @@
 
 - (void)setUp {
     [super setUp];
-    [[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
+    //[[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
 }
 
 - (void)tearDown {
@@ -243,12 +243,18 @@
 - (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point {
     CGFloat cameraWidth = [[CCDirector sharedDirector] winSize].width;
     CGFloat playerX = player.position.x;
-    CGFloat mapX = self.map.position.x * -1;
-    CGFloat deltaX = (playerX - mapX) - (cameraWidth - kMaxCameraEdge);
+    CGFloat mapX = self.map.position.x * -1 / self.map.scale;
     
     // Moves the camera with the player
-    if (deltaX > 0) {
-        self.map.position = ccpAdd(self.map.position, ccp(-deltaX, 0));
+    if (mapX - playerX - kMaxCameraEdge < 0) {
+        float newMapX = (-playerX + kMaxCameraEdge) * self.map.scale;
+        if (newMapX > 0) {
+            newMapX = 0;
+        } else if (newMapX < self.map.mapSize.width * self.map.scale) {
+            newMapX = self.map.mapSize.width * self.map.scale;
+        }
+        
+        self.map.position = ccp(newMapX, self.map.position.y);;
     }
 }
 
