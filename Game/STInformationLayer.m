@@ -19,6 +19,7 @@
     if (self) {
         [self setDelegate:delegate];
         [self setTime:time];
+        _player = player;
         [self setUpWithDelegate:delegate player:player time:time];
         [self schedule: @selector(timer:) interval:1];
     }
@@ -48,9 +49,7 @@
     NSString *lifes = [NSString stringWithFormat:@"Lifes\n%i", [self.player lifes]];
     NSString *coins = [NSString stringWithFormat:@"Coins\n%i", [self.player coins]];
     NSString *time = [NSString stringWithFormat:@"Time\n%i", [self time]];
-    
-    NSLog(@"score: %i", [self.player score]);
-    
+        
     // Coins
     CCLabelTTF *coinsLabel = [CCLabelTTF labelWithString:coins fontName:kTextFontName fontSize:kTextFontSize];
     coinsLabel.position = ccp(winSize.width / 2, winSize.height - coinsLabel.contentSize.height / 2 - kPadding);

@@ -40,8 +40,7 @@
         [[STSoundManager sharedInstance] playEffect:kSoundStomp];
         
         // Add a score
-        [player setScore:[player score] + kScore];
-        NSLog(@"score: %i", [player score]);
+        player.score += kScore;
         
         // Show the die animation and kill this GameObject
         [self runAnimationWithName:@"die" callbackBlock:^void {

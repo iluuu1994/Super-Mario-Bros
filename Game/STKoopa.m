@@ -7,8 +7,10 @@
 //
 
 #import "STKoopa.h"
+#import "STPlayer.h"
 
 #define kSpeed 10
+#define kScore 100
 
 @implementation STKoopa
 
@@ -27,12 +29,17 @@
     } else if (edge == STRectEdgeMaxX && self.velocity.x > 0) {
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
-    if(edge == STRectEdgeMaxY) {
+    if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        STPlayer *player = (STPlayer *) gameObject;
+
         // Make the other GameObject jump after jumping on this
         gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
         
         // Play a sound
         [[STSoundManager sharedInstance] playEffect:kSoundStomp];
+        
+        // Add a score
+        player.score += kScore;
         
         // Show the die animation and kill this GameObject
         [self runAnimationWithName:@"die" callbackBlock:^void {
