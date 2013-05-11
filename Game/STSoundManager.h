@@ -19,6 +19,11 @@
 #define kSoundStageClear @"stage_clear.mp3" // TODO: use
 #define kSoundTimeWarning @"time_warning.mp3" // TODO: use or delete
 #define kSoundTheme @"theme.mp3"
+#define kSoundOneUp @"1-up.mp3" // TODO: use or delete
+#define kSoundFireball @"fireball.mp3"
+#define kSoundFlaghole @"flagpole.mp3"
+#define kSoundPowerUp @"powerup.mp3"
+#define kSoundPowerUpAppears @"powerup-appears.mp3"
 
 /**
  * Utility class for doing everything about sound. Provides methods to play,
