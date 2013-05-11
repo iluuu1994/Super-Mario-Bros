@@ -6,16 +6,23 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "STChooseWorldLayer.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
+#import "STChooseWorldLayer.h"
+#import "STChooseLevelLayer.h"
 #import "STWorldsConstants.h"
+#import "STWorldInfoReader.h"
+#import "STStartLayer.h"
+#import "STLevelLayer.h"
+#import "CCScrollLayer.h"
+#import "STLayoutConstants.h"
 
 @implementation STChooseWorldLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 - (void)setUp {
     [super setUp];
     
@@ -42,7 +49,7 @@
         [worldItem setUserObject:world];
         
         // World Title
-        CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[world valueForKey:kWorldNameKey] fontName:@"Helvetica" fontSize:20];
+        CCLabelTTF *tlabel = [CCLabelTTF labelWithString:[world valueForKey:kWorldNameKey] fontName:kTextFontName fontSize:20];
         [tlabel setColor:kTextColor];
         CCMenuItemLabel *title = [CCMenuItemLabel itemWithLabel:tlabel target:self selector:@selector(world:)];
         [title setUserObject:world];
@@ -79,6 +86,13 @@
 
 #pragma mark -
 #pragma mark Select World
+
+/**
+ * When the user selected a world this method is called. Displays an overview 
+ * of all levels within the selected world. 
+ * @param sender - the sender of this message. The STChooseWorldLayer.
+ * @return an IBAction.
+ */
 - (IBAction)world:(id)sender {
     NSDictionary *world = [sender userObject];
     NSNumber *worldID = [world valueForKey:kWorldIDKey];
@@ -95,6 +109,12 @@
 
 #pragma mark -
 #pragma mark Switch Scene
+
+/**
+ * When the user wants to go back to the main-menu this method is called.
+ * @param sender - the sender of this message. The STChooseWorldLayer.
+ * @return an IBAction.
+ */
 - (IBAction)menu:(id)sender {
     [[CCDirector sharedDirector] replaceScene:[STStartLayer scene]
                           withTransitionClass:[CCTransitionFade class]

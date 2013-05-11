@@ -10,13 +10,22 @@
 #import "STSettingsLayer.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
+#import "STConfigurationManager.h"
 #import "STStartLayer.h"
+#import "STLayoutConstants.h"
+
+// Switch Images
+#define kSwitchMaskImg @"switch-mask.png"
+#define kSwitchOnImg @"switch-on.png"
+#define kSwitchOffImg @"switch-off.png"
+#define kSwitchThumbImg @"switch-thumb.png"
 
 @implementation STSettingsLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 - (void)setUp {
     [super setUp];
     
@@ -76,6 +85,12 @@
 
 #pragma mark -
 #pragma mark Switch Scene
+
+/**
+ * Called when the user pressed the menu-button to return to the main menu.
+ * @param sender - the sender of this message. The STSettingsLayer.
+ * @return an IBAction.
+ */
 - (IBAction)menu:(id)sender {
     [[CCDirector sharedDirector] replaceScene:[STStartLayer scene]
                           withTransitionClass:[CCTransitionFade class]
@@ -84,10 +99,21 @@
 
 #pragma mark -
 #pragma mark Switch Settings
+
+/**
+ * When the user wants to switch on/off the music this message is called.
+ * @param sender - the sender of this message. The STSettingsLayer.
+ * @return an IBAction.
+ */
 - (IBAction)musicOnOff:(id)sender {
     [[STConfigurationManager sharedInstance] setMusicOn:[(CCControlSwitch *)sender isOn]];
 }
 
+/**
+ * When the user wants to switch on/off the tone this message is called.
+ * @param sender - the sender of this message. The STSettingsLayer.
+ * @return an IBAction.
+ */
 - (IBAction)toneOnOff:(id)sender {
     [[STConfigurationManager sharedInstance] setToneOn:[(CCControlSwitch *)sender isOn]];
 }

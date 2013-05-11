@@ -9,14 +9,30 @@
 #import "STPauseLayer.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
-#import "STLevelLayer.h"
+#import "STGameFlowManager.h"
+#import "STWorldInfoReader.h"
+#import "STWorldsConstants.h"
+#import "STLayoutConstants.h"
 #import "STChooseLevelLayer.h"
+#import "STLevelLayer.h"
+
+// Button images
+#define kRepeatButtonImage @"repeat.png"
+#define kLevelsButtonImage @"levels.png"
+#define kPlayButtonImage @"play.png"
+
+// Format of the displayed world and level number
+#define kWorldLevelNumberFormat @"%02u-%02u"
+
+// Color of the background layer
+#define kPausePanelColor ccc4(128, 128, 128, 128)
 
 @implementation STPauseLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 -(id)initWithDelegate:(id <STPauseDelegate>)delegate
               worldID:(unsigned short)worldID
               levelID:(unsigned short)levelID {
@@ -44,7 +60,7 @@
     // Level Information
     NSDictionary *world = [[STWorldInfoReader sharedInstance] worldWithID:worldID];
     NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
-    NSString *levelInfo = [NSString stringWithFormat:@"%02u-%02u",
+    NSString *levelInfo = [NSString stringWithFormat:kWorldLevelNumberFormat,
                            [[world valueForKey:kWorldShortNameKey] integerValue],
                            [[level valueForKey:kLevelShortNameKey] integerValue]];
     CCLabelTTF *levelLabel = [CCLabelTTF labelWithString:levelInfo fontName:kButtonFontName fontSize:kButtonFontSize];
@@ -55,7 +71,7 @@
     
     // Play Button
     CCControlButton *continueButton = [CCControlButton buttonWithBackgroundSprite:
-                                    [CCScale9Sprite spriteWithFile:@"play.png"]];
+                                    [CCScale9Sprite spriteWithFile:kPlayButtonImage]];
     [continueButton setAdjustBackgroundImage:NO];
     continueButton.scale = 0.8;
     [continueButton addTarget:delegate action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
@@ -66,7 +82,7 @@
     
     // Retry Button
     CCControlButton *retryButton = [CCControlButton buttonWithBackgroundSprite:
-                                       [CCScale9Sprite spriteWithFile:@"repeat.png"]];
+                                       [CCScale9Sprite spriteWithFile:kRepeatButtonImage]];
     [retryButton setAdjustBackgroundImage:NO];
     retryButton.scale = 0.8;
     [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
@@ -76,7 +92,7 @@
     
     // Level Overview Button
     CCControlButton *levelsButton = [CCControlButton buttonWithBackgroundSprite:
-                                    [CCScale9Sprite spriteWithFile:@"levels.png"]];
+                                    [CCScale9Sprite spriteWithFile:kLevelsButtonImage]];
     [levelsButton setAdjustBackgroundImage:NO];
     levelsButton.scale = 0.8;
     [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
@@ -91,6 +107,12 @@
 
 #pragma mark -
 #pragma mark Retry Level
+
+/**
+ * Retry the current level.
+ * @param sender - the sender of this message. The STPauseLayer.
+ * @return an IBAction.
+ */
 - (IBAction)retryLevel:(id)sender {
     [[STGameFlowManager sharedInstance] resume];
     STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:self.levelID] scene];
@@ -101,6 +123,12 @@
 
 #pragma mark -
 #pragma mark Level Overview
+
+/**
+ * Switch to the level overview.
+ * @param sender - the sender of this message. The STPauseLayer.
+ * @return an IBAction.
+ */
 - (IBAction)levelOverview:(id)sender {
     [[STGameFlowManager sharedInstance] resumeWithMusicOn:NO];
     [[CCDirector sharedDirector] replaceScene: [[STChooseLevelLayer layerWithWorldID:self.worldID] scene]

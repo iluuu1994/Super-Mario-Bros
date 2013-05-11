@@ -6,17 +6,13 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
 #import "STLayer.h"
-#import "STConfigurationManager.h"
-#import "STLayoutConstants.h"
 
-#define kSwitchMaskImg @"switch-mask.png"
-#define kSwitchOnImg @"switch-on.png"
-#define kSwitchOffImg @"switch-off.png"
-#define kSwitchThumbImg @"switch-thumb.png"
-
+/**
+ * Layer containing all configureable settings. Provides input elements to
+ * configure the behaviour and state of the game. The new settings aren't cached
+ * and saved directly. 
+ */
 @interface STSettingsLayer : STLayer {
     
 }

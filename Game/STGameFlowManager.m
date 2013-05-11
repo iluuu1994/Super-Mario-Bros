@@ -7,17 +7,20 @@
 //
 
 #import "STGameFlowManager.h"
+#import "CCDirector+Transitions.h"
+#import "STConfigurationManager.h"
+#import "STSoundManager.h"
 
 @implementation STGameFlowManager
 {}
 
 #pragma mark -
-#pragma mark Init
+#pragma mark Initialise
 
 ITSingletonImplementation
 
 #pragma mark -
-#pragma mark Gameflow Manipulation Methods
+#pragma mark Methods
 
 - (void)pause {
     // Pause the Game

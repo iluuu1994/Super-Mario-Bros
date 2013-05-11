@@ -8,12 +8,17 @@
 
 #import "STControlsLayer.h"
 #import "CCControlExtension.h"
+#import "SneakyJoystickSkinnedBase.h"
+#import "STLayoutConstants.h"
+#import "ColoredCircleSprite.h"
+#import "ColoredSquareSprite.h"
 
 @implementation STControlsLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 - (id)initWithDelegate:(id <STControlsDelegate>)delegate {
     self = [super init];
     if (self) {
@@ -43,37 +48,28 @@
 
     // Pause Button
     CCControlButton *pauseButton = [CCControlButton buttonWithBackgroundSprite:
-                                    [CCScale9Sprite spriteWithFile:@"pause.png"]];
+                                    [CCScale9Sprite spriteWithFile:kPauseButtonImage]];
     pauseButton.adjustBackgroundImage = NO;
     pauseButton.scale = 0.8;
     [pauseButton addTarget:delegate action:@selector(pause:) forControlEvents:CCControlEventTouchUpInside];
-    // TODO: remove this old positioning code
-//    pauseButton.position = ccp(kPadding + pauseButton.contentSize.width / 2,
-//                               winSize.height - pauseButton.contentSize.height / 2 - kPadding);
     pauseButton.position = ccp(kPadding + pauseButton.contentSize.width / 2,
                                kPadding + pauseButton.contentSize.height / 2);
     [self addChild:pauseButton];
     
     // A Button
-    CCControlButton *aButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"a.png"]];
+    CCControlButton *aButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kAButtonImage]];
     [aButton setAdjustBackgroundImage:NO];
     aButton.scale = 0.8;
     [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchUpInside];
-    // TODO: remove this old positioning code
-//    aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - kPadding,
-//                           aButton.contentSize.height / 2 + kPadding);
     aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - kPadding,
                            winSize.height - aButton.contentSize.height / 2 - kPadding);
     [self addChild:aButton];
 
     // B Button
-    CCControlButton *bButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:@"b.png"]];
+    CCControlButton *bButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kBButtonImage]];
     [bButton setAdjustBackgroundImage:NO];
     bButton.scale = 0.8;
     [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
-    // TODO: remove this old positioning code
-//    bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * kPadding,
-//                           bButton.contentSize.height / 2 + kPadding);
     bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * kPadding,
                            winSize.height - bButton.contentSize.height / 2 - kPadding);
     [self addChild:bButton];
@@ -81,6 +77,11 @@
 
 #pragma mark -
 #pragma mark Update
+
+/**
+ * Determines whether the update method of this object should be called regularly.
+ * @return TRUE if this objects update method should be called. NO if not.
+ */
 - (BOOL)needsUpdate {
     return YES;
 }

@@ -9,12 +9,20 @@
 #import "STLevelResultLayer.h"
 #import "CCDirector+Transitions.h"
 #import "CCControlExtension.h"
+#import "CCControlButton.h"
+#import "STLayoutConstants.h"
+#import "STWorldsConstants.h"
+#import "STWorldInfoReader.h"
+#import "STChooseWorldLayer.h"
+#import "STChooseLevelLayer.h"
+#import "STLevelLayer.h"
 
 @implementation STLevelResultLayer
 {}
 
 #pragma mark -
 #pragma mark Initialise
+
 -(id)initWithWorldID:(unsigned short)worldID
              levelID:(unsigned short)levelID
                 time:(int)time
@@ -116,6 +124,12 @@
 
 #pragma mark -
 #pragma mark Retry Level
+
+/**
+ * When the user wants to retry the level this message is called. Restarts the level.
+ * @param sender - the sender of this message. The STLevelResultLayer.
+ * @return an IBAction.
+ */
 - (IBAction)retryLevel:(id)sender {    
     STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:self.levelID] scene];
     [[CCDirector sharedDirector] replaceScene: scene
@@ -125,6 +139,13 @@
 
 #pragma mark -
 #pragma mark Level Overview
+
+/**
+ * When the user wants to go to the levels overview this message is called.
+ * Switches to the overview of all levels.
+ * @param sender - the sender of this message. The STLevelResultLayer.
+ * @return an IBAction.
+ */
 - (IBAction)levelOverview:(id)sender {
     [[CCDirector sharedDirector] replaceScene: [[STChooseLevelLayer layerWithWorldID:self.worldID] scene]
                           withTransitionClass:[CCTransitionFade class]
@@ -133,6 +154,12 @@
 
 #pragma mark -
 #pragma mark Next Level
+
+/**
+ * When the user wants to start the next level this message is called. Starts the next level.
+ * @param sender - the sender of this message. The STLevelResultLayer.
+ * @return an IBAction.
+ */
 - (IBAction)nextLevel:(id)sender {
     // TODO: next level
     NSDictionary *nextLevel = [[STWorldInfoReader sharedInstance]

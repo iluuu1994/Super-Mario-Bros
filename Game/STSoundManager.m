@@ -11,7 +11,13 @@
 
 @implementation STSoundManager
 
+#pragma mark -
+#pragma mark Initialise
+
 ITSingletonImplementation
+
+#pragma mark -
+#pragma mark Methods
 
 - (void)playEffect:(NSString *)effectFile {
     [[SimpleAudioEngine sharedEngine] playEffect:effectFile];

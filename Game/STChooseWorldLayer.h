@@ -6,16 +6,13 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
-#import "STScene.h"
 #import "STLayer.h"
-#import "STStartLayer.h"
-#import "STChooseLevelLayer.h"
-#import "CCScrollLayer.h"
-#import "STLayoutConstants.h"
-#import "STWorldInfoReader.h"
 
+/**
+ * A Layer which displays all available wolds (collections of levels).
+ * The user can navigate through that list of levels and select one that
+ * is not locked.
+ */
 @interface STChooseWorldLayer : STLayer {
     
 }

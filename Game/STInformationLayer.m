@@ -7,11 +7,14 @@
 //
 
 #import "STInformationLayer.h"
+#import "STLayoutConstants.h"
 
 @implementation STInformationLayer
+{}
 
 #pragma mark -
 #pragma mark Initialise
+
 -(id)initWithDelegate:(id <STInformationDelegate>)delegate
                player:(STPlayer *)player
                  time:(unsigned short)time {
@@ -39,12 +42,16 @@
     [self updateInformation];
 }
 
+#pragma mark -
+#pragma mark Update Layer
+
 - (void)updateInformation {
+    // Remove all old labels
     [self removeAllChildren];
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
-    // Retrieve Player Information
+    // Retrieve the Player Information
     NSString *score = [NSString stringWithFormat:@"Score\n%i", [self.player score]];
     NSString *coins = [NSString stringWithFormat:@"Coins\n%i", [self.player coins]];
     NSString *time = [NSString stringWithFormat:@"Time\n%i", [self time]];
@@ -72,15 +79,25 @@
     [self addChild:timeLabel];
 }
 
+#pragma mark -
+#pragma mark Count down
+
+/**
+ * Called every second to decrease the current amount of seconds (count down).
+ * @param dt - the time elapsed since the last call of this method. 
+ */
 -(void) timer: (ccTime) dt
 {
-    [self setTime:[self time] - 1];
+    // Count down
+    [self setTime:[self time] - roundf(dt)];
     
+    // Update the displayed values
     [self updateInformation];
     
-    // Send a message to the delegate if the time is over
+    // Send a message to the delegate if the time is over and stop counting down.
     if([self time] <= 0) {
         [[self delegate] timeElapsed:self];
+        [self unschedule:@selector(timer:)];
     }
 }
 

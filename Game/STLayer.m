@@ -8,11 +8,11 @@
 
 #import "STLayer.h"
 
-
 @implementation STLayer
 
 #pragma mark -
 #pragma mark Scene
+
 + (STScene *)scene {
     STScene *scene = [[self sceneClass] node];
     
@@ -21,6 +21,7 @@
     
     return scene;
 }
+
 - (STScene *)scene {
     STScene *scene = [[[self class] sceneClass] node];
     [scene addChild:self];
@@ -30,12 +31,14 @@
 
 #pragma mark -
 #pragma mark Scene Class
+
 + (Class)sceneClass {
     return [STScene class];
 }
 
 #pragma mark -
 #pragma mark Initialise
+
 - (id)init
 {
     self = [super init];
@@ -50,9 +53,11 @@
 
 #pragma mark -
 #pragma mark Update
+
 - (BOOL)needsUpdate {
     return NO;
 }
+
 - (void)onEnter {
     [super onEnter];
     
@@ -60,6 +65,7 @@
         [self scheduleUpdateWithPriority:1];
     }
 }
+
 - (void)onExit {
     [super onExit];
     
@@ -76,9 +82,11 @@
 
 #pragma mark -
 #pragma mark Dealloc
+
 - (void)dealloc {
     [self tearDown];
 }
+
 - (void)tearDown {
     
 }

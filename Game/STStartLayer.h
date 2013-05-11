@@ -6,13 +6,12 @@
 //  Copyright 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "cocos2d.h"
-#import "STScene.h"
 #import "STLayer.h"
-#import "STChooseWorldLayer.h"
-#import "STLayoutConstants.h"
 
+/**
+ * A Layer which is displayed at the start of the game. Operates as 
+ * a connector between various other layers. Provides a main-menu.
+ */
 @interface STStartLayer : STLayer {
     
 }
