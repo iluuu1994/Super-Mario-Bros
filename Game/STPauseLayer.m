@@ -44,9 +44,9 @@
     // Level Information
     NSDictionary *world = [[STWorldInfoReader sharedInstance] worldWithID:worldID];
     NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
-    NSString *levelInfo = [NSString stringWithFormat:@"%@-%@",
-                           [world valueForKey:kWorldShortNameKey],
-                           [level valueForKey:kLevelShortNameKey]];
+    NSString *levelInfo = [NSString stringWithFormat:@"%02u-%02u",
+                           [[world valueForKey:kWorldShortNameKey] integerValue],
+                           [[level valueForKey:kLevelShortNameKey] integerValue]];
     CCLabelTTF *levelLabel = [CCLabelTTF labelWithString:levelInfo fontName:kButtonFontName fontSize:kButtonFontSize];
     [levelLabel setColor:kTextColor];
     levelLabel.position = ccp(kPadding + levelLabel.contentSize.width / 2,
@@ -59,7 +59,7 @@
     [continueButton setAdjustBackgroundImage:NO];
     continueButton.scale = 0.8;
     [continueButton addTarget:delegate action:@selector(play:) forControlEvents:CCControlEventTouchUpInside];
-    continueButton.position = ccp(kPadding + continueButton.contentSize.width / 2,
+    continueButton.position = ccp(levelLabel.position.x,
                                   winSize.height - continueButton.contentSize.height / 2
                                   - levelLabel.contentSize.height - 2 * kPadding);
     [self addChild:continueButton];
@@ -70,7 +70,7 @@
     [retryButton setAdjustBackgroundImage:NO];
     retryButton.scale = 0.8;
     [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
-    retryButton.position = ccp(kPadding + retryButton.contentSize.width / 2,
+    retryButton.position = ccp(levelLabel.position.x,
                                kPadding + retryButton.contentSize.height / 2);
     [self addChild:retryButton];
     
@@ -80,12 +80,12 @@
     [levelsButton setAdjustBackgroundImage:NO];
     levelsButton.scale = 0.8;
     [levelsButton addTarget:self action:@selector(levelOverview:) forControlEvents:CCControlEventTouchUpInside];
-    levelsButton.position = ccp(kPadding + levelsButton.contentSize.width / 2,
+    levelsButton.position = ccp(levelLabel.position.x,
                                 kPadding + levelsButton.contentSize.height / 2 + retryButton.contentSize.height + kPadding);
     [self addChild:levelsButton];
     
     [self addChild:[CCLayerColor layerWithColor:kPausePanelColor
-                                          width:levelsButton.contentSize.width + 2 * kPadding
+                                          width:levelLabel.contentSize.width + 2 * kPadding
                                          height:[[CCDirector sharedDirector] winSize].height] z:-5];
 }
 
