@@ -50,19 +50,23 @@
 }
 
 - (void)setProperties:(NSDictionary *)properties forNode:(CCNode *)node {
-    
-    // If the node supports key value coding
-    if([node respondsToSelector:@selector(setObject:forKey:)]) {
-        for(id key in properties) {
+    // Loop though the keys and add them to the object
+    for(id key in properties) {
+        if ([node respondsToSelector:NSSelectorFromString(key)]) {
+            id value;
+            NSString *stringValue = [properties objectForKey:key];
             
-            // Exclude special keys
-            if(![key isEqualToString:kTypeKey]) {
-                
-                // Set the value at the specified key
-                [node performSelector:@selector(setObject:forKey:)
-                           withObject:[properties objectForKey:key]
-                           withObject:key];
+            NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+            [f setLocale:[[NSLocale alloc] initWithLocaleIdentifier: @"en_US"]];
+            NSNumber *numberValue = [f numberFromString:stringValue];
+            if (numberValue) {
+                value = numberValue;
+            } else {
+                value = stringValue;
             }
+            
+            // Set the value at the specified key
+            [node setValue:value forKey:key];
         }
     }
 }

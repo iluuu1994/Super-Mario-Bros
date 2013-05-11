@@ -16,19 +16,36 @@
 - (id)init
 {
     if (self = [super init]) {
-        [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:@"block"]];
+        [self displayFrameWithName:@"block"];
     }
     return self;
 }
 
 - (void)setAppearanceType:(STAppearanceType)appearanceType {
-    NSLog(@"test");
     [super setAppearanceType:appearanceType];
+    [self displayFrameWithName:@"block"];
+}
+
+- (void)setBlockType:(STBlockType)blockType {
+    _blockType = blockType;
     [self displayFrameWithName:@"block"];
 }
 
 - (STGameObjectBodyType)bodyType {
     return STGameObjectBodyTypeStatic;
+}
+
+- (NSString *)appearanceNameForString:(NSString *)name {
+    NSString *prefix = @"";
+    
+    if (self.blockType == STBlockTypeDestroyable) {
+        prefix = @"destroyable-";
+    } else if (self.blockType == STBlockTypeAlternate) {
+        prefix = @"alternate-";
+    }
+    
+    NSLog(@"%@", [super appearanceNameForString:[prefix stringByAppendingString:name]]);
+    return [super appearanceNameForString:[prefix stringByAppendingString:name]];
 }
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject

@@ -5,14 +5,15 @@
   <tile id="0">
    <properties>
     <property name="appearanceType" value="0"/>
-    <property name="isDestroyable" value="NO"/>
+    <property name="isDestroyable" value="0"/>
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
   <tile id="5">
    <properties>
     <property name="appearanceType" value="0"/>
-    <property name="isDestroyable" value="YES"/>
+    <property name="blockType" value="1"/>
+    <property name="isDestroyable" value="1"/>
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
@@ -44,7 +45,7 @@
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WXQqAIBBGUX1pS26qHbT5XkXUHPNn1HtgiGC0z4kgYwAAAAAAAHRwiUr1jJTLk7sHAABrc4mrZn+y5ta0OHvpHjP+90r52bRm7MXODgAAUO0W9D7CvWv6pWt6G5nJf5bGWXxZMfO1edWe86QZtZ7dTtWLjZSkt0WF77g0T+z7OE04u1O9+lMMgsArAAA=
+   H4sIAAAAAAAAA+3WXQqAIBBGUXtxS26qHbT5XkXUHPNn1HtgiGC0z4kgYwAAAAAAAHRwiUr1jJTLk7sHAABrc4mrZn+y5ta0OHvpHjP+90r52bRm7MXODgAAUO0W9D7CvWv6pWt6G5nJf5bGWXxZMbPdvGrPedKMWs9up+rlipSkt0WF77g0T+z7OE04u1O9YqjdC8ArAAA=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
