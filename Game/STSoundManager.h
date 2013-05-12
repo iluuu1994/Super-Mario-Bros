@@ -16,7 +16,7 @@
 #define kSoundPipe @"pipe.mp3" // TODO: use or delete
 #define kSoundCoin @"coin.mp3"
 #define kSoundBreakBlock @"break_block.mp3"
-#define kSoundStageClear @"stage_clear.mp3" // TODO: use
+#define kSoundStageClear @"stage_clear.wav"
 #define kSoundTimeWarning @"time_warning.mp3" // TODO: use or delete
 #define kSoundTheme @"theme.mp3"
 #define kSoundOneUp @"1-up.mp3" // TODO: use or delete
