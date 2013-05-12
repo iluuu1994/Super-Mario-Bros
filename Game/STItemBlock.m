@@ -47,7 +47,7 @@
     if (!_items) {
         _items = [NSMutableArray array];
         
-        [_items addObject:[[STCoin alloc] init]];
+        [_items addObject:[[STMushroom alloc] init]];
         /*
         int r = arc4random() % 2;
         switch (r) {
@@ -80,11 +80,14 @@
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];
     
-    id item = self.items.lastObject;
-    [self.items removeObject:item];
-    [self reloadDisplay];
-    
-    [self.delegate addItemToMap:item toPosition:ccpAdd(self.position, ccp(0, 32))];
+    if (self.items.count) {
+        id item = self.items.lastObject;
+        [self.items removeObject:item];
+        [self reloadDisplay];
+        
+        [self.delegate addItemToMap:item
+                         toPosition:ccpAdd(self.position, ccp(0, (self.boundingBox.size.height)+([item boundingBox].size.height / 2)))];
+    }
 }
 
 @end
