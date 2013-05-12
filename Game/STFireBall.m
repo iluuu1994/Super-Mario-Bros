@@ -46,5 +46,4 @@
         [gameObject setDead:YES];
     }
 }
-
 @end
