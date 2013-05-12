@@ -8,9 +8,10 @@
 
 #import "STKoopa.h"
 #import "STPlayer.h"
+#import "STBlock.h"
 
 #define kSpeed 10
-#define kProjectileSpeed 70
+#define kProjectileSpeed 150
 #define kScore 100
 
 @implementation STKoopa
@@ -25,7 +26,17 @@
 }
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
-    // If it collides with a non-living thing while its hidden or if its just not hidden.
+    if((edge == STRectEdgeMaxX || edge == STRectEdgeMinX) && self.velocity.x != 0) {
+        if(
+           ([[gameObject class] isSubclassOfClass:[STPlayer class]]) || self.isHidden) {
+            if (![[gameObject class] isSubclassOfClass:[STBlock class]]) {
+                [gameObject setDead:YES];
+            } else {
+                [(STBlock *)gameObject awardPlayer:nil];
+            }
+        }
+    }
+    
     if((![[gameObject class] isSubclassOfClass:[STCreature class]] && self.isHidden) || !self.isHidden) {
         int speed = (self.isHidden) ? kProjectileSpeed : kSpeed;
         
@@ -66,14 +77,6 @@
                 self.velocity = ccp(0, 0);
             }
             
-        }
-    }
-    
-    // If this Koopa is a deadly projectile
-    if((edge == STRectEdgeMaxX || edge == STRectEdgeMinX) && self.isHidden && self.velocity.x != 0) {
-        // The projectile kills all creatures.
-        if([[gameObject class] isSubclassOfClass:[STCreature class]]) {
-            [gameObject setDead:YES];
         }
     }
 }
