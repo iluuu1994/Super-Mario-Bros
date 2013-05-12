@@ -101,31 +101,23 @@
     [self updateGravity:delta];
     [self updateCollisions:delta];
     [self updateGameObjects];
+    [self trashLostGameObjects];
 }
 
 - (void)cleanup {
-    NSMutableArray *deadObjects = [NSMutableArray array];
-    
-    for (STGameObject *go in self.gameObjects) {
-        
-        // Immediately stop the game if the player is dead.
-        if([[go class] isSubclassOfClass:[STPlayer class]] && go.isDead) {
-            NSLog(@"gameOver");
-            [self unscheduleUpdate];
-            [self gameOver];
-        }
-        
-        if (go.isDead) {
-            [deadObjects addObject:go];
-        }
-    }
-    
+    // Add new objects
     for (STGameObject *newGo in self.gameObjectsToAdd) {
         [self addGameObjectToMap:newGo];
     }
     self.gameObjectsToAdd = [NSMutableArray array];
-        
     
+    // Remove dead objects
+    NSMutableArray *deadObjects = [NSMutableArray array];
+    for (STGameObject *go in self.gameObjects) {
+        if (go.isDead) {
+            [deadObjects addObject:go];
+        }
+    }
     for (STGameObject *deadGo in deadObjects) {
         [deadGo removeFromParent];
         [self.gameObjects removeObject:deadGo];
@@ -237,7 +229,7 @@
 }
 
 #pragma mark -
-#pragma mark Read Game Objects
+#pragma mark Game Objects
 
 - (void)updateGameObjects {
     [self readGameObjectsFromMap];
@@ -251,15 +243,34 @@
     
     int tileWidth = (cameraWidth + (2 * kMapLoadingDelta)) / self.map.tileSize.width;
     int firstTile = ((mapX - kMapLoadingDelta) / self.map.tileSize.width) + 1;
-    if (firstTile < 1) firstTile = 1;
+    if (firstTile < 1) firstTile = 0;
     
     int lastTile = firstTile + tileWidth;
     if (lastTile > self.objectLayer.layerSize.width) lastTile = self.objectLayer.layerSize.width;
     
     for (int x = firstTile; x < lastTile; x++) {
         for (int y = 1; y < mapHeight; y++) {
+            NSLog(@"%d : %d", x, y);
             [self createGameObjectAtX:x y:y];
         }
+    }
+}
+
+#define kRemovingDelta 30.0
+- (void)trashLostGameObjects {
+    CGFloat cameraWidth = [[CCDirector sharedDirector] winSize].width;
+    CGFloat mapX = self.map.position.x * -1 / self.map.scale;
+    
+    for (STGameObject *gameObject in self.gameObjects) {
+        /*
+        if (gameObject.boundingBox.origin.y - gameObject.boundingBox.size.height - kRemovingDelta < 0
+            ||
+            //gameObject.boundingBox.origin.x + gameObject.boundingBox.size.width + kRemovingDelta < mapX
+            //||
+            //gameObject.boundingBox.origin.x > mapX + cameraWidth
+            ) {
+            //[gameObject setDead:YES];
+        }*/
     }
 }
 
@@ -320,6 +331,10 @@
     if (playerX - mapX < 0) return NO;*/
     
     return YES;
+}
+
+- (void)playerDied:(STPlayer *)player {
+    [self gameOver];
 }
 
 - (void)replaceUILayer:(STLayer *)layer {
