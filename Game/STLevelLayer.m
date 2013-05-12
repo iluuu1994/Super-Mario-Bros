@@ -26,6 +26,7 @@
 
 @interface STLevelLayer ()
 @property (strong) NSMutableArray *gameObjectsToAdd;
+@property CGPoint endPoint;
 @end
 
 @implementation STLevelLayer
@@ -83,6 +84,10 @@
     unsigned short time = [[level valueForKey:kLevelTimeKey] shortValue];
     [self setInfoLayer:[STInformationLayer layerWithDelegate:self player:self.player time:time]];
     [self addChild:self.infoLayer];
+    
+    // End End Position
+    NSDictionary *endPosition = [self.objectGroup objectNamed:kPlayerEndPointKey];
+    self.endPoint = ccp([endPosition[kXKey] floatValue], [endPosition[kYKey] floatValue]);
 }
 
 - (void)unloadSpriteCache {
@@ -102,6 +107,7 @@
     [self cleanup];
     [self updateGravity:delta];
     [self updateCollisions:delta];
+    [self checkIfLevelEnded];
     [self updateGameObjects];
     [self trashLostGameObjects];
 }
@@ -123,6 +129,12 @@
     for (STGameObject *deadGo in deadObjects) {
         [deadGo removeFromParent];
         [self.gameObjects removeObject:deadGo];
+    }
+}
+
+- (void)checkIfLevelEnded {
+    if (CGRectContainsPoint(self.player.boundingBox, self.endPoint)) {
+        [self levelEndedWithSuccess:YES];
     }
 }
 
@@ -348,7 +360,7 @@
 }
 
 - (void)playerDied:(STPlayer *)player {
-    [self gameOver];
+    [self levelEndedWithSuccess:NO];
 }
 
 - (void)replaceUILayer:(STLayer *)layer {
@@ -361,13 +373,20 @@
 #pragma mark InformationLayer Delegate
 
 - (IBAction)timeElapsed:(id)sender {
-    [self gameOver];
+    [self levelEndedWithSuccess:NO];
 }
 
 #pragma mark -
-#pragma mark Game Over
-- (void)gameOver {
-    [[STSoundManager sharedInstance] playEffect:kSoundDeath];
+#pragma mark Game Over & Level Ended
+- (void)levelEndedWithSuccess:(BOOL)success {
+    [self unscheduleAllSelectors];
+    
+    if (success) {
+        [[STSoundManager sharedInstance] playEffect:kSoundStageClear];
+    } else {
+        [[STSoundManager sharedInstance] playEffect:kSoundDeath];
+    }
+    
     [[STSoundManager sharedInstance] stopBackgroundMusic];
     
     NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:_worldID levelID:_levelID];
@@ -376,7 +395,7 @@
     STLayer *layer = [STLevelResultLayer layerWithWorldID:_worldID levelID:_levelID
                                                      time:time - [self.infoLayer time]
                                                     score:[[self player] score]
-                                                  success:NO];
+                                                  success:success];
     [[CCDirector sharedDirector] replaceScene: [layer scene]
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];

@@ -76,6 +76,7 @@
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
-  <object name="playerSpawnPoint" type="playerSpawnPoint" x="73" y="80"/>
+  <object name="playerSpawnPoint" type="playerSpawnPoint" x="2737" y="38"/>
+  <object name="playerEndPoint" x="2985" y="179"/>
  </objectgroup>
 </map>

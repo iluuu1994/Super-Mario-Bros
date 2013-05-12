@@ -52,10 +52,10 @@
 		9169AF4317402BBE00F89820 /* pipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3417402BBE00F89820 /* pipe.mp3 */; };
 		9169AF4417402BBE00F89820 /* powerup-appears.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3517402BBE00F89820 /* powerup-appears.mp3 */; };
 		9169AF4517402BBE00F89820 /* powerup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3617402BBE00F89820 /* powerup.mp3 */; };
-		9169AF4617402BBE00F89820 /* stage_clear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3717402BBE00F89820 /* stage_clear.mp3 */; };
 		9169AF4717402BBE00F89820 /* stomp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3817402BBE00F89820 /* stomp.mp3 */; };
 		9169AF4817402BBE00F89820 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3917402BBE00F89820 /* theme.mp3 */; };
 		9169AF4917402BBE00F89820 /* time_warning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF3A17402BBE00F89820 /* time_warning.mp3 */; };
+		9169AF4B1740324F00F89820 /* stage_clear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF4A1740324F00F89820 /* stage_clear.wav */; };
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917E6F70173D95A200777A40 /* Coin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F6E173D95A200777A40 /* Coin.plist */; };
 		917E6F71173D95A200777A40 /* Coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F6F173D95A200777A40 /* Coin.png */; };
@@ -350,10 +350,10 @@
 		9169AF3417402BBE00F89820 /* pipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = pipe.mp3; path = Resources/sounds/pipe.mp3; sourceTree = SOURCE_ROOT; };
 		9169AF3517402BBE00F89820 /* powerup-appears.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "powerup-appears.mp3"; path = "Resources/sounds/powerup-appears.mp3"; sourceTree = SOURCE_ROOT; };
 		9169AF3617402BBE00F89820 /* powerup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = powerup.mp3; path = Resources/sounds/powerup.mp3; sourceTree = SOURCE_ROOT; };
-		9169AF3717402BBE00F89820 /* stage_clear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stage_clear.mp3; path = Resources/sounds/stage_clear.mp3; sourceTree = SOURCE_ROOT; };
 		9169AF3817402BBE00F89820 /* stomp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = stomp.mp3; path = Resources/sounds/stomp.mp3; sourceTree = SOURCE_ROOT; };
 		9169AF3917402BBE00F89820 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = theme.mp3; path = Resources/sounds/theme.mp3; sourceTree = SOURCE_ROOT; };
 		9169AF3A17402BBE00F89820 /* time_warning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = time_warning.mp3; path = Resources/sounds/time_warning.mp3; sourceTree = SOURCE_ROOT; };
+		9169AF4A1740324F00F89820 /* stage_clear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = stage_clear.wav; path = Resources/sounds/stage_clear.wav; sourceTree = SOURCE_ROOT; };
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917E6F6E173D95A200777A40 /* Coin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Coin.plist; sourceTree = "<group>"; };
@@ -933,6 +933,7 @@
 		913EB1451732DA460012B37B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				9169AF4A1740324F00F89820 /* stage_clear.wav */,
 				9169AF2C17402BBE00F89820 /* 1-up.mp3 */,
 				9169AF2D17402BBE00F89820 /* break_block.mp3 */,
 				9169AF2E17402BBE00F89820 /* coin.mp3 */,
@@ -944,7 +945,6 @@
 				9169AF3417402BBE00F89820 /* pipe.mp3 */,
 				9169AF3517402BBE00F89820 /* powerup-appears.mp3 */,
 				9169AF3617402BBE00F89820 /* powerup.mp3 */,
-				9169AF3717402BBE00F89820 /* stage_clear.mp3 */,
 				9169AF3817402BBE00F89820 /* stomp.mp3 */,
 				9169AF3917402BBE00F89820 /* theme.mp3 */,
 				9169AF3A17402BBE00F89820 /* time_warning.mp3 */,
@@ -2118,10 +2118,10 @@
 				9169AF4317402BBE00F89820 /* pipe.mp3 in Resources */,
 				9169AF4417402BBE00F89820 /* powerup-appears.mp3 in Resources */,
 				9169AF4517402BBE00F89820 /* powerup.mp3 in Resources */,
-				9169AF4617402BBE00F89820 /* stage_clear.mp3 in Resources */,
 				9169AF4717402BBE00F89820 /* stomp.mp3 in Resources */,
 				9169AF4817402BBE00F89820 /* theme.mp3 in Resources */,
 				9169AF4917402BBE00F89820 /* time_warning.mp3 in Resources */,
+				9169AF4B1740324F00F89820 /* stage_clear.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
