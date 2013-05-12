@@ -24,10 +24,21 @@
     return self;
 }
 
+- (STGameObjectBodyType)bodyType {
+    return STGameObjectBodyTypeDynamic;
+}
+
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     
+//    if(self.velocity.y <= 0) {
+//        self.velocity = ccpAdd(self.velocity, ccp(0, kSpeed));
+//    }
+//    
     // Make the FireBall jump after jumping on a gameObject
-    self.velocity = ccpAdd(self.velocity, ccp(0, 100));
+//    if (edge == STRectEdgeMaxY) {
+//        NSLog(@"x: %f, y: %f", self.velocity.x, self.velocity.y);
+//        self.velocity = ccpAdd(self.velocity, ccp(0, kSpeed));
+//    }
     
     // Only kills creatures except for the player.
     if([[gameObject class] isSubclassOfClass:[STCreature class]]
