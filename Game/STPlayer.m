@@ -22,8 +22,6 @@
 @implementation STPlayer
 {}
 
-@synthesize isDead;
-
 #pragma mark -
 #pragma mark Properties
 - (NSMutableArray *)bonusItems {

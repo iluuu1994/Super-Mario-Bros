@@ -66,7 +66,6 @@
     
     // If this Koopa is a deadly projectile
     if((edge == STRectEdgeMaxX || edge == STRectEdgeMinX) && self.isHidden && self.velocity.x != 0) {
-        
         // The projectile kills all creatures.
         if([[gameObject class] isSubclassOfClass:[STCreature class]]) {
             [gameObject setDead:YES];
