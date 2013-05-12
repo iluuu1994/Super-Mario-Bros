@@ -21,7 +21,7 @@
     self = [super init];
     if (self) {
         [self setDelegate:delegate];
-        [self setTime:time];
+        _time = time;
         _player = player;
         [self setUpWithDelegate:delegate player:player time:time];
         [self schedule: @selector(timer:) interval:1];
@@ -54,7 +54,7 @@
     // Retrieve the Player Information
     NSString *score = [NSString stringWithFormat:@"Score\n%i", [self.player score]];
     NSString *coins = [NSString stringWithFormat:@"Coins\n%i", [self.player coins]];
-    NSString *time = [NSString stringWithFormat:@"Time\n%i", [self time]];
+    NSString *time = [NSString stringWithFormat:@"Time\n%i", _time];
     
     // Coins
     CCLabelTTF *coinsLabel = [CCLabelTTF labelWithString:coins fontName:kTextFontName fontSize:kTextSmallFontSize];
@@ -89,13 +89,13 @@
 -(void) timer: (ccTime) dt
 {
     // Count down
-    [self setTime:[self time] - roundf(dt)];
+    _time -= roundf(dt);
     
     // Update the displayed values
     [self updateInformation];
     
     // Send a message to the delegate if the time is over and stop counting down.
-    if([self time] <= 0) {
+    if(_time <= 0) {
         [[self delegate] timeElapsed:self];
         [self unschedule:@selector(timer:)];
     }

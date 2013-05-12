@@ -22,7 +22,7 @@
 @property (readonly) unsigned short levelID;
 @property (strong, readonly) NSDictionary *levelInfo;
 @property (strong) STLayer *uiLayer;
-@property (strong) STLayer *infoLayer;
+@property (strong) STInformationLayer *infoLayer;
 @property (strong) STPlayer *player;
 
 #pragma mark -

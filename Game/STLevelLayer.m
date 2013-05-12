@@ -100,6 +100,14 @@
     NSMutableArray *deadObjects = [NSMutableArray array];
     
     for (STGameObject *go in self.gameObjects) {
+        
+        // Immediately stop the game if the player is dead.
+        if([[go class] isSubclassOfClass:[STPlayer class]] && go.isDead) {
+            NSLog(@"gameOver");
+            [self unscheduleUpdate];
+            [self gameOver];
+        }
+        
         if (go.isDead) {
             [deadObjects addObject:go];
         }
@@ -283,6 +291,12 @@
 #pragma mark -
 #pragma mark InformationLayer Delegate
 - (IBAction)timeElapsed:(id)sender {
+    [self gameOver];
+}
+
+#pragma mark -
+#pragma mark Game Over
+- (void)gameOver {
     [[STSoundManager sharedInstance] playEffect:kSoundDeath];
     [[STSoundManager sharedInstance] stopBackgroundMusic];
     
@@ -290,7 +304,7 @@
     int time = [[level valueForKey:kLevelTimeKey] integerValue];
     
     STLayer *layer = [STLevelResultLayer layerWithWorldID:_worldID levelID:_levelID
-                                                     time:time
+                                                     time:time - [self.infoLayer time]
                                                     score:[[self player] score]
                                                   success:NO];
     [[CCDirector sharedDirector] replaceScene: [layer scene]

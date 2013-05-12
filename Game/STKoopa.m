@@ -10,6 +10,7 @@
 #import "STPlayer.h"
 
 #define kSpeed 10
+#define kProjectileSpeed 70
 #define kScore 100
 
 @implementation STKoopa
@@ -24,11 +25,17 @@
 }
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
-    if (edge == STRectEdgeMinX && self.velocity.x < 0) {
-        self.velocity = ccp(kSpeed, self.velocity.y);
-    } else if (edge == STRectEdgeMaxX && self.velocity.x > 0) {
-        self.velocity = ccp(-kSpeed, self.velocity.y);
+    // If it collides with a non-living thing while its hidden or if its just not hidden.
+    if((![[gameObject class] isSubclassOfClass:[STCreature class]] && self.isHidden) || !self.isHidden) {
+        int speed = (self.isHidden) ? kProjectileSpeed : kSpeed;
+        
+        if (edge == STRectEdgeMinX && self.velocity.x < 0) {
+            self.velocity = ccp(speed, self.velocity.y);
+        } else if (edge == STRectEdgeMaxX && self.velocity.x > 0) {
+            self.velocity = ccp(-speed, self.velocity.y);
+        }
     }
+    
     if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
         STPlayer *player = (STPlayer *) gameObject;
 
@@ -38,13 +45,32 @@
         // Play a sound
         [[STSoundManager sharedInstance] playEffect:kSoundStomp];
         
-        // Add a score
-        player.score += kScore;
+        if (!self.isHidden) {
+            // Add a score
+            player.score += kScore;
         
-        // Show the die animation and kill this GameObject
-        [self runAnimationWithName:@"die" callbackBlock:^void {
-            [self setDead:YES];
-        }];
+            // Hide the koopa in the armor and make it a deadly projectile
+            [self runAnimationWithName:@"armor" endless:YES];
+            self.isHidden = YES;
+            self.velocity = ccp(0, 0);
+            
+        } else {
+            // If we jump on the koopa again when he is hidden, he becomes a deadly projectile
+            if (gameObject.velocity.x < 0) {
+                self.velocity = ccpAdd(self.velocity, ccp(-kProjectileSpeed, self.velocity.y));
+            } else {
+                self.velocity = ccpAdd(self.velocity, ccp(kProjectileSpeed, self.velocity.y));
+            }
+        }
+    }
+    
+    // If this Koopa is a deadly projectile
+    if((edge == STRectEdgeMaxX || edge == STRectEdgeMinX) && self.isHidden && self.velocity.x != 0) {
+        
+        // The projectile kills all creatures.
+        if([[gameObject class] isSubclassOfClass:[STCreature class]]) {
+            [gameObject setDead:YES];
+        }
     }
 }
 

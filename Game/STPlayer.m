@@ -22,6 +22,8 @@
 @implementation STPlayer
 {}
 
+@synthesize isDead;
+
 #pragma mark -
 #pragma mark Properties
 - (NSMutableArray *)bonusItems {
@@ -84,6 +86,21 @@
     _playerState = playerState;
     
     [self runAnimationWithName:_cachedAnimation endless:YES];
+}
+
+- (void)setDead:(BOOL)isDead {
+    
+    NSLog(@"local: %s", isDead ? "true" : "false");
+    NSLog(@"%u", self.playerState);
+    NSLog(@"%u", STPlayerStateSmall);
+    
+    if (isDead && self.playerState != STPlayerStateSmall) {
+        [self setPlayerState:STPlayerStateSmall];
+        [super setDead:NO];
+    } else {
+        [super setDead:isDead];
+        NSLog(@"%s", self.isDead ? "true" : "false");
+    }
 }
 
 @end
