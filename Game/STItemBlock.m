@@ -47,12 +47,16 @@
     if (!_items) {
         _items = [NSMutableArray array];
         
-        [_items addObject:[[STCoin alloc] init]];
-        /*
-        int r = arc4random() % 2;
-        switch (r) {
+        int from = 0;
+        int to = 3;
+        int type = (int)from + arc4random() % (to-from+1);
+        switch (type) {
             case 0:
             {
+                [_items addObject:[[STCoin alloc] init]];
+                [_items addObject:[[STCoin alloc] init]];
+                [_items addObject:[[STCoin alloc] init]];
+                [_items addObject:[[STCoin alloc] init]];
                 [_items addObject:[[STCoin alloc] init]];
             }
                 break;
@@ -71,7 +75,7 @@
                 [_items addObject:[[STFlower alloc] init]];
             }
                 break;
-        }*/
+        }
     }
     
     return _items;
@@ -80,11 +84,14 @@
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];
     
-    id item = self.items.lastObject;
-    [self.items removeObject:item];
-    [self reloadDisplay];
-    
-    [self.delegate addItemToMap:item toPosition:ccpAdd(self.position, ccp(0, 32))];
+    if (self.items.count) {
+        id item = self.items.lastObject;
+        [self.items removeObject:item];
+        [self reloadDisplay];
+        
+        [self.delegate addItemToMap:item
+                         toPosition:ccpAdd(self.position, ccp(0, (self.boundingBox.size.height)+([item boundingBox].size.height / 2)))];
+    }
 }
 
 @end

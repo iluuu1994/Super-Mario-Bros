@@ -19,8 +19,7 @@
 #import "STSoundManager.h"
 #import "STTiledMapKeys.h"
 #import "STMario.h"
-
-#import "STCoin.h"
+#import "STItem.h"
 
 #define kDefaultGravity ccp(0, -9.81)
 #define kMaxCameraEdge 200
@@ -120,11 +119,10 @@
         }
     }
     
-    NSArray *toDelete = [self.gameObjectsToAdd copy];
     for (STGameObject *newGo in self.gameObjectsToAdd) {
         [self addGameObjectToMap:newGo];
     }
-    [self.gameObjects removeObjectsInArray:toDelete];
+    self.gameObjectsToAdd = [NSMutableArray array];
         
     
     for (STGameObject *deadGo in deadObjects) {
@@ -331,12 +329,7 @@
 #pragma mark STItemBlockDelegate
 
 - (void)addItemToMap:(STItem *)item toPosition:(CGPoint)position {
-    STCoin *coin = [[STCoin alloc] init];
-    [coin setPosition:position];
     [item setPosition:position];
-    
-    //[self addGameObjectToMap:item];
-    [self.map addChild:item];
     [self.gameObjectsToAdd addObject:item];
 }
 
