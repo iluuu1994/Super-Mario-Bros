@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>spin</key>
+		<dict>
+			<key>delay</key>
+			<string>0.1</string>
+			<key>frames</key>
+			<array>
+				<string>fire-ball-1</string>
+				<string>fire-ball-2</string>
+				<string>fire-ball-3</string>
+				<string>fire-ball-4</string>
+			</array>
+		</dict>
+	</dict>
+	<key>frames</key>
+	<dict>
+		<key>fire-ball-1</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {8, 8}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{8, 8}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 4}, {8, 8}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>fire-ball-2</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {8, 8}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{8, 8}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 20}, {8, 8}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>fire-ball-3</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {8, 8}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{8, 8}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 36}, {8, 8}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+		<key>fire-ball-4</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {8, 8}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{8, 8}</string>
+			<key>spriteSourceSize</key>
+			<string>{8, 8}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 52}, {8, 8}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>GeneratedWith</key>
+		<string>SpriteHelper</string>
+		<key>format</key>
+		<integer>3</integer>
+		<key>textureFileName</key>
+		<string>FireBall.png</string>
+	</dict>
+</dict>
+</plist>

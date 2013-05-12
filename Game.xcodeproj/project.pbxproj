@@ -38,6 +38,9 @@
 		9153D594173E9A5100A1DAD0 /* Block.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9153D592173E9A5100A1DAD0 /* Block.plist */; };
 		9153D595173E9A5100A1DAD0 /* Block.png in Resources */ = {isa = PBXBuildFile; fileRef = 9153D593173E9A5100A1DAD0 /* Block.png */; };
 		91584C3B1730029100AD276C /* STCollisionDetectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */; };
+		9169AF26173FC48A00F89820 /* FireBall.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF24173FC48A00F89820 /* FireBall.plist */; };
+		9169AF27173FC48A00F89820 /* FireBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 9169AF25173FC48A00F89820 /* FireBall.png */; };
+		9169AF2B173FC49C00F89820 /* STFireBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 9169AF2A173FC49C00F89820 /* STFireBall.m */; };
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917E6F70173D95A200777A40 /* Coin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F6E173D95A200777A40 /* Coin.plist */; };
 		917E6F71173D95A200777A40 /* Coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F6F173D95A200777A40 /* Coin.png */; };
@@ -332,6 +335,10 @@
 		9153D593173E9A5100A1DAD0 /* Block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Block.png; sourceTree = "<group>"; };
 		91584C391730029100AD276C /* STCollisionDetectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollisionDetectionHelper.h; sourceTree = "<group>"; };
 		91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollisionDetectionHelper.m; sourceTree = "<group>"; };
+		9169AF24173FC48A00F89820 /* FireBall.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FireBall.plist; sourceTree = "<group>"; };
+		9169AF25173FC48A00F89820 /* FireBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FireBall.png; sourceTree = "<group>"; };
+		9169AF29173FC49C00F89820 /* STFireBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFireBall.h; sourceTree = "<group>"; };
+		9169AF2A173FC49C00F89820 /* STFireBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFireBall.m; sourceTree = "<group>"; };
 		917737EB16C19B51001C1AAD /* STBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBlock.h; sourceTree = "<group>"; };
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917E6F6E173D95A200777A40 /* Coin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Coin.plist; sourceTree = "<group>"; };
@@ -1028,6 +1035,7 @@
 				91BF84C0173265D1001249AF /* Creature */,
 				91BF84C81732681A001249AF /* Items */,
 				910B1C3A16F4E0CE0097A11D /* Block */,
+				9169AF23173FC47F00F89820 /* Fire Ball */,
 			);
 			name = Sprites;
 			sourceTree = "<group>";
@@ -1087,6 +1095,25 @@
 				91584C3A1730029100AD276C /* STCollisionDetectionHelper.m */,
 			);
 			name = "Collision Detection";
+			sourceTree = "<group>";
+		};
+		9169AF23173FC47F00F89820 /* Fire Ball */ = {
+			isa = PBXGroup;
+			children = (
+				9169AF29173FC49C00F89820 /* STFireBall.h */,
+				9169AF2A173FC49C00F89820 /* STFireBall.m */,
+				9169AF28173FC48E00F89820 /* Resources */,
+			);
+			name = "Fire Ball";
+			sourceTree = "<group>";
+		};
+		9169AF28173FC48E00F89820 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9169AF24173FC48A00F89820 /* FireBall.plist */,
+				9169AF25173FC48A00F89820 /* FireBall.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		9171B59C16BDDAB1008208D2 /* Icons */ = {
@@ -2093,6 +2120,8 @@
 				D49B2214173EEEDF00830811 /* stomp.mp3 in Resources */,
 				D49B2215173EEEDF00830811 /* theme.mp3 in Resources */,
 				D49B2216173EEEDF00830811 /* time_warning.mp3 in Resources */,
+				9169AF26173FC48A00F89820 /* FireBall.plist in Resources */,
+				9169AF27173FC48A00F89820 /* FireBall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2159,6 +2188,7 @@
 				9153D588173E34A900A1DAD0 /* STBonusItem.m in Sources */,
 				9153D58C173E34C200A1DAD0 /* STStar.m in Sources */,
 				91B7F089173EF698005733ED /* STItemBlock.m in Sources */,
+				9169AF2B173FC49C00F89820 /* STFireBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
