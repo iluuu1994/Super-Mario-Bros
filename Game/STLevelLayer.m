@@ -291,7 +291,7 @@
 #define kJoystickTolerance 0.0
 - (IBAction)joystick:(id)sender delta:(ccTime)delta {
     CGPoint velocity = [(SneakyJoystick *)sender velocity];
-    [self.player setVelocity:ccp(velocity.x * delta * 5000, self.player.velocity.y)];
+    [self.player setVelocity:ccp(velocity.x * delta * 7000, self.player.velocity.y)];
 }
 
 - (IBAction)pause:(id)sender {

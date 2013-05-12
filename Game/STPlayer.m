@@ -10,9 +10,11 @@
 #import "STItem.h"
 #import "STSoundManager.h"
 #import "STMushroom.h"
+#import "STNPC.h"
 
-#define kJumpVelocity 250
+#define kJumpVelocity 300
 #define kInvinibilityDuration 1
+#define kBlinkingSpeed 0.1
 
 @interface STPlayer () {
     NSString *_cachedAnimation;
@@ -35,8 +37,8 @@
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
-    // Kill all creatures when in "instant kill"-mode
-    if (self.killsInstantly && [[gameObject class] isSubclassOfClass:[STCreature class]]) {
+    // Kill all NPCs when in "instant kill"-mode
+    if (self.killsInstantly && [[gameObject class] isSubclassOfClass:[STNPC class]]) {
         [gameObject setDead:YES];
     }
 }
@@ -103,23 +105,42 @@
 }
 
 - (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time {
+    // Start being invincible
     [self setInvincible:YES];
     [self schedule:@selector(invincibilityCallback) interval:time];
+    
+    // TODO: Start playing invincibility-effect
+    
+    // Start blinking
+    [self schedule:@selector(blink) interval:kBlinkingSpeed];
 }
 
 - (void)invincibilityCallback {
+    // Stop being invincible
     [self setInvincible:!self.isInvincible];
     [self unschedule:@selector(invincibilityCallback)];
+    
+    // TODO: Stop playing invincibility-effect
+    
+    // Stop blinking
+    [self unschedule:@selector(blink)];
+    [self setVisible:YES];
 }
 
 - (void)setKillsInstantly:(BOOL)killsInstantly forTime:(ccTime)time {
+    // Start "instant kill"-mode
     [self setKillsInstantly:YES];
     [self schedule:@selector(instantKillCallback) interval:time];
 }
 
 - (void)instantKillCallback {
+    // Stop "instant kill"-mode
     [self setKillsInstantly:!self.killsInstantly];
     [self unschedule:@selector(instantKillCallback)];
+}
+
+-(void)blink {
+    [self setVisible:!self.visible];
 }
 
 @end
