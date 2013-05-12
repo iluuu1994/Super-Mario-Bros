@@ -10,6 +10,8 @@
 #import "STPlayer.h"
 #import "STSoundManager.h"
 
+#define kScore 50
+
 @implementation STMushroom
 
 - (id)init
@@ -26,6 +28,8 @@
     if (player.playerState == STPlayerStateSmall) {
         player.playerState = STPlayerStateLarge;
     }
+    
+    player.score += kScore;
 }
 
 - (void)onEnter {

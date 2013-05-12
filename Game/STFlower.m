@@ -10,6 +10,8 @@
 #import "STPlayer.h"
 #import "STSoundManager.h"
 
+#define kScore 100
+
 @implementation STFlower
 
 - (id)init
@@ -26,6 +28,8 @@
     if (player.playerState != STPlayerStateFire) {
         player.playerState = STPlayerStateFire;
     }
+    
+    player.score += kScore;
 }
 
 - (void)onEnter {

@@ -25,6 +25,7 @@
     [[STSoundManager sharedInstance] playEffect:@"coin.mp3"];
     
     player.score += 10;
+    player.coins += 1;
 }
 
 @end
