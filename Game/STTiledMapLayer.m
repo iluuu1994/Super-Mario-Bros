@@ -9,6 +9,9 @@
 #import "STTiledMapLayer.h"
 #import "STGameObject.h"
 #import "STTiledMapKeys.h"
+#import "STItem.h"
+
+#import "STCoin.h"
 
 @implementation STTiledMapLayer
 {}
@@ -67,6 +70,10 @@
             
             // Set the value at the specified key
             [node setValue:value forKey:key];
+        }
+        
+        if ([node respondsToSelector:@selector(delegate)]) {
+            [node setValue:self forKey:@"delegate"];
         }
     }
 }

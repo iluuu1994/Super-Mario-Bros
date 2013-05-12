@@ -7,6 +7,7 @@
 //
 
 #import "STCoin.h"
+#import "STPlayer.h"
 
 @implementation STCoin
 
@@ -16,6 +17,12 @@
         [self runAnimationWithName:@"spin" endless:YES];
     }
     return self;
+}
+
+- (void)awardPlayer:(STPlayer *)player {
+    [super awardPlayer:player];
+    
+    player.score += 10;
 }
 
 @end

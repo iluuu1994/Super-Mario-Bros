@@ -49,7 +49,13 @@
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
-    if (self.isDestroyable && edge == STRectEdgeMinY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+    if (edge == STRectEdgeMinY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        [self awardPlayer:(STPlayer *)gameObject];
+    }
+}
+
+- (void)awardPlayer:(STPlayer *)player {
+    if (self.isDestroyable) {
         // Play a sound
         [[STSoundManager sharedInstance] playEffect:kSoundBreakBlock];
         [self setDead:YES];

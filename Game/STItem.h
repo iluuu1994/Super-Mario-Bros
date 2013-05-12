@@ -8,6 +8,9 @@
 
 #import "STGameObject.h"
 
+@class STPlayer;
 @interface STItem : STGameObject
+
+- (void)awardPlayer:(STPlayer *)player;
 
 @end

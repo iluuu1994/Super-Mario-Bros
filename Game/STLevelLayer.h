@@ -11,8 +11,9 @@
 #import "STControlsLayer.h"
 #import "STPauseLayer.h"
 #import "STPlayer.h"
+#import "STItemBlock.h"
 
-@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate, STInformationDelegate>
+@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate, STInformationDelegate, STItemBlockDelegate>
 {}
 
 #pragma mark -

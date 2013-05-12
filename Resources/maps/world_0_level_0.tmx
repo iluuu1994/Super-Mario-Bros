@@ -17,6 +17,12 @@
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
+  <tile id="6">
+   <properties>
+    <property name="appearanceType" value="0"/>
+    <property name="type" value="STItemBlock"/>
+   </properties>
+  </tile>
   <tile id="28">
    <properties>
     <property name="appearanceType" value="0"/>
@@ -61,7 +67,7 @@
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WUQ6DIBBFUboQ1uGm3EE33x+bGDIzMBQRp/ckpG0CivS9xJQAAAAAAMBXPgbusSlDmzOTtR/rdxQ50Q9AkhP9ACRlN57cj035XNkve7XWjHj21mtY73tZ+V5TZrE3l+e9ec9E6saT+4G1SBlvyZeUxdnZ1LpBPzCClXErY1oWZ+bT6saK/dgdc9/Oa/fM96652sw9ne+l3bcl41LOrCyOymjtrGrduKMfr+Cj9zn/6YxGn12kEVn5H/es866NovfsovkAhDHBq8ArAAA=
+   H4sIAAAAAAAAA+3WQQ7CIBCFYVx5Cs7BpbyBl+/GBZkwFCZTSsf/S4gagVZ8L2lK/soFewIAAACAVKoBeMm/gXsUZWhzVurdT+9zFDnRD6AlJ/oBtMhuPLkf7zT2jLKTIl4ta2e/89hfztPmZuX9GZlFay7re5s9k1Y3ntwP7KWV8ZF8tbK4OptaN+gHPPQy3suYlsWV+ex1Y8d+fCbmfif3tsyfXXO1lfdUX0u77kjGWznrZdEro2dnddaNO/rxCj6sv/Ofzsj77CKNyOR/bFk3uzYK69lFcwDGwouHwCsAAA==
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">

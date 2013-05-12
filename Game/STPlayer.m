@@ -34,10 +34,7 @@
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
-    if ([[gameObject class] isSubclassOfClass:[STItem class]]) {
-        [(STItem *)gameObject setVisible:NO];
-    } else if (edge == STRectEdgeMinY) {
-    }
+    
 }
 
 - (void)jump {

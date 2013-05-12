@@ -20,8 +20,14 @@
 #import "STTiledMapKeys.h"
 #import "STMario.h"
 
+#import "STCoin.h"
+
 #define kDefaultGravity ccp(0, -9.81)
 #define kMaxCameraEdge 200
+
+@interface STLevelLayer ()
+@property (strong) NSMutableArray *gameObjectsToAdd;
+@end
 
 @implementation STLevelLayer
 {}
@@ -30,6 +36,7 @@
 #pragma mark Initialise
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
     _levelInfo = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
+    _gameObjectsToAdd = [NSMutableArray array];
     
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:spriteCacheName];
@@ -105,9 +112,16 @@
         }
     }
     
+    NSArray *toDelete = [self.gameObjectsToAdd copy];
+    for (STGameObject *newGo in self.gameObjectsToAdd) {
+        [self addGameObjectToMap:newGo];
+    }
+    [self.gameObjects removeObjectsInArray:toDelete];
+        
+    
     for (STGameObject *deadGo in deadObjects) {
-        [self.gameObjects removeObject:deadGo];
         [deadGo removeFromParent];
+        [self.gameObjects removeObject:deadGo];
     }
 }
 
@@ -282,6 +296,7 @@
 
 #pragma mark -
 #pragma mark InformationLayer Delegate
+
 - (IBAction)timeElapsed:(id)sender {
     [[STSoundManager sharedInstance] playEffect:kSoundDeath];
     [[STSoundManager sharedInstance] stopBackgroundMusic];
@@ -296,6 +311,19 @@
     [[CCDirector sharedDirector] replaceScene: [layer scene]
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
+}
+
+#pragma mark -
+#pragma mark STItemBlockDelegate
+
+- (void)addItemToMap:(STItem *)item toPosition:(CGPoint)position {
+    STCoin *coin = [[STCoin alloc] init];
+    [coin setPosition:position];
+    [item setPosition:position];
+    
+    //[self addGameObjectToMap:item];
+    [self.map addChild:item];
+    [self.gameObjectsToAdd addObject:item];
 }
 
 @end

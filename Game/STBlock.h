@@ -20,10 +20,13 @@ typedef enum {
 
 #endif
 
+@class STPlayer;
 @interface STBlock : STGameObject
 {}
 
 @property (nonatomic) BOOL isDestroyable;
 @property (nonatomic) STBlockType blockType;
+
+- (void)awardPlayer:(STPlayer *)player;
 
 @end
