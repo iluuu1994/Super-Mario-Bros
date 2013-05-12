@@ -18,7 +18,6 @@
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
     
-    NSLog(@"test");
     if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
         [self awardPlayer:(STPlayer *)gameObject];
     }

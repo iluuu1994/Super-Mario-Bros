@@ -100,6 +100,7 @@
     [self cleanup];
     [self updateGravity:delta];
     [self updateCollisions:delta];
+    [self updateGameObjects];
 }
 
 - (void)cleanup {
@@ -233,6 +234,33 @@
     }
     
     return rectEdge;
+}
+
+#pragma mark -
+#pragma mark Read Game Objects
+
+- (void)updateGameObjects {
+    [self readGameObjectsFromMap];
+}
+
+#define kMapLoadingDelta 10.0
+- (void)readGameObjectsFromMap {
+    int mapHeight = self.objectLayer.layerSize.height;
+    CGFloat cameraWidth = [[CCDirector sharedDirector] winSize].width;
+    CGFloat mapX = self.map.position.x * -1 / self.map.scale;
+    
+    int tileWidth = (cameraWidth + (2 * kMapLoadingDelta)) / self.map.tileSize.width;
+    int firstTile = ((mapX - kMapLoadingDelta) / self.map.tileSize.width) + 1;
+    if (firstTile < 1) firstTile = 1;
+    
+    int lastTile = firstTile + tileWidth;
+    if (lastTile > self.objectLayer.layerSize.width) lastTile = self.objectLayer.layerSize.width;
+    
+    for (int x = firstTile; x < lastTile; x++) {
+        for (int y = 1; y < mapHeight; y++) {
+            [self createGameObjectAtX:x y:y];
+        }
+    }
 }
 
 #pragma mark -

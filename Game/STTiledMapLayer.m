@@ -13,6 +13,10 @@
 
 #import "STCoin.h"
 
+@interface STTiledMapLayer ()
+@property (strong) NSNumberFormatter *numberFormatter;
+@end
+
 @implementation STTiledMapLayer
 {}
 
@@ -24,32 +28,47 @@
 {
     self = [super init];
     if (self) {
+        // Init map and layers
         self.map = [CCTMXTiledMap tiledMapWithTMXFile:tiledMap];
         self.objectGroup = [self.map objectGroupNamed:kEventsLayerKey];
         self.objectLayer = [self.map layerNamed:kObjectLayerKey];
-
-        for (int x = 1; x < self.objectLayer.layerSize.width; x++) {
-            for (int y = 1; y < self.objectLayer.layerSize.height; y++) {
-                CCSprite *tile = [self.objectLayer tileAt:ccp(x, y)];
-                NSDictionary *props = [self.map propertiesForGID:[self.objectLayer tileGIDAt:ccp(x, y)]];
-                NSString *type = props[kTypeKey];
-                if (type.length) {
-                    Class objectClass = NSClassFromString(type);
-                    CCNode *node = [objectClass node];
-                    [self setProperties:props forNode:node];
-                    [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
-                    
-                    [self addGameObjectToMap:(STGameObject *)node];
-                }
-            }
-        }
-
         [self.objectLayer setVisible:NO];
-        [self.map setScale:([CCDirector sharedDirector].winSize.height / self.map.contentSize.height)];
         
+        // init number formatter
+        self.numberFormatter = [[NSNumberFormatter alloc] init];
+        [self.numberFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier: @"en_US"]];
+
+        // Scale map to optimal size
+        [self.map setScale:([CCDirector sharedDirector].winSize.height / self.map.contentSize.height)];
         [self addChild:self.map];
+        
+        [self readGameObjectsFromMap];
     }
     return self;
+}
+
+- (void)readGameObjectsFromMap {
+    for (int x = 1; x < self.objectLayer.layerSize.width; x++) {
+        for (int y = 1; y < self.objectLayer.layerSize.height; y++) {
+            [self createGameObjectAtX:x y:y];
+        }
+    }
+}
+
+- (void)createGameObjectAtX:(unsigned int)x y:(unsigned int)y {
+    CCSprite *tile = [self.objectLayer tileAt:ccp(x, y)];
+    
+    NSDictionary *props = [self.map propertiesForGID:[self.objectLayer tileGIDAt:ccp(x, y)]];
+    NSString *type = props[kTypeKey];
+    if (type.length) {
+        Class objectClass = NSClassFromString(type);
+        CCNode *node = [objectClass node];
+        [self setProperties:props forNode:node];
+        [node setPosition:ccp(tile.position.x + (self.map.tileSize.width / 2), tile.position.y + (self.map.tileSize.height / 2))];
+        
+        [self addGameObjectToMap:(STGameObject *)node];
+        [self.objectLayer removeTileAt:ccp(x, y)];
+    }
 }
 
 - (void)setProperties:(NSDictionary *)properties forNode:(CCNode *)node {
@@ -59,9 +78,7 @@
             id value;
             NSString *stringValue = [properties objectForKey:key];
             
-            NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-            [f setLocale:[[NSLocale alloc] initWithLocaleIdentifier: @"en_US"]];
-            NSNumber *numberValue = [f numberFromString:stringValue];
+            NSNumber *numberValue = [self.numberFormatter numberFromString:stringValue];
             if (numberValue) {
                 value = numberValue;
             } else {

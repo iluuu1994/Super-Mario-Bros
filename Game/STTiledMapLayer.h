@@ -28,5 +28,7 @@
 #pragma mark Methods
 - (void)setProperties:(NSDictionary *)properties forNode:(CCNode *)node;
 - (void)addGameObjectToMap:(STGameObject *)gameObject;
+- (void)readGameObjectsFromMap;
+- (void)createGameObjectAtX:(unsigned int)x y:(unsigned int)y;
 
 @end
