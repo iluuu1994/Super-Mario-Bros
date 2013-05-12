@@ -8,6 +8,7 @@
 
 #import "STFlower.h"
 #import "STPlayer.h"
+#import "STSoundManager.h"
 
 @implementation STFlower
 
@@ -25,6 +26,12 @@
     if (player.playerState != STPlayerStateFire) {
         player.playerState = STPlayerStateFire;
     }
+}
+
+- (void)onEnter {
+    [super onEnter];
+    
+    [[STSoundManager sharedInstance] playEffect:@"powerup-appears.mp3"];
 }
 
 @end

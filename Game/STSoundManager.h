@@ -10,7 +10,7 @@
 #import "ITSingleton.h"
 
 // Sound files
-#define kSoundDeath @"die.mp3"
+#define kSoundDeath @"die.wav"
 #define kSoundKick @"kick.mp3"
 #define kSoundStomp @"stomp.mp3"
 #define kSoundPipe @"pipe.mp3" // TODO: use or delete

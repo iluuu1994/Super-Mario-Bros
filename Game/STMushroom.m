@@ -8,6 +8,7 @@
 
 #import "STMushroom.h"
 #import "STPlayer.h"
+#import "STSoundManager.h"
 
 @implementation STMushroom
 
@@ -25,6 +26,12 @@
     if (player.playerState == STPlayerStateSmall) {
         player.playerState = STPlayerStateLarge;
     }
+}
+
+- (void)onEnter {
+    [super onEnter];
+    
+    [[STSoundManager sharedInstance] playEffect:@"powerup-appears.mp3"];
 }
 
 @end
