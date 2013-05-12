@@ -349,12 +349,17 @@
 }
 
 - (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point {
-    
-    /*
-    CGFloat playerX = point.x;
-    CGFloat mapX = self.map.position.x * -1;
+    CGFloat playerX = player.position.x;
+    CGFloat mapX = self.map.position.x * -1 / self.map.scale;
+    CGFloat mapWidth = self.map.boundingBox.size.width / self.map.scale;
         
-    if (playerX - mapX < 0) return NO;*/
+    if (playerX - (player.boundingBox.size.width / 2) <= mapX) {
+        player.position = ccp(mapX + (player.boundingBox.size.width / 2), player.position.y);
+        return NO;
+    } else if (playerX + (player.boundingBox.size.width / 2) >= mapWidth) {
+        player.position = ccp(mapWidth - (player.boundingBox.size.width / 2), player.position.y);
+        return NO;
+    }
     
     return YES;
 }

@@ -65,18 +65,18 @@
    H4sIAAAAAAAAA+2Vyw6CMBBFG9GtjzV+gH6Aslc/QNeoe/X/9w4JJCOBMmVa2sS7OImRPs7cTqE0xpQAgKDciady/kO5Rsr7hcwvZi3acw9dh08/zdov4iOova/+av57YA3fvtr9fLrZ8psiu7F5Dp27CyHq8Ok3Re0hezJkFjHdpsguVJ5DdxuAfybW3QYAAAB8cEzAAYAUOTBiuwCQGieiIC6KNWYJ1JETW6FTe2xsUsjvn7yl/tU348YY8w1ZEitiPUG+uenv6x2xFzrxsbHPXJNfDF/f3rYz1faE1r+oObPfLrk3e2wEe2XEvGYh8Mvqcfw/3tcZW4s/kzg1Y12cunyktF3H5OcrQ1fvrvmu3rbe7HpXuXjb3nXavm3uxNX83g/tuwEAAACw8QW1xhBmwCsAAA==
   </data>
  </layer>
- <layer name="collision" width="200" height="14" visible="0">
+ <layer name="collision" width="200" height="14">
   <data encoding="base64" compression="gzip">
    H4sIAAAAAAAAA+3VUQqAIBBF0WkhtoDaQPtfWQV9xaijDmh5Dwz0M6D1HokAAGaw9j4AMKjtmr33IYCBHb0PAHQQnsmhH5hNEPoBaILQD0Dz7gb9gKcQebbs1e560bpBP+BFy7glX1oWrbteYt2gH/CQyngqY7EsluSzVaob9AOtLBnXcpbKYmlGa+W6Yf3/eVp+PrX3nOkdeb875jtT+42lYfcvM/v97zkBUv989MArAAA=
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+2X2w3CMAxFzQ9MkTk6ThfoBixfofIRRbbzaEiMc49kFVDSpu49CiXS2aMCAFzsTBHBEwA+SH4AAPh9A44AcMHtH/ADzCJ8yxqr+LEJJY0ZibYe7bsXAtn1A4CZBIIfAHCkblj041U4bhOOlrmzVm1Oj3svPYf2fy8In3OkWWzNZby22p5wbljyw/O7xgpwGS/JF5fF0dmU3LDkB/hftIxrGZOyODKfmhsW/Tgqxr6Z356V43Pnr53za0auKb6WdN2SjHM507LYK6O5XuXcmOHHw3m13udKPerdO0/lmfQZt8yrneuF1t554wT4YRL7wCsAAA==
+   H4sIAAAAAAAAA+3WWw6DIBCFYXypq2AdLq6b70tNDJkZLiLi+H8J6SWgSM9JGgIAAAAAANjF/8A9NmVoc0ay9mN99iIG+gFIYqAfgCTtxoz9WAvnbcrrzM7s1VrT49lLr2H934vK+5w0i625PO6t9kykbszYDzyTlPGSfElZHJ1NrRv0Az1YGbcypmVxZD6tbjy9H1/hu0/l/Nz1a9dcbeSejvfS7luScSlnVhZ7ZTR3Vrlu3NGPxflofc43nVHvs/M0PEt/45Z1tWu9aD07b37Qn1xYwCsAAA==
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
-  <object name="playerSpawnPoint" type="playerSpawnPoint" x="2737" y="38"/>
+  <object name="playerSpawnPoint" type="playerSpawnPoint" x="2744" y="27"/>
   <object name="playerEndPoint" x="2985" y="179"/>
  </objectgroup>
 </map>
