@@ -30,6 +30,10 @@
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
     
+    if ((edge == STRectEdgeMinX || edge == STRectEdgeMaxX) && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        [(STPlayer *)gameObject setDead:YES];
+    }
+    
     if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
         STPlayer *player = (STPlayer *) gameObject;
         
