@@ -245,14 +245,13 @@
     
     int tileWidth = (cameraWidth + (2 * kMapLoadingDelta)) / self.map.tileSize.width;
     int firstTile = ((mapX - kMapLoadingDelta) / self.map.tileSize.width) + 1;
-    if (firstTile < 1) firstTile = 0;
+    if (firstTile < 0) firstTile = 0;
     
     int lastTile = firstTile + tileWidth;
     if (lastTile > self.objectLayer.layerSize.width) lastTile = self.objectLayer.layerSize.width;
     
     for (int x = firstTile; x < lastTile; x++) {
-        for (int y = 1; y < mapHeight; y++) {
-            NSLog(@"%d : %d", x, y);
+        for (int y = 0; y < mapHeight; y++) {
             [self createGameObjectAtX:x y:y];
         }
     }
@@ -264,15 +263,18 @@
     CGFloat mapX = self.map.position.x * -1 / self.map.scale;
     
     for (STGameObject *gameObject in self.gameObjects) {
-        /*
-        if (gameObject.boundingBox.origin.y - gameObject.boundingBox.size.height - kRemovingDelta < 0
+        if (
+            // if objects fell of the ground
+            gameObject.boundingBox.origin.y + gameObject.boundingBox.size.height + kRemovingDelta < 0
             ||
-            //gameObject.boundingBox.origin.x + gameObject.boundingBox.size.width + kRemovingDelta < mapX
-            //||
-            //gameObject.boundingBox.origin.x > mapX + cameraWidth
+            // too much on left side
+            gameObject.boundingBox.origin.x + gameObject.boundingBox.size.width + kRemovingDelta < mapX
+            ||
+            // too much on right side
+            gameObject.boundingBox.origin.x - kRemovingDelta > mapX + cameraWidth
             ) {
-            //[gameObject setDead:YES];
-        }*/
+            [gameObject setDead:YES];
+        }
     }
 }
 

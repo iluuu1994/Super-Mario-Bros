@@ -23,6 +23,7 @@ typedef enum {
 @protocol STPlayerDelegate <NSObject>
 - (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point;
 - (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point;
+- (void)playerDied:(STPlayer *)player;
 @end
 
 @interface STPlayer : STCreature

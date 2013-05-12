@@ -48,8 +48,8 @@
 }
 
 - (void)readGameObjectsFromMap {
-    for (int x = 1; x < self.objectLayer.layerSize.width; x++) {
-        for (int y = 1; y < self.objectLayer.layerSize.height; y++) {
+    for (int x = 0; x < self.objectLayer.layerSize.width; x++) {
+        for (int y = 0; y < self.objectLayer.layerSize.height; y++) {
             [self createGameObjectAtX:x y:y];
         }
     }

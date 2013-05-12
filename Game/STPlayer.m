@@ -97,6 +97,7 @@
             [super setDead:NO];
         } else {
             [super setDead:isDead];
+            [self.delegate playerDied:self];
         }
     }
 }
