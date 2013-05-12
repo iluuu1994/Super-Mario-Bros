@@ -85,7 +85,7 @@
                                        [CCScale9Sprite spriteWithFile:kRepeatButtonImage]];
     [retryButton setAdjustBackgroundImage:NO];
     retryButton.scale = 0.8;
-    [retryButton addTarget:self action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
+    [retryButton addTarget:delegate action:@selector(retryLevel:) forControlEvents:CCControlEventTouchUpInside];
     retryButton.position = ccp(levelLabel.position.x,
                                kPadding + retryButton.contentSize.height / 2);
     [self addChild:retryButton];
@@ -103,22 +103,6 @@
     [self addChild:[CCLayerColor layerWithColor:kPausePanelColor
                                           width:levelLabel.contentSize.width + 2 * kPadding
                                          height:[[CCDirector sharedDirector] winSize].height] z:-5];
-}
-
-#pragma mark -
-#pragma mark Retry Level
-
-/**
- * Retry the current level.
- * @param sender - the sender of this message. The STPauseLayer.
- * @return an IBAction.
- */
-- (IBAction)retryLevel:(id)sender {
-    [[STGameFlowManager sharedInstance] resume];
-    STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:self.levelID] scene];
-    [[CCDirector sharedDirector] replaceScene: scene
-                          withTransitionClass:[CCTransitionFade class]
-                                     duration:0.5];
 }
 
 #pragma mark -
