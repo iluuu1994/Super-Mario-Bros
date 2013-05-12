@@ -84,8 +84,13 @@
 }
 
 - (void)setPlayerState:(STPlayerState)playerState {
-    _playerState = playerState;
+    if (playerState >= _playerState) {
+        [[STSoundManager sharedInstance] playEffect:@"powerup.mp3"];
+    } else {
+        [[STSoundManager sharedInstance] playEffect:@"pipe.mp3"];
+    }
     
+    _playerState = playerState;
     [self runAnimationWithName:_cachedAnimation endless:YES];
 }
 

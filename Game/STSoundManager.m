@@ -19,6 +19,10 @@ ITSingletonImplementation
 #pragma mark -
 #pragma mark Methods
 
++ (void)initialize {
+    [SimpleAudioEngine sharedEngine];
+}
+
 - (void)playEffect:(NSString *)effectFile {
     [[SimpleAudioEngine sharedEngine] playEffect:effectFile];
 }
