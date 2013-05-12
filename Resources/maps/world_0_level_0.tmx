@@ -17,12 +17,6 @@
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
-  <tile id="6">
-   <properties>
-    <property name="appearanceType" value="0"/>
-    <property name="type" value="STItemBlock"/>
-   </properties>
-  </tile>
   <tile id="28">
    <properties>
     <property name="appearanceType" value="0"/>
@@ -56,18 +50,18 @@
   </tile>
  </tileset>
  <layer name="bg" width="200" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+2Vyw6CMBBFG9GtjzV+gH6Aslc/QNeoe/X/9w4JJCOBMmVa2sS7OImRPs7cTqE0xpQAgKDciady/kO5Rsr7hcwvZi3acw9dh08/zdov4iOova/+av57YA3fvtr9fLrZ8psiu7F5Dp27CyHq8Ok3Re0hezJkFjHdpsguVJ5DdxuAfybW3QYAAAB8cEzAAYAUOTBiuwCQGieiIC6KNWYJ1JETW6FTe2xsUsjvn7yl/tU348YY8w1ZEitiPUG+uenv6x2xFzrxsbHPXJNfDF/f3rYz1faE1r+oObPfLrk3e2wEe2XEvGYh8Mvqcfw/3tcZW4s/kzg1Y12cunyktF3H5OcrQ1fvrvmu3rbe7HpXuXjb3nXavm3uxNX83g/tuwEAAACw8QW1xhBmwCsAAA==
+  <data encoding="base64" compression="zlib">
+   eJztlcsOgjAQRRvRrY81foB+gLJXP0DXqHv1//cOCSQjgTJlWtrEuziJkT7O3E6hNMaUAICg3Imncv5DuUbK+4XML2Yt2nMPXYdPP83aL+IjqL2v/mr+e2AN377a/Xy62fKbIruxeQ6duwsh6vDpN0XtIXsyZBYx3abILlSeQ3cbgH8m1t0GAAAAfHBMwAGAFDkwYrsAkBonoiAuijVmCdSRE1uhU3tsbFLI75+8pf7VN+PGGPMNWRIrYj1Bvrnp7+sdsRc68bGxz1yTXwxf3962M9X2hNa/qDmz3y65N3tsBHtlxLxmIfDL6nH8P97XGVuLP5M4NWNdnLp8pLRdx+TnK0NX7675rt623ux6V7l429512r5t7sTV/N4P7bsBAAAAsPEFhnPBCA==
   </data>
  </layer>
  <layer name="collision" width="200" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3VUQqAIBBF0WkhtoDaQPtfWQV9xaijDmh5Dwz0M6D1HokAAGaw9j4AMKjtmr33IYCBHb0PAHQQnsmhH5hNEPoBaILQD0Dz7gb9gKcQebbs1e560bpBP+BFy7glX1oWrbteYt2gH/CQyngqY7EsluSzVaob9AOtLBnXcpbKYmlGa+W6Yf3/eVp+PrX3nOkdeb875jtT+42lYfcvM/v97zkBUv989MArAAA=
+  <data encoding="base64" compression="zlib">
+   eJzt1VEKgCAQRdFpIbaA2kD7X1kFfcWoow5oeQ8M9DOg9R6JAABmsPY+ADCo7Zq99yGAgR29DwB0EJ7JoR+YTRD6AWiC0A9A8+4G/YCnEHm27NXuetG6QT/gRcu4JV9aFq27XmLdoB/wkMp4KmOxLJbks1WqG/QDrSwZ13KWymJpRmvlumH9/3lafj6195zpHXm/O+Y7U/uNpWH3LzP7/e85AQDwDcs=
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WQQ7CIBCFYVx5Cs7BpbyBl+/GBZkwFCZTSsf/S4gagVZ8L2lK/soFewIAAACAVKoBeMm/gXsUZWhzVurdT+9zFDnRD6AlJ/oBtMhuPLkf7zT2jLKTIl4ta2e/89hfztPmZuX9GZlFay7re5s9k1Y3ntwP7KWV8ZF8tbK4OptaN+gHPPQy3suYlsWV+ex1Y8d+fCbmfif3tsyfXXO1lfdUX0u77kjGWznrZdEro2dnddaNO/rxCj6sv/Ofzsj77CKNyOR/bFk3uzYK69lFcwDGwouHwCsAAA==
+  <data encoding="base64" compression="zlib">
+   eJzt1lEOgyAQRVG6ENbhptxBN98fmxgyMzAUEaf3JKRtAor0vcSUAAAAAADAVz4G7rEpQ5szk7Uf63cUOdEPQJIT/QAkZTee3I9N+VzZL3u11ox49tZrWO97WfleU2axN5fnvXnPROrGk/uBtUgZb8mXlMXZ2dS6QT8wgpVxK2NaFmfm0+rGiv3YHXPfzmv3zPeuudrMPZ3vpd23JeNSzqwsjspo7axq3bijH6/go/c5/+mMRp9dpBFZ+R/3rPOujaL37KL5AGYbFr0=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">

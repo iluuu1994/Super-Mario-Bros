@@ -47,7 +47,7 @@
 /**
  * The current amount of seconds left. Is being decreased every second by one. 
  */
-@property unsigned short time;
+@property (readonly) unsigned short time;
 
 /**
  * The delegate receiving a message when the time has elapsed. 

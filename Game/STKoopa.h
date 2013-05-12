@@ -10,5 +10,11 @@
 #import "STSoundManager.h"
 
 @interface STKoopa : STNPC
+{}
+
+#pragma mark -
+#pragma mark Properties
+
+@property (setter = setHidden:) BOOL isHidden;
 
 @end
