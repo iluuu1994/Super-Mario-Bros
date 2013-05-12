@@ -12,6 +12,7 @@
 #import "STMushroom.h"
 
 #define kJumpVelocity 250
+#define kInvinibilityDuration 1
 
 @interface STPlayer () {
     NSString *_cachedAnimation;
@@ -34,7 +35,10 @@
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
-    
+    // Kill all creatures when in "instant kill"-mode
+    if (self.killsInstantly && [[gameObject class] isSubclassOfClass:[STCreature class]]) {
+        [gameObject setDead:YES];
+    }
 }
 
 - (void)jump {
@@ -85,12 +89,36 @@
 
 - (void)setDead:(BOOL)isDead {
     
-    if (isDead && self.playerState != STPlayerStateSmall) {
-        [self setPlayerState:STPlayerStateSmall];
-        [super setDead:NO];
-    } else {
-        [super setDead:isDead];
+    if (!self.isInvincible) {
+        
+        if (isDead && self.playerState != STPlayerStateSmall) {
+            [self setPlayerState:STPlayerStateSmall];
+            [self setInvincible:YES forTime:kInvinibilityDuration];
+            [super setDead:NO];
+        } else {
+            [super setDead:isDead];
+        }
     }
+}
+
+- (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time {
+    [self setInvincible:YES];
+    [self schedule:@selector(invincibilityCallback) interval:time];
+}
+
+- (void)invincibilityCallback {
+    [self setInvincible:!self.isInvincible];
+    [self unschedule:@selector(invincibilityCallback)];
+}
+
+- (void)setKillsInstantly:(BOOL)killsInstantly forTime:(ccTime)time {
+    [self setKillsInstantly:YES];
+    [self schedule:@selector(instantKillCallback) interval:time];
+}
+
+- (void)instantKillCallback {
+    [self setKillsInstantly:!self.killsInstantly];
+    [self unschedule:@selector(instantKillCallback)];
 }
 
 @end

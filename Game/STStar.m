@@ -7,6 +7,9 @@
 //
 
 #import "STStar.h"
+#import "STPlayer.h"
+
+#define kDuration 7
 
 @implementation STStar
 
@@ -16,6 +19,12 @@
         [self runAnimationWithName:@"glare" endless:YES];
     }
     return self;
+}
+
+- (void)awardPlayer:(STPlayer *)player {
+    [super awardPlayer:player];
+    [player setInvincible:YES forTime:kDuration];
+    [player setKillsInstantly:YES forTime:kDuration];
 }
 
 @end

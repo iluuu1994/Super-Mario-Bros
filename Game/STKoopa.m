@@ -36,31 +36,36 @@
         }
     }
     
-    if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+    if([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        
         STPlayer *player = (STPlayer *) gameObject;
-
-        // Make the other GameObject jump after jumping on this
-        gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
         
-        // Play a sound
-        [[STSoundManager sharedInstance] playEffect:kSoundStomp];
-        
-        if (!self.isHidden) {
-            // Add a score
-            player.score += kScore;
-        
-            // Hide the koopa in the armor and make it a deadly projectile
-            [self runAnimationWithName:@"armor" endless:YES];
-            self.isHidden = YES;
-            self.velocity = ccp(0, 0);
-            
-        } else {
-            // If we jump on the koopa again when he is hidden, he becomes a deadly projectile
+        if (self.isHidden) {
+            // If we touch the hidden koopa he becomes a deadly projectile
             if (gameObject.velocity.x < 0) {
                 self.velocity = ccpAdd(self.velocity, ccp(-kProjectileSpeed, self.velocity.y));
             } else {
                 self.velocity = ccpAdd(self.velocity, ccp(kProjectileSpeed, self.velocity.y));
             }
+        }
+        
+        if (edge == STRectEdgeMaxY) {
+            // Make the other GameObject jump after jumping on this
+            gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
+            
+            // Play a sound
+            [[STSoundManager sharedInstance] playEffect:kSoundStomp];
+            
+            if (!self.isHidden) {
+                // Add a score
+                player.score += kScore;
+                
+                // Hide the koopa in the armor and make it a deadly projectile
+                [self runAnimationWithName:@"armor" endless:YES];
+                self.isHidden = YES;
+                self.velocity = ccp(0, 0);
+            }
+            
         }
     }
     

@@ -7,6 +7,9 @@
 //
 
 #import "STSpiny.h"
+#import "STPlayer.h"
+
+#define kSpeed 10
 
 @implementation STSpiny
 
@@ -16,6 +19,21 @@
         [self runAnimationWithName:@"walk" endless:YES];
     }
     return self;
+}
+
+- (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
+    if (edge == STRectEdgeMinX && self.velocity.x < 0) {
+        self.velocity = ccp(kSpeed, self.velocity.y);
+    } else if (edge == STRectEdgeMaxX && self.velocity.x > 0) {
+        self.velocity = ccp(-kSpeed, self.velocity.y);
+    }
+    
+    if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {        
+        // Make the other GameObject jump after jumping on this
+        gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
+
+        [gameObject setDead:YES];
+    }
 }
 
 @end

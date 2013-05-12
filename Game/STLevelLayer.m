@@ -65,10 +65,6 @@
 
 - (void)tearDown {
     [super tearDown];
-    
-    for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
-        [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
-    }
 }
 
 - (void)onEnter {
@@ -87,6 +83,12 @@
     unsigned short time = [[level valueForKey:kLevelTimeKey] shortValue];
     [self setInfoLayer:[STInformationLayer layerWithDelegate:self player:self.player time:time]];
     [self addChild:self.infoLayer];
+}
+
+- (void)unloadSpriteCache {
+    for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
+        [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
+    }
 }
 
 #pragma mark -
@@ -286,9 +288,19 @@
 
 #pragma mark -
 #pragma mark PauseLayer Delegate
+
 - (IBAction)play:(id)sender {
     [self replaceUILayer:[STControlsLayer layerWithDelegate:self]];
     [[STGameFlowManager sharedInstance] resume];
+}
+
+- (IBAction)retryLevel:(id)sender {
+    [self unloadSpriteCache];
+    [[STGameFlowManager sharedInstance] resume];
+    STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:self.levelID] scene];
+    [[CCDirector sharedDirector] replaceScene: scene
+                          withTransitionClass:[CCTransitionFade class]
+                                     duration:0.5];
 }
 
 #pragma mark -

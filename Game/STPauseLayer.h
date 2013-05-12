@@ -24,6 +24,13 @@
  */
 - (IBAction)play:(id)sender;
 
+/**
+ * When the user wants to retrx the current level this message is sent to the delegate.
+ * @param sender - the sender of this message. The STPauseLayer.
+ * @return an IBAction.
+ */
+- (IBAction)retryLevel:(id)sender;
+
 @end
 
 /**

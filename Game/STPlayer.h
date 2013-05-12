@@ -30,10 +30,15 @@ typedef enum {
 
 @property unsigned int score;
 @property unsigned int coins;
+@property (setter = setInvincible:) BOOL isInvincible;
+@property BOOL killsInstantly;
 @property (strong, nonatomic) NSMutableArray *bonusItems;
 @property (nonatomic) STPlayerState playerState;
 
 @property (unsafe_unretained) id<STPlayerDelegate> delegate;
+
+- (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time;
+- (void)setKillsInstantly:(BOOL)killsInstantly forTime:(ccTime)time;
 
 - (void)jump;
 
