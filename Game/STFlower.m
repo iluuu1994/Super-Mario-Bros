@@ -19,15 +19,11 @@
     return self;
 }
 
-- (void)collisionWithGameObject:(STGameObject *)gameObject
-                           edge:(STRectEdge)edge {
-
+- (void)awardPlayer:(STPlayer *)player {
+    [super awardPlayer:player];
     
-    if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
-        STPlayer *player = (STPlayer *)gameObject;
-        if (player.playerState != STPlayerStateFire) {
-            player.playerState = STPlayerStateFire;
-        }
+    if (player.playerState != STPlayerStateFire) {
+        player.playerState = STPlayerStateFire;
     }
 }
 
