@@ -12,6 +12,8 @@
 		9106D2A41712E4C400BC6CFC /* world_0_level_0_old.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */; };
 		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
 		911F77D61740E13F00427F2D /* invincible.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 911F77D51740E13F00427F2D /* invincible.m4a */; };
+		911F77D91740E74600427F2D /* Mario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 911F77D71740E74600427F2D /* Mario.plist */; };
+		911F77DA1740E74600427F2D /* Mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 911F77D81740E74600427F2D /* Mario.png */; };
 		9122DD04173919DA0042D918 /* STItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD03173919DA0042D918 /* STItem.m */; };
 		9122DD0717391A4E0042D918 /* STCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD0617391A4E0042D918 /* STCoin.m */; };
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
@@ -64,8 +66,6 @@
 		917E6F77173D989200777A40 /* STMushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E6F76173D989200777A40 /* STMushroom.m */; };
 		917E6F7B173D989E00777A40 /* Mushroom.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F79173D989E00777A40 /* Mushroom.plist */; };
 		917E6F7C173D989E00777A40 /* Mushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F7A173D989E00777A40 /* Mushroom.png */; };
-		91811747173D814500BED582 /* Mario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91811745173D814500BED582 /* Mario.plist */; };
-		91811748173D814500BED582 /* Mario.png in Resources */ = {isa = PBXBuildFile; fileRef = 91811746173D814500BED582 /* Mario.png */; };
 		91AB077D16BE6D0E00195D66 /* STScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077C16BE6D0D00195D66 /* STScene.m */; };
 		91AB078016BE704300195D66 /* STLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB077F16BE704300195D66 /* STLayer.m */; };
 		91AB078316BE912400195D66 /* STTiledMapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AB078216BE912400195D66 /* STTiledMapLayer.m */; };
@@ -286,6 +286,8 @@
 		9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0_old.tmx; path = Resources/maps/world_0_level_0_old.tmx; sourceTree = SOURCE_ROOT; };
 		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
 		911F77D51740E13F00427F2D /* invincible.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = invincible.m4a; path = Resources/sounds/invincible.m4a; sourceTree = SOURCE_ROOT; };
+		911F77D71740E74600427F2D /* Mario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mario.plist; sourceTree = "<group>"; };
+		911F77D81740E74600427F2D /* Mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mario.png; sourceTree = "<group>"; };
 		9122DD02173919DA0042D918 /* STItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STItem.h; sourceTree = "<group>"; };
 		9122DD03173919DA0042D918 /* STItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STItem.m; sourceTree = "<group>"; };
 		9122DD0517391A4E0042D918 /* STCoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCoin.h; sourceTree = "<group>"; };
@@ -365,8 +367,6 @@
 		917E6F76173D989200777A40 /* STMushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMushroom.m; sourceTree = "<group>"; };
 		917E6F79173D989E00777A40 /* Mushroom.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mushroom.plist; sourceTree = "<group>"; };
 		917E6F7A173D989E00777A40 /* Mushroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mushroom.png; sourceTree = "<group>"; };
-		91811745173D814500BED582 /* Mario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mario.plist; sourceTree = "<group>"; };
-		91811746173D814500BED582 /* Mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mario.png; sourceTree = "<group>"; };
 		9193DA4217364B5400ABA83D /* STTiledMapKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTiledMapKeys.h; sourceTree = "<group>"; };
 		91AB077B16BE6D0D00195D66 /* STScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScene.h; sourceTree = "<group>"; };
 		91AB077C16BE6D0D00195D66 /* STScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScene.m; sourceTree = "<group>"; };
@@ -1056,8 +1056,8 @@
 		914EB29A171424760070051D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91811745173D814500BED582 /* Mario.plist */,
-				91811746173D814500BED582 /* Mario.png */,
+				911F77D71740E74600427F2D /* Mario.plist */,
+				911F77D81740E74600427F2D /* Mario.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2095,8 +2095,6 @@
 				D4A1AF1D173D1C0900E743E8 /* play.png in Resources */,
 				D4A1AF1F173D1DE900E743E8 /* levels.png in Resources */,
 				D4A1AF21173D1DF900E743E8 /* repeat.png in Resources */,
-				91811747173D814500BED582 /* Mario.plist in Resources */,
-				91811748173D814500BED582 /* Mario.png in Resources */,
 				917E6F70173D95A200777A40 /* Coin.plist in Resources */,
 				917E6F71173D95A200777A40 /* Coin.png in Resources */,
 				917E6F73173D963F00777A40 /* world_0_level_0.tmx in Resources */,
@@ -2126,6 +2124,8 @@
 				9169AF4917402BBE00F89820 /* time_warning.mp3 in Resources */,
 				9169AF4B1740324F00F89820 /* stage_clear.wav in Resources */,
 				911F77D61740E13F00427F2D /* invincible.m4a in Resources */,
+				911F77D91740E74600427F2D /* Mario.plist in Resources */,
+				911F77DA1740E74600427F2D /* Mario.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

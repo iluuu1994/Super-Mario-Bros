@@ -180,13 +180,13 @@
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {14, 15}}</string>
+			<string>{{1, 0}, {14, 15}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
 			<string>{14, 15}</string>
 			<key>spriteSourceSize</key>
-			<string>{14, 15}</string>
+			<string>{16, 15}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
@@ -199,13 +199,13 @@
 			<key>aliases</key>
 			<array/>
 			<key>spriteColorRect</key>
-			<string>{{0, 0}, {12, 16}}</string>
+			<string>{{2, 0}, {12, 16}}</string>
 			<key>spriteOffset</key>
 			<string>{0, -0}</string>
 			<key>spriteSize</key>
 			<string>{12, 16}</string>
 			<key>spriteSourceSize</key>
-			<string>{12, 16}</string>
+			<string>{16, 16}</string>
 			<key>spriteTrimmed</key>
 			<true/>
 			<key>textureRect</key>
