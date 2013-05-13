@@ -64,7 +64,7 @@
 
 /**
  * Init a pause layer with given  world id and level id.
- * @param delegate the delegate which receives messages when pressing a button on this layer.
+ * @param delegate the delegate which receives messages when pressing a button on this layer
  * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
  * @return id - The initialised object.
@@ -75,7 +75,7 @@
 
 /**
  * Returns a pause layer with given  world id and level id.
- * @param delegate the delegate which receives messages when pressing a button on this layer.
+ * @param delegate the delegate which receives messages when pressing a button on this layer
  * @param worldID - the id of the world containing the played level
  * @param levelID - the id of the played level inside the specified world
  * @return id - The initialised object.

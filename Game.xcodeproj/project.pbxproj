@@ -1795,9 +1795,9 @@
 		D4437B62172FEECB00FF2F44 /* Pause Layer */ = {
 			isa = PBXGroup;
 			children = (
-				D4A1AF1B173D1BE500E743E8 /* images */,
 				D4437B63172FEEF300FF2F44 /* STPauseLayer.h */,
 				D4437B64172FEEF300FF2F44 /* STPauseLayer.m */,
+				D4A1AF1B173D1BE500E743E8 /* images */,
 			);
 			name = "Pause Layer";
 			sourceTree = "<group>";

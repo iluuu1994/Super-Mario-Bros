@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- * Helper for Bundle. Get resources easier
+ * Helper for Bundle. Get resources easier.
  */
 @interface NSBundle (Resources)
 {}
@@ -17,7 +17,7 @@
 #pragma mark -
 #pragma mark Resources
 /**
- * Gets a file from the resources via name
+ * Gets a file from the resources via name.
  * @param resourceName - The file name of the resource
  */
 + (id)pathForResource:(NSString *)resourceName;

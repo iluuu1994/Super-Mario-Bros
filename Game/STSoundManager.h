@@ -17,15 +17,12 @@
 #define kSoundDeath @"die.wav"
 #define kSoundKick @"kick.mp3"
 #define kSoundStomp @"stomp.mp3"
-#define kSoundPipe @"pipe.mp3" // TODO: use or delete
+#define kSoundPipe @"pipe.mp3"
 #define kSoundCoin @"coin.mp3"
 #define kSoundBreakBlock @"break_block.mp3"
 #define kSoundStageClear @"stage_clear.wav"
-#define kSoundTimeWarning @"time_warning.mp3" // TODO: use or delete
 #define kSoundTheme @"theme.mp3"
-#define kSoundOneUp @"1-up.mp3" // TODO: use or delete
 #define kSoundFireball @"fireball.mp3"
-#define kSoundFlaghole @"flagpole.mp3"
 #define kSoundPowerUp @"powerup.mp3"
 #define kSoundPowerUpAppears @"powerup-appears.mp3"
 

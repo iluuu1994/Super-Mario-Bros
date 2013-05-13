@@ -17,23 +17,23 @@
 #define STBlockTypeEnum
 
 /**
- * Defines different block types
+ * Defines different block types.
  */
 typedef enum {
     /**
-     * This block type is used for the ground
-     * It is not destroyable
+     * This block type is used for the ground.
+     * It is not destroyable.
      */
     STBlockTypeGround,
     
     /**
-     * This block type is destroyable
+     * This block type is destroyable.
      */
     STBlockTypeDestroyable,
     
     /**
-     * This block type is an alternative
-     * It is not destroyable
+     * This block type is an alternative.
+     * It is not destroyable.
      */
     STBlockTypeAlternate
 } STBlockType;
@@ -48,11 +48,11 @@ typedef enum {
 @class STPlayer;
 
 /**
- * Represents a block
- * A block is a static game object
- * It can be used as ground
- * It can also be destroyed by other game objects
- * The player can destroy it by hitting it from the bottom edge
+ * Represents a block.
+ * A block is a static game object.
+ * It can be used as ground.
+ * It can also be destroyed by other game objects.
+ * The player can destroy it by hitting it from the bottom edge.
  */
 @interface STBlock : STGameObject
 {}
@@ -63,12 +63,12 @@ typedef enum {
 #pragma mark Properties
 
 /**
- * Defines if the block should be destoryable of not
+ * Defines if the block should be destoryable of not.
  */
 @property (nonatomic) BOOL isDestroyable;
 
 /**
- * Defines the type of the block
+ * Defines the type of the block.
  */
 @property (nonatomic) STBlockType blockType;
 
@@ -79,8 +79,8 @@ typedef enum {
 #pragma mark Methods
 
 /**
- * Awards the player
- * This occurs when the player breaks the block
+ * Awards the player.
+ * This occurs when the player breaks the block.
  */
 - (void)awardPlayer:(STPlayer *)player;
 

@@ -21,8 +21,8 @@
 #pragma mark AppController Interface
 
 /**
- * The start point of our application
- * It configures and initializes Cocos2d
+ * The start point of our application.
+ * It configures and initializes Cocos2d.
  */
 @interface AppController : NSObject <UIApplicationDelegate>
 {
@@ -31,18 +31,18 @@
 }
 
 /**
- * The main window of the application
+ * The main window of the application.
  */
 @property (nonatomic, strong) UIWindow *window;
 
 /**
- * The main navigation controller
- * This is used for rotation of the device
+ * The main navigation controller.
+ * This is used for rotation of the device.
  */
 @property (readonly) MyNavigationController *navController;
 
 /**
- * The director for Cocos2d
+ * The director for Cocos2d.
  */
 @property (unsafe_unretained, readonly) CCDirectorIOS *director;
 

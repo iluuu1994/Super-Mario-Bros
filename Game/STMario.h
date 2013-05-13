@@ -9,7 +9,7 @@
 #import "STPlayer.h"
 
 /**
- * The player that should represent the Mario character
+ * The player that should represent the Mario character.
  */
 @interface STMario : STPlayer
 {}

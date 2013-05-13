@@ -32,29 +32,29 @@
 
 /**
  * When the user pressed the A-button this message is sent to the delegate.
- * @param sender - the sender of this message. The STControlsLAyer.
- * @return an IBAction.
+ * @param sender - the sender of this message. The STControlsLayer
+ * @return an IBAction
  */
 - (IBAction)a:(id)sender;
 
 /**
  * When the user pressed the B-button this message is sent to the delegate.
- * @param sender - the sender of this message. The STControlsLAyer.
- * @return an IBAction.
+ * @param sender - the sender of this message. The STControlsLayer
+ * @return an IBAction
  */
 - (IBAction)b:(id)sender;
 
 /**
  * When the user wants moves the joystick on the screen this message is sent to the delegate.
- * @param sender - the sender of this message. The STControlsLAyer.
- * @return an IBAction.
+ * @param sender - the sender of this message. The STControlsLayer
+ * @return an IBAction
  */
 - (IBAction)joystick:(id)sender delta:(ccTime)delta;
 
 /**
  * When the user wants to pause the game this message is sent to the delegate.
- * @param sender - the sender of this message. The STControlsLAyer.
- * @return an IBAction.
+ * @param sender - the sender of this message. The STControlsLayer.
+ * @return an IBAction
  */
 - (IBAction)pause:(id)sender;
 
@@ -85,15 +85,15 @@
 
 /**
  * Init a layer with the input elements needed to play the game.
- * @param delegate the delegate which receives messages when pressing a button on this layer.
- * @return id - The initialised object.
+ * @param delegate the delegate which receives messages when pressing a button on this layer
+ * @return id - The initialised object
  */
 - (id)initWithDelegate:(id <STControlsDelegate>)delegate;
 
 /**
  * Returns a layer with the input elements needed to play the game.
- * @param delegate the delegate which receives messages when pressing a button on this layer.
- * @return id - The initialised object.
+ * @param delegate the delegate which receives messages when pressing a button on this layer
+ * @return id - The initialised object
  */
 + (id)layerWithDelegate:(id <STControlsDelegate>)delegate;
 
@@ -107,7 +107,7 @@
 
 /**
  * Updates the layer.
- * @param delta - the time elapsed since the last call of update.
+ * @param delta - the time elapsed since the last call of update
  */
 - (void)update:(ccTime)delta;
 

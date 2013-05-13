@@ -16,7 +16,7 @@
 #define STGameObjectEnums
 
 /**
- * An enum representing an edge of a game object
+ * An enum representing an edge of a game object.
  */
 typedef enum {
     // Left edge
@@ -30,27 +30,27 @@ typedef enum {
 } STRectEdge;
 
 /**
- * Super Mario Bros has 3 kinds of levels
- * Normal levels (Like level 1)
- * Underground Levels
- * Castle Levels
+ * Super Mario Bros has 3 kinds of levels:
+ * - Normal levels (Like level 1)
+ * - Underground Levels
+ * - Castle Levels
  *
- * The same object has a different appearance in those different environments
- * Therefore, we use an enum to represent it
+ * The same object has a different appearance in those different environments.
+ * Therefore, we use an enum to represent it.
  */
 typedef enum {
     /**
-     * Default appearance
+     * Default appearance.
      */
     STAppearanceTypeDefault,
     
     /**
-     * Appearance for underground levels
+     * Appearance for underground levels.
      */
     STAppearanceTypeDark,
     
     /**
-     * Appearance for castle levels
+     * Appearance for castle levels.
      */
     STAppearanceTypeCastle
 } STAppearanceType;
@@ -60,22 +60,22 @@ typedef enum {
  */
 typedef enum {
     /** 
-     * The body is non-colliding, meaning a collision has no physial consequences
+     * The body is non-colliding, meaning a collision has no physial consequences.
      */
     STGameObjectBodyTypeNonColliding,
     
     /**
-     * The body type is static, meaning it will never be moved
+     * The body type is static, meaning it will never be moved.
      */
     STGameObjectBodyTypeStatic,
     
     /**
-     * The body type is dynamic, which means it is bound to gravity, and collisions with other objects
+     * The body type is dynamic, which means it is bound to gravity, and collisions with other objects.
      */
     STGameObjectBodyTypeDynamic,
     
     /**
-     * The body type is semi-dynamic, which means it collides with other objects, but is not bound to gravity
+     * The body type is semi-dynamic, which means it collides with other objects, but is not bound to gravity.
      */
     STGameObjectBodyTypeSemiDynamic
 } STGameObjectBodyType;
@@ -87,8 +87,8 @@ typedef enum {
 #pragma mark Protocols
 
 /**
- * This is the delegate protocol for the game objects. The delegate will typically be an STLevelLayer
- * Subclasses may extend this protocol, to define more methods
+ * This is the delegate protocol for the game objects. The delegate will typically be an STLevelLayer.
+ * Subclasses may extend this protocol, to define more methods.
  */
 @class STGameObject;
 @protocol STGameObjectDelegate <NSObject>
@@ -115,31 +115,31 @@ typedef enum {
 #pragma mark Properties
 
 /**
- * Defines if the game objects receives a touch notification
- * To actiave, simply override the `needsTouchNotifications` method and return `YES`
+ * Defines if the game objects receives a touch notification.
+ * To actiave, simply override the `needsTouchNotifications` method and return `YES`.
  */
 @property (readonly) BOOL needsTouchNotifications;
 
 /**
- * The velocity of the game object is added to the position in every update
- * This creates smooth movement game objects
- * It can also create the effect of acceleration, when you constantly increase the velocity
+ * The velocity of the game object is added to the position in every update.
+ * This creates smooth movement game objects.
+ * It can also create the effect of acceleration, when you constantly increase the velocity.
  */
 @property CGPoint velocity;
 
 /**
- * The body type defines how physics should treat the object
+ * The body type defines how physics should treat the object.
  */
 @property STGameObjectBodyType bodyType;
 
 /**
- * Defines if the object differenciates between the different level appearances
+ * Defines if the object differenciates between the different level appearances.
  */
 @property (readonly, nonatomic) BOOL differenciatesAppearance;
 
 /**
- * The appearance type defines what appearance the type should have, relative to the level
- * This only occurs if `differenciatesAppearance` returns `YES`
+ * The appearance type defines what appearance the type should have, relative to the level.
+ * This only occurs if `differenciatesAppearance` returns `YES`.
  */
 @property (nonatomic) STAppearanceType appearanceType;
 
@@ -160,21 +160,21 @@ typedef enum {
 #pragma mark Methods
 
 /**
- * Kills the game object
- * This most likely plays a sound
- * To kill a game object silently, do `setDead:`
+ * Kills the game object.
+ * This most likely plays a sound.
+ * To kill a game object silently, do `setDead:`.
  */
 - (void)die;
 
 /**
- * Moves the game object by a delta point
+ * Moves the game object by a delta point.
  * @param deltaPoint - The value that the game object should be moved by
  */
 - (void)move:(CGPoint)deltaPoint;
 
 /**
  * This method is auctomatically called, if the game object collided with another game object.
- * The game object can then handle the collision
+ * The game object can then handle the collision.
  * @param gameObject - the game object with which we collided
  * @param edge - The rect edge, wich collided
  */
@@ -182,8 +182,8 @@ typedef enum {
                            edge:(STRectEdge)edge;
 
 /**
- * This method returns the appearance-specific name of a resource
- * For example, "block" in a dark-level will return "dark-block"
+ * This method returns the appearance-specific name of a resource.
+ * For example, "block" in a dark-level will return "dark-block".
  * @param name - The base name of the resource/animation/frame
  * @return The adjusted string for the resource/animation/frame
  */

@@ -10,10 +10,10 @@
 
 
 /**
- * Represents a Mushroom item
+ * Represents a Mushroom item.
  *
- * A Mushroom makes a small player that collects it large
- * It also gives him some score
+ * A Mushroom makes a small player that collects it large.
+ * It also gives him some score.
  */
 @interface STMushroom : STItem
 
