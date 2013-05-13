@@ -11,6 +11,7 @@
 #import "STSoundManager.h"
 #import "STMushroom.h"
 #import "STNPC.h"
+#import "STFireBall.h"
 
 #define kJumpVelocity 300
 #define kInvinibilityDuration 1
@@ -18,6 +19,7 @@
 
 @interface STPlayer () {
     NSString *_cachedAnimation;
+    BOOL _stopBackgroundMusic;
 }
 @property BOOL isAnimating;
 @end
@@ -47,6 +49,22 @@
     if(self.velocity.y == 0) {
         self.velocity = ccp(0, kJumpVelocity);
         [[STSoundManager sharedInstance] playEffect:@"jump.wav"];
+    }
+}
+
+- (void)spitFireball {
+    if (self.playerState == STPlayerStateFire) {
+        STFireBall *fireball = [[STFireBall alloc] init];
+        
+        if (!self.flipX) {
+            fireball.velocity = ccp(200, 0);
+            fireball.position = ccpAdd(self.position, ccp(self.boundingBox.size.width + (fireball.boundingBox.size.width / 2), 0));
+        } else {
+            fireball.velocity = ccp(-200, 0);
+            fireball.position = ccpAdd(self.position, ccp(-self.boundingBox.size.width - (fireball.boundingBox.size.width / 2), 0));
+        }
+        
+        [self.delegate addGameObjectToMap:fireball toPosition:fireball.position];
     }
 }
 
@@ -100,7 +118,7 @@
         
         if (isDead && self.playerState != STPlayerStateSmall) {
             [self setPlayerState:STPlayerStateSmall];
-            [self setInvincible:YES forTime:kInvinibilityDuration];
+            [self setInvincible:YES forTime:kInvinibilityDuration playingInvincibleSong:NO];
             [super setDead:NO];
         } else {
             [super setDead:isDead];
@@ -109,12 +127,15 @@
     }
 }
 
-- (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time {
+- (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time playingInvincibleSong:(BOOL)invincibleSong {
     // Start being invincible
     [self setInvincible:YES];
     [self schedule:@selector(invincibilityCallback) interval:time];
     
-    // TODO: Start playing invincibility-effect
+    _stopBackgroundMusic = invincibleSong;
+    if (invincibleSong) {
+        [[STSoundManager sharedInstance] playBackgroundMusic:@"invincible.m4a"];
+    }
     
     // Start blinking
     [self schedule:@selector(blink) interval:kBlinkingSpeed];
@@ -125,7 +146,10 @@
     [self setInvincible:!self.isInvincible];
     [self unschedule:@selector(invincibilityCallback)];
     
-    // TODO: Stop playing invincibility-effect
+    if (_stopBackgroundMusic) {
+        [[STSoundManager sharedInstance] stopBackgroundMusic];
+        [self.delegate playerStopsPlayingInvincibleSong:self];
+    }
     
     // Stop blinking
     [self unschedule:@selector(blink)];

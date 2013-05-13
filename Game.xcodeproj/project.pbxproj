@@ -11,6 +11,7 @@
 		9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */; };
 		9106D2A41712E4C400BC6CFC /* world_0_level_0_old.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */; };
 		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
+		911F77D61740E13F00427F2D /* invincible.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 911F77D51740E13F00427F2D /* invincible.m4a */; };
 		9122DD04173919DA0042D918 /* STItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD03173919DA0042D918 /* STItem.m */; };
 		9122DD0717391A4E0042D918 /* STCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD0617391A4E0042D918 /* STCoin.m */; };
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
@@ -284,6 +285,7 @@
 		9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "SMB-Tiles.gif"; path = "Resources/maps/SMB-Tiles.gif"; sourceTree = SOURCE_ROOT; };
 		9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0_old.tmx; path = Resources/maps/world_0_level_0_old.tmx; sourceTree = SOURCE_ROOT; };
 		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
+		911F77D51740E13F00427F2D /* invincible.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = invincible.m4a; path = Resources/sounds/invincible.m4a; sourceTree = SOURCE_ROOT; };
 		9122DD02173919DA0042D918 /* STItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STItem.h; sourceTree = "<group>"; };
 		9122DD03173919DA0042D918 /* STItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STItem.m; sourceTree = "<group>"; };
 		9122DD0517391A4E0042D918 /* STCoin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCoin.h; sourceTree = "<group>"; };
@@ -933,6 +935,7 @@
 		913EB1451732DA460012B37B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				911F77D51740E13F00427F2D /* invincible.m4a */,
 				9169AF4A1740324F00F89820 /* stage_clear.wav */,
 				9169AF2C17402BBE00F89820 /* 1-up.mp3 */,
 				9169AF2D17402BBE00F89820 /* break_block.mp3 */,
@@ -2122,6 +2125,7 @@
 				9169AF4817402BBE00F89820 /* theme.mp3 in Resources */,
 				9169AF4917402BBE00F89820 /* time_warning.mp3 in Resources */,
 				9169AF4B1740324F00F89820 /* stage_clear.wav in Resources */,
+				911F77D61740E13F00427F2D /* invincible.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

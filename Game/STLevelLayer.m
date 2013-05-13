@@ -61,7 +61,15 @@
 
 - (void)setUp {
     [super setUp];
-    //[[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
+    [self startPlayingBackgroundMusic];
+}
+
+- (void)startPlayingBackgroundMusic {
+    [[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
+}
+
+- (void)stopPlayingBackgroundMusic {
+    [[STSoundManager sharedInstance] stopBackgroundMusic];
 }
 
 - (void)tearDown {
@@ -307,7 +315,7 @@
 }
 
 - (IBAction)b:(id)sender {
-    NSLog(@"b pressed.");
+    [self.player spitFireball];
 }
 
 #define kJoystickTolerance 0.0
@@ -376,6 +384,10 @@
 
 - (void)playerDied:(STPlayer *)player {
     [self levelEndedWithSuccess:NO];
+}
+
+- (void)playerStopsPlayingInvincibleSong:(STPlayer *)player {
+    [self startPlayingBackgroundMusic];
 }
 
 - (void)replaceUILayer:(STLayer *)layer {

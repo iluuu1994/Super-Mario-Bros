@@ -23,7 +23,7 @@
 
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];
-    [player setInvincible:YES forTime:kDuration];
+    [player setInvincible:YES forTime:kDuration playingInvincibleSong:YES];
     [player setKillsInstantly:YES forTime:kDuration];
 }
 
