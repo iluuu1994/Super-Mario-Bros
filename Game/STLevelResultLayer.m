@@ -161,23 +161,24 @@
  * @return an IBAction.
  */
 - (IBAction)nextLevel:(id)sender {
-    // TODO: next level
+    // Which is the next level?
     NSDictionary *nextLevel = [[STWorldInfoReader sharedInstance]
                                nextLevelFromWorldID:self.worldID levelID:self.levelID];
     
-    [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID + 1];
-    
-    if(nextLevel) {
+    // Unlock next world
+    if([[STWorldInfoReader sharedInstance] isLastLevel:self.levelID fromWorld:self.worldID]) {
+        [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID + 1];
+        
+        [[CCDirector sharedDirector] replaceScene: [STChooseWorldLayer scene]
+                              withTransitionClass:[CCTransitionFade class]
+                                         duration:0.5];
+    } else {
         unsigned short levelID = [[nextLevel valueForKey:kLevelIDKey] shortValue];
         
         [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID levelID:levelID];
         
         STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:levelID] scene];
         [[CCDirector sharedDirector] replaceScene: scene
-                              withTransitionClass:[CCTransitionFade class]
-                                         duration:0.5];
-    } else {
-        [[CCDirector sharedDirector] replaceScene: [STChooseWorldLayer scene]
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];
     }

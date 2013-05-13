@@ -10,7 +10,7 @@
 #import "ITSingleton.h"
 
 /**
- * Utility class to read and modify the file Worlds.plist which contains 
+ * Utility class to read the file Worlds.plist which contains 
  * information about the available playable levels grouped in worlds. 
  */
 @interface STWorldInfoReader : NSObject
@@ -68,6 +68,14 @@ ITSingletonInterface
  *         is the last level of the given world.
  */
 - (id) nextLevelFromWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
+
+/**
+ * Checks whether the given level is the last of the given world.
+ * @param levelID is this level the last of the given world?
+ * @param worldID - the world which contains the given level.
+ * @return YES if the given level (identified by both ids) is the last of the given world. NO otherwise.
+ */
+- (BOOL) isLastLevel:(unsigned short)levelID fromWorld:(unsigned short)worldID;
 
 /**
  * Unlocks the world identified by the given world id.

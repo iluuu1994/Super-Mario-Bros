@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9106D2A01712DF5F00BC6CFC /* CCDirector+Transitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */; };
 		9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */; };
-		9106D2A41712E4C400BC6CFC /* world_0_level_0_old.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */; };
 		9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9106D2A51712E50000BC6CFC /* Worlds.plist */; };
 		911F77D61740E13F00427F2D /* invincible.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 911F77D51740E13F00427F2D /* invincible.m4a */; };
 		911F77D91740E74600427F2D /* Mario.plist in Resources */ = {isa = PBXBuildFile; fileRef = 911F77D71740E74600427F2D /* Mario.plist */; };
@@ -32,7 +31,6 @@
 		914EB288171404DD0070051D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 914EB27C171404DD0070051D /* README.md */; };
 		914EB28C171409390070051D /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28A171409390070051D /* about.png */; };
 		914EB28D171409390070051D /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28B171409390070051D /* preferences.png */; };
-		914EB294171414A70070051D /* world_0_level_1.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 914EB293171414A70070051D /* world_0_level_1.tmx */; };
 		914EB299171424730070051D /* STMario.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB298171424730070051D /* STMario.m */; };
 		9153D588173E34A900A1DAD0 /* STBonusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153D587173E34A900A1DAD0 /* STBonusItem.m */; };
 		9153D58C173E34C200A1DAD0 /* STStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153D58B173E34C200A1DAD0 /* STStar.m */; };
@@ -62,7 +60,6 @@
 		917737ED16C19B51001C1AAD /* STBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 917737EC16C19B51001C1AAD /* STBlock.m */; };
 		917E6F70173D95A200777A40 /* Coin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F6E173D95A200777A40 /* Coin.plist */; };
 		917E6F71173D95A200777A40 /* Coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F6F173D95A200777A40 /* Coin.png */; };
-		917E6F73173D963F00777A40 /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F72173D963F00777A40 /* world_0_level_0.tmx */; };
 		917E6F77173D989200777A40 /* STMushroom.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E6F76173D989200777A40 /* STMushroom.m */; };
 		917E6F7B173D989E00777A40 /* Mushroom.plist in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F79173D989E00777A40 /* Mushroom.plist */; };
 		917E6F7C173D989E00777A40 /* Mushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = 917E6F7A173D989E00777A40 /* Mushroom.png */; };
@@ -243,6 +240,9 @@
 		D4A1AF21173D1DF900E743E8 /* repeat.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A1AF20173D1DF900E743E8 /* repeat.png */; };
 		D4A35FED17099752000603FA /* STChooseLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FEC17099752000603FA /* STChooseLevelLayer.m */; };
 		D4A35FF61709A3BC000603FA /* STLevelResultLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */; };
+		D4A711DC1740ECD800D6F5F4 /* world_0_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = D4A711D91740ECD800D6F5F4 /* world_0_level_0.tmx */; };
+		D4A711DD1740ECD800D6F5F4 /* world_1_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = D4A711DA1740ECD800D6F5F4 /* world_1_level_0.tmx */; };
+		D4A711DE1740ECD800D6F5F4 /* world_2_level_0.tmx in Resources */ = {isa = PBXBuildFile; fileRef = D4A711DB1740ECD800D6F5F4 /* world_2_level_0.tmx */; };
 		D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CD172D77F10059E5F4 /* switch-mask.png */; };
 		D4A932D2172D77F20059E5F4 /* switch-off.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CE172D77F20059E5F4 /* switch-off.png */; };
 		D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A932CF172D77F20059E5F4 /* switch-on.png */; };
@@ -283,7 +283,6 @@
 		9106D29E1712DF5F00BC6CFC /* CCDirector+Transitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCDirector+Transitions.h"; sourceTree = "<group>"; };
 		9106D29F1712DF5F00BC6CFC /* CCDirector+Transitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCDirector+Transitions.m"; sourceTree = "<group>"; };
 		9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "SMB-Tiles.gif"; path = "Resources/maps/SMB-Tiles.gif"; sourceTree = SOURCE_ROOT; };
-		9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0_old.tmx; path = Resources/maps/world_0_level_0_old.tmx; sourceTree = SOURCE_ROOT; };
 		9106D2A51712E50000BC6CFC /* Worlds.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Worlds.plist; path = Resources/maps/Worlds.plist; sourceTree = SOURCE_ROOT; };
 		911F77D51740E13F00427F2D /* invincible.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = invincible.m4a; path = Resources/sounds/invincible.m4a; sourceTree = SOURCE_ROOT; };
 		911F77D71740E74600427F2D /* Mario.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mario.plist; sourceTree = "<group>"; };
@@ -326,7 +325,6 @@
 		914EB28A171409390070051D /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		914EB28B171409390070051D /* preferences.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferences.png; sourceTree = "<group>"; };
 		914EB28E17140E900070051D /* STWorldsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWorldsConstants.h; sourceTree = "<group>"; };
-		914EB293171414A70070051D /* world_0_level_1.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_1.tmx; path = Resources/maps/world_0_level_1.tmx; sourceTree = SOURCE_ROOT; };
 		914EB297171424730070051D /* STMario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMario.h; sourceTree = "<group>"; };
 		914EB298171424730070051D /* STMario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMario.m; sourceTree = "<group>"; };
 		9153D586173E34A900A1DAD0 /* STBonusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBonusItem.h; sourceTree = "<group>"; };
@@ -362,7 +360,6 @@
 		917737EC16C19B51001C1AAD /* STBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBlock.m; sourceTree = "<group>"; };
 		917E6F6E173D95A200777A40 /* Coin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Coin.plist; sourceTree = "<group>"; };
 		917E6F6F173D95A200777A40 /* Coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coin.png; sourceTree = "<group>"; };
-		917E6F72173D963F00777A40 /* world_0_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0.tmx; path = Resources/maps/world_0_level_0.tmx; sourceTree = SOURCE_ROOT; };
 		917E6F75173D989200777A40 /* STMushroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMushroom.h; sourceTree = "<group>"; };
 		917E6F76173D989200777A40 /* STMushroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMushroom.m; sourceTree = "<group>"; };
 		917E6F79173D989E00777A40 /* Mushroom.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mushroom.plist; sourceTree = "<group>"; };
@@ -716,6 +713,9 @@
 		D4A35FF41709A3BC000603FA /* STLevelResultLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelResultLayer.h; sourceTree = "<group>"; };
 		D4A35FF51709A3BC000603FA /* STLevelResultLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelResultLayer.m; sourceTree = "<group>"; };
 		D4A61D76172ED83400609D65 /* STAboutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAboutConstants.h; sourceTree = "<group>"; };
+		D4A711D91740ECD800D6F5F4 /* world_0_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_0_level_0.tmx; path = Resources/maps/world_0_level_0.tmx; sourceTree = SOURCE_ROOT; };
+		D4A711DA1740ECD800D6F5F4 /* world_1_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_1_level_0.tmx; path = Resources/maps/world_1_level_0.tmx; sourceTree = SOURCE_ROOT; };
+		D4A711DB1740ECD800D6F5F4 /* world_2_level_0.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = world_2_level_0.tmx; path = Resources/maps/world_2_level_0.tmx; sourceTree = SOURCE_ROOT; };
 		D4A73A64173963EA008AA190 /* STLayoutConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLayoutConstants.h; sourceTree = "<group>"; };
 		D4A932CD172D77F10059E5F4 /* switch-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-mask.png"; sourceTree = "<group>"; };
 		D4A932CE172D77F20059E5F4 /* switch-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-off.png"; sourceTree = "<group>"; };
@@ -1148,11 +1148,11 @@
 		9171B59D16BDDAC2008208D2 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				917E6F72173D963F00777A40 /* world_0_level_0.tmx */,
+				D4A711D91740ECD800D6F5F4 /* world_0_level_0.tmx */,
+				D4A711DA1740ECD800D6F5F4 /* world_1_level_0.tmx */,
+				D4A711DB1740ECD800D6F5F4 /* world_2_level_0.tmx */,
 				9106D2A51712E50000BC6CFC /* Worlds.plist */,
 				9106D2A11712E4C400BC6CFC /* SMB-Tiles.gif */,
-				9106D2A21712E4C400BC6CFC /* world_0_level_0_old.tmx */,
-				914EB293171414A70070051D /* world_0_level_1.tmx */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -2069,12 +2069,10 @@
 				D49C7E1C16F4E812004101F1 /* facebook.png in Resources */,
 				91CCD4051701EE620082CF59 /* Title.png in Resources */,
 				9106D2A31712E4C400BC6CFC /* SMB-Tiles.gif in Resources */,
-				9106D2A41712E4C400BC6CFC /* world_0_level_0_old.tmx in Resources */,
 				9106D2A61712E50000BC6CFC /* Worlds.plist in Resources */,
 				914EB288171404DD0070051D /* README.md in Resources */,
 				914EB28C171409390070051D /* about.png in Resources */,
 				914EB28D171409390070051D /* preferences.png in Resources */,
-				914EB294171414A70070051D /* world_0_level_1.tmx in Resources */,
 				D4A932D1172D77F20059E5F4 /* switch-mask.png in Resources */,
 				D4A932D2172D77F20059E5F4 /* switch-off.png in Resources */,
 				D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */,
@@ -2097,7 +2095,6 @@
 				D4A1AF21173D1DF900E743E8 /* repeat.png in Resources */,
 				917E6F70173D95A200777A40 /* Coin.plist in Resources */,
 				917E6F71173D95A200777A40 /* Coin.png in Resources */,
-				917E6F73173D963F00777A40 /* world_0_level_0.tmx in Resources */,
 				917E6F7B173D989E00777A40 /* Mushroom.plist in Resources */,
 				917E6F7C173D989E00777A40 /* Mushroom.png in Resources */,
 				91DDF3BC173E30C80078D7F8 /* Flower.plist in Resources */,
@@ -2126,6 +2123,9 @@
 				911F77D61740E13F00427F2D /* invincible.m4a in Resources */,
 				911F77D91740E74600427F2D /* Mario.plist in Resources */,
 				911F77DA1740E74600427F2D /* Mario.png in Resources */,
+				D4A711DC1740ECD800D6F5F4 /* world_0_level_0.tmx in Resources */,
+				D4A711DD1740ECD800D6F5F4 /* world_1_level_0.tmx in Resources */,
+				D4A711DE1740ECD800D6F5F4 /* world_2_level_0.tmx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
