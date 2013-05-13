@@ -45,12 +45,24 @@
     if (self.killsInstantly && [[gameObject class] isSubclassOfClass:[STNPC class]]) {
         [gameObject setDead:YES];
     }
+    
+    if(edge == STRectEdgeMinY && self.isJumping) {
+        NSLog(@"%@", _cachedAnimation);
+        if ([_cachedAnimation hasSuffix:@"walk"]) {
+            [self runAnimationWithName:_cachedAnimation endless:YES];
+        } else {
+            [self runAnimationWithName:_cachedAnimation endless:NO];
+        }
+        self.isJumping = NO;
+    }
 }
 
 - (void)jump {
     if(self.velocity.y == 0) {
         self.velocity = ccp(0, kJumpVelocity);
         [[STSoundManager sharedInstance] playEffect:@"jump.wav"];
+        [self runAnimationWithName:@"jump" endless:NO];
+        self.isJumping = YES;
     }
 }
 
@@ -78,7 +90,9 @@
 }
 
 - (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag {
-    _cachedAnimation = animName;
+    if(![animName isEqualToString:@"jump"]) {
+        _cachedAnimation = animName;
+    }
     
     if (self.playerState == STPlayerStateSmall) {
         animName = [@"small-" stringByAppendingString:animName];
@@ -91,10 +105,10 @@
 
 - (void)setVelocity:(CGPoint)velocity {
     if (self.isAnimating != (velocity.x > 0 || velocity.x < 0)) {
-        if (velocity.x != 0) {
+        if (velocity.x != 0 && !self.isJumping) {
             self.isAnimating = YES;
             [self runAnimationWithName:@"walk" endless:YES];
-        } else {
+        } else if (!self.isJumping) {
             self.isAnimating = NO;
             [self runAnimationWithName:@"stand" endless:NO];
         }

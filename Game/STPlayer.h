@@ -117,9 +117,14 @@ typedef enum {
 @property (setter = setInvincible:) BOOL isInvincible;
 
 /**
- * Defines, it the other game objects will be killed instantly when a collision occurs
+ * Defines, if the other game objects will be killed instantly when a collision occurs
  */
 @property BOOL killsInstantly;
+
+/**
+ * Defines whether the player is currently jumping.
+ */
+@property (setter = setJumping:) BOOL isJumping;
 
 /**
  * The state of the player
