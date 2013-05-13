@@ -167,6 +167,9 @@
     
     if(nextLevel) {
         unsigned short levelID = [[nextLevel valueForKey:kLevelIDKey] shortValue];
+        
+        [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID levelID:levelID];
+        
         STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:levelID] scene];
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]
