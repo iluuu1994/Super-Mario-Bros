@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Unit Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>cocos2d.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>91BD0364174163EF002DE5D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>91C0B97916B4470A0092FCA9</key>
 		<dict>
 			<key>primary</key>
