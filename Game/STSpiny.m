@@ -9,9 +9,22 @@
 #import "STSpiny.h"
 #import "STPlayer.h"
 
+#pragma mark - 
+#pragma mark Constants
+
 #define kSpeed 10
 
+
+
+#pragma mark - 
+#pragma mark STSpiny Implementation
+
 @implementation STSpiny
+
+
+
+#pragma mark - 
+#pragma mark Initialization
 
 - (id)init
 {
@@ -20,6 +33,10 @@
     }
     return self;
 }
+
+
+
+#pragma mark Collision
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     if (edge == STRectEdgeMinX && self.velocity.x < 0) {

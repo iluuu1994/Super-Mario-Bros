@@ -6,8 +6,13 @@
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "STBonusItem.h"
+#import "STItem.h"
 
-@interface STStar : STBonusItem
+/**
+ * Represents a Star item
+ * A star can make the player that collects it invincible for a specific amount of time
+ */
+@interface STStar : STItem
+{}
 
 @end

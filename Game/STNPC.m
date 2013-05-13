@@ -11,6 +11,7 @@
 @implementation STNPC
 
 - (STGameObjectBodyType)bodyType {
+    // We make the default body type of the enemies dynamic
     return STGameObjectBodyTypeDynamic;
 }
 

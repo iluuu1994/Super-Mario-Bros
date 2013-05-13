@@ -9,10 +9,23 @@
 #import "STGumba.h"
 #import "STPlayer.h"
 
+#pragma mark -
+#pragma mark Constants
+
 #define kSpeed 10
 #define kScore 100
 
+
+
+#pragma mark -
+#pragma mark Implementation
+
 @implementation STGumba
+{}
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -22,6 +35,11 @@
     }
     return self;
 }
+
+
+
+#pragma mark -
+#pragma mark Collision
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     if (edge == STRectEdgeMinX && self.velocity.x < 0) {

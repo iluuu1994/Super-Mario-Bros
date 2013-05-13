@@ -8,6 +8,10 @@
 
 #import "STGameObject.h"
 
+/**
+ * A creature is an abstract class that represents living objects on the screen
+ */
 @interface STCreature : STGameObject
+{}
 
 @end

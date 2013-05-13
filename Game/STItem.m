@@ -9,11 +9,24 @@
 #import "STItem.h"
 #import "STPlayer.h"
 
+
+
+#pragma mark -
+#pragma mark STItem Implementation
+
 @implementation STItem
+
+
+#pragma mark -
+#pragma mark Properties
 
 - (STGameObjectBodyType)bodyType {
     return STGameObjectBodyTypeNonColliding;
 }
+
+
+#pragma mark -
+#pragma mark Collision
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {

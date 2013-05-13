@@ -17,6 +17,10 @@
 #define kInvinibilityDuration 1
 #define kBlinkingSpeed 0.1
 
+
+#pragma mark -
+#pragma mark Private Interface
+
 @interface STPlayer () {
     NSString *_cachedAnimation;
     BOOL _stopBackgroundMusic;
@@ -24,18 +28,16 @@
 @property BOOL isAnimating;
 @end
 
+
+
+#pragma mark -
+#pragma mark Implementation
+
 @implementation STPlayer
 {}
 
 #pragma mark -
-#pragma mark Properties
-- (NSMutableArray *)bonusItems {
-    if (!_bonusItems) {
-        _bonusItems = [NSMutableArray array];
-    }
-    
-    return _bonusItems;
-}
+#pragma mark Methods
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
@@ -174,6 +176,7 @@
 
 #pragma mark -
 #pragma mark Player Delegate
+
 - (void)setDelegate:(id<STPlayerDelegate>)delegate {
     [super setDelegate:delegate];
 }

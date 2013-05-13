@@ -8,6 +8,13 @@
 
 #import "STItem.h"
 
+
+/**
+ * Represents a Mushroom item
+ *
+ * A Mushroom makes a small player that collects it large
+ * It also gives him some score
+ */
 @interface STMushroom : STItem
 
 @end

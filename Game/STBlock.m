@@ -9,10 +9,18 @@
 #import "STBlock.h"
 #import "STPlayer.h"
 
+
+
+#pragma mark -
+#pragma mark STBlock Implementation
+
 @implementation STBlock
+
+
 
 #pragma mark -
 #pragma mark Initialise
+
 - (id)init
 {
     if (self = [super init]) {
@@ -20,6 +28,11 @@
     }
     return self;
 }
+
+
+
+#pragma mark -
+#pragma mark Properties
 
 - (void)setAppearanceType:(STAppearanceType)appearanceType {
     [super setAppearanceType:appearanceType];
@@ -34,6 +47,12 @@
 - (STGameObjectBodyType)bodyType {
     return STGameObjectBodyTypeStatic;
 }
+
+
+
+
+#pragma mark -
+#pragma mark Methods
 
 - (NSString *)appearanceNameForString:(NSString *)name {
     NSString *prefix = @"";

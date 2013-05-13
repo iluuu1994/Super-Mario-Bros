@@ -8,6 +8,11 @@
 
 #import "STGameObject.h"
 
+/**
+ * The fire ball can be spit by the player if he has the ability to
+ * The fire ball is deadly for all NPCs
+ */
 @interface STFireBall : STGameObject
+{}
 
 @end

@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "ITSingleton.h"
 
+
+#pragma mark -
+#pragma mark Constants
+
 // Sound files
 #define kSoundDeath @"die.wav"
 #define kSoundKick @"kick.mp3"
@@ -25,16 +29,26 @@
 #define kSoundPowerUp @"powerup.mp3"
 #define kSoundPowerUpAppears @"powerup-appears.mp3"
 
+
+
+#pragma mark -
+#pragma mark STSoundManager Implementation
+
 /**
  * Utility class for doing everything about sound. Provides methods to play,
  * stop, resume, enable, disable sound. 
  */
 @interface STSoundManager : NSObject
 
+
+
 #pragma mark -
 #pragma mark Initialise
 
 ITSingletonInterface
+
+
+
 
 #pragma mark -
 #pragma mark Methods
@@ -67,6 +81,9 @@ ITSingletonInterface
  * Resume playing the backgroundmusic.
  */
 - (void)resumeBackgroundMusic;
+
+
+
 
 #pragma mark -
 #pragma mark Properties

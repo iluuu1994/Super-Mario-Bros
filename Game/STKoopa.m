@@ -10,11 +10,25 @@
 #import "STPlayer.h"
 #import "STBlock.h"
 
+
+#pragma mark -
+#pragma mark Constants
+
 #define kSpeed 10
 #define kProjectileSpeed 150
 #define kScore 100
 
+
+
+#pragma mark -
+#pragma mark STKoopa Implementation
+
 @implementation STKoopa
+
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -24,6 +38,11 @@
     }
     return self;
 }
+
+
+
+#pragma mark -
+#pragma mark Collision
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     if(edge != STRectEdgeMaxY && self.velocity.x != 0) {

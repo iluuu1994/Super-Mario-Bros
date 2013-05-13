@@ -9,9 +9,22 @@
 #import "STStar.h"
 #import "STPlayer.h"
 
+#pragma mark -
+#pragma mark Constants
+
 #define kDuration 7
 
+
+
+
+#pragma mark -
+#pragma mark STStar Implementation
+
 @implementation STStar
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -20,6 +33,11 @@
     }
     return self;
 }
+
+
+
+#pragma mark -
+#pragma mark Methods
 
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];

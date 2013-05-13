@@ -8,6 +8,12 @@
 
 #import "STNPC.h"
 
+/**
+ * Represents the Spiny enemie
+ * Every collision with a Spiny is deadly
+ *
+ * A spiny can only be defeated it it's hit with a Koopa in his armor
+ */
 @interface STSpiny : STNPC
 
 @end
