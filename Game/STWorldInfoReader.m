@@ -78,6 +78,14 @@ ITSingletonImplementation
     return -1;
 }
 
+- (id) isLastLevel:(unsigned short)levelID fromWorld:(unsigned short)worldID {
+    int indexOfLevel = [self indexOfWorldID:worldID levelID:levelID];
+    NSDictionary *world = [self worldWithID:worldID];
+    if (indexOfLevel - 1 == [[world valueForKey:kLevelsKey] count]) {
+        
+    }
+}
+
 - (id) nextWorldFromWorldID:(unsigned short)worldID {
     NSArray *worlds = [[self root] valueForKey:kWorldsKey];
 

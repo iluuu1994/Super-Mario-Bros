@@ -165,6 +165,8 @@
     NSDictionary *nextLevel = [[STWorldInfoReader sharedInstance]
                                nextLevelFromWorldID:self.worldID levelID:self.levelID];
     
+    [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID + 1];
+    
     if(nextLevel) {
         unsigned short levelID = [[nextLevel valueForKey:kLevelIDKey] shortValue];
         
