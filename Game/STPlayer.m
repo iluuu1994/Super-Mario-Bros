@@ -12,6 +12,7 @@
 #import "STMushroom.h"
 #import "STNPC.h"
 #import "STFireBall.h"
+#import "STBlock.h"
 
 #define kJumpVelocity 300
 #define kInvinibilityDuration 1
@@ -46,8 +47,7 @@
         [gameObject setDead:YES];
     }
     
-    if(edge == STRectEdgeMinY && self.isJumping) {
-        NSLog(@"%@", _cachedAnimation);
+    if(edge == STRectEdgeMinY && [[gameObject class] isSubclassOfClass:[STBlock class]] && self.isJumping) {
         if ([_cachedAnimation hasSuffix:@"walk"]) {
             [self runAnimationWithName:_cachedAnimation endless:YES];
         } else {
