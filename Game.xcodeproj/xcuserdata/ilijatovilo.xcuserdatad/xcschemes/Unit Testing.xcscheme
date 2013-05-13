@@ -16,9 +16,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91BD0364174163EF002DE5D4"
-               BuildableName = "Unit Tests.octest"
-               BlueprintName = "Unit Tests"
+               BlueprintIdentifier = "91BD038217416522002DE5D4"
+               BuildableName = "Unit Testing.octest"
+               BlueprintName = "Unit Testing"
                ReferencedContainer = "container:Game.xcodeproj">
             </BuildableReference>
          </TestableReference>

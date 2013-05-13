@@ -1,14 +1,14 @@
 //
-//  Unit_Tests.m
-//  Unit Tests
+//  Unit_Testing.m
+//  Unit Testing
 //
 //  Created by Ilija Tovilo on 5/13/13.
 //  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
 //
 
-#import "Unit_Tests.h"
+#import "Unit_Testing.h"
 
-@implementation Unit_Tests
+@implementation Unit_Testing
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in Unit Tests");
+    
 }
 
 @end
