@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['pages',['pages',['../interface_c_c_scroll_layer.html#acbdc386505ac0fe06dc022dc7ddcad45',1,'CCScrollLayer']]],
+  ['pagesindicatornormalcolor',['pagesIndicatorNormalColor',['../interface_c_c_scroll_layer.html#a606e0c3096917308b990bdb970539fcd',1,'CCScrollLayer']]],
+  ['pagesindicatorposition',['pagesIndicatorPosition',['../interface_c_c_scroll_layer.html#a400d56ca0721d351a865c5716fafa59c',1,'CCScrollLayer']]],
+  ['pagesindicatorselectedcolor',['pagesIndicatorSelectedColor',['../interface_c_c_scroll_layer.html#a51ad243b647971e021ef6b446c39f3e7',1,'CCScrollLayer']]],
+  ['pageswidthoffset',['pagesWidthOffset',['../interface_c_c_scroll_layer.html#afe8d69c4d6de64f023839edf70595c61',1,'CCScrollLayer']]],
+  ['pathforresource_3a',['pathForResource:',['../category_n_s_bundle_07_resources_08.html#a935a898d284134589c0dbdcfd797b01f',1,'NSBundle(Resources)']]],
+  ['pause',['pause',['../interface_s_t_game_flow_manager.html#a1808fceb22f85d7d5baa1b1b2a101c7f',1,'STGameFlowManager']]],
+  ['pause_3a',['pause:',['../protocol_s_t_controls_delegate-p.html#a5c84e1b62ae9628f46acf91f84cae5d4',1,'STControlsDelegate-p']]],
+  ['play_3a',['play:',['../protocol_s_t_pause_delegate-p.html#a22193c3c0c147795cd8635a8b4d7a145',1,'STPauseDelegate-p']]],
+  ['playbackgroundmusic_3a',['playBackgroundMusic:',['../interface_s_t_sound_manager.html#aea5441fa1fe1fe1bf66445b75e225bd6',1,'STSoundManager']]],
+  ['playbackgroundmusic_3aloop_3a',['playBackgroundMusic:loop:',['../interface_s_t_sound_manager.html#afcc6cae6d80991fc6420c9724a330439',1,'STSoundManager']]],
+  ['playeffect_3a',['playEffect:',['../interface_s_t_sound_manager.html#a6837c3069fb0d0343653af827c9c6818',1,'STSoundManager']]],
+  ['player',['player',['../interface_s_t_information_layer.html#a497111e378de209f4695541be44668ca',1,'STInformationLayer::player()'],['../interface_s_t_level_layer.html#a8a631fed9b40f15d93bcf12339ce5752',1,'STLevelLayer::player()']]],
+  ['player_3adidmovetopoint_3a',['player:didMoveToPoint:',['../protocol_s_t_player_delegate-p.html#abccf6054131c84c8b0e745b728f9c010',1,'STPlayerDelegate-p']]],
+  ['player_3ashouldmovetopoint_3a',['player:shouldMoveToPoint:',['../protocol_s_t_player_delegate-p.html#a00deb4076aa768d1c4eae5a0faceff73',1,'STPlayerDelegate-p']]],
+  ['playerdied_3a',['playerDied:',['../protocol_s_t_player_delegate-p.html#a4bbe1e9a69bdb4dce7b1bd8d9ac9d0c5',1,'STPlayerDelegate-p']]],
+  ['playerstate',['playerState',['../interface_s_t_player.html#a977f4a58fd6651331bb97564dd66fa2e',1,'STPlayer']]],
+  ['playerstopsplayinginvinciblesong_3a',['playerStopsPlayingInvincibleSong:',['../protocol_s_t_player_delegate-p.html#a60613a695d818170264c7c5266b4e6f9',1,'STPlayerDelegate-p']]]
+];
