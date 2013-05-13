@@ -9,8 +9,8 @@
 #import "STItem.h"
 
 /**
- * Represents a Star item
- * A star can make the player that collects it invincible for a specific amount of time
+ * Represents a Star item.
+ * A star can make the player that collects it invincible for a specific amount of time.
  */
 @interface STStar : STItem
 {}

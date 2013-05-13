@@ -12,9 +12,9 @@
 
 
 /**
- * An abstract subclass of CCLayer
- * Every layer subclass will inherit from this class
- * It implements a few events and helper classes
+ * An abstract subclass of CCLayer.
+ * Every layer subclass will inherit from this class.
+ * It implements a few events and helper classes.
  */
 @interface STLayer : CCLayer
 {}
@@ -65,7 +65,7 @@
 #pragma mark Dealloc
 
 /**
- * Is called when the layer is deallocated
+ * Is called when the layer is deallocated.
  */
 - (void)tearDown;
 

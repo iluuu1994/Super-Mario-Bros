@@ -34,7 +34,7 @@
 
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];
-    [[STSoundManager sharedInstance] playEffect:@"coin.mp3"];
+    [[STSoundManager sharedInstance] playEffect:kSoundCoin];
     
     player.score += 10;
     player.coins += 1;

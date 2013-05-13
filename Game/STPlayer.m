@@ -119,7 +119,7 @@
 
 - (void)setPlayerState:(STPlayerState)playerState {
     if (playerState >= _playerState) {
-        [[STSoundManager sharedInstance] playEffect:@"powerup.mp3"];
+        [[STSoundManager sharedInstance] playEffect:kSoundPowerUp];
     }
     
     _playerState = playerState;
@@ -128,7 +128,7 @@
 
 - (void)die {
     if (self.playerState != STPlayerStateSmall) {
-        [[STSoundManager sharedInstance] playEffect:@"pipe.mp3"];
+        [[STSoundManager sharedInstance] playEffect:kSoundPipe];
     }
     
     [super die];

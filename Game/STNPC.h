@@ -9,7 +9,7 @@
 #import "STCreature.h"
 
 /**
- * The superclass that will be used for all enemies
+ * The superclass that will be used for all enemies.
  */
 @interface STNPC : STCreature
 {}

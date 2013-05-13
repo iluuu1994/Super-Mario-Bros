@@ -16,25 +16,25 @@
 #define STPlayerStateEnum
 
 /**
- * The player state determines the state that the player has
+ * The player state determines the state that the player has.
  */
 typedef enum {
     /** 
-     * The player is small
-     * If he is hurt, he immediately dies
+     * The player is small.
+     * If he is hurt, he immediately dies.
      */
     STPlayerStateSmall,
     
     /**
-     * The player is large
-     * If he is hurt, his state changes to small
+     * The player is large.
+     * If he is hurt, his state changes to small.
      */
     STPlayerStateLarge,
     
     /**
-     * The player is large
-     * He has the ability to spit fire
-     * If he is hurt, his state changes to small
+     * The player is large.
+     * He has the ability to spit fire.
+     * If he is hurt, his state changes to small.
      */
     STPlayerStateFire
 } STPlayerState;
@@ -46,23 +46,23 @@ typedef enum {
 #pragma mark Protocols
 
 /**
- * The protocol for the game players delegate
- * The players delegate will typically be a level layer
+ * The protocol for the game players delegate.
+ * The players delegate will typically be a level layer.
  */
 @class STPlayer;
 @protocol STPlayerDelegate <STGameObjectDelegate>
 
 /**
- * The player moved to a new point
- * The leve layer needs this notification to adjust the camera position
+ * The player moved to a new point.
+ * The leve layer needs this notification to adjust the camera position.
  * @param player - The player that moved
  * @param point - The new position of the player
  */
 - (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point;
 
 /**
- * The player should move to a new point
- * The level layer needs this notification to prevent mario from walking out of the bounds of the camera
+ * The player should move to a new point.
+ * The level layer needs this notification to prevent mario from walking out of the bounds of the camera.
  * @param player - The player that should move
  * @param point - The new position, to which he should move to
  * @return if the player should move
@@ -70,15 +70,15 @@ typedef enum {
 - (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point;
 
 /**
- * This is invoked if the player died
- * The level layer needs this notification to display the game-over layer
+ * This is invoked if the player died.
+ * The level layer needs this notification to display the game-over layer.
  * @param player - The player that died
  */
 - (void)playerDied:(STPlayer *)player;
 
 /**
- * The player, who was invincible because of a star item, did stop playing the invincible effect
- * The level layer needs this notification to resume playing the background music
+ * The player, who was invincible because of a star item, did stop playing the invincible effect.
+ * The level layer needs this notification to resume playing the background music.
  * @param player - The player, who stopped playing the invincible song
  */
 - (void)playerStopsPlayingInvincibleSong:(STPlayer *)player;
@@ -90,8 +90,8 @@ typedef enum {
 #pragma mark STPlayer Class
 
 /**
- * STPlayer is the creature, that the user can control
- * It can either be Mario, or Luigi
+ * STPlayer is the creature, that the user can control.
+ * It can either be Mario, or Luigi.
  */
 @interface STPlayer : STCreature
 {}
@@ -101,23 +101,23 @@ typedef enum {
 #pragma mark Properties
 
 /**
- * Hold the score that the user has obtained in the current level
+ * Hold the score that the user has obtained in the current level.
  */
 @property unsigned int score;
 
 /**
- * Hold the number of coins that the user has obtained in the current level
+ * Hold the number of coins that the user has obtained in the current level.
  */
 @property unsigned int coins;
 
 /**
- * Defines if the player is invincible
- * If so, he cannot be hurt by other game-objects
+ * Defines if the player is invincible.
+ * If so, he cannot be hurt by other game-objects.
  */
 @property (setter = setInvincible:) BOOL isInvincible;
 
 /**
- * Defines, if the other game objects will be killed instantly when a collision occurs
+ * Defines, if the other game objects will be killed instantly when a collision occurs.
  */
 @property BOOL killsInstantly;
 
@@ -127,14 +127,14 @@ typedef enum {
 @property (setter = setJumping:) BOOL isJumping;
 
 /**
- * The state of the player
- * Can be small, large, or fire
+ * The state of the player.
+ * Can be small, large, or fire.
  */
 @property (nonatomic) STPlayerState playerState;
 
 /**
- * Holds the reference to the players delegate
- * This will typically be a level layer
+ * Holds the reference to the players delegate.
+ * This will typically be a level layer.
  */
 @property (unsafe_unretained) id<STPlayerDelegate> delegate;
 

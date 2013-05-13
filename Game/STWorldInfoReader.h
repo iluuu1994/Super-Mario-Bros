@@ -10,7 +10,7 @@
 #import "ITSingleton.h"
 
 /**
- * Utility class to read the file Worlds.plist which contains 
+ * Utility class to read the file Worlds.plist which contains
  * information about the available playable levels grouped in worlds. 
  */
 @interface STWorldInfoReader : NSObject

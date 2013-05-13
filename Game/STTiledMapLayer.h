@@ -11,8 +11,8 @@
 @class STGameObject;
 
 /**
- * This class is used for displaying tiled maps
- * The map is scanned and creates the game objects
+ * This class is used for displaying tiled maps.
+ * The map is scanned and creates the game objects.
  */
 @interface STTiledMapLayer : STLayer
 {}
@@ -23,14 +23,14 @@
 #pragma mark Initialise
 
 /**
- * Initializes a tiled map
+ * Initializes a tiled map.
  * @param tiledMap - The name of the tiled map resource
  * @return the instance of the created tiled map
  */
 - (id)initWithTiledMap:(NSString *)tiledMap;
 
 /**
- * Initializes a tiled map
+ * Initializes a tiled map.
  * @param tiledMap - The name of the tiled map resource
  * @return the instance of the created tiled map
  */

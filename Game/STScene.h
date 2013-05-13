@@ -10,8 +10,8 @@
 #import "cocos2d.h"
 
 /**
- * Abstract superclass for all scenes
- * So far, it has no special functionality
+ * Abstract superclass for all scenes.
+ * So far, it has no special functionality.
  */
 @interface STScene : CCScene
 {}

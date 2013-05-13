@@ -37,7 +37,7 @@
 - (void)onEnter {
     [super onEnter];
     
-    [[STSoundManager sharedInstance] playEffect:@"powerup-appears.mp3"];
+    [[STSoundManager sharedInstance] playEffect:kSoundPowerUpAppears];
 }
 
 

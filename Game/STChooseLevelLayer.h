@@ -32,7 +32,7 @@
 
 /**
  * Returns a level selection layer with the levels of the given worlds id
- * @param worldID - the id of the world whose levels will be displayed.
+ * @param worldID - the id of the world whose levels will be displayed
  * @return The initialised object.
  */
 +(id)layerWithWorldID:(unsigned short)worldID;
