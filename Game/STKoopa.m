@@ -26,9 +26,8 @@
 }
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
-    if((edge == STRectEdgeMaxX || edge == STRectEdgeMinX) && self.velocity.x != 0) {
-        if(
-           ([[gameObject class] isSubclassOfClass:[STPlayer class]]) || self.isHidden) {
+    if(edge != STRectEdgeMaxY && self.velocity.x != 0) {
+        if(([[gameObject class] isSubclassOfClass:[STPlayer class]]) || self.isHidden) {
             if (![[gameObject class] isSubclassOfClass:[STBlock class]]) {
                 [gameObject setDead:YES];
             } else {

@@ -56,7 +56,7 @@
   </tile>
   <tile id="107">
    <properties>
-    <property name="type" value="STMushroom"/>
+    <property name="type" value="STGumba"/>
    </properties>
   </tile>
   <tile id="122">
@@ -77,7 +77,7 @@
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WWw7CIBCFYXzRVeA2ujg370ubNGRmuEgpjP+XEC+BluI5iSEAAAAAAIBD3McK3ndv4AKbMrQ5I1n7sT57EcNa/QBGiYF+AJK0GzP241U4b1NeZ/bLXq01PZ699BrW/72ovM9Js9iay/Peas9E6saM/cCapIyX5EvK4uhsat2gH+jByriVMS2LI/NpdWP1fnyE756V83PXr11ztZF7Ot9Lu29JxqWcWVnsldHcWeW6cUc/Hs5H63P+0xn1PjtPw7P0N25ZV7vWi9az8+YLH7qOrsArAAA=
+   H4sIAAAAAAAAA+2YawqEMAyEs788RfcaXsobeHkRlkVC+rZNm84HwQoW02QGg0QAAKDLpp0AAODPVzsBAAAAw7BHrpZxvwBjsrMgtpbu+T5QhiP4YwS4ByRPgL44gj9AHYd2Ao3g3hjRH6n/JWecie8cN5oj15vcb5vzrGNwLZbqks+iOUjeGNEfVlittpLGU2ogabG3Nn3eWK2HrdHssSYhjYdq4NNiT32GvDF7/87Gzx+UPmun9PiNuf2k/HPUvOsQ1k9SNC7pLKTFGo0+c4zVKuYNDX98jEfpOVeq0du1sxSW4T0u2Ze71wqltbPGBWZ9RqfAKwAA
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">

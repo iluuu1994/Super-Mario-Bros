@@ -43,7 +43,6 @@
     } else {
         self.velocity = ccp(self.velocity.x + (kAcceleration * delta * 100), self.velocity.y);
     }
-    NSLog(@"%f", self.velocity.x);
 }
 
 - (STGameObjectBodyType)bodyType {
@@ -53,10 +52,14 @@
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
 
-    if (edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
-        [(STPlayer *)gameObject setVelocity:ccpAdd([(STPlayer *)gameObject velocity], ccp(0, kKillBounce))];
-        [[STSoundManager sharedInstance] playEffect:kSoundStomp];
-        [self setDead:YES];
+    if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        if (edge == STRectEdgeMaxY){
+            [(STPlayer *)gameObject setVelocity:ccpAdd([(STPlayer *)gameObject velocity], ccp(0, kKillBounce))];
+            [[STSoundManager sharedInstance] playEffect:kSoundStomp];
+            [self setDead:YES];
+        } else {
+            [(STPlayer *)gameObject setDead:YES];
+        }
     }
 }
 

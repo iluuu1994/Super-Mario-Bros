@@ -7,10 +7,8 @@
 //
 
 #import "STFireBall.h"
-#import "STCreature.h"
-#import "STPlayer.h"
-
-#define kSpeed 50
+#import "STNPC.h"
+#import "STSoundManager.h"
 
 @implementation STFireBall
 
@@ -19,9 +17,13 @@
     self = [super initWithPlistFile:@"FireBall.plist"];
     if (self) {
         [self runAnimationWithName:@"spin" endless:YES];
-        self.velocity = ccp(kSpeed, 0);
     }
     return self;
+}
+
+- (void)onEnter {
+    [super onEnter];
+    [[STSoundManager sharedInstance] playEffect:kSoundFireball];
 }
 
 - (STGameObjectBodyType)bodyType {
@@ -29,21 +31,15 @@
 }
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
-    
-//    if(self.velocity.y <= 0) {
-//        self.velocity = ccpAdd(self.velocity, ccp(0, kSpeed));
-//    }
-//    
-    // Make the FireBall jump after jumping on a gameObject
-//    if (edge == STRectEdgeMaxY) {
-//        NSLog(@"x: %f, y: %f", self.velocity.x, self.velocity.y);
-//        self.velocity = ccpAdd(self.velocity, ccp(0, kSpeed));
-//    }
+    // Bounce off the ground
+    if (edge == STRectEdgeMinY) {
+        self.velocity = ccpAdd(self.velocity, ccp(0, 100));
+    }
     
     // Only kills creatures except for the player.
-    if([[gameObject class] isSubclassOfClass:[STCreature class]]
-       && ![[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+    if([[gameObject class] isSubclassOfClass:[STNPC class]]) {
         [gameObject setDead:YES];
+        [self setDead:YES];
     }
 }
 @end

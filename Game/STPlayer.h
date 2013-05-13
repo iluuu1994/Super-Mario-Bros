@@ -24,6 +24,7 @@ typedef enum {
 - (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point;
 - (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point;
 - (void)playerDied:(STPlayer *)player;
+- (void)playerStopsPlayingInvincibleSong:(STPlayer *)player;
 @end
 
 @interface STPlayer : STCreature
@@ -38,9 +39,9 @@ typedef enum {
 
 @property (unsafe_unretained) id<STPlayerDelegate> delegate;
 
-- (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time;
+- (void)setInvincible:(BOOL)isInvincible forTime:(ccTime)time playingInvincibleSong:(BOOL)invincibleSong;
 - (void)setKillsInstantly:(BOOL)killsInstantly forTime:(ccTime)time;
-
+- (void)spitFireball;
 - (void)jump;
 
 @end
