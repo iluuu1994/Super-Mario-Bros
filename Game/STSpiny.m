@@ -8,6 +8,7 @@
 
 #import "STSpiny.h"
 #import "STPlayer.h"
+#import "STSoundManager.h"
 
 #pragma mark - 
 #pragma mark Constants
@@ -52,8 +53,15 @@
             gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
         }
         
-        [gameObject setDead:YES];
+        [gameObject die];
     }
+}
+
+- (void)die {
+    [super die];
+    
+    // Play a sound
+    [[STSoundManager sharedInstance] playEffect:kSoundStomp];
 }
 
 @end

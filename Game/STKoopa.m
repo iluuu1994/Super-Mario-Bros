@@ -48,7 +48,7 @@
     if(edge != STRectEdgeMaxY && self.velocity.x != 0) {
         if(([[gameObject class] isSubclassOfClass:[STPlayer class]]) || self.isHidden) {
             if (![[gameObject class] isSubclassOfClass:[STBlock class]]) {
-                [gameObject setDead:YES];
+                [gameObject die];
             } else {
                 [(STBlock *)gameObject awardPlayer:nil];
             }
@@ -97,6 +97,13 @@
             
         }
     }
+}
+
+- (void)die {
+    [super die];
+    
+    // Play a sound
+    [[STSoundManager sharedInstance] playEffect:kSoundStomp];
 }
 
 @end

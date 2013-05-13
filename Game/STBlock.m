@@ -75,10 +75,15 @@
 
 - (void)awardPlayer:(STPlayer *)player {
     if (self.isDestroyable) {
-        // Play a sound
-        [[STSoundManager sharedInstance] playEffect:kSoundBreakBlock];
-        [self setDead:YES];
+        [self die];
     }
+}
+
+- (void)die {
+    [super die];
+    
+    // Play a sound
+    [[STSoundManager sharedInstance] playEffect:kSoundBreakBlock];
 }
 
 @end

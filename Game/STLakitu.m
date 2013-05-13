@@ -55,10 +55,9 @@
     if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
         if (edge == STRectEdgeMaxY){
             [(STPlayer *)gameObject setVelocity:ccpAdd([(STPlayer *)gameObject velocity], ccp(0, kKillBounce))];
-            [[STSoundManager sharedInstance] playEffect:kSoundStomp];
-            [self setDead:YES];
+            [self die];
         } else {
-            [(STPlayer *)gameObject setDead:YES];
+            [(STPlayer *)gameObject die];
         }
     }
 }
@@ -68,6 +67,13 @@
     spiny.velocity = ccp(50, 100);
     
     [self.delegate addGameObjectToMap:spiny toPosition:ccp(self.position.x, self.position.y + self.boundingBox.size.height + (spiny.boundingBox.size.height / 2))];
+}
+
+- (void)die {
+    [super die];
+    
+    // Play stomp
+    [[STSoundManager sharedInstance] playEffect:kSoundStomp];
 }
 
 @end

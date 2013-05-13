@@ -160,6 +160,13 @@ typedef enum {
 #pragma mark Methods
 
 /**
+ * Kills the game object
+ * This most likely plays a sound
+ * To kill a game object silently, do `setDead:`
+ */
+- (void)die;
+
+/**
  * Moves the game object by a delta point
  * @param deltaPoint - The value that the game object should be moved by
  */
