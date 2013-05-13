@@ -11,6 +11,7 @@
 #import "STPlayer.h"
 #import "STSpiny.h"
 
+#define kScore 250
 #define kKillBounce 100
 #define kThrowingInterval 10
 
@@ -55,6 +56,7 @@
     if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
         if (edge == STRectEdgeMaxY){
             [(STPlayer *)gameObject setVelocity:ccpAdd([(STPlayer *)gameObject velocity], ccp(0, kKillBounce))];
+            [(STPlayer *)gameObject setScore:[(STPlayer *)gameObject score] + kScore];
             [self die];
         } else {
             [(STPlayer *)gameObject die];

@@ -17,5 +17,6 @@ var searchData=
   ['player_3ashouldmovetopoint_3a',['player:shouldMoveToPoint:',['../protocol_s_t_player_delegate-p.html#a00deb4076aa768d1c4eae5a0faceff73',1,'STPlayerDelegate-p']]],
   ['playerdied_3a',['playerDied:',['../protocol_s_t_player_delegate-p.html#a4bbe1e9a69bdb4dce7b1bd8d9ac9d0c5',1,'STPlayerDelegate-p']]],
   ['playerstate',['playerState',['../interface_s_t_player.html#a977f4a58fd6651331bb97564dd66fa2e',1,'STPlayer']]],
-  ['playerstopsplayinginvinciblesong_3a',['playerStopsPlayingInvincibleSong:',['../protocol_s_t_player_delegate-p.html#a60613a695d818170264c7c5266b4e6f9',1,'STPlayerDelegate-p']]]
+  ['playerstopsplayinginvinciblesong_3a',['playerStopsPlayingInvincibleSong:',['../protocol_s_t_player_delegate-p.html#a60613a695d818170264c7c5266b4e6f9',1,'STPlayerDelegate-p']]],
+  ['positionofplayer',['positionOfPlayer',['../protocol_s_t_lakitu_delegate-p.html#a3fd0cbbe644395d22c0d038e99cbf4bc',1,'STLakituDelegate-p']]]
 ];
