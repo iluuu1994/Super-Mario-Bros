@@ -98,19 +98,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;STNPC.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="protocol_s_t_lakitu_delegate-p.html">   11</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_s_t_lakitu_delegate-p.html">STLakituDelegate</a> &lt;<a class="code" href="protocol_s_t_game_object_delegate-p.html">STGameObjectDelegate</a>&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;- (CGPoint)positionOfPlayer;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="interface_s_t_lakitu.html">   15</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_s_t_lakitu.html">STLakitu</a> : <a class="code" href="interface_s_t_n_p_c.html">STNPC</a></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">@property</span> (unsafe_unretained) id&lt;STLakituDelegate&gt; delegate;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma mark Protocols</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="protocol_s_t_lakitu_delegate-p.html">   20</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_s_t_lakitu_delegate-p.html">STLakituDelegate</a> &lt;<a class="code" href="protocol_s_t_game_object_delegate-p.html">STGameObjectDelegate</a>&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;- (CGPoint)<a class="code" href="protocol_s_t_lakitu_delegate-p.html#a3fd0cbbe644395d22c0d038e99cbf4bc">positionOfPlayer</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma mark STNPC Interface</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="interface_s_t_lakitu.html">   43</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_s_t_lakitu.html">STLakitu</a> : <a class="code" href="interface_s_t_n_p_c.html">STNPC</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="interface_s_t_lakitu.html#a833dd01a2bfad228f8f17f54decc85c5">   48</a></span>&#160;<span class="keyword">@property</span> (unsafe_unretained) id&lt;STLakituDelegate&gt; <a class="code" href="interface_s_t_lakitu.html#a833dd01a2bfad228f8f17f54decc85c5">delegate</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 15:21:31 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 13 2013 15:52:42 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
