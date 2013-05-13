@@ -76,10 +76,23 @@ ITSingletonInterface
 - (void) unlockWorldID:(unsigned short)worldID;
 
 /**
+ * Check whether the world identified by the given world id is unlocked
+ * @param worldID - the world we want to unlock.
+ */
+- (BOOL) isUnlockedWorldID:(unsigned short)worldID;
+
+/**
  * Unlocks the level identified by the given world id and level id. 
  * @param worldID - the world containing the level we want to unlock.
  * @param levelID - the level we want to unlock. 
  */
 - (void) unlockWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
+
+/**
+ * Check whether the level identified by the given world id and level id is unlocked.
+ * @param worldID - the world containing the level we want to check whether its unlocked.
+ * @param levelID - the level we want to check whether its unlocked.
+ */
+- (BOOL) isUnlockedWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 
 @end

@@ -54,6 +54,8 @@
     
     for(NSDictionary *level in [self.world objectForKey:kLevelsKey]) {
 
+        unsigned short levelID = [[level valueForKey:kLevelIDKey] shortValue];
+        
         CCLayer *page = [[CCLayer alloc] init];
         
         CCSprite *levelIcon = [CCSprite spriteWithFile:[level valueForKey:kLevelIconNameKey]];
@@ -77,7 +79,8 @@
         [menu alignItemsVerticallyWithPadding:20];
         menu.position = ccp(winSize.width / 2, winSize.height / 2);
         
-        if([[level valueForKey:kLevelIsLockedKey] boolValue]) {
+        // If the level is locked
+        if(![[STWorldInfoReader sharedInstance] isUnlockedWorldID:worldID levelID:levelID]) {
             // Locked Icon
             CCMenuItemSprite *lock = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithFile:kLockIcon]
                                                              selectedSprite:[CCSprite spriteWithFile:kLockIcon]];
@@ -113,11 +116,11 @@
  */
 - (IBAction)level:(id)sender {
     NSDictionary *level = [sender userObject];
-    BOOL isLocked = [[level valueForKey:kLevelIsLockedKey] boolValue];
     unsigned short worldID = [[self.world valueForKey:kWorldIDKey] shortValue];
     unsigned short levelID = [[level valueForKey:kLevelIDKey] shortValue];
+    BOOL isUnlocked = [[STWorldInfoReader sharedInstance] isUnlockedWorldID:worldID levelID:levelID];
     
-    if(!isLocked) {
+    if(isUnlocked) {
         STScene *scene = [[STLevelLayer layerWithWorldID:worldID levelID:levelID] scene];
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]

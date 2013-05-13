@@ -28,6 +28,9 @@
     
     CGSize winSize = [[CCDirector sharedDirector] winSize];
     
+    // first world is always unlocked
+    [[STWorldInfoReader sharedInstance] unlockWorldID:0];
+    
     // Scene Title
     CCLabelTTF *title = [CCLabelTTF labelWithString:@"Worlds" fontName:kTitleFontName fontSize:kTitleFontSize];
     [title setColor:kTitleTextColor];
@@ -59,7 +62,8 @@
         [menu alignItemsVerticallyWithPadding:20];
         menu.position = ccp(winSize.width / 2, winSize.height / 2);
         
-        if([[world valueForKey:kWorldIsLockedKey] boolValue]) {
+        // If the world is locked
+        if(![[STWorldInfoReader sharedInstance] isUnlockedWorldID:[[world valueForKey:kWorldIDKey] shortValue]]) {
             // Locked Icon
             CCMenuItemSprite *lock = [CCMenuItemSprite itemWithNormalSprite:[CCSprite spriteWithFile:kLockIcon]
                                                              selectedSprite:[CCSprite spriteWithFile:kLockIcon]];
@@ -96,9 +100,9 @@
 - (IBAction)world:(id)sender {
     NSDictionary *world = [sender userObject];
     NSNumber *worldID = [world valueForKey:kWorldIDKey];
-    BOOL isLocked = [[world valueForKey:kWorldIsLockedKey] boolValue];
+    BOOL isUnlocked = [[STWorldInfoReader sharedInstance] isUnlockedWorldID:[worldID shortValue]];
     
-    if(!isLocked) {
+    if(isUnlocked) {
         STLevelLayer *level = [STChooseLevelLayer layerWithWorldID:[worldID shortValue]];
         STScene *scene = [level scene];
         [[CCDirector sharedDirector] replaceScene:scene

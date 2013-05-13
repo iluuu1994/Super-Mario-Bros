@@ -108,19 +108,22 @@ ITSingletonImplementation
 }
 
 - (void) unlockWorldID:(unsigned short)worldID {
-    NSDictionary *world = [self worldWithID:worldID];
+    [self unlockWorldID:worldID levelID:0];
+}
 
-    if ([[world valueForKey:kWorldIsLockedKey] boolValue]) {
-        // TODO: unlock
-    }
+- (BOOL) isUnlockedWorldID:(unsigned short)worldID {
+    return [self isUnlockedWorldID:worldID levelID:0];
 }
 
 - (void) unlockWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
-    NSDictionary *level = [self levelWithWorldID:worldID levelID:levelID];
-    
-    if ([[level valueForKey:kLevelIsLockedKey] boolValue]) {
-        // TODO: unlock
-    }
+    [[NSUserDefaults standardUserDefaults] setBool:YES
+                                            forKey:[NSString stringWithFormat:[self namingConvention],
+                                                    worldID, levelID]];
+}
+
+- (BOOL) isUnlockedWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:[NSString stringWithFormat:
+                                                              [self namingConvention], worldID, levelID]];
 }
 
 
