@@ -89,8 +89,7 @@
         [self.items removeObject:item];
         [self reloadDisplay];
         
-        [self.delegate addItemToMap:item
-                         toPosition:ccpAdd(self.position, ccp(0, (self.boundingBox.size.height)+([item boundingBox].size.height / 2)))];
+        [self.delegate addGameObjectToMap:item toPosition:ccpAdd(self.position, ccp(0, (self.boundingBox.size.height)+([item boundingBox].size.height / 2)))];
     }
 }
 

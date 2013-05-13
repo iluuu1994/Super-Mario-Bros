@@ -12,8 +12,9 @@
 #import "STPauseLayer.h"
 #import "STPlayer.h"
 #import "STItemBlock.h"
+#import "STLakitu.h"
 
-@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate, STInformationDelegate, STItemBlockDelegate>
+@interface STLevelLayer : STTiledMapLayer <STControlsDelegate, STPauseDelegate, STPlayerDelegate, STInformationDelegate, STLakituDelegate>
 {}
 
 #pragma mark -

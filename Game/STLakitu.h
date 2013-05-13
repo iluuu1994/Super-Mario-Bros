@@ -8,6 +8,12 @@
 
 #import "STNPC.h"
 
+@protocol STLakituDelegate <STGameObjectDelegate>
+- (CGPoint)positionOfPlayer;
+@end
+
 @interface STLakitu : STNPC
+
+@property (unsafe_unretained) id<STLakituDelegate> delegate;
 
 @end

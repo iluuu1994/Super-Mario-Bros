@@ -31,6 +31,11 @@
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
+  <tile id="29">
+   <properties>
+    <property name="type" value="STLakitu"/>
+   </properties>
+  </tile>
   <tile id="54">
    <properties>
     <property name="appearanceType" value="0"/>
@@ -72,11 +77,11 @@
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3WWw6DIBCFYXypq2AdLq6b70tNDJkZLiLi+H8J6SWgSM9JGgIAAAAAANjF/8A9NmVoc0ay9mN99iIG+gFIYqAfgCTtxoz9WAvnbcrrzM7s1VrT49lLr2H934vK+5w0i625PO6t9kykbszYDzyTlPGSfElZHJ1NrRv0Az1YGbcypmVxZD6tbjy9H1/hu0/l/Nz1a9dcbeSejvfS7luScSlnVhZ7ZTR3Vrlu3NGPxflofc43nVHvs/M0PEt/45Z1tWu9aD07b37Qn1xYwCsAAA==
+   H4sIAAAAAAAAA+3WWw7CIBCFYXzRVeA2ujg370ubNGRmuEgpjP+XEC+BluI5iSEAAAAAAIBD3McK3ndv4AKbMrQ5I1n7sT57EcNa/QBGiYF+AJK0GzP241U4b1NeZ/bLXq01PZ699BrW/72ovM9Js9iay/Peas9E6saM/cCapIyX5EvK4uhsat2gH+jByriVMS2LI/NpdWP1fnyE756V83PXr11ztZF7Ot9Lu29JxqWcWVnsldHcWeW6cUc/Hs5H63P+0xn1PjtPw7P0N25ZV7vWi9az8+YLH7qOrsArAAA=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
-  <object name="playerSpawnPoint" type="playerSpawnPoint" x="2744" y="27"/>
+  <object name="playerSpawnPoint" type="playerSpawnPoint" x="60" y="154"/>
   <object name="playerEndPoint" x="2985" y="179"/>
  </objectgroup>
 </map>

@@ -8,14 +8,8 @@
 
 #import "STBlock.h"
 
-@class STItem;
-@protocol STItemBlockDelegate <NSObject>
-- (void)addItemToMap:(STItem *)item toPosition:(CGPoint)position;
-@end
-
 @interface STItemBlock : STBlock
 
 @property (readonly, nonatomic) NSMutableArray *items;
-@property (unsafe_unretained) id<STItemBlockDelegate> delegate;
 
 @end

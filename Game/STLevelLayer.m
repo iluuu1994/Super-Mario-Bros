@@ -90,6 +90,16 @@
     self.endPoint = ccp([endPosition[kXKey] floatValue], [endPosition[kYKey] floatValue]);
 }
 
+- (void)onExit {
+    [super onExit];
+    
+    for (STGameObject *go in self.gameObjects) {
+        if ([go respondsToSelector:@selector(delegate)]) {
+            [go setValue:nil forKey:@"delegate"];
+        }
+    }
+}
+
 - (void)unloadSpriteCache {
     for (id spriteCacheName in [self.levelInfo objectForKey:kLevelSpriteCacheKey]) {
         [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
@@ -142,8 +152,8 @@
     for (STGameObject *go in self.gameObjects) {
         if (go.bodyType == STGameObjectBodyTypeDynamic) {
             go.velocity = ccpAdd(go.velocity, kDefaultGravity);
-            [go move:ccp(go.velocity.x * delta, go.velocity.y * delta)];
         }
+        [go move:ccp(go.velocity.x * delta, go.velocity.y * delta)];
     }
 }
 
@@ -409,9 +419,16 @@
 #pragma mark -
 #pragma mark STItemBlockDelegate
 
-- (void)addItemToMap:(STItem *)item toPosition:(CGPoint)position {
-    [item setPosition:position];
-    [self.gameObjectsToAdd addObject:item];
+- (void)addGameObjectToMap:(STGameObject *)gameObject toPosition:(CGPoint)position {
+    [gameObject setPosition:position];
+    [self.gameObjectsToAdd addObject:gameObject];
+}
+
+#pragma mark -
+#pragma mark STLakituDelegate
+
+- (CGPoint)positionOfPlayer {
+    return self.player.position;
 }
 
 @end

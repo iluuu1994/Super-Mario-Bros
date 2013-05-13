@@ -148,4 +148,13 @@
     [self setVisible:!self.visible];
 }
 
+#pragma mark -
+#pragma mark Player Delegate
+- (void)setDelegate:(id<STPlayerDelegate>)delegate {
+    [super setDelegate:delegate];
+}
+- (id<STPlayerDelegate>)delegate {
+    return (id<STPlayerDelegate>)[super delegate];
+}
+
 @end

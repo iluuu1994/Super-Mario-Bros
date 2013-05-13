@@ -28,10 +28,15 @@
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
     
-    if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {        
-        // Make the other GameObject jump after jumping on this
-        gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
-
+    if((edge == STRectEdgeMaxY || edge == STRectEdgeMinX || edge == STRectEdgeMaxX)
+       &&
+       [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        
+        if(edge == STRectEdgeMaxY) {
+            // Make the other GameObject jump after jumping on this
+            gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
+        }
+        
         [gameObject setDead:YES];
     }
 }

@@ -20,7 +20,7 @@ typedef enum {
 #endif
 
 @class STPlayer;
-@protocol STPlayerDelegate <NSObject>
+@protocol STPlayerDelegate <STGameObjectDelegate>
 - (void)player:(STPlayer *)player didMoveToPoint:(CGPoint)point;
 - (BOOL)player:(STPlayer *)player shouldMoveToPoint:(CGPoint)point;
 - (void)playerDied:(STPlayer *)player;

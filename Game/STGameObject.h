@@ -33,6 +33,11 @@ typedef enum {
 
 #endif
 
+@class STGameObject;
+@protocol STGameObjectDelegate <NSObject>
+- (void)addGameObjectToMap:(STGameObject *)gameObject toPosition:(CGPoint)position;
+@end
+
 @interface STGameObject : STAnimatedSprite <CCTouchAllAtOnceDelegate>
 
 @property (setter = setCollidable:) BOOL isCollidable;
@@ -44,6 +49,7 @@ typedef enum {
 @property (setter = setDead:) BOOL isDead;
 
 @property (readonly, nonatomic) BOOL differenciatesAppearance;
+@property (unsafe_unretained) id<STGameObjectDelegate> delegate;
 
 - (void)move:(CGPoint)deltaPoint;
 - (void)collisionWithGameObject:(STGameObject *)gameObject
