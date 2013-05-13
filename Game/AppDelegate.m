@@ -3,7 +3,7 @@
 //  Game
 //
 //  Created by Ilija Tovilo on 1/26/13.
-//  Copyright Ilija Tovilo 2013. All rights reserved.
+//  Copyright (c) 2013 by Lukas Seglias & Ilija Tovilo. All rights reserved.
 //
 
 #import "cocos2d.h"

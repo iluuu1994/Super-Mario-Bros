@@ -3,7 +3,7 @@
 //  Game
 //
 //  Created by Ilija Tovilo on 5/11/13.
-//  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
+//  Copyright (c) 2013 by Lukas Seglias & Ilija Tovilo. All rights reserved.
 //
 
 #import "STStar.h"
@@ -13,6 +13,8 @@
 #pragma mark Constants
 
 #define kDuration 7
+#define kXVelocity 50
+#define kYBounce 300
 
 
 
@@ -30,6 +32,7 @@
 {
     if (self = [super initWithPlistFile:@"Star.plist"]) {
         [self runAnimationWithName:@"glare" endless:YES];
+        self.velocity = ccp(kXVelocity, kYBounce);
     }
     return self;
 }
@@ -38,6 +41,19 @@
 
 #pragma mark -
 #pragma mark Methods
+
+- (STGameObjectBodyType)bodyType {
+    return STGameObjectBodyTypeDynamic;
+}
+
+- (void)collisionWithGameObject:(STGameObject *)gameObject
+                           edge:(STRectEdge)edge {
+    
+    if (edge == STRectEdgeMinY) {
+        self.velocity = ccpAdd(self.velocity, ccp(0, kYBounce));
+    }
+
+}
 
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];

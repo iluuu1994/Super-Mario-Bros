@@ -3,7 +3,7 @@
 //  Game
 //
 //  Created by Ilija Tovilo on 5/11/13.
-//  Copyright (c) 2013 Ilija Tovilo. All rights reserved.
+//  Copyright (c) 2013 by Lukas Seglias & Ilija Tovilo. All rights reserved.
 //
 
 #import "STItemBlock.h"
@@ -108,7 +108,11 @@
         [self.items removeObject:item];
         [self reloadDisplay];
         
-        [self.delegate addGameObjectToMap:item toPosition:ccpAdd(self.position, ccp(0, (self.boundingBox.size.height)+([item boundingBox].size.height / 2)))];
+        if (![[item class] isSubclassOfClass:[STCoin class]]) {
+            [self.delegate addGameObjectToMap:item toPosition:ccpAdd(self.position, ccp(0, (self.boundingBox.size.height)+([item boundingBox].size.height / 2)))];
+        } else {
+            [(STCoin *)item awardPlayer:player];
+        }
     }
 }
 
