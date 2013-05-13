@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['layers_5f',['layers_',['../interface_c_c_scroll_layer.html#addec468d3139a3d8a7de779e6185538d',1,'CCScrollLayer']]],
   ['layerwithdelegate_3a',['layerWithDelegate:',['../interface_s_t_controls_layer.html#a339ecbeedf6c3909faa4a59f8023f00e',1,'STControlsLayer']]],
   ['layerwithdelegate_3aplayer_3atime_3a',['layerWithDelegate:player:time:',['../interface_s_t_information_layer.html#a6907ac94c152f8e5ce02dddf0ddf0015',1,'STInformationLayer']]],
   ['layerwithdelegate_3aworldid_3alevelid_3a',['layerWithDelegate:worldID:levelID:',['../interface_s_t_pause_layer.html#abb0a44a22d0a931c4e4a0a2e813c8b51',1,'STPauseLayer']]],

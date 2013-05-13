@@ -8,13 +8,16 @@ var searchData=
   ['initwithdelegate_3aworldid_3alevelid_3a',['initWithDelegate:worldID:levelID:',['../interface_s_t_pause_layer.html#aa884d102b1259095f622e51c76e9a67c',1,'STPauseLayer']]],
   ['initwithlayers_3awidthoffset_3a',['initWithLayers:widthOffset:',['../interface_c_c_scroll_layer.html#a951a036b913c128a3991f7468faaf5c1',1,'CCScrollLayer']]],
   ['initwithplistfile_3a',['initWithPlistFile:',['../interface_s_t_animated_sprite.html#a2ba23a00e7a6c34c293c07e08f741b98',1,'STAnimatedSprite']]],
+  ['initwithrect',['initWithRect',['../_sneaky_joystick_8h.html#a61ed48732d68fc6a6d82f461f5ee35f7',1,'SneakyJoystick.h']]],
   ['initwithtiledmap_3a',['initWithTiledMap:',['../interface_s_t_tiled_map_layer.html#ab3ed428ebf50c762f086f207ee2efd6c',1,'STTiledMapLayer']]],
   ['initwithworldid_3a',['initWithWorldID:',['../interface_s_t_choose_level_layer.html#a2a00ce7c8584a15b7c551b5ee4910fc4',1,'STChooseLevelLayer']]],
   ['initwithworldid_3alevelid_3a',['initWithWorldID:levelID:',['../interface_s_t_level_layer.html#a734a5541b6c03deb87f92d41e5a69875',1,'STLevelLayer']]],
   ['initwithworldid_3alevelid_3atime_3ascore_3asuccess_3a',['initWithWorldID:levelID:time:score:success:',['../interface_s_t_level_result_layer.html#a9a0cd01cded36f608051e5c40b7aa94c',1,'STLevelResultLayer']]],
+  ['isanimating',['isAnimating',['../category_s_t_player_07_08.html#a254809e07c6c7a3c10ff8afa22e92477',1,'STPlayer()']]],
   ['isbackgroundmusicenabled',['isBackgroundMusicEnabled',['../interface_s_t_sound_manager.html#a8c2f98367cf8a17790286b9647559a04',1,'STSoundManager']]],
   ['isdead',['isDead',['../interface_s_t_game_object.html#a201e19e8be0e830a2ce8b26d155996e3',1,'STGameObject']]],
   ['isdestroyable',['isDestroyable',['../interface_s_t_block.html#af46361ca0b23613a0ded5b526fdf50ea',1,'STBlock']]],
+  ['isdpad',['isDPad',['../_sneaky_joystick_8h.html#a6626feff48e75dad15d5cc6bdb093420',1,'SneakyJoystick.h']]],
   ['ishidden',['isHidden',['../interface_s_t_koopa.html#a681ea7259cfc6776b20ac2ad21b270a2',1,'STKoopa']]],
   ['isinvincible',['isInvincible',['../interface_s_t_player.html#a8d57e63d7fbd424cb4e6d05217fef7c6',1,'STPlayer']]],
   ['isjumping',['isJumping',['../interface_s_t_player.html#acf4f2f70c530c02b8c29ce007c778d5c',1,'STPlayer']]],
@@ -25,5 +28,8 @@ var searchData=
   ['istoneon',['isToneOn',['../interface_s_t_configuration_manager.html#ad301304b5e46ded603df8f423804c278',1,'STConfigurationManager']]],
   ['isunlockedworldid_3a',['isUnlockedWorldID:',['../interface_s_t_world_info_reader.html#a7b3e8b902e476d20e4d8edda8bca1473',1,'STWorldInfoReader']]],
   ['isunlockedworldid_3alevelid_3a',['isUnlockedWorldID:levelID:',['../interface_s_t_world_info_reader.html#a547da227a83b1853408c9b5010bd7be8',1,'STWorldInfoReader']]],
-  ['items',['items',['../interface_s_t_item_block.html#a923dd5e96d5e4b475d83610fb9d1c8b0',1,'STItemBlock']]]
+  ['items',['items',['../interface_s_t_item_block.html#a923dd5e96d5e4b475d83610fb9d1c8b0',1,'STItemBlock']]],
+  ['itsingleton_2eh',['ITSingleton.h',['../_i_t_singleton_8h.html',1,'']]],
+  ['itsingletonimplementation',['ITSingletonImplementation',['../_i_t_singleton_8h.html#a8b41ea6bdabaa9412aa40d4b1d646091',1,'ITSingleton.h']]],
+  ['itsingletoninterface',['ITSingletonInterface',['../_i_t_singleton_8h.html#add84fc2dcefd6c62e7ddbf9e2c03e45b',1,'ITSingleton.h']]]
 ];

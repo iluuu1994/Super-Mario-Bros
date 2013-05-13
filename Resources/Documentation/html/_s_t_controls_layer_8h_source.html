@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e51036813d6151dfecc72d5fa7c02b3.html">Users</a></li><li class="navelem"><a class="el" href="dir_ac36c70f5d397f6bd129256220e6b926.html">ilijatovilo</a></li><li class="navelem"><a class="el" href="dir_e6073c9dccf576e0d598eef09a159ffc.html">Ilu</a></li><li class="navelem"><a class="el" href="dir_8d04d4e7418d4b0c199ffb189d153cb6.html">BitBucket</a></li><li class="navelem"><a class="el" href="dir_fe22f2b02843da8b325df5fd881856a3.html">Game</a></li><li class="navelem"><a class="el" href="dir_e7870cd1645f9746a831b5ce49c5a4a8.html">Game</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9d94c0d8b89c0c513093dee11ca3ef0d.html">Ilu</a></li><li class="navelem"><a class="el" href="dir_d83d74887a3af5efb473aa7dae59c325.html">BitBucket</a></li><li class="navelem"><a class="el" href="dir_1742c79ba1489fdf58d948d0f6f4c7be.html">Game</a></li><li class="navelem"><a class="el" href="dir_a7f47e3e3d3d227c207ceabec5c9be85.html">Game</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,28 +89,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">STControlsLayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_s_t_controls_layer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  STControlsLayer.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  Game</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Lukas Seglias on 30.04.13.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 Ilija Tovilo. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 by Lukas Seglias &amp; Ilija Tovilo. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;STLayer.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;SneakyJoystick.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_s_t_layer_8h.html">STLayer.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_sneaky_joystick_8h.html">SneakyJoystick.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// Configuration of the Joystick</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define kJoystickBaseColor ccc4(128, 128, 128, 128)</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickColor ccc4(64, 64, 64, 128)</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickBaseRadius 64</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickRadius 32</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickRect CGRectMake(20, 20, 148, 148)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#a78fd5fc03521eef678b0d4b461adef35">   13</a></span>&#160;<span class="preprocessor">#define kJoystickBaseColor ccc4(128, 128, 128, 128)</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#a8542afce29103a14f72ad548e7f74b85">   14</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickColor ccc4(64, 64, 64, 128)</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#a9c63bb00e2844be5c36d4cd5e98de456">   15</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickBaseRadius 64</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#aea90a7c19eae22c6493791b4134d95f9">   16</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickRadius 32</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#a0d81756c00d182e5c165933230cdce07">   17</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kJoystickRect CGRectMake(20, 20, 148, 148)</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// Button Images</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define kAButtonImage @&quot;a.png&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kBButtonImage @&quot;b.png&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kPauseButtonImage @&quot;pause.png&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#a001244a69cacc087122db94d7510b2d4">   20</a></span>&#160;<span class="preprocessor">#define kAButtonImage @&quot;a.png&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#aea5058034468044f89926403c502c567">   21</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kBButtonImage @&quot;b.png&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="_s_t_controls_layer_8h.html#aee0f1b1b04a2d5efa7f65feee4410d5d">   22</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define kPauseButtonImage @&quot;pause.png&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="protocol_s_t_controls_delegate-p.html">   28</a></span>&#160;<span class="keyword">@protocol </span><a class="code" href="protocol_s_t_controls_delegate-p.html">STControlsDelegate</a> &lt;NSObject&gt;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
@@ -155,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 15:52:42 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 13 2013 19:49:48 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

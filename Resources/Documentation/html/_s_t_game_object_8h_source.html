@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e51036813d6151dfecc72d5fa7c02b3.html">Users</a></li><li class="navelem"><a class="el" href="dir_ac36c70f5d397f6bd129256220e6b926.html">ilijatovilo</a></li><li class="navelem"><a class="el" href="dir_e6073c9dccf576e0d598eef09a159ffc.html">Ilu</a></li><li class="navelem"><a class="el" href="dir_8d04d4e7418d4b0c199ffb189d153cb6.html">BitBucket</a></li><li class="navelem"><a class="el" href="dir_fe22f2b02843da8b325df5fd881856a3.html">Game</a></li><li class="navelem"><a class="el" href="dir_e7870cd1645f9746a831b5ce49c5a4a8.html">Game</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9d94c0d8b89c0c513093dee11ca3ef0d.html">Ilu</a></li><li class="navelem"><a class="el" href="dir_d83d74887a3af5efb473aa7dae59c325.html">BitBucket</a></li><li class="navelem"><a class="el" href="dir_1742c79ba1489fdf58d948d0f6f4c7be.html">Game</a></li><li class="navelem"><a class="el" href="dir_a7f47e3e3d3d227c207ceabec5c9be85.html">Game</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,15 +89,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">STGameObject.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_s_t_game_object_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  STGameObject.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  Game</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Ilija Tovilo on 4/23/13.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 Ilija Tovilo. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 by Lukas Seglias &amp; Ilija Tovilo. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;STAnimatedSprite.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_s_t_animated_sprite_8h.html">STAnimatedSprite.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
@@ -105,34 +106,34 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef STGameObjectEnums</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STGameObjectEnums</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27c">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Left edge</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    STRectEdgeMinX,</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27ca37e0dca22f064a04fa57d8b5a8088e41">   23</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27ca37e0dca22f064a04fa57d8b5a8088e41">STRectEdgeMinX</a>,</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Bottom edge</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    STRectEdgeMinY,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27caf362b5bd3b8149fcdcd7b53ab64822eb">   25</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27caf362b5bd3b8149fcdcd7b53ab64822eb">STRectEdgeMinY</a>,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Right edge</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    STRectEdgeMaxX,</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27ca24e97383c6c08e9c3a58d4e30bd5ba2d">   27</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27ca24e97383c6c08e9c3a58d4e30bd5ba2d">STRectEdgeMaxX</a>,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Top edge</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    STRectEdgeMaxY</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} STRectEdge;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27ca7c89ed6cc9f63cce23ce3360affee8a7">   29</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27ca7c89ed6cc9f63cce23ce3360affee8a7">STRectEdgeMaxY</a></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27c">STRectEdge</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    STAppearanceTypeDefault,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25d">   41</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25da71f3d592cba31401c3b98c29bf6da484">   45</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25da71f3d592cba31401c3b98c29bf6da484">STAppearanceTypeDefault</a>,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    STAppearanceTypeDark,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25da58c9100a4a12a2d3fb2538dfbe6567a7">   50</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25da58c9100a4a12a2d3fb2538dfbe6567a7">STAppearanceTypeDark</a>,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    STAppearanceTypeCastle</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} STAppearanceType;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25da6d3741213c67dd8716dd3962f39b7ac1">   55</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25da6d3741213c67dd8716dd3962f39b7ac1">STAppearanceTypeCastle</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25d">STAppearanceType</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    STGameObjectBodyTypeNonColliding,</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519a">   61</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aaf897d6373fd210169b6f7facd19eab8c">   65</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aaf897d6373fd210169b6f7facd19eab8c">STGameObjectBodyTypeNonColliding</a>,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    STGameObjectBodyTypeStatic,</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aad13d09e304b1a53f60e19fc25066a608">   70</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aad13d09e304b1a53f60e19fc25066a608">STGameObjectBodyTypeStatic</a>,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    STGameObjectBodyTypeDynamic,</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aa686dc143a3f049ef0c85026664ba3f25">   75</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aa686dc143a3f049ef0c85026664ba3f25">STGameObjectBodyTypeDynamic</a>,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    STGameObjectBodyTypeSemiDynamic</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} STGameObjectBodyType;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aabf635f390da81ea7fa805a722c0cb4d2">   80</a></span>&#160;    <a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519aabf635f390da81ea7fa805a722c0cb4d2">STGameObjectBodyTypeSemiDynamic</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519a">STGameObjectBodyType</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
@@ -157,13 +158,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">@property</span> (readonly) BOOL needsTouchNotifications;</div>
 <div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="interface_s_t_game_object.html#ad63c5abe125f4611873b17cd9fd9b86f">  122</a></span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">@property</span> CGPoint velocity;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">@property</span> CGPoint <a class="code" href="_sneaky_joystick_8h.html#a3fb2628691053085a34c9e0e0e139bc6">velocity</a>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno"><a class="code" href="interface_s_t_game_object.html#a65f298708e894ae564dd23de9c78cc6b">  129</a></span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">@property</span> STGameObjectBodyType bodyType;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">@property</span> <a class="code" href="_s_t_game_object_8h.html#a1b4db710c1558a1eac133ec2371a519a">STGameObjectBodyType</a> bodyType;</div>
 <div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="interface_s_t_game_object.html#a572dcb83fc15b7d2a3c8ea7697bbfe71">  134</a></span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">@property</span> (readonly, nonatomic) BOOL differenciatesAppearance;</div>
 <div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="interface_s_t_game_object.html#a40ca05b8bb4c537b7d14373908c1bf8b">  139</a></span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">@property</span> (nonatomic) STAppearanceType appearanceType;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="_s_t_game_object_8h.html#aced94b82d1692f6478b400dea3c2c25d">STAppearanceType</a> appearanceType;</div>
 <div class="line"><a name="l00145"></a><span class="lineno"><a class="code" href="interface_s_t_game_object.html#a57c5f524bafe3af88876731d07953e98">  145</a></span>&#160;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">@property</span> (setter = setDead:) BOOL isDead;</div>
 <div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="interface_s_t_game_object.html#a201e19e8be0e830a2ce8b26d155996e3">  151</a></span>&#160;</div>
@@ -178,7 +179,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;- (void)move:(CGPoint)deltaPoint;</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;- (void)collisionWithGameObject:(<a class="code" href="interface_s_t_game_object.html">STGameObject</a> *)gameObject</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                           edge:(STRectEdge)edge;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                           edge:(<a class="code" href="_s_t_game_object_8h.html#a89f8592f044528f1ee466c444fabb27c">STRectEdge</a>)edge;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;- (NSString *)appearanceNameForString:(NSString *)name;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
@@ -186,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 15:52:42 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 13 2013 19:49:48 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

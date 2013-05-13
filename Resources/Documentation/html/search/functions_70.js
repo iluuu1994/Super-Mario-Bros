@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['pagenumberforposition_3a',['pageNumberForPosition:',['../category_c_c_scroll_layer_07_08.html#a81868ca3e815afc86b7e7571f2539649',1,'CCScrollLayer()']]],
   ['pathforresource_3a',['pathForResource:',['../category_n_s_bundle_07_resources_08.html#a935a898d284134589c0dbdcfd797b01f',1,'NSBundle(Resources)']]],
   ['pause',['pause',['../interface_s_t_game_flow_manager.html#a1808fceb22f85d7d5baa1b1b2a101c7f',1,'STGameFlowManager']]],
   ['pause_3a',['pause:',['../protocol_s_t_controls_delegate-p.html#a5c84e1b62ae9628f46acf91f84cae5d4',1,'STControlsDelegate-p']]],

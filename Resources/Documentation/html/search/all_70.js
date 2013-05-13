@@ -1,10 +1,15 @@
 var searchData=
 [
+  ['pagenumberforposition_3a',['pageNumberForPosition:',['../category_c_c_scroll_layer_07_08.html#a81868ca3e815afc86b7e7571f2539649',1,'CCScrollLayer()']]],
   ['pages',['pages',['../interface_c_c_scroll_layer.html#acbdc386505ac0fe06dc022dc7ddcad45',1,'CCScrollLayer']]],
   ['pagesindicatornormalcolor',['pagesIndicatorNormalColor',['../interface_c_c_scroll_layer.html#a606e0c3096917308b990bdb970539fcd',1,'CCScrollLayer']]],
+  ['pagesindicatornormalcolor_5f',['pagesIndicatorNormalColor_',['../interface_c_c_scroll_layer.html#af8222bb45897556c3d8b0e080a1c6ef3',1,'CCScrollLayer']]],
   ['pagesindicatorposition',['pagesIndicatorPosition',['../interface_c_c_scroll_layer.html#a400d56ca0721d351a865c5716fafa59c',1,'CCScrollLayer']]],
+  ['pagesindicatorposition_5f',['pagesIndicatorPosition_',['../interface_c_c_scroll_layer.html#a898023dd96119394394486f1600f7498',1,'CCScrollLayer']]],
   ['pagesindicatorselectedcolor',['pagesIndicatorSelectedColor',['../interface_c_c_scroll_layer.html#a51ad243b647971e021ef6b446c39f3e7',1,'CCScrollLayer']]],
+  ['pagesindicatorselectedcolor_5f',['pagesIndicatorSelectedColor_',['../interface_c_c_scroll_layer.html#a5ef035e473a81a48337d35fada0607e7',1,'CCScrollLayer']]],
   ['pageswidthoffset',['pagesWidthOffset',['../interface_c_c_scroll_layer.html#afe8d69c4d6de64f023839edf70595c61',1,'CCScrollLayer']]],
+  ['pageswidthoffset_5f',['pagesWidthOffset_',['../interface_c_c_scroll_layer.html#afa4b2497908f97e3c0c08de0632b0639',1,'CCScrollLayer']]],
   ['pathforresource_3a',['pathForResource:',['../category_n_s_bundle_07_resources_08.html#a935a898d284134589c0dbdcfd797b01f',1,'NSBundle(Resources)']]],
   ['pause',['pause',['../interface_s_t_game_flow_manager.html#a1808fceb22f85d7d5baa1b1b2a101c7f',1,'STGameFlowManager']]],
   ['pause_3a',['pause:',['../protocol_s_t_controls_delegate-p.html#a5c84e1b62ae9628f46acf91f84cae5d4',1,'STControlsDelegate-p']]],
@@ -18,5 +23,6 @@ var searchData=
   ['playerdied_3a',['playerDied:',['../protocol_s_t_player_delegate-p.html#a4bbe1e9a69bdb4dce7b1bd8d9ac9d0c5',1,'STPlayerDelegate-p']]],
   ['playerstate',['playerState',['../interface_s_t_player.html#a977f4a58fd6651331bb97564dd66fa2e',1,'STPlayer']]],
   ['playerstopsplayinginvinciblesong_3a',['playerStopsPlayingInvincibleSong:',['../protocol_s_t_player_delegate-p.html#a60613a695d818170264c7c5266b4e6f9',1,'STPlayerDelegate-p']]],
-  ['positionofplayer',['positionOfPlayer',['../protocol_s_t_lakitu_delegate-p.html#a3fd0cbbe644395d22c0d038e99cbf4bc',1,'STLakituDelegate-p']]]
+  ['positionofplayer',['positionOfPlayer',['../protocol_s_t_lakitu_delegate-p.html#a3fd0cbbe644395d22c0d038e99cbf4bc',1,'STLakituDelegate-p']]],
+  ['prevscreen_5f',['prevScreen_',['../interface_c_c_scroll_layer.html#aea35fc655b4b8f5ea1f18534a4028c4e',1,'CCScrollLayer']]]
 ];

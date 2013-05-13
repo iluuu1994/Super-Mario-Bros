@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -80,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9e51036813d6151dfecc72d5fa7c02b3.html">Users</a></li><li class="navelem"><a class="el" href="dir_ac36c70f5d397f6bd129256220e6b926.html">ilijatovilo</a></li><li class="navelem"><a class="el" href="dir_e6073c9dccf576e0d598eef09a159ffc.html">Ilu</a></li><li class="navelem"><a class="el" href="dir_8d04d4e7418d4b0c199ffb189d153cb6.html">BitBucket</a></li><li class="navelem"><a class="el" href="dir_fe22f2b02843da8b325df5fd881856a3.html">Game</a></li><li class="navelem"><a class="el" href="dir_e7870cd1645f9746a831b5ce49c5a4a8.html">Game</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_9d94c0d8b89c0c513093dee11ca3ef0d.html">Ilu</a></li><li class="navelem"><a class="el" href="dir_d83d74887a3af5efb473aa7dae59c325.html">BitBucket</a></li><li class="navelem"><a class="el" href="dir_1742c79ba1489fdf58d948d0f6f4c7be.html">Game</a></li><li class="navelem"><a class="el" href="dir_a7f47e3e3d3d227c207ceabec5c9be85.html">Game</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,15 +89,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">STPlayer.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_s_t_player_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  STPlayer.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  Game</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Ilija Tovilo on 5/2/13.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 Ilija Tovilo. All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 by Lukas Seglias &amp; Ilija Tovilo. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;STCreature.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_s_t_creature_8h.html">STCreature.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
@@ -105,13 +106,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifndef STPlayerStateEnum</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STPlayerStateEnum</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    STPlayerStateSmall,</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41c">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41ca86cf41b5cba27b3a921b796c091b95ee">   26</a></span>&#160;    <a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41ca86cf41b5cba27b3a921b796c091b95ee">STPlayerStateSmall</a>,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    STPlayerStateLarge,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41ca87b9cee3116d4eaef5e86a54a9c61ecd">   32</a></span>&#160;    <a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41ca87b9cee3116d4eaef5e86a54a9c61ecd">STPlayerStateLarge</a>,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    STPlayerStateFire</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} STPlayerState;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41ca5c1bf0367ac76b3221a49480ec51d789">   39</a></span>&#160;    <a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41ca5c1bf0367ac76b3221a49480ec51d789">STPlayerStateFire</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41c">STPlayerState</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
@@ -153,7 +154,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="interface_s_t_player.html#acf4f2f70c530c02b8c29ce007c778d5c">  127</a></span>&#160;<span class="keyword">@property</span> (setter = setJumping:) BOOL isJumping;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="interface_s_t_player.html#a977f4a58fd6651331bb97564dd66fa2e">  133</a></span>&#160;<span class="keyword">@property</span> (nonatomic) STPlayerState playerState;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="interface_s_t_player.html#a977f4a58fd6651331bb97564dd66fa2e">  133</a></span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="_s_t_player_8h.html#ab8e13d931fbd2f6c9aa74b7acf69e41c">STPlayerState</a> playerState;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="interface_s_t_player.html#a3b6d37359a7f151cca9ff79bc9f8f299">  139</a></span>&#160;<span class="keyword">@property</span> (unsafe_unretained) id&lt;STPlayerDelegate&gt; delegate;</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
@@ -175,7 +176,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 15:52:42 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 13 2013 19:49:48 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

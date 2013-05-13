@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,11 +104,9 @@ Inheritance diagram for AppController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aaa11603e8105cf07d028bde11f6ace04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa11603e8105cf07d028bde11f6ace04"></a>
-UIWindow *&#160;</td><td class="memItemRight" valign="bottom"><b>window_</b></td></tr>
+<tr class="memitem:aaa11603e8105cf07d028bde11f6ace04"><td class="memItemLeft" align="right" valign="top">UIWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_app_controller.html#aaa11603e8105cf07d028bde11f6ace04">window_</a></td></tr>
 <tr class="separator:aaa11603e8105cf07d028bde11f6ace04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d00ff0c001fc0ccc8ddbc025d335cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93d00ff0c001fc0ccc8ddbc025d335cb"></a>
-<a class="el" href="interface_my_navigation_controller.html">MyNavigationController</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>navController_</b></td></tr>
+<tr class="memitem:a93d00ff0c001fc0ccc8ddbc025d335cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_my_navigation_controller.html">MyNavigationController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_app_controller.html#a93d00ff0c001fc0ccc8ddbc025d335cb">navController_</a></td></tr>
 <tr class="separator:a93d00ff0c001fc0ccc8ddbc025d335cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -122,7 +120,48 @@ Properties</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The start point of our application. It configures and initializes Cocos2d. </p>
-</div><h2 class="groupheader">Property Documentation</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a93d00ff0c001fc0ccc8ddbc025d335cb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_my_navigation_controller.html">MyNavigationController</a>*) navController_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aaa11603e8105cf07d028bde11f6ace04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIWindow*) window_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="abf5e165178fe588cf66d4d43d08dc007"></a>
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +231,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 15:52:42 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 13 2013 19:49:48 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

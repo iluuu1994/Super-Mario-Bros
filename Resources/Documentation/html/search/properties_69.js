@@ -1,6 +1,7 @@
 var searchData=
 [
   ['infolayer',['infoLayer',['../interface_s_t_level_layer.html#a29c3994ebe8d1b84fcb08b35d13625ba',1,'STLevelLayer']]],
+  ['isanimating',['isAnimating',['../category_s_t_player_07_08.html#a254809e07c6c7a3c10ff8afa22e92477',1,'STPlayer()']]],
   ['isbackgroundmusicenabled',['isBackgroundMusicEnabled',['../interface_s_t_sound_manager.html#a8c2f98367cf8a17790286b9647559a04',1,'STSoundManager']]],
   ['isdead',['isDead',['../interface_s_t_game_object.html#a201e19e8be0e830a2ce8b26d155996e3',1,'STGameObject']]],
   ['isdestroyable',['isDestroyable',['../interface_s_t_block.html#af46361ca0b23613a0ded5b526fdf50ea',1,'STBlock']]],

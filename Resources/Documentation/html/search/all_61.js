@@ -8,7 +8,10 @@ var searchData=
   ['animationdictionary',['animationDictionary',['../interface_s_t_animated_sprite.html#ac2d40e37765bcd395de9ac56a5ad7078',1,'STAnimatedSprite']]],
   ['animations',['animations',['../interface_s_t_animated_sprite.html#aff7ce62d7a51d112748c40ca875a3679',1,'STAnimatedSprite']]],
   ['appcontroller',['AppController',['../interface_app_controller.html',1,'']]],
+  ['appdelegate_2eh',['AppDelegate.h',['../_app_delegate_8h.html',1,'']]],
+  ['appdelegate_2em',['AppDelegate.m',['../_app_delegate_8m.html',1,'']]],
   ['appearancenameforstring_3a',['appearanceNameForString:',['../interface_s_t_game_object.html#ac4e2d93a094ab54896a736e50404a591',1,'STGameObject']]],
   ['appearancetype',['appearanceType',['../interface_s_t_game_object.html#a57c5f524bafe3af88876731d07953e98',1,'STGameObject']]],
+  ['autocenter',['autoCenter',['../_sneaky_joystick_8h.html#a7badfe4455d3266dc6a71369b63265c8',1,'SneakyJoystick.h']]],
   ['awardplayer_3a',['awardPlayer:',['../interface_s_t_block.html#a4608023215f1fe0e62ce80b1772e9e0b',1,'STBlock::awardPlayer:()'],['../interface_s_t_item.html#ac0f26f92b02f01c70d272b952f511f54',1,'STItem::awardPlayer:()']]]
 ];

@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,11 +118,9 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a7eb40e1af4b5dc9cb3777672028d1eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab403ff862f1910bc70a18c9cd4d971ba"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_scroll_layer.html#ab403ff862f1910bc70a18c9cd4d971ba">removePageWithNumber:</a></td></tr>
 <tr class="separator:ab403ff862f1910bc70a18c9cd4d971ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d6e479cb72555be9b6492a4f07a924"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24d6e479cb72555be9b6492a4f07a924"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>moveToPage:</b></td></tr>
+<tr class="memitem:a24d6e479cb72555be9b6492a4f07a924"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_scroll_layer.html#a24d6e479cb72555be9b6492a4f07a924">moveToPage:</a></td></tr>
 <tr class="separator:a24d6e479cb72555be9b6492a4f07a924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4a44b21749231ffece60ae77ab48eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f4a44b21749231ffece60ae77ab48eb"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>selectPage:</b></td></tr>
+<tr class="memitem:a3f4a44b21749231ffece60ae77ab48eb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_c_c_scroll_layer.html#a3f4a44b21749231ffece60ae77ab48eb">selectPage:</a></td></tr>
 <tr class="separator:a3f4a44b21749231ffece60ae77ab48eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -132,57 +130,41 @@ Class Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a802a1ca411374842fe9d8d5d1794a063"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a802a1ca411374842fe9d8d5d1794a063"></a>
-__unsafe_unretained NSObject<br class="typebreak"/>
-&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCScrollLayerDelegate</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>delegate_</b></td></tr>
+<tr class="memitem:a802a1ca411374842fe9d8d5d1794a063"><td class="memItemLeft" align="right" valign="top">__unsafe_unretained NSObject<br class="typebreak"/>
+&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCScrollLayerDelegate</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a802a1ca411374842fe9d8d5d1794a063">delegate_</a></td></tr>
 <tr class="separator:a802a1ca411374842fe9d8d5d1794a063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dd5148249a0792f5b44931dd3de6e6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3dd5148249a0792f5b44931dd3de6e6f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>currentScreen_</b></td></tr>
+<tr class="memitem:a3dd5148249a0792f5b44931dd3de6e6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a3dd5148249a0792f5b44931dd3de6e6f">currentScreen_</a></td></tr>
 <tr class="separator:a3dd5148249a0792f5b44931dd3de6e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea35fc655b4b8f5ea1f18534a4028c4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea35fc655b4b8f5ea1f18534a4028c4e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>prevScreen_</b></td></tr>
+<tr class="memitem:aea35fc655b4b8f5ea1f18534a4028c4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#aea35fc655b4b8f5ea1f18534a4028c4e">prevScreen_</a></td></tr>
 <tr class="separator:aea35fc655b4b8f5ea1f18534a4028c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6424b84c9e22e5637b032258ae7081b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6424b84c9e22e5637b032258ae7081b"></a>
-CGFloat&#160;</td><td class="memItemRight" valign="bottom"><b>startSwipe_</b></td></tr>
+<tr class="memitem:ab6424b84c9e22e5637b032258ae7081b"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#ab6424b84c9e22e5637b032258ae7081b">startSwipe_</a></td></tr>
 <tr class="separator:ab6424b84c9e22e5637b032258ae7081b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac35591e6f675bc2e2653fb8273b125e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac35591e6f675bc2e2653fb8273b125e0"></a>
-CGFloat&#160;</td><td class="memItemRight" valign="bottom"><b>minimumTouchLengthToSlide_</b></td></tr>
+<tr class="memitem:ac35591e6f675bc2e2653fb8273b125e0"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#ac35591e6f675bc2e2653fb8273b125e0">minimumTouchLengthToSlide_</a></td></tr>
 <tr class="separator:ac35591e6f675bc2e2653fb8273b125e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a579d60b87374d55b40e4190053f84305"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a579d60b87374d55b40e4190053f84305"></a>
-CGFloat&#160;</td><td class="memItemRight" valign="bottom"><b>minimumTouchLengthToChangePage_</b></td></tr>
+<tr class="memitem:a579d60b87374d55b40e4190053f84305"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a579d60b87374d55b40e4190053f84305">minimumTouchLengthToChangePage_</a></td></tr>
 <tr class="separator:a579d60b87374d55b40e4190053f84305"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11b31b7dd1aa23ad0c1064801ca8bb1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11b31b7dd1aa23ad0c1064801ca8bb1d"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>showPagesIndicator_</b></td></tr>
+<tr class="memitem:a11b31b7dd1aa23ad0c1064801ca8bb1d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a11b31b7dd1aa23ad0c1064801ca8bb1d">showPagesIndicator_</a></td></tr>
 <tr class="separator:a11b31b7dd1aa23ad0c1064801ca8bb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a898023dd96119394394486f1600f7498"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a898023dd96119394394486f1600f7498"></a>
-CGPoint&#160;</td><td class="memItemRight" valign="bottom"><b>pagesIndicatorPosition_</b></td></tr>
+<tr class="memitem:a898023dd96119394394486f1600f7498"><td class="memItemLeft" align="right" valign="top">CGPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a898023dd96119394394486f1600f7498">pagesIndicatorPosition_</a></td></tr>
 <tr class="separator:a898023dd96119394394486f1600f7498"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef035e473a81a48337d35fada0607e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ef035e473a81a48337d35fada0607e7"></a>
-ccColor4B&#160;</td><td class="memItemRight" valign="bottom"><b>pagesIndicatorSelectedColor_</b></td></tr>
+<tr class="memitem:a5ef035e473a81a48337d35fada0607e7"><td class="memItemLeft" align="right" valign="top">ccColor4B&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a5ef035e473a81a48337d35fada0607e7">pagesIndicatorSelectedColor_</a></td></tr>
 <tr class="separator:a5ef035e473a81a48337d35fada0607e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8222bb45897556c3d8b0e080a1c6ef3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8222bb45897556c3d8b0e080a1c6ef3"></a>
-ccColor4B&#160;</td><td class="memItemRight" valign="bottom"><b>pagesIndicatorNormalColor_</b></td></tr>
+<tr class="memitem:af8222bb45897556c3d8b0e080a1c6ef3"><td class="memItemLeft" align="right" valign="top">ccColor4B&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#af8222bb45897556c3d8b0e080a1c6ef3">pagesIndicatorNormalColor_</a></td></tr>
 <tr class="separator:af8222bb45897556c3d8b0e080a1c6ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120db1bb8c60a1a566edb5a3550f2a03"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a120db1bb8c60a1a566edb5a3550f2a03"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>state_</b></td></tr>
+<tr class="memitem:a120db1bb8c60a1a566edb5a3550f2a03"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a120db1bb8c60a1a566edb5a3550f2a03">state_</a></td></tr>
 <tr class="separator:a120db1bb8c60a1a566edb5a3550f2a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6c3a08c6a427641601761b55cad0879"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6c3a08c6a427641601761b55cad0879"></a>
-BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>stealTouches_</b></td></tr>
+<tr class="memitem:af6c3a08c6a427641601761b55cad0879"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#af6c3a08c6a427641601761b55cad0879">stealTouches_</a></td></tr>
 <tr class="separator:af6c3a08c6a427641601761b55cad0879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addec468d3139a3d8a7de779e6185538d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addec468d3139a3d8a7de779e6185538d"></a>
-NSMutableArray *&#160;</td><td class="memItemRight" valign="bottom"><b>layers_</b></td></tr>
+<tr class="memitem:addec468d3139a3d8a7de779e6185538d"><td class="memItemLeft" align="right" valign="top">NSMutableArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#addec468d3139a3d8a7de779e6185538d">layers_</a></td></tr>
 <tr class="separator:addec468d3139a3d8a7de779e6185538d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa4b2497908f97e3c0c08de0632b0639"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa4b2497908f97e3c0c08de0632b0639"></a>
-CGFloat&#160;</td><td class="memItemRight" valign="bottom"><b>pagesWidthOffset_</b></td></tr>
+<tr class="memitem:afa4b2497908f97e3c0c08de0632b0639"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#afa4b2497908f97e3c0c08de0632b0639">pagesWidthOffset_</a></td></tr>
 <tr class="separator:afa4b2497908f97e3c0c08de0632b0639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a489c0aad79d832bbaea7ced50768c1ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a489c0aad79d832bbaea7ced50768c1ca"></a>
-CGFloat&#160;</td><td class="memItemRight" valign="bottom"><b>marginOffset_</b></td></tr>
+<tr class="memitem:a489c0aad79d832bbaea7ced50768c1ca"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a489c0aad79d832bbaea7ced50768c1ca">marginOffset_</a></td></tr>
 <tr class="separator:a489c0aad79d832bbaea7ced50768c1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a5d1ac82201666404173b9889bbe2e210"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d1ac82201666404173b9889bbe2e210"></a>
-NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCScrollLayerDelegate</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<tr class="memitem:a5d1ac82201666404173b9889bbe2e210"><td class="memItemLeft" align="right" valign="top">NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCScrollLayerDelegate</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a5d1ac82201666404173b9889bbe2e210">delegate</a></td></tr>
 <tr class="separator:a5d1ac82201666404173b9889bbe2e210"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d2279990534dfb3fe5002e272a5d59a"><td class="memItemLeft" align="right" valign="top">CGFloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_c_c_scroll_layer.html#a1d2279990534dfb3fe5002e272a5d59a">minimumTouchLengthToSlide</a></td></tr>
 <tr class="separator:a1d2279990534dfb3fe5002e272a5d59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,6 +275,22 @@ NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCSc
 
 </div>
 </div>
+<a class="anchor" id="a24d6e479cb72555be9b6492a4f07a924"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) moveToPage: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>page</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ac298a14c5124266ae84f950e7ee194fe"></a>
 <div class="memitem">
 <div class="memproto">
@@ -361,6 +359,22 @@ NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCSc
 
 </div>
 </div>
+<a class="anchor" id="a3f4a44b21749231ffece60ae77ab48eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) selectPage: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>page</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a202780cbe8eae13ecdb9b415cf31a510"></a>
 <div class="memitem">
 <div class="memproto">
@@ -374,6 +388,307 @@ NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCSc
       </table>
 </div><div class="memdoc">
 <p>Updates all pages positions &amp; adds them as children if needed. Can be used to update position of pages after screen reshape, or for update after dynamic page add/remove. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a3dd5148249a0792f5b44931dd3de6e6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) currentScreen_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a802a1ca411374842fe9d8d5d1794a063"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (__unsafe_unretained NSObject&lt;<a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCScrollLayerDelegate</a>&gt;*) delegate_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="addec468d3139a3d8a7de779e6185538d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSMutableArray*) layers_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a489c0aad79d832bbaea7ced50768c1ca"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) marginOffset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a579d60b87374d55b40e4190053f84305"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) minimumTouchLengthToChangePage_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac35591e6f675bc2e2653fb8273b125e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) minimumTouchLengthToSlide_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af8222bb45897556c3d8b0e080a1c6ef3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ccColor4B) pagesIndicatorNormalColor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a898023dd96119394394486f1600f7498"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGPoint) pagesIndicatorPosition_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ef035e473a81a48337d35fada0607e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (ccColor4B) pagesIndicatorSelectedColor_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="afa4b2497908f97e3c0c08de0632b0639"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) pagesWidthOffset_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea35fc655b4b8f5ea1f18534a4028c4e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) prevScreen_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11b31b7dd1aa23ad0c1064801ca8bb1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) showPagesIndicator_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab6424b84c9e22e5637b032258ae7081b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (CGFloat) startSwipe_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a120db1bb8c60a1a566edb5a3550f2a03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (int) state_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af6c3a08c6a427641601761b55cad0879"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) stealTouches_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -396,6 +711,26 @@ NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCSc
 </table>
 </div><div class="memdoc">
 <p>Current page number, that is shown. Belongs to the [0, totalScreen] interval. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d1ac82201666404173b9889bbe2e210"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSObject&lt;<a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCScrollLayerDelegate</a>&gt;*) delegate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">atomic</span><span class="mlabel">assign</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -632,12 +967,12 @@ NSObject&lt; <a class="el" href="protocol_c_c_scroll_layer_delegate-p.html">CCSc
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/ilijatovilo/Ilu/BitBucket/Game/Game/<a class="el" href="_c_c_scroll_layer_8h_source.html">CCScrollLayer.h</a></li>
-<li>/Users/ilijatovilo/Ilu/BitBucket/Game/Game/CCScrollLayer.m</li>
+<li>/Users/ilijatovilo/Ilu/BitBucket/Game/Game/<a class="el" href="_c_c_scroll_layer_8m.html">CCScrollLayer.m</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 15:52:42 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 13 2013 19:49:48 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

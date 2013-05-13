@@ -1,17 +1,29 @@
 var searchData=
 [
   ['ccdirector_28transitions_29',['CCDirector(Transitions)',['../category_c_c_director_07_transitions_08.html',1,'']]],
+  ['ccdirector_2btransitions_2eh',['CCDirector+Transitions.h',['../_c_c_director_09_transitions_8h.html',1,'']]],
+  ['ccdirector_2btransitions_2em',['CCDirector+Transitions.m',['../_c_c_director_09_transitions_8m.html',1,'']]],
   ['ccscrolllayer',['CCScrollLayer',['../interface_c_c_scroll_layer.html',1,'']]],
   ['ccscrolllayer_28_29',['CCScrollLayer()',['../category_c_c_scroll_layer_07_08.html',1,'']]],
+  ['ccscrolllayer_2eh',['CCScrollLayer.h',['../_c_c_scroll_layer_8h.html',1,'']]],
+  ['ccscrolllayer_2em',['CCScrollLayer.m',['../_c_c_scroll_layer_8m.html',1,'']]],
   ['ccscrolllayerdelegate_2dp',['CCScrollLayerDelegate-p',['../protocol_c_c_scroll_layer_delegate-p.html',1,'']]],
+  ['circlevertices_5f',['circleVertices_',['../interface_colored_circle_sprite.html#a441af8e0edab96b185f36b6faa298f7d',1,'ColoredCircleSprite']]],
   ['circlewithcolor_3aradius_3a',['circleWithColor:radius:',['../interface_colored_circle_sprite.html#a5945f8783b011d7dab7dd0bdec038d6e',1,'ColoredCircleSprite']]],
   ['coins',['coins',['../interface_s_t_player.html#a085f091bdf639f09a510f45664ed5817',1,'STPlayer']]],
   ['collisionwithgameobject_3aedge_3a',['collisionWithGameObject:edge:',['../interface_s_t_game_object.html#a7f56f24e76a6ee0c5d8657bee79c621d',1,'STGameObject']]],
   ['color',['color',['../interface_colored_circle_sprite.html#aa70a1365e8b8a19bddbedcae41a907e4',1,'ColoredCircleSprite::color()'],['../interface_colored_square_sprite.html#a9e3d73d81e6b573f37a95fbe25057ce3',1,'ColoredSquareSprite::color()']]],
+  ['color_5f',['color_',['../interface_colored_circle_sprite.html#ae00d97994ac71b8915f2210351bc7154',1,'ColoredCircleSprite::color_()'],['../interface_colored_square_sprite.html#aeb6a1bbf1643cde6a22a2d3034474aae',1,'ColoredSquareSprite::color_()']]],
   ['coloredcirclesprite',['ColoredCircleSprite',['../interface_colored_circle_sprite.html',1,'']]],
   ['coloredcirclesprite_28privatemethods_29',['ColoredCircleSprite(privateMethods)',['../category_colored_circle_sprite_07private_methods_08.html',1,'']]],
+  ['coloredcirclesprite_2eh',['ColoredCircleSprite.h',['../_colored_circle_sprite_8h.html',1,'']]],
+  ['coloredcirclesprite_2em',['ColoredCircleSprite.m',['../_colored_circle_sprite_8m.html',1,'']]],
   ['coloredsquaresprite',['ColoredSquareSprite',['../interface_colored_square_sprite.html',1,'']]],
   ['coloredsquaresprite_28privatemethods_29',['ColoredSquareSprite(privateMethods)',['../category_colored_square_sprite_07private_methods_08.html',1,'']]],
+  ['coloredsquaresprite_2eh',['ColoredSquareSprite.h',['../_colored_square_sprite_8h.html',1,'']]],
+  ['coloredsquaresprite_2em',['ColoredSquareSprite.m',['../_colored_square_sprite_8m.html',1,'']]],
+  ['containspoint_3a',['containsPoint:',['../interface_colored_circle_sprite.html#a75c35a063cf4328f7076e43729d33fb6',1,'ColoredCircleSprite::containsPoint:()'],['../interface_colored_square_sprite.html#a5bbc33f9b6cfe336cfd59c76d9eba851',1,'ColoredSquareSprite::containsPoint:()']]],
   ['creategameobjectatx_3ay_3a',['createGameObjectAtX:y:',['../interface_s_t_tiled_map_layer.html#a37b31cec4080a8b4713967bf62575559',1,'STTiledMapLayer']]],
-  ['currentscreen',['currentScreen',['../interface_c_c_scroll_layer.html#a2d68806b83b34aa66375f54a22ab22a3',1,'CCScrollLayer']]]
+  ['currentscreen',['currentScreen',['../interface_c_c_scroll_layer.html#a2d68806b83b34aa66375f54a22ab22a3',1,'CCScrollLayer']]],
+  ['currentscreen_5f',['currentScreen_',['../interface_c_c_scroll_layer.html#a3dd5148249a0792f5b44931dd3de6e6f',1,'CCScrollLayer']]]
 ];
