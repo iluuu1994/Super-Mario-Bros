@@ -30,26 +30,26 @@
         self.velocity = ccp(-kSpeed, self.velocity.y);
     }
     
-    if ((edge == STRectEdgeMinX || edge == STRectEdgeMaxX) && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
-        [(STPlayer *)gameObject setDead:YES];
-    }
-    
-    if(edge == STRectEdgeMaxY && [[gameObject class] isSubclassOfClass:[STPlayer class]]) {
-        STPlayer *player = (STPlayer *) gameObject;
-        
-        // Make the other GameObject jump after jumping on this
-        gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
-        
-        // Play a sound
-        [[STSoundManager sharedInstance] playEffect:kSoundStomp];
-        
-        // Add a score
-        player.score += kScore;
-        
-        // Show the die animation and kill this GameObject
-        [self runAnimationWithName:@"die" callbackBlock:^void {
-            [self setDead:YES];
-        }];
+    if ([[gameObject class] isSubclassOfClass:[STPlayer class]]) {
+        if (edge != STRectEdgeMaxY) {
+            [(STPlayer *)gameObject setDead:YES];
+        } else {
+            STPlayer *player = (STPlayer *) gameObject;
+            
+            // Make the other GameObject jump after jumping on this
+            gameObject.velocity = ccpAdd(gameObject.velocity, ccp(0, 100));
+            
+            // Play a sound
+            [[STSoundManager sharedInstance] playEffect:kSoundStomp];
+            
+            // Add a score
+            player.score += kScore;
+            
+            // Show the die animation and kill this GameObject
+            [self runAnimationWithName:@"die" callbackBlock:^void {
+                [self setDead:YES];
+            }];
+        }
     }
 }
 
