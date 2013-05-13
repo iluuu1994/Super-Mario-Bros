@@ -8,7 +8,14 @@
 
 #import "STLayer.h"
 
+
+#pragma mark -
+#pragma mark STLayer Implementation
+
 @implementation STLayer
+
+
+
 
 #pragma mark -
 #pragma mark Scene
@@ -29,12 +36,19 @@
     return scene;
 }
 
+
+
+
 #pragma mark -
 #pragma mark Scene Class
 
 + (Class)sceneClass {
     return [STScene class];
 }
+
+
+
+
 
 #pragma mark -
 #pragma mark Initialise
@@ -50,6 +64,10 @@
 - (void)setUp {
     
 }
+
+
+
+
 
 #pragma mark -
 #pragma mark Update
@@ -79,6 +97,10 @@
                                    reason:[NSString stringWithFormat:@"Please override `update:` in %@", NSStringFromClass([self class])]
                                  userInfo:nil];
 }
+
+
+
+
 
 #pragma mark -
 #pragma mark Dealloc
