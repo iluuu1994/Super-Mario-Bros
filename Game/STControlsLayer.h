@@ -14,8 +14,7 @@
 #define kJoystickColor ccc4(64, 64, 64, 128)
 #define kJoystickBaseRadius 64
 #define kJoystickRadius 32
-#define kJoystickPosition ccp(84, 84)// TODO: Remove
-#define kJoystickRect CGRectMake(20, 20, 148, 148) // TODO: remove
+#define kJoystickRect CGRectMake(20, 20, 148, 148)
 
 // Button Images
 #define kAButtonImage @"a.png"
@@ -107,7 +106,7 @@
 #pragma mark Update
 
 /**
- * TODO: finish comment 
+ * Updates the layer.
  * @param delta - the time elapsed since the last call of update.
  */
 - (void)update:(ccTime)delta;
