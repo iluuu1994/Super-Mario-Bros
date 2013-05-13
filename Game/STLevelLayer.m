@@ -21,19 +21,34 @@
 #import "STMario.h"
 #import "STItem.h"
 
+#pragma mark -
+#pragma mark Constants
+
 #define kDefaultGravity ccp(0, -9.81)
 #define kMaxCameraEdge 200
+
+
+
+#pragma mark -
+#pragma mark Private Interface
 
 @interface STLevelLayer ()
 @property (strong) NSMutableArray *gameObjectsToAdd;
 @property CGPoint endPoint;
 @end
 
+
+
+#pragma mark -
+#pragma mark STLevelLayer Implementation
+
 @implementation STLevelLayer
 {}
 
+
 #pragma mark -
 #pragma mark Initialise
+
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
     _levelInfo = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
     _gameObjectsToAdd = [NSMutableArray array];
@@ -62,14 +77,6 @@
 - (void)setUp {
     [super setUp];
     [self startPlayingBackgroundMusic];
-}
-
-- (void)startPlayingBackgroundMusic {
-    [[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
-}
-
-- (void)stopPlayingBackgroundMusic {
-    [[STSoundManager sharedInstance] stopBackgroundMusic];
 }
 
 - (void)tearDown {
@@ -113,6 +120,21 @@
         [[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFramesFromFile:spriteCacheName];
     }
 }
+
+
+
+#pragma mark -
+#pragma mark Methods
+
+- (void)startPlayingBackgroundMusic {
+    [[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
+}
+
+- (void)stopPlayingBackgroundMusic {
+    [[STSoundManager sharedInstance] stopBackgroundMusic];
+}
+
+
 
 #pragma mark -
 #pragma mark Update
@@ -260,9 +282,6 @@
     return rectEdge;
 }
 
-#pragma mark -
-#pragma mark Game Objects
-
 - (void)updateGameObjects {
     [self readGameObjectsFromMap];
 }
@@ -308,6 +327,9 @@
     }
 }
 
+
+
+
 #pragma mark -
 #pragma mark ControlsLayer Delegate
 - (IBAction)a:(id)sender {
@@ -329,6 +351,11 @@
     [[STGameFlowManager sharedInstance] pause];
 }
 
+
+
+
+
+
 #pragma mark -
 #pragma mark PauseLayer Delegate
 
@@ -345,6 +372,11 @@
                           withTransitionClass:[CCTransitionFade class]
                                      duration:0.5];
 }
+
+
+
+
+
 
 #pragma mark -
 #pragma mark Player Delegate
@@ -396,12 +428,20 @@
     [self addChild:[self uiLayer]];
 }
 
+
+
+
+
 #pragma mark -
 #pragma mark InformationLayer Delegate
 
 - (IBAction)timeElapsed:(id)sender {
     [self levelEndedWithSuccess:NO];
 }
+
+
+
+
 
 #pragma mark -
 #pragma mark Game Over & Level Ended
@@ -428,6 +468,10 @@
                                      duration:0.5];
 }
 
+
+
+
+
 #pragma mark -
 #pragma mark STItemBlockDelegate
 
@@ -435,6 +479,10 @@
     [gameObject setPosition:position];
     [self.gameObjectsToAdd addObject:gameObject];
 }
+
+
+
+
 
 #pragma mark -
 #pragma mark STLakituDelegate
