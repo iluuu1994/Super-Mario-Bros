@@ -10,8 +10,16 @@
 #import "cocos2d.h"
 #import "STScene.h"
 
+
+/**
+ * An abstract subclass of CCLayer
+ * Every layer subclass will inherit from this class
+ * It implements a few events and helper classes
+ */
 @interface STLayer : CCLayer
 {}
+
+
 
 #pragma mark -
 #pragma mark Scene
@@ -31,6 +39,9 @@
  */
 + (Class)sceneClass;
 
+
+
+
 #pragma mark -
 #pragma mark Initialise
 
@@ -39,10 +50,16 @@
  */
 - (void)setUp;
 
+
+
+
 #pragma mark -
 #pragma mark Update
 
 @property (nonatomic, readonly) BOOL needsUpdate;
+
+
+
 
 #pragma mark -
 #pragma mark Dealloc

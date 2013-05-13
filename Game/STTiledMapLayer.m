@@ -9,21 +9,30 @@
 #import "STTiledMapLayer.h"
 #import "STGameObject.h"
 #import "STTiledMapKeys.h"
-#import "STItem.h"
 
-#import "STCoin.h"
+
+#pragma mark -
+#pragma mark Private Interface
 
 @interface STTiledMapLayer ()
 @property (strong) NSNumberFormatter *numberFormatter;
 @end
+
+
+
+#pragma mark -
+#pragma mark STTiledMapLayer
 
 @implementation STTiledMapLayer
 {}
 
 @synthesize gameObjects = _gameObjects;
 
+
+
 #pragma mark -
 #pragma mark Initialise
+
 - (id)initWithTiledMap:(NSString *)tiledMap
 {
     self = [super init];
@@ -46,6 +55,27 @@
     }
     return self;
 }
+
++ (id)layerWithTiledMap:(NSString *)tiledMap {
+    return [[self alloc] initWithTiledMap:tiledMap];
+}
+
+
+
+
+#pragma mark -
+#pragma mark Properties
+
+- (NSMutableArray *)gameObjects {
+    if (!_gameObjects) _gameObjects = [NSMutableArray array];
+    
+    return _gameObjects;
+}
+
+
+
+#pragma mark -
+#pragma mark Methods
 
 - (void)readGameObjectsFromMap {
     for (int x = 0; x < self.objectLayer.layerSize.width; x++) {
@@ -98,16 +128,6 @@
 - (void)addGameObjectToMap:(STGameObject *)gameObject {
     [self.map addChild:gameObject];
     [self.gameObjects addObject:gameObject];
-}
-
-- (NSMutableArray *)gameObjects {
-    if (!_gameObjects) _gameObjects = [NSMutableArray array];
-    
-    return _gameObjects;
-}
-
-+ (id)layerWithTiledMap:(NSString *)tiledMap {
-    return [[self alloc] initWithTiledMap:tiledMap];
 }
 
 @end

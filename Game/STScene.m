@@ -9,6 +9,10 @@
 #import "STScene.h"
 #import "STLayer.h"
 
+#pragma mark -
+#pragma mark STScene Implementation
+
 @implementation STScene
+{}
 
 @end
