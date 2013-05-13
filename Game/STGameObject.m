@@ -35,6 +35,10 @@
 #pragma mark -
 #pragma mark Methods
 
+- (void)die {
+    [self setDead:YES];
+}
+
 - (void)move:(CGPoint)deltaPoint {
     // Add the delta point to the position
     self.position = ccpAdd(self.position, deltaPoint);

@@ -58,8 +58,8 @@
     
     // Only kills creatures except for the player.
     if([[gameObject class] isSubclassOfClass:[STNPC class]]) {
-        [gameObject setDead:YES];
-        [self setDead:YES];
+        [gameObject die];
+        [self die];
     }
 }
 @end

@@ -44,7 +44,7 @@
                            edge:(STRectEdge)edge {
     // Kill all NPCs when in "instant kill"-mode
     if (self.killsInstantly && [[gameObject class] isSubclassOfClass:[STNPC class]]) {
-        [gameObject setDead:YES];
+        [gameObject die];
     }
     
     if(edge == STRectEdgeMinY && [[gameObject class] isSubclassOfClass:[STBlock class]] && self.isJumping) {
@@ -120,12 +120,15 @@
 - (void)setPlayerState:(STPlayerState)playerState {
     if (playerState >= _playerState) {
         [[STSoundManager sharedInstance] playEffect:@"powerup.mp3"];
-    } else {
-        [[STSoundManager sharedInstance] playEffect:@"pipe.mp3"];
     }
     
     _playerState = playerState;
     [self runAnimationWithName:_cachedAnimation endless:YES];
+}
+
+- (void)die {
+    [super die];
+    [[STSoundManager sharedInstance] playEffect:@"pipe.mp3"];
 }
 
 - (void)setDead:(BOOL)isDead {
