@@ -7,14 +7,22 @@
 //
 
 #import "STItemBlock.h"
-
 #import "STStar.h"
 #import "STCoin.h"
 #import "STMushroom.h"
 #import "STFlower.h"
 
+
+#pragma mark -
+#pragma mark STItemBlock Implementation
+
 @implementation STItemBlock
 @synthesize items = _items;
+
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -29,18 +37,13 @@
     return self;
 }
 
+
+#pragma mark -
+#pragma mark Properties
+
 - (void)setAppearanceType:(STAppearanceType)appearanceType {
     [super setAppearanceType:appearanceType];
     [self reloadDisplay];
-}
-
-- (void)reloadDisplay {
-    if (!self.items.count) {
-        [self stopAllActions];
-        [self displayFrameWithName:@"bonus-block-empty"];
-    } else {
-        [self runAnimationWithName:@"blink" endless:YES];
-    }
 }
 
 - (NSMutableArray *)items {
@@ -79,6 +82,22 @@
     }
     
     return _items;
+}
+
+
+
+
+
+#pragma mark -
+#pragma mark Methods
+
+- (void)reloadDisplay {
+    if (!self.items.count) {
+        [self stopAllActions];
+        [self displayFrameWithName:@"bonus-block-empty"];
+    } else {
+        [self runAnimationWithName:@"blink" endless:YES];
+    }
 }
 
 - (void)awardPlayer:(STPlayer *)player {

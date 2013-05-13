@@ -8,6 +8,9 @@
 
 #import "STItem.h"
 
+/**
+ * Represents a coint, that an be collected
+ */
 @interface STCoin : STItem
 
 @end

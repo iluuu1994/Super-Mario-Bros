@@ -8,6 +8,12 @@
 
 #import "STItem.h"
 
+/**
+ * Represents a Flower item
+ *
+ * A Flower gives a small or large player that collects it the ability to spit fire
+ * It also gives him some score
+ */
 @interface STFlower : STItem
 
 @end

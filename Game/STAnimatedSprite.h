@@ -9,6 +9,9 @@
 #import "cocos2d.h"
 #import "NSBundle+Resources.h"
 
+#pragma mark -
+#pragma mark Constants
+
 #ifndef AnimationPlistConstants
 #define AnimationPlistConstants
 
@@ -18,6 +21,16 @@
 
 #endif
 
+
+
+#pragma mark -
+#pragma mark STAnimatedSprite Class
+
+/**
+ * STAnimatedSprite is a subclass of CCSprite
+ * It can dramatically simplify the process of initializing and running animations.
+ * The animations can be configured in a .plist file
+ */
 @interface STAnimatedSprite : CCSprite
 {}
 
@@ -65,8 +78,26 @@
  */
 - (void)update:(ccTime)delta;
 
+/**
+ * Displays a frame (must be in the sprite frame cache) with the name
+ * @param spriteFrameName - The name of the frame, that should be displayed
+ */
 - (void) displayFrameWithName:(NSString *)spriteFrameName;
+
+/**
+ * Run a specific animation
+ * All animations must be defined in the plist file, that is being initialized with `initWithPlistFile:`
+ * @param animName - The name of the animation
+ * @param endlessFlag - Should the animation be repeated?
+ */
 - (void)runAnimationWithName:(NSString *)animName endless:(BOOL)endlessFlag;
+
+/**
+ * Runs a specific animation with a callback
+ * All animations must be defined in the plist file, that is being initialized with `initWithPlistFile:`
+ * @param animName - The name of the animation
+ * @param block - The callback block that should be run when the animation is finished
+ */
 - (void)runAnimationWithName:(NSString *)animName callbackBlock:(void(^)())block;
 
 @end

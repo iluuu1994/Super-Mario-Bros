@@ -46,14 +46,6 @@
     return [[self alloc] initWithPlistFile:plistFile];
 }
 
-#pragma mark -
-#pragma mark Properties
-- (BOOL)needsUpdate {
-    return NO;
-}
-
-#pragma mark -
-#pragma mark Methods
 - (void)onEnter {
     [super onEnter];
     
@@ -72,10 +64,23 @@
     }
 }
 
+#pragma mark -
+#pragma mark Properties
+
+- (BOOL)needsUpdate {
+    return NO;
+}
+
+#pragma mark -
+#pragma mark Methods
+
 - (void) displayFrameWithName:(NSString *)spriteFrameName {
     [self setDisplayFrame:[[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:spriteFrameName]];
 }
 
+/**
+ * Empty placeholder
+ */
 - (void)update:(ccTime)delta {
 
 }

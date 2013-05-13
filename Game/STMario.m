@@ -12,10 +12,13 @@
 
 #pragma mark -
 #pragma mark Initialise
+
 - (id)init
 {
     if (self = [super initWithPlistFile:@"Mario.plist"]) {
+        // Per default, we run the stand animation
         [self runAnimationWithName:@"stand" endless:NO];
+        
     }
     return self;
 }

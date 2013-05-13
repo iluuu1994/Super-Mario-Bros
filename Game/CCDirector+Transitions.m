@@ -8,7 +8,15 @@
 
 #import "CCDirector+Transitions.h"
 
+#pragma mark -
+#pragma mark CCDirector (Transitions) Implementation
+
 @implementation CCDirector (Transitions)
+
+
+
+#pragma mark -
+#pragma mark Transitions
 
 - (void)replaceScene:(CCScene *)scene
  withTransitionClass:(Class)transitionClass

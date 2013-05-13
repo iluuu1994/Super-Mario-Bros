@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 /**
+ * A simple helper file to detect intersections
+ */
+
+
+/**
  * Check whether the given two rectangles intersect.
  * @param rect1 - the first rectangle. Check whether this rectangle intersects with the second rectangle.
  * @param rect2 - the second rectangle. Check whether this rectangle intersects with the first rectangle.

@@ -10,7 +10,16 @@
 #import "STNPC.h"
 #import "STSoundManager.h"
 
+
+#pragma mark -
+#pragma mark STFireBall Implementation
+
 @implementation STFireBall
+
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -26,9 +35,20 @@
     [[STSoundManager sharedInstance] playEffect:kSoundFireball];
 }
 
+
+
+
+#pragma mark -
+#pragma mark Properties
+
 - (STGameObjectBodyType)bodyType {
     return STGameObjectBodyTypeDynamic;
 }
+
+
+
+#pragma mark -
+#pragma mark Methods
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     // Bounce off the ground

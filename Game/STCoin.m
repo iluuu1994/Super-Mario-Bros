@@ -10,7 +10,15 @@
 #import "STPlayer.h"
 #import "STSoundManager.h"
 
+
+#pragma mark -
+#pragma mark STCoin Implementation
+
 @implementation STCoin
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -19,6 +27,10 @@
     }
     return self;
 }
+
+
+#pragma mark -
+#pragma mark Methods
 
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];

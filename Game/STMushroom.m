@@ -10,9 +10,21 @@
 #import "STPlayer.h"
 #import "STSoundManager.h"
 
+#pragma mark -
+#pragma mark Constants
+
 #define kScore 50
 
+
+
+#pragma mark -
+#pragma mark STMushroom Implementation
+
 @implementation STMushroom
+
+
+#pragma mark -
+#pragma mark Initialization
 
 - (id)init
 {
@@ -22,6 +34,17 @@
     return self;
 }
 
+- (void)onEnter {
+    [super onEnter];
+    
+    [[STSoundManager sharedInstance] playEffect:@"powerup-appears.mp3"];
+}
+
+
+
+#pragma mark -
+#pragma mark Methods
+
 - (void)awardPlayer:(STPlayer *)player {
     [super awardPlayer:player];
     
@@ -30,12 +53,6 @@
     }
     
     player.score += kScore;
-}
-
-- (void)onEnter {
-    [super onEnter];
-    
-    [[STSoundManager sharedInstance] playEffect:@"powerup-appears.mp3"];
 }
 
 @end

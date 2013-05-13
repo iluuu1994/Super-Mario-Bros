@@ -32,7 +32,6 @@
 		914EB28C171409390070051D /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28A171409390070051D /* about.png */; };
 		914EB28D171409390070051D /* preferences.png in Resources */ = {isa = PBXBuildFile; fileRef = 914EB28B171409390070051D /* preferences.png */; };
 		914EB299171424730070051D /* STMario.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB298171424730070051D /* STMario.m */; };
-		9153D588173E34A900A1DAD0 /* STBonusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153D587173E34A900A1DAD0 /* STBonusItem.m */; };
 		9153D58C173E34C200A1DAD0 /* STStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9153D58B173E34C200A1DAD0 /* STStar.m */; };
 		9153D590173E34D100A1DAD0 /* Star.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9153D58E173E34D100A1DAD0 /* Star.plist */; };
 		9153D591173E34D100A1DAD0 /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 9153D58F173E34D100A1DAD0 /* Star.png */; };
@@ -327,8 +326,6 @@
 		914EB28E17140E900070051D /* STWorldsConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWorldsConstants.h; sourceTree = "<group>"; };
 		914EB297171424730070051D /* STMario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMario.h; sourceTree = "<group>"; };
 		914EB298171424730070051D /* STMario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STMario.m; sourceTree = "<group>"; };
-		9153D586173E34A900A1DAD0 /* STBonusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STBonusItem.h; sourceTree = "<group>"; };
-		9153D587173E34A900A1DAD0 /* STBonusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STBonusItem.m; sourceTree = "<group>"; };
 		9153D58A173E34C200A1DAD0 /* STStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STStar.h; sourceTree = "<group>"; };
 		9153D58B173E34C200A1DAD0 /* STStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STStar.m; sourceTree = "<group>"; };
 		9153D58E173E34D100A1DAD0 /* Star.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Star.plist; sourceTree = "<group>"; };
@@ -1062,16 +1059,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9153D585173E347900A1DAD0 /* Bonus Item */ = {
-			isa = PBXGroup;
-			children = (
-				9153D586173E34A900A1DAD0 /* STBonusItem.h */,
-				9153D587173E34A900A1DAD0 /* STBonusItem.m */,
-				9153D589173E34AF00A1DAD0 /* Star */,
-			);
-			name = "Bonus Item";
-			sourceTree = "<group>";
-		};
 		9153D589173E34AF00A1DAD0 /* Star */ = {
 			isa = PBXGroup;
 			children = (
@@ -1265,7 +1252,7 @@
 				91F2477817391D4C00DD1E9B /* Coin */,
 				917E6F74173D988300777A40 /* Mushroom */,
 				912C9174173E2D5800903C31 /* Flower */,
-				9153D585173E347900A1DAD0 /* Bonus Item */,
+				9153D589173E34AF00A1DAD0 /* Star */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -2189,7 +2176,6 @@
 				D4A1AF13173D10D200E743E8 /* STInformationLayer.m in Sources */,
 				917E6F77173D989200777A40 /* STMushroom.m in Sources */,
 				91DDF3C0173E30D90078D7F8 /* STFlower.m in Sources */,
-				9153D588173E34A900A1DAD0 /* STBonusItem.m in Sources */,
 				9153D58C173E34C200A1DAD0 /* STStar.m in Sources */,
 				91B7F089173EF698005733ED /* STItemBlock.m in Sources */,
 				9169AF2B173FC49C00F89820 /* STFireBall.m in Sources */,

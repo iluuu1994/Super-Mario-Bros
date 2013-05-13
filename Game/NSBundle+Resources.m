@@ -8,7 +8,15 @@
 
 #import "NSBundle+Resources.h"
 
+
+#pragma mark -
+#pragma mark NSBundle (Resources) Implementation
+
 @implementation NSBundle (Resources)
+
+
+#pragma mark -
+#pragma mark Resources
 
 + (id)pathForResource:(NSString *)resourceName {
     return [[self mainBundle] pathForResource:resourceName ofType:@""];
