@@ -127,8 +127,11 @@
 }
 
 - (void)die {
+    if (self.playerState != STPlayerStateSmall) {
+        [[STSoundManager sharedInstance] playEffect:@"pipe.mp3"];
+    }
+    
     [super die];
-    [[STSoundManager sharedInstance] playEffect:@"pipe.mp3"];
 }
 
 - (void)setDead:(BOOL)isDead {
