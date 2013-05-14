@@ -402,12 +402,12 @@
     CGFloat playerX = player.position.x;
     CGFloat mapX = self.map.position.x * -1 / self.map.scale;
     CGFloat mapWidth = self.map.boundingBox.size.width / self.map.scale;
-        
-    if (playerX - (player.boundingBox.size.width / 2) <= mapX) {
-        player.position = ccp(mapX + (player.boundingBox.size.width / 2), player.position.y);
+    
+    if (playerX - (player.boundingBox.size.width / 2) < mapX) {
+        player.position = ccp(mapX + (player.boundingBox.size.width / 2), point.y);
         return NO;
-    } else if (playerX + (player.boundingBox.size.width / 2) >= mapWidth) {
-        player.position = ccp(mapWidth - (player.boundingBox.size.width / 2), player.position.y);
+    } else if (playerX + (player.boundingBox.size.width / 2) > mapWidth) {
+        player.position = ccp(mapWidth - (player.boundingBox.size.width / 2), point.y);
         return NO;
     }
     

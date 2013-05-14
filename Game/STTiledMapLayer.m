@@ -10,6 +10,13 @@
 #import "STGameObject.h"
 #import "STTiledMapKeys.h"
 
+#pragma mark -
+#pragma mark Private Constants
+
+#define kGameObjectsZ 1
+
+
+
 
 #pragma mark -
 #pragma mark Private Interface
@@ -126,7 +133,7 @@
 }
 
 - (void)addGameObjectToMap:(STGameObject *)gameObject {
-    [self.map addChild:gameObject];
+    [self.map addChild:gameObject z:kGameObjectsZ];
     [self.gameObjects addObject:gameObject];
 }
 

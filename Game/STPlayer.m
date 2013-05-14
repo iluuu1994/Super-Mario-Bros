@@ -83,7 +83,7 @@
 }
 
 - (void)move:(CGPoint)deltaPoint {
-    if ([self.delegate player:self shouldMoveToPoint:ccpAdd(self.position, self.velocity)]) {
+    if ([self.delegate player:self shouldMoveToPoint:ccpAdd(self.position, deltaPoint)]) {
         [super move:deltaPoint];
         [self.delegate player:self didMoveToPoint:self.position];
     }

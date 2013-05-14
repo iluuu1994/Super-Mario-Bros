@@ -59,8 +59,7 @@
     // A Button
     CCControlButton *aButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kAButtonImage]];
     [aButton setAdjustBackgroundImage:NO];
-    aButton.scale = 0.8;
-    [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchUpInside];
+    [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchDown];
     aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - kPadding,
                            winSize.height - aButton.contentSize.height / 2 - kPadding);
     [self addChild:aButton];
@@ -68,8 +67,7 @@
     // B Button
     CCControlButton *bButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kBButtonImage]];
     [bButton setAdjustBackgroundImage:NO];
-    bButton.scale = 0.8;
-    [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];
+    [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchDown];
     bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * kPadding,
                            winSize.height - bButton.contentSize.height / 2 - kPadding);
     [self addChild:bButton];
