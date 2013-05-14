@@ -19,6 +19,7 @@ var searchData=
   ['kdeveloperkey',['kDeveloperKey',['../_s_t_about_constants_8h.html#a6591ab49243623b2602ff6866ae51d3a',1,'STAboutConstants.h']]],
   ['kduration',['kDuration',['../_s_t_star_8m.html#a922106fb3e7d8372a320ce9a76baed6c',1,'STStar.m']]],
   ['keventslayerkey',['kEventsLayerKey',['../_s_t_tiled_map_keys_8h.html#a554fdfd985ff68ccc4f5ddef7032f28b',1,'STTiledMapKeys.h']]],
+  ['kgameobjectsz',['kGameObjectsZ',['../_s_t_tiled_map_layer_8m.html#a70b88f12920b7c3ad0c72fa38b196b49',1,'STTiledMapLayer.m']]],
   ['killsinstantly',['killsInstantly',['../interface_s_t_player.html#a0766dd4e45f9be1b6c931cce0e6b1281',1,'STPlayer']]],
   ['kinvinibilityduration',['kInvinibilityDuration',['../_s_t_player_8m.html#a37723d9f216a4fdb336acdf4c25ec1cf',1,'STPlayer.m']]],
   ['kjoystickbasecolor',['kJoystickBaseColor',['../_s_t_controls_layer_8h.html#a78fd5fc03521eef678b0d4b461adef35',1,'STControlsLayer.h']]],

@@ -150,40 +150,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// A Button</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    CCControlButton *aButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kAButtonImage]];</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    [aButton setAdjustBackgroundImage:NO];</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    aButton.scale = 0.8;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchUpInside];</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                           winSize.height - aButton.contentSize.height / 2 - <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    [<span class="keyword">self</span> addChild:aButton];</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// B Button</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    CCControlButton *bButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kBButtonImage]];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    [bButton setAdjustBackgroundImage:NO];</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    bButton.scale = 0.8;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchUpInside];</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                           winSize.height - bButton.contentSize.height / 2 - <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    [<span class="keyword">self</span> addChild:bButton];</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma mark Update</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (BOOL)<a class="code" href="interface_s_t_layer.html#a2cdcf334244bfa18904871d22ffbeb8c">needsUpdate</a> {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> YES;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;- (void)update:(ccTime)delta {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span>([<span class="keyword">self</span> delegate]) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        [[<span class="keyword">self</span> delegate] joystick:self.joystick delta:delta];</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    [aButton addTarget:delegate action:@selector(a:) forControlEvents:CCControlEventTouchDown];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    aButton.position = ccp(winSize.width - aButton.contentSize.width / 2 - <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                           winSize.height - aButton.contentSize.height / 2 - <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    [<span class="keyword">self</span> addChild:aButton];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// B Button</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    CCControlButton *bButton = [CCControlButton buttonWithBackgroundSprite:[CCScale9Sprite spriteWithFile:kBButtonImage]];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    [bButton setAdjustBackgroundImage:NO];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    [bButton addTarget:delegate action:@selector(b:) forControlEvents:CCControlEventTouchDown];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    bButton.position = ccp(winSize.width - bButton.contentSize.width / 2 - aButton.contentSize.width - 2 * <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                           winSize.height - bButton.contentSize.height / 2 - <a class="code" href="_s_t_layout_constants_8h.html#aaa75314b466c413f1616f27b9d205d15">kPadding</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    [<span class="keyword">self</span> addChild:bButton];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#pragma mark -</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma mark Update</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;- (BOOL)<a class="code" href="interface_s_t_layer.html#a2cdcf334244bfa18904871d22ffbeb8c">needsUpdate</a> {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> YES;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (void)update:(ccTime)delta {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span>([<span class="keyword">self</span> delegate]) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        [[<span class="keyword">self</span> delegate] joystick:self.joystick delta:delta];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">@end</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 19:57:17 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2013 13:41:43 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

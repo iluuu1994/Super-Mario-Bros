@@ -174,7 +174,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;- (void)move:(CGPoint)deltaPoint {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> ([<span class="keyword">self</span>.<a class="code" href="interface_s_t_player.html#a3b6d37359a7f151cca9ff79bc9f8f299">delegate</a> player:<span class="keyword">self</span> shouldMoveToPoint:ccpAdd(<span class="keyword">self</span>.position, <span class="keyword">self</span>.<a class="code" href="interface_s_t_game_object.html#a65f298708e894ae564dd23de9c78cc6b">velocity</a>)]) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> ([<span class="keyword">self</span>.<a class="code" href="interface_s_t_player.html#a3b6d37359a7f151cca9ff79bc9f8f299">delegate</a> player:<span class="keyword">self</span> shouldMoveToPoint:ccpAdd(<span class="keyword">self</span>.position, deltaPoint)]) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        [<span class="keyword">super</span> move:deltaPoint];</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        [<span class="keyword">self</span>.delegate player:self didMoveToPoint:self.position];</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
@@ -299,7 +299,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 19:57:17 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2013 13:41:43 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
