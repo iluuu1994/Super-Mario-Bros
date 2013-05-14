@@ -493,12 +493,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    CGFloat playerX = player.position.x;</div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    CGFloat mapX = <span class="keyword">self</span>.map.position.x * -1 / self.<a class="code" href="interface_s_t_tiled_map_layer.html#aa63360c2c092d262e37a02e706bf13ae">map</a>.scale;</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    CGFloat mapWidth = <span class="keyword">self</span>.map.boundingBox.size.width / <span class="keyword">self</span>.map.scale;</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        </div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">if</span> (playerX - (player.boundingBox.size.width / 2) &lt;= mapX) {</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        player.position = ccp(mapX + (player.boundingBox.size.width / 2), player.position.y);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    </div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="keywordflow">if</span> (playerX - (player.boundingBox.size.width / 2) &lt; mapX) {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        player.position = ccp(mapX + (player.boundingBox.size.width / 2), point.y);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordflow">return</span> NO;</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (playerX + (player.boundingBox.size.width / 2) &gt;= mapWidth) {</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        player.position = ccp(mapWidth - (player.boundingBox.size.width / 2), player.position.y);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (playerX + (player.boundingBox.size.width / 2) &gt; mapWidth) {</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        player.position = ccp(mapWidth - (player.boundingBox.size.width / 2), point.y);</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordflow">return</span> NO;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    }</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    </div>
@@ -586,7 +586,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 13 2013 19:57:17 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 14 2013 13:41:43 for Super Mario Bros. by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
