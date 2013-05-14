@@ -48,11 +48,11 @@
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject
                            edge:(STRectEdge)edge {
+    [super collisionWithGameObject:gameObject edge:edge];
     
     if (edge == STRectEdgeMinY) {
         self.velocity = ccpAdd(self.velocity, ccp(0, kYBounce));
     }
-
 }
 
 - (void)awardPlayer:(STPlayer *)player {
