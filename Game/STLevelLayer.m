@@ -34,7 +34,7 @@
 
 @interface STLevelLayer ()
 @property (strong) NSMutableArray *gameObjectsToAdd;
-@property CGPoint endPoint;
+@property CGRect endRect;
 @end
 
 
@@ -101,8 +101,9 @@
     [self addChild:self.infoLayer];
     
     // End End Position
-    NSDictionary *endPosition = [self.objectGroup objectNamed:kPlayerEndPointKey];
-    self.endPoint = ccp([endPosition[kXKey] floatValue], [endPosition[kYKey] floatValue]);
+    NSDictionary *endPosition = [self.objectGroup objectNamed:kPlayerEndRectKey];
+    self.endRect = CGRectMake([endPosition[kXKey] floatValue], [endPosition[kYKey] floatValue],
+                              [endPosition[kWidthKey] floatValue], [endPosition[kHeightKey] floatValue]);
 }
 
 - (void)onExit {
@@ -173,7 +174,7 @@
 }
 
 - (void)checkIfLevelEnded {
-    if (CGRectContainsPoint(self.player.boundingBox, self.endPoint)) {
+    if (CGRectIntersectsRect(self.player.boundingBox, self.endRect)) {
         [self levelEndedWithSuccess:YES];
     }
 }

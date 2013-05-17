@@ -44,6 +44,16 @@
 #pragma mark -
 #pragma mark Collision
 
+- (BOOL)differenciatesAppearance {
+    return YES;
+}
+
+
+
+
+#pragma mark -
+#pragma mark Collision
+
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     if(edge != STRectEdgeMaxY && self.velocity.x != 0) {
         if(([[gameObject class] isSubclassOfClass:[STPlayer class]]) || self.isHidden) {

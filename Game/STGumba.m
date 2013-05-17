@@ -37,9 +37,22 @@
 }
 
 
+#pragma mark -
+#pragma mark Collision
+
+- (BOOL)differenciatesAppearance {
+    return YES;
+}
+
+
 
 #pragma mark -
 #pragma mark Collision
+
+- (void)setAppearanceType:(STAppearanceType)appearanceType {
+    [super setAppearanceType:appearanceType];
+    [self runAnimationWithName:@"walk" endless:YES];
+}
 
 - (void)collisionWithGameObject:(STGameObject *)gameObject edge:(STRectEdge)edge {
     if (edge == STRectEdgeMinX && self.velocity.x < 0) {

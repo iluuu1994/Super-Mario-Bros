@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{20, 60}</string>
+			<string>{20, 188}</string>
 			<key>Padding</key>
 			<integer>4</integer>
 			<key>PixelFormat</key>
@@ -39,12 +39,870 @@
 			<string></string>
 			<key>Sheet_Sprites_Info</key>
 			<dict>
+				<key>castle-gumba-1</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAAOJeNGwNRaiw6QYI
+					RoJy0yzSDezO/SH2Mx4W0mExDLwT7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					Z3VtYmEtMS5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAA6/LZAAAAAAAIAAAABAMA
+					AKkC2gAAAAAACAAAAAQDAADz7+AAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-gumba-1</string>
+					<key>SheetImage</key>
+					<string>Gumba_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Gumba_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 2}, {8, 8}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 4}, {16, 16}}</string>
+						<key>Image</key>
+						<string>Gumba_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Gumba_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-gumba-1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/castle-gumba-1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-gumba-1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 16}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 16}</string>
+						<key>Position</key>
+						<string>{4, 4}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 8}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>castle-gumba-2</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAAOZ0y6Oa0vWf59kS
+					9SisQF5w3GvtxtOt3HybkSXKclwi7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					Z3VtYmEtMi5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAA6/LZAAAAAAAIAAAABAMA
+					AKkC2gAAAAAACAAAAAQDAAAw8OAAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-gumba-2</string>
+					<key>SheetImage</key>
+					<string>Gumba_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Gumba_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 14}, {8, 8}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 28}, {16, 16}}</string>
+						<key>Image</key>
+						<string>Gumba_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Gumba_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-gumba-2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/castle-gumba-2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-gumba-2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 16}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 16}</string>
+						<key>Position</key>
+						<string>{4, 28}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 8}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>castle-gumba-3</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAAAaR4/TpI7aPJov1
+					u75AprZ4QWs9R97U6ucFnYg4sq0q7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					Z3VtYmEtMy5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAA6/LZAAAAAAAIAAAABAMA
+					AKkC2gAAAAAACAAAAAQDAABo8OAAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-gumba-3</string>
+					<key>SheetImage</key>
+					<string>Gumba_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Gumba_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 74}, {8, 4}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 148}, {16, 8}}</string>
+						<key>Image</key>
+						<string>Gumba_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Gumba_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-gumba-3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/castle-gumba-3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-gumba-3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 8}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 8}</string>
+						<key>Position</key>
+						<string>{4, 148}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 4}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-gumba-1</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAAOFyZY28IstxuFwb
+					Y+9MhSNZRSpAyfx9JnxhpYWA9zBn6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWd1
+					bWJhLTEucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAADr8tkAAAAAAAgAAAAEAwAAqQLa
+					AAAAAAAIAAAABAMAAGrv4AAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-gumba-1</string>
+					<key>SheetImage</key>
+					<string>Gumba_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Gumba_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 26}, {8, 8}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 52}, {16, 16}}</string>
+						<key>Image</key>
+						<string>Gumba_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Gumba_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-gumba-1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/dark-gumba-1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-gumba-1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 16}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 16}</string>
+						<key>Position</key>
+						<string>{4, 52}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 8}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-gumba-2</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAAKLimlI1cmgAFsYW
+					+RD6SMOk4SY3+CSn4pWegJvXteKk6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWd1
+					bWJhLTIucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAADr8tkAAAAAAAgAAAAEAwAAqQLa
+					AAAAAAAIAAAABAMAAIrv4AAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-gumba-2</string>
+					<key>SheetImage</key>
+					<string>Gumba_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Gumba_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 38}, {8, 8}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 76}, {16, 16}}</string>
+						<key>Image</key>
+						<string>Gumba_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Gumba_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-gumba-2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/dark-gumba-2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-gumba-2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 16}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 16}</string>
+						<key>Position</key>
+						<string>{4, 76}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 8}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-gumba-3</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAAMOTlY/TBDh8/lMN
+					H8l2ET1Wds6a/IquqP1NXaPgCFYu6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAZ3VtYmEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWd1
+					bWJhLTMucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAADr8tkAAAAAAAgAAAAEAwAAqQLa
+					AAAAAAAIAAAABAMAAKjv4AAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-gumba-3</string>
+					<key>SheetImage</key>
+					<string>Gumba_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Gumba_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 82}, {8, 4}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 164}, {16, 8}}</string>
+						<key>Image</key>
+						<string>Gumba_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Gumba_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-gumba-3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/gumba/frames/dark-gumba-3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-gumba-3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 8}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 8}</string>
+						<key>Position</key>
+						<string>{4, 164}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 4}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 				<key>gumba-1</key>
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vawAEAAAAAAQQMAAAACvEzqWmHcgK4HVq
-					bq+QOJWBE0Rt2OkUIK3evaAhTZMI5AIAAAUA
+					Ym9vawAEAAAAAAQQMAAAABwN6pD0tReiakd2
+					rQzYo8EZnCWl2rwJ2JbpURTG7nHS5AIAAAUA
 					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
 					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
 					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
@@ -136,9 +994,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 2}, {8, 8}}</string>
+						<string>{{2, 50}, {8, 8}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 4}, {16, 16}}</string>
+						<string>{{4, 100}, {16, 16}}</string>
 						<key>Image</key>
 						<string>Gumba_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -164,7 +1022,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 16}</string>
 						<key>Position</key>
-						<string>{4, 4}</string>
+						<string>{4, 100}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -185,8 +1043,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vawAEAAAAAAQQMAAAAJ/FxxH2j1Y6hg1+
-					MHpUTU/gFDg/LbfpAKqGw64sthsu5AIAAAUA
+					Ym9vawAEAAAAAAQQMAAAAB4R4bmf+m41tf2U
+					e2nq1ELEoUtu+q598asdOmKN1kmp5AIAAAUA
 					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
 					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
 					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
@@ -278,9 +1136,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 14}, {8, 8}}</string>
+						<string>{{2, 62}, {8, 8}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 28}, {16, 16}}</string>
+						<string>{{4, 124}, {16, 16}}</string>
 						<key>Image</key>
 						<string>Gumba_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -306,7 +1164,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 16}</string>
 						<key>Position</key>
-						<string>{4, 28}</string>
+						<string>{4, 124}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -327,8 +1185,8 @@
 				<dict>
 					<key>DocumentSecurityImageBookmark</key>
 					<data>
-					Ym9vawAEAAAAAAQQMAAAAIsDF/VgAEMQL5V4
-					n4Y+W/CM8JctIjcdPtS+bDzDbBs05AIAAAUA
+					Ym9vawAEAAAAAAQQMAAAACARHT4WS02/vr+h
+					RRWwUMA92In1DCuR7acj6o6Zuqn35AIAAAUA
 					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
 					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
 					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
@@ -420,9 +1278,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 26}, {8, 4}}</string>
+						<string>{{2, 90}, {8, 4}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 52}, {16, 8}}</string>
+						<string>{{4, 180}, {16, 8}}</string>
 						<key>Image</key>
 						<string>Gumba_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -448,7 +1306,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 8}</string>
 						<key>Position</key>
-						<string>{4, 52}</string>
+						<string>{4, 180}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -467,7 +1325,7 @@
 				</dict>
 			</dict>
 			<key>Size</key>
-			<string>{32, 64}</string>
+			<string>{32, 256}</string>
 			<key>Trim</key>
 			<true/>
 			<key>ZOrder</key>

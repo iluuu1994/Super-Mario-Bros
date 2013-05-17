@@ -75,9 +75,9 @@
 - (NSString *)appearanceNameForString:(NSString *)name {
     if (self.differenciatesAppearance) {
         if (self.appearanceType == STAppearanceTypeDark) {
-            name = [@"dark" stringByAppendingString:name];
+            name = [@"dark-" stringByAppendingString:name];
         } else if (self.appearanceType == STAppearanceTypeCastle) {
-            name = [@"castle" stringByAppendingString:name];
+            name = [@"castle-" stringByAppendingString:name];
         }
     }
     

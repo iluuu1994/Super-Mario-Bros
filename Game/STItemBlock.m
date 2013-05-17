@@ -91,6 +91,14 @@
 #pragma mark -
 #pragma mark Methods
 
+- (BOOL)differenciatesAppearance {
+    if (self.items.count) {
+        return NO;
+    }
+    
+    return [super differenciatesAppearance];
+}
+
 - (void)reloadDisplay {
     if (!self.items.count) {
         [self stopAllActions];

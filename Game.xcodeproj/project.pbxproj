@@ -16,6 +16,8 @@
 		9122DD04173919DA0042D918 /* STItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD03173919DA0042D918 /* STItem.m */; };
 		9122DD0717391A4E0042D918 /* STCoin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9122DD0617391A4E0042D918 /* STCoin.m */; };
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
+		913241CD17462BB200CC7F81 /* Gumba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913241CB17462BB200CC7F81 /* Gumba.plist */; };
+		913241CE17462BB200CC7F81 /* Gumba.png in Resources */ = {isa = PBXBuildFile; fileRef = 913241CC17462BB200CC7F81 /* Gumba.png */; };
 		913EB1421732D1410012B37B /* STSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1411732D1410012B37B /* STSoundManager.m */; };
 		914EB27D171404DD0070051D /* CCControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB262171404DD0070051D /* CCControl.m */; };
 		914EB27E171404DD0070051D /* CCControlButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 914EB264171404DD0070051D /* CCControlButton.m */; };
@@ -93,8 +95,6 @@
 		91C0B9A816B4470A0092FCA9 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 91C0B9A716B4470A0092FCA9 /* iTunesArtwork */; };
 		91C0BB1D16B4470C0092FCA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1C16B4470C0092FCA9 /* main.m */; };
 		91C0BB2016B4470C0092FCA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */; };
-		91C8DDCA173B912F000DB9DE /* Gumba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDC8173B912F000DB9DE /* Gumba.plist */; };
-		91C8DDCB173B912F000DB9DE /* Gumba.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDC9173B912F000DB9DE /* Gumba.png */; };
 		91C8DDD2173B937A000DB9DE /* Koopa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDD0173B937A000DB9DE /* Koopa.plist */; };
 		91C8DDD3173B937A000DB9DE /* Koopa.png in Resources */ = {isa = PBXBuildFile; fileRef = 91C8DDD1173B937A000DB9DE /* Koopa.png */; };
 		91C8DDD7173B958C000DB9DE /* STSpiny.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C8DDD6173B958C000DB9DE /* STSpiny.m */; };
@@ -292,6 +292,8 @@
 		9122DD0617391A4E0042D918 /* STCoin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCoin.m; sourceTree = "<group>"; };
 		9125D54F16EF76C2008AFCA0 /* STLevelLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLevelLayer.h; sourceTree = "<group>"; };
 		9125D55016EF76C2008AFCA0 /* STLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelLayer.m; sourceTree = "<group>"; };
+		913241CB17462BB200CC7F81 /* Gumba.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gumba.plist; sourceTree = "<group>"; };
+		913241CC17462BB200CC7F81 /* Gumba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gumba.png; sourceTree = "<group>"; };
 		913EB1401732D1410012B37B /* STSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSoundManager.h; sourceTree = "<group>"; };
 		913EB1411732D1410012B37B /* STSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSoundManager.m; sourceTree = "<group>"; };
 		913EB1441732D17A0012B37B /* ITSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSingleton.h; sourceTree = "<group>"; };
@@ -411,8 +413,6 @@
 		91C0BB1C16B4470C0092FCA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91C0BB1E16B4470C0092FCA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91C0BB1F16B4470C0092FCA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		91C8DDC8173B912F000DB9DE /* Gumba.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gumba.plist; sourceTree = "<group>"; };
-		91C8DDC9173B912F000DB9DE /* Gumba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gumba.png; sourceTree = "<group>"; };
 		91C8DDD0173B937A000DB9DE /* Koopa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Koopa.plist; sourceTree = "<group>"; };
 		91C8DDD1173B937A000DB9DE /* Koopa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Koopa.png; sourceTree = "<group>"; };
 		91C8DDD5173B958C000DB9DE /* STSpiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSpiny.h; sourceTree = "<group>"; };
@@ -1194,8 +1194,8 @@
 		91ADF9DA17393A44002B52CB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				91C8DDC8173B912F000DB9DE /* Gumba.plist */,
-				91C8DDC9173B912F000DB9DE /* Gumba.png */,
+				913241CB17462BB200CC7F81 /* Gumba.plist */,
+				913241CC17462BB200CC7F81 /* Gumba.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2083,8 +2083,6 @@
 				D4A932D3172D77F20059E5F4 /* switch-on.png in Resources */,
 				D4A932D4172D77F20059E5F4 /* switch-thumb.png in Resources */,
 				D4A932E2172DADBF0059E5F4 /* lock.png in Resources */,
-				91C8DDCA173B912F000DB9DE /* Gumba.plist in Resources */,
-				91C8DDCB173B912F000DB9DE /* Gumba.png in Resources */,
 				91C8DDD2173B937A000DB9DE /* Koopa.plist in Resources */,
 				91C8DDD3173B937A000DB9DE /* Koopa.png in Resources */,
 				91C8DDDB173B95B9000DB9DE /* Spiny.plist in Resources */,
@@ -2131,6 +2129,8 @@
 				D4A711DC1740ECD800D6F5F4 /* world_0_level_0.tmx in Resources */,
 				D4A711DD1740ECD800D6F5F4 /* world_1_level_0.tmx in Resources */,
 				D4A711DE1740ECD800D6F5F4 /* world_2_level_0.tmx in Resources */,
+				913241CD17462BB200CC7F81 /* Gumba.plist in Resources */,
+				913241CE17462BB200CC7F81 /* Gumba.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

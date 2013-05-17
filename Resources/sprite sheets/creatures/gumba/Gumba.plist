@@ -2,66 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>animations</key>
-	<dict>
-		<key>walk</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>gumba-1</string>
-				<string>gumba-2</string>
-			</array>
-		</dict>
-		<key>dark-walk</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>dark-gumba-1</string>
-				<string>dark-gumba-2</string>
-			</array>
-		</dict>
-		<key>castle-walk</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>dark-gumba-1</string>
-				<string>castle-gumba-2</string>
-			</array>
-		</dict>
-		<key>die</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>gumba-3</string>
-			</array>
-		</dict>
-		<key>dark-die</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>dark-gumba-3</string>
-			</array>
-		</dict>
-		<key>castle-die</key>
-		<dict>
-			<key>delay</key>
-			<string>0.2</string>
-			<key>frames</key>
-			<array>
-				<string>castle-gumba-3</string>
-			</array>
-		</dict>
-	</dict>
 	<key>frames</key>
 	<dict>
 		<key>castle-gumba-1</key>

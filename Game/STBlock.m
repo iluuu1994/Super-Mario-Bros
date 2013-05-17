@@ -34,6 +34,10 @@
 #pragma mark -
 #pragma mark Properties
 
+- (BOOL)differenciatesAppearance {
+    return YES;
+}
+
 - (void)setAppearanceType:(STAppearanceType)appearanceType {
     [super setAppearanceType:appearanceType];
     [self displayFrameWithName:@"block"];

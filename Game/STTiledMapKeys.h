@@ -15,8 +15,10 @@
 #define kObjectLayerKey @"objects"
 #define kTypeKey @"type"
 #define kPlayerSpawnPointKey @"playerSpawnPoint"
-#define kPlayerEndPointKey @"playerEndPoint"
+#define kPlayerEndRectKey @"playerEndRect"
 #define kXKey @"x"
 #define kYKey @"y"
+#define kWidthKey @"width"
+#define kHeightKey @"height"
 
 #endif
