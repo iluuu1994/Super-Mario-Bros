@@ -48,7 +48,10 @@
     return YES;
 }
 
-
+- (void)setAppearanceType:(STAppearanceType)appearanceType {
+    [super setAppearanceType:appearanceType];
+    [self runAnimationWithName:@"walk" endless:YES];
+}
 
 
 #pragma mark -

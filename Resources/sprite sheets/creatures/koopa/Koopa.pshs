@@ -24,7 +24,7 @@
 			<key>MaxSheetSize</key>
 			<integer>4096</integer>
 			<key>NpotSize</key>
-			<string>{28, 92}</string>
+			<string>{28, 280}</string>
 			<key>Padding</key>
 			<integer>4</integer>
 			<key>PixelFormat</key>
@@ -39,8 +39,1193 @@
 			<string></string>
 			<key>Sheet_Sprites_Info</key>
 			<dict>
+				<key>castle-koopa-1</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAANc5Y1qZUiB6CEHj
+					LOyb3t/diAEl3a+U41X5zyco9Kdd7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					a29vcGEtMS5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAAsgLaAAAAAAAIAAAABAMA
+					ALcC2gAAAAAACAAAAAQDAAAM7eMAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-koopa-1</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 38}, {8, 11.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 76}, {16, 23}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-koopa-1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/castle-koopa-1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-koopa-1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 23}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 23}</string>
+						<key>Position</key>
+						<string>{4, 76}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 11.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>castle-koopa-2</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAAGSeVHYF1193w4MK
+					4/hoqvvLrsCAPIzs9XnUHcKUTqRx7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					a29vcGEtMi5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAAsgLaAAAAAAAIAAAABAMA
+					ALcC2gAAAAAACAAAAAQDAAAx7eMAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-koopa-2</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 2}, {8, 12}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 4}, {16, 24}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-koopa-2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/castle-koopa-2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-koopa-2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 24}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 24}</string>
+						<key>Position</key>
+						<string>{4, 4}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 12}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>castle-koopa-3</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAACKyZXhcECjkRArm
+					aOFPTyheLvElrXMP1lIMqMEzOoUf7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					a29vcGEtMy5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAAsgLaAAAAAAAIAAAABAMA
+					ALcC2gAAAAAACAAAAAQDAABg7eMAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-koopa-3</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 74}, {8, 7.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 148}, {16, 15}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-koopa-3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/castle-koopa-3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-koopa-3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 15}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 15}</string>
+						<key>Position</key>
+						<string>{4, 148}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 7.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>castle-koopa-4</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawgEAAAAAAQQMAAAAPgHHjIwbA5oi7Qr
+					W8GP4pPpDTxS41iCwUzaWs7iAKji7AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEgAAAAEBAABjYXN0bGUt
+					a29vcGEtNC5wbmcAACwAAAABBgAABAAAABQA
+					AAAoAAAANAAAAEgAAABUAAAAaAAAAIAAAACU
+					AAAApAAAALQAAAAIAAAABAMAACnAAAAAAAAA
+					CAAAAAQDAAAM9gUAAAAAAAgAAAAEAwAAZysS
+					AAAAAAAIAAAABAMAAKXqkQAAAAAACAAAAAQD
+					AACQXLwAAAAAAAgAAAAEAwAADl68AAAAAAAI
+					AAAABAMAAIm+2QAAAAAACAAAAAQDAADm8tkA
+					AAAAAAgAAAAEAwAAsgLaAAAAAAAIAAAABAMA
+					ALcC2gAAAAAACAAAAAQDAACK7eMAAAAAACwA
+					AAABBgAABAEAABQBAAAkAQAANAEAAEQBAABU
+					AQAAZAEAAHQBAACEAQAAlAEAAKQBAAAIAAAA
+					AAQAAEG3ORqpAAAAGAAAAAECAAABAAAAAAAA
+					AA8AAAAAAAAAAAAAAAAAAAAAAAAAAQUAAAQA
+					AAADAwAAAQAAAAQAAAADAwAAAgAAAAgAAAAE
+					AwAACQAAAAAAAAAEAAAAAwMAAPUBAAAMAAAA
+					AQEAAE1hY2ludG9zaCBIRAgAAAAEAwAAAJBY
+					7TAAAAAIAAAAAAQAAEG1bDDgAAAAJAAAAAEB
+					AAAwQ0ZENjZCNy1FQzdFLTNENzAtQTRGQi0w
+					RUI1QUI1Mzc1ODcYAAAAAQIAAIEAAAABAAgA
+					7z8AAAEACAAAAAAAAAAAAAEAAAABAQAALwAA
+					AAQAAAADAwAAAAgAKOQAAAD+////AQAAAAAA
+					AAASAAAABBAAANAAAAAAAAAABRAAALQBAAAA
+					AAAAEBAAAPgBAAAAAAAAQBAAAOgBAAAAAAAA
+					VBAAACACAAAAAAAAVRAAACwCAAAAAAAAVhAA
+					ABgCAAAAAAAAAiAAANQCAAAAAAAAECAAAFQC
+					AAAAAAAAESAAAIgCAAAAAAAAEiAAAGgCAAAA
+					AAAAEyAAAHgCAAAAAAAAICAAALQCAAAAAAAA
+					MCAAABgCAAAAAAAAAcAAADgCAAAAAAAAEcAA
+					ABQAAAAAAAAAEsAAAEgCAAAAAAAAENAAAOAC
+					AAAAAAAA
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>castle-koopa-4</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 110}, {8, 7}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 220}, {16, 14}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>castle-koopa-4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/castle-koopa-4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/castle-koopa-4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 14}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 14}</string>
+						<key>Position</key>
+						<string>{4, 220}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 7}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-koopa-1</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAAErxP5EuF58Q0xnB
+					GZpWjM+hxG0GWEkcrAnDSaoUpWdB6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWtv
+					b3BhLTEucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAACyAtoAAAAAAAgAAAAEAwAAtwLa
+					AAAAAAAIAAAABAMAALDt4wAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-koopa-1</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 50}, {8, 11.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 100}, {16, 23}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-koopa-1</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/dark-koopa-1.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-koopa-1.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 23}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 23}</string>
+						<key>Position</key>
+						<string>{4, 100}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 11.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-koopa-2</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAABTPPVipV8ZERz3f
+					95Y+YADAuTTwSzYLlCO6bijcqxvr6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWtv
+					b3BhLTIucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAACyAtoAAAAAAAgAAAAEAwAAtwLa
+					AAAAAAAIAAAABAMAANHt4wAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-koopa-2</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 14}, {8, 12}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 28}, {16, 24}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<true/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-koopa-2</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/dark-koopa-2.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-koopa-2.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 24}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 24}</string>
+						<key>Position</key>
+						<string>{4, 28}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 12}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-koopa-3</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAAEJcFJk1xJIb/Ni/
+					P4S6+N0tgXsdspCVx+WIAZoldZTd6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWtv
+					b3BhLTMucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAACyAtoAAAAAAAgAAAAEAwAAtwLa
+					AAAAAAAIAAAABAMAAO7t4wAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-koopa-3</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 86}, {8, 7.5}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 172}, {16, 15}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-koopa-3</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/dark-koopa-3.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-koopa-3.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 15}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 15}</string>
+						<key>Position</key>
+						<string>{4, 172}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 7.5}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+				<key>dark-koopa-4</key>
+				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawQEAAAAAAQQMAAAANKQY0n82msFZ7U3
+					Ny2FQcc1zqzFUTAiF4JPbpfILGL/6AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAAEAAAAAEBAABkYXJrLWtv
+					b3BhLTQucG5nLAAAAAEGAAAEAAAAFAAAACgA
+					AAA0AAAASAAAAFQAAABoAAAAgAAAAJQAAACk
+					AAAAtAAAAAgAAAAEAwAAKcAAAAAAAAAIAAAA
+					BAMAAAz2BQAAAAAACAAAAAQDAABnKxIAAAAA
+					AAgAAAAEAwAApeqRAAAAAAAIAAAABAMAAJBc
+					vAAAAAAACAAAAAQDAAAOXrwAAAAAAAgAAAAE
+					AwAAib7ZAAAAAAAIAAAABAMAAOby2QAAAAAA
+					CAAAAAQDAACyAtoAAAAAAAgAAAAEAwAAtwLa
+					AAAAAAAIAAAABAMAABvu4wAAAAAALAAAAAEG
+					AAAAAQAAEAEAACABAAAwAQAAQAEAAFABAABg
+					AQAAcAEAAIABAACQAQAAoAEAAAgAAAAABAAA
+					Qbc5GqkAAAAYAAAAAQIAAAEAAAAAAAAADwAA
+					AAAAAAAAAAAAAAAAAAAAAAABBQAABAAAAAMD
+					AAABAAAABAAAAAMDAAACAAAACAAAAAQDAAAJ
+					AAAAAAAAAAQAAAADAwAA9QEAAAwAAAABAQAA
+					TWFjaW50b3NoIEhECAAAAAQDAAAAkFjtMAAA
+					AAgAAAAABAAAQbVsMOAAAAAkAAAAAQEAADBD
+					RkQ2NkI3LUVDN0UtM0Q3MC1BNEZCLTBFQjVB
+					QjUzNzU4NxgAAAABAgAAgQAAAAEACADvPwAA
+					AQAIAAAAAAAAAAAAAQAAAAEBAAAvAAAABAAA
+					AAMDAAAACAAo5AAAAP7///8BAAAAAAAAABIA
+					AAAEEAAAzAAAAAAAAAAFEAAAsAEAAAAAAAAQ
+					EAAA9AEAAAAAAABAEAAA5AEAAAAAAABUEAAA
+					HAIAAAAAAABVEAAAKAIAAAAAAABWEAAAFAIA
+					AAAAAAACIAAA0AIAAAAAAAAQIAAAUAIAAAAA
+					AAARIAAAhAIAAAAAAAASIAAAZAIAAAAAAAAT
+					IAAAdAIAAAAAAAAgIAAAsAIAAAAAAAAwIAAA
+					FAIAAAAAAAABwAAANAIAAAAAAAARwAAAFAAA
+					AAAAAAASwAAARAIAAAAAAAAQ0AAA3AIAAAAA
+					AAA=
+					</data>
+					<key>IsSHSprite</key>
+					<true/>
+					<key>PhysicProperties</key>
+					<dict>
+						<key>AngularDamping</key>
+						<real>0.0</real>
+						<key>AngularVelocity</key>
+						<real>0.0</real>
+						<key>CanSleep</key>
+						<true/>
+						<key>FixedRot</key>
+						<false/>
+						<key>GravityScale</key>
+						<real>1</real>
+						<key>HandledBySH</key>
+						<true/>
+						<key>IsBullet</key>
+						<false/>
+						<key>LinearDamping</key>
+						<real>0.0</real>
+						<key>LinearVelocity</key>
+						<string>{0, 0}</string>
+						<key>SH_ComplexShapes</key>
+						<array/>
+						<key>Type</key>
+						<integer>3</integer>
+					</dict>
+					<key>SHSheetName</key>
+					<string>UntitledSheet</string>
+					<key>SHSpriteName</key>
+					<string>dark-koopa-4</string>
+					<key>SheetImage</key>
+					<string>Koopa_UntitledSheet.png</string>
+					<key>SheetImage-HD</key>
+					<string>Koopa_UntitledSheet-hd.png</string>
+					<key>TextureProperties</key>
+					<dict>
+						<key>Angle</key>
+						<integer>0</integer>
+						<key>Border</key>
+						<integer>0</integer>
+						<key>CanBeTrimmed</key>
+						<true/>
+						<key>Color</key>
+						<string>{{1, 1}, {1, 1}}</string>
+						<key>ConvertedFromOldFormat</key>
+						<false/>
+						<key>CustomClassName</key>
+						<string></string>
+						<key>FlipX</key>
+						<false/>
+						<key>FlipY</key>
+						<false/>
+						<key>Frame</key>
+						<string>{{2, 120}, {8, 7}}</string>
+						<key>Frame-HD</key>
+						<string>{{4, 240}, {16, 14}}</string>
+						<key>Image</key>
+						<string>Koopa_UntitledSheet.png</string>
+						<key>Image-HD</key>
+						<string>Koopa_UntitledSheet-hd.png</string>
+						<key>IsCropped</key>
+						<false/>
+						<key>IsDrawable</key>
+						<true/>
+						<key>IsRotated</key>
+						<false/>
+						<key>IsTrimmed</key>
+						<true/>
+						<key>Name</key>
+						<string>dark-koopa-4</string>
+						<key>Opacity</key>
+						<real>1</real>
+						<key>OriginalImage</key>
+						<string>/Users/ilijatovilo/Ilu/BitBucket/Game/Resources/sprite sheets/creatures/koopa/frames/dark-koopa-4.png</string>
+						<key>OriginalImage_RelativePath</key>
+						<string>frames/dark-koopa-4.png/</string>
+						<key>OriginalRect</key>
+						<string>{{0, 0}, {16, 14}}</string>
+						<key>OriginalSize</key>
+						<string>{16, 14}</string>
+						<key>Position</key>
+						<string>{4, 240}</string>
+						<key>Scale</key>
+						<string>{1, 1}</string>
+						<key>SpriteSize</key>
+						<string>{8, 7}</string>
+						<key>SpriteWasBreaked</key>
+						<false/>
+						<key>Tag</key>
+						<integer>0</integer>
+						<key>TextureOffset</key>
+						<string>{0, -0}</string>
+						<key>UsesBatchRendering</key>
+						<true/>
+						<key>ZOrder</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
 				<key>koopa-1</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAPgi9VtNdQiKA3vh
+					Fb4GqwhTJSoV7irbYOiAXaedfJsK5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABrb29wYS0x
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAALIC2gAAAAAACAAAAAQDAAC3AtoAAAAA
+					AAgAAAAEAwAA8YfaAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -95,9 +1280,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 14}, {8, 11.5}}</string>
+						<string>{{2, 62}, {8, 11.5}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 28}, {16, 23}}</string>
+						<string>{{4, 124}, {16, 23}}</string>
 						<key>Image</key>
 						<string>Koopa_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -123,7 +1308,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 23}</string>
 						<key>Position</key>
-						<string>{4, 28}</string>
+						<string>{4, 124}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -142,6 +1327,47 @@
 				</dict>
 				<key>koopa-2</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAABq3SAA+SQ8DhD0+
+					2lK5zXDFk3dM2Ojs58CI77pNsiIi5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABrb29wYS0y
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAALIC2gAAAAAACAAAAAQDAAC3AtoAAAAA
+					AAgAAAAEAwAA6fDZAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -196,9 +1422,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 2}, {8, 12}}</string>
+						<string>{{2, 26}, {8, 12}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 4}, {16, 24}}</string>
+						<string>{{4, 52}, {16, 24}}</string>
 						<key>Image</key>
 						<string>Koopa_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -224,7 +1450,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 24}</string>
 						<key>Position</key>
-						<string>{4, 4}</string>
+						<string>{4, 52}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -243,6 +1469,47 @@
 				</dict>
 				<key>koopa-3</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAHUnfelwiuhPZwE5
+					ZSrdsKzVvkkM99lSU/+0J8KykHwm5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABrb29wYS0z
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAALIC2gAAAAAACAAAAAQDAAC3AtoAAAAA
+					AAgAAAAEAwAAJfHZAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -297,9 +1564,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 26}, {8, 7.5}}</string>
+						<string>{{2, 98}, {8, 7.5}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 52}, {16, 15}}</string>
+						<string>{{4, 196}, {16, 15}}</string>
 						<key>Image</key>
 						<string>Koopa_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -325,7 +1592,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 15}</string>
 						<key>Position</key>
-						<string>{4, 52}</string>
+						<string>{4, 196}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -344,6 +1611,47 @@
 				</dict>
 				<key>koopa-4</key>
 				<dict>
+					<key>DocumentSecurityImageBookmark</key>
+					<data>
+					Ym9vawAEAAAAAAQQMAAAAIst0ecoEPTuDPJB
+					qKN3oravPPIbcP956A1sbNiyxWKF5AIAAAUA
+					AAABAQAAVXNlcnMAAAALAAAAAQEAAGlsaWph
+					dG92aWxvAAMAAAABAQAASWx1AAkAAAABAQAA
+					Qml0QnVja2V0AAAABAAAAAEBAABHYW1lCQAA
+					AAEBAABSZXNvdXJjZXMAAAANAAAAAQEAAHNw
+					cml0ZSBzaGVldHMAAAAJAAAAAQEAAGNyZWF0
+					dXJlcwAAAAUAAAABAQAAa29vcGEAAAAGAAAA
+					AQEAAGZyYW1lcwAACwAAAAEBAABrb29wYS00
+					LnBuZwAsAAAAAQYAAAQAAAAUAAAAKAAAADQA
+					AABIAAAAVAAAAGgAAACAAAAAlAAAAKQAAAC0
+					AAAACAAAAAQDAAApwAAAAAAAAAgAAAAEAwAA
+					DPYFAAAAAAAIAAAABAMAAGcrEgAAAAAACAAA
+					AAQDAACl6pEAAAAAAAgAAAAEAwAAkFy8AAAA
+					AAAIAAAABAMAAA5evAAAAAAACAAAAAQDAACJ
+					vtkAAAAAAAgAAAAEAwAA5vLZAAAAAAAIAAAA
+					BAMAALIC2gAAAAAACAAAAAQDAAC3AtoAAAAA
+					AAgAAAAEAwAAWPHZAAAAAAAsAAAAAQYAAPwA
+					AAAMAQAAHAEAACwBAAA8AQAATAEAAFwBAABs
+					AQAAfAEAAIwBAACcAQAACAAAAAAEAABBtzka
+					qQAAABgAAAABAgAAAQAAAAAAAAAPAAAAAAAA
+					AAAAAAAAAAAAAAAAAAEFAAAEAAAAAwMAAAEA
+					AAAEAAAAAwMAAAIAAAAIAAAABAMAAAkAAAAA
+					AAAABAAAAAMDAAD1AQAADAAAAAEBAABNYWNp
+					bnRvc2ggSEQIAAAABAMAAACQWO0wAAAACAAA
+					AAAEAABBtWww4AAAACQAAAABAQAAMENGRDY2
+					QjctRUM3RS0zRDcwLUE0RkItMEVCNUFCNTM3
+					NTg3GAAAAAECAACBAAAAAQAIAO8/AAABAAgA
+					AAAAAAAAAAABAAAAAQEAAC8AAAAEAAAAAwMA
+					AAAIACjkAAAA/v///wEAAAAAAAAAEgAAAAQQ
+					AADIAAAAAAAAAAUQAACsAQAAAAAAABAQAADw
+					AQAAAAAAAEAQAADgAQAAAAAAAFQQAAAYAgAA
+					AAAAAFUQAAAkAgAAAAAAAFYQAAAQAgAAAAAA
+					AAIgAADMAgAAAAAAABAgAABMAgAAAAAAABEg
+					AACAAgAAAAAAABIgAABgAgAAAAAAABMgAABw
+					AgAAAAAAACAgAACsAgAAAAAAADAgAAAQAgAA
+					AAAAAAHAAAAwAgAAAAAAABHAAAAUAAAAAAAA
+					ABLAAABAAgAAAAAAABDQAADYAgAAAAAAAA==
+					</data>
 					<key>IsSHSprite</key>
 					<true/>
 					<key>PhysicProperties</key>
@@ -398,9 +1706,9 @@
 						<key>FlipY</key>
 						<false/>
 						<key>Frame</key>
-						<string>{{2, 38}, {8, 7}}</string>
+						<string>{{2, 132}, {8, 7}}</string>
 						<key>Frame-HD</key>
-						<string>{{4, 76}, {16, 14}}</string>
+						<string>{{4, 264}, {16, 14}}</string>
 						<key>Image</key>
 						<string>Koopa_UntitledSheet.png</string>
 						<key>Image-HD</key>
@@ -426,7 +1734,7 @@
 						<key>OriginalSize</key>
 						<string>{16, 14}</string>
 						<key>Position</key>
-						<string>{4, 76}</string>
+						<string>{4, 264}</string>
 						<key>Scale</key>
 						<string>{1, 1}</string>
 						<key>SpriteSize</key>
@@ -445,7 +1753,7 @@
 				</dict>
 			</dict>
 			<key>Size</key>
-			<string>{32, 128}</string>
+			<string>{32, 512}</string>
 			<key>Trim</key>
 			<true/>
 			<key>ZOrder</key>
