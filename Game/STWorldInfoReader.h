@@ -61,9 +61,17 @@ ITSingletonInterface
 - (id) levelWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID;
 
 /**
- * Starts the level which is next to the level identified by the given world id and level id.
- * @param worldID - the world whose next level we want to unlock.
- * @param levelID - the level whose neighbout will be unlocked. 
+ * Retrieves the world which is next to the world identified by the given world id.
+ * @param worldID - the world whose next level we want to retrieve.
+ * @return a NSDictionary with the information of the next level. nil if the given level
+ *         is the last level of the given world.
+ */
+- (id) nextWorldFromWorldID:(unsigned short)worldID;
+
+/**
+ * Retrieves the level which is next to the level identified by the given world id and level id.
+ * @param worldID - the world whose next level we want to retrieve.
+ * @param levelID - the level whose neighbout will be retrieved.
  * @return a NSDictionary with the information of the next level. nil if the given level 
  *         is the last level of the given world.
  */

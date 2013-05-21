@@ -52,6 +52,8 @@
     self.worldID = worldID;
     self.levelID = levelID;
 
+    [self unlockNextLevel];
+    
     NSString *title = @"Game Over!";
     if(success) {
         title = @"Congratulations!";
@@ -165,22 +167,40 @@
     NSDictionary *nextLevel = [[STWorldInfoReader sharedInstance]
                                nextLevelFromWorldID:self.worldID levelID:self.levelID];
     
-    // Unlock next world
+    // Unlock next world if we finished the last level of the current world.
     if([[STWorldInfoReader sharedInstance] isLastLevel:self.levelID fromWorld:self.worldID]) {
-        [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID + 1];
-        
         [[CCDirector sharedDirector] replaceScene: [STChooseWorldLayer scene]
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];
     } else {
         unsigned short levelID = [[nextLevel valueForKey:kLevelIDKey] shortValue];
-        
-        [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID levelID:levelID];
-        
+
         STScene *scene = [[STLevelLayer layerWithWorldID:self.worldID levelID:levelID] scene];
         [[CCDirector sharedDirector] replaceScene: scene
                               withTransitionClass:[CCTransitionFade class]
                                          duration:0.5];
+    }
+}
+
+/**
+ * Unlocks the next level. If the current level is the last of the current world, the next world is unlocked. 
+ */
+- (void)unlockNextLevel {
+    // Which is the next world?
+    NSDictionary *nextWorld = [[STWorldInfoReader sharedInstance] nextWorldFromWorldID:self.worldID];
+    // Which is the next level?
+    NSDictionary *nextLevel = [[STWorldInfoReader sharedInstance]
+                               nextLevelFromWorldID:self.worldID levelID:self.levelID];
+    
+    // Unlock next world if we finished the last level of the current world.
+    if([[STWorldInfoReader sharedInstance] isLastLevel:self.levelID fromWorld:self.worldID]) {
+        // If there is a new world we unlock it.
+        if(nextWorld) {
+            [[STWorldInfoReader sharedInstance] unlockWorldID:[[nextWorld valueForKey:kWorldIDKey] shortValue]];
+        }
+    } else {
+        unsigned short levelID = [[nextLevel valueForKey:kLevelIDKey] shortValue];
+        [[STWorldInfoReader sharedInstance] unlockWorldID:self.worldID levelID:levelID];
     }
 }
 
