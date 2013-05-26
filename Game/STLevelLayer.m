@@ -128,7 +128,8 @@
 #pragma mark Methods
 
 - (void)startPlayingBackgroundMusic {
-    [[STSoundManager sharedInstance] playBackgroundMusic:kSoundTheme loop:YES];
+    NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:self.worldID levelID:self.levelID];
+    [[STSoundManager sharedInstance] playBackgroundMusic:[level valueForKey:kLevelBackgroundMusicKey] loop:YES];
 }
 
 - (void)stopPlayingBackgroundMusic {

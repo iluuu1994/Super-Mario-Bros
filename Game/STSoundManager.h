@@ -21,7 +21,6 @@
 #define kSoundCoin @"coin.mp3"
 #define kSoundBreakBlock @"break_block.mp3"
 #define kSoundStageClear @"stage_clear.wav"
-#define kSoundTheme @"theme.mp3"
 #define kSoundFireball @"fireball.mp3"
 #define kSoundPowerUp @"powerup.mp3"
 #define kSoundPowerUpAppears @"powerup-appears.mp3"

@@ -30,6 +30,7 @@
 #define kLevelIsLockedKey @"Is Locked"
 #define kLevelSpriteCacheKey @"Sprite Cache"
 #define kLevelTimeKey @"Time"
+#define kLevelBackgroundMusicKey @"Background Music"
 
 // If a world or level is locked this icon is displayed
 // on top of the normal world or level icon.

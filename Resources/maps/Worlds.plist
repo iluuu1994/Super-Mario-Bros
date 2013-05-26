@@ -28,6 +28,8 @@
 					<string>facebook.png</string>
 					<key>Time</key>
 					<integer>180</integer>
+					<key>Background Music</key>
+					<string>theme.mp3</string>
 					<key>Sprite Cache</key>
 					<array>
 						<string>Block.plist</string>
@@ -67,6 +69,8 @@
 					<string>facebook.png</string>
 					<key>Time</key>
 					<integer>180</integer>
+					<key>Background Music</key>
+					<string>theme.mp3</string>
 					<key>Sprite Cache</key>
 					<array>
 						<string>Block.plist</string>
@@ -106,6 +110,8 @@
 					<string>facebook.png</string>
 					<key>Time</key>
 					<integer>180</integer>
+					<key>Background Music</key>
+					<string>theme.mp3</string>
 					<key>Sprite Cache</key>
 					<array>
 						<string>Block.plist</string>
