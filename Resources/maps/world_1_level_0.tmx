@@ -96,18 +96,18 @@
   </tile>
  </tileset>
  <layer name="bg" width="200" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3DQQ0AAAwDoVNY/3LmYi9IWDVVVVVVVVVVVVVV9eUBc8JYnsArAAA=
+  <data encoding="base64" compression="zlib">
+   eJztw0ENAAAMA6FTWP9y5mIvSFg1VVVVVVVVVVVVVfXlATgfVU4=
   </data>
  </layer>
- <layer name="collision" width="200" height="14" visible="0">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3BMQEAAADCoPVPbQsvoAAAAAAAAAAAAACAlwH2v3twwCsAAA==
+ <layer name="collision" width="200" height="14">
+  <data encoding="base64" compression="zlib">
+   eJzt07sJwDAMBUBtEi/g/ddLkTSBgHH8hdzB64wkFy8C+OIYkFFzSzt72fGmnnet/EMvf/gjAAAAAHDJd4CnHPoBb3SDHaUOaZVDP5grVbxrDcyQpNi51Xftnhazd9fOPwGquSlK
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
-  <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3XAQqDMAwF0NzEXqB4sd5glx+DwSSkUu23Sbv/4KPQ0UZnLIoQUc3GTJk9QA3HWM7GjuPedUaCqnGGayW6CvnuI1rNP+2V9IP8z3bQPBFF7Y8Cng8hGaG1Re2PDJ6PaBVZ2B/Up/ZNPbsscfojVTKbp56NrXL05PncvL7RimC+F7LE6g+iBEwP3RvsD0Kx3ukfLe/0BEzrmprVG0/0R23/G62ljpY92et6ijqOlJim/ci7tugRdS7GuP4Nal25cM7032uLd23Rc8fode/M/wY1pfTnwCsAAA==
+  <data encoding="base64" compression="zlib">
+   eJzt2AEOgyAMBdDexF7AeDFv4OXNki1LSKtYC8X6X9JA3ISKImxEAKCZDqJVfz0dXZ8lRshraZhXrZr+z3LzvjdRY+HJK/+njwOABPMDQOexBmZYR9/G854tTu2M6O4+Mcs+swYLAbmN+jtsdW4PIIv5GwBW0n+KGfY4c1FGYiWeptWzMSllpOjnZhOOee2FZqUOEIUd445yPmB+gBfpnf5R815npxx+7VjWEmkutJgfG+lj1VNtDmdjGXUta1H2xAExat69+skYVNRJ+Lz8jle/dKFubf/t+OJx+OPO51nPt/S3AzZ6MBs=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
