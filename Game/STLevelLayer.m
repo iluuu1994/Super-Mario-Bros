@@ -50,6 +50,8 @@
 #pragma mark Initialise
 
 - (id)initWithWorldID:(unsigned short)worldID levelID:(unsigned short)levelID {
+    _worldID = worldID;
+    _levelID = levelID;
     _levelInfo = [[STWorldInfoReader sharedInstance] levelWithWorldID:worldID levelID:levelID];
     _gameObjectsToAdd = [NSMutableArray array];
     
@@ -61,8 +63,6 @@
             [NSString stringWithFormat:[[STWorldInfoReader sharedInstance] namingConvention],
              worldID, levelID]];
     if (self) {
-        _worldID = worldID;
-        _levelID = levelID;
         [self setUiLayer:[STControlsLayer layerWithDelegate:self]];
         [self addChild:[self uiLayer]];
     }
@@ -128,7 +128,9 @@
 #pragma mark Methods
 
 - (void)startPlayingBackgroundMusic {
+    NSLog(@"%d", self.worldID);
     NSDictionary *level = [[STWorldInfoReader sharedInstance] levelWithWorldID:self.worldID levelID:self.levelID];
+    //NSLog(@"%@", [level valueForKey:kLevelBackgroundMusicKey]);
     [[STSoundManager sharedInstance] playBackgroundMusic:[level valueForKey:kLevelBackgroundMusicKey] loop:YES];
 }
 

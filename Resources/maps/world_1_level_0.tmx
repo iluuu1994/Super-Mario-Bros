@@ -100,7 +100,7 @@
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3YwQ0AEAxA0W7CBhazgeUtwEWChPeSf+mlPTdFRJI0DAAAAACAt5XwHwYA2KVN5vXoFfd28o8sSdJCHYAAMBrAKwAA
+   H4sIAAAAAAAAA+3VsQ3AIAwAQW8SNmAxNsjylDS4QSFEyp30DY3dIEcAmWtjp+ZKTwV8i38Jg7sFQMaNAGCmhhsBALDLnby3V7c4N5P/KJIkLdQBwySmLsArAAA=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">

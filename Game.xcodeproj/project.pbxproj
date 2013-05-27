@@ -18,6 +18,7 @@
 		9125D55116EF76C2008AFCA0 /* STLevelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125D55016EF76C2008AFCA0 /* STLevelLayer.m */; };
 		913241CD17462BB200CC7F81 /* Gumba.plist in Resources */ = {isa = PBXBuildFile; fileRef = 913241CB17462BB200CC7F81 /* Gumba.plist */; };
 		913241CE17462BB200CC7F81 /* Gumba.png in Resources */ = {isa = PBXBuildFile; fileRef = 913241CC17462BB200CC7F81 /* Gumba.png */; };
+		9136DBFF17534E80001729AB /* undergroundTheme.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9136DBFE17534E80001729AB /* undergroundTheme.m4a */; };
 		913EB1421732D1410012B37B /* STSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 913EB1411732D1410012B37B /* STSoundManager.m */; };
 		914B6ADA174B8E6D00D935C0 /* Koopa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914B6AD8174B8E6D00D935C0 /* Koopa.plist */; };
 		914B6ADB174B8E6D00D935C0 /* Koopa.png in Resources */ = {isa = PBXBuildFile; fileRef = 914B6AD9174B8E6D00D935C0 /* Koopa.png */; };
@@ -294,6 +295,7 @@
 		9125D55016EF76C2008AFCA0 /* STLevelLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STLevelLayer.m; sourceTree = "<group>"; };
 		913241CB17462BB200CC7F81 /* Gumba.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Gumba.plist; sourceTree = "<group>"; };
 		913241CC17462BB200CC7F81 /* Gumba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gumba.png; sourceTree = "<group>"; };
+		9136DBFE17534E80001729AB /* undergroundTheme.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = undergroundTheme.m4a; path = Resources/sounds/undergroundTheme.m4a; sourceTree = SOURCE_ROOT; };
 		913EB1401732D1410012B37B /* STSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSoundManager.h; sourceTree = "<group>"; };
 		913EB1411732D1410012B37B /* STSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSoundManager.m; sourceTree = "<group>"; };
 		913EB1441732D17A0012B37B /* ITSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSingleton.h; sourceTree = "<group>"; };
@@ -937,6 +939,8 @@
 		913EB1451732DA460012B37B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				9169AF3917402BBE00F89820 /* theme.mp3 */,
+				9136DBFE17534E80001729AB /* undergroundTheme.m4a */,
 				911F77D51740E13F00427F2D /* invincible.m4a */,
 				9169AF4A1740324F00F89820 /* stage_clear.wav */,
 				9169AF2C17402BBE00F89820 /* 1-up.mp3 */,
@@ -951,7 +955,6 @@
 				9169AF3517402BBE00F89820 /* powerup-appears.mp3 */,
 				9169AF3617402BBE00F89820 /* powerup.mp3 */,
 				9169AF3817402BBE00F89820 /* stomp.mp3 */,
-				9169AF3917402BBE00F89820 /* theme.mp3 */,
 				9169AF3A17402BBE00F89820 /* time_warning.mp3 */,
 			);
 			name = Sounds;
@@ -2131,6 +2134,7 @@
 				913241CE17462BB200CC7F81 /* Gumba.png in Resources */,
 				914B6ADA174B8E6D00D935C0 /* Koopa.plist in Resources */,
 				914B6ADB174B8E6D00D935C0 /* Koopa.png in Resources */,
+				9136DBFF17534E80001729AB /* undergroundTheme.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
