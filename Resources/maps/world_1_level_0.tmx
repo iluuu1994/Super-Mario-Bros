@@ -51,6 +51,13 @@
     <property name="type" value="STBlock"/>
    </properties>
   </tile>
+  <tile id="44">
+   <properties>
+    <property name="appearanceType" value="1"/>
+    <property name="blockType" value="2"/>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
   <tile id="46">
    <properties>
     <property name="appearanceType" value="1"/>
@@ -100,7 +107,7 @@
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3VsQ3AIAwAQW8SNmAxNsjylDS4QSFEyp30DY3dIEcAmWtjp+ZKTwV8i38Jg7sFQMaNAGCmhhsBALDLnby3V7c4N5P/KJIkLdQBwySmLsArAAA=
+   H4sIAAAAAAAAA+3XAQqDMAwF0NzEXqB4sd5glx+DwSSkUu23Sbv/4KPQ0UZnLIoQUc3GTJk9QA3HWM7GjuPedUaCqnGGayW6CvnuI1rNP+2V9IP8z3bQPBFF7Y8Cng8hGaG1Re2PDJ6PaBVZ2B/Up/ZNPbsscfojVTKbp56NrXL05PncvL7RimC+F7LE6g+iBEwP3RvsD0Kx3ukfLe/0BEzrmprVG0/0R23/G62ljpY92et6ijqOlJim/ci7tugRdS7GuP4Nal25cM7032uLd23Rc8fode/M/wY1pfTnwCsAAA==
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
