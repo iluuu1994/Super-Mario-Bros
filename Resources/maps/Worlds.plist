@@ -111,7 +111,7 @@
 					<key>Time</key>
 					<integer>180</integer>
 					<key>Background Music</key>
-					<string>theme.mp3</string>
+					<string>castleTheme.mp3</string>
 					<key>Sprite Cache</key>
 					<array>
 						<string>Block.plist</string>

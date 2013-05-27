@@ -23,6 +23,19 @@
     <property name="type" value="STItemBlock"/>
    </properties>
   </tile>
+  <tile id="18">
+   <properties>
+    <property name="appearanceType" value="2"/>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="appearanceType" value="2"/>
+    <property name="destroyable" value="1"/>
+    <property name="type" value="STBlock"/>
+   </properties>
+  </tile>
   <tile id="28">
    <properties>
     <property name="appearanceType" value="0"/>
@@ -34,6 +47,13 @@
   <tile id="29">
    <properties>
     <property name="type" value="STLakitu"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="appearanceType" value="2"/>
+    <property name="destroyable" value="0"/>
+    <property name="type" value="STItemBlock"/>
    </properties>
   </tile>
   <tile id="54">
@@ -56,32 +76,34 @@
   </tile>
   <tile id="107">
    <properties>
+    <property name="appearanceType" value="2"/>
     <property name="type" value="STGumba"/>
    </properties>
   </tile>
   <tile id="122">
    <properties>
+    <property name="appearanceType" value="2"/>
     <property name="type" value="STKoopa"/>
    </properties>
   </tile>
  </tileset>
  <layer name="bg" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+2VOQ7CMBBFLQItSw0HgANAeqCOoAd64P49EymRTBTsscebxC+eFCVe3nwvaZRSDQAgKjfiIex/F45R8nwx88tZi3TdY9cR0k8y9pN4M2r/VX/b/2UZI7SvdL6Qbqb8UmTnm6dt3V2IUUdIvxS1x9yTMbPI6ZYiu1h52s42AP9MrrMNAAAAhOBQgAMAJbLXyO0CQGkciZo4C8aYFFDHmtgwnYZtc1NCfv/kzfVv/xlXDZ9/yJxYEMsE+Zr29ZbYMZ30trnXXJJfDt/Q3tK7yrc/x7/uOGnPLrn3c6wYc1XEtGPG8Ku6dvo7fV9X2lj6N45T39bFacyHy9DVJ79QGbp6j/V39TbtzbG7ysXbdNdJ921/Ji7q+3zYcgcAAAAkfABec6YuwCsAAA==
+   H4sIAAAAAAAAA+3OMQ0AAAgDsClc8K8GGyT06N8mKQAAAAAAAAAAwGNz4ADAHwvVqIwCwCsAAA==
   </data>
  </layer>
  <layer name="collision" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+3TwQ2AIBBE0bUQLEAbsAr6L0cPnsyKQBaywj+8hIMkI5mJIhIBAMNbHWQAPNouu4McgFeHgwxAb+H29R37wGyCsA9AE4R9AJrnNtgHLIWXc8692ruW2dkHWtE6ntMvrYu5d62zsw+0kOp4qmNvXSzpp2V29gFrOR3XepbqYmlHrbLX7MM63zK42v+c6Y2s3w7/wT76v91ITlnIdp7AKwAA
+   H4sIAAAAAAAAA+3TYQqAIAyGYe/QGbpb9z9B9E9HKuI2nbwPDCok1O1LCQAAAAAAANjXlRWAEvko70CzEN9ob0+bDatsRLoD1FnlI8J8WGYjwvnRZ5kPqxmZ+b91JsjHWVq9vUW11nvNyey/yQdGtHr7iGqt95qVXo5zWvlefebIZA80y4NXPixnUO4x/Xzfcf8f2ev8vfa8et8jJXugWR77fwFb00gXwCsAAA==
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAAA+2YawqEMAyEs788RfcaXsobeHkRlkVC+rZNm84HwQoW02QGg0QAAKDLpp0AAODPVzsBAAAAw7BHrpZxvwBjsrMgtpbu+T5QhiP4YwS4ByRPgL44gj9AHYd2Ao3g3hjRH6n/JWecie8cN5oj15vcb5vzrGNwLZbqks+iOUjeGNEfVlittpLGU2ogabG3Nn3eWK2HrdHssSYhjYdq4NNiT32GvDF7/87Gzx+UPmun9PiNuf2k/HPUvOsQ1k9SNC7pLKTFGo0+c4zVKuYNDX98jEfpOVeq0du1sxSW4T0u2Ze71wqltbPGBWZ9RqfAKwAA
+   H4sIAAAAAAAAA+2YSw7CMAxEewc27LkeN8jlEVIjEDgfg8eJrXmS1VaNGzf1OEmPgxCC5EKjJTULIsS4Im5k7OTF7mPN/CIrYa4QsoaMtfpm/LxyWo/7aSQn2TSigetDMsPo2yJzY1XtRe//MzOaU9GsrEUtfWj8Z9o/10JXwTxAj2lEfYzyTVMHPf4PRtVHbY+IuzcumvkPDfWBJbo+qo9l7JIepP6s4v8H6gNLBn1UP41v+Tj2+qc+vhn9S+vtG1rjV4T7Urv3vr314blms84vVLy762P2faTr1nkkQ5JJHyh21seIX/VB/HgAezXHqMArAAA=
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
-  <object name="playerSpawnPoint" type="playerSpawnPoint" x="57" y="131"/>
-  <object name="playerEndPoint" x="2985" y="179"/>
+  <object name="playerSpawnPoint" type="playerSpawnPoint" x="29" y="66"/>
+  <object name="playerEndRect" x="2938" y="97" width="259" height="73"/>
  </objectgroup>
 </map>

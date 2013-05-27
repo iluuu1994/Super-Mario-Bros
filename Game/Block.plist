@@ -18,25 +18,6 @@
 	</dict>
 	<key>frames</key>
 	<dict>
-		<key>SMB-Tiles 8</key>
-		<dict>
-			<key>aliases</key>
-			<array/>
-			<key>spriteColorRect</key>
-			<string>{{0, 0}, {16, 16}}</string>
-			<key>spriteOffset</key>
-			<string>{0, -0}</string>
-			<key>spriteSize</key>
-			<string>{16, 16}</string>
-			<key>spriteSourceSize</key>
-			<string>{16, 16}</string>
-			<key>spriteTrimmed</key>
-			<true/>
-			<key>textureRect</key>
-			<string>{{4, 316}, {16, 16}}</string>
-			<key>textureRotated</key>
-			<false/>
-		</dict>
 		<key>alternate-block</key>
 		<dict>
 			<key>aliases</key>
@@ -151,6 +132,25 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
+		<key>castle-block</key>
+		<dict>
+			<key>aliases</key>
+			<array/>
+			<key>spriteColorRect</key>
+			<string>{{0, 0}, {16, 16}}</string>
+			<key>spriteOffset</key>
+			<string>{0, -0}</string>
+			<key>spriteSize</key>
+			<string>{16, 16}</string>
+			<key>spriteSourceSize</key>
+			<string>{16, 16}</string>
+			<key>spriteTrimmed</key>
+			<true/>
+			<key>textureRect</key>
+			<string>{{4, 316}, {16, 16}}</string>
+			<key>textureRotated</key>
+			<false/>
+		</dict>
 		<key>castle-alternate-block</key>
 		<dict>
 			<key>aliases</key>
@@ -170,7 +170,7 @@
 			<key>textureRotated</key>
 			<false/>
 		</dict>
-		<key>castle-block-empty</key>
+		<key>castle-bonus-block-empty</key>
 		<dict>
 			<key>aliases</key>
 			<array/>
