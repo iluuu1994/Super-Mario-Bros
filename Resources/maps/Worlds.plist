@@ -14,7 +14,7 @@
 			<key>Short Name</key>
 			<string>1</string>
 			<key>Icon Name</key>
-			<string>facebook.png</string>
+			<string>world-1.gif</string>
 			<key>Levels</key>
 			<array>
 				<dict>
@@ -25,7 +25,7 @@
 					<key>Short Name</key>
 					<string>1</string>
 					<key>Icon Name</key>
-					<string>facebook.png</string>
+					<string>world-1.gif</string>
 					<key>Time</key>
 					<integer>180</integer>
 					<key>Background Music</key>
@@ -55,7 +55,7 @@
 			<key>Short Name</key>
 			<string>2</string>
 			<key>Icon Name</key>
-			<string>twitter.png</string>
+			<string>world-2.gif</string>
 			<key>Levels</key>
 			<array>
 				<dict>
@@ -66,7 +66,7 @@
 					<key>Short Name</key>
 					<string>1</string>
 					<key>Icon Name</key>
-					<string>facebook.png</string>
+					<string>world-2.gif</string>
 					<key>Time</key>
 					<integer>180</integer>
 					<key>Background Music</key>
@@ -96,7 +96,7 @@
 			<key>Short Name</key>
 			<string>3</string>
 			<key>Icon Name</key>
-			<string>facebook.png</string>
+			<string>world-3.gif</string>
 			<key>Levels</key>
 			<array>
 				<dict>
@@ -107,7 +107,7 @@
 					<key>Short Name</key>
 					<string>1</string>
 					<key>Icon Name</key>
-					<string>facebook.png</string>
+					<string>world-3.gif</string>
 					<key>Time</key>
 					<integer>180</integer>
 					<key>Background Music</key>
