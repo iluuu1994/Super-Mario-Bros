@@ -16,3 +16,17 @@ BOOL STRectIntersect(CGRect rect1, CGRect rect2) {
     
     return YES;
 }
+
+BOOL STXIntersect(CGRect rect1, CGRect rect2) {
+    if (rect1.origin.x >= rect2.origin.x + rect2.size.width) return NO;
+    if (rect1.origin.x + rect1.size.width <= rect2.origin.x) return NO;
+    
+    return YES;
+}
+
+BOOL STYIntersect(CGRect rect1, CGRect rect2) {
+    if (rect1.origin.y >= rect2.origin.y + rect2.size.height) return NO;
+    if (rect1.origin.y + rect1.size.height <= rect2.origin.y) return NO;
+    
+    return YES;
+}

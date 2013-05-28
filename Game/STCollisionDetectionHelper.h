@@ -20,3 +20,7 @@
  * @return YES if the given rectables intersect. NO if not.
  */
 BOOL STRectIntersect(CGRect rect1, CGRect rect2);
+
+BOOL STXIntersect(CGRect rect1, CGRect rect2);
+
+BOOL STYIntersect(CGRect rect1, CGRect rect2);

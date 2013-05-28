@@ -200,13 +200,24 @@
             }
             
             if (STRectIntersect(child.boundingBox, child2.boundingBox)) {
+                CGRect r1 = child.boundingBox;
+                CGRect r2 = child2.boundingBox;
+                r1.origin = ccpSub(r1.origin, child.velocity);
+                r2.origin = ccpSub(r2.origin, child2.velocity);
+                
                 // Position objects
                 STRectEdge edge1 = [self updateCollisionOfGameObject:child withGameObject:child2 delta:delta];
                 STRectEdge edge2 = [self updateCollisionOfGameObject:child2 withGameObject:child delta:delta];
                 
                 // Send notifications
-                [child collisionWithGameObject:child2 edge:edge1];
-                [child2 collisionWithGameObject:child edge:edge2];
+                if (
+                    ((edge1 == STRectEdgeMaxX ||  edge1 == STRectEdgeMinX) && STYIntersect(r1, r2))
+                    ||
+                    ((edge1 == STRectEdgeMaxY ||  edge1 == STRectEdgeMinY) && STXIntersect(r1, r2))
+                    ) {
+                    [child collisionWithGameObject:child2 edge:edge1];
+                    [child2 collisionWithGameObject:child edge:edge2];
+                }
             }
         }
     }
