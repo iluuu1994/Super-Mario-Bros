@@ -202,8 +202,8 @@
             if (STRectIntersect(child.boundingBox, child2.boundingBox)) {
                 CGRect r1 = child.boundingBox;
                 CGRect r2 = child2.boundingBox;
-                r1.origin = ccpSub(r1.origin, child.velocity);
-                r2.origin = ccpSub(r2.origin, child2.velocity);
+                r1.origin = ccpSub(r1.origin, ccp(child.velocity.x * delta, child.velocity.y * delta));
+                r2.origin = ccpSub(r2.origin, ccp(child2.velocity.x * delta, child2.velocity.y * delta));
                 
                 // Position objects
                 STRectEdge edge1 = [self updateCollisionOfGameObject:child withGameObject:child2 delta:delta];
