@@ -202,6 +202,8 @@
             if (STRectIntersect(child.boundingBox, child2.boundingBox)) {
                 CGRect r1 = child.boundingBox;
                 CGRect r2 = child2.boundingBox;
+                CGPoint v1 = child.velocity;
+                CGPoint v2 = child2.velocity;
                 r1.origin = ccpSub(r1.origin, ccp(child.velocity.x * delta, child.velocity.y * delta));
                 r2.origin = ccpSub(r2.origin, ccp(child2.velocity.x * delta, child2.velocity.y * delta));
                 
@@ -215,8 +217,21 @@
                     ||
                     ((edge1 == STRectEdgeMaxY ||  edge1 == STRectEdgeMinY) && STXIntersect(r1, r2))
                     ) {
-                    [child collisionWithGameObject:child2 edge:edge1];
-                    [child2 collisionWithGameObject:child edge:edge2];
+                    
+                    if (
+                        (edge1 == STRectEdgeMaxX && (v1.x > 0 || v2.x < 0)) ||
+                        (edge1 == STRectEdgeMinX && (v1.x < 0 || v2.x > 0)) ||
+                        (edge1 == STRectEdgeMaxY && (v1.y > 0 || v2.y < 0)) ||
+                        (edge1 == STRectEdgeMinY && (v1.y < 0 || v2.y > 0))
+                        ) {
+                        /*
+                        if (((edge1 == STRectEdgeMaxX || edge1 == STRectEdgeMinX) && (child.velocity.x != 0 || child2.velocity.x != 0))
+                            ||
+                            ((edge1 == STRectEdgeMaxY || edge1 == STRectEdgeMinY) && (child.velocity.y != 0 || child2.velocity.y != 0))) {*/
+                            [child collisionWithGameObject:child2 edge:edge1];
+                            [child2 collisionWithGameObject:child edge:edge2];
+                        //}
+                    }
                 }
             }
         }
