@@ -21,6 +21,10 @@
 #import "STMario.h"
 #import "STItem.h"
 
+
+#import "STGumba.h"
+#import "STKoopa.h"
+
 #pragma mark -
 #pragma mark Constants
 
@@ -202,8 +206,6 @@
             if (STRectIntersect(child.boundingBox, child2.boundingBox)) {
                 CGRect r1 = child.boundingBox;
                 CGRect r2 = child2.boundingBox;
-                CGPoint v1 = child.velocity;
-                CGPoint v2 = child2.velocity;
                 r1.origin = ccpSub(r1.origin, ccp(child.velocity.x * delta, child.velocity.y * delta));
                 r2.origin = ccpSub(r2.origin, ccp(child2.velocity.x * delta, child2.velocity.y * delta));
                 
@@ -212,23 +214,15 @@
                 STRectEdge edge2 = [self updateCollisionOfGameObject:child2 withGameObject:child delta:delta];
                 
                 // Send notifications
+                /*
                 if (
                     ((edge1 == STRectEdgeMaxX ||  edge1 == STRectEdgeMinX) && STYIntersect(r1, r2))
                     ||
                     ((edge1 == STRectEdgeMaxY ||  edge1 == STRectEdgeMinY) && STXIntersect(r1, r2))
-                    ) {
-                    
-                    if (
-                        (edge1 == STRectEdgeMaxX && (v1.x > 0 || v2.x < 0)) ||
-                        (edge1 == STRectEdgeMinX && (v1.x < 0 || v2.x > 0)) ||
-                        (edge1 == STRectEdgeMaxY && (v1.y > 0 || v2.y < 0)) ||
-                        (edge1 == STRectEdgeMinY && (v1.y < 0 || v2.y > 0))
-                        ) {
-
-                            [child collisionWithGameObject:child2 edge:edge1];
-                            [child2 collisionWithGameObject:child edge:edge2];
-                    }
-                }
+                    ) {*/
+                        [child collisionWithGameObject:child2 edge:edge1];
+                        [child2 collisionWithGameObject:child edge:edge2];
+                //}
             }
         }
     }
@@ -246,36 +240,54 @@
     float edgeRight = (r1.origin.x + r1.size.width - r2.origin.x);
     float edgeTop = (r1.origin.y + r1.size.height - r2.origin.y);
     float edgeBottom = (r1.origin.y - r2.size.height - r2.origin.y) * -1;
+    
+    CGRect oldR1 = r1;
+    oldR1.origin = ccpSub(oldR1.origin, ccp(gameObject.velocity.x * delta, gameObject.velocity.y * delta));
+    CGRect oldR2 = r2;
+    oldR2.origin = ccpSub(oldR2.origin, ccp(gameObject2.velocity.x * delta, gameObject2.velocity.y * delta));
+    
+    CGRect roundOldR1 = CGRectMake(roundf(oldR1.origin.x), roundf(oldR1.origin.y), roundf(oldR1.size.width), roundf(oldR1.size.height));
+    CGRect roundOldR2 = CGRectMake(roundf(oldR2.origin.x), roundf(oldR2.origin.y), roundf(oldR2.size.width), roundf(oldR2.size.height));
 
-    /*
     float offset = 0.0;
     BOOL wasHit = NO;
-    
+
     // left
-    if(gameObject.velocity.x <= gameObject2.velocity.x && (edgeLeft <= offset || !wasHit)) {
+    if(gameObject.velocity.x <= gameObject2.velocity.x && (edgeLeft <= offset || !wasHit) && STYIntersect(roundOldR1, roundOldR2)) {
         wasHit = YES;
         offset = edgeLeft;
         rectEdge = STRectEdgeMinX;
     }
     // right
-    if (gameObject.velocity.x >= gameObject2.velocity.x && (edgeRight <= offset || !wasHit)) {
+    if (gameObject.velocity.x >= gameObject2.velocity.x && (edgeRight <= offset || !wasHit) && STYIntersect(roundOldR1, roundOldR2)) {
         wasHit = YES;
         offset = edgeRight;
         rectEdge = STRectEdgeMaxX;
     }
     // top
-    if (gameObject.velocity.y >= gameObject2.velocity.y && (edgeTop <= offset || !wasHit)) {
+    if (gameObject.velocity.y >= gameObject2.velocity.y && (edgeTop <= offset || !wasHit) && STXIntersect(roundOldR1, roundOldR2)) {
         wasHit = YES;
         offset = edgeTop;
         rectEdge = STRectEdgeMaxY;
     }
     // bottom
-    if (gameObject.velocity.y <= gameObject2.velocity.y && (edgeBottom <= offset || !wasHit)) {
+    if (gameObject.velocity.y <= gameObject2.velocity.y && (edgeBottom <= offset || !wasHit) && STXIntersect(roundOldR1, roundOldR2)) {
         wasHit = YES;
         offset = edgeBottom;
         rectEdge = STRectEdgeMinY;
-    }*/
+    }
     
+    if (([[gameObject class] isSubclassOfClass:[STKoopa class]] || [[gameObject class] isSubclassOfClass:[STGumba class]]) &&
+        [[gameObject2 class] isSubclassOfClass:[STBlock class]] && rectEdge == STRectEdgeMinX && wasHit) {
+        NSLog(@"**************");
+        NSLog(@"%@ : %@", [NSValue valueWithCGRect:r1], [NSValue valueWithCGRect:r2]);
+        NSLog(@"%@ : %@", [NSValue valueWithCGRect:oldR1], [NSValue valueWithCGRect:oldR2]);
+        NSLog(@"was hit: %d", wasHit);
+        NSLog(@"y collision: %d", STXIntersect(oldR1, oldR2));
+        NSLog(@"**************");
+    }
+     
+    /*
     float offset = 0.0;
     if (edgeLeft < edgeRight) {
         rectEdge = STRectEdgeMinX;
@@ -297,7 +309,7 @@
             rectEdge = STRectEdgeMinY;
             offset = cached;
         }
-    }
+    }*/
     
     if (gameObject.bodyType != STGameObjectBodyTypeStatic) {
         if (gameObject2.bodyType != STGameObjectBodyTypeStatic) {
