@@ -102,12 +102,12 @@
  </layer>
  <layer name="collision" width="200" height="14">
   <data encoding="base64" compression="zlib">
-   eJzt07sJwDAMBUBtEi/g/ddLkTSBgHH8hdzB64wkFy8C+OIYkFFzSzt72fGmnnet/EMvf/gjAAAAAHDJd4CnHPoBb3SDHaUOaZVDP5grVbxrDcyQpNi51Xftnhazd9fOPwGquSlK
+   eJzt07ENgDAMRUFvQhbw/uvR0CCBUGQwKe6k10VJmh8B3NkaAgAAAACAL+QRcJZhH3DFNljReKGqDPug15g4Vw06DD1u7u9/rV5F99uz9+/peR5k
   </data>
  </layer>
  <layer name="objects" width="200" height="14">
   <data encoding="base64" compression="zlib">
-   eJzt2AEOgyAMBdDexF7AeDFv4OXNki1LSKtYC8X6X9JA3ISKImxEAKCZDqJVfz0dXZ8lRshraZhXrZr+z3LzvjdRY+HJK/+njwOABPMDQOexBmZYR9/G854tTu2M6O4+Mcs+swYLAbmN+jtsdW4PIIv5GwBW0n+KGfY4c1FGYiWeptWzMSllpOjnZhOOee2FZqUOEIUd445yPmB+gBfpnf5R815npxx+7VjWEmkutJgfG+lj1VNtDmdjGXUta1H2xAExat69+skYVNRJ+Lz8jle/dKFubf/t+OJx+OPO51nPt/S3AzZ6MBs=
+   eJzt2GEOgyAMBWBuYi9AvJg38PL7s8XYQDLLgxZ8X9JA5mwxDmGmRESeNgY09gBjmDkiQ40v+nUSWXB+ENUh1rgZ1km6Q96zHZQnotZ94Cz7SAQpBK0t6v+sA5yPaBX5G0RWtXeKvZ2d82fVepJKzKbXb2OrtHSH2gvlSp+oRcszXYDRQs+HHvPjVK0XVH3v65jdP891AdX65bGsJaW5wPUj7juKQ7UjiUNEHfeoOitGUv1UOK6/g6qbHvSt+d9OHn5OFxl8nvV8S70PptU6lg==
   </data>
  </layer>
  <objectgroup name="events" width="200" height="14">
