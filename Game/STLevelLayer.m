@@ -214,15 +214,8 @@
                 STRectEdge edge2 = [self updateCollisionOfGameObject:child2 withGameObject:child delta:delta];
                 
                 // Send notifications
-                /*
-                if (
-                    ((edge1 == STRectEdgeMaxX ||  edge1 == STRectEdgeMinX) && STYIntersect(r1, r2))
-                    ||
-                    ((edge1 == STRectEdgeMaxY ||  edge1 == STRectEdgeMinY) && STXIntersect(r1, r2))
-                    ) {*/
-                        [child collisionWithGameObject:child2 edge:edge1];
-                        [child2 collisionWithGameObject:child edge:edge2];
-                //}
+                [child collisionWithGameObject:child2 edge:edge1];
+                [child2 collisionWithGameObject:child edge:edge2];
             }
         }
     }
@@ -276,41 +269,7 @@
         offset = edgeBottom;
         rectEdge = STRectEdgeMinY;
     }
-    
-    if (([[gameObject class] isSubclassOfClass:[STKoopa class]] || [[gameObject class] isSubclassOfClass:[STGumba class]]) &&
-        [[gameObject2 class] isSubclassOfClass:[STBlock class]] && rectEdge == STRectEdgeMinX && wasHit) {
-        NSLog(@"**************");
-        NSLog(@"%@ : %@", [NSValue valueWithCGRect:r1], [NSValue valueWithCGRect:r2]);
-        NSLog(@"%@ : %@", [NSValue valueWithCGRect:oldR1], [NSValue valueWithCGRect:oldR2]);
-        NSLog(@"was hit: %d", wasHit);
-        NSLog(@"y collision: %d", STXIntersect(oldR1, oldR2));
-        NSLog(@"**************");
-    }
      
-    /*
-    float offset = 0.0;
-    if (edgeLeft < edgeRight) {
-        rectEdge = STRectEdgeMinX;
-        offset = edgeLeft;
-    } else {
-        rectEdge = STRectEdgeMaxX;
-        offset = edgeRight;
-    }
-    
-    if (edgeTop < edgeBottom) {
-        float cached = edgeTop;
-        if (cached < offset) {
-            rectEdge = STRectEdgeMaxY;
-            offset = cached;
-        }
-    } else {
-        float cached = edgeBottom;
-        if (cached < offset) {
-            rectEdge = STRectEdgeMinY;
-            offset = cached;
-        }
-    }*/
-    
     if (gameObject.bodyType != STGameObjectBodyTypeStatic) {
         if (gameObject2.bodyType != STGameObjectBodyTypeStatic) {
             offset /= 2.0;
