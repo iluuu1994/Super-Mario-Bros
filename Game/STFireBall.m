@@ -54,6 +54,8 @@
     // Bounce off the ground
     if (edge == STRectEdgeMinY) {
         self.velocity = ccpAdd(self.velocity, ccp(0, 100));
+    } if (edge == STRectEdgeMaxX || edge == STRectEdgeMinX) {
+        [self die];
     }
     
     // Only kills creatures except for the player.

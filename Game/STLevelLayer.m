@@ -224,13 +224,9 @@
                         (edge1 == STRectEdgeMaxY && (v1.y > 0 || v2.y < 0)) ||
                         (edge1 == STRectEdgeMinY && (v1.y < 0 || v2.y > 0))
                         ) {
-                        /*
-                        if (((edge1 == STRectEdgeMaxX || edge1 == STRectEdgeMinX) && (child.velocity.x != 0 || child2.velocity.x != 0))
-                            ||
-                            ((edge1 == STRectEdgeMaxY || edge1 == STRectEdgeMinY) && (child.velocity.y != 0 || child2.velocity.y != 0))) {*/
+
                             [child collisionWithGameObject:child2 edge:edge1];
                             [child2 collisionWithGameObject:child edge:edge2];
-                        //}
                     }
                 }
             }
@@ -243,10 +239,42 @@
                                     delta:(ccTime)delta {
     
     STRectEdge rectEdge;
-    float edgeLeft = (gameObject.boundingBox.origin.x - gameObject2.boundingBox.origin.x - gameObject.boundingBox.size.width) * -1;
-    float edgeRight = (gameObject.boundingBox.origin.x + gameObject2.boundingBox.size.width - gameObject2.boundingBox.origin.x);
-    float edgeTop = (gameObject.boundingBox.origin.y + gameObject.boundingBox.size.height - gameObject2.boundingBox.origin.y);
-    float edgeBottom = (gameObject.boundingBox.origin.y - gameObject2.boundingBox.size.height - gameObject2.boundingBox.origin.y) * -1;
+    CGRect r1 = gameObject.boundingBox;
+    CGRect r2 = gameObject2.boundingBox;
+    
+    float edgeLeft = (r1.origin.x - r2.origin.x - r2.size.width) * -1;
+    float edgeRight = (r1.origin.x + r1.size.width - r2.origin.x);
+    float edgeTop = (r1.origin.y + r1.size.height - r2.origin.y);
+    float edgeBottom = (r1.origin.y - r2.size.height - r2.origin.y) * -1;
+
+    /*
+    float offset = 0.0;
+    BOOL wasHit = NO;
+    
+    // left
+    if(gameObject.velocity.x <= gameObject2.velocity.x && (edgeLeft <= offset || !wasHit)) {
+        wasHit = YES;
+        offset = edgeLeft;
+        rectEdge = STRectEdgeMinX;
+    }
+    // right
+    if (gameObject.velocity.x >= gameObject2.velocity.x && (edgeRight <= offset || !wasHit)) {
+        wasHit = YES;
+        offset = edgeRight;
+        rectEdge = STRectEdgeMaxX;
+    }
+    // top
+    if (gameObject.velocity.y >= gameObject2.velocity.y && (edgeTop <= offset || !wasHit)) {
+        wasHit = YES;
+        offset = edgeTop;
+        rectEdge = STRectEdgeMaxY;
+    }
+    // bottom
+    if (gameObject.velocity.y <= gameObject2.velocity.y && (edgeBottom <= offset || !wasHit)) {
+        wasHit = YES;
+        offset = edgeBottom;
+        rectEdge = STRectEdgeMinY;
+    }*/
     
     float offset = 0.0;
     if (edgeLeft < edgeRight) {
