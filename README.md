@@ -16,3 +16,12 @@ So, I don't recommend using any of this code.
 ![](./World1.png)
 
 ![](./World2.png)
+
+## Known issues
+
+- Physics (no, just no) 🐑💨
+
+## Credits
+- [Me](http://twitter.com/ilijatovilo)
+- Lukas Seglias
+- Nintendo (Thanks for not suing me)
