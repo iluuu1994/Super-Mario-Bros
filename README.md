@@ -19,6 +19,8 @@ Also, please don't look at our commits, we were goofing around a lot 😄
 
 ![](./World2.png)
 
+![](./World3.png)
+
 ## Further Development
 
 Well, if you'd like to spend precious time improving this pile of crap, please, go on.
