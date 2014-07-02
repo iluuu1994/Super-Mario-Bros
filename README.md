@@ -22,6 +22,7 @@ Also, please don't look at our commits, we were goofing around a lot 😄
 ## Further Development
 
 Well, if you'd like to spend precious time improving this pile of crap, please, go on.
+I'll review and accept pull-requests.
 
 ## Known issues
 
