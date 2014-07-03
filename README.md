@@ -33,4 +33,4 @@ I'll review and accept pull-requests.
 ## Credits
 - [Me](http://twitter.com/ilijatovilo)
 - Lukas Seglias
-- Nintendo (Thanks for not suing me)
+- Nintendo (Thanks for not suing us)
