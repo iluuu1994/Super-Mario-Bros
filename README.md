@@ -11,8 +11,6 @@ The code is quite old and also super buggy because
 
 So, I don't recommend using any of this code.
 
-Also, please don't look at our commits, we were goofing around a lot 😄
-
 ## What it looks like
 
 ![](./World1.png)
@@ -23,8 +21,7 @@ Also, please don't look at our commits, we were goofing around a lot 😄
 
 ## Further Development
 
-Well, if you'd like to spend precious time improving this pile of crap, please, go on.
-I'll review and accept pull-requests.
+I'm not planning on working on this project anymore but I'll review and accept pull-requests.
 
 ## Known issues
 
